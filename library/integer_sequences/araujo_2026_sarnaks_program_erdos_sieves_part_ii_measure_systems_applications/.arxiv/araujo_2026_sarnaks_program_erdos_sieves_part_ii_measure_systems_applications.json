@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Francisco Ara\\'ujo"
+  ],
+  "category": "math.DS",
+  "date": "2026-02-27",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 1700007,
+    "files": 1,
+    "sha256": "231fc666d79e8bcb5e9e0de119b59b77c0fb504b8bcb7d38697e8bbfbdd456dd",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2602.24034v1"
+  },
+  "id": "2602.24034",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 700228,
+    "previous": [],
+    "sha256": "a5ab2cafc8fa97a32571ae7f2ce07418b62d03602e25431c2ad341eee5e3b7a9",
+    "url": "https://arxiv.org/pdf/2602.24034v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2602.24034v1 [math.DS] 27 Feb 2026",
+  "tex": {
+    "archive": {
+      "bytes": 52439,
+      "name": "arXiv-2602.24034v1.tar.gz",
+      "sha256": "ba9cb698f2854d545df201e0d12ebe774e63300fdb41354b61bbd4aa698eabca"
+    },
+    "bytes": 194356,
+    "files": 2,
+    "sha256": "a9479cd42e2534f31dfc53f1135b63efa7e6b279f23af09421a63bc9d813ee15",
+    "url": "https://arxiv.org/src/2602.24034v1"
+  },
+  "title": "Sarnak's Program for Erd\\H{o}s Sieves. Part II: Measure Systems and Applications",
+  "version": 1
+}

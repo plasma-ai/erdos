@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Boon Suan Ho"
+  ],
+  "category": "math.CA",
+  "date": "2026-04-21",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 597820,
+    "files": 1,
+    "sha256": "36839e0c754e439109c60540550b12de8e5d7cf4c133c3d19f3439c056159ecb",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2604.18535v2"
+  },
+  "id": "2604.18535",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 609251,
+    "previous": [],
+    "sha256": "f88b36a072d66476c5948061b7f2fc4d61dc536bbc5df5aa5bd3cdd2a84a82d0",
+    "url": "https://arxiv.org/pdf/2604.18535v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2604.18535v2 [math.CA] 21 Apr 2026",
+  "tex": {
+    "archive": {
+      "bytes": 23235,
+      "name": "arXiv-2604.18535v2.tar.gz",
+      "sha256": "675af05fd07147c32c6fb6c76e147d9995accda686e2fd108bab985a82aff8a8"
+    },
+    "bytes": 74866,
+    "files": 2,
+    "sha256": "b694194f6d07fcf055ad0ede403521bf24ac76783406c336ad869c632ed7a223",
+    "url": "https://arxiv.org/src/2604.18535v2"
+  },
+  "title": "Counterexamples for lacunary dilates via dyadic spike blocks",
+  "version": 2
+}

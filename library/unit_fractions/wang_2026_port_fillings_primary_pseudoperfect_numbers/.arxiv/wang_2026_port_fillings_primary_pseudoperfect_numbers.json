@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Han Wang"
+  ],
+  "category": "math.NT",
+  "date": "2026-05-18",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 510686,
+    "files": 1,
+    "sha256": "485747fb7af38cb30b51899816c4971f7950c4a5b278dc1c152498faa240264c",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2605.21518v1"
+  },
+  "id": "2605.21518",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 484440,
+    "previous": [],
+    "sha256": "e299513f69dc7f759ad655325fff74dfd1b0ab64d5c088bdf65551c5979f64c3",
+    "url": "https://arxiv.org/pdf/2605.21518v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2605.21518v1 [math.NT] 18 May 2026",
+  "tex": {
+    "archive": {
+      "bytes": 18024,
+      "name": "arXiv-2605.21518v1.tar.gz",
+      "sha256": "0ee4fdebb63ab4fedd08576240b0bdf24e91c92ca8665f8fbc789fde45e34dd8"
+    },
+    "bytes": 56826,
+    "files": 5,
+    "sha256": "4249873ca472b08b4ddf3f8a20ae88d0dfacd3b908ad295bf30235c32a415cb5",
+    "url": "https://arxiv.org/src/2605.21518v1"
+  },
+  "title": "Port Fillings for Primary Pseudoperfect Numbers",
+  "version": 1
+}

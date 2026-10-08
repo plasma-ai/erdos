@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Zhanfu Yang"
+  ],
+  "category": "math.CO",
+  "date": "2026-07-25",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 383731,
+    "files": 1,
+    "sha256": "524d2d67b83c57c1c85746b6cf20963772511a45c882c5a48ab0206bccd3cc0e",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2607.23004v1"
+  },
+  "id": "2607.23004",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 330476,
+    "previous": [],
+    "sha256": "36f7c03a83a6b1673d525f9e1c460c2631f19745ff7c75e51367351852747dc7",
+    "url": "https://arxiv.org/pdf/2607.23004v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2607.23004v1 [math.CO] 25 Jul 2026",
+  "tex": {
+    "archive": {
+      "bytes": 16202,
+      "name": "arXiv-2607.23004v1.tar.gz",
+      "sha256": "60b8afb6f3a849dbccf1006e6c85099329016849651b6a6008febf7e6c2fb1f5"
+    },
+    "bytes": 46964,
+    "files": 2,
+    "sha256": "3f474a566d98a1c484d302de0bf0848927d767ddb0b9b3b536c5e060920b8ac7",
+    "url": "https://arxiv.org/src/2607.23004v1"
+  },
+  "title": "Exact values and exact upper bounds for families of integers with arithmetic progression intersections (Erd\\H{o}s Problem #272)",
+  "version": 1
+}

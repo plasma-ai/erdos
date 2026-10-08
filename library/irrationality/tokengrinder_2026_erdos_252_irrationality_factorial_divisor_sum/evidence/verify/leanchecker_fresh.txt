@@ -1,0 +1,3 @@
+=== leanchecker --fresh --verbose Erdos252.Solution start 2026-09-17T05:48:11Z ===
+replaying Erdos252.Solution with --fresh
+=== exit 0 wall 385 s end 2026-09-17T05:54:36Z ===

@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Vivian Kuperberg"
+  ],
+  "category": "math.NT",
+  "date": "2023-06-15",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 573133,
+    "files": 1,
+    "sha256": "35bcc7e4b6451c675df709f5e3c07c84451f60f9ae40994f025497a0b68b6352",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2210.09775v2"
+  },
+  "id": "2210.09775",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 259004,
+    "previous": [],
+    "sha256": "653dcd731f11c6bab47fa61989b31f50dc3318464fc4d300276698045ba48939",
+    "url": "https://arxiv.org/pdf/2210.09775v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2210.09775v2 [math.NT] 15 Jun 2023",
+  "tex": {
+    "archive": {
+      "bytes": 17058,
+      "name": "arXiv-2210.09775v2.tar.gz",
+      "sha256": "53bc19fdfae8c0a39530dfffdf4c36481e9060bf3c098075805a44f0ce76c620"
+    },
+    "bytes": 62206,
+    "files": 2,
+    "sha256": "4fe9639c80808a263d5f019b05cbfa02676653a4d2436cfd971d6c235a59a6a4",
+    "url": "https://arxiv.org/src/2210.09775v2"
+  },
+  "title": "Sums of singular series with large sets and the tail of the distribution of primes",
+  "version": 2
+}

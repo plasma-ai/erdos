@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Stijn Cambie",
+    "Jorik Jooken"
+  ],
+  "category": "math.CO",
+  "date": "2025-02-12",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 495309,
+    "files": 1,
+    "sha256": "44b61a940a40ac1292833137e84a865d5dd1b053e4d1d6bd4f76fc1d909eba10",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2502.08626v1"
+  },
+  "id": "2502.08626",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 236154,
+    "previous": [],
+    "sha256": "91877fd15b426904ba704a0b5fd032cc126f02ce1fa5d5286bdcdad603007b3b",
+    "url": "https://arxiv.org/pdf/2502.08626v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2502.08626v1 [math.CO] 12 Feb 2025",
+  "tex": {
+    "archive": {
+      "bytes": 18519,
+      "name": "arXiv-2502.08626v1.gz",
+      "sha256": "286eb39ba2c56ef290850399ad7175fea888abffa2b12a47e0146e3c21e4494b"
+    },
+    "bytes": 69013,
+    "files": 1,
+    "sha256": "bdd472060c97ef861c248ad82b738b9de22e076b9bb23707c30b16fcaf7bf165",
+    "url": "https://arxiv.org/src/2502.08626v1"
+  },
+  "title": "Sharp results for the Erd\\H{o}s, Pach, Pollack and Tuza problem",
+  "version": 1
+}

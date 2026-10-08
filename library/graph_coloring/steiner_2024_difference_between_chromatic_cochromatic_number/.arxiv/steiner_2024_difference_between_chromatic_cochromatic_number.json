@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Raphael Steiner"
+  ],
+  "category": "math.CO",
+  "date": "2024-08-20",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 207229,
+    "files": 1,
+    "sha256": "4412c5b30def7c90fb689d542dbaaa667ac8d8357b8cbc2fd8c43edc5a556c74",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2408.02400v2"
+  },
+  "id": "2408.02400",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 150485,
+    "previous": [],
+    "sha256": "b1c575ff51cef0c23ad628989c38d1749d477ecb897c3283911008704e97d45b",
+    "url": "https://arxiv.org/pdf/2408.02400v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2408.02400v2 [math.CO] 20 Aug 2024",
+  "tex": {
+    "archive": {
+      "bytes": 10064,
+      "name": "arXiv-2408.02400v2.tar.gz",
+      "sha256": "a9bfddf57c2c994448a403038c7c4cfaeca0eaee0349acc725e32758e2f51942"
+    },
+    "bytes": 30010,
+    "files": 3,
+    "sha256": "cc1d3ab37c0976b3e7f20c6bd42f0f61c5044c899a4403cac33fb08b8e700a87",
+    "url": "https://arxiv.org/src/2408.02400v2"
+  },
+  "title": "On the difference between the chromatic and cochromatic number",
+  "version": 2
+}

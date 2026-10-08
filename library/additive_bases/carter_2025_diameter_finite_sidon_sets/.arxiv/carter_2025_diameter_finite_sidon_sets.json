@@ -1,0 +1,40 @@
+{
+  "authors": [
+    "Daniel Carter",
+    "Zach Hunter",
+    "Kevin O'Bryant"
+  ],
+  "category": "math.CO",
+  "date": "2023-10-30",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 427886,
+    "files": 1,
+    "sha256": "49cc80958281c3f9c19cb89cc5343b3005bd7fcbf72015fea8e4b0d29dea1a98",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2310.20032v1"
+  },
+  "id": "2310.20032",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 204838,
+    "previous": [],
+    "sha256": "2c5bb6b46eb67e93ae7a23d102517319ed866ff80fab821609cb5606253c572a",
+    "url": "https://arxiv.org/pdf/2310.20032v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2310.20032v1 [math.CO] 30 Oct 2023",
+  "tex": {
+    "archive": {
+      "bytes": 20651,
+      "name": "arXiv-2310.20032v1.tar.gz",
+      "sha256": "a6bdb3e14e7c843041c1ac9d7680d4f56145912a82832f886cfa64ac24b86cc5"
+    },
+    "bytes": 71286,
+    "files": 3,
+    "sha256": "96cd9dc68d44d171379f76726992e8aae8c31f99cb5a299d99e77e22ba189d55",
+    "url": "https://arxiv.org/src/2310.20032v1"
+  },
+  "title": "On the Diameter of Finite Sidon Sets",
+  "version": 1
+}

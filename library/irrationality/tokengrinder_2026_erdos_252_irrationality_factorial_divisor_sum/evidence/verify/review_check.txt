@@ -1,0 +1,29 @@
+review_scratch/ReviewCheck.lean:92:2: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+def Irrational : ℝ → Prop :=
+fun x => x ∉ Set.range Rat.cast
+def ArithmeticFunction.sigma : ℕ → ArithmeticFunction ℕ :=
+fun k => { toFun := fun n => ∑ d ∈ n.divisors, d ^ k, map_zero' := ⋯ }
+def Nat.divisors : ℕ → Finset ℕ :=
+fun n => {d ∈ Finset.Ico 1 (n + 1) | d ∣ n}
+def Nat.factorial : ℕ → ℕ :=
+fun x => Nat.brecOn x Nat.factorial._f
+def tsum.{u_4, u_5} : {α : Type u_4} →
+  {β : Type u_5} →
+    [AddCommMonoid α] →
+      [TopologicalSpace α] → (β → α) → optParam (SummationFilter β) (SummationFilter.unconditional β) → α :=
+wrapped✝.1
+Erdos252.erdos_252 : ∀ (k : ℕ), Irrational (∑' (n : ℕ), ↑((ArithmeticFunction.sigma k) n) / ↑n.factorial)
+ReviewCheck.erdos_252_site_form : ∀ (k : Nat),
+  @LE.le.{0} Nat instLENat (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))) k →
+    Irrational (ReviewCheck.problemSum k)
+'Erdos252.erdos_252' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos252.summable_sigma_factorial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewCheck.erdos_252_site_form' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewCheck.erdos_252_unfolded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewCheck.erdos_252_no_rat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewCheck.irrational_of_tendsto_partial_sums' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewCheck.irrational_of_tendsto_partial_sums_from_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewCheck.problemSum_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewCheck.irrational_not_trivial' depends on axioms: [propext, Classical.choice, Quot.sound]

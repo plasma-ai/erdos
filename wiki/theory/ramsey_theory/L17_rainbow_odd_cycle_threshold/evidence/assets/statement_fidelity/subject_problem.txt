@@ -1,0 +1,10 @@
+**Statement.** Define the anti-Ramsey number $\chi_S(n,e,G)$ as the smallest $r$
+such that there is a graph with $n$ vertices and $e$ edges with an $r$-coloring
+of its edges in which every copy of $G$ has entirely distinct edge colors.
+
+Is it true that, for all $k\geq 3$,
+
+$$
+\chi_S(n, \lfloor n^2/4\rfloor+1,C_{2k+1})\sim n^2/8?
+$$
+

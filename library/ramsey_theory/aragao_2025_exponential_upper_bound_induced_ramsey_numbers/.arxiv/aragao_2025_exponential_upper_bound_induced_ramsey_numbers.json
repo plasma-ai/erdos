@@ -1,0 +1,42 @@
+{
+  "authors": [
+    "Lucas Arag\\~ao",
+    "Marcelo Campos",
+    "Gabriel Dahia",
+    "Rafael Filipe",
+    "Jo\\~ao Pedro Marciano"
+  ],
+  "category": "math.CO",
+  "date": "2025-11-13",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 1885854,
+    "files": 1,
+    "sha256": "febdbaca2e816310bbea3a351b10a8b021a25bc1e3d4e47a07c563d7767a2624",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2509.22629v2"
+  },
+  "id": "2509.22629",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 845590,
+    "previous": [],
+    "sha256": "b1d33c10106d0507c451c7688399362eff46814ac16c37af185f7ed162836e4d",
+    "url": "https://arxiv.org/pdf/2509.22629v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2509.22629v2 [math.CO] 13 Nov 2025",
+  "tex": {
+    "archive": {
+      "bytes": 57554,
+      "name": "arXiv-2509.22629v2.tar.gz",
+      "sha256": "bc75f9fc63d777760f77c9258d6141d131c4e431217d783e003c955851b7efd6"
+    },
+    "bytes": 238944,
+    "files": 3,
+    "sha256": "b1f629ca90fa92b4d3299df1b32c5eea0158e9324290b5181466ca4e3b4a09b9",
+    "url": "https://arxiv.org/src/2509.22629v2"
+  },
+  "title": "An exponential upper bound for induced Ramsey numbers",
+  "version": 2
+}

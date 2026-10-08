@@ -1,0 +1,47 @@
+{
+  "title": "Network Flow and Systems of Representatives",
+  "authors": [
+    "L. R. Ford, Jr.",
+    "D. R. Fulkerson"
+  ],
+  "journal": "Canadian Journal of Mathematics",
+  "volume": "10",
+  "year": 1958,
+  "printed_pages": "78-84",
+  "doi": "10.4153/CJM-1958-009-1",
+  "canonical_pdf": {
+    "file": "ford_1958_network_flow_systems_representatives.pdf",
+    "bytes": 566740,
+    "physical_pages": 7,
+    "version": "Published original, Cambridge digitized scan"
+  },
+  "primary_urls": [
+    "https://www.cambridge.org/core/journals/canadian-journal-of-mathematics/article/network-flow-and-systems-of-representatives/4655B4A3E8D270834E2C5E3DF1413772",
+    "https://api.crossref.org/works/10.4153/CJM-1958-009-1"
+  ],
+  "accessed": "2026-09-05",
+  "received_as_printed": "March18,1957",
+  "digital_publication": "November20,2018, not a new mathematical version",
+  "scan_download_footer": "August18,2026 at22:32:38, Cambridge Core",
+  "version_limit": "The retained PDF was not re-downloaded from the publisher URL; no byte-equivalence claim is made.",
+  "metadata_access": "Official publisher web search result and Crossref response support identity; ordinary publisher HTML curl request timed out once and was not retried.",
+  "reading": {
+    "original_physical_pages_read": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "method": "180dpi original-detail Poppler renders; existing text for navigation only; no OCR."
+  },
+  "proof_scope": "Six complete local or relative arguments. External integral max-flow/min-cut retained. Section3 cut proof reconstructed from the printed network.",
+  "precision_notes": [
+    "Multiplicity bounds are taken to be nonnegative integers (the print states only 0 <= alpha_i <= beta_i); real restrictions need rounding before applying tests.",
+    "Page80 incidence flow must depend on the representative assigned to that indexed set, not merely occurrence anywhere in the SDR.",
+    "Page81 incidence endpoint subscript normalized to the ground-element index i.",
+    "Cut values are at least the target, as in the printed inequalities."
+  ]
+}

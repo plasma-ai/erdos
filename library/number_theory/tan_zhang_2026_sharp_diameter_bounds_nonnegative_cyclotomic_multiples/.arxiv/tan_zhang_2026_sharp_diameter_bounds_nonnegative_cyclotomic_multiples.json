@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Hu Tan",
+    "Ying Zhang"
+  ],
+  "category": "math.NT",
+  "date": "2026-09-07",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 237712,
+    "files": 1,
+    "sha256": "2917ac01997efc71376e32259e6ba4fe4b4fa266298ae07d882ddf02097a2213",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2609.07646v1"
+  },
+  "id": "2609.07646",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 378393,
+    "previous": [],
+    "sha256": "9992e5c159afb84f2e4c1eff3007b51770d024d9924884dddceec94a713e209f",
+    "url": "https://arxiv.org/pdf/2609.07646v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2609.07646v1 [math.NT] 7 Sep 2026",
+  "tex": {
+    "archive": {
+      "bytes": 10988,
+      "name": "arXiv-2609.07646v1.tar.gz",
+      "sha256": "1b667fccc77465139147dedd26ff1732027cdf9eb4d8c419d5c06d2bf634d053"
+    },
+    "bytes": 28946,
+    "files": 2,
+    "sha256": "60b6f285719d6e1b770e25ded872e5a8286145d3c53861fe3cff759378e6994e",
+    "url": "https://arxiv.org/src/2609.07646v1"
+  },
+  "title": "Sharp Diameter Bounds for Nonnegative Cyclotomic Multiples",
+  "version": 1
+}

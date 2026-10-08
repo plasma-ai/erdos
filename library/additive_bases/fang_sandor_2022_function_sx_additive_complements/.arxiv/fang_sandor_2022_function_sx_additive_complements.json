@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Jin-Hui Fang",
+    "Csaba S\\'andor"
+  ],
+  "category": "math.NT",
+  "date": "2022-10-18",
+  "fetched": "2026-09-24",
+  "html": {
+    "bytes": 301637,
+    "files": 1,
+    "sha256": "c78f164f8ccfcd93ffb1d2dc91276422a0236ee3a5acb2d0590d522acd8a8be7",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2210.09680v1"
+  },
+  "id": "2210.09680",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 121904,
+    "previous": [],
+    "sha256": "c0af8afa31451ec457d377a892c603722b4ef0c59fb80e3cec6529f44ff4020c",
+    "url": "https://arxiv.org/pdf/2210.09680v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2210.09680v1 [math.NT] 18 Oct 2022",
+  "tex": {
+    "archive": {
+      "bytes": 7153,
+      "name": "arXiv-2210.09680v1.gz",
+      "sha256": "be7bde7817086f5dcc6d2c4ca4d09abe06686ea15b84c4da85260032d73a5709"
+    },
+    "bytes": 31100,
+    "files": 1,
+    "sha256": "de074766539eae55b0d532f6dee7824b4c289d8f224692210a04c4794ecff762",
+    "url": "https://arxiv.org/src/2210.09680v1"
+  },
+  "title": "On function $SX$ of additive complements",
+  "version": 1
+}

@@ -1,0 +1,8 @@
+Erdos252.erdos_252 (k : ℕ) : Irrational (∑' (n : ℕ), ↑((σ k) n) / ↑n !)
+'Erdos252.erdos_252' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StatementAudit.matches_published_statement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StatementAudit.divisor_sum_definition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StatementAudit.zero_term' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StatementAudit.actual_series_summable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StatementAudit.expanded_divisor_statement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StatementAudit.positive_index_statement' depends on axioms: [propext, Classical.choice, Quot.sound]

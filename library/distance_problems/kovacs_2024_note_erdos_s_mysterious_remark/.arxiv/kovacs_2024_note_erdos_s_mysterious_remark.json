@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Zolt\\'an Kov\\'acs"
+  ],
+  "category": "cs.CG",
+  "date": "2024-12-09",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 140431,
+    "files": 1,
+    "sha256": "9164ce7dcf7fa35b141bd8384f80b455257e46845a7c7dcf1cf249f73e51b26f",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2412.05190v2"
+  },
+  "id": "2412.05190",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 312232,
+    "previous": [],
+    "sha256": "95555e102bf66a2a4a2a933d4e49cfaae25b89ee5c875ba77d5fc209ddeccaef",
+    "url": "https://arxiv.org/pdf/2412.05190v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2412.05190v2 [cs.CG] 9 Dec 2024",
+  "tex": {
+    "archive": {
+      "bytes": 36449,
+      "name": "arXiv-2412.05190v2.tar.gz",
+      "sha256": "e4adec747a3d8cb6dcff6c322c664547d7340c8a8ae057eac76b8eb82fa70e19"
+    },
+    "bytes": 51614,
+    "files": 4,
+    "sha256": "ea563ca33842b6413edc34daa55c3fb37dc86a6fe6692b921015efe3c583b4d4",
+    "url": "https://arxiv.org/src/2412.05190v2"
+  },
+  "title": "A note on Erd\\H{o}s's mysterious remark",
+  "version": 2
+}

@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Miltiadis Karamanlis"
+  ],
+  "category": "math.CO",
+  "date": "2022-07-08",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 176559,
+    "files": 1,
+    "sha256": "73cb2f25cd9aa988cf5bceb897a61c4e125a2e1bedcfdcdf5ebe5da2e3ca87d0",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2105.07689v3"
+  },
+  "id": "2105.07689",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 142810,
+    "previous": [],
+    "sha256": "7b022d9e609984be1ed550fc2bcf719f7661343bfe3c2f00a2ed11f8f18886b5",
+    "url": "https://arxiv.org/pdf/2105.07689v3"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2105.07689v3 [math.CO] 8 Jul 2022",
+  "tex": {
+    "archive": {
+      "bytes": 8807,
+      "name": "arXiv-2105.07689v3.tar.gz",
+      "sha256": "c9a371f36d6f4803ded53a95b9c0b2c9e47c14db7926ffcc06235d2cedeb1aae"
+    },
+    "bytes": 25221,
+    "files": 2,
+    "sha256": "4f67331c7a5db752a4b161f9f3a6963c663a82c4c5c5ec503c32dc2c55aff577",
+    "url": "https://arxiv.org/src/2105.07689v3"
+  },
+  "title": "Simplices and Regular Polygonal Tori in Euclidean Ramsey Theory",
+  "version": 3
+}

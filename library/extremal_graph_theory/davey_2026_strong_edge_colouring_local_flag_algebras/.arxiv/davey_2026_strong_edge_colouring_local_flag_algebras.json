@@ -1,0 +1,42 @@
+{
+  "authors": [
+    "Eoin Davey",
+    "Eoin Hurley",
+    "R\\'emi de Joannis de Verclos",
+    "Ross J. Kang",
+    "Jan Volec"
+  ],
+  "category": "math.CO",
+  "date": "2026-07-19",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 732278,
+    "files": 6,
+    "sha256": "603ba8e8f333184fb0d27acfc16b30fe77c0b7731c9fdb9c1eb82116c51fcfdb",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2607.17421v1"
+  },
+  "id": "2607.17421",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 517420,
+    "previous": [],
+    "sha256": "647562947c25dba71bd58c267727f530938803510e0f24271f3abd73549703e8",
+    "url": "https://arxiv.org/pdf/2607.17421v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2607.17421v1 [math.CO] 19 Jul 2026",
+  "tex": {
+    "archive": {
+      "bytes": 39156,
+      "name": "arXiv-2607.17421v1.tar.gz",
+      "sha256": "c1d296a162127fa435f55257e22be8a230b9f5997f747b5437762dd113d7293c"
+    },
+    "bytes": 139375,
+    "files": 10,
+    "sha256": "cadf72ac600e472f255412ae91d5d36418f3ba8e7856e79895e7e0dff349605a",
+    "url": "https://arxiv.org/src/2607.17421v1"
+  },
+  "title": "Strong edge-colouring via local flag algebras",
+  "version": 1
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "dusart1999_finite_analytic_certificate_v1",
+  "interval_bits": 1024,
+  "log_series_terms": 400,
+  "exp_series_terms": 128,
+  "atan_series_terms": 240,
+  "b": 50,
+  "m": 18,
+  "delta": [97, 10240000000],
+  "A_lower": [545439823214, 1000],
+  "A_upper": [545439823216, 1000]
+}

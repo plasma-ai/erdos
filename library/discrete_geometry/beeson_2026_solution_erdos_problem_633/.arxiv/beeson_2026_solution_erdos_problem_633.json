@@ -1,0 +1,40 @@
+{
+  "authors": [
+    "Michael Beeson",
+    "Miklos Laczkovich",
+    "Yan X. Zhang"
+  ],
+  "category": "math.CO",
+  "date": "2026-08-25",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 1935938,
+    "files": 25,
+    "sha256": "26e1dda1c690837c45f9df56fc07d8056b745db2c2c01cdcb1f3792005448238",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2604.03609v3"
+  },
+  "id": "2604.03609",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 445739,
+    "previous": [],
+    "sha256": "fe7a170065f91198cdde4d3db8e40ac8e8bff3a70d76bc05af944d2ef7ecafd3",
+    "url": "https://arxiv.org/pdf/2604.03609v3"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2604.03609v3 [math.CO] 25 Aug 2026",
+  "tex": {
+    "archive": {
+      "bytes": 113152,
+      "name": "arXiv-2604.03609v3.tar.gz",
+      "sha256": "1bab08f81efffedcb50cda51da540b025ea756628bbd93af0829342211a2b9ec"
+    },
+    "bytes": 233292,
+    "files": 26,
+    "sha256": "07e6ef708a397818297818ca7b85673734b33925b47f1380170fccf9261c1d76",
+    "url": "https://arxiv.org/src/2604.03609v3"
+  },
+  "title": "Solution of Erd\\H{o}s Problem 633",
+  "version": 3
+}

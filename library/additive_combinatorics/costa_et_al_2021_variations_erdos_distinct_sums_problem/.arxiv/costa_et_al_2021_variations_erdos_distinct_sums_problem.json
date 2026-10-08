@@ -1,0 +1,40 @@
+{
+  "authors": [
+    "Simone Costa",
+    "Marco Dalai",
+    "Stefano Della Fiore"
+  ],
+  "category": "math.CO",
+  "date": "2022-10-28",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 907322,
+    "files": 8,
+    "sha256": "71dd2c2900d33cd78ab38867dad40261ba6b7b457d08d6ecd901e7a4912acaeb",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2107.07885v3"
+  },
+  "id": "2107.07885",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 824265,
+    "previous": [],
+    "sha256": "df4a42954aba61e72ed3363a0aa33471e4e134b9fc0f2bd7d38467478eafcede",
+    "url": "https://arxiv.org/pdf/2107.07885v3"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2107.07885v3 [math.CO] 28 Oct 2022",
+  "tex": {
+    "archive": {
+      "bytes": 343333,
+      "name": "arXiv-2107.07885v3.tar.gz",
+      "sha256": "669fbeceb10bf5966e8a49f7c23ac1ab5d3107b65a401888d4345131a342940b"
+    },
+    "bytes": 492301,
+    "files": 8,
+    "sha256": "515b7cf9f1b8ac550a6182e8f9337663b30535995c422684020513795c3f742e",
+    "url": "https://arxiv.org/src/2107.07885v3"
+  },
+  "title": "Variations on the Erd\\H{o}s distinct-sums problem",
+  "version": 3
+}

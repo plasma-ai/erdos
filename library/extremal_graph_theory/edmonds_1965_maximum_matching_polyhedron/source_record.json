@@ -1,0 +1,62 @@
+{
+  "title": "Maximum Matching and a Polyhedron With 0,1-Vertices",
+  "authors": [
+    "Jack Edmonds"
+  ],
+  "journal": "Journal of Research of the National Bureau of Standards—B. Mathematics and Mathematical Physics",
+  "volume": "69B",
+  "issue": "1 and 2",
+  "published_issue_date": "January–June 1965",
+  "printed_pages": "125–130",
+  "physical_pdf_pages": 6,
+  "doi": "10.6028/jres.069B.013",
+  "doi_url": "https://doi.org/10.6028/jres.069B.013",
+  "first_page_parenthetical_date": "December 1, 1964",
+  "parenthetical_date_qualification": "The original does not label this date Received.",
+  "canonical_pdf": {
+    "file": "edmonds_1965_maximum_matching_polyhedron.pdf",
+    "bytes": 7911462,
+    "version": "Original published journal scan, retained through the NIST research-library archival collection."
+  },
+  "acquisition": {
+    "accessed": "2026-09-05",
+    "record_url": "https://archive.org/details/jresv69Bn1-2p125",
+    "metadata_url": "https://archive.org/metadata/jresv69Bn1-2p125",
+    "requested_pdf_url": "https://archive.org/download/jresv69Bn1-2p125/jresv69Bn1-2p125_A1b.pdf",
+    "final_pdf_url": "https://ia800708.us.archive.org/9/items/jresv69Bn1-2p125/jresv69Bn1-2p125_A1b.pdf",
+    "http_status": 200,
+    "archive_collection": [
+      "NISTJournalofResearch",
+      "NISTresearchlibrary"
+    ],
+    "archive_file_label": "original",
+    "advertised_md5_reproduced": true
+  },
+  "publication_metadata": {
+    "crossref_url": "https://api.crossref.org/works/10.6028/jres.069B.013",
+    "crossref_first_page": "125",
+    "terminal_page_evidence": "The original PDF ends on printed p.130; all six pages are present.",
+    "publisher_pdf_url": "https://nvlpubs.nist.gov/nistpubs/jres/69B/jresv69Bn1-2p125_A1b.pdf"
+  },
+  "version_limits": [
+    "No alternative mathematical version was acquired.",
+    "No byte-equivalence claim is made about the currently inaccessible publisher-hosted PDF.",
+    "The PDF processing dates in 2010/2011 are digital archival dates, not mathematical revisions."
+  ],
+  "proof_scope": {
+    "complete_components": 12,
+    "full_route": "Weighted hierarchy, dual certificate, weighted operations and real-weight finite termination; Theorem P; Theorem M with specified-optimum perturbation and compactness; auxiliary dual-support qualification.",
+    "announced_only": "Section 8 degree-capacity polyhedra and algorithm.",
+    "cost_scope": "Qualitative finite termination is proved. Exact arithmetic-operation counts, bit complexity and an implementation are not certified.",
+    "formalization": "No source-specific formalization or local formal build claimed."
+  },
+  "compilation_precision": [
+    "Signed perturbation handles zero-weight proper extensions of a specified optimum.",
+    "Completed-certificate dual equality provides uniform bounds for a fixed-combinatorial-type limit.",
+    "The general dual-vertex support bound is distinguished from arbitrary constructed certificates.",
+    "The bounded matching-polytope reduction is proved without a claim for general polyhedra with lineality.",
+    "The newly-tight-edge sentence on p.129 omits the symbol w; the rewrite uses the edge weight explicitly.",
+    "Contraction reordering, minimum exposed bases, exact event sizes, ties and finite old-history termination are expanded locally."
+  ],
+  "correction_status": "Compilation-supplied qualifications and expansions; no author-issued erratum is asserted."
+}

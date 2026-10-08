@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "David Conlon",
+    "Oliver Janzer"
+  ],
+  "category": "math.CO",
+  "date": "2022-12-13",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 293116,
+    "files": 1,
+    "sha256": "26f889883cb577a4f2105c0803fee848aa28d5d9988ebea03032f9e7393c5f1f",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2203.03375v2"
+  },
+  "id": "2203.03375",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 248877,
+    "previous": [],
+    "sha256": "dd0d9dbb7fb483daeb6cf08e08d2cad50c50d1a1b01d8eb3c33118089b03ef36",
+    "url": "https://arxiv.org/pdf/2203.03375v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2203.03375v2 [math.CO] 13 Dec 2022",
+  "tex": {
+    "archive": {
+      "bytes": 42317,
+      "name": "arXiv-2203.03375v2.tar.gz",
+      "sha256": "c9d9fe7fd813ec6d0100d4b7086c9d5f369b529074c22ebe2b0c1d385988e1dc"
+    },
+    "bytes": 96705,
+    "files": 5,
+    "sha256": "45902bdefa8ee8636091b286667d1d5405f964f6d21f3a1bd7a509b6f90c0baf",
+    "url": "https://arxiv.org/src/2203.03375v2"
+  },
+  "title": "Rational exponents near two",
+  "version": 2
+}

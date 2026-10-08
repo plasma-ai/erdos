@@ -1,0 +1,43 @@
+{
+  "authors": [
+    "Wen Huang",
+    "Zhengxing Lian",
+    "Song Shao",
+    "Rongzhong Xiao",
+    "Leiye Xu",
+    "Shuhao Zhang"
+  ],
+  "category": "math.CO",
+  "date": "2026-07-29",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 1102084,
+    "files": 1,
+    "sha256": "64d7a82a28d84692be816a04d6e41b0a596b210debdc19883ab77668ef93d476",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2607.17333v3"
+  },
+  "id": "2607.17333",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 311356,
+    "previous": [],
+    "sha256": "b520e2768c0231bb08bb988fab29e10fad76db72cc04052849bda5764e686338",
+    "url": "https://arxiv.org/pdf/2607.17333v3"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2607.17333v3 [math.CO] 29 Jul 2026",
+  "tex": {
+    "archive": {
+      "bytes": 39837,
+      "name": "arXiv-2607.17333v3.tar.gz",
+      "sha256": "863fc97de6c538af40cabaf211e56e835507732ff324ffbc2e3db9b9aed0d9fa"
+    },
+    "bytes": 126847,
+    "files": 2,
+    "sha256": "32c83066a2215ebd6326d746404f6d51fe6508340a282303a2afc093a55cc8ad",
+    "url": "https://arxiv.org/src/2607.17333v3"
+  },
+  "title": "An affirmative answer to Owings's sumset question",
+  "version": 3
+}

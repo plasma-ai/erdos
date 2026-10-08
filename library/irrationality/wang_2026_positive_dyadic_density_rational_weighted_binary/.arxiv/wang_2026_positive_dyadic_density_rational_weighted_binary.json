@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Han Wang"
+  ],
+  "category": "math.NT",
+  "date": "2026-06-23",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 2039345,
+    "files": 1,
+    "sha256": "368f471d7f149ac69a62e81ceacdd7de8bd1f66af2855fc50a637d608673b8e7",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2606.24972v1"
+  },
+  "id": "2606.24972",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 863875,
+    "previous": [],
+    "sha256": "128a885e7b8d852d6df20b83374840dc37bd1b43cf483d1050650adfbea47c27",
+    "url": "https://arxiv.org/pdf/2606.24972v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2606.24972v1 [math.NT] 23 Jun 2026",
+  "tex": {
+    "archive": {
+      "bytes": 102413,
+      "name": "arXiv-2606.24972v1.tar.gz",
+      "sha256": "4c057fa98b0e75d234892327b5a81fbc3223a121d739dca8839872cf9991bae7"
+    },
+    "bytes": 363842,
+    "files": 2,
+    "sha256": "22ed2dc7caaea4b60e0016b35e36d8df12343c5eb66efabe1f4df025d8e7bf33",
+    "url": "https://arxiv.org/src/2606.24972v1"
+  },
+  "title": "Sparse Polynomial-Weighted Expansions",
+  "version": 1
+}

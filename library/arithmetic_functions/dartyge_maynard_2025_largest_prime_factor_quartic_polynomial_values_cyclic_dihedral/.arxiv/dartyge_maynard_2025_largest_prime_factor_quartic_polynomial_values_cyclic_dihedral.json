@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "C\\'ecile Dartyge",
+    "James Maynard"
+  ],
+  "category": "math.NT",
+  "date": "2022-12-07",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 2839351,
+    "files": 1,
+    "sha256": "8dff94072a004f76423efeaaa80a5c3bee6593bf1ff6550edccf7c8c693ee170",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2212.03381v1"
+  },
+  "id": "2212.03381",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 873898,
+    "previous": [],
+    "sha256": "c609c775670c50112475d9c86a91c65d9a0fd8742f19cc441f733ab9e8bf8513",
+    "url": "https://arxiv.org/pdf/2212.03381v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2212.03381v1 [math.NT] 7 Dec 2022",
+  "tex": {
+    "archive": {
+      "bytes": 67928,
+      "name": "arXiv-2212.03381v1.tar.gz",
+      "sha256": "dfba5b82cc54aa7dcbe4af8a2f4eee0ab613c152a9895e914ef46fec12fabbe7"
+    },
+    "bytes": 246626,
+    "files": 2,
+    "sha256": "968bbabc62156c5ee999ce0ba08e73504a5eecc10985930659b2323f4687221a",
+    "url": "https://arxiv.org/src/2212.03381v1"
+  },
+  "title": "On the largest prime factor of quartic polynomial values: the cyclic and dihedral cases",
+  "version": 1
+}

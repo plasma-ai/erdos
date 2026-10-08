@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Sarosh Adenwalla"
+  ],
+  "category": "math.CO",
+  "date": "2023-02-19",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 105040,
+    "files": 1,
+    "sha256": "48982cd51121f04620c0c1bd355b02f6d8f2db9c7bcc95a903ea32fbebc8da41",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2302.09662v1"
+  },
+  "id": "2302.09662",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 76845,
+    "previous": [],
+    "sha256": "c7e1c789cd26d2d4f6db5cff318885d9a8c401d56d534635c6d5e1405c6034d9",
+    "url": "https://arxiv.org/pdf/2302.09662v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2302.09662v1 [math.CO] 19 Feb 2023",
+  "tex": {
+    "archive": {
+      "bytes": 3661,
+      "name": "arXiv-2302.09662v1.tar.gz",
+      "sha256": "db73e56c290d720363fce083deefcad68e507122eb6d0aca7e8ccb882ffb2005"
+    },
+    "bytes": 11094,
+    "files": 3,
+    "sha256": "ef74a5c5297dc32008c4354ac2ed81a2ba6197a04608537ed4a7da04f1d7c3d9",
+    "url": "https://arxiv.org/src/2302.09662v1"
+  },
+  "title": "A Generalisation of a Result on Monotone Arithmetic Progressions in Permutations of the Positive Integers",
+  "version": 1
+}

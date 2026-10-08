@@ -1,0 +1,100 @@
+{
+  "title": "A Question of Erdős and Graham on Egyptian Fractions",
+  "authors": [
+    "David Conlon",
+    "Jacob Fox",
+    "Xiaoyu He",
+    "Dhruv Mubayi",
+    "Huy Tuan Pham",
+    "Andrew Suk",
+    "Jacques Verstraëte"
+  ],
+  "publication": {
+    "journal": "Discrete Analysis",
+    "year": 2025,
+    "article": "2025:28",
+    "pages": 13,
+    "doi": "10.19086/da.154329",
+    "received": "2024-04-25",
+    "published": "2025-12-19",
+    "date_authority": "Canonical published PDF p.1, corroborated by the publisher record"
+  },
+  "canonical": {
+    "file": "conlon_2024_question_erdos_graham_egyptian_fractions.pdf",
+    "bytes": 282150,
+    "physical_pages": 13,
+    "description": "Published Discrete Analysis layout; original canonical file preserved. Fresh arXiv v2 acquisition is byte-identical.",
+    "arxiv": "2404.16016v2",
+    "arxiv_date": "2025-12-17"
+  },
+  "earlier_version": {
+    "file": "conlon_2024_question_erdos_graham_egyptian_fractions_arxiv_v1.pdf",
+    "bytes": 204918,
+    "physical_pages": 8,
+    "arxiv": "2404.16016v1",
+    "arxiv_date": "2024-04-24",
+    "scope": "Substantive earlier version retained; complete proof equivalence is not claimed. See source_versions.md."
+  },
+  "primary_acquisition": {
+    "accessed_utc": "2026-09-05T17:24:31+00:00",
+    "publisher_url": "https://discreteanalysisjournal.com/article/154329-a-question-of-erdos-and-graham-on-egyptian-fractions",
+    "arxiv_record": "https://arxiv.org/abs/2404.16016",
+    "v2_url": "https://arxiv.org/pdf/2404.16016v2",
+    "v1_url": "https://arxiv.org/pdf/2404.16016v1",
+    "note": "Existing primary acquisition reused; no new site or status requests for this source authorship."
+  },
+  "visual_coverage": {
+    "canonical_published_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "earlier_v1_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "method": "Every page visually read at original detail; native text navigation only; no OCR."
+  },
+  "external_primary_checks": [
+    {
+      "source": "Conlon–Fox–Pham arXiv2311.01416v1",
+      "pages_checked": [
+        2,
+        3
+      ],
+      "scope": "Definitions and exact Theorem1.5; full proof remains external."
+    },
+    {
+      "source": "Croot arXiv math/9904181v1",
+      "pages_checked": [
+        1,
+        2
+      ],
+      "scope": "Short-interval statement and opening; full proof/published-version comparison remain external."
+    }
+  ],
+  "limits": [
+    "Source compilation gives a complete main chain relative to exact external inputs, with transparent repairs; it is not an author-issued erratum.",
+    "No unrestricted Lemma4 proof; only its sufficient A<=q replacement is proved.",
+    "Theorem2 complete proof is restricted to the needed 0<epsilon<1; unused larger epsilon range is not certified.",
+    "No numerical certificate for the displayed decimal integral evaluations; no multiplicative asymptotic.",
+    "No complete proof of the distinct Liu–Sawhney counting argument; no current-status or formal-build claim."
+  ],
+  "canonical_home_note": "Existing 2024 folder slug retained for this published 2025 article."
+}

@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Alp M\\\"uyesser",
+    "Alexey Pokrovskiy"
+  ],
+  "category": "math.CO",
+  "date": "2025-02-25",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 4412512,
+    "files": 11,
+    "sha256": "5ee32f4dfa09230bdf60dc785f06d448c0af20230f801e47d5f39c3fe6671290",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2204.09666v3"
+  },
+  "id": "2204.09666",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 1512397,
+    "previous": [],
+    "sha256": "903c6f813f97d22bd4c41b9575537287a805e2c04f785f66aeb8a482c872bfe2",
+    "url": "https://arxiv.org/pdf/2204.09666v3"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2204.09666v3 [math.CO] 25 Feb 2025",
+  "tex": {
+    "archive": {
+      "bytes": 4187479,
+      "name": "arXiv-2204.09666v3.tar.gz",
+      "sha256": "8afb21f8d382cd9d308e315a8df30cbf179460665ea55997f4ebf0195e17c3aa"
+    },
+    "bytes": 4565563,
+    "files": 27,
+    "sha256": "3a7f30bd32bae3e2f787c2b1cbf22732a78c791654a456b53c07181d39255213",
+    "url": "https://arxiv.org/src/2204.09666v3"
+  },
+  "title": "A random Hall-Paige conjecture",
+  "version": 3
+}

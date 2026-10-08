@@ -1,0 +1,41 @@
+{
+  "authors": [
+    "Stijn Cambie",
+    "Wouter Cames van Batenburg",
+    "R\\'emi de Joannis de Verclos",
+    "Ross J. Kang"
+  ],
+  "category": "math.CO",
+  "date": "2021-12-10",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 397088,
+    "files": 1,
+    "sha256": "ec861de9e91ac487fb23fccb9252a4e1975b9c0aa6dc490d0c7ac52162ca586e",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2103.11898v2"
+  },
+  "id": "2103.11898",
+  "license": "http://creativecommons.org/licenses/by-sa/4.0/",
+  "pdf": {
+    "bytes": 196775,
+    "previous": [],
+    "sha256": "0a4813f329b2cc840e879d637c2d80e7c2af369ff679fd447015c64bb7d3fe3a",
+    "url": "https://arxiv.org/pdf/2103.11898v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2103.11898v2 [math.CO] 10 Dec 2021",
+  "tex": {
+    "archive": {
+      "bytes": 16070,
+      "name": "arXiv-2103.11898v2.tar.gz",
+      "sha256": "ce3aff7215d2a6ecc05e6e89f35eca6cc656ee7f27d4ded7f64908540934c95f"
+    },
+    "bytes": 49450,
+    "files": 2,
+    "sha256": "2b1f25eadee5577fd6132737bbb35e0b443ea6b6e2f760048c5744585a09602a",
+    "url": "https://arxiv.org/src/2103.11898v2"
+  },
+  "title": "Maximising line subgraphs of diameter at most $t$",
+  "version": 2
+}

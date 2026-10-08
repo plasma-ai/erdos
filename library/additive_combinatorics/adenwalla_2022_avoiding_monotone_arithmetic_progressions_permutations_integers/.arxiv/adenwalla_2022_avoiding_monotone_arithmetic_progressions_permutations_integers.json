@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Sarosh Adenwalla"
+  ],
+  "category": "math.CO",
+  "date": "2024-07-23",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 721436,
+    "files": 1,
+    "sha256": "36a73adbda7eacfadc448757dac1d1a9233eb637ca0b1b075c99d8dec5a5235a",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2211.04451v7"
+  },
+  "id": "2211.04451",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 245752,
+    "previous": [],
+    "sha256": "b07b8924676b28b180f4f738d6a122219aa227f33481274dfcce2deed2b88ebb",
+    "url": "https://arxiv.org/pdf/2211.04451v7"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2211.04451v7 [math.CO] 23 Jul 2024",
+  "tex": {
+    "archive": {
+      "bytes": 394704,
+      "name": "arXiv-2211.04451v7.tar.gz",
+      "sha256": "9553fd1466403e16598a53851396b3901d382d2245eaf110dbdcffc7bb561859"
+    },
+    "bytes": 456864,
+    "files": 4,
+    "sha256": "9bc5210f75ce35eb844fd308a0611083b4ff58ac0e8188af0c9069974b61588d",
+    "url": "https://arxiv.org/src/2211.04451v7"
+  },
+  "title": "Avoiding Monotone Arithmetic Progressions in Permutations of Integers",
+  "version": 7
+}

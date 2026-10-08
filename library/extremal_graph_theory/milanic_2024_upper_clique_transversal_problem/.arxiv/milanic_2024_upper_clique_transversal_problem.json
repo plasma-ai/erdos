@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Martin Milani\\v{c}",
+    "Yushi Uno"
+  ],
+  "category": "math.CO",
+  "date": "2024-08-13",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 994779,
+    "files": 6,
+    "sha256": "bb651f6ba150ad9802aa6119a3c82c9ff3792c62f852217f3ad51ac2f68ab5e9",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2309.14103v3"
+  },
+  "id": "2309.14103",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 781051,
+    "previous": [],
+    "sha256": "f228051d2c57df2739dff7a022932e316b4ce9288950d63a85496500e322d6da",
+    "url": "https://arxiv.org/pdf/2309.14103v3"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2309.14103v3 [math.CO] 13 Aug 2024",
+  "tex": {
+    "archive": {
+      "bytes": 263052,
+      "name": "arXiv-2309.14103v3.tar.gz",
+      "sha256": "d26f8ae98776d98803b7f83e5d5a66acf9b551f3235ecc72f6b4d1cdbe7a766a"
+    },
+    "bytes": 389021,
+    "files": 6,
+    "sha256": "2dec6c646dedb0124846dffc14ac5237c4c8b3d3e978d9c66ca8168cf328f814",
+    "url": "https://arxiv.org/src/2309.14103v3"
+  },
+  "title": "The Upper Clique Transversal Problem",
+  "version": 3
+}

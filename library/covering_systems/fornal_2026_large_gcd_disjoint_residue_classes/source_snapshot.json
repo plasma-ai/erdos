@@ -1,0 +1,36 @@
+{
+  "title": "On the problem of large gcd for disjoint residue classes",
+  "authors": [
+    "Jan Fornal",
+    "Yu-Chen Sun"
+  ],
+  "identifier": "arXiv:2607.24655v1",
+  "submitted_utc": "2026-07-27T16:51:58Z",
+  "accessed": "2026-09-05",
+  "canonical_pdf": "fornal_2026_large_gcd_disjoint_residue_classes.pdf",
+  "source_url": "https://arxiv.org/pdf/2607.24655v1",
+  "metadata_url": "https://arxiv.org/abs/2607.24655v1",
+  "bytes": 454556,
+  "pages": 19,
+  "provenance": "The retained PDF is byte-identical to the arXiv v1 download of 2026-09-05.",
+  "version_scope": "The current arXiv record checked on this date lists only v1 and no journal reference.",
+  "search_scope": {
+    "date": "2026-09-05",
+    "queries": [
+      "\"Fornal\" \"Sun\" \"2607.24655\"",
+      "\"On the problem of large gcd for disjoint residue classes\""
+    ],
+    "primary_result": "https://arxiv.org/abs/2607.24655",
+    "result": "No later primary version or journal acceptance located in this targeted search; secondary summaries are not proof or acceptance evidence.",
+    "exhaustive": false
+  },
+  "mathematical_scope": {
+    "complete_rewritten_proof_components": 9,
+    "external_inputs": "Prime number theorem and Mertens estimates, stated in external_inputs.md; CRT has an existing canonical elementary proof.",
+    "source_sketch": "Remark1 alternative partition is not a complete reconstructed proof.",
+    "corrections": "The result pages identify local argument repairs, without changing the original PDF.",
+    "local_lean_build": false,
+    "journal_acceptance_verified": false,
+    "independent_external_certification_claimed": false
+  }
+}

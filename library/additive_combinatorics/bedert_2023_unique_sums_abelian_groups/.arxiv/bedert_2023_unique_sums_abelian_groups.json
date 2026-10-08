@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Benjamin Bedert"
+  ],
+  "category": "math.CO",
+  "date": "2023-09-19",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 777322,
+    "files": 1,
+    "sha256": "dd90caa2e62c892312c77efa4059543944357987da63f120cc9a1fe5b0c5e2ef",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2303.15134v2"
+  },
+  "id": "2303.15134",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 317874,
+    "previous": [],
+    "sha256": "09be047a2839f411e9218d51e0660ec24921b0cabf935c713db5047fb5d99178",
+    "url": "https://arxiv.org/pdf/2303.15134v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2303.15134v2 [math.CO] 19 Sep 2023",
+  "tex": {
+    "archive": {
+      "bytes": 27148,
+      "name": "arXiv-2303.15134v2.tar.gz",
+      "sha256": "995940e32fca91b811c1bf52ba801b4c135f21e6e38bcb7b0eb43f9a19ca089f"
+    },
+    "bytes": 94586,
+    "files": 3,
+    "sha256": "a30a77b275d4836f0758c2fd28538e989bb81f8a02e383789e565d05beb59bd5",
+    "url": "https://arxiv.org/src/2303.15134v2"
+  },
+  "title": "On unique sums in Abelian groups",
+  "version": 2
+}

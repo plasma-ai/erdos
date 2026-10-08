@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Wei-Chun Chen",
+    "Wei-Hsuan Yu"
+  ],
+  "category": "math.CO",
+  "date": "2025-08-31",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 509684,
+    "files": 1,
+    "sha256": "8576254f2a5dc7c38c4b2aa7723baed0b84aa0a9dfa17956eb9979d07cf94912",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2509.00858v1"
+  },
+  "id": "2509.00858",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 209140,
+    "previous": [],
+    "sha256": "6251bce49f5a737786501e8055ab7868cddd03edcdc90bcc70b377c8a0413ed5",
+    "url": "https://arxiv.org/pdf/2509.00858v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2509.00858v1 [math.CO] 31 Aug 2025",
+  "tex": {
+    "archive": {
+      "bytes": 17317,
+      "name": "arXiv-2509.00858v1.tar.gz",
+      "sha256": "98a7f2af899c21cd0b1536d57353342d6e94b2f9178103f57a8d757596e9674b"
+    },
+    "bytes": 68528,
+    "files": 3,
+    "sha256": "50e23d71168af9023b9eae055fbbcab3d87f72e6d9366f47bdcc616ba15ec925",
+    "url": "https://arxiv.org/src/2509.00858v1"
+  },
+  "title": "Bounds on two-distance sets in Euclidean space and Unit Sphere",
+  "version": 1
+}

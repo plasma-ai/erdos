@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "el Houcein el Abdalaoui"
+  ],
+  "category": "math.CA",
+  "date": "2025-04-30",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 216120,
+    "files": 1,
+    "sha256": "7017b5fdd54cd4fab5c6af2877a2245311a26b62f0d708bfbaac9200c94185a0",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2504.21499v1"
+  },
+  "id": "2504.21499",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 185158,
+    "previous": [],
+    "sha256": "d49e5e7cd264abfa71a694877a601a00ce8fb474426620411f13da882356b0ac",
+    "url": "https://arxiv.org/pdf/2504.21499v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2504.21499v1 [math.CA] 30 Apr 2025",
+  "tex": {
+    "archive": {
+      "bytes": 11488,
+      "name": "arXiv-2504.21499v1.gz",
+      "sha256": "918e14002b6439d7f13d615a5a06321a1651589a5f97d2090bb65f03b0d8dc10"
+    },
+    "bytes": 36522,
+    "files": 1,
+    "sha256": "1386f5e5c95dc19f67471975bdd813fa6ca1caef30c2485bd3c9342a591661bd",
+    "url": "https://arxiv.org/src/2504.21499v1"
+  },
+  "title": "On $L^\\alpha$-flatness of Erd\\H{o}s-Littlewood's polynomials",
+  "version": 1
+}

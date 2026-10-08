@@ -1,0 +1,42 @@
+{
+  "authors": [
+    "Stijn Cambie",
+    "Arne Decadt",
+    "Yanni Dong",
+    "Tao Hu",
+    "Quanyu Tang"
+  ],
+  "category": "math.CO",
+  "date": "2026-03-07",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 1974192,
+    "files": 4,
+    "sha256": "73813bb7b9f215631b38db981f6bd187c1bfcba0160ceec590b2a43606f151eb",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2603.07088v1"
+  },
+  "id": "2603.07088",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 1356497,
+    "previous": [],
+    "sha256": "a0410a79d64b92f082fc354c6417c0a78a35d1dda43c5e7ae87455db0210bca9",
+    "url": "https://arxiv.org/pdf/2603.07088v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2603.07088v1 [math.CO] 7 Mar 2026",
+  "tex": {
+    "archive": {
+      "bytes": 662086,
+      "name": "arXiv-2603.07088v1.tar.gz",
+      "sha256": "3e6b1180bb2b8572db4dec46d5040427d24d5e5157909f9d0f1663effb854c4b"
+    },
+    "bytes": 952062,
+    "files": 7,
+    "sha256": "b89c4abe85cef6cf42e565f24aedb14ad41c5aa6de743df2f3aca0be4802db69",
+    "url": "https://arxiv.org/src/2603.07088v1"
+  },
+  "title": "On the maximum product of distances of diameter $2$ point sets",
+  "version": 1
+}

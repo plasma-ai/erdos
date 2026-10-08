@@ -1,0 +1,64 @@
+{
+  "subject_date": "2026-09-17",
+  "provenance": "subject_date and the path and original_path fields are the campaign working repository's date and paths, not this repository's; that repository's history is no part of this repository's history. Each frozen_copy and asset field names the retained copy beside this manifest, which is the reviewed text (the PDF's SHA-256 value in subjects/_index.txt was replaced by a removal marker on 2026-10-02); the PDF is identified by its path and byte count, and Git LFS records its digest.",
+  "mathematical_subjects": [
+    {
+      "role": "primary source",
+      "path": "erdos/library/irrationality/duverney_1995_irrationalite_q_analogue_zeta2/duverney_1995_irrationalite_q_analogue_zeta2.pdf",
+      "bytes": 2438038,
+      "git_storage": "LFS pointer; hydrate only this exact source object before reading archived subject"
+    },
+    {
+      "role": "source digest",
+      "path": "erdos/library/irrationality/duverney_1995_irrationalite_q_analogue_zeta2/_index.md",
+      "bytes": 6119,
+      "frozen_copy": "subjects/_index.txt"
+    },
+    {
+      "role": "canonical theorem extraction",
+      "path": "erdos/library/irrationality/duverney_1995_irrationalite_q_analogue_zeta2/main_theorem.md",
+      "bytes": 4625,
+      "frozen_copy": "subjects/main_theorem.txt"
+    },
+    {
+      "role": "canonical lemma and sparse-series extraction",
+      "path": "erdos/library/irrationality/duverney_1995_irrationalite_q_analogue_zeta2/lemma.md",
+      "bytes": 6215,
+      "frozen_copy": "subjects/lemma.txt"
+    },
+    {
+      "role": "consumer",
+      "path": "wiki/problems/irrationality/E0250.md",
+      "bytes": 4078,
+      "frozen_copy": "subjects/E0250.txt"
+    }
+  ],
+  "source_version": "Daniel Duverney, C. R. Acad. Sci. Paris Serie I 321 (1995), 1287-1289; author-hosted published scan",
+  "file_page_to_printed_page": {
+    "1": 1287,
+    "2": 1288,
+    "3": 1289
+  },
+  "frozen_markdown_assets": [
+    {
+      "original_path": "erdos/library/irrationality/duverney_1995_irrationalite_q_analogue_zeta2/_index.md",
+      "asset": "subjects/_index.txt",
+      "bytes": 6119
+    },
+    {
+      "original_path": "erdos/library/irrationality/duverney_1995_irrationalite_q_analogue_zeta2/main_theorem.md",
+      "asset": "subjects/main_theorem.txt",
+      "bytes": 4625
+    },
+    {
+      "original_path": "erdos/library/irrationality/duverney_1995_irrationalite_q_analogue_zeta2/lemma.md",
+      "asset": "subjects/lemma.txt",
+      "bytes": 6215
+    },
+    {
+      "original_path": "wiki/problems/irrationality/E0250.md",
+      "asset": "subjects/E0250.txt",
+      "bytes": 4078
+    }
+  ]
+}

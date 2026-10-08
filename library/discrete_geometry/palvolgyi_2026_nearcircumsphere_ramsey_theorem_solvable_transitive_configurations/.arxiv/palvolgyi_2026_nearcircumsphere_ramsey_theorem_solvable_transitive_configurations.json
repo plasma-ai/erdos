@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "D\\\"om\\\"ot\\\"or P\\'alv\\\"olgyi"
+  ],
+  "category": "math.CO",
+  "date": "2026-08-11",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 734077,
+    "files": 1,
+    "sha256": "ee2ecb94b5cdb9d595ce875a3fb0fd9ed790ae6220e090d1f099227578237ada",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2608.10865v1"
+  },
+  "id": "2608.10865",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 579288,
+    "previous": [],
+    "sha256": "bd9cc48c421a4ff3fde89577f4e0c131303c1130dc8659eb4d13220ec7d9b5ea",
+    "url": "https://arxiv.org/pdf/2608.10865v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2608.10865v1 [math.CO] 11 Aug 2026",
+  "tex": {
+    "archive": {
+      "bytes": 33213,
+      "name": "arXiv-2608.10865v1.tar.gz",
+      "sha256": "b581f330a5378c999bf98996b1246866328f4eb6d476d89026d03ee1e35c4d32"
+    },
+    "bytes": 102168,
+    "files": 2,
+    "sha256": "8ab0bd55e02820841a27fc320e26da09334acbe18a3599836cc3cbc89a68e577",
+    "url": "https://arxiv.org/src/2608.10865v1"
+  },
+  "title": "A nearcircumsphere-Ramsey Theorem for Solvable Transitive Configurations",
+  "version": 1
+}

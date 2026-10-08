@@ -1,0 +1,48 @@
+{
+  "authors": [
+    "Mert Yuksekgonul",
+    "Daniel Koceja",
+    "Xinhao Li",
+    "Federico Bianchi",
+    "Jed McCaleb",
+    "Xiaolong Wang",
+    "Jan Kautz",
+    "Yejin Choi",
+    "James Zou",
+    "Carlos Guestrin",
+    "Yu Sun"
+  ],
+  "category": "cs.LG",
+  "date": "2026-01-22",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 3255783,
+    "files": 5,
+    "sha256": "41331693d6a29e73a2d9d0072216b8c80bd48836884c037651d4dd9517d6dd6a",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2601.16175v1"
+  },
+  "id": "2601.16175",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 1282384,
+    "previous": [],
+    "sha256": "1ee96a4710b2969eb9eb4238129562c36078543101a6e8b54acda36e42c583c6",
+    "url": "https://arxiv.org/pdf/2601.16175v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2601.16175v1 [cs.LG] 22 Jan 2026",
+  "tex": {
+    "archive": {
+      "bytes": 395330,
+      "name": "arXiv-2601.16175v1.tar.gz",
+      "sha256": "d909ba3ea1f8518abad77ec9c4aea040addb00e359c1823d66eec6acbc1a0573"
+    },
+    "bytes": 687876,
+    "files": 20,
+    "sha256": "302706adeb5260a0b4038abab4476c7fa58fb8a402b1bc0b70bb82da87103265",
+    "url": "https://arxiv.org/src/2601.16175v1"
+  },
+  "title": "Learning to Discover at Test Time",
+  "version": 1
+}

@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "B\\'ela Csaba"
+  ],
+  "category": "math.CO",
+  "date": "2025-03-01",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 385819,
+    "files": 1,
+    "sha256": "b324d7012f0d3ffe1b8a2b927ef7309855e41b7c12bbe2bc95cc734ed3be99ec",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2503.00644v1"
+  },
+  "id": "2503.00644",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 193431,
+    "previous": [],
+    "sha256": "c02ca56df89a7dcff638ed1f415588475155f60303bc4f590937c52acf5537cd",
+    "url": "https://arxiv.org/pdf/2503.00644v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2503.00644v1 [math.CO] 1 Mar 2025",
+  "tex": {
+    "archive": {
+      "bytes": 15119,
+      "name": "arXiv-2503.00644v1.gz",
+      "sha256": "84c250222c411aacdebd7a4df5b6e76ebef7fbeddcbc3948839fdf2292e6ba6d"
+    },
+    "bytes": 43626,
+    "files": 1,
+    "sha256": "9682c2a1523cc9f3c38a2cf45fd0ddcfa28f2b4f1fc310dd4af2160a10b11463",
+    "url": "https://arxiv.org/src/2503.00644v1"
+  },
+  "title": "On the Ramsey-Tur\\'an problem for 4-cliques",
+  "version": 1
+}

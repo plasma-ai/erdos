@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Shouqiao Wang",
+    "Davide Crapis"
+  ],
+  "category": "math.NT",
+  "date": "2026-05-08",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 449707,
+    "files": 1,
+    "sha256": "c0d9846a6086f35a63de362437af4ac6e7153557c94683d3f3746eeadd45022a",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2605.08542v1"
+  },
+  "id": "2605.08542",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 413851,
+    "previous": [],
+    "sha256": "bb87fc23cda9981a43f61c3e421b0a7f2a4f96415ca994999f35fe7d2078c490",
+    "url": "https://arxiv.org/pdf/2605.08542v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2605.08542v1 [math.NT] 8 May 2026",
+  "tex": {
+    "archive": {
+      "bytes": 13315,
+      "name": "arXiv-2605.08542v1.tar.gz",
+      "sha256": "ddf7b793917c41d1075d0b70af9a2635b4450e35f8419944561a161a263038e4"
+    },
+    "bytes": 42467,
+    "files": 2,
+    "sha256": "9dcc3c5a664ea5de35cf8fe68be41051a6d325c68cab0e86c22aa64753eb9cf6",
+    "url": "https://arxiv.org/src/2605.08542v1"
+  },
+  "title": "A Complete Answer to Erd\\H{o}s Problem 690",
+  "version": 1
+}

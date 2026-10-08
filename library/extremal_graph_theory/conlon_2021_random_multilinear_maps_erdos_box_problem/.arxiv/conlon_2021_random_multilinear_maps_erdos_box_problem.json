@@ -1,0 +1,40 @@
+{
+  "authors": [
+    "David Conlon",
+    "Cosmin Pohoata",
+    "Dmitriy Zakharov"
+  ],
+  "category": "math.CO",
+  "date": "2021-09-25",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 178710,
+    "files": 1,
+    "sha256": "72d6bc80efdb6da5e3cb3767035c5df02134556c9f141a56ce1ef6b659ea0178",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2011.09024v2"
+  },
+  "id": "2011.09024",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 237101,
+    "previous": [],
+    "sha256": "124027b4a7c1dcaa7eeb6bacd45805396b358697c5de9ccc115ca7662276a146",
+    "url": "https://arxiv.org/pdf/2011.09024v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2011.09024v2 [math.CO] 25 Sep 2021",
+  "tex": {
+    "archive": {
+      "bytes": 39075,
+      "name": "arXiv-2011.09024v2.tar.gz",
+      "sha256": "49e21f947eac74e452530209b735b29e8a04eaaa549542ed6c92398e0fe0648c"
+    },
+    "bytes": 82321,
+    "files": 5,
+    "sha256": "481738e06e1f8e44c261862b4e89b88f7834cafa808411bf278fae0fa3999931",
+    "url": "https://arxiv.org/src/2011.09024v2"
+  },
+  "title": "Random multilinear maps and the Erd\\H{o}s box problem",
+  "version": 2
+}

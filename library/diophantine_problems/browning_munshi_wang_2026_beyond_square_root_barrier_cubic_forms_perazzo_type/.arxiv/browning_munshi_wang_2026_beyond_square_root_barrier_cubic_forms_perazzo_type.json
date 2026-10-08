@@ -1,0 +1,40 @@
+{
+  "authors": [
+    "Tim Browning",
+    "Ritabrata Munshi",
+    "Victor Y. Wang"
+  ],
+  "category": "math.NT",
+  "date": "2026-04-21",
+  "fetched": "2026-09-24",
+  "html": {
+    "bytes": 2222883,
+    "files": 1,
+    "sha256": "7868c7840f1d151d2fa64ed8772115e2515e7a61bc9592bfda083754ca76cebb",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2604.19045v1"
+  },
+  "id": "2604.19045",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 862306,
+    "previous": [],
+    "sha256": "41a0d4faf370b86227fccdae3a688f3641c3c5a66078c2b503a8cb1cbb960798",
+    "url": "https://arxiv.org/pdf/2604.19045v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2604.19045v1 [math.NT] 21 Apr 2026",
+  "tex": {
+    "archive": {
+      "bytes": 66113,
+      "name": "arXiv-2604.19045v1.tar.gz",
+      "sha256": "ad3417a742a876848f48b245a8c73325f793d2e2672b42a50d5db57cf13dbce2"
+    },
+    "bytes": 226585,
+    "files": 2,
+    "sha256": "5a5f3943766cbccdb7579493f34de80a8d4b74868b924c6cee233561cc607fb9",
+    "url": "https://arxiv.org/src/2604.19045v1"
+  },
+  "title": "Beyond the square-root barrier: cubic forms of Perazzo type",
+  "version": 1
+}

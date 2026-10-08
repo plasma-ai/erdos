@@ -1,0 +1,27 @@
+{
+  "title": "Infinite r-Powerful Sums",
+  "source_author_line": "GPT-5.5 Pro",
+  "public_claim_contributor": "Liam Price",
+  "public_comment": "https://www.erdosproblems.com/forum/thread/939#post-6640",
+  "public_manuscript_url": "https://www.overleaf.com/read/vjtdssgrgdkk#12a637",
+  "download_url": "https://www.overleaf.com/project/6a1349c873f44487d125784a/download/zip",
+  "accessed": "2026-09-27",
+  "original_filename": "main.tex",
+  "original_bytes": 3786,
+  "retained_pdf": {
+    "pdf_bytes": 176037,
+    "date_utc": "2026-09-28T03:03:23+00:00",
+    "pdf_origin": "Locally typeset from unchanged public Overleaf main.tex; not a publisher PDF or public build verification",
+    "command": [
+      "pdflatex",
+      "-no-shell-escape",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "main.tex"
+    ],
+    "engine": "pdfTeX 3.141592653-2.6-1.40.29 (TeX Live 2026)",
+    "passes": 2,
+    "pages": 1
+  },
+  "scope": "Acquisition and local typesetting provenance of the manuscript (text not held); no publication or formal verification certification."
+}

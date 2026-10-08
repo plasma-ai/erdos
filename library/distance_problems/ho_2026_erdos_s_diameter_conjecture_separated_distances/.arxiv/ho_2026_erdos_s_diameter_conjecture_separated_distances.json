@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Boon Suan Ho"
+  ],
+  "category": "math.CO",
+  "date": "2026-04-16",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 154200,
+    "files": 1,
+    "sha256": "e810c7c9be55fb6bebd5d2d6665431da8dfda768a347bca5b74bc122d9716ad7",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2604.15305v1"
+  },
+  "id": "2604.15305",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 466103,
+    "previous": [],
+    "sha256": "a6f22ece0bf442229618a1cb1f137ce6924809d1e98957ec341a9a762a3c4967",
+    "url": "https://arxiv.org/pdf/2604.15305v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2604.15305v1 [math.CO] 16 Apr 2026",
+  "tex": {
+    "archive": {
+      "bytes": 6684,
+      "name": "arXiv-2604.15305v1.tar.gz",
+      "sha256": "7955b2505baacd35cc210b79154e59d84cbf2fbe32d23d2bfa62c1c21353f7af"
+    },
+    "bytes": 16986,
+    "files": 2,
+    "sha256": "8a6550503490f109f921872a8eb0a051e2aedaad3ce9dedd47105e6d15657fbd",
+    "url": "https://arxiv.org/src/2604.15305v1"
+  },
+  "title": "Erd\\H{o}s's diameter conjecture for separated distances fails in high dimensions",
+  "version": 1
+}

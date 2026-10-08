@@ -1,0 +1,99 @@
+{
+  "title": "On a problem involving unit fractions",
+  "authors": [
+    "Stefan Steinerberger"
+  ],
+  "version_read": "arXiv:2403.17041v5",
+  "version_date": "2024-04-28",
+  "source_url": "https://arxiv.org/pdf/2403.17041v5",
+  "metadata_url": "https://arxiv.org/abs/2403.17041",
+  "arxiv_doi": "10.48550/arXiv.2403.17041",
+  "edition_read": {
+    "bytes": 90200,
+    "physical_pages": 4,
+    "printed_pages": "1–4"
+  },
+  "selection_provenance": "The copy read is arXiv:2403.17041v5 (28 April 2024), 4 pages, 90,200 bytes, identified by its first-page arXiv margin; no earlier version was compared.",
+  "primary_metadata": {
+    "observed_date": "2026-09-05",
+    "version_history_utc": [
+      "2024-03-25T15:02:53Z",
+      "2024-03-28T17:25:33Z",
+      "2024-03-29T16:19:11Z",
+      "2024-04-01T14:13:07Z",
+      "2024-04-28T09:26:27Z"
+    ],
+    "latest_version_in_inspected_record": "v5",
+    "journal_reference_field": "Absent in the inspected record; this is not proof that no later publication exists."
+  },
+  "author_archival_statement": {
+    "locator": "v5 p. 1, Note added",
+    "version_date": "2024-04-28",
+    "content": "The author says the preprint is kept for archival reasons and is not submitted to any journal. He credits the 2017 MathOverflow discussion and reports two subsequent teams obtaining the sharp constant.",
+    "limits": "These are dated author statements, not a current submission-status claim or an independent priority adjudication."
+  },
+  "earlier_versions": "No earlier-version PDF was acquired or compared in this unit.",
+  "source_labels": {
+    "theorem": "Unnumbered Theorem, p. 1; proof §§2.1–2.4, pp. 2–3.",
+    "lemma": "Unnumbered Lemma, §2.3, p. 2; proof p. 3.",
+    "lower_bound": "Unnumbered elementary remark after the Theorem, p. 1."
+  },
+  "result_pages": [
+    {
+      "page": "signed_moment.md",
+      "source": "§§2.1–2.2, p. 2",
+      "scope": "Exact finite signed-tail correspondence and exponential-moment product."
+    },
+    {
+      "page": "lemma.md",
+      "source": "§2.3, pp. 2–3; comparison in §2.2",
+      "scope": "Split-product bound, elementary quadratic bound and limitation of the global quadratic estimate."
+    },
+    {
+      "page": "theorem.md",
+      "source": "Theorem p. 1 and §2.4 p. 3",
+      "scope": "Fixed scalar enclosure, integer cutoff and full eventual bound for the relaxed count; exact-one upper bound by containment."
+    },
+    {
+      "page": "upper_half_lower_bound.md",
+      "source": "p. 1 lower-bound remark",
+      "scope": "Parity-safe upper-half construction for every positive integer n."
+    }
+  ],
+  "precision_records": [
+    {
+      "id": "ST-01",
+      "kind": "One-sided-event clarification; the PDF is correct",
+      "finding": "The exact event is the lower signed tail. The upper tail has equal count by reflection; their absolute-value union counts twice as many when H_n>2. The PDF uses the two one-sided events correctly."
+    },
+    {
+      "id": "ST-02",
+      "kind": "Endpoint refinement of a source remark",
+      "finding": "The informal upper half {n/2,...,n} is replaced by {floor(n/2)+1,...,n}; this proves an all-n bound and handles parity and the small even failures of including n/2."
+    },
+    {
+      "id": "ST-03",
+      "kind": "Integer and eventual-parameter expansion",
+      "finding": "Use m=floor(cn) and integral harmonic-number bounds instead of treating cn or n/8 as integer indices. All required positive parameters hold eventually."
+    },
+    {
+      "id": "ST-04",
+      "kind": "Finite scalar verification",
+      "finding": "The fixed choice c=0.0384235 is enclosed by exact rational expressions. No global optimization or explicit eventual threshold is claimed."
+    },
+    {
+      "id": "ST-05",
+      "kind": "Historical scope of the exact-count speculation",
+      "finding": "The original speculation on the exact count is dated. Later results of Conlon, Fox, He, Mubayi, Pham, Suk and Verstraëte give the same sharp exponential rate for exact and relaxed counts; equality of rates does not imply a multiplicative equivalence."
+    }
+  ],
+  "mathematical_inputs": "Finite uniform probability, ordinary exponential and logarithm identities, their elementary series, and integral comparisons. The necessary bounds are expanded on the result pages; no deep external theorem is an input.",
+  "excluded_proof_scopes": [
+    "The 2017 MathOverflow argument.",
+    "The sharp-rate and exact-count methods of Conlon, Fox, He, Mubayi, Pham, Suk and Verstraëte and of Liu–Sawhney.",
+    "The Basel identity pi^2/6, whose sharper variance bound is not needed.",
+    "A globally optimized scalar, an explicit n0, or any formal proof/build."
+  ],
+  "related_problem": "problems/unit_fractions/E0297",
+  "scalar_certificate": "scalar_certificate.json"
+}

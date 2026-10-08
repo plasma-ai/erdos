@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Kenneth Moore"
+  ],
+  "category": "math.CO",
+  "date": "2026-08-10",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 114547,
+    "files": 2,
+    "sha256": "964e5c471e3dfddd486df6e649443f25184b85753e6355229740fde09dce8108",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2608.09649v1"
+  },
+  "id": "2608.09649",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 328018,
+    "previous": [],
+    "sha256": "2a1f866a06e5a8452f8b8425e6e244706a23eb039bb427eac5a51ade028fd45e",
+    "url": "https://arxiv.org/pdf/2608.09649v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2608.09649v1 [math.CO] 10 Aug 2026",
+  "tex": {
+    "archive": {
+      "bytes": 12545,
+      "name": "arXiv-2608.09649v1.tar.gz",
+      "sha256": "6d02568bb46400682da9ed29f6c3f3451e3943c788b8cf3d740c080284284e2d"
+    },
+    "bytes": 22423,
+    "files": 4,
+    "sha256": "3b30324ba2283b2f49ca00ab44ea1d43418b31f43297bc28b78194681843b412",
+    "url": "https://arxiv.org/src/2608.09649v1"
+  },
+  "title": "A pyramid with a Ramsey base is Ramsey",
+  "version": 1
+}

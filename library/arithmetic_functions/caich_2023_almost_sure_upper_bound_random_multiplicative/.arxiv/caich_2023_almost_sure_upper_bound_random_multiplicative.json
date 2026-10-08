@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Rachid Caich"
+  ],
+  "category": "math.NT",
+  "date": "2024-08-19",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 795041,
+    "files": 1,
+    "sha256": "0c69306a1abf9d857bae3e3bacd81118a75eaa15f0f680314b13d61086645b30",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2304.00943v2"
+  },
+  "id": "2304.00943",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 305037,
+    "previous": [],
+    "sha256": "63d786b7645204cec837e141e97109a9d8aae013ac4d397d3efd7d4ef5b599a2",
+    "url": "https://arxiv.org/pdf/2304.00943v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2304.00943v2 [math.NT] 19 Aug 2024",
+  "tex": {
+    "archive": {
+      "bytes": 22802,
+      "name": "arXiv-2304.00943v2.tar.gz",
+      "sha256": "8c7716462d8ade27e8d622703185d3898d79b397bac1c20a4c772a0112510f91"
+    },
+    "bytes": 89531,
+    "files": 3,
+    "sha256": "8860d3d7e709243b5100364abc58e431394fe1884a3d212560c6945bfc921418",
+    "url": "https://arxiv.org/src/2304.00943v2"
+  },
+  "title": "Almost sure upper bound for random multiplicative functions",
+  "version": 2
+}

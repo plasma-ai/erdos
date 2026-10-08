@@ -1,0 +1,854 @@
+\documentclass[11pt,aspectratio=169]{beamer}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,booktabs,array}
+\usetheme{default}
+\definecolor{navy}{RGB}{20,50,110}
+\definecolor{brick}{RGB}{160,40,30}
+\setbeamercolor{structure}{fg=navy}
+\setbeamercolor{title}{fg=navy}
+\setbeamercolor{frametitle}{fg=navy}
+\setbeamercolor{alerted text}{fg=brick}
+\setbeamercolor{block title}{fg=white,bg=navy}
+\setbeamercolor{block body}{bg=navy!5}
+\setbeamerfont{frametitle}{series=\bfseries,size=\large}
+\setbeamerfont{title}{series=\bfseries,size=\Large}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}{\hfill\scriptsize\textcolor{gray}{
+  \insertframenumber\,/\,\inserttotalframenumber}\hspace{3mm}\vspace{2mm}}
+\setbeamertemplate{itemize items}[circle]
+\setbeamertemplate{blocks}[default]
+\setbeamersize{text margin left=9mm,text margin right=9mm}
+\setlength{\parskip}{5pt}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\stir}[2]{\genfrac{\{}{\}}{0pt}{}{#1}{#2}}
+\newcommand{\ind}[1]{\mathbf{1}_{[#1]}}
+\newcommand{\lean}[1]{\texttt{\detokenize{#1}}}
+\newcommand{\takeaway}[1]{\par\medskip{\color{navy}\bfseries #1}\par}
+\newcommand{\source}[2]{\par\medskip{\scriptsize Source: \href{#1}{#2}.}}
+\title{Erd\H{o}s Problem 252}
+\subtitle{Factorial tails, exact cancellation, and one surviving shift}
+\author{Tokengrinder}
+\date{September 2026}
+\hypersetup{pdftitle={Erdos 252: explaining the proof},pdfauthor={Tokengrinder},
+  pdfsubject={A guided exposition of the Lean proof},
+  pdfkeywords={Erdos 252, irrationality, factorial series, Lean}}
+\begin{document}
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+\begin{frame}{The theorem concerns every divisor-power sum}
+
+For $n\ge1$ and $k\in\N=\{0,1,2,\ldots\}$, define
+\[
+ \sigma_k(n)=\sum_{d\mid n}d^k,
+ \qquad
+ \alpha_k=\sum_{n\ge1}\frac{\sigma_k(n)}{n!}.
+\]
+For example, the divisors of $6$ are $1,2,3,6$:
+\[
+ \sigma_0(6)=4,\qquad \sigma_1(6)=12,\qquad \sigma_2(6)=50.
+\]
+The series converges: $\sigma_k(n)\le n^{k+1}$, and factorial growth wins.
+\begin{block}{Main theorem}
+$\alpha_k$ is irrational for every natural number $k$.
+\end{block}
+We explain the positive degrees first; $k=0$ has a shorter ending.
+
+\note{[Sources] Local proof: Erdos252/Solution.lean and PROOF.tex. [/Sources]}
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{Earlier results reached the fourth power}
+
+\begin{center}
+\begin{tabular}{@{}lp{9.7cm}@{}}
+\toprule
+Exponent & Prior results \\
+\midrule
+$k=0$ & Elementary factorial-tail argument.\\[2pt]
+$k=1,2$ & Classical cases; see Pratt's 1950s references [9,11].\\[2pt]
+$k=3$ & Schlage-Puchta (2006) and Friedlander--Luca--Stoiciu (2007),
+independently.\\[2pt]
+$k=4$ & Pratt (2022).\\[2pt]
+$k\ge5$ & Listed as open: catalogue revision of January 2026.\\
+\bottomrule
+\end{tabular}
+\end{center}
+Earlier all-degree results assumed Schinzel's hypothesis H or a suitable
+prime-tuples conjecture.
+\takeaway{The argument here uses fixed coprime integers and exact cancellation.}
+Its only prime-selection step is to choose one sufficiently large prime.
+\source{https://arxiv.org/abs/2209.11124}{Pratt (2022), introduction and references}
+
+\note{[Sources] https://arxiv.org/pdf/2209.11124, introduction;
+https://math.colgate.edu/~integers/h31/h31.pdf, introduction;
+https://www.erdosproblems.com/forum/thread/252?order=newest,
+catalogue revision dated 22 January 2026.
+[/Sources] This is a description of prior literature, not a claim that an external
+catalogue has accepted this formal artifact. Pratt's references [9,11] distinguish
+the 1952/1953 problem statements from the 1953/1954 published solutions.}
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{Warm-up: factorials expose a rational denominator}
+
+Suppose $e=\sum_{m\ge0}1/m!=a/b$ with $a,b\ge1$ integers.
+Then
+\[
+ b!\,e-b!\sum_{m\le b}\frac1{m!}
+   =b!\sum_{m>b}\frac1{m!}\ \in\Z .
+\]
+Yet
+\[
+ 0<b!\sum_{m>b}\frac1{m!}
+   <\sum_{j\ge1}\frac1{(b+1)^j}
+   =\frac1b\le1.
+\]
+There is no integer strictly between $0$ and $1$.
+\begin{block}{The principle we will reuse}
+A sequence of integers tending to $0$ is eventually exactly $0$.
+\end{block}
+
+\note{[Sources] Local proof: Erdos252/Solution.lean and PROOF.tex. [/Sources]}
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{Rationality would make all late tails integers}
+
+Fix $k$. Scale the tail after the $n$-th term:
+\[
+ T_n:=n!\sum_{m>n}\frac{\sigma_k(m)}{m!}.
+\]
+If $\alpha_k=a/b$ with $a\in\Z$ and $b\ge1$, then for $n\ge b$,
+\[
+ T_n=
+ \underbrace{\frac{n!a}{b}}_{\text{integer}}
+ -
+ \underbrace{\sum_{m=1}^{n}\sigma_k(m)\frac{n!}{m!}}_{\text{integer}}.
+\]
+All later work begins with this consequence:
+\[
+ \alert{\alpha_k\in\Q\quad\Longrightarrow\quad T_n\in\Z
+ \text{ for all sufficiently large }n.}
+\]
+
+\note{[Sources] Local proof: eventually_scaledTail_integral and
+seriesPrefix_integral. [/Sources] The talk's T_n equals Lean's scaledTail k (n+1);
+this indexing convention is used consistently throughout.}
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{The original tails need not become small}
+
+The first terms are
+\[
+ T_n=\frac{\sigma_k(n+1)}{n+1}
+ +\frac{\sigma_k(n+2)}{(n+1)(n+2)}+\cdots .
+\]
+The divisor $n+1$ alone gives the lower bound
+\[
+ T_n\ge(n+1)^{k-1}\qquad(k\ge1).
+\]
+\begin{itemize}
+\item For $k=1$, the tail is at least $1$; it cannot tend to $0$.
+\item For $k\ge2$, this lower bound tends to infinity.
+\end{itemize}
+\takeaway{We need a small integer combination of tails, not a small individual tail.}
+
+\note{[Sources] Local proof: Erdos252/Solution.lean and PROOF.tex. [/Sources]}
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{The proof has four main moves}
+
+\begin{enumerate}
+\item \textbf{Expand.} Separate a finite main term from an error smaller than $1/n$.
+\medskip
+\item \textbf{Align.} Read several tails at compatible dilated indices.
+\medskip
+\item \textbf{Cancel.} Finite differences remove all lower powers.
+The weighted integer is eventually zero, forcing the remaining sum to tend to zero.
+\medskip
+\item \textbf{Separate.} Two progression averages detect one surviving shift
+differently. They cannot both be zero.
+\end{enumerate}
+\takeaway{Factorials provide integrality; algebra cancels; averages give the contradiction.}
+
+\note{[Sources] Local proof: Erdos252/Solution.lean and PROOF.tex. [/Sources]}
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{1. Reciprocal products have integer coefficients}
+
+Center each denominator at its largest factor $x$:
+\[
+\begin{aligned}
+ \frac1{x(x-1)}&=\frac1{x^2}+\frac1{x^3}+\frac1{x^4}+\cdots,\\
+ \frac1{x(x-1)(x-2)}&=\frac1{x^3}+\frac3{x^4}+\frac7{x^5}+\cdots.
+\end{aligned}
+\]
+In general, for $x>j$,
+\[
+ \frac1{x(x-1)\cdots(x-j)}
+   =\sum_{i\ge j}\stir{i}{j}\frac1{x^{i+1}}.
+\]
+$\stir{i}{j}$ counts partitions of $i$ objects into $j$ nonempty blocks.
+In particular, $\stir{i}{j}=0$ for $i<j$, and $\stir{j}{j}=1$.
+\takeaway{We keep only the powers through $x^{-(k+1)}$.}
+
+\note{[Sources] Local proof: stirlingPoly_recurrence, stirlingErr_recurrence,
+stirlingErr_bounds. [/Sources] The infinite generating function is an explanatory identity.
+Lean proves the finite expansion and its error directly by recurrence; no unproved
+infinite-series expansion is imported.}
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{1. The discarded part is smaller than $1/n$}
+
+With $j$ indexing the shifted argument and $i+1$ the denominator power,
+\[
+ T_n=\sum_{j=0}^{k}\sum_{i=j}^{k}\stir{i}{j}
+       \frac{\sigma_k(n+j+1)}{(n+j+1)^{i+1}}+E_n.
+\]
+The error has two parts:
+\begin{itemize}
+\item the terms after the first $k+1$ terms of the actual tail;
+\item the higher reciprocal powers of each retained denominator.
+\end{itemize}
+Divisor pairing gives $\sigma_k(m)\le64m^k\sqrt m$.
+A geometric majorant and the finite Stirling remainder bound then give
+\[
+ 0\le E_n\le C_k n^{-3/2}\quad\text{for large }n,
+ \qquad\alert{nE_n\longrightarrow0}.
+\]
+Here $C_k$ is a fixed constant depending only on $k$.
+
+\note{[Sources] Local proof: Erdos252/Solution.lean and PROOF.tex. [/Sources]}
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{2. Multiplicativity turns dilations into shifts}
+
+Choose a positive integer $p$ coprime to $1,\ldots,k+1$, and an offset $0\le t<p$.
+For large $N\equiv t\pmod{p^2}$, put $n=(N-t)/p$.
+\[
+ p\mid n,\qquad
+ \gcd(p,n+j+1)=\gcd(p,j+1)=1 \quad(0\le j\le k).
+\]
+Define $r=(j+1)p-t$. Then $p(n+j+1)=N+r$, so
+\[
+ \sigma_k(p)\,\sigma_k(n+j+1)=\sigma_k(N+r).
+\]
+Consequently,
+\[
+ \boxed{\ \sigma_k(p)\frac{\sigma_k(n+j+1)}{(n+j+1)^{i+1}}
+       =p^{i+1}\frac{\sigma_k(N+r)}{(N+r)^{i+1}}\ }.
+\]
+\takeaway{The multiplier now appears as a polynomial factor $p^{i+1}$.}
+
+\note{[Sources] Local proof: Erdos252/Solution.lean and PROOF.tex. [/Sources]}
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{2. Example: three tails share the same first shift}
+
+For $k=1$, use three pairwise coprime multipliers, including the composite $9$:
+\begin{center}
+\renewcommand{\arraystretch}{1.35}
+\begin{tabular}{@{}c|ccc@{}}
+ & first tail & second tail & third tail\\
+\hline
+$p$ & $5$ & $7$ & $9$\\
+$t$ & $0$ & $2$ & $4$\\
+$n_p=(N-t)/p$ & $N/5$ & $(N-2)/7$ & $(N-4)/9$\\
+$p(n_p+1)$ & $N+5$ & $N+5$ & $N+5$\\
+$p(n_p+2)$ & $N+10$ & $N+12$ & $N+14$
+\end{tabular}
+\end{center}
+Choose $N\equiv0\ (25)$, $N\equiv2\ (49)$, $N\equiv4\ (81)$.
+One explicit solution progression is $N=47875+99225u$, $u\in\N$.
+\takeaway{The first arguments coincide. The second arguments separate.}
+
+\note{[Sources] Local proof: Erdos252/Solution.lean and PROOF.tex. [/Sources]}
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{3. Finite differences cancel polynomial factors}
+
+For every polynomial $P$ of degree at most $k$,
+\[
+ \sum_{a=0}^{k+1}b(a)P(a)=0,
+ \qquad b(a)=(-1)^{k+1-a}\binom{k+1}{a}.
+\]
+For $k=1$, this is the second-difference identity:
+\[
+ P(0)-2P(1)+P(2)=0.
+\]
+In our example $p=5+2a$, so
+\[
+ \underbrace{5-2\cdot7+9}_{0}\,
+       \frac{\sigma_1(N+5)}{N+5}=0.
+\]
+\takeaway{A shared arithmetic value can be arbitrary: its polynomial multiplier cancels exactly.}
+
+\note{[Sources] Local proof: Erdos252/Solution.lean and PROOF.tex. [/Sources]}
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{3. Build one free coordinate for each lower shift}
+
+Let $e=(e_0,\ldots,e_{k-1})\in\{0,\ldots,k+1\}^k$.
+Set
+\[
+ G=(k+2)^k-1,\qquad D=G!,\qquad B=1+kDG,
+\]
+and define
+\[
+ p_e=B+D\sum_{a<k}e_a(k+2)^a,\qquad
+ t_e=D\sum_{a<k}(a+1)e_a(k+2)^a.
+\]
+Their shift at position $j$ is
+\[
+ r_e(j)=(j+1)p_e-t_e
+       =(j+1)B+D\sum_{a<k}(j-a)e_a(k+2)^a.
+\]
+\takeaway{For $j<k$, the shift ignores $e_j$: its coefficient is zero.}
+But $p_e$ is affine in $e_j$, so $p_e^{i+1}$ is a polynomial in that coordinate.
+
+\note{[Sources] Local proof: Erdos252/Solution.lean and PROOF.tex. [/Sources]}
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{3. The grid also guarantees the needed coprimality}
+
+Write $I_e=\sum_{a<k}e_a(k+2)^a$. Distinct vertices give distinct
+integers $I_e\in[0,G]$, and $p_e=B+DI_e\equiv1\pmod D$.
+\begin{itemize}
+\item \textbf{Pairwise coprime.}
+A common prime divisor $\ell$ of $p_e,p_f$ would divide
+$|I_e-I_f|\in[1,G]$, but not $D$.
+Then $\ell\le G$ forces $\ell\mid G!=D$, a contradiction.
+\item \textbf{Coprime to small shifts.}
+For $k\ge1$, $k+1\le G$; hence every $1,\ldots,k+1$ divides $D$.
+\item \textbf{Positive arguments.}
+$t_e\le kDI_e\le kDG=B-1<p_e$, so every $r_e(j)>0$.
+\end{itemize}
+\takeaway{No multiplier needs to be prime, and no prime-pattern conjecture is used.}
+
+\note{[Sources] Local proof: Erdos252/Solution.lean and PROOF.tex. [/Sources]}
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{3. A common progression preserves integrality}
+
+Use the product weights $w_e=\prod_{a<k}b(e_a)\in\Z$.
+Since the $p_e^2$ are pairwise coprime, choose
+\[
+ A\equiv t_e\pmod{p_e^2}\quad\text{for every }e,\qquad
+ Q=\prod_e p_e^2.
+\]
+Every $N=A+Qu$ satisfies the same congruences.
+For large $u$, let $n_e=(N-t_e)/p_e$ and form
+\[
+ \boxed{\ W(N)=\sum_e w_e\,\sigma_k(p_e)\,T_{n_e}\ }.
+\]
+If $\alpha_k$ is rational, every $T_{n_e}$ is eventually integral:
+\[
+ \alert{W(A+Qu)\in\Z\quad\text{for all sufficiently large }u.}
+\]
+
+\note{[Sources] Local proof: Erdos252/Solution.lean and PROOF.tex. [/Sources]}
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{3. Only the top denominator power remains}
+
+After expansion and dilation, a typical contribution is
+\[
+ \stir{i}{j}\sum_e
+ w_e p_e^{i+1}\frac{\sigma_k(N+r_e(j))}{(N+r_e(j))^{i+1}},
+ \qquad 0\le i,j\le k.
+\]
+For every $i<k$:
+\begin{itemize}
+\item If $j<k$, hold all coordinates except $e_j$ fixed.
+The shifted value is constant in $e_j$; the polynomial degree is
+$i+1\le k$. Its weighted sum is zero.
+\item If $j=k$, the Stirling coefficient $\stir{i}{k}$ is zero.
+\end{itemize}
+\takeaway{All rows $i<k$ vanish identically. Only $i=k$ survives.}
+This is an exact finite-sum identity, not an estimate.
+
+\note{[Sources] Local proof: Erdos252/Solution.lean and PROOF.tex. [/Sources]}
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{3. Name what survives before taking any limits}
+
+Define the normalized divisor sum and the remaining coefficients:
+\[
+ \rho_k(m)=\frac{\sigma_k(m)}{m^k},\qquad
+ c_{e,j}=w_e p_e^{k+1}\stir{k}{j}.
+\]
+Then cancellation gives
+\[
+ W(N)=S(N)+E(N),\qquad
+ S(N):=\sum_e\sum_{j=0}^k
+      c_{e,j}\frac{\rho_k(N+r_e(j))}{N+r_e(j)}.
+\]
+Here $E(N)=\sum_e w_e\sigma_k(p_e)E_{n_e}$ is a signed error.
+For each vertex, $N=p_e(n_e+1)-r_e(0)$, so
+\[
+ NE_{n_e}=p_e(n_e+1)E_{n_e}-r_e(0)E_{n_e}\longrightarrow0.
+\]
+The family is fixed and finite; therefore $\alert{NE(N)\to0}$.
+
+\note{[Sources] Local proof: Erdos252/Solution.lean and PROOF.tex. [/Sources]}
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{First limit: the weighted integer is eventually zero}
+
+All limits here are along the same progression $N=A+Qu$.
+From the divisor bound,
+\[
+ 0\le\frac{\rho_k(m)}m\le\frac{64}{\sqrt m}\longrightarrow0.
+\]
+There are only finitely many fixed coefficients and shifts, so
+\[
+ S(N)\longrightarrow0,\qquad E(N)\longrightarrow0.
+\]
+Thus $W(N)=S(N)+E(N)\to0$.
+\begin{block}{Use integrality at exactly this point}
+Eventually $W(N)\in\Z$ and $|W(N)|<1$.
+Hence $W(N)=0$, and consequently $S(N)=-E(N)$.
+\end{block}
+
+\note{[Sources] Local proof: Erdos252/Solution.lean and PROOF.tex. [/Sources]}
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{Second limit: remove the remaining denominators}
+
+Define the \alert{survivor}, with exactly the same coefficients and shifts:
+\[
+ R(N):=\sum_e\sum_{j=0}^k c_{e,j}\rho_k(N+r_e(j)).
+\]
+For each fixed term, write $r=r_e(j)$ and $c=c_{e,j}$. Then
+\[
+ N\,\frac{c\rho_k(N+r)}{N+r}-c\rho_k(N+r)
+   =-\frac{r\,c\rho_k(N+r)}{N+r}\longrightarrow0.
+\]
+Therefore $NS(N)-R(N)\to0$. But the preceding slide gives
+$NS(N)=-NE(N)\to0$.
+\begin{block}{The consequence of rationality}
+$\alpha_k\in\Q$ would force $R(A+Qu)\longrightarrow0$.
+\end{block}
+
+\note{[Sources] Local proof: Erdos252/Solution.lean and PROOF.tex. [/Sources]}
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{One shift has a coefficient that cannot cancel away}
+
+The shift
+\[
+ r_*=(k+1)B
+\]
+occurs \emph{only} at the zero vertex $e=0$ and the last position $j=k$.
+\begin{itemize}
+\item For $j<k$, $r_e(j)\le k(B+DG)=(k+1)B-1$.
+\item For $j=k$, $r_e(k)=(k+1)B+
+D\sum_{a<k}(k-a)e_a(k+2)^a$.
+All added coefficients are positive, so equality requires $e=0$.
+\end{itemize}
+Its coefficient is
+\[
+ c_*=w_0B^{k+1}\stir{k}{k}=B^{k+1}>0,
+ \qquad w_0=(-1)^{k(k+1)}=1.
+\]
+Other shifts may repeat; this one does not.
+
+\note{[Sources] Local proof: Erdos252/Solution.lean and PROOF.tex. [/Sources]}
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{The survivor is concrete when $k=1$}
+
+Recall $p_e=5,7,9$, $t_e=0,2,4$, and $w_e=1,-2,1$.
+The progression has modulus $Q=(5\cdot7\cdot9)^2=99225$.
+\[
+ W(N)=6T_{N/5}-16T_{(N-2)/7}+13T_{(N-4)/9}.
+\]
+The common first shift cancels because $5-14+9=0$.
+The second shifts have coefficients $25,-98,81$, giving
+\[
+ \boxed{\ R(N)=25\rho_1(N+10)-98\rho_1(N+12)+81\rho_1(N+14)\ }.
+\]
+Rationality would force this expression to tend to $0$ on the progression.
+\takeaway{The shift $10$ stands alone, with positive coefficient $25$.}
+
+\note{[Sources] Local proof: Erdos252/Solution.lean and PROOF.tex. [/Sources]}
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{4. Divisor sums become divisor densities}
+
+Pair complementary divisors to rewrite
+\[
+ \rho_k(m)=\frac{\sigma_k(m)}{m^k}=\sum_{d\mid m}\frac1{d^k}
+ \qquad(m>0).
+\]
+Along a progression $Qn+a$ with $Q,a>0$, how often does a divisor occur?
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{@{}c|cccc@{}}
+Example $Qn+a=6n+3$ & $d=2$ & $d=3$ & $d=5$ & $d=9$\\
+\hline
+Density of $d\mid6n+3$ & $0$ & $1$ & $1/5$ & $1/3$
+\end{tabular}
+\end{center}
+In general, with $g=\gcd(d,Q)$,
+\[
+ \text{density of }d\mid Qn+a=
+ \begin{cases}g/d,&g\mid a,\\0,&g\nmid a.\end{cases}
+\]
+The compatible congruence has one solution class modulo $d/g$.
+
+\note{[Sources] Local proof: Erdos252/Solution.lean and PROOF.tex. [/Sources]}
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{4. The actual progression mean is explicit}
+
+For fixed $k\ge1$ and $Q,a>0$,
+\[
+ \frac1X\sum_{n=0}^{X-1}\rho_k(Qn+a)
+ \longrightarrow
+ \mu_Q(a):=\sum_{\substack{d\ge1\\\gcd(d,Q)\mid a}}
+       \frac{\gcd(d,Q)}{d^{k+1}}\ge1.
+\]
+Why may we sum the individual divisor densities?
+Counted values $Qn+a$ are distinct positive multiples of $d$, so for $X\ge1$,
+\[
+ \frac1{d^k}\frac{\#\{n<X:d\mid Qn+a\}}X
+ \le\frac{QX+a}{X\,d^{k+1}}
+ \le\frac{Q+a}{d^{k+1}}.
+\]
+This bound is summable in $d$. Dominated convergence applies.
+\takeaway{This includes $k=1$: the majorant is a multiple of $d^{-2}$.}
+It bounds the averaged divisor contributions, not $\rho_1$ itself.
+
+\note{[Sources] Local proof: divTerm_cesaro, affine_count_le_quotient,
+divTerm_cesaro_bound, tendsto_progMean. [/Sources] Domination is on averaged counts,
+not a uniform bound on rho_1, which is unbounded. The term d=1 proves the mean is at least one.}
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{4. A fresh prime changes the mean by one factor}
+
+Take a prime $L\nmid Q$ and refine the progression to
+$Q(Ln+v)+a$.
+Its starting point $a'=Qv+a$ is congruent to $a$ modulo $Q$.
+\[
+ \boxed{\ \mu_{QL}(a')=
+ \mu_Q(a)\left(1-L^{-(k+1)}+\ind{L\mid a'}L^{-k}\right)\ }.
+\]
+The indicator $\ind{L\mid a'}$ is $1$ if $L\mid a'$, and $0$ otherwise.
+\begin{itemize}
+\item The terms with $L\nmid d$ contribute
+$\mu_Q(a)(1-L^{-(k+1)})$.
+\item Write the other terms as $d=Ld'$.
+They contribute $\mu_Q(a)L^{-k}$ if $L\mid a'$, and zero otherwise.
+\end{itemize}
+\takeaway{There is a common contribution, plus an extra term when the prime divides the offset.}
+
+\note{[Sources] Local proof: Erdos252/Solution.lean and PROOF.tex. [/Sources]}
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{4. Choose one residue to miss and one to isolate}
+
+Write $i=(e,j)$, $r_i=r_e(j)$ and $c_i=c_{e,j}$, so
+$R(N)=\sum_i c_i\rho_k(N+r_i)$.
+Choose a prime $L>\max(Q,\max_i r_i)$. Since $\gcd(Q,L)=1$, choose:
+\begin{center}
+\renewcommand{\arraystretch}{1.6}
+\begin{tabular}{@{}p{5.7cm}p{6.2cm}@{}}
+\toprule
+\textbf{Miss every shift} & \textbf{Hit only the isolated shift}\\
+\midrule
+$Qv_0+A\equiv0\pmod L$
+& $Qv_1+A+r_*\equiv0\pmod L$\\
+$Qv_0+A+r_i\equiv r_i\pmod L$
+& $Qv_1+A+r_i\equiv r_i-r_*\pmod L$\\
+Never zero: $0<r_i<L$.
+& Zero exactly when $r_i=r_*$.\\
+\bottomrule
+\end{tabular}
+\end{center}
+These give two subprogressions of $N=A+Qu$.
+There is exactly one term at $r_*$, with coefficient $c_*>0$.
+
+\note{[Sources] Local proof: Erdos252/Solution.lean and PROOF.tex. [/Sources]}
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{4. The two averages cannot both vanish}
+
+If $R(A+Qu)\to0$, its mean on \emph{each} positive-step subprogression is zero.
+But the prime-refinement formula gives the two means
+\[
+ \begin{aligned}
+ m_0&=(1-L^{-(k+1)})\sum_i c_i\mu_Q(A+r_i),\\
+ m_1&=m_0+c_*\mu_Q(A+r_*)L^{-k}.
+ \end{aligned}
+\]
+Every offset $A+r_i$ is positive, so the mean theorem applies.
+Their difference satisfies
+\[
+ \alert{m_1-m_0=c_*\mu_Q(A+r_*)L^{-k}>0},
+\]
+because $c_*>0$, $\mu_Q(A+r_*)\ge1$, and $L^{-k}>0$.
+\begin{block}{Contradiction}
+Both means would be zero. Hence $\alpha_k$ is irrational for every $k\ge1$.
+\end{block}
+
+\note{[Sources] Local proof: Erdos252/Solution.lean and PROOF.tex. [/Sources]}
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{Degree zero returns to the short tail argument}
+
+For $k=0$, the first denominator term and the same error estimate give
+\[
+ T_n=\frac{\sigma_0(n+1)}{n+1}+E_n.
+\]
+The divisor count is positive and at most $64\sqrt{n+1}$, so
+\[
+ 0<T_n\le\frac{64}{\sqrt{n+1}}+O(n^{-3/2})\longrightarrow0.
+\]
+Rationality would make these tails integers for all sufficiently large $n$.
+That is impossible once $0<T_n<1$.
+\takeaway{The separate zero-degree argument completes every natural exponent.}
+
+\note{[Sources] Local proof: Erdos252/Solution.lean and PROOF.tex. [/Sources]}
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{The formal artifact proves the original series}
+
+\[
+ \forall k\in\N,\qquad
+ \operatorname{Irrational}\left(
+ \sum_{n=0}^{\infty}
+ \frac{\operatorname{ArithmeticFunction.sigma}(k,n)}{n!}\right).
+\]
+The $n=0$ term is zero. The statement audit also checks the expanded
+divisor sum, summability, and the equivalent series starting at $n=1$.
+\begin{itemize}
+\item Lean 4.33.1, pinned Mathlib; full build and a fresh trust-zero build.
+\item Statement and axiom audits; fresh replay using Lean's kernel.
+\item Exactly \lean{propext}, \lean{Classical.choice}, and \lean{Quot.sound}.
+\end{itemize}
+Proof module: \textbf{801 substantive lines; 1,074 total lines}.
+The one-line root import adds one to each count.
+\source{https://github.com/tokengr1nder/Erdos252}{Lean source and reproduction commands}
+
+\note{[Sources] Local proof: theorem erdos_252; audit/Statement.lean;
+publication verification receipts review-commit-final-0913 in the local build directory.
+[/Sources] These slides are explanatory prose, not kernel input. A fresh replay uses
+Lean's own kernel, not an independently implemented kernel. The theorem statement was
+compared byte-for-byte with the frozen original statement. Source SHA-256:
+784303a58ba3361669a236f5f7c5d38c68c352df8ccd3df9e46cc66149d42569.}
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{Three ingredients resolve the contradiction}
+
+\begin{enumerate}
+\item \textbf{Factorials turn rationality into integrality.}
+Every sufficiently late scaled tail would be an integer.
+\medskip
+\item \textbf{A fixed dilation grid creates exact cancellation.}
+The weighted integer is eventually zero, forcing the survivor sum to tend to zero.
+\medskip
+\item \textbf{Progression means detect that survivor.}
+A fresh prime separates two averages that rationality would force to agree.
+\end{enumerate}
+\begin{block}{Conclusion}
+For every natural $k$, $\displaystyle\sum_{n\ge1}\sigma_k(n)/n!$ is irrational.
+\end{block}
+
+\note{[Sources] Local proof: Erdos252/Solution.lean and PROOF.tex. [/Sources]}
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{Appendix: the finite Stirling bound used in Lean}
+
+\small
+Put
+\[
+ D_{j+1}(x)=\frac1{x(x-1)\cdots(x-j)},\quad
+ P_{j,L}(x)=\sum_{i=0}^{L-1}\stir{i}{j}x^{-(i+1)},\quad
+ F_{j,L}(x)=D_{j+1}(x)-P_{j,L}(x).
+\]
+For $x>j+1$, the exact recurrence is
+\[
+ F_{j+1,L+1}(x)=\frac{F_{j,L}(x)+(j+1)F_{j+1,L}(x)}x.
+\]
+For $j+1\le H\le x$, induction on $L$ gives
+\[
+ 0\le F_{j,L}(x)\le H^L/x^{L+1}.
+\]
+At $L=0$, $0<D_{j+1}(x)\le1/x$. In the induction step, the weighted
+sum of two errors bounded by $u$ is at most $(j+2)u\le Hu$.
+The $j=0$ error is zero after the first order.
+\takeaway{This proves the truncated expansion directly, with an explicit error.}
+
+\note{[Sources] Local proof: Erdos252/Solution.lean and PROOF.tex. [/Sources]}
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{Appendix: scale each remainder before taking limits}
+
+\small
+For $x\ge n+1$, the divisor bound gives
+\[
+ \sigma_k(x)\le64x^k\sqrt x
+ \le\frac{64x^{k+1}}{\sqrt{n+1}}.
+\]
+For a retained term, take $x=n+j+1$ and $n\ge k+1$. Scale first:
+\[
+ \begin{aligned}
+ 0\le(n+1)\sigma_k(x)F_{j,k+1}(x)
+ &\le x\frac{64x^{k+1}}{\sqrt{n+1}}\frac{(k+1)^{k+1}}{x^{k+2}}\\
+ &=\frac{64(k+1)^{k+1}}{\sqrt{n+1}}\longrightarrow0.
+ \end{aligned}
+\]
+There are only $k+1$ retained terms, so their scaled errors sum to a null sequence.
+For the omitted tail $O_n$, factorial denominators give
+\[
+ 0\le(n+1)O_n\le\frac{128(k+1)^{k+1}}{\sqrt{n+1}}\longrightarrow0.
+\]
+Adding the two limits proves $(n+1)E_n\to0$ directly.
+
+\note{[Sources] Local proof: Erdos252/Solution.lean and PROOF.tex. [/Sources]}
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{Appendix: a compact notation guide}
+
+\small
+\begin{center}
+\renewcommand{\arraystretch}{1.35}
+\begin{tabular}{@{}ll@{}}
+\toprule
+$k\ge1$ & fixed divisor-power exponent in the grid argument\\
+$e\in\{0,\ldots,k+1\}^k$ & one vertex of the finite grid\\
+$p_e,\ t_e$ & multiplier and offset for that vertex\\
+$r_e(j)=(j+1)p_e-t_e$ & shift of the $(j+1)$-st tail term\\
+$w_e=\prod_{a<k}(-1)^{k+1-e_a}\binom{k+1}{e_a}$ & integer finite-difference weight\\
+$A,\ Q=\prod_e p_e^2$ & CRT starting point and progression modulus\\
+$n_e=(N-t_e)/p_e$ & tail index, for large $N=A+Qu$\\
+$c_{e,j}=w_ep_e^{k+1}\stir{k}{j}$ & coefficient after cancellation\\
+$r_*=(k+1)B,\ c_*=B^{k+1}$ & the isolated shift and its coefficient\\
+$L,\ v_0,\ v_1$ & fresh prime and the two separating residues\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\note{[Sources] Local proof: Erdos252/Solution.lean and PROOF.tex. [/Sources]}
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{Appendix: four quantities with different roles}
+
+\small
+\begin{align*}
+ T_n&=n!\sum_{m>n}\frac{\sigma_k(m)}{m!}
+ &&\text{one scaled tail},\\[3pt]
+ W(N)&=\sum_e w_e\sigma_k(p_e)T_{n_e}
+ &&\text{the weighted integer},\\[3pt]
+ S(N)&=\sum_e\sum_{j=0}^k
+     \frac{c_{e,j}\rho_k(N+r_e(j))}{N+r_e(j)}
+ &&\text{the surviving divided sum},\\[3pt]
+ R(N)&=\sum_e\sum_{j=0}^k c_{e,j}\rho_k(N+r_e(j))
+ &&\text{the raw survivor}.
+\end{align*}
+For sufficiently large $N=A+Qu$, rationality gives the chain
+\[
+ W=S+o(1/N),\quad W\in\Z,\quad W\to0
+ \ \Longrightarrow\ W=0\text{ eventually}
+ \ \Longrightarrow\ NS\to0
+ \ \Longrightarrow\ R\to0.
+\]
+The last implication uses $NS-R\to0$, not the false identity $NS=R$.
+
+\note{[Sources] Local proof: Erdos252/Solution.lean and PROOF.tex. [/Sources]}
+\end{frame}
+
+% ----------------------------------------------------------------------
+
+\begin{frame}{Sources and the complete proof}
+
+\small
+\begin{itemize}
+\item \textbf{Formal proof and full mathematical exposition}\\
+Tokengrinder, \emph{Erd\H{o}s 252} (2026).
+\href{https://github.com/tokengr1nder/Erdos252}{github.com/tokengr1nder/Erdos252}\\
+\lean{PROOF.pdf} contains all 89 named proof results and their proofs,
+38 definitions, and the six statement-audit results.
+\item \textbf{Historical context}\\
+K. Pratt, \emph{The irrationality of a divisor function series of
+Erd\H{o}s and Kac} (2022), introduction.\\
+\href{https://arxiv.org/abs/2209.11124}{arXiv:2209.11124}.
+\item J. B. Friedlander, F. Luca, M. Stoiciu, \emph{On the irrationality of
+a divisor function series}, Integers 7 (2007), A31.\\
+\href{https://math.colgate.edu/~integers/h31/h31.pdf}{Original paper}.
+\item \textbf{Problem catalogue}\\
+T. F. Bloom, \href{https://www.erdosproblems.com/252}{Erd\H{o}s Problem 252}.
+\end{itemize}
+
+\note{[Sources] https://arxiv.org/pdf/2209.11124;
+https://math.colgate.edu/~integers/h31/h31.pdf; local PROOF.tex and Solution.lean.
+[/Sources] Source provenance reviewed 13 September 2026. The direct catalogue page
+returned HTTP 403 during this review; its indexed catalogue entry was visible.
+No claim of catalogue acceptance is made.}
+\end{frame}
+\end{document}

@@ -1,0 +1,40 @@
+{
+  "authors": [
+    "Tung Nguyen",
+    "Alex Scott",
+    "Paul Seymour"
+  ],
+  "category": "math.CO",
+  "date": "2026-02-23",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 724187,
+    "files": 1,
+    "sha256": "58c5ea8a3127d498df8504aea72cbce59fdd526b0db356c5481bfd44fb80c62a",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2312.15333v3"
+  },
+  "id": "2312.15333",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 436923,
+    "previous": [],
+    "sha256": "0bff9b18525c162429dae80641a77cf6d92bd36e093037cf98c43a5c44614c45",
+    "url": "https://arxiv.org/pdf/2312.15333v3"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2312.15333v3 [math.CO] 23 Feb 2026",
+  "tex": {
+    "archive": {
+      "bytes": 24716,
+      "name": "arXiv-2312.15333v3.tar.gz",
+      "sha256": "b95d220d5d6438607e3cbb27306b4a3cabd032ed43ff62735e264a07d49a9e70"
+    },
+    "bytes": 89696,
+    "files": 2,
+    "sha256": "5b9b1c4d9bea6e11ca1cd7a84c38c1fde0e46409627b9e8065a8d94cf19b51fc",
+    "url": "https://arxiv.org/src/2312.15333v3"
+  },
+  "title": "Induced subgraph density. VII. The five-vertex path",
+  "version": 3
+}

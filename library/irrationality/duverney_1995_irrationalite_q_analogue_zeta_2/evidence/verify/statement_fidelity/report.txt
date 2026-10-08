@@ -1,0 +1,487 @@
+# Independent statement-fidelity examination: Duverney (1995) and E0250
+
+**Verdict: refutation-failed for the comparison of the frozen extraction and
+its E0250 specialization with the identified 1995 primary note, at statement
+and disclosed proof-outline depth.** No transcription, hypothesis, quantifier,
+constant, sign, index-range, result-label, locator, or application defect was
+found in that comparison. The consequential reformulations checked below are
+valid. This verdict does not certify the complete source proof, the applicability
+or proof of the unread 1993 theorem, any other external proof, any formalization,
+or E0249. It awards no native tier and is not a grade of this report.
+
+The historical source-acquisition and author-reading claims, the live catalog,
+the imported formalization metadata, and the inherited Nesterenko reference
+have the explicit verification limits in sections 2, 4, and 8. The favorable
+comparison does not independently establish those external or historical facts.
+No correction to a canonical mathematical statement is requested by this pass.
+The separate complete-source-proof obligations remain outstanding.
+
+## 1. Exact subject and recoverable identity
+
+The frozen mathematical subject is the campaign working repository as it stood
+on 2026-09-17. The examination covers all text,
+including frontmatter summaries, navigation summaries, qualifications and
+consequence sentences, in the four Markdown files below. The entire three-page
+PDF was visually read as the primary comparator. Let `D/` denote the exact
+repository directory
+`erdos/library/irrationality/duverney_1995_irrationalite_q_analogue_zeta2/`.
+
+| Frozen repository path | Bytes examined |
+| --- | ---: |
+| `D/duverney_1995_irrationalite_q_analogue_zeta2.pdf` | 2438038 |
+| `D/_index.md` | 6119 |
+| `D/main_theorem.md` | 4625 |
+| `D/lemma.md` | 6215 |
+| `wiki/problems/irrationality/E0250.md` | 4078 |
+
+The PDF, bytes the repository does not own, is identified by its path, its
+byte count and its Git LFS pointer. The four
+Markdown files are identified by their paths at the frozen revision and by the
+retained copies named below. `subject.json` supplies the full paths,
+source-version identification, PDF-page mapping, and exact snapshot-asset
+mapping. The four
+text subjects are retained unaltered as `subjects/_index.txt`,
+`subjects/main_theorem.txt`, `subjects/lemma.txt`, and `subjects/E0250.txt`,
+except that the PDF's SHA-256 value on line 41 of `subjects/_index.txt` was
+replaced on 2026-10-02 by a marker naming the Git LFS pointer.
+Line locators in this report refer to these exact files, with their original
+line breaks and first frontmatter delimiter counted as line 1.
+
+Only those five paths were extracted using `git archive` at the frozen state.
+The committed PDF blob is an LFS pointer whose OID is the PDF's SHA-256 and
+whose declared size is 2438038. Both were checked against the permitted
+held-byte fallback before replacing the pointer in the private extraction.
+The four archived Markdown files and the PDF matched the subject manifest at
+the frozen state. Subsequent mathematical reading used this extraction, not
+moving
+author files.
+
+The selected primary is Daniel Duverney, *Irrationalité d'un q-analogue de
+ζ(2)*, C. R. Acad. Sci. Paris, tome 321, Série I (1995), pp. 1287–1289.
+The printed author, title, journal, volume, year and pagination agree with the
+extraction. PDF file pages 1, 2 and 3 are printed pages 1287, 1288 and 1289.
+The note records receipt on 18 September 1995 and acceptance after revision on
+25 September 1995, on p. 1289 immediately above the bibliography. The held file
+has three pages and begins `%PDF-1.3`.
+
+## 2. Reviewer, actual reading and exclusions
+
+Reviewer attribution: independent Codex reviewer, in a fresh context. This
+review began in a fresh context that had neither constructed the extraction nor
+collaborated on or built mathematical work upon it. No source-author plans,
+reading receipts, private reasoning, sibling verdicts, parent memory, or
+mathematical steering were consumed. No other agent participated in this
+examination. Independence is stated from these actual exposure facts, rather
+than inferred from a model name or an empty subscription table alone.
+
+The allowed mathematical read set was exactly the five pinned subjects and
+the identical held-byte PDF fallback identified above. Actual mathematical
+reading comprised all four entire frozen Markdown pages and all three primary
+page images, including the bibliography and acceptance notice. The images were
+rendered by this reviewer from the verified PDF with `pdftoppm`, at 180 dpi;
+all three were legible. They were read directly, without OCR or an author's
+image set. A separate `pdftotext` diagnostic produced three whitespace bytes
+and zero non-whitespace bytes, corroborating the digest's disclosure that plain
+text extraction was unusable. That diagnostic supplied no mathematical reading.
+
+The guidance read alongside the subject was a notice restricting the review
+from Lean work (the prescribed first read), the repository's root `AGENTS.md`
+and `README.md`, `docs/anatomy.md`, `docs/verification.md`,
+`docs/evidence.md`, and the campaign's operating instructions and
+verification guide. The other guidance pages listed for the review
+(`docs/approach_vetting.md`, `docs/math_authoring.md`, `docs/weaving.md` and
+the remaining campaign guides) were not read. Their links did not expand the
+mathematical read set.
+
+No other session or history was read, no inbox or feed was read, no excluded
+link was followed, and no web search, process enumeration, repository-wide
+gate, commit hook, Lean execution, build, cache acquisition or audit was
+performed. There was no known isolation breach or subject/operating identity
+mismatch.
+
+The author's website, the catalog page, the formal-conjectures URL, Nesterenko
+(1996), and all books/papers cited by the primary note remained unread. Reading
+their citations inside the subject does not count as reading those sources.
+There are no consumed native L-claims in this subject and no live claim ledger
+was read. Historical statements that the extraction author read particular
+pages on particular dates were not independently authenticated: only their
+stated coverage, consistency with the held source, and restraint of the claimed
+standing were examined.
+
+## 3. Independent restatement of the mathematics and its use
+
+Write
+
+$$
+Z(q)=\sum_{n\ge1}q^n\left(\frac{q-1}{q^n-1}\right)^2,
+\qquad \lvert q\rvert>1,
+$$
+
+with complex $q$ in the definition. The unnumbered theorem says that for
+every integer $q$ with $\lvert q\rvert\ge2$, $Z(q)\notin\mathbb Q$. Its assertion
+includes negative bases and has no irrationality assertion for arbitrary
+noninteger complex bases. The same source gives, on this definition domain,
+
+$$
+Z(q)=(q-1)^2 S(q),\qquad
+S(q)=\sum_{n\ge1}\frac{n}{q^n-1}
+    =\sum_{n\ge1}\frac{\sigma(n)}{q^n},
+\qquad \sigma(n)=\sum_{d\mid n,\ d>0}d.
+$$
+
+For the theorem's integer bases the multiplier is nonzero rational; thus the
+irrationality of either $Z(q)$ or $S(q)$ is equivalent to that of the other.
+At $q=2$, the multiplier is exactly 1. The frozen E0250 question is precisely
+whether $S(2)$ is irrational. It is therefore an exact specialization of this
+published theorem, assuming that theorem as the source result being cited.
+
+Define $f(x)=\prod_{n\ge1}(1-x^n)$ on the complex disk $\lvert x\rvert<1$, and put
+
+$$
+F_q=f(1/q),\qquad G_q=q^{-1}f'(1/q).
+$$
+
+The unnumbered lemma asserts that $1,F_q,G_q$ are linearly independent over
+$\mathbb Q$ for every integer $q$ with $\lvert q\rvert\ge2$. Equivalently, every
+pair of fixed integers $(a,b)\ne(0,0)$ gives
+$\alpha_q=aF_q+bG_q\notin\mathbb Q$. This equivalence includes cases with
+one coefficient zero. It does not assert independence over $\mathbb R$ or
+$\mathbb C$, or an irrationality statement for arbitrary complex $q$.
+
+The sparse-series part is internal to the lemma's proof. For $k\ge1$, set
+
+$$
+P_k^-=\frac{k(3k-1)}2,\qquad P_k^+=\frac{k(3k+1)}2.
+$$
+
+The printed pentagonal expansion and its derivative give the coefficients of
+$\alpha_q=\sum_{n\ge0}a(n)q^{-n}$ as
+
+$$
+a(0)=a,\qquad a(P_k^\pm)=(-1)^k(a+bP_k^\pm),
+$$
+
+with all other positive-index coefficients zero. The support may be smaller
+because some displayed coefficients can vanish. With $n_k=P_k^+$, there
+are $k$ stated zero coefficients immediately following $n_k$ and $k-1$
+immediately preceding it. For each fixed $a,b$, the bound
+$\lvert a(n)\rvert\le n^2$ holds eventually.
+
+Under the contradictory rationality assumption
+$\alpha_q=\eta/\delta$, where $\eta,\delta\in\mathbb Z$ and
+$\delta\ne0$, the note invokes theorem 2 of its reference [3] to assert
+eventually in $k$
+
+$$
+\eta q^{n_k}-\delta\sum_{n=0}^{n_k}a(n)q^{n_k-n}=0. \tag{12}
+$$
+
+The subsequent outline deduces $q^k\mid\delta a(n_k)$, incompatible with
+the eventual nonzero polynomial expression
+$\delta(-1)^k(a+bP_k^+)$. Equation (12) is the specific printed use of an
+unread external theorem, not a general sparse-series theorem extracted from
+the 1995 note.
+
+Finally, the displayed logarithmic derivative gives
+$G_q/F_q=-S(q)$. A rational value of $Z(q)$ at an allowed integer base
+would make $S(q)$ rational and yield the forbidden relation
+$S(q)F_q+G_q=0$. This is the lemma-to-theorem-to-E0250 chain actually used
+by the frozen pages.
+
+## 4. Clause-by-clause comparison and source locators
+
+The positive comparisons below have **refutation-failed** statement-fidelity
+coverage. Unavailable external or historical content retains its express
+unchecked limits. None of these findings is a full-proof verdict.
+`T`, `L`, `I`, and `E` below denote the frozen `main_theorem.md`, `lemma.md`,
+`_index.md`, and `E0250.md` respectively.
+
+| Frozen material compared | Exact primary location and finding |
+| --- | --- |
+| I 3–7, 16–21, 25–28; T 3–6, 15–18; L 3–7, 16–19; E 25, 33–35, 49–54 | The p. 1287 header/title and unnumbered **Théorème**, p. 1288 unnumbered **Lemme** between (8) and (9), and p. 1289 acceptance notice support the bibliographic identity, labels, page locators, theorem/lemma summaries and published-source attribution. The note has two named unnumbered results; (1)–(15) are equation labels. |
+| I 32–45; T 17–18; L 18–19 | The inspected held artifact has the declared hash, size, PDF header and three-page mapping. All images are legible; plain text extraction is blank apart from page whitespace. Author-hosting, the URL's historical contents, and the acquisition history were supplied as provenance and not independently checked online. No alternative edition or correction was examined. |
+| T 20–34 | P. 1287, introductory domain and (1), followed by the theorem after (5): complex $\lvert q\rvert>1$ in the definition, integer $q\notin\{-1,0,1\}$ in the theorem, and the numerator $q^n(q-1)^2$ all match. Both signs of integer base are retained. The extraction does not extend the definition to $q=1$; its reference to the limit discussed in (2) accurately identifies that discussion, without reproducing or proving a complex limiting assertion. |
+| T 38–54; I 108–110 | P. 1287, (3), (4), (5): $d_m(n)=\sum_{d\mid n}d^m$, use of $d_1=\sigma$, the factor $(q-1)^2$, and exponents $q^{-n}$ match. Positive integer divisors are the convention recovered directly from the positive-index double sum. The nonzero rational scaling conclusion for integer bases is valid; section 5 derives it. |
+| T 56–64, 110–111; I 7, 54–55, 108–112; E 5–7, 16–25, 47–54 | P. 1287, (5) and the theorem: $q=2$ is allowed and $(2-1)^2=1$. The target sum begins at 1 and uses sums of positive divisors. No multiplier, reciprocal-base change or divisor convention is lost. $\zeta(2;2)$ denotes the two-argument function of (1), not the Riemann zeta function. |
+| L 20–43; T 68–72; I 56–58 | P. 1288, (6) and the lemma: the product starts at $n=1$, has factors $1-x^n$ for $\lvert x\rvert<1$, and the three numbers include the constant 1 and the scaled derivative $(1/q)f'(1/q)$. The field is $\mathbb Q$; integer-base exclusions match. The explicit rational relation in L is an expansion of linear independence, not a stronger statement. |
+| L 47–63; I 60–65 | P. 1288, first paragraph of the lemma proof and (7)–(9): $a,b$ are integers not both zero, the constant term is $a$, both pentagonal branches and their factors $(-1)^k(a+bP_k^\pm)$ match. Reindexing the source's summation variable $n$ to $k$ is harmless. The equivalence assertion is independently justified in section 5. |
+| L 65–77 | P. 1288, (9)–(10): the coefficient series begins at 0, not 1. The explicit coefficient assignment faithfully expands the printed series. The two positive pentagonal branches do not collide. “Support contained” correctly allows cancellation. The fixed-parameter absolute-convergence sentence follows from the elementary coefficient bound in section 5. |
+| L 81–92 | P. 1288, (11) and following prose: $n_k=k(3k+1)/2$, following zero indices $n_k+1,\ldots,n_k+k$, and the eventual $\lvert a(n)\rvert\le n^2$ bound match. The bound is correctly limited to fixed $a,b$, with no universal threshold in those coefficients. |
+| L 93–113; I 64–65, 75–79; T 85–89; E 59–62 | P. 1288, prose immediately before (12), and (12); p. 1289, bibliography [3]. The source invokes theorem 2 of Duverney (1993), with the exact displayed eventual equality. The source really changes its notation to $x_q$ in that prose; the extraction openly normalizes it to the previously defined $\alpha_q$. The explicit $\delta\ne0$ states the necessary denominator condition implicit in the fraction. The extraction disclaims any transcription or verification of the general 1993 theorem. |
+| L 115–133 | P. 1288, prose after (12) and (13), with the concluding sentence atop p. 1289: the preceding zeros run through $n_k-k+1$, hence total $k-1$; the divisibility is by $q^k$, and (13) has $\delta(-1)^k(a+bk(3k+1)/2)$. The stated polynomial-versus-exponential explanation validly expands the source's short “impossible” conclusion, conditional on (12). The extraction marks an elementary replacement for the external invocation as a different argument and does not silently supply one. |
+| T 74–93; I 69–73, 86–88; L 157–160; E 56–62 | P. 1289, proof paragraph, (14), (15), closing appeal to the lemma and (3), and bibliography [1]. The negative sign in both logarithmic-derivative formulas and the scale $q^{-1}$ match. The rational-relation consequence is valid. Bundschuh–Väänänen is credited for the method, consistently with the source. The outline does not claim to reproduce that paper's proof. |
+| I 81–88; L 135–137 | P. 1288 opening proof paragraph cites [2], p. 124, and [6], p. 229 for the Euler/Jacobi route. P. 1287, paragraph before (4), cites [8], p. 257 for the Lambert series. P. 1289 bibliography identifies Chandrasekharan (1985), Exton (1983), Hardy–Wright fifth edition (1989), and Bundschuh–Väänänen (1994), 91, 175–201. The extraction's reference attribution matches these printed citations; the cited works themselves were not checked. |
+| I 90–106; T 95–108; L 139–155; E 59–75 | The declared coverage is statement checking and proof-outline reading, with the 1993 theorem and other external proofs unread and independent full-proof compilation outstanding. Those qualifications are consistent with the content actually present. The report does not authenticate the author's past reading acts or resolve earlier-review history. The pages make no claim of a passed local proof audit or native tier. |
+| E 27–29, 36–43, 72–75; generated link block 77–88 | The live catalog, inherited Nesterenko reference and mutable formal-conjectures link have no counterpart whose content could be checked within the held 1995 note. Their disclosed unrefreshed/unread status is explicit, and none supplies a mathematical premise to the displayed Duverney application. The generated links are labeled navigation only; they add no theorem or proof coverage. No conclusion about those external pages or link-maintenance machinery is awarded. |
+
+The created/updated metadata and identity/navigation fields were included in
+the frozen reading. They were not used as evidence of mathematical validity,
+source access, a successful build, or independent review. No assertion about
+their generation history is made.
+
+## 5. Consequential re-derivations and strongest attacks
+
+### A. Domain, divisor convention, scalar, and base attacks
+
+For $\lvert q\rvert>1$, let $r=\lvert q\rvert^{-1}<1$. None of $q^n-1$ is zero. The elementary
+identity $z/(1-z)^2=\sum_{j\ge1}jz^j$, applied to $z=q^{-n}$, gives
+
+$$
+\frac{Z(q)}{(q-1)^2}
+=\sum_{n\ge1}\frac{q^{-n}}{(1-q^{-n})^2}
+=\sum_{n,j\ge1}j q^{-nj}.
+$$
+
+Rearrangement is justified for each such $q$ because
+
+$$
+\sum_{n,j\ge1}j r^{nj}
+=\sum_{j\ge1}\frac{j r^j}{1-r^j}
+\le\frac1{1-r}\sum_{j\ge1}j r^j<\infty.
+$$
+
+Summing over $n$ yields $\sum_{j\ge1}j/(q^j-1)$. Collecting the
+coefficient of $q^{-m}$ instead gives $\sum_{j\mid m,j>0}j=\sigma(m)$.
+This establishes precisely the consumed identities, including the positive
+divisor convention, without reading Hardy–Wright. It also rules out an
+accidental switch from base $q$ to reciprocal base in the extraction.
+
+At a negative integer base the same absolutely convergent identities hold;
+the powers of $q$ retain their signs. No positivity assumption was used.
+For example, the factor at $q=-2$ is $(-2-1)^2=9$, not a factor obtained
+by replacing $q$ with $\lvert q\rvert$. The frozen formulas keep $q$ throughout.
+Since $(q-1)^2\in\mathbb Q\setminus\{0\}$ at every permitted integer
+base, multiplying by it preserves rationality and irrationality. This argument
+does not extend the theorem to arbitrary complex bases.
+
+The boundary values are outside the definition used: $q=0$ fails
+$\lvert q\rvert>1$ and the inverse-base operations, $q=1$ gives zero denominators in the
+written formula, and $q=-1$ gives zero denominators at even $n$. No limiting
+value is substituted for them. The source's (2) was read as context; no assertion
+about all complex paths $q\to1$ was audited or adopted.
+
+At $q=2$, no arithmetic factor remains. The notation distinction is also
+substantive: the first term of $Z(2)$ is 2 and the remaining terms are positive,
+so $Z(2)>2$. Meanwhile $\sum_{n\ge1}n^{-2}<2$, since for $n\ge2$,
+$n^{-2}<[n(n-1)]^{-1}$, whose sum is 1. Thus the extraction's $Z(2)$,
+written there as $\zeta(2;2)$, cannot be confused with the classical
+$\zeta(2)$. No numerical approximation or outside theorem is needed.
+
+**Attack outcome:** refutation-failed for domains, conventions, signs, the
+scalar reformulation and the exact E0250 specialization.
+
+### B. Linear-independence equivalence and final composition
+
+For the forward equivalence, if $aF_q+bG_q=c\in\mathbb Q$ with integers
+$(a,b)\ne(0,0)$, then $-c+aF_q+bG_q=0$ is a nontrivial rational relation
+on $1,F_q,G_q$. Conversely, any nontrivial rational relation has
+$(r_1,r_2)\ne(0,0)$, since $r_1=r_2=0$ would force $r_0=0$.
+Clearing the denominators of $r_1,r_2$ gives integers $a,b$, not both zero,
+such that $aF_q+bG_q=-Dr_0\in\mathbb Q$. This proves the stated
+equivalence, including zero values of one coefficient and rational relations
+whose constant coefficient vanishes.
+
+The definitions are meaningful on the indicated disk: the tail of
+$\prod(1-x^n)$ has absolutely summable logarithms on compact subdisks,
+and none of the individual factors vanishes. It defines a nonvanishing analytic
+function there. Logarithmic differentiation is legitimate locally: for
+$\lvert x\rvert\le\rho$ with $0<\rho<1$, the derivative series is dominated by a constant times
+$\sum n\rho^{n-1}$. Thus
+
+$$
+\frac{x f'(x)}{f(x)}=-\sum_{n\ge1}\frac{n x^n}{1-x^n},
+\qquad
+\frac{G_q}{F_q}=-\sum_{n\ge1}\frac{n}{q^n-1}=-S(q).
+$$
+
+The lemma itself also implies $F_q\ne0$, so its use in the denominator
+cannot evade the linear-independence hypothesis. If $Z(q)$ were rational,
+then $S(q)$ would be rational, and
+$0\cdot1+S(q)F_q+1\cdot G_q=0$ would violate that lemma. The coefficient
+of $G_q$ is 1 even when $S(q)=0$, so the alleged contradiction is
+nontrivial. This verifies the consumed implication from the lemma and identities;
+it does not independently establish the lemma's unread external premise.
+
+**Attack outcome:** refutation-failed for the claimed equivalence and the
+logarithmic-derivative application, including their zero and sign cases.
+
+### C. Sparse ranges, cancellations, parameter dependence and divisibility
+
+This was the strongest attack on the extracted outline. An off-by-one error
+in the preceding gap would falsely erase an actual coefficient, and overlooking
+coefficient cancellation could turn an eventual statement into a false uniform
+one. Both possibilities were checked directly.
+
+The exact gaps are
+
+$$
+P_k^+-P_k^-=k,\qquad P_{k+1}^- -P_k^+=2k+1.
+$$
+
+Hence $P_k^-<P_k^+<P_{k+1}^-$, the branches never collide, and the immediately preceding gap
+consists exactly of the non-pentagonal indices $n_k-j$ for $1\le j\le k-1$.
+The following gap actually contains $2k$ zero positions; the source's stated
+first $k$ zeros are therefore correct. At $k=1$, $n_1=2$ and the
+preceding range is empty. Choosing $a=1,b=0$ gives $a(P_k^-)=(-1)^k\ne0$:
+this would refute a preceding range extended to $j=k$. The frozen extraction
+stops at $k-1$, exactly as the source does.
+
+For any fixed $a,b$ and positive $n$, the extracted coefficient formula
+gives $\lvert a(n)\rvert\le \lvert a\rvert+\lvert b\rvert n$. In particular
+$\lvert a(n)\rvert\le n^2$ whenever $n\ge\max(1,\lvert a\rvert+\lvert b\rvert)$. This explicit sufficient
+threshold depends on the coefficients. An all-$n$ bound would fail already
+for $a=100,b=0,n=1$, where $\lvert a(1)\rvert=100$; no such bound is claimed. The same
+linear estimate proves absolute convergence of $\sum a(n)q^{-n}$ for
+every fixed $a,b$ and $\lvert q\rvert>1$.
+
+Coefficient cancellation is real. Given any $K\ge1$, take
+$a=-P_K^+, b=1$; then $a(n_K)=0$. Thus no parameter-independent assertion
+that all sufficiently indexed $a(n_k)$ are nonzero would follow. The frozen
+wording correctly makes the parameters fixed and allows vanishing coefficients.
+For a fixed pair, if $b=0$ then $a\ne0$ and $a+bP_k^+=a\ne0$.
+If $b\ne0$, the strictly increasing $P_k^+$ permits at most one zero of
+$a+bP_k^+$. Consequently the expression is eventually nonzero for that pair.
+
+Now assume exactly the printed eventual equality (12), leaving its external
+justification unverified. Since $n_k\ge k$, the term $\eta q^{n_k}$ is
+divisible by $q^k$. Every summand with $n\le n_k-k$ has exponent at least
+$k$, and the $k-1$ remaining indices before $n_k$ have zero coefficients.
+Reduction of (12) modulo $q^k$ therefore gives
+$q^k\mid\delta a(n_k)$. This works for negative integer $q$ as well:
+a nonzero multiple has absolute value at least $\lvert q\rvert^k$. But
+
+$$
+0<\lvert \delta a(n_k)\rvert
+\le \lvert \delta\rvert\left(\lvert a\rvert+\lvert b\rvert\frac{3k^2+k}{2}\right)<\lvert q\rvert^k
+$$
+
+for all sufficiently large $k$, a contradiction. All parameters here are
+fixed before taking $k$ sufficiently large; no uniform threshold in $a,b$,
+$q$, or the rational denominator is asserted. The explicit nonzero denominator
+is essential and is present in the extraction.
+
+The signs and derivative coefficients can also be checked without a new
+external input: differentiating each printed term $x^{P_k^\pm}$ and
+multiplying by $x$ produces $P_k^\pm x^{P_k^\pm}$, giving exactly
+$(-1)^k(a+bP_k^\pm)$ in (9). The sparse expansions converge locally inside
+the disk, as do their derivative series. No constant derivative term is added.
+
+**Attack outcome:** refutation-failed for the sparse transcription, range
+boundaries, fixed-parameter qualifications, and deductions conditional on (12).
+The examples above are witnesses against tempting stronger formulations,
+not defects in the frozen formulations. The full hypotheses and applicability
+of the external theorem producing (12) remain unchecked.
+
+## 6. Consumed premises and their actual reading depth
+
+This inventory was derived from the entire frozen pages and their consequence
+sentences. It is not inferred merely from hyperlinks or an author-supplied
+dependency list.
+
+| Premise or reference | Exact interface and role | Actual standing in this examination |
+| --- | --- | --- |
+| Duverney (1995), unnumbered theorem, p. 1287 | Every integer base outside −1, 0, 1 gives $Z(q)\notin\mathbb Q$; E0250 consumes $q=2$. | Primary statement checked visually; published theorem and printed acceptance notice identified. Its full proof is not independently certified here. |
+| Duverney (1995), (1), (3)–(5), p. 1287 | Definitions and identities $Z=(q-1)^2S$, $S=\sum\sigma(n)q^{-n}$. | Visually compared and independently rederived above, with absolute convergence and the exact scalar specialization. |
+| Duverney (1995), unnumbered lemma, p. 1288 | Rational independence of $1,F_q,G_q$ at the same integer bases. The theorem's outline consumes it. | Statement and equivalent integer-combination formulation checked. Downstream use checked conditionally on the lemma. Complete lemma proof not certified. |
+| Euler pentagonal identity printed as (7), with (6), (8), p. 1288 | Expresses the product in two sparse branches; differentiation supplies the exponents as derivative coefficients. | Printed identity and extraction compared; algebraic differentiation and coefficient reading checked. No independent proof of the Euler/Jacobi identity from first principles or from the cited books. |
+| Chandrasekharan (1985), p. 124, and Exton (1983), p. 229, refs. [2], [6] | The source's cited route to the Euler identity via Jacobi's triple product. | Only the 1995 citation and printed use read; both external books remain unread. |
+| Duverney (1993), *Propriétés arithmétiques d'une série liée aux fonctions thêta*, Acta Arith. 64, 175–188, theorem 2, ref. [3] | The 1995 proof asserts (12) for sufficiently large $k$, under the rationality assumption on the specified coefficient series. | Only the specific 1995 invocation was statement-compared. The general theorem's full hypotheses, version details beyond the printed reference, statement, proof, and actual applicability—including any sign or parameter restrictions—were not checked. This is the essential unresolved external-proof boundary. |
+| Rationality assumption $\alpha_q=\eta/\delta$, $\delta\ne0$ | Temporary assumption for the source's contradiction, with fixed $q,a,b,\eta,\delta$. | An assumed antecedent, not an independently established mathematical premise. Deductions from (12) and the zero ranges were checked. |
+| Product nonvanishing, logarithmic derivative, and (14)–(15), p. 1289 | Defines the ratio and transfers lemma independence to irrationality of $S$ and $Z$. | Source formulas visually checked; the elementary analytic and rational-relation interfaces used here are derived in section 5. No complete source-proof warrant follows. |
+| Hardy–Wright, fifth edition (1989), p. 257, ref. [8] | The source's Lambert-series citation preceding (4). | Book unread. The particular identity needed here was independently derived from absolute double summation, without attributing an unchecked book theorem. |
+| Bundschuh–Väänänen (1994), *Arithmetical investigations of a certain infinite product*, Compositio Math. 91, 175–201, ref. [1] | Method credit in the final 1995 proof paragraph, describing their irrationality work on $\sum 1/(q^n-1)$. | Printed credit read; external paper and that external result unverified. No result from it was needed to rederive the displayed logarithmic-derivative implication here. |
+| Other primary-note references [4], [5], [7] | Historical attribution to Erdős and background on q-analogs. | Bibliography/context read only; external works unread, and no additional theorem from them consumed by the frozen E0250 application. |
+| Nesterenko (1996) in E0250 | Retained inherited bibliography, with an express disclaimer of stronger conclusions or having read its argument. | External source unread; bibliographic accuracy and its results not independently checked. It is not a premise of the Duverney specialization. |
+| Catalog and formal-conjectures links in E0250 | Imported statement/status provenance and a mutable statement link, with explicit qualifications. | External pages unread and unrefreshed. The examined target is the frozen displayed E0250 formula. No present catalog status, Lean proof content, or local build result is asserted by this review. |
+
+There is no native-claim acceptance order or live tier dependency to resolve.
+Checking the specific equality attributed to [3] against its printing in 1995
+is not checking theorem 2 against the unavailable 1993 original. The latter
+would be necessary for a full audit of that external application; it is an
+explicit limit here, not an invitation to read an excluded source or substitute
+a different proof into the frozen subject.
+
+## 7. Neutral checklist, with focused verdicts
+
+| Checklist item | Explicit scoped verdict |
+| --- | --- |
+| Quantifiers and scope | **refutation-failed**, for the exact theorem/lemma domains, field of independence, nonzero coefficient pair, eventual thresholds, zero ranges, and E0250 specialization. The source's full proof and arbitrary complex-base irrationality are not covered. |
+| Circularity | **refutation-failed**, for the rederived reformulations and application chain. They use the source lemma/theorem as identified premises; none of the shown implications assumes its own conclusion. No verdict on circularity internal to the unread 1993 proof. |
+| Model and convention changes | **refutation-failed**, for base versus inverse base, complex definition versus integer theorem, positive divisors, scaled derivative, two-argument zeta notation, and the disclosed $x_q$/$\alpha_q$ normalization. |
+| Finite and statistical overreach | **refutation-failed**, for the frozen extraction's claimed coverage. No finite experiment or sample is promoted to a universal proof. The algebraic witnesses above test boundary formulations; the identities and implications are established symbolically. |
+| Uniformity | **refutation-failed**, for fixed-parameter coefficient bounds, eventual nonvanishing, the conditional divisibility contradiction, and absolute/local convergence used in the rederived interfaces. No uniform claim near $\lvert q\rvert=1$ or in unbounded $a,b$ is adopted, and no uniformity inside the unread external theorem is certified. |
+| Extremal conclusions | **Inapplicable**: the extracted assertions concern irrationality, independence and specified identities; they claim no optimized constant, attained infimum/supremum or sharpness result. The limiting statement printed in source (2) is not an extracted extremal conclusion being certified. |
+| Consequences and composition | **refutation-failed**, for every extracted mathematical consequence: scalar equivalence, $q=2$, integer-combination equivalence, sparse coefficient specification, the deductions conditional on (12), and the logarithmic-derivative transfer. |
+| Computation | **Inapplicable as mathematical evidence**: no numerical experiment, enumeration, certificate or executable theorem check supports this verdict. Hashing, archive checks and PDF rendering establish artifact identity/access only. A structurally independent computational reproduction is therefore not required. |
+| Reproduction | **refutation-failed for subject recovery and reading reproducibility**: all four exact text subjects are retained and the canonical PDF is identified by path, size and Git LFS pointer; section 9 gives a concrete rendering command. The mathematical comparison and re-derivations are exposed in this report. No computation-dependent theorem claim or external proof is claimed reproduced. |
+| Source and verdict fidelity | **refutation-failed for the stated comparison with the held 1995 note and the restraint of proof-coverage claims**. This verdict does not authenticate author-reading history, unread external references, current web pages, external proof applicability or formalization metadata. It assesses no other review report and awards no tier. |
+
+## 8. Findings, corrections and unchecked parts
+
+The most plausible concrete transcription failures did not occur: the constant
+1 is present in the lemma, the derivative carries $q^{-1}$, the two pentagonal
+branches have the right signs/exponents, the preceding gap ends at $k-1$,
+the coefficient bound is eventual for fixed parameters, and the factor in the
+E0250 application is exactly one. The printed notation change before (12) is
+real and is openly disclosed rather than silently presented as literal source
+notation. These findings support the focused verdict in the opening paragraph.
+
+No mathematical repair of the frozen extraction is called for by this review.
+The report does not independently validate the entire 1995 proof, Euler's
+identity from its cited sources, the 1993 criterion or its applicability, or
+the external works named above. It supplies no result for E0249 and no
+formal/kernel fidelity assessment. The paper's (2) was visually read but its
+limiting assertion was not independently proved; the frozen extraction does
+not use that limit to define a theorem endpoint or derive E0250.
+
+The website/acquisition history, author-reported reading dates and actions,
+inherited catalog and formalization annotations, Nesterenko bibliographic
+entry, present external URLs and current literature were not independently
+authenticated. The frozen pages disclose the relevant unrefreshed/unread
+boundaries and consume none of those unchecked items as an additional theorem
+in the E0250 specialization. Publication/acceptance evidence observed here is
+the identified primary note and its printed notice, not a new external survey.
+
+This review does not alter the frozen assertion that independent review was
+outstanding at that revision, nor attach its verdict to later edited bytes.
+Parent acceptance and any later update of the corpus are separate acts that
+cannot extend this exact coverage. There is no self-grade.
+
+## 9. Reconstructing and reading the assessed subject
+
+From an ordinary clone containing this report package, use `subject.json` to
+map each of the four `subjects/*.txt` assets back to its original Markdown
+path. They are byte-for-byte snapshots, not normalized transcriptions, except
+that the PDF's SHA-256 value on line 41 of `subjects/_index.txt` was replaced
+on 2026-10-02 by a marker naming the Git LFS pointer. Inspect
+these assets rather than the current Markdown pages if those pages have since
+changed. The primary PDF remains at the full canonical `D/` path specified in
+section 1 and `subject.json`; no duplicate PDF is needed in the report package.
+
+Before repeating the comparison, check that each chosen text input is the
+retained `subjects/*.txt` copy named by `subject.json`, and check the PDF's
+byte count against section 1 or `subject.json` and its bytes against the Git
+LFS pointer at its path. An input that differs from those copies, or a PDF of
+another size or content, is not this report's subject and must not be treated
+as a reproduction.
+A checkout containing only the LFS pointer must supply the PDF with the declared
+OID and size; pointer text is not a substitute for the page images.
+
+With the verified canonical PDF present, ordinary Poppler tools and a writable
+scratch directory suffice. From the repository root, the exact rendering
+recipe used here, apart from the disposable output-directory name, is:
+
+```sh
+duverney_render_dir=$(mktemp -d)
+pdftoppm -png -r 180 -f 1 -l 3 \
+  erdos/library/irrationality/duverney_1995_irrationalite_q_analogue_zeta2/duverney_1995_irrationalite_q_analogue_zeta2.pdf \
+  "$duverney_render_dir/page"
+```
+
+Read all three resulting `page-1.png`, `page-2.png`, `page-3.png` images;
+their printed page numbers are 1287, 1288, 1289. No OCR, author rendering,
+network query, Lean tool, repository gate or mathematical executable is
+required. Rendering success establishes access only; the formula-by-formula
+comparison, explicit parameter cases and conditional deductions above are the
+mathematical evidence. No hidden computational input or cached success is
+needed to reconstruct them.

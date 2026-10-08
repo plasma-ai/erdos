@@ -1,0 +1,36 @@
+{
+  "title": "Forbidden intersections",
+  "authors": [
+    "Peter Frankl",
+    "Vojtěch Rödl"
+  ],
+  "publication": {
+    "journal": "Transactions of the American Mathematical Society",
+    "volume": "300",
+    "issue": "1",
+    "pages": "259–286",
+    "date": "March 1987",
+    "received": "24 October 1985",
+    "doi": "10.1090/S0002-9947-1987-0871675-6",
+    "publisher_url": "https://www.ams.org/tran/1987-300-01/S0002-9947-1987-0871675-6/S0002-9947-1987-0871675-6.pdf",
+    "publisher_url_provenance": "Version-of-record PDF URL listed in the retrieved Crossref metadata; the canonical bytes were acquired from the public author archive."
+  },
+  "canonical_pdf": {
+    "filename": "frankl_1987_forbidden_intersections.pdf",
+    "source_url": "https://www.renyi.hu/~pfrankl/1987-3.pdf",
+    "author_publication_list": "https://www.renyi.hu/~pfrankl/FPpubl.html",
+    "retrieved_utc": "2026-09-05T13:35:28.547978+00:00",
+    "bytes": 2223714,
+    "physical_pages": 28,
+    "printed_pages": "259–286",
+    "fresh_retrieval_matches_previously_retained_pdf": true
+  },
+  "version_qualification": "Published journal scan hosted by an author. The fresh author-hosted retrieval is byte-identical to the previously retained PDF used for the later simplex source. This is not a separate author manuscript; scanning and PDF metadata dates are not mathematical revision dates. No distinct manuscript or author-issued erratum is retained or asserted.",
+  "metadata_evidence": {
+    "crossref_url": "https://api.crossref.org/works/10.1090/S0002-9947-1987-0871675-6",
+    "crossref_retrieved_utc": "2026-09-05T14:01:50.229822+00:00",
+    "author_publication_list_retrieved_utc": "2026-09-05T14:01:49.009594+00:00",
+    "pdf_title_page": "Volume 300, Number 1, March 1987; received 24 October 1985."
+  },
+  "proof_scope": "Complete rewritten qualitative forbidden-intersection and joint-partition chains, with exact external Harper isoperimetry; separate Section 4 counting, asymptotic orthogonality, sphere averaging, coding, modular/affine and Galvin arguments. Result pages explicitly identify compilation-supplied repairs, numerical corollary gaps, the unproved printed finite range in Theorem 1.11, and the obstruction to the literal unrestricted Theorem 9.1. Theorem 1.18 is a deferred announcement, not a source proof. No current status or formal verification is inferred."
+}

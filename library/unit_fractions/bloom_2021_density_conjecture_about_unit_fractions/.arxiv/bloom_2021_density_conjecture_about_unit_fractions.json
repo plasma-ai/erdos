@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Thomas F. Bloom"
+  ],
+  "category": "math.NT",
+  "date": "2023-10-12",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 1339341,
+    "files": 2,
+    "sha256": "0ec2d4445d6fed0e9aa64ec2aef8cf223079a76e196afe2ea40d227ba09d3eee",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2112.03726v2"
+  },
+  "id": "2112.03726",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 1005094,
+    "previous": [],
+    "sha256": "16130b55cf4f1e33d6958954f08f334becf24c70886560d76665d33f78dccd09",
+    "url": "https://arxiv.org/pdf/2112.03726v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2112.03726v2 [math.NT] 12 Oct 2023",
+  "tex": {
+    "archive": {
+      "bytes": 713131,
+      "name": "arXiv-2112.03726v2.tar.gz",
+      "sha256": "c0acb2d9736684789e5935db30812a472a2ad262653df0e2f3a59e3feb1c2834"
+    },
+    "bytes": 827513,
+    "files": 3,
+    "sha256": "822eec930a82cf0e22f42ba237f2ad4321252a2717656433ee08325a5b05d9ab",
+    "url": "https://arxiv.org/src/2112.03726v2"
+  },
+  "title": "On a density conjecture about unit fractions",
+  "version": 2
+}

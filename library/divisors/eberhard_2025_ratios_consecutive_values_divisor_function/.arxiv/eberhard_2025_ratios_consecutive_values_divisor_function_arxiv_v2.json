@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Sean Eberhard"
+  ],
+  "category": "math.NT",
+  "date": "2025-10-30",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 85403,
+    "files": 1,
+    "sha256": "41b2fb99e9a3456b1d2cfdd474df311f35c44a05f3064947ace68600ac670424",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2505.00727v2"
+  },
+  "id": "2505.00727",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 236482,
+    "previous": [],
+    "sha256": "556c965a8fc9eb55fd9a291349042667fe498261707fbb7e8fd1e52c0a44c4b2",
+    "url": "https://arxiv.org/pdf/2505.00727v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2505.00727v2 [math.NT] 30 Oct 2025",
+  "tex": {
+    "archive": {
+      "bytes": 3913,
+      "name": "arXiv-2505.00727v2.tar.gz",
+      "sha256": "5dcbf37790296fad7597d7b4ad5ec803dd0ff0003d9bf298277365ed99818a15"
+    },
+    "bytes": 9222,
+    "files": 3,
+    "sha256": "6b1f357deda93eac86bd65f6e75b706fb5d932ad611737c683ac4e0700362497",
+    "url": "https://arxiv.org/src/2505.00727v2"
+  },
+  "title": "Ratios of consecutive values of the divisor function",
+  "version": 2
+}

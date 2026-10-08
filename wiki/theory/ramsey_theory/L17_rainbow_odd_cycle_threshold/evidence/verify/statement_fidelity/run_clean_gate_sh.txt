@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+set -uo pipefail
+
+# Clean committed-source gate for L17 at the frozen state of 2026-09-25T03:40:15Z
+# ---------------------------------------------
+# Runs the committed Lean gate in clean mode against the frozen commit and
+# captures both streams, the UTC window and the exit code beside this script
+# in clean_gate_log.txt. The gate archives the commit's lean/ tree into a
+# fresh temporary directory, fetches the Mathlib cache, builds, runs the
+# axiom audit against the committed manifest and checks the self-test stamp.
+
+REV='the repository as it stood on 2026-09-25T03:40:15Z'
+HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd -P)"
+REPO="$(git -C "$HERE" rev-parse --show-toplevel)"
+LOG="$HERE/clean_gate_log.txt"
+
+# Cap Lake's parallel compiles, as the gate's own default does.
+export LEAN_NUM_THREADS=4
+
+cd "$REPO"
+START_UTC="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+START_S="$(date +%s)"
+{
+    echo "clean gate of the archived lean/ subtree, non-author runner (model: Claude Fable 5.1)"
+    echo "state: $REV"
+    echo "lean_tree: lean/ as it stood on 2026-09-25T03:40:15Z"
+    echo "command: LEAN_NUM_THREADS=4 /bin/bash lean/scripts/gate.sh --clean, run on $REV"
+    echo "working_directory: the repository root of the runner worktree at the commit"
+    echo "start_utc: $START_UTC"
+    echo "--- streams (stdout and stderr interleaved) ---"
+} > "$LOG"
+/bin/bash lean/scripts/gate.sh --clean "$REV" >> "$LOG" 2>&1
+RC=$?
+END_UTC="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+END_S="$(date +%s)"
+{
+    echo "--- end streams ---"
+    echo "end_utc: $END_UTC"
+    echo "wall_seconds: $((END_S - START_S))"
+    echo "exit_code: $RC"
+} >> "$LOG"
+exit "$RC"

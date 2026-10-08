@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Samuil Petkov"
+  ],
+  "category": "math.CO",
+  "date": "2026-08-31",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 1455977,
+    "files": 1,
+    "sha256": "2b9064742155dce7197e378cd4e67dc050a5b0f5fbeafaec58ed234ccbf973c0",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2608.30604v1"
+  },
+  "id": "2608.30604",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 489940,
+    "previous": [],
+    "sha256": "bca4c48e436f0e61d11051b0dfdbc969ae650f498909d1151e329241664b4727",
+    "url": "https://arxiv.org/pdf/2608.30604v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2608.30604v1 [math.CO] 31 Aug 2026",
+  "tex": {
+    "archive": {
+      "bytes": 55330,
+      "name": "arXiv-2608.30604v1.tar.gz",
+      "sha256": "381e4b03b6d206f424db6731d50bd7bd330e7b600caafb39f0a98d9a0af1e715"
+    },
+    "bytes": 176731,
+    "files": 3,
+    "sha256": "c0576aa7b96e883e74ad28763ab386ac5151b9b8fa2e172e331d0dfc3b2b65af",
+    "url": "https://arxiv.org/src/2608.30604v1"
+  },
+  "title": "A Full-Sequence Quantitative Gap Between the Chromatic and Cochromatic Numbers of a Random Graph",
+  "version": 1
+}

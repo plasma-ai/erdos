@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Stijn Cambie",
+    "Michiel Provoost"
+  ],
+  "category": "math.CO",
+  "date": "2025-10-28",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 351616,
+    "files": 1,
+    "sha256": "ea419f4293ebd499c8adfff56e8d713162b355c11b988a34f1455a86a843e4f1",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2505.03497v2"
+  },
+  "id": "2505.03497",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 546893,
+    "previous": [],
+    "sha256": "10ed232d99cd536032d84fded093320ce46eddd6436def0dee3ab24666fe857c",
+    "url": "https://arxiv.org/pdf/2505.03497v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2505.03497v2 [math.CO] 28 Oct 2025",
+  "tex": {
+    "archive": {
+      "bytes": 20308,
+      "name": "arXiv-2505.03497v2.tar.gz",
+      "sha256": "ce8b7035e35fda2e6a054b0b2e564ed0d56c5ff26e1f92451912633e3f216604"
+    },
+    "bytes": 63155,
+    "files": 2,
+    "sha256": "92ceba42e2caaa43ede9302df8d8ae7e4444bc33808849564d85ca27c54153f4",
+    "url": "https://arxiv.org/src/2505.03497v2"
+  },
+  "title": "On edge-colouring-games by Erd\\H{o}s, and Bensmail and Mc Inerney",
+  "version": 2
+}

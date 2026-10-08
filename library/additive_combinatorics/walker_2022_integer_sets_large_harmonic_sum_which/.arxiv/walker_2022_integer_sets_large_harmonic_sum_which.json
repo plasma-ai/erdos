@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Alexander Walker"
+  ],
+  "category": "math.NT",
+  "date": "2025-09-04",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 357299,
+    "files": 2,
+    "sha256": "3cf1d4b583dee5765cc02d9a2bc2f9b53bd96ed0e0540bd1b3fc6115f06cbc11",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2203.06045v2"
+  },
+  "id": "2203.06045",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 347853,
+    "previous": [],
+    "sha256": "687e18f118fdd35fa83d6608e8deeef536657ef86c4129e087f606087011d1df",
+    "url": "https://arxiv.org/pdf/2203.06045v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2203.06045v2 [math.NT] 4 Sep 2025",
+  "tex": {
+    "archive": {
+      "bytes": 71530,
+      "name": "arXiv-2203.06045v2.tar.gz",
+      "sha256": "c6d46d0eff6294dc51bab82c58ec5eb2b9205ea357f63b943cb9db5a3d8dce29"
+    },
+    "bytes": 88808,
+    "files": 4,
+    "sha256": "c339b2963fa6e0d10b42aac1430704571840cbc177650d1dd13d662a156a041d",
+    "url": "https://arxiv.org/src/2203.06045v2"
+  },
+  "title": "Integer Sets of Large Harmonic Sum Which Avoid Long Arithmetic Progressions",
+  "version": 2
+}

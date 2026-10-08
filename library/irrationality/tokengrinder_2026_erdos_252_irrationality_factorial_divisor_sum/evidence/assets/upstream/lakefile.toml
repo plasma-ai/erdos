@@ -1,0 +1,16 @@
+name = "erdos252"
+defaultTargets = ["Erdos252"]
+
+[leanOptions]
+autoImplicit = false
+relaxedAutoImplicit = false
+warn.sorry = true
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.33.1"
+
+[[lean_lib]]
+name = "Erdos252"
+globs = ["Erdos252"]

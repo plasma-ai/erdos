@@ -1,0 +1,33 @@
+Erdos252.erdos_252 : ∀ (k : ℕ), Irrational (∑' (n : ℕ), ↑((ArithmeticFunction.sigma k) n) / ↑n.factorial)
+Erdos252.erdos_252 : ∀ (k : Nat),
+  Irrational
+    (@tsum.{0, 0} Real Nat Real.instAddCommMonoid
+      (@UniformSpace.toTopologicalSpace.{0} Real (@PseudoMetricSpace.toUniformSpace.{0} Real Real.pseudoMetricSpace))
+      (fun (n : Nat) =>
+        @HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+          (@Nat.cast.{0} Real Real.instNatCast
+            (@DFunLike.coe.{1, 1, 1} (@ArithmeticFunction.{0} Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+              Nat (fun (x : Nat) => Nat)
+              (@ArithmeticFunction.instFunLikeNat.{0} Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+              (ArithmeticFunction.sigma k) n))
+          (@Nat.cast.{0} Real Real.instNatCast (Nat.factorial n)))
+      (SummationFilter.unconditional.{0} Nat))
+'Erdos252.erdos_252' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos252.summable_sigma_factorial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos252.irrational_alpha_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos252.irrational_alpha_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos252.alpha' depends on axioms: [propext, Classical.choice, Quot.sound]
+def ArithmeticFunction.sigma : ℕ → ArithmeticFunction ℕ :=
+fun k => { toFun := fun n => ∑ d ∈ n.divisors, d ^ k, map_zero' := ⋯ }
+def Irrational : ℝ → Prop :=
+fun x => x ∉ Set.range Rat.cast
+def tsum.{u_4, u_5} : {α : Type u_4} →
+  {β : Type u_5} →
+    [AddCommMonoid α] →
+      [TopologicalSpace α] → (β → α) → optParam (SummationFilter β) (SummationFilter.unconditional β) → α :=
+wrapped✝.1
+@ArithmeticFunction.sigma_apply : ∀ {k n : ℕ}, (ArithmeticFunction.sigma k) n = ∑ d ∈ n.divisors, d ^ k
+@ArithmeticFunction.sigma_eq_zero : ∀ {k n : ℕ}, (ArithmeticFunction.sigma k) n = 0 ↔ n = 0
+Nat.divisors_zero : Nat.divisors 0 = ∅
+def Nat.factorial : ℕ → ℕ :=
+fun x => Nat.brecOn x Nat.factorial._f

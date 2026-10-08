@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Tom Maciejewski"
+  ],
+  "category": "math.NT",
+  "date": "2026-05-24",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 652135,
+    "files": 1,
+    "sha256": "8f56071c10714ac5db46aceb085c54769380c1ab80bcfd9423a69f3c53e81b66",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2605.20475v2"
+  },
+  "id": "2605.20475",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 508565,
+    "previous": [],
+    "sha256": "46fb191458c6d757e6974c5317000594fa64e0a5c26736414fa541e02618775d",
+    "url": "https://arxiv.org/pdf/2605.20475v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2605.20475v2 [math.NT] 24 May 2026",
+  "tex": {
+    "archive": {
+      "bytes": 3757563,
+      "name": "arXiv-2605.20475v2.tar.gz",
+      "sha256": "4f76e7bb79db064353edb742e863dee427d7e1e4a42022a297fafcee8e7025f2"
+    },
+    "bytes": 8966075,
+    "files": 36,
+    "sha256": "b4157698e1c57bdeeed61bf5c642a2d53bd6f6e59b5ad6a722f2cba89f738126",
+    "url": "https://arxiv.org/src/2605.20475v2"
+  },
+  "title": "Bounded-box reductions in the Subbarao-Warren problem for unitary perfect numbers",
+  "version": 2
+}

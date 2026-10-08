@@ -1,0 +1,46 @@
+{
+  "authors": [
+    "Noga Alon",
+    "Thomas F. Bloom",
+    "W. T. Gowers",
+    "Daniel Litt",
+    "Will Sawin",
+    "Arul Shankar",
+    "Jacob Tsimerman",
+    "Victor Wang",
+    "Melanie Matchett Wood"
+  ],
+  "category": "math.CO",
+  "date": "2026-05-20",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 316337,
+    "files": 1,
+    "sha256": "e5f08ce5f6ed82f1b6ae5973a7db7d36dc262366a5dc4bcbcd2378586c8a2ff6",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2605.20695v1"
+  },
+  "id": "2605.20695",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 668963,
+    "previous": [],
+    "sha256": "c00042707168d1f208e4830ebb9f80b17fdd1913c6e27a5ba4afd0a9aeaa4053",
+    "url": "https://arxiv.org/pdf/2605.20695v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2605.20695v1 [math.CO] 20 May 2026",
+  "tex": {
+    "archive": {
+      "bytes": 38974,
+      "name": "arXiv-2605.20695v1.tar.gz",
+      "sha256": "b5594864f4a729d1b15891278931767f22a0395bf71e2fe26cd8a8feda4a7104"
+    },
+    "bytes": 115581,
+    "files": 4,
+    "sha256": "8f9d594c5246c8782758efb74339915592283b1dff31b4bf69e7e42fb8011dc2",
+    "url": "https://arxiv.org/src/2605.20695v1"
+  },
+  "title": "Remarks on the disproof of the unit distance conjecture",
+  "version": 1
+}

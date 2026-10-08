@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Sungyoon Kim",
+    "Mert Pilanci"
+  ],
+  "category": "cs.AI",
+  "date": "2026-06-30",
+  "fetched": "2026-09-24",
+  "html": {
+    "bytes": 2636313,
+    "files": 11,
+    "sha256": "553566f39066e8ed09df7cf6a00ac8da9089bf76b0825148482dda4d0ce2aa80",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2606.31182v1"
+  },
+  "id": "2606.31182",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 1343730,
+    "previous": [],
+    "sha256": "7375f029e60796ce1bc1899ae07b108ab8ee8cd2340ddf0da301b288379145db",
+    "url": "https://arxiv.org/pdf/2606.31182v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2606.31182v1 [cs.AI] 30 Jun 2026",
+  "tex": {
+    "archive": {
+      "bytes": 1052868,
+      "name": "arXiv-2606.31182v1.tar.gz",
+      "sha256": "c9f1672f7fcaf7921f50bce012b18c0b3181a2db34686fbade8b270727e618ff"
+    },
+    "bytes": 1407343,
+    "files": 18,
+    "sha256": "fae0aeda45986a0d3759647dc18586b2ab67f95788404721ddec02161c18499b",
+    "url": "https://arxiv.org/src/2606.31182v1"
+  },
+  "title": "AI-Assisted Discovery of Convex Relaxations via Dual Agents",
+  "version": 1
+}

@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Subhajit Ghosh",
+    "Koushik Ramachandran"
+  ],
+  "category": "math.CV",
+  "date": "2023-12-21",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 741954,
+    "files": 4,
+    "sha256": "acd6032e1dfc0a012bbd44126593c0a594cce08647a81c110b7a3ec3cf3cd410",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2312.13673v1"
+  },
+  "id": "2312.13673",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 575696,
+    "previous": [],
+    "sha256": "c8eade14d4e393452031206cf09e52031616127fc3153e1c8e0dd9a2fc89ee9a",
+    "url": "https://arxiv.org/pdf/2312.13673v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2312.13673v1 [math.CV] 21 Dec 2023",
+  "tex": {
+    "archive": {
+      "bytes": 158082,
+      "name": "arXiv-2312.13673v1.tar.gz",
+      "sha256": "a268c507940ecb010ef42053181d67e6bd8cced4ab7bb7c0e2dd0f1cd1cafa75"
+    },
+    "bytes": 243862,
+    "files": 6,
+    "sha256": "cb42989db9d55d6046cbf19b473d652050d1ec836c82697609432516ae13df44",
+    "url": "https://arxiv.org/src/2312.13673v1"
+  },
+  "title": "Number of components of polynomial lemniscates: a problem of Erd\\\"os, Herzog, and Piranian",
+  "version": 1
+}

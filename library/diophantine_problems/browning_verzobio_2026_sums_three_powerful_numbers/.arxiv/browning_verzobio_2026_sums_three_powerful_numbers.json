@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Tim Browning",
+    "Matteo Verzobio"
+  ],
+  "category": "math.NT",
+  "date": "2026-08-25",
+  "fetched": "2026-09-24",
+  "html": {
+    "bytes": 579048,
+    "files": 1,
+    "sha256": "2d92417460e050479f962de6a50dece3d6e667e23e3b2aa931adf9a66cabe08a",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2608.24512v1"
+  },
+  "id": "2608.24512",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 397312,
+    "previous": [],
+    "sha256": "1ff50f5b0b66a4c0750aae03ae54f8a67bf451b05d9a386dbc6f5851855e04c9",
+    "url": "https://arxiv.org/pdf/2608.24512v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2608.24512v1 [math.NT] 25 Aug 2026",
+  "tex": {
+    "archive": {
+      "bytes": 20239,
+      "name": "arXiv-2608.24512v1.tar.gz",
+      "sha256": "18c9e3c69b9c1e89403195236a232b3432e096090fff73f0ce7b8ac8058e62a8"
+    },
+    "bytes": 59221,
+    "files": 2,
+    "sha256": "aca771cf3b9757ebdafdb5cc1896bb8a02da1fb59b47d1b25c60489e2b016b69",
+    "url": "https://arxiv.org/src/2608.24512v1"
+  },
+  "title": "Sums of three powerful numbers",
+  "version": 1
+}

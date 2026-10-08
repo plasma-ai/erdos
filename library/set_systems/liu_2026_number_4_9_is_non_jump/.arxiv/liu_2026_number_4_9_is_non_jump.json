@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Xizhi Liu",
+    "Dhruv Mubayi"
+  ],
+  "category": "math.CO",
+  "date": "2026-05-13",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 375208,
+    "files": 1,
+    "sha256": "a2607f1894254430ad9c21d666373466d4ab7c7abdeeedfc3ecb22cd682fa598",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2605.13567v1"
+  },
+  "id": "2605.13567",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 560026,
+    "previous": [],
+    "sha256": "c9623aa25647cfcf6ac9d2bec8bd15b05844a2ac250624c99af8695e412031f8",
+    "url": "https://arxiv.org/pdf/2605.13567v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2605.13567v1 [math.CO] 13 May 2026",
+  "tex": {
+    "archive": {
+      "bytes": 15764,
+      "name": "arXiv-2605.13567v1.tar.gz",
+      "sha256": "c3ca89fb6236c2944e0c2cbbe28774f64067a201ebb75ff41a5e89416dfae2fd"
+    },
+    "bytes": 49977,
+    "files": 3,
+    "sha256": "6832185daf312d59fd4092e062f009c1fcba42cddb8013a585ffa52553b9c694",
+    "url": "https://arxiv.org/src/2605.13567v1"
+  },
+  "title": "The number $4/9$ is a non-jump for $3$-graphs",
+  "version": 1
+}

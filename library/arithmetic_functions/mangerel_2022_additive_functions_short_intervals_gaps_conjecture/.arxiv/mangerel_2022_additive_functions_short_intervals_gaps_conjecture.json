@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Alexander P. Mangerel"
+  ],
+  "category": "math.NT",
+  "date": "2021-08-27",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 1291195,
+    "files": 1,
+    "sha256": "5305dc348589ae275407d4c9ec1a341e59e02d4e760267258b693394518a7470",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2108.12351v1"
+  },
+  "id": "2108.12351",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 467189,
+    "previous": [],
+    "sha256": "271b5ed668ee265d6ddddedf4cb35b51f5b72a39f5010d1243ea5687a33de4d0",
+    "url": "https://arxiv.org/pdf/2108.12351v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2108.12351v1 [math.NT] 27 Aug 2021",
+  "tex": {
+    "archive": {
+      "bytes": 45103,
+      "name": "arXiv-2108.12351v1.tar.gz",
+      "sha256": "2aec36031341b70e4cfb95e68dcaffbccf376b54e671ee29f96cba73a516bb9b"
+    },
+    "bytes": 176252,
+    "files": 2,
+    "sha256": "86ed704ed3ccf2f1b5d642430e8ead78d77937517135f8f1e90340de514993be",
+    "url": "https://arxiv.org/src/2108.12351v1"
+  },
+  "title": "Additive functions in short intervals, gaps and a conjecture of Erd\\H{o}s",
+  "version": 1
+}

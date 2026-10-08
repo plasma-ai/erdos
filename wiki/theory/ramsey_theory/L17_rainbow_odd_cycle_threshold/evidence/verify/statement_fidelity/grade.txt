@@ -1,0 +1,755 @@
+L17 STATEMENT-FIDELITY GRADE AND ACCEPTANCE DECISION
+Subject: the repository as it stood on 2026-09-25T03:40:15Z
+Grade date 2026-09-25 (UTC)
+
+REPORT CONTRACT: pass.
+INDEPENDENCE: pass.
+KERNEL-ONLY: confirmed; the clean gate's audit at the commit admitted zero
+compiler axioms, the L17 row's compiler field in lean/Manifest.json is
+empty, and two independent `#print axioms` runs (the reviewer's and mine)
+give propext, Classical.choice and Quot.sound alone for the claim, the
+statement and every premise theorem (section 4).
+ACCEPTANCE: accepted at tier 2 for the exact source below, dated 2026-09-25,
+in force from its filing; no regeneration condition attaches, for the reason
+in section 4.
+EXTENSION RULE: the precedent's rule, restated for this commit in section 6,
+with its Lean subject kept as the whole lean/ tree outside lean/README.md.
+
+Grader. The statement-fidelity grader for the L17 acceptance at this commit,
+working in a fresh context (model: Claude Fable 5.1), separately spawned
+from the reviewer. I am not the author of any Lean module, page or record
+under review, not the preparer of the extraction, not the runner of the
+clean gate and not the reviewer. Nobody is named in this record; roles only.
+Paths below are repository-relative unless stated; "the record home" is
+`wiki/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/evidence/verify/statement_fidelity/`
+and "the extraction" is
+`wiki/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/evidence/assets/statement_fidelity/`.
+
+======================================================================
+1. WHAT I RECEIVED AND READ
+======================================================================
+
+Received, by assignment: the review `review.txt` (1025 lines) in the record
+home, its reads `review_reads.json` (551 lines), its probe
+`ReviewerProbe.lean` (587 lines) with the kept output `probe_output.txt`
+(211 lines) and the runner `run_probe.sh`; the frozen English subject in the
+extraction (`subject_manifest.json`, `subject_statement.txt`,
+`subject_index.txt`, `subject_proof.txt`, `subject_problem.txt`); the
+runner's clean-gate receipt `clean_gate.json` (schema
+l17-clean-gate-receipt-v1) with `clean_gate_log.txt` (1866 lines) and its
+wrapper `run_clean_gate.sh`; the Lean subject at the commit in the worktree,
+for rederivation; the contract pages `docs/verification.md` (the sections
+Independence and the assignment, Exact subjects and durable evidence, Report
+contract, Audit checklist, and the Erdos-specific Review and acceptance,
+Independence and exact subjects, Whole-claim report, Audit checklist,
+Durable reports and current standing), `docs/lean_authoring.md` (Native
+claim surface; Statement fidelity and validation), `docs/anatomy.md` (Tiers;
+Claim scrutiny) and `AGENTS.md` (conventions 2 and 9), all from the worktree
+at the commit; and, for their shapes and the extension rule only, the
+precedent record's `grade.txt`, `grade_reads.json`, `_index.md` (lines 1-60)
+and its four grader receipt files under another claim's statement-fidelity
+folder. Everything I read is listed with line ranges and reading depth in
+`grade_reads.json` beside this record.
+
+Beyond the assigned files I read, all at the commit: `lean/Erdos/L17.lean`
+whole; the statement-bearing library modules
+`lean/Erdos/Library/Problem809/{Statement,RainbowCycles,FinalAssembly,Comparison,CycleCopyBridge,MainTerm}.lean`
+and `SevenCycle/Statement.lean`, `BucicChenMa/Statement.lean` and
+`BucicChenMa/ThresholdConsequence.lean` whole; the ranges of
+`ThresholdArithmetic.lean`, `SubgraphTransfer.lean`,
+`SevenCycle/C7LowerSequence.lean`, `UpperBound/SevenCycle.lean`,
+`BucicChenMa/QuantitativeInductionAssembly.lean`,
+`BucicChenMa/QuantitativeConsequence.lean` and
+`BucicChenMa/LowerInduction.lean` that `grade_reads.json` names; the three
+environment files whole; `lean/Manifest.json` (head, lines 1738-1769, and its
+module count, declarations and both claim rows by script); the Mathlib lines
+the review cites in the checkout's package tree; and a programmatic
+import-closure walk and sweep of the 196 closure sources. With read-only git I
+confirmed the identities below, reran the four extraction commands, located
+the extraction anchors in the three pages, compared the four contract pages
+with the commit and with the main checkout, and compared the `lean/` tree and
+another claim's generated subtree of this state with those of that claim's
+accepted state of 2026-09-19T05:07:22Z (names only; no diff content). To rule
+on the reviewer's exposure E2 I read the card's lines 1-12, 22-40 and 85-108
+and the problem page's lines 90-113 and 155-163 (section 3). Not read: the
+card and the problem page beyond those lines and the frozen extraction, any
+research page, library card or PDF, the audit program under `lean/Audit/`, the
+gate and self-test scripts under `lean/scripts/`, `lean/README.md`, the 177
+proof modules under `Problem809/BucicChenMa/` and `Problem809/SevenCycle/`
+beyond their import lines and the sweep, any evidence folder other than the
+two named above, git history beyond the identities and path names named here,
+the reviewer's assignment text (not supplied; the review's own account of its
+allowed material stands in for it), and any message from another role.
+
+Frozen subject, re-verified by me in the worktree
+the checkout at the frozen state: `git rev-parse HEAD` printed the checked
+state, the repository as it stood on 2026-09-25T03:40:15Z, and
+`git status --porcelain --untracked-files=no` printed nothing, at the start
+of my work and again before and after each of my two Lean runs (section 2);
+the only additions in the worktree are untracked files under the claim's
+`evidence/` folder (the extraction, the record home, and now this record).
+The repository tree and the `lean/`, `lean/Erdos` and
+`lean/Erdos/Library/Problem809` subtrees were those of that state, each
+resolved by `git rev-parse` at the checkout and named here by path and
+date (the tree ids this record held are not retained); object format
+sha1; commit date
+2026-09-25T03:40:15Z. These equal the identities in the review, in
+`subject_manifest.json` and in the clean-gate receipt. `git ls-files` lists
+1732 `.lean` files under `lean/Erdos/`, 195 of them under
+`lean/Erdos/Library/Problem809/`; `lean/lean-toolchain` is
+`leanprover/lean4:v4.32.0-rc1`; `lake env lean --version` prints "Lean
+(version 4.32.0-rc1, arm64-apple-darwin24.6.0, commit
+b4812ae53eea93439ad5dce5a5c26591c31cb697, Release)"; Mathlib is
+79aee35d9696d759b73eed71d7dde666750bc35e in `lean/lakefile.toml` (which also
+sets `autoImplicit = false` for the whole library and builds every module
+under `Erdos/` by glob) and in `lean/lake-manifest.json`, and the package
+checkout under `lean/.lake/packages/mathlib` is at that revision with a
+clean status.
+
+The contract pages. The four pages in the worktree equal the frozen state's
+committed text (`git diff --quiet` against it over docs/verification.md
+docs/lean_authoring.md docs/anatomy.md AGENTS.md, exit 0), and each equals the
+main checkout's copy as it stood on 2026-09-24T22:10:34Z (cmp). There is one
+version of the contract for this cycle; the review cites that text and I graded
+against it.
+
+The English subject. I reran the four extraction commands of
+`subject_manifest.json` on the three pages as they stood at the frozen state
+(bash -c, awk version 20200816): each output is byte-identical to the filed
+part (597, 2262, 2682 and 335 bytes; 9, 44, 49 and 10 lines), the
+concatenation is 5876 bytes as the manifest records, and the guard prints
+nothing (grep exit status 1) on the rerun outputs and on the filed files.
+The anchors at the frozen state place the
+parts at `_index.md` 13-21 (`statement:` at 13; the next unindented line,
+22, is `status: proved`), 41-84 (`## Statement` at 41, `## Argument and
+formal surface` at 66, the next H2 `## Current standing` at 85; the page has
+108 lines), `_proof.md` 15-63 (the closing `---` is line 14; the page ends at
+63) and `E0809.md` 17-26 (`**Statement.**` at 17, `**Formulation.**` at 27;
+the page has 252 lines), as the manifest states. The five extraction files
+are untracked at the commit (`git ls-files` lists none), as the manifest
+says; the record identifies them by path and by the commands that
+regenerate them from the frozen pages. The frozen extraction is the English
+subject at the commit.
+
+======================================================================
+2. REPORT CONTRACT: pass
+======================================================================
+
+Checked against the contract at the commit for a tier-2 statement-fidelity
+report: `docs/lean_authoring.md`, Statement fidelity and validation (the
+report identifies exact source and Lean revisions, unfolds necessary
+definitions, compares objects, quantifiers, hypotheses, conventions,
+constants, exceptional cases and conclusion, accounts for every clause and
+the exact source specialization, and a weaker or conditional theorem does
+not verify the target), together with the rules of `docs/verification.md`
+that apply to every report (the subject block and independence section,
+exact subjects and durable evidence, exposure disclosure, consequence
+sentences and reproducibility notes as claim surfaces, verdict words in
+full), the Erdos whole-claim part names and audit checklist of that page,
+and the tier law of `docs/anatomy.md`, Tiers.
+
+Part by part.
+- Exact revisions (review section 1.1-1.3). The frozen state by date, its
+  trees by path, checkout state, toolchain with the
+  compiler's own version string, Mathlib pin in both files and in the
+  package checkout; the English subject by path, extraction rule and line
+  range, regenerated before anything else was read; the Lean subject by
+  declaration, module and line, the import closure (196 modules, by folder),
+  the manifest row (`depends []`, `compiler []`, the three standard axioms,
+  `pretty` equal to the source), and the byte identity of every closure
+  source with its blob at the commit; the two assignment name discrepancies
+  resolved. Pass.
+- Restatement (section 2). Every quantifier and convention in the reviewer's
+  own words: k ≥ 3 with m = 2k+1; graphs on exactly n vertices with exactly
+  ⌊n²/4⌋+1 edges; a palette of r colors possibly not all used; a copy as an
+  injective adjacency-preserving map with chords allowed; rainbow as m
+  pairwise distinct colors; the least r; the value 0 exactly at n = 0, 1, 2;
+  the three readings of the asymptotic; and what is not asserted (fixed n,
+  rate, C₃ and C₅). Pass.
+- Unfolding (sections 3 and 4). The exact Lean text, then U1-U12 to Mathlib
+  and core: `SimpleGraph (Fin n)`, `edgeSet` and `Nat.card`, `EdgeLabeling`
+  as a function on the edge set, `Copy` as an injective homomorphism with
+  `mapEdgeSet` as `Sym2.map`, `cycleGraph` with `cycleGraph_adj'`, the two
+  claim-local definitions by `Iff.rfl` (and `EveryCopyRainbow` by `Iff.rfl`
+  to the library's), the ℕ infimum with its empty-set value, natural-number
+  division as the floor, `IsEquivalent` as little-o of the difference with
+  the three readings proved equivalent, `statement` with no binders, and the
+  proof term of `claim` printed. Each step names its Mathlib file and lines
+  and its probe section. Pass.
+- Comparison (sections 5 and 6). Clause by clause against all four parts
+  (F1-F6, S1-S6, G1-G5, A1-A5, P1-P2), with conventions and exceptional
+  cases (n = 0, 1, 2, 3; the palette 0; several copies on one edge set; the
+  zero function at n = 0 in the ratio reading; the `NeZero` instance; the
+  literals 7 and 9); the consequence sentences C1-C6 each proved or checked,
+  and the problem page's "e edges" faithful under either reading through the
+  probe's identity for every pattern graph. Every clause of the English is
+  accounted for, and the Lean is the exact specialization e = ⌊n²/4⌋+1,
+  H = C_{2k+1}, k ≥ 3, of the catalog's definition. Pass.
+- No weaker or conditional statement (sections 3, 4, 7.2, 9 and 12).
+  `statement` has no binders and `#check @claim` prints the statement
+  constant as its type; the assembled theorem and both branch theorems are
+  closed; `claim`'s one step is a proved identity; the sweep finds no axiom,
+  sorry, opaque, unsafe, implemented_by, extern, csimp, partial or
+  native_decide; the axiom footprint is the three standard axioms. Pass.
+- Checklist (section 10). An explicit verdict for each of the ten Erdos
+  items, with the reason where an item is inapplicable (Circularity), and
+  each shared canonical mode and named pattern marked. Pass.
+- Weakest steps (section 11) and strongest attack (section 12). Three
+  weakest steps rederived (the exact-edge / at-least-edge identity by a
+  route of the reviewer's own, the copy convention, the asymptotic readings
+  with the value-0 convention) and a layered attack (a weaker or degenerate
+  reading through the copy and infimum conventions, a hidden hypothesis in
+  the 195 library modules, a constant or off-by-one slip, a stale build)
+  with the reason each layer failed. Pass.
+- Premises (section 13). No local L-claim consumed (manifest `depends []`,
+  no other `Erdos.L<n>` namespace in the closure, confirmed by me); the
+  library premises named with their types and the depth at which they were
+  read; the external source identified as formalized, not assumed, with its
+  reading depth stated honestly (the paper unread; the statement compared
+  with the problem page's rendering); the standing kernel and Mathlib
+  assumption named; no tier asserted. Pass.
+- Independence and exposure (sections 1.4-1.6, `review_reads.json`).
+  Allowed and actually read material with a depth legend, exclusions, the
+  unchanged frozen subject, and six disclosed exposures. Pass; rulings in
+  section 3.
+- Independent computation (sections 8 and 15). One retained probe file with
+  its exact rerun command, its runner and its kept output, compiled twice
+  with byte-identical output; the unfoldings, the three readings, the floor
+  identity, the copy facts, the exceptional orders, the exact-edge identity
+  for every pattern graph, the re-proof of the statement along the
+  reviewer's own route and from the two branches, and the non-vacuity
+  consequence are Lean proofs checked by the kernel against the real
+  constants, not agreement with an author's output. Pass.
+- Verdict and limitations (section 14). Verdict word written in full,
+  refutation-failed; limitations honest about what was not reviewed, run or
+  read; no tier asserted. Pass.
+
+My own spot checks of the review's factual claims against the frozen
+subject.
+- `lean/Erdos/L17.lean` (123 lines) at the commit is what section 3 quotes,
+  line for line: imports at 1-3, docstring 5-17, `set_option autoImplicit
+  false` at 19, `open scoped Asymptotics` at 21, `EveryCopyRainbow` 26-28,
+  `Admissible` 32-34 with `Nat.card G.edgeSet = e`, `antiRamsey` 38-39 as
+  `sInf`, `ThresholdFor` 42-45 with `n * n / 4 + 1`, `cycleGraph (2 * k + 1)`
+  and `~[Filter.atTop] (fun n => (n : ℝ) ^ 2 / 8)`, `statement` 48-49,
+  `rainbow_subgraph_exact_edges` 53-87 (by `fromEdgeSet` of a subset of the
+  edge finset and `pullback` along `Hom.ofLE`), `admissible_cycleGraph_iff`
+  92-101, `antiRamsey_cycleGraph` 105-112, `claim` 115-121; no other
+  command.
+- The library side: `Statement.lean` 23-27 (`ThresholdFor` over
+  `maximalAntiRamsey`) and 30-31 (`Statement := ∀ k ≥ 3, ThresholdFor k`);
+  `RainbowCycles.lean` 18-22 (`EveryCopyRainbow`, body for body the claim's),
+  26-28 (`AdmissibleAtLeast`, `e ≤ Nat.card G.edgeSet`), 32-33
+  (`maximalAntiRamsey`), 37-41 (`EveryCycleRainbow`), 122-124 and 129-130
+  (the cycle-indexed forms); `FinalAssembly.lean` 22-44 (the private ratio
+  conversion), 48-53, 57-67 (the split `by_cases hthree : k = 3` at 61),
+  70-74, 78-80, 83-84 (`statement_proved := statement_of_higherDensity
+  BucicChenMa.statement_proved`); `Comparison.lean` 17-31;
+  `CycleCopyBridge.lean` 62-89, 93-100, 104-111 (all for `3 ≤ m`);
+  `SevenCycle/Statement.lean` 19-21, 26-27, 30-33; `BucicChenMa/Statement.lean`
+  23-28 (`FullDensityFormula` with the error `≤ ε n²` uniformly over
+  `n*n/4+1 ≤ e ≤ n.choose 2`), 32-37, 40-41, 44-45;
+  `ThresholdConsequence.lean` 15-52 and 56-58; `MainTerm.lean` 13-14;
+  `ThresholdArithmetic.lean` 14-31 (`threshold_edge_feasible` for `4 ≤ n`)
+  and 80-93; `C7LowerSequence.lean` 104-116 (`sevenCycleThreshold_proved`,
+  closed); `QuantitativeInductionAssembly.lean` 200-203, 206-207 and
+  210-211 (closed); `UpperBound/SevenCycle.lean` 20-26 and 49-54. All as the
+  review describes them.
+- The Mathlib lines cited resolve at the pinned revision in the checkout's
+  package tree: `Copy` (Copy.lean 84-88, with `toHom` and `injective'`),
+  `mapEdgeSet` (115-117), `Copy.ofLE` (146); `Hom.mapEdgeSet` as `Sym2.map`
+  (Maps.lean 361-364) and `Hom.ofLE` (380); `cycleGraph` (CycleGraph.lean
+  29-33) and `cycleGraph_adj'` (60-65); `EdgeLabeling := G.edgeSet → K`
+  (EdgeLabeling.lean 37-38), `get` (77-78), `pullback` (100-101); the ℕ
+  `InfSet` instance (Order/Lattice/Nat.lean 29-31), `sInf_eq_zero` (57),
+  `sInf_mem` (79), `sInf_le` (90); `IsLittleO` (Asymptotics/Defs.lean
+  187-188), `IsEquivalent := (u - v) =o[l] v` (223-224) with its notation
+  (226); `isEquivalent_iff_tendsto_one` (AsymptoticEquivalent.lean 208-219);
+  `Nat.card` (Cardinal/Finite.lean 41-42); `edgeSet` (Basic.lean 471);
+  `edgeFinset_card` (Finite.lean 121).
+- `lean/Manifest.json` (1769 lines): 1732 modules, `Erdos.L17` at line 11;
+  `declarations` at 1741-1742 exactly another claim's statement and claim
+  declarations, `Erdos.L17.statement`, `Erdos.L17.claim`; top-level
+  `compiler: []` at 1743; two claim rows, the other claim's at 1746-1757 and
+  L17 at 1758-1769, the L17 row with module `Erdos.L17`, `depends: []`, decls
+  statement and claim, `compiler: []` at 1768,
+  `axioms: propext, Classical.choice, Quot.sound`, `pretty` equal to the
+  source.
+- Import closure and sweep, reproduced: walking the import lines from
+  `Erdos.L17` reaches 196 modules under `lean/Erdos/` (Erdos.L17, 9 at the
+  Problem809 root, 92 under BucicChenMa/, 85 under SevenCycle/, 9 under
+  UpperBound/; nothing else under `lean/Erdos/`) and 65 distinct Mathlib
+  modules directly. Over the 196 sources: no `axiom`, `sorry`, `sorryAx`,
+  `native_decide`, `ofReduceBool`, `opaque`, `unsafe`, `implemented_by`,
+  `csimp`, `partial`, `macro`, `syntax` or `elab` command; `Erdos.L17` is
+  the only `Erdos.L<n>` string (its namespace and end lines); two instances,
+  both decidability instances (`BucicChenMa/Case2GoodEdgeCount.lean` 35,
+  `BucicChenMa/ShortPathAddEdge.lean` 23); eighteen `@[simp` attributes;
+  three prose hits for "notation"; one `set_option`, the `autoImplicit
+  false` of L17.lean; 66 `open` lines. A word-bounded grep finds no
+  `extern`; the review's "one prose hit" is the substring in "external
+  degree", which it says. Agreement.
+- The probe: `ReviewerProbe.lean` (587 lines) imports `Erdos.L17` only and
+  contains no `sorry`, `axiom` or `native_decide`; its 59 theorems, examples
+  and definitions are stated about the real `Erdos.L17` and `Erdos809`
+  constants.
+- Freshness of the kept build, checked by me before the rerun: from the
+  worktree's `lean/` with `LEAN_NUM_THREADS=4`,
+  `lake build Erdos.L17 --no-build` at 2026-09-25T04:38:09Z to 04:38:10Z
+  reported "All targets up-to-date (2420 jobs)", exit 0; nothing was built,
+  and the tracked tree was clean before and after. No lean or lake process
+  other than my own ran during either of my Lean runs (process listing before
+  and after each).
+- Rerun of the probe by me with the reviewer's runner, from the worktree's
+  `lean/` over the kept build: `bash run_probe.sh <lean dir>
+  <ReviewerProbe.lean> <grader_probe_output.txt>`, 2026-09-25T04:38:57Z to
+  04:39:01Z, 4 s wall (4.19 s real), 2,426,781,696 bytes maximum resident
+  set size, exit 0, no error and no warning; the Lean output (190 lines,
+  12252 bytes, everything before the runner's stderr marker) is
+  byte-identical to that of `probe_output.txt`, including `#print axioms`
+  giving `[propext, Classical.choice, Quot.sound]` for `Erdos.L17.claim`,
+  `Erdos.L17.statement`, `Erdos809.statement_proved`,
+  `Erdos809.sevenCycleThreshold_proved`,
+  `Erdos809.BucicChenMa.statement_proved`,
+  `Erdos809.BucicChenMa.thresholdStatement_proved`,
+  `Erdos809.statement_of_sevenCycle_and_higherDensity`, the three transfer
+  theorems of L17.lean and the four probe theorems. Output and receipts
+  retained beside this record as `grader_probe_output.txt`,
+  `grader_probe_rc.txt` (`rc=0`), `grader_probe_start_utc.txt` and
+  `grader_probe_end_utc.txt`.
+
+My own rederivation of the weakest steps, in my words.
+- W1, the two edge conventions. The library's number minimizes over graphs
+  with at least e edges; the claim's over graphs with exactly e edges. A
+  rainbow coloring of a graph G with at least e edges restricts to any
+  e-edge subgraph K ≤ G: a copy of any pattern graph in K composes with the
+  inclusion homomorphism `Hom.ofLE` into a copy in G, whose image edges are
+  the same edges, so the pulled-back coloring is injective on them. Hence
+  every palette size admissible for "at least e" is admissible for "exactly
+  e"; the converse is immediate; the two admissible sets coincide and so do
+  their ℕ infima, including the empty-set value 0 at infeasible orders. The
+  probe proves this for every pattern graph (`admissible_iff_atLeast`,
+  `antiRamsey_eq_maximalAntiRamsey`) and re-proves the statement from
+  `Erdos809.statement_proved` through it (`claim_reproved`); L17.lean proves
+  the cycle case by the indexed route. Both are kernel-checked in my rerun.
+- W2, the copy convention. Mathlib's `Copy` is a homomorphism (adjacency
+  preserved) with an injectivity field and no reflection field; a copy of
+  `cycleGraph m` therefore sends the m vertices to m distinct vertices with
+  consecutive images adjacent, and permits chords. That is the English's
+  "cycle on 2k+1 distinct vertices of the graph"; an induced reading would
+  quantify over fewer copies and the English does not take it. The probe's
+  `copy_gives_indexed_cycle` and `fourCycleInK4` pin both halves.
+- W3, the asymptotic and the value 0. `u ~[atTop] v` is `(u - v) =o[atTop]
+  v`; with v = n²/8 and the nonzero constant 1/8 this is `u - n²/8 = o(n²)`,
+  and by `isEquivalent_iff_tendsto_one` (v eventually nonzero) it is
+  `u/(n²/8) → 1`, which the identity `u/(n²/8) = (u/n²)·8` (valid at every
+  n under the division-by-zero convention) turns into `u/n² → 1/8`; the ε–N
+  form is `Metric.tendsto_atTop`. The infeasible orders are exactly n = 0,
+  1, 2 (`n*n/4+1 ≤ n.choose 2 ↔ 3 ≤ n`), where `sInf ∅ = 0`; a filter
+  statement at `atTop` ignores them. The probe proves all of this.
+
+An attack of my own, beyond the review's. The English's "r-coloring" could
+be read as a coloring that uses exactly r colors rather than at most r. The
+Lean uses at most r (a function into `Fin r`). The least r is the same under
+both readings: a rainbow coloring into `Fin r` that uses s ≤ r colors is, up
+to renaming, a rainbow coloring using exactly s colors, so the "exactly"
+minimum is at most the "at most" minimum; and an "exactly r" rainbow
+coloring is an "at most r" one, giving the reverse inequality. The reading
+does not change the number. A second reading, that "graph with n vertices"
+excludes isolated vertices, is not the catalog's and would not be the
+English's; the Lean's vertex set is `Fin n` exactly, as the English says.
+Neither attack reaches the statement.
+
+Discrepancies found, none load-bearing.
+- `review_reads.json` records `docs/verification.md` as read in the range
+  "471-700 (file ends at 660)". The file has 678 lines at the commit, and
+  the Erdos-specific section the range names runs from 471 to the end.
+  Detail in the read list only; the sections cited are the ones the review
+  applies.
+- Review 1.1 gives the manifest's `declarations` as "line 1742"; the key is
+  at 1741 and its list at 1742, as `review_reads.json` says. Detail only.
+- The clean-gate receipt notes that the reviewer's probe drafts ran while the
+  gate was running (section 4). The review's section 1.4 states that lake was
+  invoked only as `lake env lean` and that no lake build was run, and
+  `review_reads.json` gives the draft times (03:57:56Z and 03:59:14Z),
+  consistent with the receipt's first foreign observation at 03:58:01Z.
+  Disclosed on both sides; ruled immaterial to the kernel result in section 4.
+
+Filing. The retained independent computation already lives in the record
+home beside `review.txt` (the probe, its kept output and the runner), with
+my rerun's output and receipts named above; the rerun instruction reads
+from the record home against any clone's `lean/` after `lake build`, so the
+record resolves from an ordinary clone once the integrator commits it. No
+condition on the report.
+
+======================================================================
+3. INDEPENDENCE: pass
+======================================================================
+
+Facts and their basis.
+- The reviewer worked in a fresh context under a refutation charge,
+  separately from the extraction preparer, the runner and me, and states it
+  did not author, generate or previously review any part of the subject.
+  The clean-gate receipt separately records a non-author runner in a fresh
+  context who neither authored nor co-constructed the selected native
+  mathematics or the audit logic. The tier law requires fresh contexts for
+  review and grade, each given only its assignment, not distinct models;
+  preparer, reviewer, runner and grader are the same model in four fresh
+  contexts, which the law permits.
+- The frozen subject stayed unchanged: HEAD equal to the commit and an empty
+  status before and after the review's steps, re-verified by me after my own
+  runs; every closure source equals its blob at the commit (the tracked tree
+  is clean, and the reviewer compared each of the 196 with `git show`).
+- The allowed material and the actually read material are recorded with line
+  ranges and depth. The exclusions were preserved: no research page, library
+  card or PDF; no evidence folder other than the precedent's record; the audit
+  program, the refusal suite, the gate scripts and `lean/README.md` unread;
+  the commit's diff unread (path names only); the 177 proof modules read only
+  by import lines and sweep; the two files another role placed in the record
+  home unopened.
+- The verdict rests on the reviewer's own comparisons and computations: the
+  clause-by-clause reading of all four parts, the `pp.explicit` and `pp.all`
+  forms of the compiled statement, the `rfl` and `Iff.rfl` unfoldings on the
+  real constants, formal proofs of the three readings of the asymptotic, of
+  the floor identity, of the copy facts, of the exceptional orders and the
+  attained least value, of the exact-edge identity for every pattern graph,
+  and of the statement along the reviewer's own route and from the two
+  branches, independent `#print axioms`, and a census of the closure.
+  Agreement with an author's output is not what carries it.
+
+Exposure rulings. Each disclosed exposure is ruled by the content test of
+`docs/verification.md` (whether anything in the report could only have come
+from it, or whether the direction of an attack or the strength of the
+refutation charge followed it) and by the rule that an exposure is material
+only if what was read states the fidelity answer.
+- E1, the repository's branch name and five commit subject lines of the main
+  checkout shown by the reviewer's environment, about the library
+  conversion and agent presets. No L17 content. Immaterial.
+- E2, the text of the card, the proof page and the problem page outside the
+  frozen extraction, printed because the assignment names the three pages
+  as parts of the claim. I read the passages the review names to rule on
+  them: the card's lines 85-108 say the claim is proved at tier 0, that no
+  whole-statement fidelity audit has been filed, that the audit and a
+  non-author clean gate are pending, and give the build commands; the
+  problem page's lines 90-113 record the author's own targeted build and
+  axiom query as a run record, "not an audit", and that the fidelity audit
+  is pending so the claim stands at tier 0; lines 155-163 render Theorem 1.2
+  of Bucić, Chen and Ma as the formula for k ≥ 4 over the edge range. A grep
+  over the three pages at the commit for verdict words (refutation-failed,
+  refuted-as-stated, faithful, tier 2, accepted at, fidelity) finds only the
+  three "audit pending" sentences named above. None of it states the
+  fidelity answer or argues for it. The two facts the review took from it
+  (the Theorem 1.2 rendering, used in section 7.3 to compare the shape of
+  `FullDensityFormula`; the Formulation paragraph's remark that the 1989
+  definition takes exactly e edges) are source characterizations on a page
+  the assignment named, and the review's fidelity finding does not rest on
+  either: the exact-edge convention is fixed by the card's frontmatter and
+  Statement section inside the extraction, and the shape comparison
+  supports only C4's description of the proof's provenance, which the
+  review qualifies as checked at the level of the page's rendering. Nothing
+  in the verdict, the unfolding or the clause comparison could only have
+  come from this text. Immaterial.
+- E3, the precedent record's files read for their shapes as the assignment
+  directed; they concern another claim and carry no L17 content. The generic
+  probe moves (printing, `rfl` unfoldings, `#print axioms`) are the unfolding
+  and axiom steps the report contract itself requires of every such review;
+  the discriminating probes here (the three readings, the floor identity, the
+  copy with chords, the feasibility threshold, the exact-edge identity by edge
+  deletion on copies, the branch bridges, the non-vacuity bound) are specific
+  to this statement and were designed from the sources read here. Immaterial.
+- E4, the names of the runner's two files in a directory listing, not
+  opened; E5, five commit subjects and dates of the formalization's landing
+  and the list of paths the commit changed under `lean/`, from a freshness
+  check (history metadata only; no diff read); E6, administrative fields of
+  `subject_manifest.json` about filing conventions. None carries content of
+  the subject's meaning or any verdict. Immaterial.
+No exposure is material; the review's verdict is its own.
+
+My own exposure. Besides the assigned material I saw: the organization's and
+repository's agent instruction files and five recent commit subject lines of
+the main checkout (the research branch; the library conversion and agent
+presets), shown by my environment; the card's lines 1-12 (frontmatter:
+`status: proved`, `tier: 0`, `depends_on: []`, `lean: Erdos.L17.claim`), 22-40
+and 85-108 and the problem page's lines 90-113 and 155-163, read to rule on E2
+and described above; the precedent's `grade.txt` in full, which states the
+earlier acceptance of another claim at tier 2 for that claim's state of
+2026-09-19T05:07:22Z and its extension rule, its `grade_reads.json` structure
+and head, its `_index.md` lines 1-60 and its four grader receipt files; the
+paths changed under `lean/` between that state and this one (195 under
+`lean/Erdos/Library/`, `lean/Erdos/L17.lean`, `lean/Audit/Main.lean`,
+`lean/scripts/gate.sh`, `lean/scripts/audit_selftest.sh`,
+`lean/scripts/selftest.stamp`, `lean/Manifest.json`, `lean/lakefile.toml`,
+`lean/README.md`; no diff content). Standing fields, a pending-audit sentence
+and an earlier record for another claim state no fidelity answer for this
+review, and I am not blind in the reviewer's sense; I record them so the read
+set is complete. No web search; no message exchanged with any other agent or
+session beyond the commission and this return. During my two Lean runs no lean
+or lake process other than my own ran; the probe output equaled the reviewer's
+byte for byte.
+
+======================================================================
+4. KERNEL RESULT OF RECORD, THE AXIOM FOOTPRINT AND THE GATE
+======================================================================
+
+- Clean gate (`clean_gate.json`, schema l17-clean-gate-receipt-v1, with
+  `clean_gate_log.txt` and the wrapper `run_clean_gate.sh`; run by a
+  non-author in a fresh context, model Claude Fable 5.1):
+  `LEAN_NUM_THREADS=4 /bin/bash lean/scripts/gate.sh --clean`, run on the
+  repository as it stood on 2026-09-25T03:40:15Z, from the repository root of
+  the runner's worktree at that state. The receipt states, and the wrapper's
+  header lines in the log confirm, that the gate archives that state's `lean/`
+  tree (`git archive`) into a fresh temporary directory, fetches the Mathlib
+  cache there, builds, runs the axiom audit against the committed manifest and
+  checks the committed self-test stamp (`lean/scripts/selftest.stamp`), under
+  the committed script's `set -euo pipefail` so that each leg must exit 0 for
+  the next to run. Whole-shell exit 0 (log trailer); markers "Build completed
+  successfully (4227 jobs).", "audited 7104 constants in 1732 modules, 2
+  claims, 0 compiler axioms: AUDIT PASS" and "Lean gate passed." at log lines
+  1860-1862, seen by me; the last modules built include
+  `Erdos.Library.Problem809.FinalAssembly` (4225) and `Erdos.L17` (4226); 23
+  warning lines, all linter style warnings in another claim's first module (4)
+  and second module (19), none in `Problem809/` or `L17.lean`, and 0 error
+  lines (counted by me); window 2026-09-25T03:47:09Z to 04:33:41Z, 2792 s. The
+  receipt asserts no tier. I did not read `lean/scripts/gate.sh` or
+  `lean/Audit/Main.lean` (outside my assignment); the audit leg of this
+  acceptance rests on the gate's marker as the receipt and log record it, the
+  manifest row, and the two independent `#print axioms` runs below.
+- Serialization deviation, disclosed by the receipt: its observation-only
+  process watch saw lean or lake processes outside the gate's process tree
+  in 3 of 548 five-second samples (at most 2 processes, first at
+  03:58:01Z), which the receipt attributes to the reviewer's probe and which
+  `review_reads.json` confirms (probe drafts compiled at 03:57:56Z and
+  03:59:14Z with `lake env lean` in the worktree's `lean/`, no lake build).
+  The gate's build, audit and stamp check ran in their own temporary archive
+  directory on the committed sources; a concurrent `lake env lean` of a
+  probe file in the worktree's `lean/` writes nothing into that archive and
+  cannot change what the kernel there accepted, and the gate reached its
+  final marker with exit 0. The deviation is a departure from the runner's
+  serialization rule, recorded as such; it does not affect the kernel result
+  of record.
+- Kept build in the worktree: the reviewer established by trace-hash
+  reproduction (its section 7.5) that the `.olean` files its probe imported
+  were compiled from the committed text of all 196 closure modules; my
+  `lake build Erdos.L17 --no-build` found the claim's 2420 jobs up to date,
+  and my probe rerun used that build through `lake env lean`.
+- The axiom footprint, and the kernel-only confirmation. The gate's summary
+  line reports 0 compiler axioms over the 1732 modules, so no `native_decide`
+  axiom was admitted and the audit ran with the three allowed axioms alone.
+  `lean/Manifest.json` at the commit writes `"compiler": []` at the top
+  level (line 1743) and in the L17 row (line 1768), and the row's `axioms`
+  are propext, Classical.choice and Quot.sound. The independent `#print
+  axioms` of the reviewer's probe and of my byte-identical rerun give
+  exactly those three axioms for `Erdos.L17.claim`, `Erdos.L17.statement`,
+  the assembled theorem `Erdos809.statement_proved`, both branch theorems,
+  the assembly lemma, the three transfer theorems of L17.lean and the four
+  probe theorems; the sweep finds no `native_decide`, `sorry` or `axiom` in
+  the 196 closure sources. The proof is kernel-only: the compiler-assumption
+  policy is not engaged for L17 at this commit, and the manifest row
+  warrants no `assumes: compiler` key on the card (the card is outside my
+  subject; `erdos claim-check` joins the two).
+- Regeneration precondition. The contract at the commit
+  (`docs/lean_authoring.md`, Statement fidelity and validation) requires,
+  before any acceptance that changes the generated modules under another
+  claim's generated subtree, their regeneration into a fresh root and a
+  byte-for-byte comparison with the committed subtree. This acceptance changes
+  no generated module: that subtree as it stood on 2026-09-25T03:40:15Z is
+  identical, file for file, to the subtree as it stood on
+  2026-09-19T05:07:22Z, that claim's accepted state (`git diff --quiet` exit
+  0, run by me), whose regeneration receipt is filed in the precedent records;
+  and the L17 closure does not reach that subtree (every closure module is
+  handwritten; no `Data/` or `Checks/` module is imported). The precondition
+  does not apply, so no condition attaches to this acceptance.
+- What the L17 acceptance rests on under `lean/`, by path and date: the whole
+  `lean/` tree as it stood on 2026-09-25T03:40:15Z (the tree the gate
+  archived), within it the 196 closure modules under `lean/Erdos/`, the
+  manifest, the toolchain file and the two pin files. The 1536 modules outside
+  the closure (Erdos.Core and another claim's modules) are built and audited
+  by the same gate but are not premises of `Erdos.L17.claim`.
+
+======================================================================
+5. ACCEPTANCE DECISION (the tier assertion)
+======================================================================
+
+State: accepted.
+Date: 2026-09-25.
+Exact source: the repository as it stood on 2026-09-25T03:40:15Z, the UTC
+time of the checked state, named with its time because `lean/` changed
+more than once that day: the whole tree and, within it, `lean/`,
+`lean/Erdos` and `lean/Erdos/Library/Problem809` as they stood at that
+time, named by path and date (the tree ids this decision held are not
+retained); declarations
+`Erdos.L17.statement` and `Erdos.L17.claim` in `lean/Erdos/L17.lean`, with
+the claim's import closure of 196 modules under `lean/Erdos/` (`Erdos.L17`
+and the 195 modules under `lean/Erdos/Library/Problem809/`: 9 at the root,
+92 under `BucicChenMa/`, 85 under `SevenCycle/`, 9 under `UpperBound/`, all
+handwritten), among the 1732 modules `lean/Manifest.json` lists at the
+commit; toolchain `leanprover/lean4:v4.32.0-rc1` (Lean commit
+b4812ae53eea93439ad5dce5a5c26591c31cb697), Mathlib
+79aee35d9696d759b73eed71d7dde666750bc35e as pinned in `lean/lakefile.toml`
+and `lean/lake-manifest.json`. English subject: the card
+`wiki/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/_index.md`
+(the frontmatter `statement` field; `## Statement` to the line before the
+next H2 heading other than `## Statement` and `## Argument and formal
+surface`), its `_proof.md` (the body after the closing `---` of the
+frontmatter) and `wiki/problems/ramsey_theory/E0809.md` (the
+`**Statement.**` block to the line before the next bold field label), all
+at the commit, under the extraction rule of `subject_manifest.json`
+restated in section 6, whose guard prints nothing at the commit.
+
+Authorized standing for L17: tier 2 under the tier law of `docs/anatomy.md`
+at the commit; `status: proved`; `tier: 2`; `lean: Erdos.L17.claim`;
+`depends_on: []`; no `assumes: compiler` key, because the manifest row's
+`compiler` field is empty and the proof is kernel-only. Each leg of that
+law and what this decision relied on for it:
+- kernel proof: the non-author clean gate's `lake build` of the archived
+  committed `lean/` tree, exit 0 with 4227 jobs, and the worktree's kept
+  build of the same sources, found up to date by me (section 4);
+- permitted axioms: the universal audit marker "audited 7104 constants in
+  1732 modules, 2 claims, 0 compiler axioms: AUDIT PASS", the manifest row
+  (`axioms` the three standard ones, `compiler []`), and two independent
+  `#print axioms` runs (the reviewer's and mine) on the claim, the
+  statement, the assembled theorem and both branch theorems; the
+  compiler-axiom report this acceptance cites is zero, so the proof is
+  kernel-only and no `assumes: compiler` key is warranted;
+- independent whole-statement fidelity audit: `review.txt`, verdict
+  refutation-failed, graded pass on the report contract and on independence
+  in sections 2 and 3 of this record, its probe rerun by me byte for byte;
+- non-author clean-checkout gate at promotion: the runner's receipt
+  `clean_gate.json` with `clean_gate_log.txt` and `run_clean_gate.sh`
+  (section 4).
+
+No condition. The regeneration precondition does not apply to this
+acceptance, because no generated module is in the claim's closure and the
+generated subtree is unchanged since the accepted tree whose regeneration
+receipt is filed (section 4). This acceptance is in force from its filing.
+
+What this acceptance asserts: that `Erdos.L17.claim` at the exact source is
+a kernel-checked proof, on the permitted axioms and with no compiler axiom,
+of a Lean statement that faithfully renders the whole English statement of
+L17 as extracted above: for every natural number k ≥ 3, the least palette
+size for which some simple graph on exactly n vertices with exactly
+⌊n²/4⌋+1 edges has an edge coloring making every copy of C_{2k+1} (an
+injective adjacency-preserving image, chords allowed) rainbow, taken as 0
+at the three orders n = 0, 1, 2, is asymptotically equivalent to n²/8,
+equivalently n²/8 + o(n²), equivalently of ratio to n² tending to 1/8; and
+the consequence sentences C1-C6 the review checked. What it does not
+assert: the value of χ_S at any fixed n, a rate of convergence, anything
+about C₃ or C₅, novelty, community acceptance, the literature status of
+Problem 809, or that the formalized `BucicChenMa.Statement` is the paper's
+Theorem 1.2 beyond the problem page's rendering of it (the paper was read
+by neither the reviewer nor me; the k ≥ 4 branch is a native, closed,
+kernel-checked proof whose truth does not rest on that attribution, which
+is a provenance sentence of the English, not a premise of the proof). The
+card's `status`, `tier` and standing fields and its Current standing,
+Verification and Remaining obligations sections, and the status of Problem
+809, are the integrator's to reconcile with this record; the integrator
+adds paths and identities and asserts no tier.
+
+Filing. The integrator commits this record, `grade_reads.json`, the review
+and its reads, the probe file, its output and its runner, my rerun's output
+and receipts named in section 2, and the runner's receipt, log and wrapper
+under the record home (which does not exist at the commit), together with
+the extraction under `evidence/assets/statement_fidelity/`, writes the
+record's `_index.md`, `native_binding.json` and `acceptance_warrant.json`
+in the precedent's shapes quoting this section's text verbatim in the
+warrant, and runs the wiki update and lint on `erdos/`.
+
+======================================================================
+6. THE EXTENSION RULE: the precedent's rule, restated for this commit
+======================================================================
+
+Rule as received: identical Lean sources outside `lean/README.md` and a
+byte-identical English subject under the extraction rule, confirmed in a
+fresh context and filed dated, carry this acceptance forward to a later
+commit.
+
+Accepted, with this commit as the accepted one. The rule covers exactly
+what the legs of section 5 depend on: fact one fixes every path under
+`lean/` except `lean/README.md`, which is the tree `gate.sh --clean`
+archives (the Lean sources, `lean/Manifest.json` with its `compiler`
+fields, the audit tool, the gate and self-test scripts and fixtures, the
+stamp, the toolchain file, `lakefile.toml` and `lake-manifest.json` with its
+Mathlib pin); fact two fixes the English statement the fidelity verdict
+compared. A commit satisfying both facts has the same kernel subject and
+the same English subject as the accepted one, so the kernel result, the
+audit with its zero compiler axioms, the fidelity verdict and the
+regeneration fact apply to it unchanged.
+
+The Lean subject of the rule is kept as the whole `lean/` tree outside
+`lean/README.md`, as the precedent stated it. The review froze its Lean
+subject as the `lean/` subtree (its section 1.1) and read or censused the
+whole import closure (its section 7), so the frozen-subject rule of
+`docs/verification.md` binds that subtree and warrants no narrowing to the
+196 closure modules; the audit, the manifest and the gate scripts that the
+kernel leg relies on live outside the closure.
+
+Operating clarifications (how the rule is applied; they change nothing in
+its substance).
+1. Fact one is the exit status 0 of `git diff --quiet <the checked state of
+   2026-09-25T03:40:15Z> <candidate> -- lean ':(exclude)lean/README.md'`.
+   Any difference under `lean/` other than in `lean/README.md` ends the
+   extension, including a change to a documentation file inside `lean/`, a
+   module docstring, a refusal fixture, the manifest or the audit program;
+   such a commit needs the legs again.
+2. Fact two is byte identity, for each of the four parts, between the
+   extraction command's output on <path> as it stood on 2026-09-25T03:40:15Z
+   and on <path> at the candidate, with the four commands as recorded in
+   `subject_manifest.json` `extraction_rule.parts` (and to be recorded in
+   `native_binding.json` `english_subject`), applied unchanged with the
+   candidate commit in place of the accepted one, followed by the guard of
+   that rule on the four outputs concatenated in order at the candidate
+   commit, which must print nothing. A moved or renamed page, a missing
+   anchor, or a guard hit is a difference.
+3. The confirmation is performed in a fresh context by a confirmer who is
+   not an author of the changes between the two commits, identified by role
+   and model; it names both states, the commands verbatim, their exit codes
+   and outputs, and its date, and is filed beside the acceptance warrant as
+   `delivery_confirmation_<n>.json`. It asserts no tier: the tier
+   assertion is this record's section 5, which the confirmation extends.
+4. A nonzero exit or any byte difference means the acceptance does not
+   extend to that commit; the confirmer records that outcome and the
+   acceptance remains an acceptance of the state of 2026-09-25T03:40:15Z only.
+5. The extension carries the acceptance of the Lean subject and the English
+   statement. It certifies nothing about text outside the English subject
+   (standing prose, status fields, other pages, the problem page's status),
+   which the integrator keeps consistent with this record under the wiki
+   rules.
+
+======================================================================
+7. OBSERVATIONS FOR THE INTEGRATOR, NONE AFFECTING THE GRADES
+======================================================================
+
+- The precedent's acceptance of 2026-09-19T05:07:22Z does not extend to this
+  state: its fact one, `git diff --quiet` between that state and this one over
+  `lean ':(exclude)lean/README.md'`, exits 1 (the 196 new modules,
+  `lean/Audit/Main.lean`, `lean/scripts/gate.sh`,
+  `lean/scripts/audit_selftest.sh`, `lean/scripts/selftest.stamp`,
+  `lean/Manifest.json` and `lean/lakefile.toml` differ, by name). That claim
+  is outside my subject; its standing at this state is a separate matter for
+  its own confirmation or cycle under its record's rule. The L17 acceptance
+  here does not depend on it.
+- The extraction's filing note says `evidence/` and `evidence/assets/`
+  folders under this claim did not exist at the commit; the record home's
+  `_index.md` and any folder index the wiki tooling requires are the
+  integrator's to write, as for the precedent.
+- The runner scripts are filed as `run_probe.sh` and `run_clean_gate.sh` as
+  the assignments directed; the precedent filed its runner as
+  `run_probe_sh.txt` because the wiki tooling admits no `.sh` name. The
+  integrator may repeat that renaming, bytes unchanged, and say so in the
+  record's index.
+- The clean-gate receipt's serialization rule was not met (section 4); the
+  receipt discloses it with its cause and the gate's result is unaffected.
+  A later cycle should schedule the reviewer's probe compiles after the
+  gate exits, or on another host.
+- `review_reads.json` may be corrected in place to give
+  `docs/verification.md` its actual length (678 lines) under the
+  durable-reports rule, without changing the review's subject, scope, dates
+  or verdict.
+- The card at the commit carries `tier: 0` and the sentence that no
+  fidelity audit has been filed; the problem page says the same. Both are
+  reconciled in the delivery change, naming this record and the revision
+  reviewed.
+- The kept build under the worktree's `lean/.lake` holds one closure module
+  (`Problem809/MathlibCompat.lean`) whose source mtime postdates its
+  `.olean`; the reviewer's trace-hash check and my `--no-build` check both
+  show the build current. Nothing to do.

@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Melvyn B. Nathanson"
+  ],
+  "category": "math.NT",
+  "date": "2022-02-03",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 493843,
+    "files": 1,
+    "sha256": "f381f08e4aefd00a19329a81c05275c79060b8ed15b364592d36607b7630a1e8",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2202.00191v2"
+  },
+  "id": "2202.00191",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 208024,
+    "previous": [],
+    "sha256": "70f2121faf40f9179c9a53a22dee83dbacc9db1e7f428a952bbd3a24db93e4cb",
+    "url": "https://arxiv.org/pdf/2202.00191v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2202.00191v2 [math.NT] 3 Feb 2022",
+  "tex": {
+    "archive": {
+      "bytes": 25225,
+      "name": "arXiv-2202.00191v2.gz",
+      "sha256": "a620a0088c2f5266448f891b6cd01c0c59aec78552a9bafad1a41a0c24564b6b"
+    },
+    "bytes": 119726,
+    "files": 1,
+    "sha256": "95ff9be1153ce7e4dcc23a3d041de3ecb5c902daf4d96fbda1964b0b6d3ddeaa",
+    "url": "https://arxiv.org/src/2202.00191v2"
+  },
+  "title": "Underapproximation by Egyptian fractions",
+  "version": 2
+}

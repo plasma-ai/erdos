@@ -1,0 +1,32 @@
+{
+  "authors": [
+    "Yan X Zhang"
+  ],
+  "category": "math.CO",
+  "date": "2026-04-04",
+  "fetched": "2026-09-23",
+  "html": null,
+  "id": "2512.22696",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 453662,
+    "previous": [],
+    "sha256": "fcfeb2b70737ae6ff15fd3ff3eacde794438f2128a7b1d76231769f6ebac2d56",
+    "url": "https://arxiv.org/pdf/2512.22696v4"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2512.22696v4 [math.CO] 4 Apr 2026",
+  "tex": {
+    "archive": {
+      "bytes": 329246,
+      "name": "arXiv-2512.22696v4.tar.gz",
+      "sha256": "e9724c5ed39403f790eaa165bf82b8b9b35d90b3e002c53c6e21b95ef5dca929"
+    },
+    "bytes": 393970,
+    "files": 12,
+    "sha256": "a99050587aeb880192fbd8d6544b243b8f5a6f702564f59aa85320904dc0f209",
+    "url": "https://arxiv.org/src/2512.22696v4"
+  },
+  "title": "Tiling Triangles with $2\\pi/3$ Angles",
+  "version": 4
+}

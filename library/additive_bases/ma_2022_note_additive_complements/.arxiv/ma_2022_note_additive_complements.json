@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Fang-Yu Ma"
+  ],
+  "category": "math.NT",
+  "date": "2022-05-09",
+  "fetched": "2026-09-24",
+  "html": {
+    "bytes": 364980,
+    "files": 1,
+    "sha256": "0a14cda61d97575a5c6cc698eb869b65fc7e3c898a6e2d92e53b4377cfea000e",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2205.04128v1"
+  },
+  "id": "2205.04128",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 126046,
+    "previous": [],
+    "sha256": "db64487efdf1fdd39dc3c06e3e9c03c874d5219f26846ee162bd091b45d05f19",
+    "url": "https://arxiv.org/pdf/2205.04128v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2205.04128v1 [math.NT] 9 May 2022",
+  "tex": {
+    "archive": {
+      "bytes": 6931,
+      "name": "arXiv-2205.04128v1.gz",
+      "sha256": "09532abe7aa4da7b12476017747366244ad8a6ddef605787ed55724fdc13bd78"
+    },
+    "bytes": 33678,
+    "files": 1,
+    "sha256": "9233825e6e95b99e1aa3ee0da57a14f808a20851550e96df0016670ba772a0d1",
+    "url": "https://arxiv.org/src/2205.04128v1"
+  },
+  "title": "A Note on Additive Complements",
+  "version": 1
+}

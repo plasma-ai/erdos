@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Felipe Gon\\c{c}alves",
+    "Guilherme Vedana"
+  ],
+  "category": "math.NT",
+  "date": "2025-02-21",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 2009274,
+    "files": 3,
+    "sha256": "56418e0c178c882ed590a519c9cc9cb7fbafe611714e1451e80b28e66887a2f6",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2308.03925v4"
+  },
+  "id": "2308.03925",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 772639,
+    "previous": [],
+    "sha256": "3227003d83941bd60c3c69cf572130d2262941a8d21bbf346c3286d1c202e47e",
+    "url": "https://arxiv.org/pdf/2308.03925v4"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2308.03925v4 [math.NT] 21 Feb 2025",
+  "tex": {
+    "archive": {
+      "bytes": 6392567,
+      "name": "arXiv-2308.03925v4.tar.gz",
+      "sha256": "2e79948b737cdbc6662cd303b8609ae767c23c8584d30e0b5ab160581a21f2d8"
+    },
+    "bytes": 13521159,
+    "files": 14,
+    "sha256": "50c41f0ca13e9852ea9668a2c9ab0cd1a9cc0b40a91fb77384e7a83dee274708",
+    "url": "https://arxiv.org/src/2308.03925v4"
+  },
+  "title": "Sphere Packings in Euclidean Space with Forbidden Distances",
+  "version": 4
+}

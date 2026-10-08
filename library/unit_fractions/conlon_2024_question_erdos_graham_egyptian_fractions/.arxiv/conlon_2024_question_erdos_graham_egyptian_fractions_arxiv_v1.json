@@ -1,0 +1,44 @@
+{
+  "authors": [
+    "David Conlon",
+    "Jacob Fox",
+    "Xiaoyu He",
+    "Dhruv Mubayi",
+    "Huy Tuan Pham",
+    "Andrew Suk",
+    "Jacques Verstra\\\"ete"
+  ],
+  "category": "math.CO",
+  "date": "2024-04-24",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 333700,
+    "files": 1,
+    "sha256": "5688f90e9b7adb50c56a612a5df1abf76ff0a62e297e44ff8d551e6bfcec72c3",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2404.16016v1"
+  },
+  "id": "2404.16016",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 204918,
+    "previous": [],
+    "sha256": "1bdf15c7455fc81cb87c2e9a38e64ce398337de84e5e72a98e046d8f38f27800",
+    "url": "https://arxiv.org/pdf/2404.16016v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2404.16016v1 [math.CO] 24 Apr 2024",
+  "tex": {
+    "archive": {
+      "bytes": 11794,
+      "name": "arXiv-2404.16016v1.gz",
+      "sha256": "06fae97408f970a5dcc5932443903bf95482ba4d44907df7891d04825f64e2fc"
+    },
+    "bytes": 35393,
+    "files": 1,
+    "sha256": "d7f4ec402f4d0168573db234d4203916fea623b6096249864979ce629c056d52",
+    "url": "https://arxiv.org/src/2404.16016v1"
+  },
+  "title": "A question of Erd\\H{o}s and Graham on Egyptian fractions",
+  "version": 1
+}

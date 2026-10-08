@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Ji Ho Bae"
+  ],
+  "category": "math.CO",
+  "date": "2026-04-22",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 408965,
+    "files": 1,
+    "sha256": "a08b30df48b2bd49db1fdb2f36d7cc641ce05f23b6921e2f015496ec223785a7",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2604.20588v1"
+  },
+  "id": "2604.20588",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 548296,
+    "previous": [],
+    "sha256": "762ca19d14f9ab4d6c600da1ca267249d78d764f5d6af57a47fbbcf0f046841a",
+    "url": "https://arxiv.org/pdf/2604.20588v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2604.20588v1 [math.CO] 22 Apr 2026",
+  "tex": {
+    "archive": {
+      "bytes": 14842,
+      "name": "arXiv-2604.20588v1.tar.gz",
+      "sha256": "6b0aa1fe9db56271e20a08edf41705abc7f342b30d48949aa615b5cd225a76c9"
+    },
+    "bytes": 42850,
+    "files": 2,
+    "sha256": "0f21a4e200cfb768f8ee0d7a6c011dd9b054d6b502c23c4bdf2ac00142480c2b",
+    "url": "https://arxiv.org/src/2604.20588v1"
+  },
+  "title": "A resolution of Erd\\H{o}s Problem #190 via Erd\\H{o}s-Lov\\'asz, BCT, and Baker-Harman-Pintz",
+  "version": 1
+}

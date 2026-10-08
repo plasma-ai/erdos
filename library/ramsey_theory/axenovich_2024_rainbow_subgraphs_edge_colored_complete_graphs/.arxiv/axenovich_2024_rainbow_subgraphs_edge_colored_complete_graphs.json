@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Maria Axenovich",
+    "Felix Christian Clemen"
+  ],
+  "category": "math.CO",
+  "date": "2022-11-28",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 591819,
+    "files": 1,
+    "sha256": "62066e32072534c7a46b2cc51fc4843a1dacecb6da58d6284edfd8254d7ffda1",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2209.13867v2"
+  },
+  "id": "2209.13867",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 183054,
+    "previous": [],
+    "sha256": "bf749a6e4d40fead4a75aa7b81700f18313fd0d02605084adb7b4c8f53b9de44",
+    "url": "https://arxiv.org/pdf/2209.13867v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2209.13867v2 [math.CO] 28 Nov 2022",
+  "tex": {
+    "archive": {
+      "bytes": 11365,
+      "name": "arXiv-2209.13867v2.gz",
+      "sha256": "891dcbef4d6fb2b69602e73fa40405cfe384e6e8420fb00b7ed6a9d1a2ebc38d"
+    },
+    "bytes": 45557,
+    "files": 1,
+    "sha256": "91dda31aeac375e5ac031d7bf96855d4ab08fe14d40d0d5994fc6c2271473600",
+    "url": "https://arxiv.org/src/2209.13867v2"
+  },
+  "title": "Rainbow Subgraphs in Edge-colored Complete Graphs -- Answering two Questions by Erd\\H{o}s and Tuza",
+  "version": 2
+}

@@ -1,0 +1,29 @@
+grader_scratch/GraderCheck.lean:10:40: warning: Variable name `hk` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hk
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Erdos252.erdos_252 : ∀ (k : ℕ), Irrational (∑' (n : ℕ), ↑((ArithmeticFunction.sigma k) n) / ↑n.factorial)
+GraderCheck.erdos_252_for_k_ge_one : ∀ (k : Nat)
+  (hk : @LE.le.{0} Nat instLENat (@OfNat.ofNat.{0} Nat (nat_lit 1) (instOfNatNat (nat_lit 1))) k),
+  Irrational
+    (@tsum.{0, 0} Real Nat Real.instAddCommMonoid
+      (@UniformSpace.toTopologicalSpace.{0} Real (@PseudoMetricSpace.toUniformSpace.{0} Real Real.pseudoMetricSpace))
+      (fun (n : Nat) =>
+        @HDiv.hDiv.{0, 0, 0} Real Real Real (@instHDiv.{0} Real (@DivInvMonoid.toDiv.{0} Real Real.instDivInvMonoid))
+          (@Nat.cast.{0} Real Real.instNatCast
+            (@Finset.sum.{0, 0} Nat Nat Nat.instAddCommMonoid (Nat.divisors n) fun (d : Nat) =>
+              @HPow.hPow.{0, 0, 0} Nat Nat Nat
+                (@instHPow.{0, 0} Nat Nat (@NPow.toPow.{0} Nat (@Monoid.toNPow.{0} Nat Nat.instMonoid))) d k))
+          (@Nat.cast.{0} Real Real.instNatCast (Nat.factorial n)))
+      (SummationFilter.unconditional.{0} Nat))
+'Erdos252.erdos_252' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GraderCheck.erdos_252_for_k_ge_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GraderCheck.erdos_252_ne_int_quot' depends on axioms: [propext, Classical.choice, Quot.sound]
+def Irrational : ℝ → Prop :=
+fun x => x ∉ Set.range Rat.cast
+def Nat.divisors : ℕ → Finset ℕ :=
+fun n => {d ∈ Finset.Ico 1 (n + 1) | d ∣ n}
+def SummationFilter.unconditional.{u_2} : (β : Type u_2) → SummationFilter β :=
+fun β => { filter := Filter.atTop }

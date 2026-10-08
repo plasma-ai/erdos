@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Marijn J.H. Heule",
+    "Manfred Scheucher"
+  ],
+  "category": "cs.CG",
+  "date": "2024-03-01",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 1368563,
+    "files": 2,
+    "sha256": "ec223c83a9227df6c3d626664d59aba0c10b17ad8ff076c681fb04c7bcfe5182",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2403.00737v1"
+  },
+  "id": "2403.00737",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 1063189,
+    "previous": [],
+    "sha256": "a6e1c6e777264f0a3899b47ccf527243b23423147b2e3d575930ce9e41b41910",
+    "url": "https://arxiv.org/pdf/2403.00737v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2403.00737v1 [cs.CG] 1 Mar 2024",
+  "tex": {
+    "archive": {
+      "bytes": 136902,
+      "name": "arXiv-2403.00737v1.tar.gz",
+      "sha256": "926bf2e09578972fcd1dd2da4805c9fe8298e6c2d0c0f00b5605a0dabf2b1de6"
+    },
+    "bytes": 396618,
+    "files": 15,
+    "sha256": "420e0ae23037d0aa56d23136e2e1b66c3162624a9a29ca254178f0bebcb2c078",
+    "url": "https://arxiv.org/src/2403.00737v1"
+  },
+  "title": "Happy Ending: An Empty Hexagon in Every Set of 30 Points",
+  "version": 1
+}

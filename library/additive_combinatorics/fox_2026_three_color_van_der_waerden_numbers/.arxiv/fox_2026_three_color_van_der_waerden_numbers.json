@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Jacob Fox",
+    "Zach Hunter"
+  ],
+  "category": "math.CO",
+  "date": "2026-06-01",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 541177,
+    "files": 1,
+    "sha256": "882e0bb9e11fcbb3657b9b2f60e4f8684a611527b35f9b351c02426be1f0438b",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2606.02541v1"
+  },
+  "id": "2606.02541",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 495797,
+    "previous": [],
+    "sha256": "a1830e79318a2bd4c4dad717a26caf72766440a6e56ced1b3ae06bcbb6cf3f54",
+    "url": "https://arxiv.org/pdf/2606.02541v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2606.02541v1 [math.CO] 1 Jun 2026",
+  "tex": {
+    "archive": {
+      "bytes": 23503,
+      "name": "arXiv-2606.02541v1.tar.gz",
+      "sha256": "932f849311a427bbb32dd3f5bbebc28dc75fe348ef562ecbef30259cc221b0f9"
+    },
+    "bytes": 75933,
+    "files": 2,
+    "sha256": "ec0c8c5b34d45adabdb31f1de961d301f7934908d69cb0deffb1358f754270d9",
+    "url": "https://arxiv.org/src/2606.02541v1"
+  },
+  "title": "Three-color van der Waerden numbers grow super-exponentially",
+  "version": 1
+}

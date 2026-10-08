@@ -1,0 +1,41 @@
+{
+  "authors": [
+    "A. Grebennikov",
+    "A. Sagdeev",
+    "A. Semchankau",
+    "A. Vasilevskii"
+  ],
+  "category": "math.NT",
+  "date": "2023-02-20",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 296016,
+    "files": 1,
+    "sha256": "bed0934f66448817b54743d85bc2bd2d52427b108819d33784ad32ecc1d33d9f",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2204.01153v3"
+  },
+  "id": "2204.01153",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 545290,
+    "previous": [],
+    "sha256": "d321181b3e3cb30b98171f0575304aada4957a690c5e089a1ecc63f7ef9e258a",
+    "url": "https://arxiv.org/pdf/2204.01153v3"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2204.01153v3 [math.NT] 20 Feb 2023",
+  "tex": {
+    "archive": {
+      "bytes": 12050,
+      "name": "arXiv-2204.01153v3.gz",
+      "sha256": "ed19c248bd8fb9cea4504016876b03491c17952aaaf6aaafee53dc64fb9a3767"
+    },
+    "bytes": 33639,
+    "files": 1,
+    "sha256": "b1e4a897f2c9feb0c557f9303ac7e9b68779119e0abaa4219367594df1717c71",
+    "url": "https://arxiv.org/src/2204.01153v3"
+  },
+  "title": "On the sequence $n! \\bmod p$",
+  "version": 3
+}

@@ -1,0 +1,66 @@
+---
+name: library/discrepancy/kesten_1966_bounded_remainder
+desc: "Kesten’s bounded-discrepancy length criterion, consolidated primary source and proof obligations."
+created: 2026-09-06T06:28:01Z
+updated: 2026-09-06T06:44:03Z
+---
+
+# library/discrepancy/kesten_1966_bounded_remainder
+
+[[library/discrepancy/_index|..]]
+
+[[library/discrepancy/kesten_1966_bounded_remainder/theorem_4|theorem_4]]: Kesten Theorem 4: bounded discrepancy depends on interval length; exact domains and transfers.
+
+***
+
+## Source and identity
+
+Harry Kesten, *On a conjecture of Erdős and Szüsz related to uniform distribution mod 1*, Acta Arithmetica **12** (1966), 193–212. [Journal record](https://www.impan.pl/en/publishing-house/journals-and-series/acta-arithmetica/all/12/2/96036/on-a-conjecture-of-erdos-and-szusz-related-to-uniform-distribution-mod-1). The selected journal header reads XII (1966); the inherited “1966/67” reference remains a bibliographic variant.
+
+The complete digitized article is [[library/discrepancy/kesten_1966_bounded_remainder/kesten_1966_bounded_remainder.pdf]]. The PDF has 11 sheets with two printed pages per sheet; the target article starts on the right-hand leaf of sheet 1, printed p. 193. Its SHA-256 is <removed: the digest of the held PDF, which Git LFS records>.
+
+## Bounded discrepancy
+
+[[library/discrepancy/kesten_1966_bounded_remainder/theorem_4]] records the exact length criterion from Theorem 4 on p. 193. For fixed $\xi\in[0,1]$ and a proper interval $0\le a<b\le1$, $b-a<1$, the discrepancy is bounded if and only if $b-a=\{j\xi\}$ for some integer $j$. The theorem constrains the length, and applies to arbitrary admissible translates. It does not force both endpoints individually into the rotation orbit.
+
+This distinction matters for [[problems/irrationality/E0998|#998]]. The endpoint converse is explicitly printed in [[library/discrepancy/erdos_1964_problems_results_diophantine_approximations/conjecture_p62]] and is false, as shown by a complete counterexample. The arbitrary-translate sufficiency estimate has a complete short source proof in [[library/irrationality/ostrowski_1927_mathematische_miszellen/equation_3]].
+
+## Preserved broader coverage and remaining proof compilation
+
+The inherited digest describes Kesten's necessity proof as continued-fraction
+analysis using the Ostrowski expansion of $N$ in denominators $q_i$ and
+quantities $c_i,q_m,q'_{m+1},a'_{n+1}$. The
+[[library/discrepancy/kesten_1966_bounded_remainder/theorem_4|Theorem 4 page]]
+now contains an author-recorded reconstruction of the irrational anchored
+necessity direction: bounded discrepancy for $[0,b)$, $0<b<1$, implies
+$b=\{j\xi\}$ for an integer $j$. It proves the required continued-fraction
+identities, partition geometry, both parities, block accumulation and final
+orbit-point consequence. The proof uses selected multiples of convergent
+denominators and does not need a general Ostrowski expansion theorem.
+
+That reconstruction is unreviewed. It consumes printed pp. 193–194, the
+needed Theorem 1 geometry on pp. 196–199, and Section 4 on pp. 204–212.
+The arbitrary-translate reduction cited to Bohl on p. 205 and the rational
+case remain outside its scope. The earlier accepted Ostrowski sufficiency
+proof is not re-reviewed, and the endpoint disproof does not depend on this
+new necessity reconstruction. No full local proof coverage of Theorem 4
+or new problem-status conclusion is asserted.
+
+The two former catalog entries also recorded the following additional content. These statements remain a transcription queue; this consolidation does not claim a fresh proof audit of them.
+
+- Theorem 1 and Corollary 1 describe lengths and relative positions of the
+  intervals cut out by the points $\{k\xi\}$, in terms of continued-fraction
+  quantities. Only the geometry consumed by the anchored proof is
+  reconstructed above; the remaining general-$N$ statements and Corollary 1's
+  three-distance conclusion associated with Steinhaus remain outside it.
+- Theorem 2 relates the continued-fraction denominators and approximation error to successive fractions in the Farey series $F_N$.
+- Theorem 3 gives a metric result for the maximal spacing $L_N(\xi)$ between adjacent rotation points.
+
+## Canonical source
+
+This is the canonical home for the complete article identified above. Two
+catalogued copies of its PDF were byte-identical; they do not represent
+different mathematical versions. The journal record and local PDF identify
+the source without a separate acquisition record.
+
+The primary subject is discrepancy, matching Theorem 4's bounded-remainder criterion. Reciprocal problem links support the generated irrationality cross-reference. The consolidation preserves the complete source bytes, correct mathematical content, and historical citation variants while correcting the old endpoint assertion.

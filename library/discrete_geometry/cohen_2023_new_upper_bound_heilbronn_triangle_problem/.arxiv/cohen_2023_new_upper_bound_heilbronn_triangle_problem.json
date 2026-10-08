@@ -1,0 +1,40 @@
+{
+  "authors": [
+    "Alex Cohen",
+    "Cosmin Pohoata",
+    "Dmitrii Zakharov"
+  ],
+  "category": "math.CO",
+  "date": "2023-05-29",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 1401074,
+    "files": 2,
+    "sha256": "2418a33e70ee8517683fb6be4951844500d7b589e0d734a83ad689aeb0c8e68e",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2305.18253v1"
+  },
+  "id": "2305.18253",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 801151,
+    "previous": [],
+    "sha256": "15c7a7c57a89186b61524f40c04c1263163b387d75e4d0d84f584a3a3e370e64",
+    "url": "https://arxiv.org/pdf/2305.18253v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2305.18253v1 [math.CO] 29 May 2023",
+  "tex": {
+    "archive": {
+      "bytes": 250793,
+      "name": "arXiv-2305.18253v1.tar.gz",
+      "sha256": "6ea18ef44784c9f1d702dccd2f1f2625c07cd4bd771c84b46cc456d03ba6a444"
+    },
+    "bytes": 368567,
+    "files": 2,
+    "sha256": "f0247dec622f65748718ac3f0fa83c5b2e7d4c5e1477bd4dcdb1dbe795f9f220",
+    "url": "https://arxiv.org/src/2305.18253v1"
+  },
+  "title": "A new upper bound for the Heilbronn triangle problem",
+  "version": 1
+}

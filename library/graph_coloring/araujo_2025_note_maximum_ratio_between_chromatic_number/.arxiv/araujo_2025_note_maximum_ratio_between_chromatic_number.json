@@ -1,0 +1,40 @@
+{
+  "authors": [
+    "Igor Araujo",
+    "Rafael Filipe",
+    "Rafael Miyazaki"
+  ],
+  "category": "math.CO",
+  "date": "2026-02-04",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 178097,
+    "files": 1,
+    "sha256": "a625fb676819e7f448c8050b21f48d3bf1e2bb6b5ea23bca792988f7c5080618",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2512.16062v2"
+  },
+  "id": "2512.16062",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 325272,
+    "previous": [],
+    "sha256": "1f03fb6c9f2b05582a87c89bc74a96491327f99eef464e2525226796af499238",
+    "url": "https://arxiv.org/pdf/2512.16062v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2512.16062v2 [math.CO] 4 Feb 2026",
+  "tex": {
+    "archive": {
+      "bytes": 8721,
+      "name": "arXiv-2512.16062v2.tar.gz",
+      "sha256": "95917e695b07bd17b4c7da9de954b9e5ead3397838acae9fec9e186202aabf34"
+    },
+    "bytes": 24853,
+    "files": 3,
+    "sha256": "a42211cc5ad9d85832870e5e16f16ef0690f57d38e71d2366208350fd1b31814",
+    "url": "https://arxiv.org/src/2512.16062v2"
+  },
+  "title": "A note on the maximum ratio between chromatic number and clique number",
+  "version": 2
+}

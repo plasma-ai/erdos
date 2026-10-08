@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Alexey Gordeev"
+  ],
+  "category": "math.CO",
+  "date": "2023-07-10",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 102452,
+    "files": 1,
+    "sha256": "412676583363ffb0db41b3e19fcfaa99e81b656f550d9544155f391a9a4fbcd4",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2307.04447v1"
+  },
+  "id": "2307.04447",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 113700,
+    "previous": [],
+    "sha256": "0d65f3995edc3d14b7a6340d8236b402df30cce937735261ab0fed4ae27ecfea",
+    "url": "https://arxiv.org/pdf/2307.04447v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2307.04447v1 [math.CO] 10 Jul 2023",
+  "tex": {
+    "archive": {
+      "bytes": 31289,
+      "name": "arXiv-2307.04447v1.tar.gz",
+      "sha256": "9d94189b201312871cf17031df94ec3e0c3ddc709b2137ffd54701fc40d6a32f"
+    },
+    "bytes": 132812,
+    "files": 3,
+    "sha256": "a058d959de93a99b57c5938869f3b3fb10866c203eee21d702f4618e1d62a3e4",
+    "url": "https://arxiv.org/src/2307.04447v1"
+  },
+  "title": "Combinatorial Nullstellensatz and Tur\\'an numbers of complete $r$-partite $r$-uniform hypergraphs",
+  "version": 1
+}

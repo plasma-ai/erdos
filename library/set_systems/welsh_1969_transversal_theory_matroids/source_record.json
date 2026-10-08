@@ -1,0 +1,90 @@
+{
+  "title": "Transversal Theory and Matroids",
+  "author": "D. J. A. Welsh",
+  "journal": "Canadian Journal of Mathematics",
+  "volume": "21",
+  "year": 1969,
+  "printed_pages": "1323-1330",
+  "received": "1968-05-27",
+  "doi": "10.4153/CJM-1969-145-0",
+  "canonical_pdf": {
+    "file": "welsh_1969_transversal_theory_matroids.pdf",
+    "bytes": 576261,
+    "physical_pages": 8,
+    "version": "Current official Cambridge published PDF"
+  },
+  "primary_urls": [
+    "https://doi.org/10.4153/CJM-1969-145-0",
+    "https://www.cambridge.org/core/journals/canadian-journal-of-mathematics/article/transversal-theory-and-matroids/F01356CBECD75DDB09C199FBCF127380",
+    "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/F01356CBECD75DDB09C199FBCF127380/S0008414X00042735a.pdf/transversal-theory-and-matroids.pdf"
+  ],
+  "accessed": "2026-09-05",
+  "digital_metadata": {
+    "official_online_date": "2018-11-20",
+    "pdf_created": "2007-04-18",
+    "pdf_modified": "2022-04-12",
+    "interpretation": "Digital-file dates only; no distinct mathematical version is inferred."
+  },
+  "version_limit": "No distinct author manuscript, original unwatermarked scan, or published erratum was acquired.",
+  "reading": {
+    "physical_pages_visually_read": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "printed_pages": [
+      1323,
+      1324,
+      1325,
+      1326,
+      1327,
+      1328,
+      1329,
+      1330
+    ],
+    "rendering": "All pages at 300 dpi; physical pages 6-7 also at 600 dpi.",
+    "method": "Original-detail visual reading; native PDF text only for navigation; no OCR."
+  },
+  "proof_scope": {
+    "valid_printed_numbered_chains": [
+      "Theorem 3, with its necessary feasibility qualification",
+      "Theorem 4",
+      "Theorem 5",
+      "Theorem 6",
+      "Theorem 7",
+      "Theorem 8",
+      "Theorem 10",
+      "Theorem 11",
+      "Theorem 12"
+    ],
+    "false_printed_statements": [
+      "Theorem 9",
+      "Theorem 13"
+    ],
+    "compilation_supplied_corrections": [
+      "Theorem 9A: p-transversal contained in U",
+      "Theorem 9B: p-transversal containing U",
+      "Corrected Theorem 13: k-transversal containing a p-transversal"
+    ],
+    "supporting_local_proofs": [
+      "Perfect partial-rank corollary relative to finite Rado",
+      "partial-to-full transversal augmentation",
+      "replicated-transversal rank formula"
+    ],
+    "external_boundary": "Rado's 1942 finite independent-representative theorem is stated exactly but its primary proof is not compiled."
+  },
+  "source_corrections": [
+    "Theorem 3 needs a p-transversal existence hypothesis for its base-family conclusion.",
+    "Theorem 9 is false as printed; its formula and prose address different containment directions.",
+    "Theorem 13 is false as printed; full rank of a k-transversal only guarantees that it contains a p-transversal base.",
+    "Theorem 6 requires k>=1 unless the original matroid has rank zero.",
+    "Theorem 11 needs cardinality bars and a direct partition-matroid independence definition.",
+    "Theorems 12-13 require the recorded bars, bound variable, and label repairs."
+  ],
+  "status_limit": "No Erdős-problem status, unrestricted infinite-family result, formal proof, or independent-review claim is made."
+}

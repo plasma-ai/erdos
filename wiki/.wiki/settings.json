@@ -1,0 +1,27 @@
+{
+  "naming": {
+    "validate": [
+      "ascii",
+      "identifier"
+    ]
+  },
+  "exclude": {
+    "patterns": [
+      "**/*.pdf",
+      "**/*.json",
+      "**/*.gz",
+      "**/*.py",
+      "**/*.lean",
+      "**/evidence/verify/**/*.txt",
+      "**/evidence/**/util",
+      "**/evidence/**/assets",
+      "**/evidence/**/output",
+      "**/__pycache__"
+    ]
+  },
+  "links": {
+    "external": [
+      "../library"
+    ]
+  }
+}

@@ -1,0 +1,311 @@
+{
+  "schema_version": 1,
+  "title": "Simplices and Regular Polygonal Tori in Euclidean Ramsey Theory",
+  "author": "Miltiadis Karamanlis",
+  "journal": "The Electronic Journal of Combinatorics",
+  "volume": "29",
+  "issue": "3",
+  "article_number": "P3.66",
+  "publication_year": 2022,
+  "doi": "10.37236/10944",
+  "submitted": "2021-12-27",
+  "accepted": "2022-07-03",
+  "published": "2022-09-23",
+  "published_pdf_pages": 8,
+  "licence_as_printed": "Creative Commons Attribution 4.0 International",
+  "publisher_record": "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v29i3p66",
+  "arxiv_record": "https://arxiv.org/abs/2105.07689",
+  "retrieved_utc": "2026-09-05T14:10:23.141580+00:00",
+  "versions": [
+    {
+      "filename": "karamanlis_2022_simplices_regular_polygonal_tori.pdf",
+      "url": "https://www.combinatorics.org/ojs/index.php/eljc/article/download/v29i3p66/pdf/",
+      "retrieved_utc": "2026-09-05T14:10:23.141580+00:00",
+      "status": 200,
+      "final_url": "https://www.combinatorics.org/ojs/index.php/eljc/article/download/v29i3p66/pdf/",
+      "content_type": "application/pdf",
+      "bytes": 294693,
+      "pages": 8,
+      "role": "canonical published article",
+      "version_date_utc": "2022-09-23"
+    },
+    {
+      "filename": "karamanlis_2022_simplices_regular_polygonal_tori_arxiv_v1.pdf",
+      "url": "https://arxiv.org/pdf/2105.07689v1",
+      "retrieved_utc": "2026-09-05T14:10:23.141866+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/pdf/2105.07689v1",
+      "content_type": "application/pdf",
+      "bytes": 140450,
+      "pages": 7,
+      "role": "exact version-specific earlier manuscript",
+      "version_date_utc": "2021-05-17T09:19:12Z"
+    },
+    {
+      "filename": "karamanlis_2022_simplices_regular_polygonal_tori_arxiv_v2.pdf",
+      "url": "https://arxiv.org/pdf/2105.07689v2",
+      "retrieved_utc": "2026-09-05T14:10:23.141952+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/pdf/2105.07689v2",
+      "content_type": "application/pdf",
+      "bytes": 140604,
+      "pages": 7,
+      "role": "exact version-specific earlier manuscript",
+      "version_date_utc": "2021-06-13T20:15:16Z"
+    },
+    {
+      "filename": "karamanlis_2022_simplices_regular_polygonal_tori_arxiv_v3.pdf",
+      "url": "https://arxiv.org/pdf/2105.07689v3",
+      "retrieved_utc": "2026-09-05T14:10:23.142018+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/pdf/2105.07689v3",
+      "content_type": "application/pdf",
+      "bytes": 142810,
+      "pages": 7,
+      "role": "exact version-specific earlier manuscript",
+      "version_date_utc": "2022-07-08T09:32:24Z"
+    }
+  ],
+  "label_map": [
+    {
+      "published": "Definition 1",
+      "arxiv_v1_v2_v3": "Definition 1.1",
+      "published_pages": [
+        2
+      ],
+      "arxiv_pages": [
+        2
+      ]
+    },
+    {
+      "published": "Theorem 2",
+      "arxiv_v1_v2_v3": "Theorem 1.2",
+      "published_pages": [
+        2
+      ],
+      "arxiv_pages": [
+        2
+      ]
+    },
+    {
+      "published": "Lemma 3",
+      "arxiv_v1_v2_v3": "Lemma 3.1",
+      "published_pages": [
+        3
+      ],
+      "arxiv_pages": [
+        3
+      ]
+    },
+    {
+      "published": "Lemma 4",
+      "arxiv_v1_v2_v3": "Lemma 3.2",
+      "published_pages": [
+        4
+      ],
+      "arxiv_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "published": "Proposition 5",
+      "arxiv_v1_v2_v3": "Proposition 3.3",
+      "published_pages": [
+        5
+      ],
+      "arxiv_pages": [
+        4
+      ]
+    },
+    {
+      "published": "Definition 6",
+      "arxiv_v1_v2_v3": "Definition 3.4",
+      "published_pages": [
+        5
+      ],
+      "arxiv_pages": [
+        4
+      ]
+    },
+    {
+      "published": "Lemma 7",
+      "arxiv_v1_v2_v3": "Lemma 3.5",
+      "published_pages": [
+        5,
+        6
+      ],
+      "arxiv_pages": [
+        4,
+        5
+      ]
+    },
+    {
+      "published": "Proposition 8",
+      "arxiv_v1_v2_v3": "Proposition 3.6",
+      "published_pages": [
+        6
+      ],
+      "arxiv_pages": [
+        5
+      ]
+    },
+    {
+      "published": "Definition 9",
+      "arxiv_v1_v2_v3": "Definition 3.7",
+      "published_pages": [
+        6
+      ],
+      "arxiv_pages": [
+        5
+      ]
+    },
+    {
+      "published": "Lemma 10",
+      "arxiv_v1_v2_v3": "Lemma 3.8",
+      "published_pages": [
+        6
+      ],
+      "arxiv_pages": [
+        6
+      ]
+    },
+    {
+      "published": "Proposition 11",
+      "arxiv_v1_v2_v3": "Proposition 3.9",
+      "published_pages": [
+        6,
+        7
+      ],
+      "arxiv_pages": [
+        6
+      ]
+    }
+  ],
+  "version_comparison": [
+    {
+      "versions": "v1 to v2",
+      "scope": "All seven pages visually compared. Mathematical statements and constructions retain their form; observed changes correct prose, punctuation and typographical wording. Neither version has the later floor-endpoint or rounding-bound corrections."
+    },
+    {
+      "versions": "v2 to v3",
+      "scope": "Section 3 opening adds the Matoušek–Rödl acknowledgment, the Forbidden intersections reference, and revised quantitative comparison with Frankl–Rödl. Lemma 3.5 changes positive j to nonnegative j, 0<x-y to 0<=x-y, and the rounding bound n0^3/n^2 to 2n0^2/n^2. The funding acknowledgment is expanded. The main enclosure and proof architecture are unchanged."
+    },
+    {
+      "versions": "v3 to publication",
+      "scope": "All seven manuscript pages and eight published pages visually compared. The sequential published labels 1–11 replace 1.1,1.2,3.1–3.9; equations (3.1)–(3.4) become (1)–(4). Publication dates, affiliation, license, layout and reference formatting change. The displayed proof construction, v3 rounding correction, and still-insufficient Lemma 7 threshold agree. The publisher abstract is phrased differently from the PDF abstract; neither is substituted for the other."
+    }
+  ],
+  "source_precision": [
+    {
+      "id": "L7_parameter",
+      "source": "Published Lemma 7, pp.5–6; all arXiv Lemmas3.5",
+      "issue": "n>=2*pi*n0^3/delta alone need not make the floor map injective or even guarantee a valid polygon order. Ten points j/3 with 0<=j<=9, n0=3, delta=100,n=2 are allowed, but m=8 cannot receive an injection.",
+      "replacement": "Integer n>=max{2,n0,2*pi*n0^3/delta}. The full proof bounds mesh width, distinct indices, sine error and strict endpoint error.",
+      "impact": "Corrected sufficient lemma; every later existential theorem unchanged.",
+      "attribution": "compilation-supplied repair, not author-issued erratum"
+    },
+    {
+      "id": "off_diagonal",
+      "source": "Published Lemma4 p.4 and Proposition11 p.7",
+      "issue": "The displayed distance sums with a positive regular term are introduced for all labels.",
+      "replacement": "Use the displayed identities for distinct labels and handle diagonal zero separately.",
+      "attribution": "compilation clarification"
+    },
+    {
+      "id": "singleton_coordinates",
+      "source": "Published Proposition8 p.6",
+      "issue": "The coordinate proof invokes a lemma requiring at least two projected points.",
+      "replacement": "Map singleton projections to one polygon vertex and choose a common n0 for all other coordinate distances.",
+      "attribution": "compilation expansion"
+    },
+    {
+      "id": "residual_bound",
+      "source": "Published Proposition11 p.7",
+      "issue": "Almost regularity of the residual array is asserted without the bound.",
+      "replacement": "With delta=alpha^2/n^2 and n>=2, the deficit sum is <alpha^2(n-1)/n<alpha^2-delta<A^2.",
+      "attribution": "compilation expansion"
+    },
+    {
+      "id": "contraction",
+      "source": "Published Lemma10 p.6",
+      "issue": "Only a Schoenberg/Frankl–Rödl proof pointer is printed.",
+      "replacement": "Full relative deduction from the existing finite Gram criterion using a uniform strict margin and subtraction alpha^2<2*gamma.",
+      "attribution": "compilation expansion of the identified source step"
+    },
+    {
+      "id": "factor_labels",
+      "source": "Published Lemma4 p.4",
+      "issue": "Pair-factor labels and factor count are implicit.",
+      "replacement": "Label each pair factor by the partition identifying exactly that pair; a maximizing pair contributes no factor.",
+      "attribution": "compilation expansion"
+    },
+    {
+      "id": "bibliography",
+      "source": "Published references5,6,10,14, pp.7–8",
+      "issue": "Reference page ranges are truncated to 259–259,1–1,899,522–522.",
+      "replacement": "Linked canonical records identify FR1987 pp259–286, FR1990 pp1–7, Kriz1991 pp899–907 and the cited Schoenberg1938 article pp522–536. No full Schoenberg source acquisition is claimed.",
+      "attribution": "bibliographic precision, not a proof defect"
+    }
+  ],
+  "visual_reading": {
+    "published_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "arxiv_v1_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "arxiv_v2_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "arxiv_v3_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "method": "Every page visually read from rendered PDF at original image detail. Native PDF text used only for navigation; no OCR."
+  },
+  "proof_scope": {
+    "complete_components": 12,
+    "source_chain_and_expanded_deductions": 11,
+    "compilation_counterexamples": 1,
+    "new_formalization": false,
+    "independent_review_claimed": false,
+    "external_interfaces": [
+      "Kriz1991 Theorem4.3 and subset/congruence closure, linked to their canonical proofs",
+      "Finite negative-type/Gram criterion compiled with FR1990, linked without duplication",
+      "Finite isometry extension compiled with ILW2026 for the ancillary abelian-orbit observation",
+      "Standard finite-dimensional unitary spectral theorem and elementary real analysis"
+    ],
+    "limits": [
+      "The printed Lemma7 threshold is not certified as written; a corrected sufficient parameter is proved.",
+      "No prescribed or near-intrinsic-circumradius Ramsey assertion, exponential density bound, or full Ramsey classification is deduced.",
+      "Matousek–Rodl1995 full paper and its spread-vector theorem are not reconstructed here.",
+      "Historical introductory conjecture status and later uptake do not constitute a new current-status audit.",
+      "All four source PDFs are preserved separately; no byte equivalence is claimed."
+    ]
+  }
+}

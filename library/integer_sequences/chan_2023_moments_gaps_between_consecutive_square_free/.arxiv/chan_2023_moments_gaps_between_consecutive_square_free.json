@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Tsz Ho Chan"
+  ],
+  "category": "math.NT",
+  "date": "2023-10-12",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 252321,
+    "files": 1,
+    "sha256": "76930086699cb366e4b395b7fef377440f098b71dacded1e3a507b2ba1fa90fd",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2310.08448v1"
+  },
+  "id": "2310.08448",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 155964,
+    "previous": [],
+    "sha256": "b824c5fe14347959f5bcead3eab6bae22e38d40fe9951456c1e46fe2bc24e7c4",
+    "url": "https://arxiv.org/pdf/2310.08448v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2310.08448v1 [math.NT] 12 Oct 2023",
+  "tex": {
+    "archive": {
+      "bytes": 7793,
+      "name": "arXiv-2310.08448v1.gz",
+      "sha256": "d59e945b4dc247cdba6bd75180c068cf8029b4c65c6c16a7141485fce0675e91"
+    },
+    "bytes": 23752,
+    "files": 1,
+    "sha256": "846d3fd4d2c8c52be8b740225e7efb91842d1a4d62584559d991f72278bcde46",
+    "url": "https://arxiv.org/src/2310.08448v1"
+  },
+  "title": "On moments of gaps between consecutive squarefree numbers",
+  "version": 1
+}

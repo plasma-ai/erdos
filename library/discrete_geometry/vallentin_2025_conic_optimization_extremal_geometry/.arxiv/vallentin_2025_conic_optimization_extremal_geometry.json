@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Frank Vallentin"
+  ],
+  "category": "math.OC",
+  "date": "2025-10-08",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 450750,
+    "files": 1,
+    "sha256": "61bdea93586db339a48177d7bc3b9fa014c30d0a3328db32859f8df071fb162f",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2510.06960v1"
+  },
+  "id": "2510.06960",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 497725,
+    "previous": [],
+    "sha256": "d783012041b75f08863038d5a2deba4c881fcbdbbe0fa87d9c8827da202fe0ae",
+    "url": "https://arxiv.org/pdf/2510.06960v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2510.06960v1 [math.OC] 8 Oct 2025",
+  "tex": {
+    "archive": {
+      "bytes": 31512,
+      "name": "arXiv-2510.06960v1.tar.gz",
+      "sha256": "be8eea2ebc28990bc783785b583bd4d5971df8f1623ecefa53d03380ddd5182d"
+    },
+    "bytes": 94173,
+    "files": 2,
+    "sha256": "3e2f113a7495f147a6065b551618aa6220e85227d555bd8c21433ed323006fc5",
+    "url": "https://arxiv.org/src/2510.06960v1"
+  },
+  "title": "Conic optimization for extremal geometry",
+  "version": 1
+}

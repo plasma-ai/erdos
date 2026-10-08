@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Benjamin Bedert"
+  ],
+  "category": "math.NT",
+  "date": "2023-01-17",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 1306959,
+    "files": 1,
+    "sha256": "6522a4ce866dd96d8df93fa42af9534d0b6e3efe6d48e1808a8202676af95f06",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2301.07065v1"
+  },
+  "id": "2301.07065",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 478732,
+    "previous": [],
+    "sha256": "f96916b045dabe051a5034a0546d1588e7d57f654966d578b6128193fb8b9c13",
+    "url": "https://arxiv.org/pdf/2301.07065v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2301.07065v1 [math.NT] 17 Jan 2023",
+  "tex": {
+    "archive": {
+      "bytes": 33938,
+      "name": "arXiv-2301.07065v1.tar.gz",
+      "sha256": "ef35fca0ad72b413ef8547f1aba15376512ed3289974c78e12b66ba72e745d46"
+    },
+    "bytes": 160196,
+    "files": 3,
+    "sha256": "09fa08d531b422cc5d38cc816f60355bf299cef48472ba68e8de57ea8f0ee34f",
+    "url": "https://arxiv.org/src/2301.07065v1"
+  },
+  "title": "On a problem of Erd\\H{o}s and S\\'ark\\\"ozy about sequences with no term dividing the sum of two larger terms",
+  "version": 1
+}

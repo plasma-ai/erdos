@@ -1,0 +1,158 @@
+{
+  "schema_version": "source_identity_record.v1",
+  "source_id": "gu_2026_twelve_critical_graphs",
+  "source_aliases": [
+    {
+      "alias": "Gu2026",
+      "kind": "citation label"
+    },
+    {
+      "alias": "Zenodo concept record 22348353",
+      "kind": "version-group identifier"
+    }
+  ],
+  "title": "Twelve-critical graphs with (2/5 + o(1))n^2 edges",
+  "authors": [
+    "Qiyuan Gu"
+  ],
+  "author_name_forms": [
+    {
+      "value": "Qiyuan Gu",
+      "source": "PDF byline"
+    },
+    {
+      "value": "Gu, Qiyuan",
+      "source": "Zenodo creator metadata for records 22352283 and 22569201"
+    }
+  ],
+  "bibliographic_author_name_decision": {
+    "manual": true,
+    "same_author": true,
+    "basis": "The two name strings differ only in ordinary family-name ordering; the title, University of Chicago affiliation, and Zenodo concept record also match.",
+    "boundary": "Both observed bibliographic strings remain recorded; this normalization does not establish any mathematical or formal claim and does not resolve the separate site-account relationship."
+  },
+  "external_submission_account": {
+    "value": "Alex Gu",
+    "source": "checked Erdős Problems submission account",
+    "relationship_to_bibliographic_author": "unresolved",
+    "boundary": "An account label is not a mathematical-author assertion. This record does not claim that Alex Gu and Qiyuan Gu are either the same or different people."
+  },
+  "identifiers": [
+    {
+      "scheme": "zenodo_concept_doi",
+      "value": "10.5281/zenodo.22348353"
+    },
+    {
+      "scheme": "zenodo_concept_record",
+      "value": "22348353"
+    },
+    {
+      "scheme": "zenodo_doi",
+      "value": "10.5281/zenodo.22569201",
+      "artifact_id": "zenodo_22569201_v7"
+    },
+    {
+      "scheme": "zenodo_record",
+      "value": "22569201",
+      "artifact_id": "zenodo_22569201_v7"
+    },
+    {
+      "scheme": "zenodo_doi",
+      "value": "10.5281/zenodo.22352283",
+      "artifact_id": "zenodo_22352283_v3"
+    },
+    {
+      "scheme": "zenodo_record",
+      "value": "22352283",
+      "artifact_id": "zenodo_22352283_v3"
+    }
+  ],
+  "selected_citation_artifact": "zenodo_22569201_v7",
+  "selection_check": {
+    "endpoint": "https://zenodo.org/api/records/22348353/versions/latest",
+    "checked_utc": "2026-09-07T04:33:04Z",
+    "selected_record": "22569201",
+    "selected_version": "v7",
+    "retained_snapshot_matches": true,
+    "boundary": "This is a time-bounded version-selection and byte-identity check, not a guarantee that v7 remains latest after checked_utc."
+  },
+  "artifacts": [
+    {
+      "artifact_id": "zenodo_22569201_v7",
+      "file": "gu_2026_twelve_critical_graphs.pdf",
+      "upstream_file_key": "Gu-erdos-917-twelve-critical-graphs.pdf",
+      "role": "selected citation artifact",
+      "version_label": "v7",
+      "zenodo_record": "22569201",
+      "doi": "10.5281/zenodo.22569201",
+      "metadata_publication_date": "2026-09-06",
+      "record_created_utc": "2026-09-07T01:26:55.463286+00:00",
+      "bytes": 94324,
+      "physical_pages": 7,
+      "locator_note": "Physical pp. 1 and 7 were visually checked for title, byline, abstract, definition, Theorem 1, formalization reporting, and disclosure; no proof or Lean build was verified."
+    },
+    {
+      "artifact_id": "zenodo_22352283_v3",
+      "file": "gu_2026_twelve_critical_graphs_zenodo_22352283.pdf",
+      "upstream_file_key": "Gu-erdos-917-twelve-critical-graphs.pdf",
+      "role": "distinct historical version",
+      "version_label": "v3",
+      "zenodo_record": "22352283",
+      "doi": "10.5281/zenodo.22352283",
+      "metadata_publication_date": "2026-09-05",
+      "record_created_utc": "2026-09-05T15:51:29.920055+00:00",
+      "bytes": 328666,
+      "physical_pages": 6,
+      "locator_note": "Physical pp. 1 and 6 were visually checked for title, byline, abstract, edge-deletion convention, Theorem 1, and disclosure; no proof was verified."
+    }
+  ],
+  "version_relationship": {
+    "manual": true,
+    "same_source_work": true,
+    "byte_identical": false,
+    "basis": "The records share the exact title, PDF byline, creator affiliation, and Zenodo concept DOI 10.5281/zenodo.22348353; Zenodo labels them v3 and v7 of one concept record.",
+    "material_differences_checked": [
+      "v3 defines criticality using edge deletion directly",
+      "v7 defines every-proper-subgraph criticality and states an equivalence for graphs without isolated vertices",
+      "v7 has seven physical pages rather than six and adds formalization claims and further material"
+    ],
+    "boundary": "Both exact PDFs remain distinct. The same-work decision does not certify proof equivalence, correctness, peer review, acceptance, or formal verification."
+  },
+  "reading_scope": {
+    "zenodo_22569201_v7": [
+      1,
+      7
+    ],
+    "zenodo_22352283_v3": [
+      1,
+      6
+    ],
+    "scope": "source identity, title, byline, abstract, criticality convention, Theorem 1 statement, version-specific disclosure, and v7 formalization reporting only; no proof-body review, Lean source-content inspection, archive adoption, or execution"
+  },
+  "problem_relationships": [
+    {
+      "problem": "E0917",
+      "scope": "unreviewed preprint lead: the manuscript claims a counterexample to the general asymptotic at k=12; even if correct, it leaves the k=6 question untouched and receives no status credit here"
+    }
+  ],
+  "formal_material": {
+    "upstream_zip_key": "Gu-erdos-917-lean.zip",
+    "upstream_metadata_claims_formalization_md": true,
+    "static_zip_listing_entry_count": 36,
+    "static_zip_listing_contains_readme_md": true,
+    "static_zip_listing_contains_formalization_md": false,
+    "metadata_archive_inconsistency": "The v7 metadata names FORMALIZATION.md, but the pinned ZIP's static 36-entry listing has README.md and no FORMALIZATION.md.",
+    "zip_retained_in_source_home": false,
+    "zip_review_scope": "static entry listing of the pinned ZIP only; no source-content or theorem-fidelity review",
+    "zip_executed": false,
+    "formalization_md_separately_retained": false,
+    "credit": "none"
+  },
+  "limits": [
+    "V7 is selected as the later checked Zenodo record; v3 remains a distinct historical artifact because the checked site relationship points to it.",
+    "Neither Zenodo deposit supplies peer-review or named community-acceptance evidence in this filing.",
+    "The mathematical construction and criticality proof were not independently reviewed here.",
+    "No Lean source was adopted, built, or checked for statement fidelity, placeholders, axioms, or theorem dependencies.",
+    "This source record grants no proof, formal-verification, acceptance, or mathematical-status credit."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "authors": [
+    "Hitesh Kumar",
+    "Bojan Mohar",
+    "Shivaramakrishna Pragada"
+  ],
+  "category": "math.CO",
+  "date": "2026-07-02",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 356694,
+    "files": 1,
+    "sha256": "4a8e4b55894c98964af23016853482d4a841a1f0987045eb9145286a7bd555ad",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2607.02698v1"
+  },
+  "id": "2607.02698",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 565513,
+    "previous": [],
+    "sha256": "bf79c035f6eced5515c84d248de73ec03f24a5198d27c62c4adff033a4608153",
+    "url": "https://arxiv.org/pdf/2607.02698v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2607.02698v1 [math.CO] 2 Jul 2026",
+  "tex": {
+    "archive": {
+      "bytes": 13732,
+      "name": "arXiv-2607.02698v1.tar.gz",
+      "sha256": "29aee6e2b4269210a02c98287cb3798591ef0dc1d16439f5befdb309d47bf115"
+    },
+    "bytes": 41421,
+    "files": 3,
+    "sha256": "7ee6feeb3ee088fed03aad7bfa579a1db6afb1da36f5379df9ed090a660c7a17",
+    "url": "https://arxiv.org/src/2607.02698v1"
+  },
+  "title": "An improved bound for the strong clique index of graphs",
+  "version": 1
+}

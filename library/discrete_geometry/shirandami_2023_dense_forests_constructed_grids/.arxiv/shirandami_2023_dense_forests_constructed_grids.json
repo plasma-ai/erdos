@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Victor Shirandami"
+  ],
+  "category": "math.NT",
+  "date": "2023-07-12",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 401973,
+    "files": 1,
+    "sha256": "ec37a1cc1fa2d309abfdbb7b83578b3eabfb60ab26d19385e304479410b9a0a6",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2303.14719v2"
+  },
+  "id": "2303.14719",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 255444,
+    "previous": [],
+    "sha256": "c1a1ff301759d2972ff85c86d32da36467211b02f2e07cf19a3fdc754b7af3f8",
+    "url": "https://arxiv.org/pdf/2303.14719v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2303.14719v2 [math.NT] 12 Jul 2023",
+  "tex": {
+    "archive": {
+      "bytes": 16097,
+      "name": "arXiv-2303.14719v2.tar.gz",
+      "sha256": "c9c73850a87a8aa798b23f70275b62563d2c99bfc30e0e77590c4658c0abeff2"
+    },
+    "bytes": 54753,
+    "files": 3,
+    "sha256": "2378bd71e294c1edc5f1c1e971ba90f4db663e212fd813771e2ee9fa452d09fc",
+    "url": "https://arxiv.org/src/2303.14719v2"
+  },
+  "title": "Dense Forests Constructed from Grids",
+  "version": 2
+}

@@ -1,0 +1,40 @@
+{
+  "authors": [
+    "Todd Cochrane",
+    "Andrew Granville",
+    "Junren Zheng"
+  ],
+  "category": "math.NT",
+  "date": "2026-01-16",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 1032349,
+    "files": 1,
+    "sha256": "3d7c2dbafeda7d3f8037504ccadc1a124a45cd6f05aae0f96550f8a1a44f0d48",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2601.10927v1"
+  },
+  "id": "2601.10927",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 586901,
+    "previous": [],
+    "sha256": "76673d01bd16168391c893e9034e524e176b1912a86f8767bea5bf962a32cd92",
+    "url": "https://arxiv.org/pdf/2601.10927v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2601.10927v1 [math.NT] 16 Jan 2026",
+  "tex": {
+    "archive": {
+      "bytes": 29272,
+      "name": "arXiv-2601.10927v1.tar.gz",
+      "sha256": "d41d3252bb4ee06b171410d068cd6497ca5c261ecb4812f00500fd06a532d249"
+    },
+    "bytes": 100041,
+    "files": 2,
+    "sha256": "ba5b3cd0c7b4611e32453079d8dd38c4fd66957de3839e3420f9a82b10cedf18",
+    "url": "https://arxiv.org/src/2601.10927v1"
+  },
+  "title": "Mixed incomplete character sums of rational functions with smooth moduli",
+  "version": 1
+}

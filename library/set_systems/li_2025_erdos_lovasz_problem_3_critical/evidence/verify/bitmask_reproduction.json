@@ -1,0 +1,145 @@
+{
+  "schema": "e0834-bitmask-portable-reproduction-v1",
+  "date": "2026-09-15",
+  "record_kind": "curated portable account of a completed source review and one observed three-leg reproduction; not an original operational transcript or a new review",
+  "attribution": {
+    "implementation": "Implementation author (2026-09-15), under the coordinating author",
+    "engineering_and_input_review": "Distinct non-author engineering and native-input reviewer (2026-09-15)",
+    "launcher": "Separate non-author run launcher (2026-09-15); author of the operational wrapper",
+    "run_custody_and_documentary_authentication": "Coordinating author (2026-09-15)",
+    "publication": "Implementation author and coordinating editor (2026-09-15)"
+  },
+  "standing": "new fixed-input engineering and input reproduction recorded; no fresh whole-proof grade, verification tier, status change or landing acceptance",
+  "subject_date": "2026-09-15T02:18:25Z",
+  "files": [
+    {
+      "path": "library/set_systems/li_2025_erdos_lovasz_problem_3_critical/evidence/verify_e0834_bitmask.py"
+    },
+    {
+      "path": "library/set_systems/li_2025_erdos_lovasz_problem_3_critical/evidence/assets/li_v1_bitmask_input.json"
+    },
+    {
+      "path": "tests/test_e0834_bitmask.py",
+      "scope": "the reviewed and executed test bytes were never committed (exact copy not retained); the file as it stood at 2026-09-15T02:18:25Z is their Ruff-formatted publication, differing only by formatting and four raw-string prefixes, with an identical complete syntax tree"
+    }
+  ],
+  "source_correspondence": {
+    "basis": "native mathematical pages only; no fresh PDF comparison",
+    "pages": [
+      {
+        "path": "library/set_systems/li_2025_erdos_lovasz_problem_3_critical/theorem_4_1.md"
+      },
+      {
+        "path": "library/set_systems/li_2025_erdos_lovasz_problem_3_critical/lemma_4_3.md"
+      },
+      {
+        "path": "library/set_systems/li_2025_erdos_lovasz_problem_3_critical/lemma_4_4.md"
+      },
+      {
+        "path": "library/set_systems/li_2025_erdos_lovasz_problem_3_critical/proposition_4_5.md"
+      },
+      {
+        "path": "library/set_systems/li_2025_erdos_lovasz_problem_3_critical/proposition_4_6.md"
+      }
+    ],
+    "historical_evidence_context": {
+      "path": "library/set_systems/li_2025_erdos_lovasz_problem_3_critical/evidence/_index.md",
+      "date": "2026-09-14",
+      "date_note": "the reviewed account is the page as it stood on 2026-09-14, before the filing of 2026-09-15 that updated this page; the top-level subject_date does not carry it",
+      "scope": "reviewed pre-filing account, not a pin of the updated owner page"
+    },
+    "label_to_bit": {
+      "data_representation": "labels only; no explicit mapping field in JSON",
+      "fixed_reader_schema": "e0834-bitmask-v1",
+      "mapping": {
+        "1": 0,
+        "2": 1,
+        "3": 2,
+        "4": 3,
+        "5": 4,
+        "6": 5,
+        "7": 6,
+        "8": 7,
+        "9": 8
+      },
+      "definition": "bit i-1 represents label i; a blue set is the sum of 1 << (i-1) over its labels",
+      "review_resolution": "The distinct engineering reviewer found the fixed code/data contract unambiguous; no successor required"
+    }
+  },
+  "review": {
+    "date": "2026-09-15",
+    "reviewer": "Distinct non-author engineering and native-input reviewer (2026-09-15)",
+    "verdict": "No defect found",
+    "scope": "complete source reading of the exact program, input and synthetic tests, with every input field compared against the five native pages; not fresh mathematical review of Li's results",
+    "method": "source inspection plus administrative JSON and page-text parsing; no checker import, compilation, tests or mathematical run during the review",
+    "label_mapping_request": "satisfied by the fixed reader contract and documentary table; not by a separate JSON field",
+    "nonblocking_observations": [
+      "test-module exports are unusual but harmless",
+      "no direct directory or FIFO reader test",
+      "the isolated pytest command bypasses project configuration; runtime admission was separate"
+    ],
+    "whole_proof_grade": false,
+    "tier_awarded": false
+  },
+  "author_exposure": {
+    "curated_source_proof_review_seen": true,
+    "historical_bitmask_outcomes_seen": true,
+    "blind_authorship_claim": false,
+    "old_checker_or_digest_bodies_used": false,
+    "historical_program_recovered": false,
+    "historical_calculation_used_as_algorithm_or_oracle": false,
+    "native_pages_used_for_new_algorithm_and_transcription": true
+  },
+  "actual": {
+    "order": [
+      "synthetic_tests",
+      "normal",
+      "optimized"
+    ],
+    "synthetic_tests": {
+      "cases": 67,
+      "unique_cases": 67,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "scope": "synthetic and mutated finite inputs only; tests do not open Li's input",
+      "counts_source": "original custodian and launcher postchecks; JUnit not recounted for this filing"
+    },
+    "legs": [
+      {
+        "name": "pytest",
+        "exit": 0,
+        "wall_seconds": 0.44641312514431775
+      },
+      {
+        "name": "normal",
+        "exit": 0,
+        "wall_seconds": 0.17626845790073276
+      },
+      {
+        "name": "optimized",
+        "exit": 0,
+        "wall_seconds": 0.18773704185150564
+      }
+    ],
+    "normal_and_optimized_stdout_identical": true,
+    "result": {
+      "path": "library/set_systems/li_2025_erdos_lovasz_problem_3_critical/evidence/verify/bitmask_result.json"
+    },
+    "selected_python": {
+      "implementation": "CPython",
+      "version": "3.12.13",
+      "platform": "macOS aarch64"
+    },
+    "source_identities_unchanged": true
+  },
+  "limits_of_conclusion": [
+    "new independent integer-mask reproduction, not recovery of the historical bitmask program",
+    "not the earlier set-based 52-obligation replay",
+    "no general transversal theorem, extremal minimality search, source-status investigation, whole-proof grade or numerical tier",
+    "link equality checked; link/core independence numbers are outside this checker",
+    "program status verified refers only to its fixed finite contract",
+    "filing performed without executing or importing the program or tests"
+  ],
+  "publication_transformation": "Original reports and operational receipts remain immutable. This new account selects the finite result, exact reviewed subjects, attribution and substantive limitations, replacing private path/operational identifiers with stable roles and repository-relative paths. It is not presented as a verbatim independent review."
+}

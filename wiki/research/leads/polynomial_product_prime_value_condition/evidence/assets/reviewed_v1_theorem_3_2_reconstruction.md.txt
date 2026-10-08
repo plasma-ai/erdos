@@ -1,0 +1,149 @@
+---
+name: research/leads/polynomial_product_prime_value_condition/theorem_3_2_reconstruction
+title: "Theorem 3.2: degree-scale conditional bound"
+desc: |
+  Reconstructs the conditional transfer from prime values in multiplicative
+  intervals to a degree-scale lower bound for the running product.
+created: 2026-09-11T01:41:41Z
+updated: 2026-09-11T01:41:41Z
+---
+
+[[research/leads/polynomial_product_prime_value_condition/_index|..]]
+
+***
+
+**Source.** Aron Bhalla, *A conditional note on an Erdős problem on large
+prime factors of polynomial products*, Hypothesis 3.1 and Theorem 3.2,
+physical pp. 3--4, in the retained [five-page PDF](bhalla_conditional_note.pdf).
+The file has SHA-256
+b4208202e25618964858684f2d37e47c9ab61fbea96342beae3cb64e6da9d64e.
+The fixed-divisor input is reconstructed in
+[[research/leads/polynomial_product_prime_value_condition/lemma_2_1_reconstruction|Lemma 2.1]].
+
+**Standing.** This is an author-recorded conditional reconstruction. It is
+not an independent review, does not prove Hypothesis 3.1, and does not change
+Problem 976's status or assign a verification tier.
+
+## Definitions and hypothesis
+
+For an integer polynomial \(f\) of degree \(d\ge2\), set
+
+$$
+F_f(n)=P^+\left(\left|\prod_{m=1}^n f(m)\right|\right),
+\qquad P^+(1)=1.
+$$
+
+Here \(P^+(N)\) is the largest prime divisor of the nonzero integer \(N\).
+The degree and irreducibility assumptions ensure that the factors \(f(m)\)
+are nonzero.
+
+The source's Hypothesis 3.1 is the following. For every irreducible
+\(g\in\mathbb Z[x]\) with positive leading coefficient and no prime dividing
+all values of \(g\), there are constants \(A_g>1\) and \(X_0(g)\) such that,
+for every real \(X\ge X_0(g)\), some integer
+
+$$
+t\in[X,A_gX]
+$$
+
+has \(g(t)\) prime.
+
+## Statement
+
+Assume Hypothesis 3.1. For every irreducible
+\(f\in\mathbb Z[x]\) of degree \(d\ge2\), there are constants \(C_f>0\) and
+\(N_f\ge1\), depending on \(f\), such that
+
+$$
+F_f(n)\ge C_fn^d\qquad(n\in\mathbb Z,\ n\ge N_f).
+$$
+
+Equivalently, \(F_f(n)\gg_f n^d\) for all sufficiently large integer \(n\).
+No uniformity over the choice of \(f\) is asserted.
+
+## Reconstruction
+
+Replace \(f\) by \(-f\) if necessary. This leaves \(F_f(n)\) unchanged and
+allows its leading coefficient to be positive. Apply Lemma 2.1 to obtain
+\(D>0\), \(M\ge1\), \(0\le a<M\), and \(h\in\mathbb Z[x]\) with
+
+$$
+f(a+Mx)=Dh(x),
+$$
+
+where \(h\) is irreducible of degree \(d\), has positive leading coefficient,
+and has no fixed prime divisor.
+
+Apply Hypothesis 3.1 to this fixed polynomial \(h\), and write
+\(A=A_h>1\) and \(X_0=X_0(h)\). For each integer \(n\), define
+
+$$
+X_n=\left\lfloor\frac{n-a}{AM}\right\rfloor.
+$$
+
+Choose \(n\) large enough that \(X_n\ge\max\{X_0,1\}\). The hypothesis then
+provides an integer \(t\in[X_n,AX_n]\) for which \(h(t)\) is a positive
+prime. Put
+
+$$
+m=a+Mt.
+$$
+
+The lower endpoint is part of the prefix argument: since \(a\ge0\), \(M\ge1\),
+and \(t\ge X_n\ge1\),
+
+$$
+m\ge a+M\ge1.
+$$
+
+For the upper endpoint, the definition of the floor gives
+\(AMX_n\le n-a\), so
+
+$$
+m=a+Mt\le a+M(AX_n)\le n.
+$$
+
+Thus \(m\) is an integer with \(1\le m\le n\). The identity above shows that
+the prime \(h(t)\) divides \(f(m)\), and hence divides the running product.
+Therefore
+
+$$
+F_f(n)\ge h(t).
+$$
+
+It remains to compare \(h(t)\) with \(n^d\). If \(L_h>0\) is the leading
+coefficient of \(h\), then \(h(u)/u^d\to L_h\) as \(u\to+\infty\). Choose
+\(c_1>0\) and \(U\ge1\), depending only on \(h\), such that
+
+$$
+h(u)\ge c_1u^d\qquad(u\ge U).
+$$
+
+Also,
+
+$$
+X_n\ge\frac{n-a}{AM}-1.
+$$
+
+For \(n\ge2(a+AM)\), the right side is at least \(n/(2AM)\). Increasing the
+fixed threshold \(N_f\) if necessary ensures both \(X_n\ge U\) and this
+inequality. Since \(t\ge X_n\), we then have
+
+$$
+F_f(n)\ge h(t)
+\ge c_1t^d
+\ge c_1\left(\frac{n}{2AM}\right)^d
+=C_fn^d,
+\qquad
+C_f=\frac{c_1}{(2AM)^d}>0.
+$$
+
+All of \(D,a,M,h,A,X_0,U,c_1,C_f,N_f\) is fixed after \(f\) is fixed.
+Consequently the estimate holds for every sufficiently large integer endpoint,
+not only along a subsequence. Undoing the initial replacement by \(-f\) does
+not change the absolute-value product. This proves Theorem 3.2.
+
+**Boundary.** The only analytic input is Hypothesis 3.1 for the one fixed
+polynomial \(h\) produced by Lemma 2.1. The hypothesis remains unproved, and
+the next page derives it conditionally from a positive-input Bateman--Horn
+asymptotic.

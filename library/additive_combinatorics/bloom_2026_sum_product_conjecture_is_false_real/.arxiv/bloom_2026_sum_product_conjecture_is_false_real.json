@@ -1,0 +1,41 @@
+{
+  "authors": [
+    "Thomas F Bloom",
+    "Will Sawin",
+    "Carl Schildkraut",
+    "Dmitrii Zhelezov"
+  ],
+  "category": "math.NT",
+  "date": "2026-05-27",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 683548,
+    "files": 1,
+    "sha256": "b5ec00b25ba10b0fd076ac8304255c0ffcfb07af975503f700e45e97cb44668c",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2605.28781v1"
+  },
+  "id": "2605.28781",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 524780,
+    "previous": [],
+    "sha256": "eee6d535af1996ca3f1592e51bba764df3ae6b01e6f7edfdb79a93abb196c08d",
+    "url": "https://arxiv.org/pdf/2605.28781v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2605.28781v1 [math.NT] 27 May 2026",
+  "tex": {
+    "archive": {
+      "bytes": 29710,
+      "name": "arXiv-2605.28781v1.tar.gz",
+      "sha256": "51d17ef3ce49c25bdcb748a66d5b94c9c5a4a478cfafe3033703d4ac16e7b65f"
+    },
+    "bytes": 95739,
+    "files": 3,
+    "sha256": "df49f14311c926e61b307b4f1b6acfaace800f344236ed34550765cfb81c248b",
+    "url": "https://arxiv.org/src/2605.28781v1"
+  },
+  "title": "The sum-product conjecture is false for real numbers",
+  "version": 1
+}

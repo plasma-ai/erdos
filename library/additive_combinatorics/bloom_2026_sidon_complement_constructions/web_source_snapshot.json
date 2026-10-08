@@ -1,0 +1,29 @@
+{
+  "scope": "Unmodified unauthenticated public HTML preserved as source evidence; scripts were not executed by this compilation.",
+  "records": [
+    {
+      "kind": "problem",
+      "url": "https://www.erdosproblems.com/198",
+      "response_url": "https://www.erdosproblems.com/198",
+      "accessed_utc": "2026-09-05T21:54:33.469189+00:00",
+      "attachment": "problem_20260905.html.gz",
+      "decoded_bytes": 32862
+    },
+    {
+      "kind": "discussion",
+      "url": "https://www.erdosproblems.com/forum/discuss/198",
+      "response_url": "https://www.erdosproblems.com/forum/thread/198",
+      "accessed_utc": "2026-09-05T21:54:38.975825+00:00",
+      "attachment": "discussion_20260905.html.gz",
+      "decoded_bytes": 40889
+    },
+    {
+      "kind": "proof_claims",
+      "url": "https://www.erdosproblems.com/forum/thread/198/proof-claims",
+      "response_url": "https://www.erdosproblems.com/forum/thread/198/proof-claims",
+      "accessed_utc": "2026-09-05T21:54:44.151103+00:00",
+      "attachment": "proof_claims_20260905.html.gz",
+      "decoded_bytes": 38496
+    }
+  ]
+}

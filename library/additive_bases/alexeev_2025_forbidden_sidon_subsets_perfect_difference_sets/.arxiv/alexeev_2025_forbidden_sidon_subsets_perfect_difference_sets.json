@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Boris Alexeev",
+    "Dustin G. Mixon"
+  ],
+  "category": "math.CO",
+  "date": "2026-01-16",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 284067,
+    "files": 1,
+    "sha256": "1f12d941972a0032593ffd2c1e299e46a26f860393565865380ac11f358b350b",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2510.19804v2"
+  },
+  "id": "2510.19804",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 621415,
+    "previous": [],
+    "sha256": "0b9114eb34b8625418f52d8336f074d0ba9849fda40f720e60dbcba897a037e0",
+    "url": "https://arxiv.org/pdf/2510.19804v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2510.19804v2 [math.CO] 16 Jan 2026",
+  "tex": {
+    "archive": {
+      "bytes": 86429,
+      "name": "arXiv-2510.19804v2.tar.gz",
+      "sha256": "1c6f1d6fbce3f72d57f734dbdf813a325509359c7f7f99f6c8f0d3f09d0210c4"
+    },
+    "bytes": 352290,
+    "files": 7,
+    "sha256": "46e5ab6482207e26cf62900605374d4ad9f3516a5d586335556d51934f923162",
+    "url": "https://arxiv.org/src/2510.19804v2"
+  },
+  "title": "Forbidden Sidon subsets of perfect difference sets, featuring a human-assisted proof",
+  "version": 2
+}

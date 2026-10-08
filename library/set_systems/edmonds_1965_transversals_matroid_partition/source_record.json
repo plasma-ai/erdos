@@ -1,0 +1,55 @@
+{
+  "title": "Transversals and Matroid Partition",
+  "authors": [
+    "Jack Edmonds",
+    "D. R. Fulkerson"
+  ],
+  "journal": "Journal of Research of the National Bureau of Standards - B. Mathematics and Mathematical Physics",
+  "volume": "69B",
+  "issue": "3",
+  "year": 1965,
+  "issue_date": "July-September 1965",
+  "printed_pages": "147-153",
+  "doi": "10.6028/jres.069B.016",
+  "canonical_pdf": {
+    "file": "edmonds_1965_transversals_matroid_partition.pdf",
+    "bytes": 8638673,
+    "physical_pages": 7,
+    "version": "Published journal scan"
+  },
+  "primary_urls": [
+    "https://nvlpubs.nist.gov/nistpubs/jres/69B/jresv69Bn3p147_A1b.pdf",
+    "https://www.nist.gov/nist-research-library/journal-research-volume-69b",
+    "https://api.crossref.org/works/10.6028%2Fjres.069B.016"
+  ],
+  "accessed": "2026-09-05",
+  "header_date": "June 9, 1965; its parenthetical printing is not reinterpreted as received or accepted.",
+  "metadata_notes": [
+    "The printed original gives Fulkerson and pp.147-153; Crossref truncates the surname to Fulkerso and records only page 147.",
+    "The first-page conference footnote prints August 21 to July 1, 1965. No corrected conference date is inferred.",
+    "Digital creation/modification dates in 2010/2011 concern the scan, not a separate mathematical version."
+  ],
+  "version_limit": "No distinct manuscript or author version is retained or claimed equivalent.",
+  "reading": {
+    "physical_pages_visually_read": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "printed_pages": [
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153
+    ],
+    "method": "Original-detail page renders; preexisting text only for navigation; no OCR run."
+  },
+  "proof_boundary": "Local matroid proofs, flow reductions and matching lifting are reconstructed. Hall, Konig, integral max-flow/min-cut and the exact separate Edmonds matching-structure theorem remain external."
+}

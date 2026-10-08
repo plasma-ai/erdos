@@ -1,0 +1,89 @@
+{
+  "schema_version": "source_identity_record.v1",
+  "source_id": "huang_2026_autonomous_disproofs_sum_product_real",
+  "source_aliases": [
+    {
+      "alias": "huang_2607.20525",
+      "kind": "historical operational label"
+    }
+  ],
+  "title": "Autonomous disproofs of the sum-product conjecture over ℝ with GPT-5.5 Pro",
+  "authors": [
+    "Yichen Huang"
+  ],
+  "identifiers": [
+    {
+      "scheme": "arxiv",
+      "value": "2607.20525"
+    },
+    {
+      "scheme": "zenodo_doi",
+      "value": "10.5281/zenodo.21286412"
+    },
+    {
+      "scheme": "zenodo_record",
+      "value": "21286412"
+    }
+  ],
+  "selected_citation_artifact": "arxiv_2607.20525v1",
+  "artifacts": [
+    {
+      "artifact_id": "arxiv_2607.20525v1",
+      "file": "huang_2026_autonomous_disproofs_sum_product_real.pdf",
+      "artifact_path_aliases": [
+        "huang_2026_autonomous_disproofs_sum_product_real_arxiv_2607.20525v1.pdf"
+      ],
+      "role": "selected citation artifact (read; not held in this folder)",
+      "version_label": "arXiv:2607.20525v1",
+      "submitted_date": "2026-07-09",
+      "displayed_pdf_date": "2026-07-24",
+      "bytes": 448715,
+      "physical_pages": 9,
+      "locator_note": "The existing digest cites matching printed/physical page numbers; this identity repair does not expand the recorded reading scope."
+    },
+    {
+      "artifact_id": "zenodo_21286412",
+      "file": "huang_2026_autonomous_disproofs_sum_product_real_zenodo_21286412.pdf",
+      "role": "distinct-byte alternate preprint/deposit",
+      "version_label": "Zenodo record 21286412",
+      "metadata_publication_date": "2026-07-10",
+      "displayed_pdf_date": "2026-07-09",
+      "bytes": 447037,
+      "physical_pages": 9,
+      "locator_note": "The retained reading scope is physical page 1 only."
+    }
+  ],
+  "version_relationship": {
+    "manual": true,
+    "same_source_work": true,
+    "byte_identical": false,
+    "basis": "same title and author, with arXiv and Zenodo identifiers retained as separate version artifacts",
+    "boundary": "This repair preserves both artifacts and does not certify full-text or proof equivalence."
+  },
+  "reading_scope": {
+    "arxiv_2607.20525v1": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8
+    ],
+    "zenodo_21286412": [
+      1
+    ],
+    "scope": "identity, statements, protocol, reported results, disclosure, and provenance as described in the digest; no code execution or proof verification"
+  },
+  "problem_relationships": [
+    {
+      "problem": "E0052",
+      "scope": "contextual real-number variant only; the cataloged problem is the integer case"
+    }
+  ],
+  "limits": [
+    "Zenodo record 21286412 is retained as preprint/deposit metadata, not peer-review or named community-acceptance evidence.",
+    "No released code or proof was run.",
+    "This identity record grants no full-proof, formal-verification, acceptance, or mathematical-status credit."
+  ]
+}

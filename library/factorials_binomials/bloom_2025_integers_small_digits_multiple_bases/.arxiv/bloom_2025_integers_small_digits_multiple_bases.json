@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Thomas F. Bloom",
+    "Ernie Croot"
+  ],
+  "category": "math.NT",
+  "date": "2025-09-02",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 626926,
+    "files": 1,
+    "sha256": "051c266319a915aadad429268724e46e13d1afdc9fcdffff72118b47790b4059",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2509.02835v1"
+  },
+  "id": "2509.02835",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 456827,
+    "previous": [],
+    "sha256": "50ae6d771c89b25bfd8a2283a8b0776624dbdbb71851e4c4b9577f85783b4285",
+    "url": "https://arxiv.org/pdf/2509.02835v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2509.02835v1 [math.NT] 2 Sep 2025",
+  "tex": {
+    "archive": {
+      "bytes": 22871,
+      "name": "arXiv-2509.02835v1.tar.gz",
+      "sha256": "f695a990bfaf4b9142a4f2380a79d1459ea0cc561525ff852a7b4f66cc36ff13"
+    },
+    "bytes": 72222,
+    "files": 2,
+    "sha256": "a7e2ee3aa7a8d2c1b76d61717bfca11a02fb987b647148ee2c00047df7aae863",
+    "url": "https://arxiv.org/src/2509.02835v1"
+  },
+  "title": "Integers with small digits in multiple bases",
+  "version": 1
+}

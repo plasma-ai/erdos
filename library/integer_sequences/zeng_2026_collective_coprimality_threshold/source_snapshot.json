@@ -1,0 +1,21 @@
+{
+  "account": "jeffzeng",
+  "central_snapshot": {
+    "accessed_utc": "2026-09-05T07:51:24.073232+00:00",
+    "bytes": 40937,
+    "url": "https://www.erdosproblems.com/forum/thread/770/proof-claims"
+  },
+  "claim_id": 133,
+  "claim_level": "partial",
+  "claim_url": "https://www.erdosproblems.com/forum/thread/770/proof-claims#proof-claim-133",
+  "claimed_by": "Jeffrey Zeng",
+  "comments_displayed": 0,
+  "method_disclosure": "using an OpenAI internal model",
+  "normalization_note": "ASCII mathematical spellings replace display glyphs and HTML entities; mathematical content and formula endpoints are unchanged.",
+  "notes_exact_visible_text": "Put G(n,M)=gcd_{2<=a<=M}(a^n-1). If q|G(n,M), then q>M, and H={x in F_q^*:x^n=1} has at most n elements. For q>M^2, reduced fractions a/b, 1<=a,b<=M, inject into H. Their count is C(M)>=M^2/4+M, so M>=S(n) or C(M)>n gives a contradiction. For q<=M^2 and even n, Dirichlet gives x=a/k with 1<=k<=M and 0<|a|<M, so every x!=0 satisfies x^n=1; hence q-1|n, contradicting q>P(n). For odd n, all elements of H are squares and the least quadratic nonresidue is at most ceil(sqrt(q)), forcing q>M^2. Fermat gives P(n)<=h(n). The restriction is necessary: n=86 has P(n)=3 but h(n)=5.",
+  "schema_version": 1,
+  "site_warning_scope": "The page says listing is no guarantee of correctness and does not mean site associates examined the proof.",
+  "source_type": "Erdos Problems proof-claim listing",
+  "submitted_at_site": "2026-07-24 17:13:29",
+  "summary_exact_visible_text": "AI-assisted, Lean-formalized partial result for #770. Use the collective-gcd, strict-M>2 definition of h(n). Let P(n)=max{p prime:p-1|n} and S(n)=floor(sqrt(4n))+1. For every positive n, P(n)<=h(n)<=max{P(n),S(n)}, P(n)>2sqrt(n) implies h(n)=P(n). If n is odd, h(n)<=S(n). More sharply, if p=P(n)>2 and C(p)=#{(a,b):1<=a,b<=p,gcd(a,b)=1}>n, then h(n)=p, including cases with p<=2sqrt(n). These are partial results: the density, liminf, and general epsilon>0 questions remain unresolved. Novelty and priority have not been determined. AI disclosure: an OpenAI internal model."
+}

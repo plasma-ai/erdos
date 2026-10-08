@@ -1,0 +1,40 @@
+{
+  "authors": [
+    "Boris Alexeev",
+    "Dustin G. Mixon",
+    "Hans Parshall"
+  ],
+  "category": "math.CO",
+  "date": "2025-02-12",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 1514081,
+    "files": 57,
+    "sha256": "ebaee310093c041f81b29b98b54add33db1cad04336029e860bb85c5c8c1d65a",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2412.11914v2"
+  },
+  "id": "2412.11914",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 483547,
+    "previous": [],
+    "sha256": "16885d4dffd5377796efff1ed7bb09be00c2b3948739a4e41413ce0da9c965d7",
+    "url": "https://arxiv.org/pdf/2412.11914v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2412.11914v2 [math.CO] 12 Feb 2025",
+  "tex": {
+    "archive": {
+      "bytes": 115119,
+      "name": "arXiv-2412.11914v2.tar.gz",
+      "sha256": "a7cee95b6b64efc041034520d0d8df578eaa10a21dad2a3a5d7050e87cc46df8"
+    },
+    "bytes": 253699,
+    "files": 4,
+    "sha256": "90bd8941c08923c294717f355ef125509968c51e89befc5bae2791ecedd597d8",
+    "url": "https://arxiv.org/src/2412.11914v2"
+  },
+  "title": "The Erd\\H{o}s unit distance problem for small point sets",
+  "version": 2
+}

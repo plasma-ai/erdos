@@ -1,0 +1,41 @@
+{
+  "authors": [
+    "Zhihan Jin",
+    "Aleksa Milojevi\\'c",
+    "Istv\\'an Tomon",
+    "Shengtong Zhang"
+  ],
+  "category": "math.CO",
+  "date": "2025-10-27",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 1595333,
+    "files": 1,
+    "sha256": "326e3b59f9742da3e6fb651c192df87e05977f876ec34b187ac5cee2b597e469",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2509.03490v2"
+  },
+  "id": "2509.03490",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 955335,
+    "previous": [],
+    "sha256": "cffaa9624bdc6f7730aaf028d20a8350c382edaad78fe51e2e092a8602a8bd66",
+    "url": "https://arxiv.org/pdf/2509.03490v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2509.03490v2 [math.CO] 27 Oct 2025",
+  "tex": {
+    "archive": {
+      "bytes": 59310,
+      "name": "arXiv-2509.03490v2.tar.gz",
+      "sha256": "0e3c722c3e29c43a0acfb23e130b6e09b3ca6f7a4cb54d43ae7c964bef435765"
+    },
+    "bytes": 199619,
+    "files": 2,
+    "sha256": "de12e9e85c49c5b2d65476f3db7da3371bc0dd1ff5fa2fc7fc37273b3fe6d5d1",
+    "url": "https://arxiv.org/src/2509.03490v2"
+  },
+  "title": "From small eigenvalues to large cuts, and Chowla's cosine problem",
+  "version": 2
+}

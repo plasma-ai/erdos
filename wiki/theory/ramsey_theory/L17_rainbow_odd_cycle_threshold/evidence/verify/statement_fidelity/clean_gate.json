@@ -1,0 +1,166 @@
+{
+  "schema": "l17-clean-gate-receipt-v1",
+  "state": "successful clean committed-source gate: the archived lean/ tree of the commit fetched its cache, built, passed the axiom audit against the committed manifest and matched the committed self-test stamp",
+  "owner": "wiki/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold",
+  "role": "Portable mechanical validation evidence for the statement-fidelity examination of L17 at the checked state below, not an independent mathematical acceptance warrant, review or grade.",
+  "validation_date": "2026-09-25",
+  "checked_source": {
+    "commit_date_utc": "2026-09-25T03:40:15Z",
+    "worktree_state_before_launch": "git rev-parse HEAD printed the commit and git status --porcelain --untracked-files=no printed nothing; five untracked files placed by another role under the owner's evidence/assets/statement_fidelity/ were present and are outside the archived lean/ tree.",
+    "worktree_state_after_exit": "git rev-parse HEAD printed the commit and git status --porcelain --untracked-files=no printed nothing; the untracked files were this runner's wrapper and log, the five asset files above, and another role's probe and review files placed beside this receipt during the run (not read by the runner). No lakefile.toml remained under the user's temporary directory and no lean or lake process was running.",
+    "archive_scope": "The clean gate archives REV:lean (git archive run from lean/), not the full REV^{tree}, so every Lean source, lean/Manifest.json and lean/scripts/selftest.stamp it checks are those of the commit; the runner worktree's own ignored lean/.lake was not used.",
+    "complete_manifest": {
+      "path": "lean/Manifest.json",
+      "modules": 1732,
+      "declarations": [
+        "<another claim's statement declaration>",
+        "<another claim's claim declaration>",
+        "Erdos.L17.statement",
+        "Erdos.L17.claim"
+      ],
+      "claims": [
+        "<another claim>",
+        "L17"
+      ],
+      "top_level_compiler_axioms": [],
+      "l17_claim_entry": {
+        "statement": {
+          "sha256Unfolded": "the value lean/Manifest.json held on 2026-09-25T03:40:15Z",
+          "sha256": "the value lean/Manifest.json held on 2026-09-25T03:40:15Z",
+          "pretty": "∀ (k : ℕ), 3 ≤ k → Erdos.L17.ThresholdFor k"
+        },
+        "module": "Erdos.L17",
+        "id": "L17",
+        "depends": [],
+        "decls": [
+          {
+            "role": "statement",
+            "name": "Erdos.L17.statement"
+          },
+          {
+            "role": "claim",
+            "name": "Erdos.L17.claim"
+          }
+        ],
+        "compiler": [],
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "committed_selftest_stamp": "the value lean/scripts/selftest.stamp held on 2026-09-25T03:40:15Z",
+    "subject_link_basis": "This receipt records a mechanical validation of the committed state named above by its date. It claims no review of the mathematics or the statement."
+  },
+  "command": {
+    "argv": [
+      "/bin/bash",
+      "lean/scripts/gate.sh",
+      "--clean",
+      "<the repository as it stood on 2026-09-25T03:40:15Z>"
+    ],
+    "wrapper": "run_clean_gate.sh beside this receipt: exports LEAN_NUM_THREADS=4, changes to the repository root of the worktree, runs the argv above with both streams appended to clean_gate_log.txt, and records the UTC window and exit code in the log.",
+    "working_directory": "the repository root of the runner worktree checked out at the commit (the gate resolves lean/ from its own path)",
+    "unchanged_gate": true,
+    "archive_location": "a fresh directory created by mktemp -d in the user's temporary directory, removed by the gate's EXIT trap",
+    "stale_state_check_before_launch": "No lakefile.toml under any existing temporary directory, no lean or lake process, and the runner worktree clean; nothing was removed."
+  },
+  "environment": {
+    "explicit_child_environment": {
+      "LEAN_NUM_THREADS": "4"
+    },
+    "lean_toolchain": "leanprover/lean4:v4.32.0-rc1",
+    "lake_version": "Lake version 5.0.0-src+b4812ae (Lean version 4.32.0-rc1)",
+    "mathlib_revision": "79aee35d9696d759b73eed71d7dde666750bc35e",
+    "host": "macOS, arm64",
+    "tools": "git 2.55.0, bsdtar 3.5.3, elan 4.2.3, CPython 3.13.12 (the watcher and this receipt's extractor)",
+    "host_readings_before_launch": "free memory (vm_stat free pages times the page size; the figure this record held is not retained), swap used 0.00M (sysctl vm.swapusage), no lean or lake process (pgrep -x); reread immediately before launch at 2026-09-25T03:47:06Z with the same result."
+  },
+  "outcome": {
+    "gate_shell_exit_code": 0,
+    "cache": {
+      "reported_lines": [
+        "Current branch: HEAD",
+        "Using cache from origin: (some leanprover-community/mathlib4)",
+        "Decompressing 8446 already-cached file(s) (188 already decompressed)",
+        "No files to download",
+        "Decompressed 8446 already-cached file(s)",
+        "Completed successfully in 11683 ms!"
+      ],
+      "qualification": "Lines as printed by lake exe cache get inside the archive; no file-body identity or public-cache content authentication."
+    },
+    "complete_native_build": {
+      "result": "passed",
+      "reported_jobs": 4227,
+      "marker": "Build completed successfully (4227 jobs)."
+    },
+    "universal_axiom_audit": {
+      "result": "passed",
+      "constants": 7104,
+      "modules": 1732,
+      "claims": 2,
+      "compiler_axioms": 0,
+      "marker": "audited 7104 constants in 1732 modules, 2 claims, 0 compiler axioms: AUDIT PASS"
+    },
+    "selftest_stamp": {
+      "committed_stamp_path": "lean/scripts/selftest.stamp",
+      "committed_stamp": "the value lean/scripts/selftest.stamp held on 2026-09-25T03:40:15Z",
+      "committed_stamp_freshness": "passed by the gate digest comparison (the gate reached its final marker)",
+      "new_refusal_suite_executed": false
+    },
+    "gate_marker": "Lean gate passed.",
+    "gate_leg_basis": "Committed set -euo pipefail gate source: each leg must exit 0 for the next to run, and the final marker follows the last leg. Per-leg exit codes were not separately instrumented; the markers were located in the captured streams.",
+    "warning_lines": 23,
+    "warning_files": [
+      "<another claim's first module>",
+      "<another claim's second module>"
+    ],
+    "error_lines": 0,
+    "log": "clean_gate_log.txt beside this receipt: a header, then the gate's stdout and stderr interleaved as captured, then the end time, wall seconds and exit code",
+    "mathematical_acceptance": false
+  },
+  "observation": {
+    "start_utc": "2026-09-25T03:47:09Z",
+    "end_utc": "2026-09-25T04:33:41Z",
+    "wall_seconds": 2792,
+    "log_bytes": 143694,
+    "stream_lines": 1855,
+    "reading_depth": "The runner read the captured stream head (dependency clone and cache lines), every warning or error line (grep), the three marker lines and the trailer; not every routine build line was separately interpreted.",
+    "serialization": {
+      "rule": "no second Lean build alongside the gate",
+      "watcher": "observation-only process watch (ps every 5 s) counting lean or lake processes outside the wrapper's process tree; it enforced nothing",
+      "watch_start_utc": "2026-09-25T03:47:46Z",
+      "watch_end_utc": "2026-09-25T04:33:46Z",
+      "samples": 548,
+      "max_own_lean_or_lake_processes": 5,
+      "samples_with_foreign_processes": 3,
+      "max_foreign_procs": 2,
+      "first_foreign_observation": "2026-09-25T03:58:01Z",
+      "foreign_commands_seen": [
+        "<elan toolchain leanprover--lean4---v4.32.0-rc1>/bin/lake",
+        "lean"
+      ],
+      "rule_met": false,
+      "note": "No lean or lake process was running when the gate launched. During the build the watcher saw lean or lake processes outside the wrapper's process tree in 3 of 548 samples taken every 5 s (at most 2 processes, first at 2026-09-25T03:58:01Z), started by another role of this examination (a reviewer probe whose files appeared beside this receipt); the runner did not start them and did not read them. The gate's own archive build, in its own temporary directory, is unaffected in result; the overlap is disclosed as a deviation from the serialization rule."
+    }
+  },
+  "resources": {
+    "admitted_limits": {
+      "memory_quota": null,
+      "time_cutoff": "none"
+    },
+    "qualification": "No memory sampler ran; LEAN_NUM_THREADS is a thread-pool hint, not a process cap; no CPU, disk or wall-time limit was imposed."
+  },
+  "roles": {
+    "runner_attribution": "non-author clean-gate runner, in a fresh context (model: Claude Fable 5.1)",
+    "runner_authored_or_coconstructed_selected_native_mathematics_or_audit_logic": false,
+    "exposure": "The runner received its commission naming the commit, the worktree and the record folder. It read the gate script, the manifest header, the audit's marker format and the precedent receipts for their shape. It asserts no tier.",
+    "runner_operational_authorship": "run_clean_gate.sh and this receipt; the watcher and the receipt extractor stayed in working storage."
+  },
+  "provenance": {
+    "originals": "The captured log and the wrapper are filed beside this receipt; the watcher summary and the extractor stay in working storage.",
+    "scope": "Necessary mechanical facts and qualifications are reproduced here; process identifiers and private absolute paths are omitted."
+  },
+  "acceptance_boundary": "Any mathematical or source activation requires the separate independent warrant. This receipt confers no tier, status, novelty or community-acceptance claim and does not authorize a push."
+}

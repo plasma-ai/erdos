@@ -1,0 +1,86 @@
+{
+  "title": "On Representatives of Subsets",
+  "author_as_published": "P. Hall",
+  "author": "Philip Hall",
+  "journal": "Journal of the London Mathematical Society",
+  "series": "first",
+  "volume": 10,
+  "publisher_volume_identifier": "s1-10",
+  "issue": 1,
+  "year": 1935,
+  "issue_date": "1935-01",
+  "printed_pages": "26–30",
+  "physical_pages": 5,
+  "doi": "10.1112/jlms/s1-10.37.26",
+  "received_date_as_printed": "1934-04-23",
+  "read_date_as_printed": "1934-04-26",
+  "read_date_is_not_asserted_to_be_revision_or_acceptance": true,
+  "crossref_online_date": "2016-12-23",
+  "digital_dates_are_not_new_mathematical_versions": true,
+  "canonical_version": "Published original page scan retained unchanged from Dartmouth institutional course archive",
+  "pdf_file": "hall_1935_representatives_subsets.pdf",
+  "pdf_bytes": 273318,
+  "institutional_pdf_url": "https://math.dartmouth.edu/archive/m38s12/public_html/sources/Hall1935.pdf",
+  "institutional_index_url": "https://math.dartmouth.edu/archive/m38s12/public_html/",
+  "institutional_index_description": "Dartmouth Mathematics 38, Spring 2012, explicitly links P Hall 1935 separately from M Hall 1948",
+  "publisher_article_url": "https://londmathsoc.onlinelibrary.wiley.com/doi/abs/10.1112/jlms/s1-10.37.26",
+  "publisher_pdf_url": "https://londmathsoc.onlinelibrary.wiley.com/doi/pdf/10.1112/jlms/s1-10.37.26",
+  "publisher_pdf_binary_acquired": false,
+  "publisher_pdf_byte_equivalence_claimed": false,
+  "crossref_url": "https://api.crossref.org/works/10.1112%2Fjlms%2Fs1-10.37.26",
+  "oxford_metadata_url": "https://academic.oup.com/jlms/article-abstract/s1-10/1/26/2194138",
+  "acquired_date": "2026-09-05",
+  "page_map": [
+    {
+      "physical": 1,
+      "printed": 26
+    },
+    {
+      "physical": 2,
+      "printed": 27
+    },
+    {
+      "physical": 3,
+      "printed": 28
+    },
+    {
+      "physical": 4,
+      "printed": 29
+    },
+    {
+      "physical": 5,
+      "printed": 30
+    }
+  ],
+  "last_page_boundary": "Hall text ends above the Davenport title; Hall Rado footnote remains below. The opening Davenport material is preserved in the PDF but is outside this source proof scope.",
+  "visual_reading": "All five original pages inspected at original image detail from 200 dpi renders; printed p.29 also checked at 350 dpi. Existing text layer used only for navigation; no new OCR.",
+  "proof_scope": "Five complete elementary components: forced-intersection lemma, Theorems 1–3, and equal positive finite block corollary. The Rado 1933 ancillary remark remains an unproved historical pointer.",
+  "essential_external_theorem_inputs": [],
+  "background_inputs": [
+    "Finite counting",
+    "Induction on a finite integer",
+    "Finite selection from nonempty sets"
+  ],
+  "source_corrections": [
+    {
+      "printed_page": 29,
+      "kind": "notation mismatch",
+      "detail": "Theorem 2 display names its indexed intersection M, then prose uses M_i; the reconstruction consistently defines M_i."
+    },
+    {
+      "kind": "metadata source priority",
+      "detail": "The original identifies 26 April 1934 as read, although Oxford metadata calls it revision received."
+    }
+  ],
+  "compilation_expansions": [
+    "Shortest simple index chain and complete injectivity check for the source exchange.",
+    "Explicit separation of indexed assignments from their underlying ranges.",
+    "The printed rho>=0 endpoint is retained; m=0 is the elementary empty-system extension.",
+    "Necessity of Theorems 2 and 3 and symmetry of Theorem 3 are made explicit.",
+    "The graph formulation is translated directly inside the Theorem 1 proof.",
+    "The equal-block counting step requires and uses positive finite block size."
+  ],
+  "author_erratum_claimed": false,
+  "formalization_scope": "No formal-source audit or local Lean build.",
+  "status_scope": "No new problem-status, current-best or contemporary acceptance claim."
+}

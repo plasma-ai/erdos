@@ -1,0 +1,103 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/main/schema/formalization.schema.json
+version: "v0.4"
+
+project:
+  name: "Erdős Problem 809: rainbow odd cycles"
+  description: >-
+    A Lean proof resolving the Burr–Erdős–Graham–Sós conjecture (Erdős
+    Problem 809): for every fixed odd cycle of length at least seven, the
+    maximal anti-Ramsey threshold at floor(n²/4) + 1 edges is n²/8 + o(n²).
+    The seven-cycle case is new to our knowledge. The development proves it
+    and formalizes the stronger full-density result of Bucić, Chen, and Ma
+    for odd cycles of length at least nine.
+  authors:
+    - "Jacob Parish"
+  license: "Apache-2.0"
+  responsible_maintainers:
+    - "Jacob Parish"
+
+classification:
+  arxiv: ["math.CO"]
+  msc2020: ["05C15", "05C35"]
+
+sources:
+  - title: "Maximal antiramsey graphs and the strong chromatic number"
+    authors: ["S. A. Burr", "P. Erdős", "R. L. Graham", "V. T. Sós"]
+    id: "https://doi.org/10.1002/jgt.3190130302"
+    type: "paper"
+    relationship: "formalizes"
+    note: >-
+      Source of the odd-cycle threshold conjecture. To our knowledge, the
+      seven-cycle case proved here is new; together with the longer-cycle
+      cases, it resolves the conjecture in full.
+  - title: "On a maximal anti-Ramsey conjecture of Burr, Erdős, Graham, and Sós"
+    authors: ["Matija Bucić", "Kaizhe Chen", "Jie Ma"]
+    id: "arXiv:2603.18952"
+    type: "paper"
+    relationship: "formalizes"
+    note: >-
+      Proves the conjectured threshold for odd cycles of length at least nine
+      and a stronger full-density formula, both formalized in this development.
+  - title: "Erdős Problem #809"
+    authors: ["Thomas F. Bloom"]
+    id: "https://www.erdosproblems.com/809"
+    relationship: "background"
+    note: >-
+      Accessed 2026-09-24. Bloom's catalog entry supplies the problem
+      number and statement; the original conjecture is credited to Burr,
+      Erdős, Graham, and Sós above.
+
+status:
+  scope: >-
+    The compared theorem is the asymptotic threshold for every fixed odd cycle
+    of length at least seven at floor(n²/4) + 1 edges. The proof development
+    also contains a full-density theorem for the longer odd cycles; that
+    supporting theorem is not separately listed in comparator.json. No
+    full-density formula for seven-cycles is claimed.
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms: ["propext", "Quot.sound", "Classical.choice"]
+
+automation:
+  methods:
+    - method: "agent"
+      models: ["gpt-6-sol"]
+      framework: "Codex"
+      tool_setup: "Lean 4.35.0-rc2, Mathlib, Lake, and Comparator."
+      prompting_notes: >-
+        Interactive human direction covered the target theorem, the use of
+        Mathlib graph copies and cycles, the publication layout, and the
+        readability of the formal statement.
+  notes: >-
+    GPT-6 Sol produced and revised the Lean formalization in Codex under
+    iterative human direction.
+
+fidelity:
+  divergences: >-
+    No known divergence in the main result's mathematical content from the
+    cited odd-cycle threshold conjecture. The Lean statement uses graphs with
+    at least floor(n²/4) + 1 edges; deleting edges gives the equivalent
+    exact-edge formulation.
+
+review:
+  status: "self-assessed"
+  reviewers: []
+  notes: >-
+    The human project lead reviewed the formalization and confirmed that it
+    formalizes the claimed mathematical result. The Lean development was
+    built and the compared theorem checked by Comparator. No independent
+    mathematical proof review has been recorded.
+
+alignment:
+  namespace: "Erdos809"
+  statements:
+    - source: "Burr–Erdős–Graham–Sós odd-cycle threshold conjecture"
+      lean: "Erdos809.main_result"
+      module: "Solution"
+      status: "proved"
+      note: >-
+        The formal statement uses the least palette size over n-vertex
+        graphs with at least floor(n²/4) + 1 edges and expresses the
+        o(n²) error with Mathlib's asymptotic equivalence relation.
+
+acknowledgements: "Mathlib and the authors of the cited mathematical sources."

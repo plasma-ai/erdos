@@ -1,0 +1,32 @@
+{
+  "title": "On a lemma of Littlewood and Offord on the distribution of certain sums",
+  "author": "Daniel J. Kleitman",
+  "publication": {
+    "journal": "Mathematische Zeitschrift",
+    "volume": 90,
+    "year": 1965,
+    "pages": "251-259",
+    "received": "1964-11-19",
+    "received_authority": "Original printed page 259 explicitly says Received November 19, 1964."
+  },
+  "canonical_file": "kleitman_1965_lemma_littlewood_offord_distribution_certain_sums.pdf",
+  "bytes": 1054770,
+  "physical_pages": 10,
+  "page_mapping": {
+    "1": "GDZ archive cover",
+    "2-10": "Original journal pages 251-259"
+  },
+  "version": "Scan of the original published article with archive cover retained exactly",
+  "primary_url": "https://gdz.sub.uni-goettingen.de/download/pdf/PPN266833020_0090/LOG_0051.pdf",
+  "primary_article_purl": "http://resolver.sub.uni-goettingen.de/purl?GDZPPN002396645",
+  "iiif_article": "https://manifests.sub.uni-goettingen.de/iiif/presentation/PPN266833020_0090/range/LOG_0051",
+  "iiif_volume": "https://manifests.sub.uni-goettingen.de/id/PPN266833020_0090",
+  "secondary_bibliographic_record": "https://eudml.org/doc/170482",
+  "acquired_utc": "2026-09-05T18:54:06.263226+00:00",
+  "acquisition_http_status": 200,
+  "article_language": "English",
+  "metadata_qualification": "The IIIF language label is German, contrary to the actual English article. Archive digitization in 2002 and PDF creation in 2020 are not distinct mathematical versions.",
+  "other_mathematical_versions_compared": false,
+  "proof_coverage": "Complete plane chain and finite open-disc transfer. The higher-dimensional orthant argument, Lemmas III/IV and Theorem III remain at explicit lesser proof scope.",
+  "boundary_conventions": "Strict coefficient norms > 1 with a closed unit disc; norms >= 1 with an open unit disc only. Counts sign choices with multiplicity."
+}

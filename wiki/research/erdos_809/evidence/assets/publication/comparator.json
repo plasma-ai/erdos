@@ -1,0 +1,6 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": ["Erdos809.main_result"],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"]
+}

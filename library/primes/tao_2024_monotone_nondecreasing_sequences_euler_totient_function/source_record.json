@@ -1,0 +1,61 @@
+{
+  "title": "Monotone Nondecreasing Sequences of the Euler Totient Function",
+  "author": "Terence Tao",
+  "journal": "La Matematica",
+  "volume": "3",
+  "issue": "2",
+  "year": 2024,
+  "printed_pages": "793–820",
+  "doi": "10.1007/s44007-024-00115-z",
+  "received": "2023-09-10",
+  "revised": "2024-04-25",
+  "accepted": "2024-04-30",
+  "published_online": "2024-05-23",
+  "issue_month": "2024-06",
+  "published_license": "CC BY 4.0",
+  "metadata_authorities": [
+    "Published first page",
+    "Publisher article page",
+    "Crossref DOI record",
+    "Current author publication list"
+  ],
+  "arxiv_history_utc": [
+    [
+      "v1",
+      "2023-09-05T15:43:08Z"
+    ],
+    [
+      "v2",
+      "2023-09-10T17:50:08Z"
+    ],
+    [
+      "v3",
+      "2023-10-04T16:44:07Z"
+    ],
+    [
+      "v4",
+      "2024-04-06T01:01:07Z"
+    ]
+  ],
+  "current_primary_check_date": "2026-09-05",
+  "current_arxiv_version": "v4; no v5 listed in the acquired primary record",
+  "version_reading": "Both v4 and published PDFs read in full visually; v1 pp.1,21 and v3 pp.1,20–22 read for the material sigma change; v2 metadata only.",
+  "material_history": [
+    "v1 main totient bound is already present, but Section 4.4 describes the sharp sigma-ratio fiber bound as the unresolved obstacle.",
+    "The primary author blog records Zhang offering the argument on 2 October 2023, Tao posting an updated draft on 3 October, and an arXiv/editor update on 4 October.",
+    "v3 includes the sigma assertion, attribution and powerful-number proof; v4 and published versions retain it.",
+    "v4 and the published version include Remark 4.7 for Dedekind psi, attributed to an anonymous referee; it is not in the visually checked end of v3.",
+    "The published source changes the opening subset wording and some bounded-domain wording. Do not equate its PDF bytes with v4 or assert a complete formula-by-formula identity."
+  ],
+  "access": "All used downloads returned a valid PDF or HTML on normal public routes. No authentication, purchase, access bypass, disabled TLS, repeated blocked route or downloaded-code execution.",
+  "canonical_pdf": {
+    "filename": "tao_2024_monotone_nondecreasing_sequences_euler_totient_function.pdf",
+    "physical_pages": 28,
+    "printed_page_map": "physical j = printed 792+j"
+  },
+  "retained_arxiv_v4": {
+    "filename": "tao_2024_monotone_nondecreasing_sequences_euler_totient_function_arxiv_v4.pdf",
+    "physical_pages": 23
+  },
+  "proof_scope": "Complete local reconstructions and specified classical inputs are described on the result pages; this source record does not certify a formal build."
+}

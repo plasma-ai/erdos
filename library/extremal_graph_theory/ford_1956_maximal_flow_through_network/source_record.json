@@ -1,0 +1,24 @@
+{
+  "title": "Maximal Flow Through a Network",
+  "authors": [
+    "L. R. Ford, Jr.",
+    "D. R. Fulkerson"
+  ],
+  "journal": "Canadian Journal of Mathematics",
+  "volume": 8,
+  "year": 1956,
+  "printed_pages": "399–404",
+  "physical_pages": 6,
+  "received_date": "1955-09-20",
+  "doi": "10.4153/CJM-1956-045-5",
+  "publisher_online_date": "2018-11-20",
+  "version": "Official published original scan; no other version is represented.",
+  "date_note": "The 2018 online date and PDF production metadata do not establish a mathematical revision.",
+  "publisher_url": "https://www.cambridge.org/core/journals/canadian-journal-of-mathematics/article/maximal-flow-through-a-network/5D6E55D3B06C4F7B1043BC1D82D40764",
+  "pdf_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/5D6E55D3B06C4F7B1043BC1D82D40764/S0008414X00036890a.pdf/div-class-title-maximal-flow-through-a-network-div.pdf",
+  "crossref_url": "https://api.crossref.org/works/10.4153/CJM-1956-045-5",
+  "accessed": "2026-09-05",
+  "pdf_bytes": 569595,
+  "source_definition": "Finite undirected network with positive finite real capacities and nonnegative simple-chain flow weights.",
+  "formalization": "No formal proof or local kernel verification is claimed."
+}

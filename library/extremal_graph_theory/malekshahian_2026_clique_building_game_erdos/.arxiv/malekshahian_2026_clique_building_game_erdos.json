@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Alexandru Malekshahian",
+    "Sam Spiro"
+  ],
+  "category": "math.CO",
+  "date": "2026-05-05",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 411363,
+    "files": 1,
+    "sha256": "e09b8d20b01770ce138abc06dd3e320a909bb8bcd6816036a6518b23953f39df",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2410.18304v2"
+  },
+  "id": "2410.18304",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 451749,
+    "previous": [],
+    "sha256": "298042bc8bc9f649fc423414fb174a54ef67f68be821c4e4a8dcd43d64d999c8",
+    "url": "https://arxiv.org/pdf/2410.18304v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2410.18304v2 [math.CO] 5 May 2026",
+  "tex": {
+    "archive": {
+      "bytes": 17835,
+      "name": "arXiv-2410.18304v2.tar.gz",
+      "sha256": "31fac8218ce32ac27aba6ee6263476c2e46b4a1d1178f936c20c9105415d2144"
+    },
+    "bytes": 64835,
+    "files": 3,
+    "sha256": "00f5906d1f7820ee6e1c4c5b7c869773c1738fd5e22f043b011a90fa81960b97",
+    "url": "https://arxiv.org/src/2410.18304v2"
+  },
+  "title": "On a clique-building game of Erd\\H{o}s",
+  "version": 2
+}

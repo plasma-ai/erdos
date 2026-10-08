@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "source": {
+    "authors": [
+      "Kenneth Moore"
+    ],
+    "title": "A pyramid with a Ramsey base is Ramsey",
+    "arxiv_version": "2608.09649v1",
+    "version_record_url": "https://arxiv.org/abs/2608.09649v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.09649v1",
+    "submission_utc": "2026-08-10T14:26:02Z",
+    "acquired_utc": "2026-09-05T11:56:46.442966+00:00",
+    "canonical_pdf": "moore_2026_pyramid_ramsey_base.pdf",
+    "bytes": 328018,
+    "physical_pages": 5,
+    "version_qualification": "Exact arXiv v1 only; no journal-version equivalence or acceptance claimed."
+  },
+  "reading": {
+    "all_source_pages_visually_read": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "method": "pdftoppm 150 dpi PNG, viewed at original detail; no OCR",
+    "native_text_extraction": "Navigation and formula cross-checking only; no OCR.",
+    "scope": "All five pages visually inspected, including all statements, every same-paper proof, figures if any, notes and references."
+  },
+  "proof_scope": {
+    "same_paper_coverage": {
+      "theorem_1_2": "Complete relative proof",
+      "lemma_2_3": "Complete relative compactness application, added explicitly",
+      "theorem_2_1": "Exact external statement",
+      "theorem_2_2": "Exact external statement plus elementary consequence explanation",
+      "conjecture_1_1": "Historical context only; neither competing classification is proved",
+      "figure_1": "Visually checked; no deduction depends on visual measurement",
+      "acknowledgments_and_references": "Read; AI brainstorming acknowledgment is provenance only"
+    },
+    "complete_proof_pages": [
+      "lemma_2_3",
+      "theorem_1_2"
+    ],
+    "external_statement_pages": {
+      "theorem_2_1": {
+        "classification": "exact_external_statement_only",
+        "scope": "Ordinary finite Cartesian product theorem; original Paper I Theorem 20 on printed p.357.",
+        "proof_included": false
+      },
+      "theorem_2_2": {
+        "classification": "exact_external_statement_with_elementary_consequence",
+        "scope": "Every finite affinely independent configuration is Ramsey, from Frankl-Rodl Theorem5.1 and Definition2.1.",
+        "proof_included": false,
+        "qualification": "The elementary super-Ramsey-to-Ramsey pigeonhole implication is explained, but the external simplex proof is not counted."
+      }
+    },
+    "external_inputs": {
+      "paper_i": {
+        "physical_pages_visually_read": [
+          3,
+          17
+        ],
+        "reading_role": "Original Proposition4 and Theorem20 interfaces; no complete original-paper proof audit."
+      },
+      "frankl_rodl": {
+        "physical_pages_visually_read": [
+          1,
+          2,
+          5
+        ],
+        "reading_role": "Title/publication and exact Definition2.1/Theorem5.1 input; full theorem proof remains external."
+      },
+      "rado_quoted_1951": {
+        "physical_pages_visually_read": [
+          1
+        ],
+        "reading_role": "Exact Rado selection theorem quoted as Theorem2; the original 1949 proof is not acquired or reviewed here."
+      }
+    },
+    "source_precision": [
+      {
+        "source_location": "Moore p.2, Lemma2.3",
+        "issue": "The source states finite-witness compactness and cites hypergraph compactness without proving that application.",
+        "treatment": "A complete application of the exact existing Rado selection statement is supplied; Rado itself remains external.",
+        "classification": "compilation expansion, not a source erratum"
+      },
+      {
+        "source_location": "Moore p.4, ambient-embedding sentence",
+        "issue": "The sentence names P and C, whereas the auxiliary apices to be transported form A.",
+        "treatment": "Embed P and A explicitly in the common R^N, and fully justify the ambient isometry extension.",
+        "classification": "explanatory precision, no changed theorem"
+      },
+      {
+        "source_location": "Main theorem and proof conventions",
+        "issue": "The constructive proof uses a nonempty base and finite witness.",
+        "treatment": "The optional empty-base case is a singleton; all nonempty cases include affine dimension zero.",
+        "classification": "endpoint clarification"
+      }
+    ],
+    "unresolved_same_paper_obligations": [],
+    "independent_final_review": "Not asserted by this author snapshot."
+  },
+  "provenance": {
+    "dated_search": "2026-09-05",
+    "journal_acceptance": "No acceptance or journal version located in the bounded search; absence is not proof of nonacceptance.",
+    "formal_evidence": "No formal proof artifact identified in the primary records; no exhaustive formalization search or local build performed.",
+    "later_primary_citation": {
+      "source": "Palvolgyi arXiv:2608.10865v2, p.24",
+      "url": "https://arxiv.org/pdf/2608.10865v2#page=24",
+      "scope": "Citation of Moore/Mirabi for pyramid closure only; no adoption of the later paper's unverified appendix."
+    },
+    "chronology": {
+      "moore_public_submission": "2026-08-10T14:26:02Z",
+      "mirabi_public_submission": "2026-08-12T07:23:39Z",
+      "mirabi_private_account": "Mirabi v1 p.1 says both partial and full arguments were privately circulated to Ivan, Leader and Walters in June2026 and obtained independently of Moore.",
+      "qualification": "Private circulation and independence are the author's account, not an independently established priority determination."
+    },
+    "moore_ai_acknowledgment": "Moore v1 p.5 acknowledges ChatGPT5.6 in brainstorming; provenance only, not mathematical validation.",
+    "mirabi_acknowledgments": "Mirabi v1 p.5 thanks Ivan and Leader for discussions and earlier-version reading; no acceptance is inferred."
+  }
+}

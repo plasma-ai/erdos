@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "David Galvin"
+  ],
+  "category": "math.CO",
+  "date": "2026-01-23",
+  "fetched": "2026-09-24",
+  "html": {
+    "bytes": 572255,
+    "files": 2,
+    "sha256": "3f550d93082b1e59e502a14f22c25b19e9217bc55e7002a535af18dfa1003185",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2502.10654v2"
+  },
+  "id": "2502.10654",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 511542,
+    "previous": [],
+    "sha256": "3a848a39fc9afdc4be22d673031cee9ace862ef2fbb46cf0c551e5e3c5d17c89",
+    "url": "https://arxiv.org/pdf/2502.10654v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2502.10654v2 [math.CO] 23 Jan 2026",
+  "tex": {
+    "archive": {
+      "bytes": 385937,
+      "name": "arXiv-2502.10654v2.tar.gz",
+      "sha256": "147166eaf24ba53ae75054a9ca269163e3c965514e950ffa81c2da0dda46f0d3"
+    },
+    "bytes": 426591,
+    "files": 3,
+    "sha256": "0eb4331d359b5f1c6000d668352b40fda556858061496edfb599b1e5d97d6112",
+    "url": "https://arxiv.org/src/2502.10654v2"
+  },
+  "title": "Trees with non log-concave independent set sequences",
+  "version": 2
+}

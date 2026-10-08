@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Stijn Cambie"
+  ],
+  "category": "math.GM",
+  "date": "2024-10-11",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 141045,
+    "files": 1,
+    "sha256": "cd00c09643f7f6344d6269f7b0debb2a0c160c250116777387fd823a6019818a",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2410.09138v1"
+  },
+  "id": "2410.09138",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 118128,
+    "previous": [],
+    "sha256": "bf6f687f51b53709ac4ef31ee8cc48d36fde9a57729abd3e2a0c7a48fa69f185",
+    "url": "https://arxiv.org/pdf/2410.09138v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2410.09138v1 [math.GM] 11 Oct 2024",
+  "tex": {
+    "archive": {
+      "bytes": 6558,
+      "name": "arXiv-2410.09138v1.gz",
+      "sha256": "254c190c3dd758c17da470f7727906ae8bcf6257bd79e97ae02f5a02205b560d"
+    },
+    "bytes": 17331,
+    "files": 1,
+    "sha256": "b8247ce00f7b0e5f7cd6bd5207bada82938fefa74225b0d903ccbda9a0a33db6",
+    "url": "https://arxiv.org/src/2410.09138v1"
+  },
+  "title": "Resolution of an Erd\\H{o}s' problem on least common multiples",
+  "version": 1
+}

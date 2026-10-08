@@ -1,0 +1,220 @@
+---
+name: problems/graph_coloring/E0625
+title: Problem 625
+desc: |
+  Compares the cochromatic number, the fewest colours whose classes each
+  induce a complete or empty graph, with the ordinary chromatic number.
+status: proved
+created: 2026-09-04T09:17:27Z
+updated: 2026-09-05T03:30:17Z
+---
+
+# Problem 625
+
+***
+
+**Statement (site formulation, accessed 2026-09-04).** The cochromatic number of
+$G$, denoted by $\zeta(G)$, is the
+minimum number of colours needed to colour the vertices of $G$ such that each
+colour class induces either a complete graph or empty graph. Let $\chi(G)$
+denote the chromatic number.
+
+If $G$ is a random graph with $n$ vertices and each edge included independently
+with probability $1/2$ then is it true that almost surely
+
+$$
+\chi(G) - \zeta(G) \to \infty
+$$
+
+as $n\to \infty$?
+
+**Compilation note.** Here “almost surely” has the asymptotically-almost-sure
+random-graph meaning:
+the relevant probability tends to one under $G(n,1/2)$ as $n$ runs through
+all integers. A coupling of graphs across different orders is not specified.
+
+**Status.** Proved. The assessment of 9 September 2026 UTC rests on Petkov's
+exact uniform theorem, its pinned public kernel-verification record, and
+the associated statement-alignment review described below. This is a
+source-supported mathematical status, not local acceptance of a reconstructed
+proof or a native verification tier.
+
+**Prize.** $1000. **Tags.** graph theory, chromatic number.
+
+**Source.** [erdosproblems.com/625](https://www.erdosproblems.com/625), accessed
+2026-09-04. Cite as: T. F. Bloom, Erdős Problem #625,
+https://www.erdosproblems.com/625.
+
+**References.**
+
+- [Bo88] Bollobás, B., The chromatic number of random graphs. Combinatorica
+  (1988), 49-55.
+- [Gi16] J. Gimbel, Some of my favorite coloring problems for graphs and
+  digraphs. Graph Theory: Favorite conjectures and open problems (2016), 95-108.
+- [He24] A. Heckel, On a question of Erdős and Gimbel on the cochromatic number.
+  arXiv:2408.13839 (2024).
+- [He24c] A. Heckel, The difference between the chromatic and the cochromatic
+  number of a random graph. arXiv:2409.17614 (2024).
+- [St24b] R. Steiner, On the difference between the chromatic and cochromatic
+  number. arXiv:2408.02400 (2024).
+- Samuil Petkov, A Full-Sequence Quantitative Gap Between the Chromatic and
+  Cochromatic Numbers of a Random Graph.
+  [arXiv:2608.30604v1](https://arxiv.org/abs/2608.30604v1) (2026).
+
+**Formalization.** A public Palomar record reports external kernel
+verification of Petkov's uniform quantitative theorem. Its exact revision,
+reported axiom boundary, automated statement review, and local reading limits
+are recorded in the
+[[library/graph_coloring/petkov_2026_full_sequence_chromatic_cochromatic_gap/_index|source digest]].
+No local replay or native formalization is recorded here.
+
+## Current assessment
+
+Petkov's
+[[library/graph_coloring/petkov_2026_full_sequence_chromatic_cochromatic_gap/main_theorem|Main theorem, uniform consequence]]
+(arXiv v1, p. 2, submitted 31 August 2026) establishes that, for
+$G_n\sim G(n,1/2)$ and natural logarithms,
+
+$$
+\mathbb P\!\left(
+\chi(G_n)-\zeta(G_n)\geq
+\frac{(\log 2)^2}{4}\log\!\left(\frac{200}{153}\right)
+\frac{n}{(\log n)^3}
+\right)\longrightarrow1.
+$$
+
+The theorem is unconditional and runs through all integer orders. Its
+positive lower bound tends to infinity, so it resolves the full question.
+A matching upper bound and the optimal constant remain open. The stronger
+phase-dependent coefficient is a separate manuscript claim, outside the
+reported formal theorem's scope.
+
+[Palomar entry v1](https://palomar-registry.org/entry?id=PALOMAR-2026-09-02-000006&version=1),
+registered on 2 September 2026, reports successful NanoDa and Lean kernel
+checks of `Erdos625.erdos625`. An automated review by `codex:gpt-5.6-sol`
+records no blocking statement-alignment or definition-fidelity problem.
+The pinned author metadata claims neither external mathematical peer review
+nor community acceptance. The present source review has not established
+human peer review or independent review of the entire manuscript. The
+catalogue status relies on the reported external formal verification and
+exact-statement review; no local replay or complete manuscript audit was
+performed.
+
+A separate local review now covers only Petkov's conditional amplification
+unit: the finite bounded-differences proof, Lemmas 10.1–10.2 and their
+full-sequence corollary, relative to the explicit seed hypothesis. The
+source digest above links the exact reviewed subjects, independent review
+and distinct grade; the native rendition passed fidelity review and
+hand-check before installation. This does not establish the seed or the
+whole main-theorem proof and adds no phase-coefficient, status, tier or
+local kernel claim.
+
+A separate author-recorded
+[[library/graph_coloring/petkov_2026_full_sequence_chromatic_cochromatic_gap/lemma_9_2|Lemma 9.2 reconstruction]]
+now derives the finite fixed-even-set bound and (9.8) from explicit
+residual-law, reward, cycle-space, and joint-threshold premises. It retains
+the cap-and-no-return event and does not assume independence of cells.
+Independent review remains outstanding; this unit adds no later
+attachment estimate, whole-proof acceptance, or status or tier change.
+
+## Known Results
+
+The three earlier results are partial and do not alone give the full-sequence
+conclusion. The locators below refer to the exact arXiv v2 PDFs retained in
+their existing canonical source homes.
+
+[[library/graph_coloring/heckel_2024_question_erdos_gimbel_cochromatic_number/_index|Heckel]],
+Theorem 1, pp. 1–2 of arXiv:2408.13839v2, proves that there is $c>0$ such
+that any integer sequence $g(n)$ satisfying
+$\mathbb P(\chi(G_n)-\zeta(G_n)\leq g(n))>0.999$ has an infinite
+subsequence $n_*$ on which
+
+$$
+g(n_*)>c\frac{\sqrt{n_*}\log\log n_*}{(\log n_*)^3}.
+$$
+
+This rules out a bounded high-probability gap; it does not establish
+high-probability divergence along the full sequence.
+
+[[library/graph_coloring/steiner_2024_difference_between_chromatic_cochromatic_number/_index|Steiner]],
+Theorem 1.7, p. 3 of arXiv:2408.02400v2, proves that for every
+$\varepsilon>0$ there is $c>0$ such that infinitely many integers $n$ satisfy
+
+$$
+\mathbb P\!\left(\chi(G_n)-\zeta(G_n)\geq n^{1/2-\varepsilon}\right)
+\geq c.
+$$
+
+The probability is bounded away from zero, not asserted to tend to one.
+The same paper's deterministic counterexamples address
+[[problems/graph_coloring/E0762|E762]] rather than this random-graph question.
+
+[[library/graph_coloring/heckel_2024_difference_between_chromatic_cochromatic_number_random/_index|Heckel's later paper]],
+Theorem 1, p. 2 of arXiv:2409.17614v2, uses
+
+$$
+\alpha_0=2\log_2 n-2\log_2\log_2 n+2\log_2(e/2)+1,
+\qquad \alpha=\lfloor\alpha_0\rfloor,
+\qquad \mu_\alpha=\binom n\alpha 2^{-\binom\alpha2}.
+$$
+
+For each fixed $\varepsilon>0$, along integers satisfying
+$n^{0.05+\varepsilon}\leq\mu_\alpha\leq n^{1-\varepsilon}$, it proves
+
+$$
+\mathbb P\!\left(\chi(G_n)-\zeta(G_n)\geq n^{1-\varepsilon}\right)
+\longrightarrow1.
+$$
+
+Section 2.1, p. 3, describes the covered fraction as roughly 95%; it
+oscillates with the rounding phase and is not an exact natural density of
+95%. The excluded phase range is precisely why this does not settle the
+full-sequence question.
+
+## Search and proof coverage
+
+The status review on 9 September 2026 UTC checked primary arXiv records,
+author and publisher pages, Petkov's manuscript and pinned public formal
+records, with the dated site and proof-claim caches used as discovery leads.
+The direct catalogue check on that date returned HTTP 403 Forbidden, so its
+current live label and any disagreement with this assessment could not be
+verified. The proved status rests on the primary theorem and reported formal
+verification described above, not an inferred live catalogue label.
+Petkov's arXiv record listed only v1 and no journal reference. The stale
+July proof-claim note about incomplete formalization does not describe the
+later September verification record.
+
+Local compilation contains statements and proof pointers. Petkov's theorem
+and final assembly were visually checked, and selected overlap and
+amplification steps were inspected in text. The whole manuscript has not
+been independently reviewed here; its optimization, common-subprofile, and
+endpoint-table bounds remain outside that inspection. The three earlier
+theorem statements were checked against their retained source versions,
+without reconstructing their proofs. The source-supported proved status does
+not confer independently accepted local proof coverage, a native verification
+tier, or a locally reproduced formal build.
+<!-- BEGIN problem library links -->
+
+## Linked library material
+
+These entries are derived from explicit links on library pages. They are
+navigation only and do not by themselves record mathematical progress.
+
+- [[library/graph_coloring/heckel_2024_difference_between_chromatic_cochromatic_number_random/_index|heckel_2024_difference_between_chromatic_cochromatic_number_random]]
+- [[library/graph_coloring/heckel_2024_question_erdos_gimbel_cochromatic_number/_index|heckel_2024_question_erdos_gimbel_cochromatic_number]]
+- [[library/graph_coloring/petkov_2026_full_sequence_chromatic_cochromatic_gap/_index|petkov_2026_full_sequence_chromatic_cochromatic_gap]]
+- [[library/graph_coloring/petkov_2026_full_sequence_chromatic_cochromatic_gap/bounded_differences|petkov_2026_full_sequence_chromatic_cochromatic_gap / bounded_differences]]
+- [[library/graph_coloring/petkov_2026_full_sequence_chromatic_cochromatic_gap/evidence/verify/lemma93_interface_grade|petkov_2026_full_sequence_chromatic_cochromatic_gap / evidence/verify/lemma93_interface_grade]]
+- [[library/graph_coloring/petkov_2026_full_sequence_chromatic_cochromatic_gap/evidence/verify/lemma93_interface_review|petkov_2026_full_sequence_chromatic_cochromatic_gap / evidence/verify/lemma93_interface_review]]
+- [[library/graph_coloring/petkov_2026_full_sequence_chromatic_cochromatic_gap/evidence/verify/lemma93_interface_source_reading|petkov_2026_full_sequence_chromatic_cochromatic_gap / evidence/verify/lemma93_interface_source_reading]]
+- [[library/graph_coloring/petkov_2026_full_sequence_chromatic_cochromatic_gap/evidence/verify/seed_interface_grade|petkov_2026_full_sequence_chromatic_cochromatic_gap / evidence/verify/seed_interface_grade]]
+- [[library/graph_coloring/petkov_2026_full_sequence_chromatic_cochromatic_gap/evidence/verify/seed_interface_review|petkov_2026_full_sequence_chromatic_cochromatic_gap / evidence/verify/seed_interface_review]]
+- [[library/graph_coloring/petkov_2026_full_sequence_chromatic_cochromatic_gap/lemma_10_1|petkov_2026_full_sequence_chromatic_cochromatic_gap / lemma_10_1]]
+- [[library/graph_coloring/petkov_2026_full_sequence_chromatic_cochromatic_gap/lemma_10_2|petkov_2026_full_sequence_chromatic_cochromatic_gap / lemma_10_2]]
+- [[library/graph_coloring/petkov_2026_full_sequence_chromatic_cochromatic_gap/lemma_9_2|petkov_2026_full_sequence_chromatic_cochromatic_gap / lemma_9_2]]
+- [[library/graph_coloring/petkov_2026_full_sequence_chromatic_cochromatic_gap/lemma_9_3|petkov_2026_full_sequence_chromatic_cochromatic_gap / lemma_9_3]]
+- [[library/graph_coloring/petkov_2026_full_sequence_chromatic_cochromatic_gap/main_theorem|petkov_2026_full_sequence_chromatic_cochromatic_gap / main_theorem]]
+- [[library/graph_coloring/petkov_2026_full_sequence_chromatic_cochromatic_gap/proposition_9_7|petkov_2026_full_sequence_chromatic_cochromatic_gap / proposition_9_7]]
+- [[library/graph_coloring/steiner_2024_difference_between_chromatic_cochromatic_number/_index|steiner_2024_difference_between_chromatic_cochromatic_number]]
+
+<!-- END problem library links -->

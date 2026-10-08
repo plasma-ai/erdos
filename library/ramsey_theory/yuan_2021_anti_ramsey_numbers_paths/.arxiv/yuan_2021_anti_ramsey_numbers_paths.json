@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Long-Tu Yuan"
+  ],
+  "category": "math.CO",
+  "date": "2021-02-09",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 344405,
+    "files": 1,
+    "sha256": "82c9365d7e9619ba5d998c845241696474f6bf400589bbf9c095d11b501f1f09",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2102.00807v3"
+  },
+  "id": "2102.00807",
+  "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+  "pdf": {
+    "bytes": 156430,
+    "previous": [],
+    "sha256": "6ec91b63f89866021d713b1c9e330f20ce3ad3630e5f8c2e3bcb98ebb423098f",
+    "url": "https://arxiv.org/pdf/2102.00807v3"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2102.00807v3 [math.CO] 9 Feb 2021",
+  "tex": {
+    "archive": {
+      "bytes": 9919,
+      "name": "arXiv-2102.00807v3.gz",
+      "sha256": "25bbb770e5e42474e75fd35a488afeb085437acb09d220949a4ee175dbbca047"
+    },
+    "bytes": 36937,
+    "files": 1,
+    "sha256": "3f812d8fc8e8b5cc710dfff5ad9e967adb7ac0dd1ed4e763a9e2048743d66445",
+    "url": "https://arxiv.org/src/2102.00807v3"
+  },
+  "title": "Anti-Ramsey numbers for paths",
+  "version": 3
+}

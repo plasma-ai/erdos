@@ -1,0 +1,42 @@
+{
+  "authors": [
+    "Maria Axenovich",
+    "Wouter Cames van Batenburg",
+    "Oliver Janzer",
+    "Lukas Michel",
+    "Mathieu Rundstr\\\"om"
+  ],
+  "category": "math.CO",
+  "date": "2025-10-20",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 124492,
+    "files": 1,
+    "sha256": "1bc1edf3bb2a9c7badac934a96d5c8c04376bd6350d0ec256ef50fe23423b714",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2510.17981v1"
+  },
+  "id": "2510.17981",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 172886,
+    "previous": [],
+    "sha256": "ad0e4fd8e898b8ec632b66a68d9712eeec7a0ba8da3c70d73140d3addc493850",
+    "url": "https://arxiv.org/pdf/2510.17981v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2510.17981v1 [math.CO] 20 Oct 2025",
+  "tex": {
+    "archive": {
+      "bytes": 7371,
+      "name": "arXiv-2510.17981v1.tar.gz",
+      "sha256": "29da94a82767d51cf8928a1fa84fe4e1130ef4d4ac7c9c3016098ad15e434a17"
+    },
+    "bytes": 20217,
+    "files": 2,
+    "sha256": "337bfe7b921f168a2740f41b2a5ff35903be04f2e88ed074e537dae5021638e6",
+    "url": "https://arxiv.org/src/2510.17981v1"
+  },
+  "title": "An improved upper bound for the multicolour Ramsey number of odd cycles",
+  "version": 1
+}

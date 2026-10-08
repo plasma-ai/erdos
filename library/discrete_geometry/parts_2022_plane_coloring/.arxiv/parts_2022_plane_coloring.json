@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Jaan Parts"
+  ],
+  "category": "math.CO",
+  "date": "2022-06-25",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 489692,
+    "files": 4,
+    "sha256": "0adc10e49edff7bfa7035671dc15abe4524476c068d881ca4ce90f44ba164cec",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2206.12633v1"
+  },
+  "id": "2206.12633",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 524616,
+    "previous": [],
+    "sha256": "b77b411141d852100264de1c3e5f0ee202771a59a775835f00a1afe2f5fc24a9",
+    "url": "https://arxiv.org/pdf/2206.12633v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2206.12633v1 [math.CO] 25 Jun 2022",
+  "tex": {
+    "archive": {
+      "bytes": 431141,
+      "name": "arXiv-2206.12633v1.tar.gz",
+      "sha256": "4730a374aaf743e130792a5579c5a4a1be355f9dbc2855848f295b51fcc38827"
+    },
+    "bytes": 450582,
+    "files": 10,
+    "sha256": "9780d7e727a5d6677c92bb812a0ecf83d96d3d4c85be6f9bb19f9f18cb7b9d41",
+    "url": "https://arxiv.org/src/2206.12633v1"
+  },
+  "title": "On the plane and its coloring",
+  "version": 1
+}

@@ -1,0 +1,160 @@
+---
+name: graph_coloring/petkov_2026_full_sequence_chromatic_cochromatic_gap/lemma_10_1
+title: Simultaneous colouring of every leftover vertex set
+desc: |
+  Reconstructs a high-probability coloring bound valid for every induced
+  vertex set simultaneously, including graph-dependent leftover sets.
+created: 2026-09-10T09:37:38Z
+updated: 2026-10-05T05:52:35Z
+---
+
+***
+
+**Source.** Samuil Petkov, *A Full-Sequence Quantitative Gap Between the
+Chromatic and Cochromatic Numbers of a Random Graph*, arXiv:2608.30604v1,
+submitted 31 August 2026, [PDF][pdf], Lemma 10.1, pp. 46–47,
+including (10.3) and (10.3a); binomial estimate (1.5), p. 5.
+
+**Statement.** For each integer $n\geq2$, let $G_n\sim G(n,1/2)$ on
+$[n]$, with independent edges of probability $1/2$. Write $\chi(F)$ for
+the least number of independent parts in a partition of the vertices of
+a finite simple graph $F$, with $\chi(\varnothing)=0$. Logarithms are
+natural. There is an absolute $C_0>0$ such that, with probability tending
+to one through all integer $n$, every $S\subseteq[n]$ satisfies
+
+$$
+\chi(G_n[S])\leq C_0\frac{|S|}{\log n}+n^{1/3}.
+$$
+
+The proof supplies one event $\mathcal G_n$ and an absolute threshold
+$n_0$ on which this holds simultaneously for all $S$ when $n\geq n_0$.
+In particular, $S$ need not be chosen independently of $G_n$.
+
+## Proof
+
+Let $H$ be the complement of $G_n$. Its edge indicators are again
+independent Bernoulli variables with parameter $1/2$. Put
+$u=\lceil n^{1/4}\rceil$ and let $\mathcal G_n$ be the event that
+every $u$-element set induces in $H$ at least
+$\frac14\binom u2$ edges. For $n\geq2$, $2\leq u\leq n$.
+
+### One event for all sufficiently large sets
+
+For a fixed $u$-set $T$, its edge count $X$ has distribution
+$\operatorname{Bin}(m,1/2)$, where $m=\binom u2\geq1$. The lower
+tail of [bounded differences](bounded_differences.md), applied to the
+$m$ individual indicators with $t=m/4$, gives
+
+$$
+\mathbb P(X\leq m/4)\leq e^{-m/8}\leq e^{-m/16}.
+$$
+
+Thus the binomial estimate (1.5) used by Petkov follows from the proved
+finite-block inequality; this is a compilation derivation of that input,
+not the exponential-Markov calculation printed on p. 5. A union bound,
+which requires no independence between the events for different $T$,
+gives
+
+$$
+\mathbb P(\mathcal G_n^c)
+\leq\binom nu\exp\!\left(-\frac{\binom u2}{16}\right)
+\leq\exp\!\left(u\log n-\frac{u(u-1)}{32}\right)=o(1).
+$$
+
+For the last limit, $u\sim n^{1/4}$, so $\log n/u\to0$; the
+negative quadratic term dominates and tends to minus infinity.
+
+Now work on $\mathcal G_n$ and take any $S$ of size $s\geq u$.
+Each edge of $H[S]$ lies in exactly $\binom{s-2}{u-2}$ of its
+$u$-subsets. Consequently
+
+$$
+\frac{1}{\binom su}
+\sum_{\substack{T\subseteq S\\|T|=u}}
+\frac{e_H(T)}{\binom u2}
+=\frac{e_H(S)}{\binom s2}\geq\frac14.
+$$
+
+The equality follows by counting those edge occurrences; the inequality
+uses the defining event. Hence every set of size at least $u$ has
+$H$-edge density at least $1/4$, on the same event.
+
+### A logarithmic independent set in each large remainder
+
+Start with any $S_0$ of size $s_0\geq n^{1/3}$. Whenever
+$s_t=|S_t|\geq u$, choose a vertex $v_t$ of maximum degree in
+$H[S_t]$, and set $S_{t+1}=N_H(v_t)\cap S_t$. The average degree is
+at least $(s_t-1)/4$, so
+
+$$
+s_{t+1}\geq\frac{s_t-1}{4},
+\qquad
+s_t\geq4^{-t}s_0-\frac{1-4^{-t}}3
+\geq4^{-t}s_0-\frac13.
+$$
+
+The middle bound follows by induction from the recurrence, starting at
+$t=0$. Put $q_n=\lfloor\log n/(13\log4)\rfloor$. For every integer
+$0\leq t\leq q_n$ for which the construction has reached $S_t$,
+
+$$
+s_t\geq n^{1/3-1/13}-\frac13
+=n^{10/39}-\frac13\geq\lceil n^{1/4}\rceil
+$$
+
+for all sufficiently large $n$: $10/39>1/4$, so eventually the preceding
+expression exceeds $n^{1/4}+1$. This is an absolute threshold, independent
+of $S_0$. Induction therefore allows all choices
+$v_0,\ldots,v_{q_n}$ before the stopping condition can occur.
+
+The sets are nested, and $S_{t+1}\subseteq N_H(v_t)$ does not contain
+$v_t$, since $H$ has no loops. Thus the chosen vertices are distinct.
+For $j>t$, $v_j\in S_j\subseteq S_{t+1}$, so every pair of chosen
+vertices is adjacent in $H$. They form an independent set in $G_n$ of
+size
+
+$$
+q_n+1\geq\frac{\log n}{13\log4}.
+$$
+
+This conclusion holds for every $S_0$ of size at least $n^{1/3}$ on
+$\mathcal G_n$, not just for sets fixed before exposing the graph.
+
+### Coloring an arbitrary set
+
+Starting from any $S\subseteq[n]$, while the remainder has at least
+$n^{1/3}$ vertices, remove an independent set of the size just obtained
+and give it a fresh color. Each step removes at least one vertex, so
+the procedure terminates. If it makes $h$ removals, their disjointness
+gives $h\log n/(13\log4)\leq|S|$. The final remainder has fewer than
+$n^{1/3}$ vertices; give each a different fresh color. Therefore
+
+$$
+\chi(G_n[S])\leq 13\log4\,\frac{|S|}{\log n}+n^{1/3}.
+$$
+
+This includes small $S$, for which no removal is made, and the empty set.
+Taking $C_0=13\log4$ proves the statement. The same event
+works for all $S$ simultaneously, and
+$\varepsilon_n^{\mathrm{left}}:=\mathbb P(\mathcal G_n^c)\to0$
+depends only on $n$ and the random-graph law.
+
+## Current verification
+
+The full argument has independent proof coverage within the conditional
+amplification unit, including its consumed finite-block bound. The
+[review and distinct grade](evidence/verify/_index.md) concern the exact
+retained original subject; the native rendition passed fidelity review
+and hand-check before it was filed. No fresh review of later documentary
+edits is implied. Lemma 10.1 on PDF pp. 46–47 and its binomial input on p. 5
+were visually checked. The proof expands Petkov's counting, greedy and
+threshold steps; it derives the binomial input from the separately
+proved [finite-block bound](bounded_differences.md). No earlier profile,
+second-moment, phase or root estimate is consumed. This partial proof
+coverage supplies no native tier or formal verification.
+
+**Bears on.** [Lemma 10.2](lemma_10_2.md) consumes this simultaneous
+event to color a graph-dependent leftover in the route to
+[[../wiki/problems/graph_coloring/E0625/_index|E625]].
+
+[pdf]: petkov_2026_full_sequence_chromatic_cochromatic_gap.pdf

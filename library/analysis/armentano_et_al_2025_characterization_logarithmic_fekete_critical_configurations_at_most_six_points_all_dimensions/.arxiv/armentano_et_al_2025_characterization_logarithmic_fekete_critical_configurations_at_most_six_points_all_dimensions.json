@@ -1,0 +1,43 @@
+{
+  "authors": [
+    "Diego Armentano",
+    "Leandro Bentancur",
+    "Federico Carrasco",
+    "Marcelo Fiori",
+    "Mat\\'ias Vald\\'es",
+    "Mauricio Velasco"
+  ],
+  "category": "math.AC",
+  "date": "2026-03-22",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 580393,
+    "files": 1,
+    "sha256": "76ab5c838029d312fcdb06f595e9b656918858e4a0dcbeaf61a09c7b44b803fb",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2502.10152v3"
+  },
+  "id": "2502.10152",
+  "license": "http://creativecommons.org/licenses/by-sa/4.0/",
+  "pdf": {
+    "bytes": 464081,
+    "previous": [],
+    "sha256": "6729dfce29087e70b2d72ec18bb11eb17f4b1b845f08ac7f4d873e7f7af86a7f",
+    "url": "https://arxiv.org/pdf/2502.10152v3"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2502.10152v3 [math.AC] 22 Mar 2026",
+  "tex": {
+    "archive": {
+      "bytes": 30280,
+      "name": "arXiv-2502.10152v3.tar.gz",
+      "sha256": "ba189f0aaced5c500f6611bb787f21c0efd09f7cec3369f9fe13e6782de81bf3"
+    },
+    "bytes": 103225,
+    "files": 3,
+    "sha256": "5c6f6d1cbbf4f1eedd7abcf1be869afffd8d543e1fa668e49d309f6d24172045",
+    "url": "https://arxiv.org/src/2502.10152v3"
+  },
+  "title": "Characterization of Logarithmic Fekete Critical Configurations of at Most Six Points in All Dimensions",
+  "version": 3
+}

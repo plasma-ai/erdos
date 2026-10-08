@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Domagoj Brada\\v{c}",
+    "Micha Christoph"
+  ],
+  "category": "math.CO",
+  "date": "2024-10-21",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 244931,
+    "files": 1,
+    "sha256": "4c2756a5c051a130656c661bd1f649f8ffecb14663625e9edc728b1e31dcca98",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2410.16233v1"
+  },
+  "id": "2410.16233",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 185739,
+    "previous": [],
+    "sha256": "09c7cd347bb6949384955e6fa27d75669c197c5cfadadf2e03e3f2f9d3e0d5aa",
+    "url": "https://arxiv.org/pdf/2410.16233v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2410.16233v1 [math.CO] 21 Oct 2024",
+  "tex": {
+    "archive": {
+      "bytes": 13037,
+      "name": "arXiv-2410.16233v1.gz",
+      "sha256": "c3ee9ea7fe4d1d116b08af9142eb6143da5eab0abc488885caa47819d694e014"
+    },
+    "bytes": 39725,
+    "files": 1,
+    "sha256": "60f4b5677f0375bb0fe8662b73d3b315d62335f5565883c8de4a6073c0838abd",
+    "url": "https://arxiv.org/src/2410.16233v1"
+  },
+  "title": "Unique subgraphs are rare",
+  "version": 1
+}

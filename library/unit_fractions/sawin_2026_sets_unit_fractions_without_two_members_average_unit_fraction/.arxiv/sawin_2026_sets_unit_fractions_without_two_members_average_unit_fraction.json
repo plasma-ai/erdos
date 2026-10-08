@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Will Sawin"
+  ],
+  "category": "math.NT",
+  "date": "2026-07-16",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 332305,
+    "files": 1,
+    "sha256": "19a333c7878bf07ce890988267461682833630b353f36c05d99ac8ee8739048d",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2607.15419v1"
+  },
+  "id": "2607.15419",
+  "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+  "pdf": {
+    "bytes": 335587,
+    "previous": [],
+    "sha256": "c0a8f58b5a514d2dd88a4dc72657ad7bc5266e95120e5b1bcdb902bb7d3e4a45",
+    "url": "https://arxiv.org/pdf/2607.15419v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2607.15419v1 [math.NT] 16 Jul 2026",
+  "tex": {
+    "archive": {
+      "bytes": 10025,
+      "name": "arXiv-2607.15419v1.tar.gz",
+      "sha256": "43e30ec8e0f7d19243bbee612b44826b13047f896107e0469b9bf3a3e3f85092"
+    },
+    "bytes": 33919,
+    "files": 3,
+    "sha256": "512dab74524333da179d53a121c2f3dcd816f7ae97bf84372b8a3e8e6228963c",
+    "url": "https://arxiv.org/src/2607.15419v1"
+  },
+  "title": "Sets of unit fractions without two members whose average is a unit fraction",
+  "version": 1
+}

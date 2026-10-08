@@ -1,0 +1,360 @@
+# Hollom--Sorkin 2025: independent repair of the higher-dimensional chain
+
+This is a private mathematical reconstruction of arXiv:2510.05044v1. It is
+not an author erratum, a corpus proof, or a claim about a later version. All
+13 PDF pages were inspected as images; the native text was used only to pin
+navigation spans.
+
+The source defines an $r$-approximating sequence by a **squared** error at
+most $r$. This distinction matters below. The reconstructed argument proves
+the stated Theorem 1.5 bound
+
+$$
+\left\|\sum_i\eta_i v_i\right\|^2\le d-\varepsilon,
+\qquad
+\varepsilon=2^{-100}d^{-80},
+$$
+
+for $d\ge3$ and $n\not\equiv d\pmod2$. The source's lower-dimensional
+inputs are outside this reconstruction.
+
+## Printed issues and their exact effect
+
+1. On physical page 1, the proposed even-$n$ counterexample with $n/2$
+   copies on each of two axes works only when $n/2$ is odd. For every even
+   $n\ge2$, one copy of $e_1$ and $n-1$ copies of $e_2$ gives the
+   intended lower bound $\sqrt2$. This is introductory context and does not
+   enter Theorem 1.5.
+2. In the physical-page-4 sketch of Lemma 2.5, the plus convention in (2.1)
+   requires $\eta_i=-\lambda_i$ at an endpoint, rather than
+   $\eta_i=\lambda_i$.
+3. Lemma 2.6's second display needs
+   $p+\operatorname{Conv}(S(W))$, not $p+\operatorname{Conv}(W)$. In its
+   proof, the moving-coefficient point belongs to the convex hull of the
+   fixed-sign cell, not generally to the vertex set itself. The translated
+   cell formula remains valid for repeated vectors and is the interface used
+   below.
+4. The polar-decomposition estimate in Lemma 2.8 does not transparently
+   track the matrix norm and its factor of $\sqrt d$. The singular-value
+   argument below proves the stronger column bound actually used in the
+   repair.
+5. Lemma 4.2's second bullet depends on the displayed coefficients
+   $\lambda_i$. It is a conclusion for that fixed target, not the uniform
+   assertion that the vector sequence is $d-\delta$-approximating. At
+   $\lambda=0$, an orthonormal basis has minimum squared error $d$, which
+   directly disproves the printed uniform reading.
+6. In the physical-page-8 bound after (4.3), the planar target is visibly
+   printed as $p_2$; it must be $p_1$. The preceding and following
+   orthogonal decomposition makes the correction unambiguous.
+7. The physical-page-9 cluster calculation uses the wrong powers of
+   $\zeta$. With $\alpha=\zeta^{1/4}$, a paired difference has norm at
+   most $\sqrt{2\alpha}$, so its balanced squared contribution is at most
+   $2d\alpha$, not $2d\zeta$.
+8. On physical page 10, the chord parameters give
+   $r^2=1+(1-\lambda_1)^2\cos^2\theta$. Both the printed
+   $1-\lambda_1^2$ expression and the following minus sign are wrong.
+9. On physical page 11, the existence of one oblique pair supports one
+   intermediate coordinate of $y$, not every coordinate. For example,
+   $y=(e_1+e_2)/\sqrt2$ has an oblique basis pair and zero later
+   coordinates. The one-coordinate proof below is enough.
+10. The page-11 change from $x_i$ to $e_i$ moves both the chosen signed
+    sum and the target point in its zonotope. The displayed comparison moves
+    only the signed sum. The total transfer bound is therefore
+    $2d^2\sqrt\varepsilon$, not a one-sided sum bound.
+11. In the first main case, the initial use of Lemma 2.5 is unavailable at
+    $n=d+2$, because the removable set has only $d$ members. At that
+    endpoint one simply takes the resulting $d+2$-term sequence to be the
+    original sequence. For $n\ge d+3$, Lemma 2.5 applies as intended.
+12. The source begins the main proof without the case $n\le d-1$. The
+    elementary expectation argument below supplies it. At the end of the
+    cluster case, the construction proves the required zero-target theorem,
+    not the stronger uniform approximation assertion stated in the final
+    sentence.
+
+The physical-page-12 rearrangement was also checked independently. It is
+not a source error. If $a=6\varepsilon^{1/4}d^3$,
+$B=36\varepsilon^{1/2}d^7$, and
+$q=\sum_i(2y_i-1)e_i$, then
+
+$$
+\|q\|^2=d+4-4\sum_i y_i.
+$$
+
+Thus $\|q\|^2\le(\sqrt{d-a}-\sqrt B)^2$ is exactly equivalent to
+
+$$
+4+a-B+2\sqrt{B}\sqrt{d-a}\le4\sum_i y_i.
+$$
+
+The displayed sufficient condition (5.3) follows from
+$6d^3+12d^4\le18d^4$. The earlier private allegation of a missing factor
+four is superseded by this computation.
+
+## Two corrected preliminary lemmas
+
+Let $X$ be the matrix whose columns are unit vectors $x_1,\ldots,x_d$,
+and suppose
+
+$$
+|\langle x_i,x_j\rangle|\le\delta\qquad(i\ne j).
+$$
+
+Take a singular-value decomposition $X=A\Sigma B^T$ and put
+$U=AB^T$, extending singular-vector bases if $X$ is singular. Then
+
+$$
+\begin{aligned}
+\|X-U\|_F^2
+ &=\sum_i(\sigma_i-1)^2\\
+ &\le\sum_i(\sigma_i^2-1)^2\\
+ &=\|X^TX-I\|_F^2\\
+ &\le d^2\delta^2.
+\end{aligned}
+$$
+
+Here $|\sigma-1|\le|\sigma^2-1|$ for $\sigma\ge0$. Consequently the
+$i$-th column $e_i$ of $U$ satisfies
+
+$$
+\|x_i-e_i\|\le d\delta.
+$$
+
+For the corrected Lemma 4.2, first retain the source's elementary induction
+that $m$ unit vectors have uniform squared error at most $m$. If two of
+the $d$ unit vectors have inner product of magnitude $c\ge\delta$, orient
+the second vector and assume $\lambda_1\ge0$. Choose
+$\eta_1=-1$, set $\rho=1-\lambda_1$, and use
+
+$$
+a^2=1-\rho^2\sin^2\theta,
+\qquad
+r^2=1+\rho^2\cos^2\theta,
+$$
+
+where $c=|\sin\theta|$. Then $r^2-a^2=\rho^2$, the chord in Claim 5.1
+has length two, and
+
+$$
+r^2\le1+\cos^2\theta=2-\sin^2\theta\le2-\delta^2.
+$$
+
+The degenerate endpoints follow directly or by continuity. Rounding the
+remaining $d-2$ vectors gives uniform squared error at most
+$d-\delta^2$. Separately, for a fixed coefficient target with
+$|\lambda_i|\ge\delta$, choosing the opposite sign at that coordinate
+leaves squared error at most $1-\delta$ there; rounding the other
+coordinates gives squared error at most $d-\delta$ for that target.
+
+## Repaired Lemma 4.1
+
+Fix $d\ge3$, set
+
+$$
+\varepsilon=2^{-100}d^{-80},\qquad
+\zeta=18\varepsilon^{1/4}d^4,\qquad
+\tau=8d^3\sqrt\varepsilon,
+$$
+
+and suppose a sequence of $d+1$ unit vectors contains a
+$\zeta$-oblique pair. If every $d$-subsequence has a pair with inner
+product magnitude at least $\sqrt\varepsilon$, the uniform pair clause and
+Lemma 2.5 give squared error at most $d-\varepsilon$.
+
+Otherwise write the sequence as $X=(x_1,\ldots,x_d,y)$, where
+
+$$
+|\langle x_i,x_j\rangle|<\sqrt\varepsilon.
+$$
+
+The singular-value lemma gives an orthonormal basis $E=(e_1,\ldots,e_d)$
+with $\|x_i-e_i\|\le d\sqrt\varepsilon$. The oblique pair must involve
+$y$, since $\sqrt\varepsilon<\zeta$. Orient each pair $(x_i,e_i)$
+together so the coordinates $y_i=\langle y,e_i\rangle$ are nonnegative;
+this preserves both the signed-sum set and the column-error bound. For at
+least one index $j$,
+
+$$
+b\le y_j\le1-b,\qquad b=\zeta/2,
+$$
+
+because $d\sqrt\varepsilon\le\zeta/2$. No condition on the other
+coordinates is asserted.
+
+Consider any $d$-subsequence of $(E,y)$ containing $y$. If it retains
+$e_j$, it contains a pair whose squared inner product is at least $b^2$.
+If it omits $e_j$, then
+
+$$
+\sum_{i\ne j}y_i^2=1-y_j^2\ge1-(1-b)^2\ge b,
+$$
+
+so one retained coordinate has square at least $b^2/d$. Thus every such
+subsequence has uniform squared error at most
+
+$$
+d-\frac{b^2}{d}
+=d-\frac{\zeta^2}{4d}
+\le d-\tau,
+$$
+
+because $\zeta^2/(4d)=81d^7\sqrt\varepsilon\ge\tau$.
+
+The corrected translated-cell form of Lemma 2.6 now leaves only the two
+cells obtained by omitting $y$. By symmetry, translate the cell
+$Z(E)-y$ by $+y$. It suffices to approximate each
+$p=\sum_i\lambda_i e_i\in Z(E)$ by
+
+$$
+S(E)\cup(S(E)+2y).
+$$
+
+If some $|\lambda_i|\ge\tau$, use the fixed-target clause of Lemma 4.2.
+Otherwise $\|p\|\le\sqrt d\,\tau$. The point
+
+$$
+q=2y-\sum_i e_i\in S(E)+2y
+$$
+
+satisfies
+
+$$
+\sum_i y_i
+\ge y_j+\sum_{i\ne j}y_i^2
+=1+y_j(1-y_j)
+\ge1+\zeta/4,
+$$
+
+and therefore $\|q\|^2=d+4-4\sum_i y_i\le d-\zeta$. Since
+$\tau\le1$ and $\zeta\ge4d\tau$,
+
+$$
+\begin{aligned}
+\|q-p\|^2
+&\le(\sqrt{d-\zeta}+\sqrt d\,\tau)^2\\
+&\le d-\zeta+3d\tau\\
+&\le d-\tau.
+\end{aligned}
+$$
+
+It remains to transfer both target and signed sum back from $E$ to $X$.
+For the same coefficient vector $\lambda$ and sign vector $\eta$, the
+additional error is
+
+$$
+\left\|\sum_i(\eta_i-\lambda_i)(x_i-e_i)\right\|
+\le2d^2\sqrt\varepsilon.
+$$
+
+Hence the squared error in the original sequence is at most
+
+$$
+d-\tau+4d^{5/2}\sqrt\varepsilon+4d^4\varepsilon
+\le d-\varepsilon.
+$$
+
+After division by $\sqrt\varepsilon$, the last inequality follows from
+
+$$
+\sqrt\varepsilon+4d^{5/2}+4d^4\sqrt\varepsilon\le8d^3.
+$$
+
+For $d\ge3$, the middle term is at most
+$(4/\sqrt3)d^3$, while the two terms involving $\sqrt\varepsilon$ are
+less than $d^3$. All other sufficient estimates above follow from
+$\varepsilon^{1/4}\le9/16$. This proves the needed dichotomy with the
+source's stated constant.
+
+## Completion of Theorem 1.5 for $d\ge3$
+
+For independent signs,
+
+$$
+\mathbb E\left\|\sum_{i=1}^n\xi_i v_i\right\|^2=n.
+$$
+
+Thus $n\le d-1$ is immediate, and parity excludes $n=d$. Assume
+$n\ge d+1$. Put $\alpha=\zeta^{1/4}$. The explicit constant gives
+
+$$
+\zeta<2^{-20}d^{-16},\qquad
+\alpha<\frac1{32d^4}.
+$$
+
+### An oblique pair
+
+Suppose some pair $u,w$ has inner-product magnitude in
+$(\alpha,1-\alpha)$. If $n=d+1$, use the repaired Lemma 4.1. If
+$n=d+2$, take $X=V$. If $n\ge d+3$, Lemma 2.5 reduces to an arbitrary
+$X=Y\cup\{u,w\}$ with $|Y|=d$.
+
+The second elimination in the source is valid: unless one of the two
+$(d+1)$-sets $Y\cup\{u\}$, $Y\cup\{w\}$ is already uniformly good,
+both are $\zeta$-almost orthogonal. The source's metric argument then gives
+
+$$
+|\langle y,u\rangle|,|\langle y,w\rangle|\le\zeta
+\qquad(y\in Y).
+$$
+
+After orienting $w$, the $2\times2$ Gram matrix has least eigenvalue at
+least $\alpha$; this verifies all sign cases in the source's projection
+argument and in particular gives the stated bound
+
+$$
+\|\operatorname{proj}_{\operatorname{span}(u,w)}y\|
+\le2\zeta^{3/4}.
+$$
+
+Using $p_1$ in the physical-page-8 planar line, the squared error is at
+most
+
+$$
+R=d-2+
+\left(\sqrt{2-\sqrt\zeta}+4d\zeta^{3/4}\right)^2.
+$$
+
+Equivalently,
+
+$$
+R=d-\sqrt\zeta\left(
+1-8d\zeta^{1/4}\sqrt{2-\sqrt\zeta}-16d^2\zeta
+\right).
+$$
+
+The bracket exceeds $1/2$: its two deducted terms are at most
+$(\sqrt2/4)d^{-3}$ and $2^{-16}d^{-14}$. Moreover
+$\sqrt\zeta/2\ge\varepsilon$. Hence $R\le d-\varepsilon$.
+
+### No oblique pair
+
+Suppose every pair has inner-product magnitude at most $\alpha$ or at
+least $1-\alpha$. Near parallelism is transitive because, after sign
+orientation, two successive close pairs force the endpoint inner product to
+be at least $1-4\alpha>\alpha$. There are at most $d$ clusters: $d+1$
+representatives would have a Gram matrix with diagonal one and off-diagonal
+magnitudes at most $\alpha<1/d$, hence a positive-definite matrix of rank
+$d+1$ in $\mathbb R^d$.
+
+Orient each cluster consistently and pair its vectors. The number $L$ of
+unpaired vectors satisfies $L\equiv n\pmod2$, so $L\le d-1$. Beck's
+rounding interface gives a signed long sum with squared norm at most $d-1$.
+Each paired difference has squared norm at most $2\alpha$, so the short
+differences have a signed sum with squared norm at most $2d\alpha$.
+Reverse all short-pair signs, if necessary, so its inner product with the
+long sum is nonpositive. The total squared norm is at most
+
+$$
+d-1+2d\alpha\le d-\varepsilon.
+$$
+
+This last branch is a zero-target argument, exactly what Theorem 1.5 needs.
+It does not establish uniform $d-\varepsilon$-approximation.
+
+## Scope boundary
+
+The reconstruction uses finite-dimensional SVD and the source's Beck
+rounding/elimination interfaces. It establishes that the same overall proof
+method can retain $\varepsilon=2^{-100}d^{-80}$ for $d\ge3$ after the
+listed corrections. It gives zero canonical proof credit, makes no claim of
+an author-issued correction, and does not certify a published version or the
+source's separate $d=1,2$ route.

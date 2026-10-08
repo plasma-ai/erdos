@@ -1,0 +1,155 @@
+---
+name: research/leads/polynomial_product_prime_value_condition/lemma_2_1_reconstruction
+title: "Lemma 2.1: fixed-divisor reduction"
+desc: |
+  Reconstructs the fixed-divisor reduction to an irreducible polynomial with
+  the same degree and no fixed prime divisor.
+created: 2026-09-11T01:41:41Z
+updated: 2026-09-11T02:37:11Z
+---
+
+[[research/leads/polynomial_product_prime_value_condition/_index|..]]
+
+***
+
+**Source.** Aron Bhalla, *A conditional note on an Erdős problem on large
+prime factors of polynomial products*, Lemma 2.1, physical pp. 2--3, in the
+five-page PDF held by its library source card,
+[[../library/arithmetic_functions/bhalla_2026_conditional_note_large_prime_factors_polynomial_products/_index|Bhalla (2026)]].
+
+**Standing.** This is an author-recorded reconstruction of the displayed
+conditional route. It is not an independent review and does not change
+Problem 976's status or assign a verification tier. The standard Gauss lemma
+cited by the source is used as an external algebraic input for the final
+$\mathbb Z[x]$ irreducibility transfer; its cited book was not reread here.
+
+## Statement
+
+Let $f\in\mathbb Z[x]$ be irreducible of degree $d\ge2$. Replace $f$ by
+$-f$ if necessary so that its leading coefficient is positive. Define
+
+$$
+D=\gcd\{f(m):m\in\mathbb Z\}.
+$$
+
+Then there are integers $a,M$ and a polynomial $h\in\mathbb Z[x]$ such that
+
+$$
+M\ge1,\qquad 0\le a<M,\qquad
+h(x)=\frac{f(a+Mx)}{D},
+$$
+
+and $h$ is irreducible in $\mathbb Z[x]$, has degree $d$, has positive
+leading coefficient, and has no prime divisor common to all of its values.
+
+## Reconstruction
+
+Since $f$ is irreducible and has degree at least two, it has no integer root.
+Thus every $f(m)$ is nonzero and $D$ is a positive integer. If $D=1$, take
+$a=0$, $M=1$, and $h=f$; all assertions are immediate. Assume from now on
+that $D>1$ and write
+
+$$
+D=\prod_{p\mid D}p^{e_p}.
+$$
+
+For each $p\mid D$, the integer $e_p=v_p(D)$ is the minimum of the
+nonnegative integers $v_p(f(m))$. Choose an integer $b_p$ with
+
+$$
+v_p(f(b_p))=e_p.
+$$
+
+The moduli $p^{e_p+1}$ are pairwise coprime. The Chinese remainder theorem
+therefore gives an integer $a_0$ satisfying
+
+$$
+a_0\equiv b_p\pmod {p^{e_p+1}}\qquad(p\mid D).
+$$
+
+Set
+
+$$
+M=\prod_{p\mid D}p^{e_p+1}
+$$
+
+and replace $a_0$ by its representative $a$ with $0\le a<M$. Then
+$D\mid M$ and $D\mid f(a)$, the latter because $D$ divides every value
+of $f$.
+
+Define the polynomial identity
+
+$$
+h(x)=\frac{f(a+Mx)}{D}.
+$$
+
+It remains to establish that this quotient has the claimed integral and
+irreducible structure.
+
+### Integrality, degree, and sign
+
+For an integer polynomial $f$, every nonconstant coefficient of
+$f(a+Mx)-f(a)$ is divisible by $M$. Hence
+
+$$
+f(a+Mx)-f(a)\in M\mathbb Z[x].
+$$
+
+Because $D\mid M$ and $D\mid f(a)$, every coefficient of $f(a+Mx)$ is
+divisible by $D$. Thus $h\in\mathbb Z[x]$. If $L_f>0$ is the leading
+coefficient of $f$, then $h$ has degree $d$ and leading coefficient
+
+$$
+L_h=\frac{L_fM^d}{D}>0.
+$$
+
+### No fixed prime divisor
+
+First let $p\mid D$. Polynomial evaluation preserves congruences modulo
+$p^{e_p+1}$, so
+
+$$
+f(a)\equiv f(b_p)\pmod {p^{e_p+1}}.
+$$
+
+The right side has $p$-adic valuation exactly $e_p$. The congruence
+therefore gives $v_p(f(a))=e_p$, and hence
+
+$$
+v_p(h(0))=v_p\left(\frac{f(a)}D\right)=0.
+$$
+
+So no prime dividing $D$ divides every value of $h$.
+
+Now let $q$ be a prime with $q\nmid D$. If $q$ divided $h(t)$ for every
+$t\in\mathbb Z$, then the identity $f(a+Mt)=Dh(t)$ would imply
+
+$$
+q\mid f(a+Mt)\qquad(t\in\mathbb Z).
+$$
+
+Every prime divisor of $M$ divides $D$, so $q\nmid M$. The progression
+$a+Mt$ therefore runs through every residue class modulo $q$. It follows
+that $q\mid f(u)$ for every integer $u$, which would imply $q\mid D$, a
+contradiction. Thus no prime divides all values of $h$.
+
+### Irreducibility
+
+The substitution $x\mapsto a+Mx$ is an automorphism of $\mathbb Q[x]$, with
+inverse $x\mapsto(x-a)/M$. It preserves irreducibility, so
+$f(a+Mx)$ is irreducible over $\mathbb Q$. Dividing by the nonzero constant
+$D$ does not change irreducibility over $\mathbb Q$, and therefore $h$ is
+irreducible over $\mathbb Q$.
+
+If a prime divided every coefficient of $h$, it would divide every value
+$h(t)$, contrary to the preceding paragraph. Thus $h$ is primitive. Gauss's
+lemma, the standard result cited in the source, transfers its
+$\mathbb Q[x]$ irreducibility to irreducibility in $\mathbb Z[x]$.
+
+This proves all six parts of Lemma 2.1. The construction depends only on the
+fixed polynomial $f$ and is independent of the later endpoint $n$.
+
+**Boundary.** No prime-value assertion is used in this lemma. The retained
+source's citation to S. Lang, *Algebra*, revised third edition, Chapter IV,
+is the external source boundary for Gauss's lemma. The next page supplies the
+separate prime-values hypothesis and its conditional application.

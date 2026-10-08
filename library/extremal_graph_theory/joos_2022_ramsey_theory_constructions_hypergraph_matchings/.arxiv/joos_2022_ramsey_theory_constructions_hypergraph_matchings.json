@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Felix Joos",
+    "Dhruv Mubayi"
+  ],
+  "category": "math.CO",
+  "date": "2022-08-26",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 422666,
+    "files": 1,
+    "sha256": "9d5dbd45a6de749b587fbeabf0e3f234b8bfda63a1a83fba8af69ec76c474762",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2208.12563v1"
+  },
+  "id": "2208.12563",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 204671,
+    "previous": [],
+    "sha256": "d2f0bc2fcb824919426d83696ddc6dd4dd42ac669e048b86ddaa18e64c1c0600",
+    "url": "https://arxiv.org/pdf/2208.12563v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2208.12563v1 [math.CO] 26 Aug 2022",
+  "tex": {
+    "archive": {
+      "bytes": 15866,
+      "name": "arXiv-2208.12563v1.tar.gz",
+      "sha256": "3d02cc19f2ebc813359865c2cf07bfdfa9e6ae4580cd6703b453de8af54f6779"
+    },
+    "bytes": 49897,
+    "files": 2,
+    "sha256": "3cb35a7265cc5736ceef4e41347de7fc93ca8cf6c435cf47876ebb38fc67dfc0",
+    "url": "https://arxiv.org/src/2208.12563v1"
+  },
+  "title": "Ramsey theory constructions from hypergraph matchings",
+  "version": 1
+}

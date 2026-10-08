@@ -1,0 +1,48 @@
+{
+  "title": "On Kemperman's inequality 2f(x) <= f(x+h)+f(x+2h)",
+  "authors": [
+    "M. Laczkovich"
+  ],
+  "journal": "Colloquium Mathematicum",
+  "volume": 49,
+  "issue": 1,
+  "year": 1984,
+  "printed_pages": "109–115",
+  "doi": "10.4064/cm-49-1-109-115",
+  "received": "1980-07-22",
+  "received_evidence": "Printed final-page receipt statement.",
+  "canonical_artifact": {
+    "filename": "laczkovich_1984_kemperman_s_inequality.pdf",
+    "bytes": 458267,
+    "pdf_pages": 7,
+    "version": "Published journal scan",
+    "printed_to_pdf": "Printed 109–115 = PDF 1–7"
+  },
+  "publisher_metadata": {
+    "url": "https://www.impan.pl/en/publishing-house/journals-and-series/colloquium-mathematicum/all/49/1/104558/on-kemperman-s-inequality-2f-x-f-x-h-f-x-2h",
+    "accessed": "2026-09-05",
+    "http_status": 200
+  },
+  "fresh_pdf_acquisition": {
+    "url": "https://www.impan.pl/shop/en/publication/transaction/download/product/104558",
+    "accessed_utc": "2026-09-05T17:09:41.370998+00:00",
+    "one_request_only": true,
+    "status": 200,
+    "final_url": "http://pldml.icm.edu.pl/pldml/element/bwmeta1.element.desklight-e7a429fe-fd87-4267-8c33-40f150873689/c/cm49_1_17.pdf",
+    "content_type": "application/pdf;charset=",
+    "bytes": 458267,
+    "is_pdf": true,
+    "byte_identical_to_retained": true
+  },
+  "prior_provenance": "The PDF and digest were already present in this canonical source folder; exact originals were preserved before this expansion. The fresh publisher-linked scan is byte-identical.",
+  "version_limits": [
+    "No mathematically distinct version is claimed or compared.",
+    "The 1983 General Inequalities 3 contribution mentioned in the added-in-proof footnote is a separate uninspected source."
+  ],
+  "source_precision": [
+    "The printed convergent recurrence coefficient a_i is replaced by a_(i+1) under the stated indexing.",
+    "Lemma 2 tracks the selected q_j or q_(j-1) explicitly and uses the enlarged proof constant (K+1)^3 N^2. Its finite-existence conclusion is unchanged.",
+    "Lemma 1 includes n=1 and the n=2^k+2 terminal branch explicitly."
+  ],
+  "proof_scope": "Eight complete local or relative proof components. General continued-fraction theory remains an exact external input. No formal build or current-status research is part of the source compilation."
+}

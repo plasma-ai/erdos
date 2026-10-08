@@ -1,0 +1,41 @@
+{
+  "authors": [
+    "Zden\\v{e}k Dvo\\v{r}\\'ak",
+    "Beatriz Martins",
+    "St\\'ephan Thomass\\'e",
+    "Nicolas Trotignon"
+  ],
+  "category": "math.CO",
+  "date": "2025-10-10",
+  "fetched": "2026-09-24",
+  "html": {
+    "bytes": 424767,
+    "files": 1,
+    "sha256": "c3dc13adc30e39d5ee1f7df5e8d5f91b9cee56a14c0e0c89790b05e704fa9b29",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2502.04726v4"
+  },
+  "id": "2502.04726",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 418406,
+    "previous": [],
+    "sha256": "c4cc22e8bca01c4eaf0f74130c3f477448e52a7b5f24c7dc9d13aad5c6a88acc",
+    "url": "https://arxiv.org/pdf/2502.04726v4"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2502.04726v4 [math.CO] 10 Oct 2025",
+  "tex": {
+    "archive": {
+      "bytes": 23061,
+      "name": "arXiv-2502.04726v4.tar.gz",
+      "sha256": "efb4d66711abeaef6edc625846219667895d764c4314822ed1210d0e3479f24d"
+    },
+    "bytes": 71652,
+    "files": 9,
+    "sha256": "9d7e69b7bbe9adacd5c43cd5afcc123873239bcb4c25ae949272c7f6cdb357ca",
+    "url": "https://arxiv.org/src/2502.04726v4"
+  },
+  "title": "Lollipops, dense cycles and chords",
+  "version": 4
+}

@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Aubrey D.N.J. de Grey",
+    "Jaan Parts"
+  ],
+  "category": "math.CO",
+  "date": "2023-03-26",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 56821,
+    "files": 1,
+    "sha256": "3d6a90d68731f9e393dc3c3a8ec56aacee661ef23d480c94f937a957388af353",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2303.14714v1"
+  },
+  "id": "2303.14714",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 92947,
+    "previous": [],
+    "sha256": "62a475505fe37f02f5c2540e107e2ce48615fbb7d3b624ddaf60ccbf1b93fbd5",
+    "url": "https://arxiv.org/pdf/2303.14714v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2303.14714v1 [math.CO] 26 Mar 2023",
+  "tex": {
+    "archive": {
+      "bytes": 3994,
+      "name": "arXiv-2303.14714v1.tar.gz",
+      "sha256": "484b9a7e424cd5440750616cb2644fd672594e6aef7c6cd7c135b1f9802c07cd"
+    },
+    "bytes": 8411,
+    "files": 2,
+    "sha256": "f137d23af22db0cc8e3e5f31fdaf0a2e05b8d762ef2de97888aee773aa6da907",
+    "url": "https://arxiv.org/src/2303.14714v1"
+  },
+  "title": "On lower bounds of the order of $k$-chromatic unit distance graphs",
+  "version": 1
+}

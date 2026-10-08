@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Mark Lewko"
+  ],
+  "category": "math.CA",
+  "date": "2026-06-04",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 316962,
+    "files": 1,
+    "sha256": "0ed51e2fd13cd51c5d392cfaa9b2ab073f4b113dd694ec0af7ce163a09602698",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2606.06669v1"
+  },
+  "id": "2606.06669",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 399927,
+    "previous": [],
+    "sha256": "b4aab7a9d208e7e5cc6e4b9ae79b8fd530ed3907310cac6c69f6acd0b4823a1b",
+    "url": "https://arxiv.org/pdf/2606.06669v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2606.06669v1 [math.CA] 4 Jun 2026",
+  "tex": {
+    "archive": {
+      "bytes": 13856,
+      "name": "arXiv-2606.06669v1.tar.gz",
+      "sha256": "8c69ac03c9f709d831982c6e8c36159b41bc4c444501ab3119a3306abff6bb1d"
+    },
+    "bytes": 43569,
+    "files": 2,
+    "sha256": "4a8350af5d2de57e116f84074b41820d40e3875f25e573eef7c308b2b38068d9",
+    "url": "https://arxiv.org/src/2606.06669v1"
+  },
+  "title": "The Sidon Decomposition Problem in Abelian Groups of Bounded Torsion",
+  "version": 1
+}

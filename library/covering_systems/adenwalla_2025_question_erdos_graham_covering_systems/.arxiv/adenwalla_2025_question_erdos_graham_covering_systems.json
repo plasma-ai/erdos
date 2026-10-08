@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Sarosh Adenwalla"
+  ],
+  "category": "math.NT",
+  "date": "2025-12-03",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 219601,
+    "files": 1,
+    "sha256": "a35fdcb49b855d35af82a65540143d09a90d7b00e4abe0e74ba007de75724ce6",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2501.15170v3"
+  },
+  "id": "2501.15170",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 357227,
+    "previous": [],
+    "sha256": "609afdd8d3bfb3cf3bdbda96c66b19e1ce6c1150281a1245461537c877b53f8a",
+    "url": "https://arxiv.org/pdf/2501.15170v3"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2501.15170v3 [math.NT] 3 Dec 2025",
+  "tex": {
+    "archive": {
+      "bytes": 8765,
+      "name": "arXiv-2501.15170v3.tar.gz",
+      "sha256": "326631b1f73420f94c5979eab05fb09318011d647f8e95bc194c650bbb141627"
+    },
+    "bytes": 27695,
+    "files": 3,
+    "sha256": "5b5b928cd7df4f8ad0ffb32ac2d44dbec6f0ede0090ace5b395bde0e442f03f8",
+    "url": "https://arxiv.org/src/2501.15170v3"
+  },
+  "title": "A Question of Erd\\H{o}s and Graham on Covering Systems",
+  "version": 3
+}

@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this corpus, please cite it as below."
+title: "Erdős problems: an open record"
+abstract: >-
+  One page for each problem cataloged at erdosproblems.com, recording its
+  statement, its standing with the evidence behind it, the results claimed
+  about it and their sources, with a library of the literature and Lean
+  formalizations.
+authors:
+  - name: "Plasma AI"
+license:
+  - Apache-2.0
+  - CC-BY-4.0
+keywords:
+  - Erdős problems
+  - mathematics
+  - Lean

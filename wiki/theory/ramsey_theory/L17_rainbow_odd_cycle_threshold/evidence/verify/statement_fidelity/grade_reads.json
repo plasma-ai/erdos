@@ -1,0 +1,429 @@
+{
+  "schema": "l17-statement-fidelity-grade-reads-v1",
+  "grader": "the statement-fidelity grader for the L17 acceptance, separately spawned, in a fresh context (model: Claude Fable 5.1)",
+  "grade_date_utc": "2026-09-25",
+  "report_contract": "pass",
+  "independence": "pass",
+  "kernel_only": "confirmed: gate marker 0 compiler axioms; manifest L17 row compiler []; #print axioms propext, Classical.choice, Quot.sound for the claim, the statement and every premise theorem in the reviewer's probe and in the grader's byte-identical rerun",
+  "acceptance": "accepted at tier 2 for the sources as they stood on 2026-09-25T03:40:15Z, no condition",
+  "subject": {
+    "commit_date_utc": "2026-09-25T03:40:15Z",
+    "checkout": "the linked worktree checked out at the commit; git rev-parse HEAD printed the commit and git status --porcelain --untracked-files=no printed nothing at the start of the grade and before and after each of the grader's two Lean runs; the only additions are untracked files under the claim's evidence/ folder",
+    "lean_toolchain": "leanprover/lean4:v4.32.0-rc1 (lake env lean --version: Lean 4.32.0-rc1, arm64-apple-darwin24.6.0, commit b4812ae53eea93439ad5dce5a5c26591c31cb697, Release)",
+    "mathlib_revision": "79aee35d9696d759b73eed71d7dde666750bc35e (lean/lakefile.toml and lean/lake-manifest.json; the package checkout under lean/.lake/packages/mathlib at that revision with a clean status)",
+    "declarations": [
+      "Erdos.L17.statement",
+      "Erdos.L17.claim"
+    ],
+    "manifest_modules": 1732,
+    "closure_modules": 196,
+    "closure_by_folder": {
+      "Erdos.L17": 1,
+      "Erdos.Library.Problem809 (root)": 9,
+      "Erdos.Library.Problem809.BucicChenMa": 92,
+      "Erdos.Library.Problem809.SevenCycle": 85,
+      "Erdos.Library.Problem809.UpperBound": 9
+    },
+    "lean_files_under_lean_Erdos": "git ls-files: 1732 .lean files, 195 of them under lean/Erdos/Library/Problem809/",
+    "generated_subtree": "another claim's generated subtree as it stood on 2026-09-25T03:40:15Z is identical, file for file, to the subtree as it stood on 2026-09-19T05:07:22Z, that claim's accepted state (git diff --quiet exit 0); not in the L17 closure"
+  },
+  "contract_pages": "docs/verification.md, docs/lean_authoring.md, docs/anatomy.md and AGENTS.md read from the worktree, whose copies equal the frozen state's committed text (git diff --quiet exit 0) and the main checkout's copies as they stood on 2026-09-24T22:10:34Z (cmp)",
+  "depth_legend": {
+    "full": "every line read",
+    "range": "the named line ranges read in full",
+    "grep": "located by pattern; only the matching lines and their immediate context read",
+    "programmatic": "scanned by script or grep for the named properties; not read as text",
+    "listing": "directory or file listing only"
+  },
+  "reads": [
+    {
+      "path": "wiki/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/evidence/verify/statement_fidelity/review.txt",
+      "lines": "whole",
+      "depth": "full",
+      "note": "1025 lines; the report graded"
+    },
+    {
+      "path": "wiki/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/evidence/verify/statement_fidelity/review_reads.json",
+      "lines": "whole",
+      "depth": "full",
+      "note": "551 lines; the reviewer's read set, depth legend, Mathlib and toolchain objects, probe runs, sweep and exclusions"
+    },
+    {
+      "path": "wiki/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/evidence/verify/statement_fidelity/ReviewerProbe.lean",
+      "lines": "whole",
+      "depth": "full",
+      "note": "587 lines; imports Erdos.L17 only; no sorry, axiom or native_decide; rerun by the grader"
+    },
+    {
+      "path": "wiki/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/evidence/verify/statement_fidelity/probe_output.txt",
+      "lines": "whole",
+      "depth": "full",
+      "note": "211 lines; its Lean portion (190 lines, 12252 bytes, before the runner's stderr marker) equals the grader's rerun byte for byte"
+    },
+    {
+      "path": "erdos/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/evidence/verify/statement_fidelity/run_probe.sh",
+      "lines": "whole",
+      "depth": "full",
+      "note": "27 lines; the runner used for the grader's rerun"
+    },
+    {
+      "path": "wiki/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/evidence/verify/statement_fidelity/clean_gate.json",
+      "lines": "whole",
+      "depth": "full",
+      "note": "169 lines; schema l17-clean-gate-receipt-v1; markers, warning and error counts, window, serialization deviation, roles"
+    },
+    {
+      "path": "wiki/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/evidence/verify/statement_fidelity/clean_gate_log.txt",
+      "lines": "1-40, 1855-1866; warning and error lines by grep",
+      "depth": "range",
+      "note": "1866 lines; header, dependency clone and cache lines; the three markers at 1860-1862 and the trailer (exit_code 0, wall 2792 s); 23 warning lines in another claim's first module (4) and second module (19), 0 error lines, none in Problem809/ or L17.lean"
+    },
+    {
+      "path": "erdos/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/evidence/verify/statement_fidelity/run_clean_gate.sh",
+      "lines": "whole",
+      "depth": "full",
+      "note": "42 lines; the runner's wrapper: LEAN_NUM_THREADS=4, gate.sh --clean at the commit, both streams to the log with the UTC window and exit code"
+    },
+    {
+      "path": "wiki/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/evidence/assets/statement_fidelity/subject_manifest.json",
+      "lines": "whole",
+      "depth": "full",
+      "note": "107 lines; the four commands, the guard, the checked source, the environment files, the later-commits rule"
+    },
+    {
+      "path": "wiki/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/evidence/assets/statement_fidelity/subject_statement.txt",
+      "lines": "whole",
+      "depth": "full",
+      "note": "card frontmatter statement, _index.md 13-21; regenerated by its command at the commit and compared byte for byte: identical (597 bytes)"
+    },
+    {
+      "path": "wiki/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/evidence/assets/statement_fidelity/subject_index.txt",
+      "lines": "whole",
+      "depth": "full",
+      "note": "card Statement and Argument and formal surface, _index.md 41-84; regenerated and compared: identical (2262 bytes)"
+    },
+    {
+      "path": "wiki/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/evidence/assets/statement_fidelity/subject_proof.txt",
+      "lines": "whole",
+      "depth": "full",
+      "note": "proof page body, _proof.md 15-63; regenerated and compared: identical (2682 bytes)"
+    },
+    {
+      "path": "wiki/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/evidence/assets/statement_fidelity/subject_problem.txt",
+      "lines": "whole",
+      "depth": "full",
+      "note": "Problem 809 statement block, E0809.md 17-26; regenerated and compared: identical (335 bytes)"
+    },
+    {
+      "path": "docs/verification.md",
+      "lines": "headings; 163-279; 374-470; 471-678",
+      "depth": "range",
+      "note": "678 lines; Exact subjects and durable evidence, Report contract, Audit checklist, and the whole Erdos-specific section"
+    },
+    {
+      "path": "docs/lean_authoring.md",
+      "lines": "headings; 386-429; 471-562",
+      "depth": "range",
+      "note": "562 lines; Native claim surface; Statement fidelity and validation; Repository facts"
+    },
+    {
+      "path": "docs/anatomy.md",
+      "lines": "headings; 298-344; 785-830",
+      "depth": "range",
+      "note": "874 lines; Tiers; Claim scrutiny"
+    },
+    {
+      "path": "AGENTS.md",
+      "lines": "149-154; 185-200; the org and repository instruction files were also displayed in full by the operating environment at the start",
+      "depth": "range",
+      "note": "302 lines; conventions 2 (Tier honesty) and 9 (Git identity, not byte hashes)"
+    },
+    {
+      "path": "<another claim's statement-fidelity folder>/grade.txt",
+      "lines": "whole",
+      "depth": "full",
+      "note": "670 lines; the precedent grade's structure, part names and extension rule, mirrored here; that claim's content only"
+    },
+    {
+      "path": "<another claim's statement-fidelity folder>/grade_reads.json",
+      "lines": "1-140 and the key structure by script",
+      "depth": "range",
+      "note": "402 lines; the precedent read set's field names, reused here"
+    },
+    {
+      "path": "<another claim's statement-fidelity folder>/_index.md",
+      "lines": "1-60",
+      "depth": "range",
+      "note": "280 lines; the record index's shape and role paragraph"
+    },
+    {
+      "path": "<another claim's statement-fidelity folder>/{grader_probe_start_utc,grader_probe_end_utc,grader_probe_rc}.txt and grader_probe_output.txt (head 5, tail 25)",
+      "lines": "whole; head and tail",
+      "depth": "range",
+      "note": "the receipt file shapes mirrored here"
+    },
+    {
+      "path": "<another claim's statement-fidelity folder>/ (directory listing)",
+      "lines": "all",
+      "depth": "listing",
+      "note": "the filed part names"
+    },
+    {
+      "path": "wiki/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/_index.md",
+      "lines": "1-12, 22-40, 85-108; heading and anchor lines by grep; verdict-word grep over the whole page",
+      "depth": "range",
+      "note": "108 lines; read outside the extraction only to rule on the reviewer's exposure E2: frontmatter fields (status proved, tier 0, depends_on [], lean Erdos.L17.claim), the description and link block, and Current standing, Verification and Remaining obligations (tier 0, fidelity audit pending); no fidelity answer"
+    },
+    {
+      "path": "wiki/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/_proof.md",
+      "lines": "anchor lines by grep; verdict-word grep; body via subject_proof.txt",
+      "depth": "grep",
+      "note": "63 lines; the closing --- at 14; no verdict word"
+    },
+    {
+      "path": "wiki/problems/ramsey_theory/E0809.md",
+      "lines": "90-113, 155-163; bold field labels by grep; verdict-word grep over the whole page",
+      "depth": "range",
+      "note": "252 lines; read outside the extraction only to rule on E2: the Formalization field (author's run record, audit pending, tier 0) and the rendering of Theorem 1.2 the review's 7.3 cites; the grep finds only the two audit-pending sentences (111, 232)"
+    },
+    {
+      "path": "lean/Erdos/L17.lean",
+      "lines": "1-123",
+      "depth": "full",
+      "note": "the subject; byte-identical to the commit's blob (git show | cmp); line ranges as the review states them"
+    },
+    {
+      "path": "lean/Erdos/Library/Problem809/Statement.lean",
+      "lines": "1-33",
+      "depth": "full",
+      "note": "ThresholdFor 23-27; Statement 30-31"
+    },
+    {
+      "path": "lean/Erdos/Library/Problem809/RainbowCycles.lean",
+      "lines": "1-132",
+      "depth": "full",
+      "note": "EveryCopyRainbow 18-22; AdmissibleAtLeast 26-28; maximalAntiRamsey 32-33; EveryCycleRainbow 37-41; AdmissibleCycleAtLeast 122-124; maximalAntiRamseyCycle 129-130"
+    },
+    {
+      "path": "lean/Erdos/Library/Problem809/FinalAssembly.lean",
+      "lines": "1-86",
+      "depth": "full",
+      "note": "equivalent_iff_normalized_limit 22-44; thresholdFor_iff_cycleThresholdFormula 48-53; statement_of_sevenCycle_and_higherThreshold 57-67; statement_of_sevenCycle_and_higherDensity 70-74; statement_of_higherDensity 78-80; statement_proved 83-84"
+    },
+    {
+      "path": "lean/Erdos/Library/Problem809/Comparison.lean",
+      "lines": "1-33",
+      "depth": "full",
+      "note": "rainbowChromatic_eq_maximalAntiRamseyCycle 17-31"
+    },
+    {
+      "path": "lean/Erdos/Library/Problem809/CycleCopyBridge.lean",
+      "lines": "1-113",
+      "depth": "full",
+      "note": "cycleCopy 40-58; everyCycleRainbow_iff_everyCopyRainbow 62-89; admissibleCycleAtLeast_iff 93-100; maximalAntiRamsey_cycleGraph 104-111"
+    },
+    {
+      "path": "lean/Erdos/Library/Problem809/MainTerm.lean",
+      "lines": "1-16",
+      "depth": "full",
+      "note": "mainTerm 13-14"
+    },
+    {
+      "path": "lean/Erdos/Library/Problem809/SevenCycle/Statement.lean",
+      "lines": "1-35",
+      "depth": "full",
+      "note": "Admissible 19-21; rainbowChromatic 26-27; SevenCycleThreshold 30-33"
+    },
+    {
+      "path": "lean/Erdos/Library/Problem809/BucicChenMa/Statement.lean",
+      "lines": "1-47",
+      "depth": "full",
+      "note": "FullDensityFormula 23-28; ThresholdFormula 32-37; Statement 40-41; ThresholdStatement 44-45"
+    },
+    {
+      "path": "lean/Erdos/Library/Problem809/BucicChenMa/ThresholdConsequence.lean",
+      "lines": "1-60",
+      "depth": "full",
+      "note": "fullDensityFormula_implies_threshold 15-52; statement_implies_threshold 56-58"
+    },
+    {
+      "path": "lean/Erdos/Library/Problem809/ThresholdArithmetic.lean",
+      "lines": "1-31, 80-95",
+      "depth": "range",
+      "note": "threshold_edge_feasible 14-31; threshold_mainTerm_tendsto 80-93"
+    },
+    {
+      "path": "lean/Erdos/Library/Problem809/SubgraphTransfer.lean",
+      "lines": "1-20",
+      "depth": "range",
+      "note": "the statement of rainbow_subgraph_exact_edges"
+    },
+    {
+      "path": "lean/Erdos/Library/Problem809/SevenCycle/C7LowerSequence.lean",
+      "lines": "1-12, 100-118",
+      "depth": "range",
+      "note": "imports; sevenCycleThreshold_proved 104-116 (closed)"
+    },
+    {
+      "path": "lean/Erdos/Library/Problem809/UpperBound/SevenCycle.lean",
+      "lines": "15-56",
+      "depth": "range",
+      "note": "rainbowChromatic_upper_asymptotic 20-26; exists_admissible_of_sixteen_le 29-45; rainbowChromatic_admissible_of_sixteen_le 49-54"
+    },
+    {
+      "path": "lean/Erdos/Library/Problem809/BucicChenMa/QuantitativeInductionAssembly.lean",
+      "lines": "1-12, 198-213",
+      "depth": "range",
+      "note": "imports; quantitativeLowerStatement_proved 200-203; statement_proved 206-207; thresholdStatement_proved 210-211 (closed)"
+    },
+    {
+      "path": "lean/Erdos/Library/Problem809/BucicChenMa/QuantitativeConsequence.lean",
+      "lines": "50-58",
+      "depth": "range",
+      "note": "quantitativeLowerStatement_implies_statement 52-56"
+    },
+    {
+      "path": "lean/Erdos/Library/Problem809/BucicChenMa/LowerInduction.lean",
+      "lines": "19-32",
+      "depth": "range",
+      "note": "quantitativeTarget, QuantitativeLowerBound, QuantitativeLowerStatement"
+    },
+    {
+      "path": "lean/Erdos/Library/Problem809/ (all 195 modules) and lean/Erdos/L17.lean",
+      "lines": "import lines; whole files by pattern",
+      "depth": "programmatic",
+      "note": "import closure from Erdos.L17 (196 modules; 65 Mathlib modules directly); grep for axiom, sorry, sorryAx, native_decide, ofReduceBool, opaque, unsafe, implemented_by, csimp, partial, extern, instance, Erdos.L<n>, @[simp, notation, autoImplicit, open, macro, syntax, elab, set_option, decide (results in grade.txt section 2)"
+    },
+    {
+      "path": "lean/lean-toolchain",
+      "lines": "whole",
+      "depth": "full",
+      "note": "leanprover/lean4:v4.32.0-rc1"
+    },
+    {
+      "path": "lean/lakefile.toml",
+      "lines": "whole",
+      "depth": "full",
+      "note": "29 lines; autoImplicit = false; mathlib rev 79aee35d; glob Erdos.+; the audit executable"
+    },
+    {
+      "path": "lean/lake-manifest.json",
+      "lines": "1-17 by grep context",
+      "depth": "grep",
+      "note": "96 lines; the mathlib entry at 79aee35d9696d759b73eed71d7dde666750bc35e"
+    },
+    {
+      "path": "lean/Manifest.json",
+      "lines": "1-14, 1738-1769; key structure, module count, claims and the L17 row by script; declarations, compiler, claims and id lines by grep",
+      "depth": "range",
+      "note": "1769 lines; 1732 modules (Erdos.L17 at line 11); declarations 1741-1742; top-level compiler [] 1743; another claim's row 1746-1757; L17 row 1758-1769 with depends [], compiler [] (1768), axioms propext, Classical.choice, Quot.sound, pretty equal to the source"
+    },
+    {
+      "path": "lean/.lake/packages/mathlib/Mathlib/Combinatorics/SimpleGraph/Copy.lean",
+      "lines": "84-88, 100-105, 115-117, 146",
+      "depth": "range",
+      "note": "structure Copy; FunLike; injective; mapEdgeSet; Copy.ofLE"
+    },
+    {
+      "path": "lean/.lake/packages/mathlib/Mathlib/Combinatorics/SimpleGraph/Maps.lean",
+      "lines": "361-364, 380",
+      "depth": "range",
+      "note": "Hom.mapEdgeSet as Sym2.map; Hom.ofLE"
+    },
+    {
+      "path": "lean/.lake/packages/mathlib/Mathlib/Combinatorics/SimpleGraph/CycleGraph.lean",
+      "lines": "29-33, 60-65",
+      "depth": "range",
+      "note": "cycleGraph; cycleGraph_adj'"
+    },
+    {
+      "path": "lean/.lake/packages/mathlib/Mathlib/Combinatorics/SimpleGraph/Coloring/EdgeLabeling.lean",
+      "lines": "37-38, 77-80, 100-101",
+      "depth": "range",
+      "note": "EdgeLabeling; get; pullback"
+    },
+    {
+      "path": "lean/.lake/packages/mathlib/Mathlib/Order/Lattice/Nat.lean",
+      "lines": "29-31, 57, 79, 90",
+      "depth": "range",
+      "note": "the InfSet instance; sInf_eq_zero; sInf_mem; sInf_le"
+    },
+    {
+      "path": "lean/.lake/packages/mathlib/Mathlib/Analysis/Asymptotics/Defs.lean",
+      "lines": "187-188, 223-226",
+      "depth": "range",
+      "note": "IsLittleO; IsEquivalent and its notation"
+    },
+    {
+      "path": "lean/.lake/packages/mathlib/Mathlib/Analysis/Asymptotics/AsymptoticEquivalent.lean",
+      "lines": "208-219",
+      "depth": "range",
+      "note": "isEquivalent_iff_tendsto_one"
+    },
+    {
+      "path": "lean/.lake/packages/mathlib/Mathlib/SetTheory/Cardinal/Finite.lean",
+      "lines": "41-42",
+      "depth": "range",
+      "note": "Nat.card"
+    },
+    {
+      "path": "lean/.lake/packages/mathlib/Mathlib/Combinatorics/SimpleGraph/Basic.lean and Finite.lean",
+      "lines": "471-477; 121",
+      "depth": "range",
+      "note": "edgeSet, mem_edgeSet, not_isDiag_of_mem_edgeSet; edgeFinset_card"
+    }
+  ],
+  "read_only_git": [
+    "rev-parse HEAD, HEAD^{tree}, HEAD:lean, HEAD:lean/Erdos, HEAD:lean/Erdos/Library/Problem809, --show-object-format; log -1 --format=%cI; status --porcelain --untracked-files=no at the start and before and after each Lean run; status --porcelain --untracked-files=all on the claim's folder (the untracked additions)",
+    "ls-files counts of .lean files under lean/Erdos/ and lean/Erdos/Library/Problem809/; ls-files on the extraction folder (none tracked)",
+    "show <commit>:<path> for the four extraction commands and for the anchor passes over the three pages; show HEAD:lean/Erdos/L17.lean | cmp",
+    "diff --quiet <commit> -- docs/verification.md docs/lean_authoring.md docs/anatomy.md AGENTS.md (exit 0); cmp of each with the main checkout's copy as it stood on 2026-09-24T22:10:34Z",
+    "cat-file -t of another claim's accepted state of 2026-09-19T05:07:22Z (a commit); diff --quiet between that state and the frozen state of 2026-09-25T03:40:15Z over lean ':(exclude)lean/README.md' (exit 1); diff --name-only of the same, by folder count; the same diff --quiet over that claim's generated subtree (exit 0); rev-parse of that subtree at both states",
+    "diff --quiet of the frozen state against itself over lean ':(exclude)lean/README.md' (exit 0, the rule's self-check); cat-file -e of lean/README.md at that state",
+    "git -C lean/.lake/packages/mathlib rev-parse HEAD and status --porcelain",
+    "git rev-parse HEAD in the main checkout (for the contract-page comparison only)"
+  ],
+  "independent_computation": {
+    "environment": "the worktree's lean/ directory; LEAN_NUM_THREADS=4; one Lean process at a time; no lake build, no lake exe cache get and no network command was run; process listings (pgrep -x lean, pgrep -x lake) showed no lean or lake process before or after each run",
+    "toolchain_check": {
+      "command": "cd lean && lake env lean --version",
+      "result": "Lean (version 4.32.0-rc1, arm64-apple-darwin24.6.0, commit b4812ae53eea93439ad5dce5a5c26591c31cb697, Release)"
+    },
+    "freshness_check": {
+      "command": "cd lean && LEAN_NUM_THREADS=4 lake build Erdos.L17 --no-build",
+      "window_utc": "2026-09-25T04:38:09Z to 2026-09-25T04:38:10Z",
+      "result": "All targets up-to-date (2420 jobs); exit 0; nothing built; tracked tree clean after"
+    },
+    "probe_rerun": {
+      "command": "bash <record home>/run_probe.sh <worktree>/lean <record home>/ReviewerProbe.lean <record home>/grader_probe_output.txt",
+      "window_utc": "2026-09-25T04:38:57Z to 2026-09-25T04:39:01Z",
+      "result": "exit 0; 4 s wall; 4.19 s real; 2426781696 bytes maximum resident set size; no error, no warning; the Lean portion (190 lines, 12252 bytes) is byte-identical to probe_output.txt's",
+      "receipts": [
+        "grader_probe_output.txt",
+        "grader_probe_rc.txt",
+        "grader_probe_start_utc.txt",
+        "grader_probe_end_utc.txt"
+      ],
+      "axioms_observed": "propext, Classical.choice, Quot.sound for Erdos.L17.claim, Erdos.L17.statement, Erdos809.statement_proved, Erdos809.sevenCycleThreshold_proved, Erdos809.BucicChenMa.statement_proved, Erdos809.BucicChenMa.thresholdStatement_proved, Erdos809.statement_of_sevenCycle_and_higherDensity, Erdos.L17.antiRamsey_cycleGraph, Erdos.L17.admissible_cycleGraph_iff, Erdos.L17.rainbow_subgraph_exact_edges, and the four ReviewerProbe theorems"
+    },
+    "extraction_rerun": {
+      "method": "the four awk commands of subject_manifest.json run verbatim with bash -c on each page as it stood at the frozen state (awk version 20200816), each output compared with the filed part by cmp; the guard run on the four outputs concatenated in order and on the filed files",
+      "result": "597, 2262, 2682 and 335 bytes, all identical; concatenation 5876 bytes; guard exit status 1 (no output) in both runs; anchors at the commit: _index.md 13-21 and 41-84 (108 lines), _proof.md 15-63 (63 lines), E0809.md 17-26 (252 lines)"
+    },
+    "closure_walk_and_sweep": {
+      "method": "a Python walk of the import lines from Erdos.L17 under lean/Erdos/; regex sweep of the 196 sources",
+      "result": "196 modules (1 + 9 + 92 + 85 + 9), 65 Mathlib modules directly imported; no axiom, sorry, sorryAx, native_decide, ofReduceBool, opaque, unsafe, implemented_by, csimp, partial, macro, syntax or elab; Erdos.L17 the only Erdos.L<n>; two decidability instances; eighteen @[simp; three prose notation hits; one set_option (autoImplicit false in L17.lean); 66 open lines"
+    }
+  },
+  "excluded_not_read": [
+    "wiki/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/_index.md beyond lines 1-12, 22-40, 85-108 and the extracted parts; _proof.md beyond the extracted body and its anchor lines; wiki/problems/ramsey_theory/E0809.md beyond lines 90-113, 155-163 and the extracted block",
+    "wiki/research/ (the proof notes, the solution note, the formalization account, the research guide)",
+    "library/ (the Bucić–Chen–Ma and Burr–Erdős–Graham–Sós cards, result pages and PDFs)",
+    "lean/Audit/Main.lean, lean/scripts/gate.sh, lean/scripts/audit_selftest.sh, lean/scripts/selftest_digest.sh, the fixtures under lean/scripts/selftest/, lean/scripts/selftest.stamp, lean/README.md",
+    "the 177 proof modules under Problem809/BucicChenMa/ and Problem809/SevenCycle/ beyond their import lines, the sweep, and the ranges named in reads",
+    "every evidence folder other than the L17 record home, the L17 extraction and the precedent's statement-fidelity folder (its sibling folders were not opened; of the precedent only the files named in reads were opened)",
+    "the reviewer's assignment text (not supplied); the diff content of any commit; git history beyond the identities, dates and path names named here",
+    "workspace notes and any message from another role"
+  ],
+  "own_exposure": "the organization's and repository's agent instruction files and five recent commit subject lines of the main checkout (the research branch; the library conversion and agent presets), shown by the grader's environment; the card's frontmatter fields, description block and standing sections and the problem page's Formalization field and Theorem 1.2 rendering, read to rule on the reviewer's exposure E2 (they state tier 0 and a pending audit; no fidelity answer); the precedent's grade.txt in full (another claim's acceptance at tier 2 for that claim's state of 2026-09-19T05:07:22Z and its extension rule), its grade_reads.json head and structure, its _index.md lines 1-60 and its four grader receipt files; the names of the paths changed under lean/ between that state and the frozen state, by folder count, no diff content. No web search; no message exchanged with any other agent beyond the commission and this return; no lean or lake process other than the grader's own ran during the grader's two Lean runs."
+}

@@ -1,0 +1,196 @@
+{
+  "schema": "clean-gate-receipt-v1",
+  "state": "successful clean committed-source gate: the archived lean/ tree of the checked source fetched its cache, built, passed the axiom audit against the committed manifest and matched the committed self-test stamp",
+  "owner": "wiki/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold",
+  "role": "Portable mechanical validation evidence for the tier-2 standing of L17 on the checked source named below (the repository as it stood on 2026-10-08T13:58:11Z), not an independent mathematical acceptance warrant, review or grade.",
+  "validation_date": "2026-10-08",
+  "checked_source": {
+    "source_date": "2026-10-08T13:58:11Z",
+    "worktree_state_before_launch": "git rev-parse HEAD named the checked source; git status --porcelain --untracked-files=no printed nothing, and git diff --quiet between the checked source and the working tree over lean/ exited 0. This runner's wrapper lay untracked in this record folder, outside the archived lean/ tree.",
+    "worktree_state_after_exit": "git rev-parse HEAD named the checked source again and git diff --quiet over lean/ exited 0 again; git status --porcelain --untracked-files=no listed seven modified files, all records under this claim's evidence/ folder outside lean/, which this runner edited during the run under the same commission, and nothing under lean/. No gate archive remained under the user's temporary directory (the gate's EXIT trap removed its archive directory) and no lean or lake process was running.",
+    "archive_scope": "The clean gate archives REV:lean (git archive run from lean/), not the full REV^{tree}, so every Lean source, lean/Manifest.json and lean/scripts/selftest.stamp it checks are those of the checked source; the runner worktree's own ignored lean/.lake was not used.",
+    "complete_manifest": {
+      "path": "lean/Manifest.json",
+      "modules": 197,
+      "declarations": [
+        "Erdos.L17.statement",
+        "Erdos.L17.claim"
+      ],
+      "claims": [
+        "L17"
+      ],
+      "top_level_compiler_axioms": [],
+      "l17_claim_entry": {
+        "surface": {
+          "fingerprint": "the sha256 value of the L17 row's surface field in lean/Manifest.json as it stood on 2026-10-08T13:58:11Z, cited by file name and not copied",
+          "constants": 6,
+          "external": 54
+        },
+        "statement": {
+          "fingerprints": "the sha256Unfolded and sha256 values of the L17 row of lean/Manifest.json as it stood on 2026-10-08T13:58:11Z, cited by file name and not copied",
+          "pretty": "∀ (k : ℕ), 3 ≤ k → Erdos.L17.ThresholdFor k"
+        },
+        "module": "Erdos.L17",
+        "id": "L17",
+        "depends": [],
+        "decls": [
+          {
+            "role": "statement",
+            "name": "Erdos.L17.statement"
+          },
+          {
+            "role": "claim",
+            "name": "Erdos.L17.claim"
+          }
+        ],
+        "compiler": [],
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "committed_selftest_stamp": "the value lean/scripts/selftest.stamp held on 2026-10-08T13:58:11Z, cited by file name and not copied",
+    "subject_link_basis": "This receipt records a mechanical validation of the checked source named above. It claims no review of the mathematics or the statement."
+  },
+  "command": {
+    "argv": [
+      "nice",
+      "-n",
+      "10",
+      "/bin/bash",
+      "lean/scripts/gate.sh",
+      "--clean"
+    ],
+    "clean_argument": "the checked source, the repository as it stood on 2026-10-08T13:58:11Z; the gate archived its lean/ tree",
+    "scheduling": "nice -n 10 lowered the gate's scheduling priority beside other work; it changes no input or output of the gate",
+    "wrapper": "run_clean_gate.sh, filed beside this receipt as run_clean_gate_sh.txt, as run apart from its comments, which at filing gained a note on the log's redaction of detail that identifies the computer and lost a reference to the computer: takes the checked source's revision as its one argument, exports LEAN_NUM_THREADS=4, changes to the repository root of the worktree, runs the argv above with that revision as its --clean argument and both streams appended to clean_gate_log.txt, and records the UTC window and exit code in the log; its header lines name the checked source by date.",
+    "working_directory": "the repository root of the runner worktree, checked out at the checked source (the gate resolves lean/ from its own path and archives the checked source's lean/ tree from the repository's object store)",
+    "unchanged_gate": true,
+    "archive_location": "a fresh directory created by mktemp -d in the user's temporary directory, removed by the gate's EXIT trap",
+    "stale_state_check_before_launch": "No gate archive (a lakefile.toml at the top of a temporary directory) under the user's temporary directory, no lean or lake process, and the runner worktree clean of tracked changes; lakefile.toml files of unrelated work lay deeper in other temporary directories and were left in place; nothing was removed."
+  },
+  "environment": {
+    "explicit_child_environment": {
+      "LEAN_NUM_THREADS": "4"
+    },
+    "lean_toolchain": "leanprover/lean4:v4.32.0-rc1",
+    "lake_version": "Lake version 5.0.0-src+b4812ae (Lean version 4.32.0-rc1)",
+    "mathlib_revision": "79aee35d9696d759b73eed71d7dde666750bc35e",
+    "host": "macOS, arm64",
+    "tools": "git 2.56.0, bsdtar 3.5.3, elan 4.2.3, CPython 3.13.12 (the watcher)",
+    "host_readings_before_launch": "The preflight of lean/README.md \"Building\", read over the 30-second window from 2026-10-08T14:04:26Z to the launch at 2026-10-08T14:04:57Z: at least 40 GiB of memory available (hw.memsize minus the anonymous pages less the purgeable ones, plus the wired pages, plus the pages occupied by the compressor, times the page size), no swap-outs over the window (vm_stat Swapouts equal at both ends), at most 1 GiB of swap in use (sysctl vm.swapusage), no lean or lake process (pgrep -x lean, pgrep -x lake) and fewer than 1,000 processes (ps -e | wc -l). Every reading passed; the figures are not retained, as detail that identifies the computer. No lean or lake process ran when the preflight began, so no wait was needed. The Lake version was read with lake --version in the worktree's lean/ before the preflight."
+  },
+  "outcome": {
+    "gate_shell_exit_code": 0,
+    "dependency_fetch": {
+      "result": "passed",
+      "reported_lines": [
+        "info: mathlib: cloning https://github.com/leanprover-community/mathlib4",
+        "info: mathlib: checking out revision '79aee35d9696d759b73eed71d7dde666750bc35e'",
+        "info: plausible: cloning https://github.com/leanprover-community/plausible",
+        "info: plausible: checking out revision 'f3c7bd5061bd81b4480295c524d4f245c8b7e4e2'",
+        "info: LeanSearchClient: cloning https://github.com/leanprover-community/LeanSearchClient",
+        "info: LeanSearchClient: checking out revision 'c5d5b8fe6e5158def25cd28eb94e4141ad97c843'",
+        "info: importGraph: cloning https://github.com/leanprover-community/import-graph",
+        "info: importGraph: checking out revision '41f407a8e85b0fdc00910633a8f14754139b63f4'",
+        "info: proofwidgets: cloning https://github.com/leanprover-community/ProofWidgets4",
+        "info: proofwidgets: checking out revision 'e4952ae2afde0dd2868b313356d1ce00da677bd9'",
+        "info: aesop: cloning https://github.com/leanprover-community/aesop",
+        "info: aesop: checking out revision '24fa6b3599743c23e6debd53d5fd09ebfa587d29'",
+        "info: Qq: cloning https://github.com/leanprover-community/quote4",
+        "info: Qq: checking out revision '7a62bd13860cd39ac98da16ffc8c24d601353f69'",
+        "info: batteries: cloning https://github.com/leanprover-community/batteries",
+        "info: batteries: checking out revision '9647daaa8c0bc688fcfcb04252c864b859b51f57'",
+        "info: Cli: cloning https://github.com/leanprover/lean4-cli",
+        "info: Cli: checking out revision '406ebb8c8e2f7e852a1b47764b42494022ce652c'"
+      ],
+      "qualification": "Lines as printed by lake exe cache get inside the archive while cloning the pinned dependencies."
+    },
+    "cache": {
+      "reported_lines": [
+        "Current branch: HEAD",
+        "Using cache from origin: (some leanprover-community/mathlib4)",
+        "Decompressing 8446 already-cached file(s) (188 already decompressed)",
+        "No files to download",
+        "Decompressed 8446 already-cached file(s)",
+        "Completed successfully in 22162 ms!"
+      ],
+      "qualification": "Lines as printed by lake exe cache get inside the archive; no file-body identity or public-cache content authentication."
+    },
+    "complete_native_build": {
+      "result": "passed",
+      "reported_jobs": 2429,
+      "modules_built": "all 197 modules under lean/Erdos/, one build line each: Erdos.Core, the 195 modules of Erdos.Library.Problem809 and Erdos.L17, the claim's module, built as job 2428 of 2429 (log line 257)",
+      "marker": "Build completed successfully (2429 jobs)."
+    },
+    "universal_axiom_audit": {
+      "result": "passed",
+      "constants": 2328,
+      "modules": 197,
+      "claims": 1,
+      "compiler_axioms": 0,
+      "marker": "audited 2328 constants in 197 modules, 1 claims, 0 compiler axioms: AUDIT PASS",
+      "notes_printed": 0
+    },
+    "selftest_stamp": {
+      "committed_stamp_path": "lean/scripts/selftest.stamp",
+      "committed_stamp": "the value lean/scripts/selftest.stamp held on 2026-10-08T13:58:11Z, cited by file name and not copied",
+      "committed_stamp_freshness": "passed by the gate digest comparison (the gate reached its final marker)",
+      "new_refusal_suite_executed": false
+    },
+    "gate_marker": "Lean gate passed.",
+    "marker_lines": "log lines 258 (build), 259 (audit) and 260 (gate)",
+    "gate_leg_basis": "Committed set -euo pipefail gate source: each leg must exit 0 for the next to run, and the final marker follows the last leg. Per-leg exit codes were not separately instrumented; the markers were located in the captured streams.",
+    "warning_lines": 2,
+    "warning_files": [],
+    "error_lines": 1,
+    "diagnostic_count_basis": "warning_lines counts stream lines matching a case-insensitive grep for 'warning' and error_lines those matching one for 'error'. 0 stream lines begin 'warning:'; the 2 counted are Lake build progress lines for Cache.Warning and its compiled object, whose names contain the word. 0 stream lines begin 'error:'; the 1 counted is the build progress line of Erdos.Library.Problem809.UpperBound.Error, whose name contains the word. No build line carries the warning mark, so warning_files is empty.",
+    "log": "clean_gate_log.txt beside this receipt: a header, then the gate's stdout and stderr interleaved as captured, then the end time, wall seconds and exit code",
+    "mathematical_acceptance": false
+  },
+  "observation": {
+    "start_utc": "2026-10-08T14:04:57Z",
+    "end_utc": "2026-10-08T14:11:20Z",
+    "wall_seconds": 383,
+    "log_bytes": 20124,
+    "log_lines": 264,
+    "stream_lines": 253,
+    "reading_depth": "The runner read the whole captured log, header, every stream line and trailer.",
+    "serialization": {
+      "rule": "no second Lean build alongside the gate",
+      "watcher": "observation-only process watch (ps every 5 s, each process classified by the basename of its full executable path) counting lean or lake processes inside and outside the wrapper's process tree; it enforced nothing",
+      "watch_start_utc": "2026-10-08T14:04:57Z",
+      "watch_end_utc": "2026-10-08T14:11:20Z",
+      "samples": 76,
+      "max_own_lean_or_lake_processes": 5,
+      "samples_with_foreign_processes": 0,
+      "max_foreign_procs": 0,
+      "first_foreign_observation": null,
+      "foreign_commands_seen": [],
+      "rule_met": true,
+      "note": "No lean or lake process was running when the gate launched. The watcher started with the wrapper and ran until it exited; in none of its 76 samples taken every 5 s did it see a lean or lake process outside the wrapper's process tree, and the gate's own processes in that class peaked at 5 (the lake driver and its lean workers). The runner started no lean or lake process during the run."
+    }
+  },
+  "resources": {
+    "admitted_limits": {
+      "memory_quota": null,
+      "time_cutoff": "none"
+    },
+    "qualification": "No memory sampler ran; LEAN_NUM_THREADS is a thread-pool hint, not a process cap; nice -n 10 lowers scheduling priority only; no CPU, disk or wall-time limit was imposed."
+  },
+  "roles": {
+    "runner_attribution": "non-author clean-gate runner, in a fresh context",
+    "runner_authored_or_coconstructed_selected_native_mathematics_or_audit_logic": false,
+    "exposure": "The runner received its commission naming the checked source, the worktree and this claim's folder. It read the gate script, lean/README.md, the record and carry-forward rules of docs/verification.md \"Exact subjects and durable evidence\", the claim card, this claim's evidence records, and an earlier clean-gate receipt, wrapper and log filed with another claim's records, for their shape. It asserts no tier.",
+    "runner_operational_authorship": "run_clean_gate.sh and this receipt; the launcher with its preflight and the watcher stayed in working storage."
+  },
+  "provenance": {
+    "originals": "The captured log and the wrapper are filed beside this receipt as clean_gate_log.txt and run_clean_gate_sh.txt; the launcher, its preflight reading and the watcher's samples and summary stay in working storage.",
+    "filed_log": "The filed clean_gate_log.txt is the captured log byte for byte, 20,124 bytes in 264 lines: the runner's 7 header lines, the 253 stream lines and the 4 trailer lines. The streams printed no detail that identifies the computer (hardware model, memory size, processor counts, host or user names, home paths), so the redaction the wrapper's comment states removed nothing. It carries no trailing whitespace and no carriage return, and the repository's pre-commit hooks skip files other than Markdown under evidence/**/verify/, so no hook rewrites it at filing. The header names the checked source by date; the stream lines are verbatim.",
+    "scope": "Necessary mechanical facts and qualifications are reproduced here; process identifiers and private absolute paths are omitted.",
+    "earlier_runs": "None; this was the only run of the command for this receipt."
+  },
+  "acceptance_boundary": "Any mathematical or source activation requires the separate independent warrant. This receipt confers no tier, status, novelty or community-acceptance claim and does not authorize a push."
+}

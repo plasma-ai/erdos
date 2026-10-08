@@ -1,0 +1,40 @@
+{
+  "authors": [
+    "Joshua Harrington",
+    "Yewen Sun",
+    "Wing Hong Tony Wong"
+  ],
+  "category": "math.NT",
+  "date": "2021-04-01",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 704442,
+    "files": 1,
+    "sha256": "a279f2ab25ed40592b3e1195ad5be6bc71d460c2eab1534feb3eef026fc0181a",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2104.00602v1"
+  },
+  "id": "2104.00602",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 191900,
+    "previous": [],
+    "sha256": "0f43f0abbe664b00b2c2d557edfea2705f7ffca47a3f666c68a97990eaea4e01",
+    "url": "https://arxiv.org/pdf/2104.00602v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2104.00602v1 [math.NT] 1 Apr 2021",
+  "tex": {
+    "archive": {
+      "bytes": 15260,
+      "name": "arXiv-2104.00602v1.gz",
+      "sha256": "5816ecaa31cca98d4ccd01e99c2ea3e2a45b175877f883b0333351f31c5ca917"
+    },
+    "bytes": 82278,
+    "files": 1,
+    "sha256": "72244a73044f05f76b56488c23d1c694738f8eb030cd8db6134c85661be78663",
+    "url": "https://arxiv.org/src/2104.00602v1"
+  },
+  "title": "Covering systems with odd moduli",
+  "version": 1
+}

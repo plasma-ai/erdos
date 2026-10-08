@@ -1,0 +1,133 @@
+---
+name: library/graph_coloring/petkov_2026_full_sequence_chromatic_cochromatic_gap/proposition_9_7
+title: "Proposition 9.7: normalized second-moment seed"
+desc: |
+  Records the source-owned normalized second-moment premise and its
+  Paley--Zygmund bridge to the seed used by Lemmas 10.1--10.2.
+created: 2026-09-11T01:55:42Z
+updated: 2026-09-11T01:55:42Z
+---
+
+***
+
+**Source.** Samuil Petkov, *A Full-Sequence Quantitative Gap Between the
+Chromatic and Cochromatic Numbers of a Random Graph*, arXiv:2608.30604v1,
+submitted 31 August 2026, [retained PDF][pdf].
+The source's Proposition 9.7 is on physical p. 46 and gives (9.27)--(9.28).
+The following seed bridge is in Section 10 on the same page, equations
+(10.1)--(10.2). The source's zero-threshold Paley--Zygmund input (1.4) is on
+physical p. 5. The retained PDF has SHA-256
+<removed: the digest of the held PDF, which Git LFS records>.
+
+**Standing.** This is an author-recorded source-level reconstruction of one
+interface. It is not an independent review and does not claim that Sections
+1--9 have been closed locally. It does not change E625's status, assign a
+verification tier, or accept the source proof. The existing Lemma 10.1 and
+Lemma 10.2 pages are downstream records and are not rewritten here.
+
+## Source-owned moment premise
+
+For the selected signed-profile witness count from the source's earlier
+construction, Petkov writes
+
+$$
+Z=Z_k^{\mathrm{sgn}}.
+$$
+
+The selection of the four-size profile, its first-moment positivity, and the
+finite overlap decomposition are inherited from the source. Proposition 9.7
+defines
+
+$$
+\Lambda_n
+:=\Gamma_n^{\mathrm{skel}}+\Gamma_n^{\mathrm{att}}
+=\left(\varepsilon_n^{\mathrm{skel}}+\varepsilon_n^{\mathrm{att}}\right)
+\frac{n}{(\log n)^4}.
+$$
+
+It states that
+
+$$
+\Lambda_n=o\left(\frac{n}{(\log n)^4}\right)
+$$
+
+and, for all sufficiently large $n$,
+
+$$
+1\leq
+\frac{\mathbb E[Z^2]}{(\mathbb E[Z])^2}
+\leq e^{\Lambda_n}.
+$$
+
+The source's proof obtains the upper bound by inserting the uniform residual
+attachment estimate (9.25) into the exact overlap decomposition (9.3), taking
+that nonnegative factor outside the finite high-skeleton sum, and applying
+(9.22). The lower bound is the source's
+\(\operatorname{Var}(Z)\geq0\) observation. The orders in \(\Lambda_n\)
+come from the source estimates (9.23) and (9.26).
+
+These are source-owned Section 9 premises for this page. The definitions of
+the selected profile, the overlap law, the high skeleton and the residual
+attachment are not silently reproved here; their source boundary is
+Sections 5--9.
+
+## Paley--Zygmund bridge
+
+The source records the following zero-threshold form of Paley--Zygmund as
+(1.4):
+
+$$
+Z\geq0,\quad 0<\mathbb E[Z]<\infty,\quad
+\mathbb E[Z^2]<\infty
+\quad\Longrightarrow\quad
+\mathbb P(Z>0)\geq
+\frac{(\mathbb E[Z])^2}{\mathbb E[Z^2]}.
+$$
+
+Applying this standard input to the selected finite witness count and then
+using Proposition 9.7 gives the source's equation (10.1):
+
+$$
+\mathbb P\left(Z_k^{\mathrm{sgn}}>0\right)
+\geq e^{-\Lambda_n}.
+$$
+
+The Paley--Zygmund inequality is used here as the source-listed external
+probabilistic input. This page does not claim an independent proof of that
+inequality or of the earlier source estimates.
+
+## Seed bridge into Section 10
+
+A positive \(Z_k^{\mathrm{sgn}}\) supplies a signed cocoloring witness. In the
+selected four-size profile, the source's notation has class sizes at least
+two for sufficiently large \(n\), so forgetting the \(I\)- or \(K\)-marks
+leaves a cocoloring without a mark-counting multiplicity. If \(k_{\mathrm{co}}\)
+is the selected deterministic number of classes, the source therefore obtains
+equation (10.2):
+
+$$
+\mathbb P\left(\zeta(G_n)\leq k_{\mathrm{co}}\right)
+\geq
+\mathbb P\left(Z_k^{\mathrm{sgn}}>0\right)
+\geq e^{-\Lambda_n}.
+$$
+
+This is precisely the seed interface consumed by the existing
+[Lemma 10.2 reconstruction](lemma_10_2.md). That page then uses the
+simultaneous leftover event from [Lemma 10.1](lemma_10_1.md) to amplify the
+seed. Neither downstream page is part of this delta, and this bridge does not
+assert the source's full Sections 1--9 argument or its final theorem.
+
+## Boundary
+
+The retained source's moment estimate depends on its earlier phase-uniform
+profile construction and Sections 6--9 overlap estimates. Those dependencies
+remain named source premises, not independently accepted local proofs. The
+seed bridge also does not prove the selected profile's first-moment
+positivity, the root separation, the Section 10 amplification, or the
+Section 11 assembly. No phase-dependent coefficient, full-manuscript result,
+native formalization, or E625 status change follows from this page.
+
+**Bears on.** [[problems/graph_coloring/E0625|E625]].
+
+[pdf]: petkov_2026_full_sequence_chromatic_cochromatic_gap.pdf

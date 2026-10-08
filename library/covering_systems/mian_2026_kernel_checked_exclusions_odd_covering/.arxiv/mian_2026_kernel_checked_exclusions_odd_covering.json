@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Ibrahim Mian",
+    "Shayaan Siddique"
+  ],
+  "category": "cs.LO",
+  "date": "2026-07-28",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 277396,
+    "files": 1,
+    "sha256": "647826410b13f37962a4fc7b61f39c45fe05e1b9fadff1289defa712ffbb2fa5",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2607.25628v1"
+  },
+  "id": "2607.25628",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 363735,
+    "previous": [],
+    "sha256": "8c1273d20e56449ed7a0d8276893eacf2db1c2ee65f24eb5f456e223474db24f",
+    "url": "https://arxiv.org/pdf/2607.25628v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2607.25628v1 [cs.LO] 28 Jul 2026",
+  "tex": {
+    "archive": {
+      "bytes": 13621,
+      "name": "arXiv-2607.25628v1.tar.gz",
+      "sha256": "ed6bc4c35a4071ef729325841b736c59e718cc96efa36763dc93668cfd703a00"
+    },
+    "bytes": 37969,
+    "files": 2,
+    "sha256": "e8116bb3a34b8d2af90e86aacf2c5e71c8ee6a7fb26328c2854a98c3b66044d7",
+    "url": "https://arxiv.org/src/2607.25628v1"
+  },
+  "title": "Kernel-Checked Exclusions for the Erd\\H{o}s-Selfridge Odd Covering Problem: Any Odd Covering of $\\mathbb{Z}$ Has lcm Exceeding 10000",
+  "version": 1
+}

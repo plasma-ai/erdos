@@ -1,0 +1,40 @@
+{
+  "authors": [
+    "Boris Alexeev",
+    "Dustin G. Mixon",
+    "Will Sawin"
+  ],
+  "category": "math.CO",
+  "date": "2025-07-03",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 483552,
+    "files": 1,
+    "sha256": "2b023265d5d9a08aa0a377790c86c17c83ce813ad47be0629b6ca3803f0c36b5",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2507.01928v2"
+  },
+  "id": "2507.01928",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 461710,
+    "previous": [],
+    "sha256": "716d384166b01c31b2d93f5f7037d669efed553ffdb4d5a275fe0225babefca2",
+    "url": "https://arxiv.org/pdf/2507.01928v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2507.01928v2 [math.CO] 3 Jul 2025",
+  "tex": {
+    "archive": {
+      "bytes": 18194,
+      "name": "arXiv-2507.01928v2.tar.gz",
+      "sha256": "e450d05f231f8d483959f9a6d1d817e8b7cddca5e6ece7f5587f8537408e3e5b"
+    },
+    "bytes": 61980,
+    "files": 3,
+    "sha256": "c16b781a382b127eba987a2e0c281904310b80686769b8bc7d51e2d40e18dc79",
+    "url": "https://arxiv.org/src/2507.01928v2"
+  },
+  "title": "The independence and clique cover numbers of the squarefree graph",
+  "version": 2
+}

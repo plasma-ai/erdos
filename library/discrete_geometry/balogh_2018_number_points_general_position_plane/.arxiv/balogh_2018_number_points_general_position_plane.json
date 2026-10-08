@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Jozsef Balogh",
+    "Jozsef Solymosi"
+  ],
+  "category": "math.CO",
+  "date": "2018-10-11",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 428283,
+    "files": 1,
+    "sha256": "0104859044fd3c8c8e6ff7037615364b8473f8c996fca949361dba854e84d6ed",
+    "skipped": [],
+    "url": "https://arxiv.org/html/1704.05089v2"
+  },
+  "id": "1704.05089",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 335564,
+    "previous": [],
+    "sha256": "471898d1d0064a39d6993dd2f6044621e72f4b383866bf7e317c4a8787dc0334",
+    "url": "https://arxiv.org/pdf/1704.05089v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:1704.05089v2 [math.CO] 11 Oct 2018",
+  "tex": {
+    "archive": {
+      "bytes": 33352,
+      "name": "arXiv-1704.05089v2.tar.gz",
+      "sha256": "a8aaa9bd47c30e0628a74472905a22e377c729b4462e0670acf7890fdc2c561d"
+    },
+    "bytes": 105287,
+    "files": 3,
+    "sha256": "5553115a9bfccdafbf09f3a12277aa1cd7a89ad1b0ea65357cc49717e450ecc9",
+    "url": "https://arxiv.org/src/1704.05089v2"
+  },
+  "title": "On the number of points in general position in the plane",
+  "version": 2
+}

@@ -1,0 +1,265 @@
+{
+  "title": "Block sizes in the block sets conjecture",
+  "authors": [
+    "Maria-Romina Ivan",
+    "Imre Leader",
+    "Mark Walters"
+  ],
+  "selected_version": "Published journal article",
+  "publication": {
+    "journal": "Forum of Mathematics, Sigma",
+    "volume": 14,
+    "year": 2026,
+    "article": "e67",
+    "pages": "1–9",
+    "doi": "10.1017/fms.2026.10212",
+    "doi_url": "https://doi.org/10.1017/fms.2026.10212",
+    "received": "2024-06-04",
+    "accepted": "2026-02-21",
+    "published_online": "2026-04-27",
+    "date_evidence": "Received/accepted on published page 1; online publication in publisher-deposited Crossref metadata."
+  },
+  "sources": [
+    {
+      "version": "Published 2026",
+      "file": "ivan_2026_block_sizes_block_sets_conjecture.pdf",
+      "physical_pages": 9,
+      "printed_pages": "1–9",
+      "url": "https://api.repository.cam.ac.uk/server/api/core/bitstreams/eb28979b-ea9f-48c6-b794-e5f8a72bafa0/content",
+      "accessed_utc": "2026-09-05T13:57:04.466345Z",
+      "bytes": 225025,
+      "license": "CC BY 4.0, as printed on page 1"
+    },
+    {
+      "version": "arXiv:2406.01459v1",
+      "file": "ivan_2026_block_sizes_block_sets_conjecture_arxiv_v1.pdf",
+      "physical_pages": 10,
+      "printed_pages": "1–10",
+      "submitted_utc": "2024-06-03T15:48:59Z",
+      "url": "https://arxiv.org/pdf/2406.01459v1",
+      "record_url": "https://arxiv.org/abs/2406.01459",
+      "accessed_utc": "2026-09-05T13:57:05.537215Z",
+      "bytes": 152451,
+      "version_scope": "The preserved arXiv submission history lists v1 only; the journal reference is a later metadata update."
+    }
+  ],
+  "page_map": [
+    {
+      "scope": "Introduction, definitions, Conjecture 1 and binary-template input",
+      "published": [
+        1,
+        2,
+        3
+      ],
+      "arxiv_v1": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "scope": "Theorem 2 and proof",
+      "published": [
+        3,
+        4
+      ],
+      "arxiv_v1": [
+        3,
+        4
+      ]
+    },
+    {
+      "scope": "Generalized obstruction, substitution and geometric scaling remark",
+      "published": [
+        4,
+        5
+      ],
+      "arxiv_v1": [
+        4,
+        5
+      ]
+    },
+    {
+      "scope": "Theorem 3 and proof",
+      "published": [
+        5,
+        6
+      ],
+      "arxiv_v1": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "scope": "Two-singleton extension and vector discussion",
+      "published": [
+        6,
+        7
+      ],
+      "arxiv_v1": [
+        7
+      ]
+    },
+    {
+      "scope": "Hexagon product-scale assertion",
+      "published": [
+        7
+      ],
+      "arxiv_v1": [
+        7
+      ]
+    },
+    {
+      "scope": "Conjecture 4 and fixed pattern",
+      "published": [
+        7
+      ],
+      "arxiv_v1": [
+        8
+      ]
+    },
+    {
+      "scope": "Norm observations and Question 5",
+      "published": [
+        8
+      ],
+      "arxiv_v1": [
+        8,
+        9
+      ]
+    },
+    {
+      "scope": "Question 6, cyclic-kite question and bibliography",
+      "published": [
+        9
+      ],
+      "arxiv_v1": [
+        9,
+        10
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "BS01",
+      "kind": "Domain clarification",
+      "source": "Definitions and positive degree convention, published p. 2",
+      "content": "Templates and blocks are explicitly nonempty. The degree is common block size, whereas LRW2012 uses total active size. Empty blocks would invalidate the lower bound.",
+      "page": "definitions.md"
+    },
+    {
+      "id": "BS02",
+      "kind": "Quantifier correction",
+      "source": "Introduction, published p. 3 and arXiv v1 p. 3",
+      "content": "The informal every-coloring phrase is false literally; Theorem 2 constructs one obstructing coloring of all finite words.",
+      "page": "theorem_2.md"
+    },
+    {
+      "id": "BS03",
+      "kind": "Proof correction with complete argument",
+      "source": "Both versions, Theorem 2 pp. 3–4",
+      "content": "Two printed d−1 bounds are replaced by d. Whole-block contribution equality and distinct nonzero support are proved, including interlacing and d=1.",
+      "page": "theorem_2.md"
+    },
+    {
+      "id": "BS04",
+      "kind": "False overgeneralization; sufficient repaired theorem proved",
+      "source": "Published p. 4; arXiv v1 pp. 4–5",
+      "content": "The source condition q≥p²d also needs p≥d for this obstruction. The unrestricted statement is contradicted by p=1,d=2,q=4 and the proved degree-two 12 3^q theorem.",
+      "page": "generalized_obstruction.md"
+    },
+    {
+      "id": "BS05",
+      "kind": "Invalid example",
+      "source": "Published p. 5; arXiv v1 p. 5",
+      "content": "Both versions define χ as the words of length 2k+2 with k+1 1's and k+1 2's, yet both list 1221211 for k=2, although it has seven letters; 122121 is a valid six-letter example.",
+      "page": "theorem_3.md"
+    },
+    {
+      "id": "BS06",
+      "kind": "Compressed same-paper proof expanded",
+      "source": "Published p. 6 and reminder p. 7; arXiv v1 p. 7",
+      "content": "The 12 3^q extension is proved using a homogeneous set of size 2k+2+2q and all palindromic substitutions.",
+      "page": "two_singleton_symbols.md"
+    },
+    {
+      "id": "BS07",
+      "kind": "Missing geometric extraction supplied as a separate compilation lemma",
+      "source": "Published pp. 4–5; arXiv v1 p. 5",
+      "content": "The repeated-letter rigidity lemma is proved relative to the exact m=3 LRW lemma; scale squared equals block size. The Ramsey assertion uses the proved one-exceptional-letter family, not a transitive-set conjecture.",
+      "pages": [
+        "three_letter_rigidity.md",
+        "geometric_scale_obstruction.md"
+      ]
+    },
+    {
+      "id": "BS08",
+      "kind": "Published and preprint assertion refuted by complete counterexample",
+      "source": "Both versions p. 7",
+      "content": "For the regular unit hexagon X and every n≥1, the six row-value counts modulo 3 color 2^(−1/2)X^n without a monochromatic X. Finite affine extension, three-direction quadratic rigidity and the exactly-two-row histogram contradiction are proved. Thus the fixed √2 product claim, both regular and general, is false; Theorems 2 and 3 are unaffected.",
+      "page": "geometric_power_scope.md"
+    },
+    {
+      "id": "BS09",
+      "kind": "Actual change between retained versions",
+      "source": "Both versions p. 7",
+      "content": "The stated interior angle changes from 60 degrees in v1 to 120 degrees in the publication. This fixes the angle description, not the product assertion.",
+      "page": "geometric_power_scope.md"
+    },
+    {
+      "id": "BS10",
+      "kind": "Signed-support correction",
+      "source": "Published p. 8; arXiv v1 p. 9",
+      "content": "λ_i entries of each of +i and −i with sum iλ_i=d have support 2 sum λ_i and one-norm 2d, not in general support 2d.",
+      "page": "norm_observations.md"
+    },
+    {
+      "id": "BS11",
+      "kind": "Bibliographic corrections",
+      "source": "Published p. 9; arXiv v1 p. 10",
+      "content": "Frankl–Rödl1990 is JAMS3,1–7, not136,119–127. LRW cyclic quadrilaterals is J.Comb.2(2011),457–462, not the printed2017,459–462.",
+      "page": "external_inputs.md"
+    },
+    {
+      "id": "BS12",
+      "kind": "Question-domain clarification",
+      "source": "Published pp. 8–9; arXiv v1 pp. 9–10",
+      "content": "Questions5–6 require positive integer lengths and disjoint supports; the coefficient radius r corresponds to ambient one-norm radius rd. The cited real cyclic kite has transcendental a in (−1,1). These remain dated source questions.",
+      "page": "open_questions.md"
+    }
+  ],
+  "proof_scope": {
+    "main_theorems": [
+      "theorem_2.md",
+      "theorem_3.md"
+    ],
+    "complete_proof_components": 13,
+    "proof_bearing_pages": 9,
+    "classification": {
+      "source_associated_deductions": 11,
+      "compilation_multiplicity_extension": 1,
+      "compilation_counterexample_to_source_claim": 1
+    },
+    "external_inputs": [
+      "finite Ramsey theorem",
+      "Hales–Jewett theorem",
+      "LRW2012 Lemma2.3 for three algebraically independent letters",
+      "LRW2012 Theorem3.1 and the three-value-orbit consequence",
+      "Erdős et al.1973 Theorem12, unit-spaced three-point obstruction"
+    ],
+    "linked_not_recounted": [
+      "LRW binary-template proof",
+      "LRW template substitution",
+      "LRW2011 cyclic-kite nonembedding"
+    ],
+    "limits": [
+      "No proof of the full block sets conjecture or Conjecture4 for every template.",
+      "No independent current-status claim for the source questions.",
+      "No certification of the false unrestricted generalized obstruction or the false fixed-factor hexagon product claim.",
+      "No author-issued erratum or proof-assistant verification is asserted."
+    ]
+  },
+  "reading_scope": "All nine published pages and all ten arXiv v1 pages inspected visually, with native text used only as a reading aid. Both PDFs retained unchanged.",
+  "provenance_scope": "Publication acceptance is recorded from the primary article; compilation expansions and counterexamples are distinct from publisher or author corrections."
+}

@@ -1,0 +1,41 @@
+{
+  "authors": [
+    "Hong Liu",
+    "Christian Reiher",
+    "Maryam Sharifzadeh",
+    "Katherine Staden"
+  ],
+  "category": "math.CO",
+  "date": "2025-08-18",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 1064447,
+    "files": 1,
+    "sha256": "fb6d5f8bf3674f40f8424897cf2f3864d697a2de0f26679f1dac27c113bceda0",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2103.10423v2"
+  },
+  "id": "2103.10423",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 629915,
+    "previous": [],
+    "sha256": "a2bc9d7edd0a35e40b5266be2aefa27d27c62d81d92b89a1af49b3f82a0596a2",
+    "url": "https://arxiv.org/pdf/2103.10423v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2103.10423v2 [math.CO] 18 Aug 2025",
+  "tex": {
+    "archive": {
+      "bytes": 40677,
+      "name": "arXiv-2103.10423v2.tar.gz",
+      "sha256": "2f8d8dba24e7d39143a775e61351ca8cb6f3b8690e4ba072193a5d028965e519"
+    },
+    "bytes": 135433,
+    "files": 2,
+    "sha256": "4222ad9a0fb269da96acabcdacc11717110072dcc50a8d8400b014e9de0dcd27",
+    "url": "https://arxiv.org/src/2103.10423v2"
+  },
+  "title": "Geometric constructions for Ramsey-Tur\\'an theory",
+  "version": 2
+}

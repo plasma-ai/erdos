@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Christian Hercher"
+  ],
+  "category": "math.NT",
+  "date": "2024-11-04",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 247252,
+    "files": 1,
+    "sha256": "595e8bd7817725c1254b724e1fbed97a389c01255f2565099bef813a59a9d9f4",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2411.01964v1"
+  },
+  "id": "2411.01964",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 148317,
+    "previous": [],
+    "sha256": "02232572ca364ab0ab1dc34dab1434c3352bb85573a242b160a2fe1f961594a9",
+    "url": "https://arxiv.org/pdf/2411.01964v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2411.01964v1 [math.NT] 4 Nov 2024",
+  "tex": {
+    "archive": {
+      "bytes": 10144,
+      "name": "arXiv-2411.01964v1.gz",
+      "sha256": "3dc43d610ab00b1eb7e666170ca9eee6791e3ab6cc7bfc8e1710fd33b0836159"
+    },
+    "bytes": 30308,
+    "files": 1,
+    "sha256": "d4b2b7179ef0fae818967409ce0a79316fc2e0a74ea815424447f425ce611228",
+    "url": "https://arxiv.org/src/2411.01964v1"
+  },
+  "title": "On the Sum of Squarefree Integers and a Power of Two",
+  "version": 1
+}

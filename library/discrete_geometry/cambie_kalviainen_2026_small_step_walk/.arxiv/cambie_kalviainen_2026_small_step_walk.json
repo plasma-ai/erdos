@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Stijn Cambie",
+    "Erik Kalviainen"
+  ],
+  "category": "math.CO",
+  "date": "2026-09-01",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 64206,
+    "files": 1,
+    "sha256": "8215e6a5af59bf7e6b2cb474a1947a54752394fd104caa4dc58882065b9aa345",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2609.01766v1"
+  },
+  "id": "2609.01766",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 423643,
+    "previous": [],
+    "sha256": "4faba7fa5bf009a3d44d96677f3f7e1afbfc176dcc143f6cb0ad0ec35b231adc",
+    "url": "https://arxiv.org/pdf/2609.01766v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2609.01766v1 [math.CO] 1 Sep 2026",
+  "tex": {
+    "archive": {
+      "bytes": 3227,
+      "name": "arXiv-2609.01766v1.tar.gz",
+      "sha256": "4c55e28ac86cc779c4f3db52ab8484551cc2a6ca74749f6b9d3358e9090da790"
+    },
+    "bytes": 6377,
+    "files": 2,
+    "sha256": "6f3cc4d91196728df904a1b32343acdaa54d476001c73d6d28f3dabf8d62670f",
+    "url": "https://arxiv.org/src/2609.01766v1"
+  },
+  "title": "An infinite small-step $\\mathbb Z^3$-walk with no collinear triple",
+  "version": 1
+}

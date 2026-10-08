@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Gabriele Fici",
+    "Svetlana Puzynina"
+  ],
+  "category": "cs.DM",
+  "date": "2022-12-29",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 938446,
+    "files": 1,
+    "sha256": "86663a833ace8f21c2e7b557d21b1a71e218b95992f3c5ef844156a7e6786ceb",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2207.09937v2"
+  },
+  "id": "2207.09937",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 548237,
+    "previous": [],
+    "sha256": "47a116571cdc69bd3952c290400f2b92332befe79e93d8f9996d5e84c5d638c5",
+    "url": "https://arxiv.org/pdf/2207.09937v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2207.09937v2 [cs.DM] 29 Dec 2022",
+  "tex": {
+    "archive": {
+      "bytes": 56656,
+      "name": "arXiv-2207.09937v2.gz",
+      "sha256": "225c294d804ed19f66d47ea718790c9cd06753039ad38cce20d8cebcc921611d"
+    },
+    "bytes": 189826,
+    "files": 1,
+    "sha256": "8508d988e1383df817740a69f730ce8d6ce7dd0d7eb81d947fc3a38f6bca2049",
+    "url": "https://arxiv.org/src/2207.09937v2"
+  },
+  "title": "Abelian Combinatorics on Words: a Survey",
+  "version": 2
+}

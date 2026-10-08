@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Natalie Behague"
+  ],
+  "category": "math.CO",
+  "date": "2025-10-20",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 312758,
+    "files": 3,
+    "sha256": "6e87da144d55195e17ea8533c13d27f086c9bafcba0e0a833bcd535e4c6cd30c",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2510.15677v2"
+  },
+  "id": "2510.15677",
+  "license": "http://creativecommons.org/licenses/by-sa/4.0/",
+  "pdf": {
+    "bytes": 307546,
+    "previous": [],
+    "sha256": "d50a018fe875121f5fb0e6cb8b3c64d015145dd0f01f4a4d9faf9b923c78f231",
+    "url": "https://arxiv.org/pdf/2510.15677v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2510.15677v2 [math.CO] 20 Oct 2025",
+  "tex": {
+    "archive": {
+      "bytes": 22085,
+      "name": "arXiv-2510.15677v2.tar.gz",
+      "sha256": "18209d62c5d78a54a00b81592679ed830548c2b1a95f401fb60ab9216b61879c"
+    },
+    "bytes": 58064,
+    "files": 5,
+    "sha256": "606a2b7fb237f8dcce5111eb726c40007b891e146f70b1c3deab1e29016f4733",
+    "url": "https://arxiv.org/src/2510.15677v2"
+  },
+  "title": "Nearly all known Euclidean Ramsey sets are subsoluble",
+  "version": 2
+}

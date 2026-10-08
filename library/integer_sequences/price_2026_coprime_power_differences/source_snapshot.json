@@ -1,0 +1,24 @@
+{
+  "title": "Coprime Power Differences",
+  "source_author_line": "GPT 5.6 Sol Pro",
+  "public_claim_contributor": "Liam Price",
+  "public_manuscript_url": "https://www.overleaf.com/read/kvjrzdkwkgkx#010e4a",
+  "download_url": "https://www.overleaf.com/project/6a58ee05f5558460bd633dfe/download/zip",
+  "accessed": "2026-09-05",
+  "original_filename": "main.tex",
+  "retained_pdf": {
+    "pdf_bytes": 264721,
+    "date_utc": "2026-09-05T08:17:33.428434+00:00",
+    "pdf_origin": "Locally typeset from unchanged public Overleaf main.tex; not a publisher PDF or public build verification",
+    "command": [
+      "pdflatex",
+      "-no-shell-escape",
+      "-interaction=nonstopmode",
+      "-halt-on-error",
+      "main.tex"
+    ],
+    "passes": 2,
+    "pages": 4
+  },
+  "scope": "Origin of the acquired manuscript and its local typesetting; the manuscript's text is not held."
+}

@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Anders Martinsson",
+    "Raphael Steiner"
+  ],
+  "category": "math.CO",
+  "date": "2023-10-19",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 182095,
+    "files": 1,
+    "sha256": "a052e7db89f3bce5e43801d2bfe1f9671e6843825d823c16965eb7a56ec12ea7",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2310.12891v1"
+  },
+  "id": "2310.12891",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 143440,
+    "previous": [],
+    "sha256": "dfad595d026242f6e25e792772b36ab8d9bbf779d94425e0379ade77582ce3b8",
+    "url": "https://arxiv.org/pdf/2310.12891v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2310.12891v1 [math.CO] 19 Oct 2023",
+  "tex": {
+    "archive": {
+      "bytes": 8377,
+      "name": "arXiv-2310.12891v1.gz",
+      "sha256": "462748626ea694bb9af00ca4375d12e0e1466a0abfe1c24895024edb835c83b6"
+    },
+    "bytes": 23567,
+    "files": 1,
+    "sha256": "a51e91fe92b86d465b4f7a7837eb44cc8bb9d914230322add232aaae08f1b278",
+    "url": "https://arxiv.org/src/2310.12891v1"
+  },
+  "title": "Vertex-critical graphs far from edge-criticality",
+  "version": 1
+}

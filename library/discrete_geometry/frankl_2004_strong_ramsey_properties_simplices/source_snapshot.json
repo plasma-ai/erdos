@@ -1,0 +1,29 @@
+{
+  "title": "Strong Ramsey properties of simplices",
+  "authors": [
+    "Peter Frankl",
+    "Vojtěch Rödl"
+  ],
+  "canonical_version": "Published scan, Israel Journal of Mathematics 139 (2004), 215–236",
+  "doi": "10.1007/BF02787550",
+  "publisher_url": "https://link.springer.com/article/10.1007/BF02787550",
+  "author_pdf_url": "https://www.renyi.hu/~pfrankl/2004-1.pdf",
+  "issue_date": "2004-12",
+  "received": "2001-05-27",
+  "revised": "2003-01-16",
+  "source_pdf": {
+    "file": "frankl_2004_strong_ramsey_properties_simplices.pdf",
+    "bytes": 820278,
+    "physical_pages": 22,
+    "printed_pages": [
+      215,
+      236
+    ]
+  },
+  "metadata_accessed": "2026-09-05",
+  "version_qualification": "The PDF scan-generation metadata dates to 2007; the mathematical publication is December 2004. No equivalence to a distinct technical-report version is asserted.",
+  "proof_scope": "Complete rewritten same-paper main and auxiliary arguments at the explicitly stated external partition, spread-vector approximation, and spherical two-point inputs. The negative-type input links its already compiled elementary Gram proof.",
+  "source_precision": "The squared-distance parameter beta gives a squared box-radius budget proportional to beta. Lemma 3.13 and the main beta choice are repaired accordingly; the proof pages explain all repairs and endpoint conventions. No author-issued erratum is claimed.",
+  "formalization": "No local formal build or kernel verification is asserted.",
+  "status_scope": "This source compilation makes no new problem-status or current-literature claim."
+}

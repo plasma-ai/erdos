@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "David Conlon",
+    "Jakob F\\\"uhrer"
+  ],
+  "category": "math.CO",
+  "date": "2024-06-11",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 101827,
+    "files": 1,
+    "sha256": "639ba2c8c271f1cafae26711861e0c31d044ff33233c7029559692b69deda42f",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2406.07718v1"
+  },
+  "id": "2406.07718",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 109689,
+    "previous": [],
+    "sha256": "7656ba4315b7f778f98895a4719c08b6918de1d326b49ef1999258a25524f9f0",
+    "url": "https://arxiv.org/pdf/2406.07718v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2406.07718v1 [math.CO] 11 Jun 2024",
+  "tex": {
+    "archive": {
+      "bytes": 19465,
+      "name": "arXiv-2406.07718v1.tar.gz",
+      "sha256": "7564a2d18afe6a1af770ff1dcd226c2424b21d1b481df1fa2882ae7e28429a96"
+    },
+    "bytes": 69725,
+    "files": 3,
+    "sha256": "0d8f6a5fdc1610af340c26ff7a4efa9ddb426ef2ef80cf5f35fe2d894198e653",
+    "url": "https://arxiv.org/src/2406.07718v1"
+  },
+  "title": "Non-spherical sets versus lines in Euclidean Ramsey theory",
+  "version": 1
+}

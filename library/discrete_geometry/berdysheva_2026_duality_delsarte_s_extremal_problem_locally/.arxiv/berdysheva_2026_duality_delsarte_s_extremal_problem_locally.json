@@ -1,0 +1,42 @@
+{
+  "authors": [
+    "Elena E. Berdysheva",
+    "B\\'alint Farkas",
+    "Marcell Ga\\'al",
+    "Mita D. Ramabulana",
+    "Szil\\'ard Gy. R\\'ev\\'esz"
+  ],
+  "category": "math.FA",
+  "date": "2026-05-28",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 566704,
+    "files": 1,
+    "sha256": "e04dfcddbae16249cae4fdd973238c554c85978565c3781cd1dfaaa6ec5b254c",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2603.18287v4"
+  },
+  "id": "2603.18287",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 466629,
+    "previous": [],
+    "sha256": "dcc161367c1772399999812ab5272c38af6fa9922c9e83cf5c292575ed06f5be",
+    "url": "https://arxiv.org/pdf/2603.18287v4"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2603.18287v4 [math.FA] 28 May 2026",
+  "tex": {
+    "archive": {
+      "bytes": 32325,
+      "name": "arXiv-2603.18287v4.tar.gz",
+      "sha256": "89d1ac4cfb20765725f79e58f6eb4753aa3780d31c51516b3dcdd2dd481808bb"
+    },
+    "bytes": 96026,
+    "files": 2,
+    "sha256": "17494c677bd4cb668f223ca581e9f0a84e8c1b1d645a28ee3a34e7d5baed08ef",
+    "url": "https://arxiv.org/src/2603.18287v4"
+  },
+  "title": "Duality for Delsarte's extremal problem on locally compact Abelian groups",
+  "version": 4
+}

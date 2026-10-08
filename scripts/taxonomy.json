@@ -1,0 +1,728 @@
+{
+  "folders": [
+    {
+      "name": "number_theory",
+      "title": "Other Number Theory",
+      "description": "The general number theory problems fitting none of the three themed folders, including questions about real numbers, reciprocal sums as points, irrational rotations and floor sequences, quadratic residues and character sums, and other one-off constructions."
+    },
+    {
+      "name": "extremal_graph_theory",
+      "title": "Extremal and Structural Graph Theory",
+      "description": "Turan-type extremal problems for graphs and hypergraphs, forbidden subgraphs and edge counts, cycles and girth, degree and subgraph-counting conditions, planarity, and structural questions such as the Erdos-Hajnal conjecture."
+    },
+    {
+      "name": "ramsey_theory",
+      "title": "Ramsey Theory",
+      "description": "Ramsey numbers for graphs and hypergraphs, off-diagonal and induced variants, and monochromatic structures forced by colorings of the integers of Schur and Rado type; Euclidean Ramsey problems and colorings of the plane are filed with discrete geometry."
+    },
+    {
+      "name": "additive_combinatorics",
+      "title": "Sumsets and Arithmetic Progressions",
+      "description": "Sumsets and difference sets, densities and sum-free sets, arithmetic progressions in dense sets of integers together with the coloring problems that force them (van der Waerden numbers), difference bases and perfect rulers, and sets with distinct subset sums."
+    },
+    {
+      "name": "additive_bases",
+      "title": "Additive Bases and Sidon Sets",
+      "description": "Representation functions of sets of integers: additive bases and the Erdos-Turan basis conjecture, Sidon and B_h sets in which sums or differences are almost distinct, and complete sequences whose subset sums represent every large integer."
+    },
+    {
+      "name": "discrete_geometry",
+      "title": "Discrete and Convex Geometry",
+      "description": "Point configurations, lines and incidences, convex position and convex bodies, coverings, packings and geometric measure problems, together with Euclidean Ramsey theory and the colorings of the plane and of R^n descended from the Hadwiger-Nelson problem."
+    },
+    {
+      "name": "distance_problems",
+      "title": "Distance Problems",
+      "description": "Distinct, repeated and unit distances among finite point sets, diameters and nearest-neighbor conditions, and distance problems for points in convex position."
+    },
+    {
+      "name": "analysis",
+      "title": "Analysis",
+      "description": "Entire and complex functions, real functions and measure, exponential sums and series, and the few purely probabilistic and topological problems that carry no subject co-tag."
+    },
+    {
+      "name": "graph_coloring",
+      "title": "Graph Coloring",
+      "description": "Chromatic number of graphs and hypergraphs, list and edge colorings, color-critical graphs, and the interaction of coloring with girth and cycles; colorings of the plane and of R^n are filed with discrete geometry."
+    },
+    {
+      "name": "unit_fractions",
+      "title": "Unit Fractions",
+      "description": "Egyptian fractions and reciprocal sums, including the Erdos-Straus conjecture and the Erdos-Graham problems on representing rationals as sums of unit fractions."
+    },
+    {
+      "name": "primes",
+      "title": "Primes",
+      "description": "Distribution of the primes, prime gaps, and prime values and patterns in arithmetic sequences."
+    },
+    {
+      "name": "set_systems",
+      "title": "Set Systems, Designs and Hypergraphs",
+      "description": "Finite set systems and hypergraphs: sunflowers and delta-systems, intersecting and union-free families, antichains, property B, block designs, Latin squares and finite projective planes, together with the general combinatorics problems the site tags no more finely."
+    },
+    {
+      "name": "divisors",
+      "title": "Divisors and Multiples",
+      "description": "Divisor functions and the distribution of divisors, multiplication tables, sets of multiples, primitive sets in which no element divides another, and other sets of integers defined by divisibility or coprimality conditions."
+    },
+    {
+      "name": "factorials_binomials",
+      "title": "Factorials and Binomial Coefficients",
+      "description": "Divisibility, prime factorization and digit arithmetic of factorials, binomial coefficients, and products of consecutive integers."
+    },
+    {
+      "name": "set_theory",
+      "title": "Set Theory and Infinite Combinatorics",
+      "description": "Infinite graphs and hypergraphs, partition calculus and infinite Ramsey theory, cardinal arithmetic, and problems whose answers are independent of the usual axioms of set theory."
+    },
+    {
+      "name": "irrationality",
+      "title": "Irrationality and Diophantine Approximation",
+      "description": "Irrationality and transcendence of series and constants, irrationality sequences, and how well real numbers can be approximated by rationals."
+    },
+    {
+      "name": "covering_systems",
+      "title": "Covering Systems",
+      "description": "Systems of congruences covering the integers, exact and disjoint coverings, the minimum modulus problem, and the analogous exact coverings of a group by cosets."
+    },
+    {
+      "name": "polynomials",
+      "title": "Polynomials",
+      "description": "Extremal and approximation problems for polynomials, including coefficient and norm bounds, zero distribution, and random polynomials."
+    },
+    {
+      "name": "discrepancy",
+      "title": "Discrepancy",
+      "description": "The Erdos discrepancy problem and its relatives: how unbalanced a plus/minus one coloring must become along arithmetic progressions, dilates and set systems, and irregularities of distribution of sequences and of graph colorings."
+    },
+    {
+      "name": "group_theory",
+      "title": "Group Theory",
+      "description": "Combinatorial problems about groups, including non-commuting graphs of groups; exact coverings of a group by cosets are filed with covering systems."
+    },
+    {
+      "name": "arithmetic_functions",
+      "title": "Arithmetic Functions",
+      "description": "Problems on the values, distribution and iterates of named arithmetic functions — Euler's totient, the sum and number of divisors, counts of prime factors, the largest prime factor — along with general additive and multiplicative functions and perfect, amicable and aliquot-type questions."
+    },
+    {
+      "name": "diophantine_problems",
+      "title": "Diophantine Problems and Powers",
+      "description": "Problems asking whether an equation has integer solutions or whether integers of a given algebraic shape exist — squares and perfect powers, powerful and squarefree numbers, sums of k-th powers, products of consecutive integers, and base and digit representations."
+    },
+    {
+      "name": "integer_sequences",
+      "title": "Sequences and Densities of Integers",
+      "description": "Problems on sets and sequences of integers defined by divisibility, coprimality, gcd or lcm, or residue conditions, or by avoiding a pattern, asking for their density, counting function, gaps or growth, including covering-congruence and sieve questions."
+    }
+  ],
+  "rules": [
+    {
+      "tags": [
+        "set theory"
+      ],
+      "folder": "set_theory",
+      "note": "First, ahead of every graph, Ramsey, coloring, geometry, combinatorics and probability rule, so all 38 infinite-combinatorics problems sit together: [ramsey theory + set theory] (15), [graph theory + set theory] (5), [combinatorics + set theory] (4), the chromatic-number pairs, and #1119 (a family of entire functions of cardinality between aleph_0 and the continuum, status independent)."
+    },
+    {
+      "tags": [
+        "discrepancy"
+      ],
+      "folder": "discrepancy",
+      "note": "Early, so all 16 discrepancy problems stay together whatever their analysis, arithmetic-progression, graph or Ramsey co-tags: #67 the Erdos discrepancy problem, #178 its infinite set-system version, #997 well-distributed sequences mod 1, #1028 the imbalance of an edge coloring."
+    },
+    {
+      "tags": [
+        "unit fractions"
+      ],
+      "folder": "unit_fractions",
+      "note": "Before [ramsey theory], so the 2 monochromatic-reciprocal-sum problems stay with the Egyptian-fraction work."
+    },
+    {
+      "tags": [
+        "covering systems"
+      ],
+      "folder": "covering_systems",
+      "note": "Before [group theory], [primes] and [number theory], so all 22 covering-system problems land together, including #274, the exact covering of a group by cosets (AMS 20), which the folder description now claims."
+    },
+    {
+      "tags": [
+        "group theory"
+      ],
+      "folder": "group_theory",
+      "note": "Moved early (after covering systems) to give the stable invariant 'every group-theory-tagged problem except #274 is here'. Left late, the folder's 7 members would depend on the site never adding [graph theory] to the non-commuting-graph problems (#1098 defines a SimpleGraph, AMS 5+20). Accepted cost: a future [group theory + additive combinatorics] problem lands here rather than with sumsets."
+    },
+    {
+      "tags": [
+        "irrationality"
+      ],
+      "folder": "irrationality",
+      "note": "Irrationality of series and constants (22 problems), including #257-#267, the irrationality-sequence cluster."
+    },
+    {
+      "tags": [
+        "diophantine approximation"
+      ],
+      "folder": "irrationality",
+      "note": "Before [analysis] and [number theory]: approximating reals by rationals is the same body of work as the irrationality problems (7)."
+    },
+    {
+      "tags": [
+        "sidon sets"
+      ],
+      "folder": "additive_bases",
+      "note": "Before [additive combinatorics], [distances], [primes], [squares] and [number theory], so all 31 Sidon and B_h problems stay together, including #757, whose geometric phrasing ('every four-element subset determines at least five differences') hides a Sidon-subset question."
+    },
+    {
+      "tags": [
+        "additive basis"
+      ],
+      "folder": "additive_bases",
+      "note": "Before [primes] and [number theory], so basis problems about the primes (4) stay with the bases."
+    },
+    {
+      "tags": [
+        "complete sequences"
+      ],
+      "folder": "additive_bases",
+      "note": "Subset-sum completeness is a representation-function problem of the same kind as a basis (8)."
+    },
+    {
+      "tags": [
+        "irrational"
+      ],
+      "folder": "irrationality",
+      "note": "Near-duplicate of the 'irrationality' tag, mapped to the same folder, but deliberately fired AFTER [additive basis]: the corpus's only [additive basis + irrational] problem is #1147 ('alpha irrational; is {n : ||alpha n^2|| < 1/log n} an additive basis of order 2?'), where the irrationality is a hypothesis and the question is a basis question, so it belongs in Additive Bases. The rule therefore never fires on the current corpus and exists to keep the alias covered."
+    },
+    {
+      "tags": [
+        "distances"
+      ],
+      "folder": "distance_problems",
+      "note": "Before [convex] and [geometry], so the 8 [convex + distances + geometry] problems stay with the distinct-distance work; after [sidon sets], so #757 is not split off from the Sidon literature."
+    },
+    {
+      "tags": [
+        "convex"
+      ],
+      "folder": "discrete_geometry",
+      "note": "The 4 convexity problems left after the distances rule are ordinary discrete geometry; the tag never occurs without geometry or distances."
+    },
+    {
+      "tags": [
+        "geometry"
+      ],
+      "folder": "discrete_geometry",
+      "note": "Applies before [ramsey theory] and [chromatic number]: it keeps #508 (Hadwiger-Nelson, [geometry + ramsey theory], AMS 5+52) and #704 (the unit distance graph in R^n, its own generalization, [chromatic number + geometry + graph theory]) in the same folder, and gives the statable invariant that every geometry-tagged problem is in Distance Problems or here, with two exceptions (#757 in Additive Bases, one distance problem in Set Theory). Euclidean Ramsey (#173, #174, #188, #189, #1090) comes here too, which is where the Handbook literature files it."
+    },
+    {
+      "tags": [
+        "ramsey"
+      ],
+      "folder": "ramsey_theory",
+      "note": "Alias of the site's 'ramsey theory' tag (one problem on the live site); routed identically."
+    },
+    {
+      "tags": [
+        "ramsey theory"
+      ],
+      "folder": "ramsey_theory",
+      "note": "Before the additive, graph and coloring rules, so the 88 remaining Ramsey problems form one field: 64 graph Ramsey, 8 arithmetic Ramsey, 9 additive Ramsey of Schur and Rado type, 3 hypergraph Ramsey, 2 bare, 2 combinatorial. The 'ramsey' alias above uses the same folder."
+    },
+    {
+      "tags": [
+        "chromatic number"
+      ],
+      "folder": "graph_coloring",
+      "note": "After the set-theory and geometry rules and before the hypergraph, cycle and graph rules. The honest invariant is the weaker one: every [chromatic number]-tagged problem outside Set Theory and outside the geometry folders is here (52), including the 8 chromatic-number-and-girth problems and 4 hypergraph colorings; plane and R^n colorings are in Discrete and Convex Geometry."
+    },
+    {
+      "tags": [
+        "additive combinatorics"
+      ],
+      "folder": "additive_combinatorics",
+      "note": "Before [graph theory], [combinatorics], [analysis], [primes], [probability] and [number theory], so sumset problems that borrow those methods stay additive. It also claims problems a reader might expect elsewhere -- #170 (difference basis / perfect ruler), #1, #350, #789 (sum-distinct sets), #138 and #160 (van der Waerden-type coloring) -- which is why the folder is titled 'Sumsets and Arithmetic Progressions' and its description names them: no tag separates them from the 30 density and sumset problems they share a tag set with."
+    },
+    {
+      "tags": [
+        "arithmetic progressions"
+      ],
+      "folder": "additive_combinatorics",
+      "note": "21 of the 27 AP problems already carry the additive-combinatorics tag; the rest belong with them. Fires before [primes], so progressions in the primes are filed as additive combinatorics."
+    },
+    {
+      "tags": [
+        "turan number"
+      ],
+      "folder": "extremal_graph_theory",
+      "note": "Before [hypergraphs] and [graph theory], so all 23 Turan-number problems -- graph and hypergraph alike, including #1157 and #1158, which carry no graph-theory tag -- are in one folder; the folder description says 'graphs and hypergraphs' so those 5 are findable."
+    },
+    {
+      "tags": [
+        "cycles"
+      ],
+      "folder": "extremal_graph_theory",
+      "note": "After [chromatic number], so girth-versus-coloring problems (8) count as coloring and pure cycle-containment problems (14) as extremal."
+    },
+    {
+      "tags": [
+        "planar graphs"
+      ],
+      "folder": "extremal_graph_theory",
+      "note": "Only 3 problems, all also tagged graph theory; topological graph theory sits closest to the extremal folder."
+    },
+    {
+      "tags": [
+        "hypergraphs"
+      ],
+      "folder": "set_systems",
+      "note": "Before [graph theory]: the 16 hypergraph problems not already claimed by set theory, Ramsey, coloring or Turan are set-system problems (#1022 property B, #835 coloring the k-subsets of a 2k-set, #775 clique sizes in 3-uniform hypergraphs) and belong with the sunflower and Erdos-Ko-Rado work. The real rule, which both index pages must state, is the five-way one: a hypergraph problem is filed by its other tag -- set theory, Ramsey, chromatic number or Turan number -- and otherwise here."
+    },
+    {
+      "tags": [
+        "graph theory"
+      ],
+      "folder": "extremal_graph_theory",
+      "note": "Broad graph rule: the 92 bare graph-theory problems plus a few crossovers. AMS codes (31/31 combinatorics) and the statements (#22, #24, #85, #61 Erdos-Hajnal, #82 regular induced subgraphs) show the residue is extremal or structural, so it merges into the extremal folder instead of forming a second generic graph door -- the one unguessable boundary in the faithful and browsing proposals. Idempotent: adding a 'turan number' or 'cycles' tag later does not move a problem."
+    },
+    {
+      "tags": [
+        "polynomials"
+      ],
+      "folder": "polynomials",
+      "note": "Before [analysis]: all 22 polynomial problems also carry the analysis tag, so this rule is what gives extremal polynomial problems, including the 5 random-polynomial ones, a folder with their name on it."
+    },
+    {
+      "tags": [
+        "analysis"
+      ],
+      "folder": "analysis",
+      "note": "Before [intersecting family], [combinatorics], [iterated functions], [primes] and [number theory]. Verified: #498 ([analysis + combinatorics]) asks how many subset sums of complex numbers of modulus at least 1 can land in a unit disc -- a Littlewood-Offord question, so it must not fall through to the set-systems folder."
+    },
+    {
+      "tags": [
+        "intersecting family",
+        "number theory"
+      ],
+      "folder": "divisors",
+      "note": "The one combination rule. The two checkable problems in this tag set are number-theoretic, not set systems: #56 ('any k+1 elements are not relatively prime', AMS 11) and #844 ('the even numbers together with the odd non-squarefree numbers', AMS 5+11). Both are extremal problems about sets of integers defined by common-divisor conditions, which is what Divisors and Multiples holds (it already has the primitive sets), so they go there rather than to the general residue. No earlier rule can shadow this rule, since the tag set carries nothing else."
+    },
+    {
+      "tags": [
+        "intersecting family"
+      ],
+      "folder": "set_systems",
+      "note": "Before [combinatorics], so it fires for the genuine intersecting-family problems (#21, #701, the Chvatal-type downset conjecture) rather than being a dead rule."
+    },
+    {
+      "tags": [
+        "combinatorics"
+      ],
+      "folder": "set_systems",
+      "note": "Broad rule after the set-theory, Ramsey, coloring, geometry, additive, graph and analysis rules. The 27 bare-combinatorics problems are sunflowers (#20, #857), union-free families (#447, #1023), antichains (#497), projective planes (#723, #1159), block designs and Latin squares (#665, #722, #724, #725, #732, #734, #903), plus a genuine residue the tags cannot move (#120 the similarity problem, #499 permanents of doubly stochastic matrices, #1026, #231) -- which is why the folder is named and described for designs and a residue, not for extremal set theory alone."
+    },
+    {
+      "tags": [
+        "divisors"
+      ],
+      "folder": "divisors",
+      "note": "Moved ahead of [factorials]: the only tag set carrying both is #18, whose statement is about practical numbers and representing m as a sum of distinct divisors of n (AMS 11), with no factorial in it. Divisor functions, divisor distribution and multiplication tables (32 problems)."
+    },
+    {
+      "tags": [
+        "primitive sets"
+      ],
+      "folder": "divisors",
+      "note": "A primitive set is a divisibility condition; 9 problems, squarely a divisor-structure topic. #486 (the logarithmic density of the complement of chosen residue classes) reads as a covering-system problem, but it shares its tag set with the six genuine primitive-set problems, so no tag rule can separate it."
+    },
+    {
+      "tags": [
+        "factorials"
+      ],
+      "folder": "factorials_binomials",
+      "note": "Before [primes] and [number theory] (20 problems)."
+    },
+    {
+      "tags": [
+        "binomial coefficients"
+      ],
+      "folder": "factorials_binomials",
+      "note": "Before [primes] and [base representations], so Kummer/Lucas-type divisibility questions (3) and the 2 digit-flavored binomial problems (#376 coprimality with 105, #730 equal prime divisors) stay with the binomials."
+    },
+    {
+      "tags": [
+        "primes"
+      ],
+      "folder": "primes",
+      "note": "After the covering-system, additive, binomial and discrepancy rules, so this folder holds the 47 core prime-distribution problems. Its description no longer promises 'prime divisors': largest-prime-factor and omega(n) problems carry [number theory] alone and are in General Number Theory."
+    },
+    {
+      "tags": [
+        "topology"
+      ],
+      "folder": "analysis",
+      "note": "Two problems, #909 (which also carries the analysis tag) and #910; neither has a statement or AMS code in the data, so they are filed here for want of a closer folder rather than on verified content. Placed late so a future [topology + geometry] problem goes to geometry."
+    },
+    {
+      "tags": [
+        "algebra"
+      ],
+      "folder": "set_theory",
+      "note": "A single-problem rule decided by reading the problem, now verified against the site: #1123 asks whether the Boolean algebra of sets of integers modulo density-zero sets is isomorphic to the one modulo logarithmic-density-zero sets; it is independent of ZFC (isomorphic under CH by Just-Krawczyk, non-isomorphic under OCA+MA by Farah), which the set-theory folder's description covers. Placed late so a future algebra problem with a substantive co-tag routes by that co-tag."
+    },
+    {
+      "tags": [
+        "base representations"
+      ],
+      "folder": "number_theory",
+      "note": "Verified: #124 (sums of distinct powers d^i), #125 and #406 (powers of 2 with only the digits 0 and 1 in base 3) are digit problems with no factorial or binomial content, so they belong in general number theory; the 2 binomial-flavored digit problems were already claimed above."
+    },
+    {
+      "tags": [
+        "iterated functions"
+      ],
+      "folder": "number_theory",
+      "note": "After [analysis], so the 2 entire-function iteration problems (#229, #906, AMS 30) are analytic and the 7 iterated phi and sigma problems (#408-#414) stay arithmetic."
+    },
+    {
+      "tags": [
+        "powers"
+      ],
+      "folder": "number_theory",
+      "note": "4 problems on sums of k-th powers (#323-#325); fired before the broad [number theory] rule so the rule is live."
+    },
+    {
+      "tags": [
+        "squares"
+      ],
+      "folder": "number_theory",
+      "note": "After [sidon sets]: 3 remaining problems about squares in products and sequences (#888)."
+    },
+    {
+      "tags": [
+        "powerful"
+      ],
+      "folder": "number_theory",
+      "note": "2 problems on powerful and r-full numbers in this snapshot; the live tag index shows 16, which is why 'Powers, Squares and Digits' is named in the rationale as the first folder to add if that count holds."
+    },
+    {
+      "tags": [
+        "number theory"
+      ],
+      "folder": "number_theory",
+      "note": "Broad catch-all: 278 problems, 257 of which carry this tag alone and form one indivisible tag set. That makes 21.1% the minimum largest folder for any partition whose rules read only the site's tags -- not an absolute floor, since 164 of those problems carry AMS codes (160 number theory, 15 combinatorics) that a code-aware rule could split on. It also claims the 2 [number theory + probability] problems (#520 Rademacher multiplicative functions, #1144), so no separate combination rule is needed for probabilistic number theory."
+    },
+    {
+      "tags": [
+        "probability"
+      ],
+      "folder": "analysis",
+      "note": "Last substantive rule: every probability problem with a subject co-tag has already been routed by it (polynomials 5, geometry 2, number theory 2, additive combinatorics 1, set theory 1), leaving the 3 bare-probability problems and the [analysis + probability] pair. This dispersal is why the folder is titled 'Analysis' rather than 'Analysis and Probability'."
+    },
+    {
+      "tags": [],
+      "folder": "number_theory",
+      "note": "Fallback: an empty tag list is a subset of every tag set, so nothing can be left unrouted even if the site adds a 42nd tag. It does not fire on the current corpus -- all 41 tags are claimed by the rules above -- and the build script must treat a match as an error, exiting non-zero and naming the problem number and its unrecognized tags, rather than quietly filing the page under General Number Theory."
+    }
+  ],
+  "overrides": {
+    "12": "integer_sequences",
+    "13": "integer_sequences",
+    "25": "integer_sequences",
+    "38": "integer_sequences",
+    "48": "arithmetic_functions",
+    "50": "arithmetic_functions",
+    "51": "arithmetic_functions",
+    "120": "analysis",
+    "121": "integer_sequences",
+    "122": "arithmetic_functions",
+    "123": "diophantine_problems",
+    "124": "diophantine_problems",
+    "125": "diophantine_problems",
+    "126": "arithmetic_functions",
+    "130": "distance_problems",
+    "131": "integer_sequences",
+    "137": "diophantine_problems",
+    "145": "integer_sequences",
+    "198": "additive_combinatorics",
+    "205": "arithmetic_functions",
+    "208": "integer_sequences",
+    "220": "integer_sequences",
+    "222": "integer_sequences",
+    "235": "integer_sequences",
+    "239": "arithmetic_functions",
+    "246": "diophantine_problems",
+    "248": "arithmetic_functions",
+    "253": "integer_sequences",
+    "254": "integer_sequences",
+    "261": "diophantine_problems",
+    "322": "diophantine_problems",
+    "323": "diophantine_problems",
+    "324": "diophantine_problems",
+    "325": "diophantine_problems",
+    "329": "integer_sequences",
+    "332": "integer_sequences",
+    "334": "arithmetic_functions",
+    "341": "integer_sequences",
+    "342": "integer_sequences",
+    "356": "integer_sequences",
+    "357": "integer_sequences",
+    "359": "integer_sequences",
+    "360": "integer_sequences",
+    "361": "integer_sequences",
+    "363": "diophantine_problems",
+    "364": "diophantine_problems",
+    "365": "diophantine_problems",
+    "366": "diophantine_problems",
+    "367": "arithmetic_functions",
+    "368": "arithmetic_functions",
+    "369": "arithmetic_functions",
+    "370": "arithmetic_functions",
+    "371": "arithmetic_functions",
+    "372": "arithmetic_functions",
+    "374": "diophantine_problems",
+    "375": "integer_sequences",
+    "380": "arithmetic_functions",
+    "382": "arithmetic_functions",
+    "383": "arithmetic_functions",
+    "385": "arithmetic_functions",
+    "388": "diophantine_problems",
+    "389": "diophantine_problems",
+    "394": "diophantine_problems",
+    "402": "integer_sequences",
+    "406": "diophantine_problems",
+    "407": "diophantine_problems",
+    "408": "arithmetic_functions",
+    "409": "arithmetic_functions",
+    "410": "arithmetic_functions",
+    "411": "arithmetic_functions",
+    "412": "arithmetic_functions",
+    "413": "arithmetic_functions",
+    "414": "arithmetic_functions",
+    "415": "arithmetic_functions",
+    "416": "arithmetic_functions",
+    "417": "arithmetic_functions",
+    "418": "arithmetic_functions",
+    "420": "arithmetic_functions",
+    "421": "integer_sequences",
+    "422": "integer_sequences",
+    "423": "integer_sequences",
+    "424": "integer_sequences",
+    "429": "integer_sequences",
+    "430": "integer_sequences",
+    "432": "integer_sequences",
+    "433": "diophantine_problems",
+    "434": "diophantine_problems",
+    "435": "diophantine_problems",
+    "436": "integer_sequences",
+    "437": "diophantine_problems",
+    "438": "integer_sequences",
+    "440": "integer_sequences",
+    "441": "integer_sequences",
+    "442": "integer_sequences",
+    "443": "diophantine_problems",
+    "445": "diophantine_problems",
+    "451": "integer_sequences",
+    "452": "arithmetic_functions",
+    "453": "integer_sequences",
+    "455": "integer_sequences",
+    "456": "arithmetic_functions",
+    "457": "integer_sequences",
+    "460": "integer_sequences",
+    "467": "integer_sequences",
+    "471": "integer_sequences",
+    "472": "integer_sequences",
+    "473": "integer_sequences",
+    "477": "diophantine_problems",
+    "479": "diophantine_problems",
+    "481": "integer_sequences",
+    "487": "integer_sequences",
+    "488": "integer_sequences",
+    "489": "integer_sequences",
+    "490": "integer_sequences",
+    "491": "arithmetic_functions",
+    "493": "diophantine_problems",
+    "520": "arithmetic_functions",
+    "535": "integer_sequences",
+    "536": "integer_sequences",
+    "537": "integer_sequences",
+    "538": "integer_sequences",
+    "539": "integer_sequences",
+    "540": "integer_sequences",
+    "541": "integer_sequences",
+    "542": "integer_sequences",
+    "587": "integer_sequences",
+    "635": "integer_sequences",
+    "647": "arithmetic_functions",
+    "648": "arithmetic_functions",
+    "649": "arithmetic_functions",
+    "650": "integer_sequences",
+    "663": "arithmetic_functions",
+    "672": "diophantine_problems",
+    "674": "diophantine_problems",
+    "675": "integer_sequences",
+    "676": "diophantine_problems",
+    "677": "integer_sequences",
+    "678": "integer_sequences",
+    "679": "arithmetic_functions",
+    "686": "diophantine_problems",
+    "687": "integer_sequences",
+    "688": "integer_sequences",
+    "689": "integer_sequences",
+    "690": "arithmetic_functions",
+    "691": "integer_sequences",
+    "694": "arithmetic_functions",
+    "695": "integer_sequences",
+    "705": "discrete_geometry",
+    "708": "integer_sequences",
+    "709": "integer_sequences",
+    "710": "integer_sequences",
+    "711": "integer_sequences",
+    "726": "integer_sequences",
+    "748": "integer_sequences",
+    "768": "integer_sequences",
+    "770": "integer_sequences",
+    "771": "integer_sequences",
+    "774": "integer_sequences",
+    "782": "diophantine_problems",
+    "783": "integer_sequences",
+    "784": "integer_sequences",
+    "786": "integer_sequences",
+    "793": "integer_sequences",
+    "795": "integer_sequences",
+    "796": "integer_sequences",
+    "820": "integer_sequences",
+    "821": "arithmetic_functions",
+    "822": "arithmetic_functions",
+    "823": "arithmetic_functions",
+    "824": "arithmetic_functions",
+    "825": "arithmetic_functions",
+    "826": "arithmetic_functions",
+    "828": "arithmetic_functions",
+    "829": "diophantine_problems",
+    "830": "arithmetic_functions",
+    "839": "integer_sequences",
+    "841": "diophantine_problems",
+    "843": "diophantine_problems",
+    "845": "diophantine_problems",
+    "848": "integer_sequences",
+    "851": "integer_sequences",
+    "854": "integer_sequences",
+    "856": "integer_sequences",
+    "873": "integer_sequences",
+    "878": "arithmetic_functions",
+    "879": "integer_sequences",
+    "888": "integer_sequences",
+    "889": "arithmetic_functions",
+    "891": "arithmetic_functions",
+    "896": "integer_sequences",
+    "897": "arithmetic_functions",
+    "913": "diophantine_problems",
+    "928": "arithmetic_functions",
+    "929": "integer_sequences",
+    "930": "diophantine_problems",
+    "931": "diophantine_problems",
+    "932": "integer_sequences",
+    "933": "diophantine_problems",
+    "935": "diophantine_problems",
+    "936": "diophantine_problems",
+    "937": "diophantine_problems",
+    "938": "diophantine_problems",
+    "939": "diophantine_problems",
+    "940": "diophantine_problems",
+    "941": "diophantine_problems",
+    "942": "diophantine_problems",
+    "943": "diophantine_problems",
+    "954": "integer_sequences",
+    "955": "arithmetic_functions",
+    "961": "integer_sequences",
+    "962": "integer_sequences",
+    "968": "integer_sequences",
+    "969": "diophantine_problems",
+    "970": "integer_sequences",
+    "971": "integer_sequences",
+    "976": "arithmetic_functions",
+    "977": "arithmetic_functions",
+    "978": "diophantine_problems",
+    "979": "diophantine_problems",
+    "980": "integer_sequences",
+    "983": "integer_sequences",
+    "985": "integer_sequences",
+    "1003": "arithmetic_functions",
+    "1004": "arithmetic_functions",
+    "1052": "arithmetic_functions",
+    "1053": "arithmetic_functions",
+    "1056": "diophantine_problems",
+    "1057": "integer_sequences",
+    "1058": "diophantine_problems",
+    "1060": "arithmetic_functions",
+    "1061": "arithmetic_functions",
+    "1062": "integer_sequences",
+    "1063": "integer_sequences",
+    "1064": "arithmetic_functions",
+    "1065": "diophantine_problems",
+    "1072": "diophantine_problems",
+    "1073": "integer_sequences",
+    "1074": "integer_sequences",
+    "1081": "diophantine_problems",
+    "1092": "graph_coloring",
+    "1101": "integer_sequences",
+    "1102": "integer_sequences",
+    "1103": "integer_sequences",
+    "1106": "arithmetic_functions",
+    "1107": "diophantine_problems",
+    "1109": "integer_sequences",
+    "1110": "diophantine_problems",
+    "1122": "arithmetic_functions",
+    "1134": "integer_sequences",
+    "1136": "integer_sequences",
+    "1140": "diophantine_problems",
+    "1144": "arithmetic_functions",
+    "1146": "integer_sequences",
+    "1148": "diophantine_problems",
+    "1149": "integer_sequences",
+    "1181": "integer_sequences",
+    "1203": "arithmetic_functions",
+    "1204": "integer_sequences",
+    "1205": "integer_sequences",
+    "1209": "integer_sequences",
+    "1210": "integer_sequences",
+    "1214": "diophantine_problems"
+  },
+  "tag_edits": {
+    "note": "A page's tags are the site's tags, each with a capital first letter, after the renames, drops and per-problem additions below. The rules above route by the site's tags as fetched.",
+    "rename": {
+      "additive basis": "Additive bases",
+      "convex": "Convexity",
+      "diophantine approximation": "Diophantine approximation",
+      "intersecting family": "Intersecting families",
+      "powerful": "Powerful numbers",
+      "ramsey": "Ramsey theory",
+      "ramsey theory": "Ramsey theory",
+      "sidon sets": "Sidon sets",
+      "turan number": "Turán numbers"
+    },
+    "drop": [
+      "algebra",
+      "distribution",
+      "irrational"
+    ],
+    "add": {
+      "83": [
+        "Intersecting families"
+      ],
+      "630": [
+        "Planar graphs"
+      ],
+      "631": [
+        "Planar graphs"
+      ],
+      "1123": [
+        "Set theory"
+      ],
+      "1147": [
+        "Diophantine approximation"
+      ]
+    }
+  }
+}

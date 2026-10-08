@@ -1,0 +1,57 @@
+{
+  "source": {
+    "author": "Stefan Steinerberger",
+    "title": "On a problem involving unit fractions",
+    "version": "arXiv:2403.17041v5",
+    "version_date": "2024-04-28",
+    "page": 3
+  },
+  "parameter": {
+    "c_rational": "76847/2000000",
+    "c_source_decimal": "0.0384235",
+    "logarithm_terms": 40,
+    "exponential_terms": 65,
+    "outward_mesh_denominator": 1000000000000000
+  },
+  "formulas": {
+    "z": "(y-1)/(y+1), y>=1",
+    "L": "2*sum(j=0..39,z^(2j+1)/(2j+1))",
+    "U": "L+2*z^81/(81*(1-z^2))",
+    "a_bounds": "4*[L(2),U(2)]+[L(1/(16c)),U(1/(16c))]-2",
+    "T": "sum(j=0..64,4^j/j!)",
+    "W": "T+(4^65/65!)/(1-4/66)",
+    "Q_bounds": "[(1+c^2*T)/2,(1+c^2*W)/2]",
+    "F_lower": "-c*a_upper^2/2-c*U(1/Q_lower)",
+    "F_upper": "-c*a_lower^2/2-c*L(1/Q_upper)"
+  },
+  "enclosures": {
+    "log2": {
+      "lower_numerator": 693147180559945,
+      "upper_numerator": 693147180559946,
+      "common_denominator": 1000000000000000
+    },
+    "a": {
+      "lower_numerator": 1259086027404675,
+      "upper_numerator": 1259086027404676,
+      "common_denominator": 1000000000000000
+    },
+    "exp4": {
+      "lower_numerator": 54598150033144239,
+      "upper_numerator": 54598150033144240,
+      "common_denominator": 1000000000000000
+    },
+    "f": {
+      "lower_numerator": -54110786906961,
+      "upper_numerator": -54110786906960,
+      "common_denominator": 1000000000000000
+    }
+  },
+  "strict_checks": {
+    "a_positive": true,
+    "Q_inside_open_unit_interval": true,
+    "f_less_than_minus_0_0541": true,
+    "0_054_greater_than_0_07_log2": true
+  },
+  "explanation": "theorem.md, finite enclosure argument (1)-(6)",
+  "scope": "The fixed scalar inequalities only. The integer cutoff and eventual limit are proved in theorem.md. No global optimization, explicit n0, formal verification, or independent review is asserted by this data."
+}

@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Ethan Patrick White"
+  ],
+  "category": "math.CO",
+  "date": "2022-01-14",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 922900,
+    "files": 3,
+    "sha256": "d5ecaea7433dcf8f5cef0486c4790d8b62b28d9e9a8f07ab0d09405b3802ebee",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2201.05704v1"
+  },
+  "id": "2201.05704",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 569241,
+    "previous": [],
+    "sha256": "04dadbe7cac22ac3c3c5aba0e51c5861368d63a834c3ae30a70b806b37143669",
+    "url": "https://arxiv.org/pdf/2201.05704v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2201.05704v1 [math.CO] 14 Jan 2022",
+  "tex": {
+    "archive": {
+      "bytes": 159365,
+      "name": "arXiv-2201.05704v1.tar.gz",
+      "sha256": "2b7a3c28358f55561054a9e728383d90f364ff577ea203b53416c2b0226d4c01"
+    },
+    "bytes": 248386,
+    "files": 3,
+    "sha256": "453974eba0952da433fbec3a919a4a27d86192666e1a9af33294aa7cc49cd7e4",
+    "url": "https://arxiv.org/src/2201.05704v1"
+  },
+  "title": "Erd\\H{o}s' minimum overlap problem",
+  "version": 1
+}

@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Bence Csajb\\'ok",
+    "Zolt\\'an L\\'or\\'ant Nagy"
+  ],
+  "category": "math.CO",
+  "date": "2025-09-27",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 686240,
+    "files": 1,
+    "sha256": "9ce16f8d85699c5b998ec2495ca58a8b0adae1c428011a8414add5da255551b0",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2401.06283v4"
+  },
+  "id": "2401.06283",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 476688,
+    "previous": [],
+    "sha256": "eadeec1500939bebbb6f9c33454a749ffeb3cf9c0a23234045013a0097ffe424",
+    "url": "https://arxiv.org/pdf/2401.06283v4"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2401.06283v4 [math.CO] 27 Sep 2025",
+  "tex": {
+    "archive": {
+      "bytes": 37782,
+      "name": "arXiv-2401.06283v4.tar.gz",
+      "sha256": "6f6b346c584d14db7a4415c0b93827bc8b279a9f341a9b290eabae88fc381173"
+    },
+    "bytes": 128889,
+    "files": 2,
+    "sha256": "6f73490816b4fd8db1f457a8adc8775d9104c0ae46d0ae7dc4f6282d235b417a",
+    "url": "https://arxiv.org/src/2401.06283v4"
+  },
+  "title": "Complete $3$-term arithmetic progression free sets of small size in vector spaces and other abelian groups",
+  "version": 4
+}

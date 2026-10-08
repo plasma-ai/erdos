@@ -1,0 +1,428 @@
+{
+  "schema_version": 1,
+  "source": {
+    "authors": [
+      "Maria-Romina Ivan",
+      "Imre Leader",
+      "Mark Walters"
+    ],
+    "title": "Generalised Prisms and Euclidean Ramsey Theory",
+    "arxiv_version": "2606.13472v1",
+    "version_record_url": "https://arxiv.org/abs/2606.13472v1",
+    "pdf_url": "https://arxiv.org/pdf/2606.13472v1",
+    "submission_utc": "2026-06-11T15:25:49Z",
+    "acquired_utc": "2026-09-05T11:56:47.307719+00:00",
+    "canonical_pdf": "ivan_2026_generalised_prisms_euclidean_ramsey_theory.pdf",
+    "bytes": 1253863,
+    "physical_pages": 10,
+    "version_qualification": "Exact arXivv1; no journal equivalence or acceptance certified."
+  },
+  "reading": {
+    "all_primary_pages_visually_read": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "method": "Native PDF text plus Poppler160dpi PNG pages viewed at original detail; no OCR.",
+    "scope": "Every primary statement, proof, figure, note and reference on all10pages. Figures are not used as measurements or as unproved coverage certificates."
+  },
+  "proof_scope": {
+    "complete_proof_pages": [
+      "definitions",
+      "isometric_extension",
+      "examples",
+      "zero_height_obstruction",
+      "template_symmetry_qualification",
+      "soluble_prime_degree",
+      "block_template_consequences",
+      "two_color_observation"
+    ],
+    "per_page": {
+      "definitions": {
+        "class": "complete_elementary_proof",
+        "source_pages": [
+          1,
+          2,
+          4,
+          5
+        ],
+        "scope": "Fixed point and spherical orbit; subgroup, image, product and extension solubility; geometric enclosure/subset closure. Compilation expansion of elementary prerequisites.",
+        "dependencies": []
+      },
+      "isometric_extension": {
+        "class": "complete_elementary_proof",
+        "source_pages": [
+          6
+        ],
+        "scope": "Affine isometric extension into added orthogonal dimensions. Compilation prerequisite for the enclosure clause.",
+        "dependencies": []
+      },
+      "lemma_2": {
+        "class": "statement_with_proof_pointer",
+        "source_pages": [
+          3,
+          4
+        ],
+        "scope": "Printed statement quoted with its lambda'' misprint marked; proof pointer; equality case and chosen soluble transitive group noted.",
+        "dependencies": [
+          "definitions"
+        ]
+      },
+      "lemma_3": {
+        "class": "statement_with_proof_pointer",
+        "source_pages": [
+          4,
+          5,
+          6
+        ],
+        "scope": "Printed statement quoted; proof pointer; x=y case and the unneeded common-centre assertion noted with the exact cross distance.",
+        "dependencies": [
+          "definitions"
+        ]
+      },
+      "theorem_1": {
+        "class": "statement_with_proof_pointer",
+        "source_pages": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "scope": "Printed statement quoted; proof pointer through Lemmas 2 and 3; coincident orbits handled by a two-level product; Ramsey clause relative to Kriz.",
+        "dependencies": [
+          "definitions",
+          "lemma_2",
+          "lemma_3",
+          "external:kriz_theorem_4_3"
+        ]
+      },
+      "corollary_4": {
+        "class": "statement_with_proof_pointer",
+        "source_pages": [
+          6
+        ],
+        "scope": "Printed statement quoted; proof pointer; corpus enclosure step for a merely subsoluble base via isometric_extension.",
+        "dependencies": [
+          "theorem_1",
+          "isometric_extension",
+          "external:kriz_theorem_4_3"
+        ]
+      },
+      "corollary_5": {
+        "class": "statement_with_proof_pointer",
+        "source_pages": [
+          6,
+          7
+        ],
+        "scope": "Printed statement quoted; proof pointer with lcm enlargement; arbitrary radii and relative angle.",
+        "dependencies": [
+          "theorem_1"
+        ]
+      },
+      "examples": {
+        "class": "complete_relative_source_deductions",
+        "source_pages": [
+          2,
+          3
+        ],
+        "scope": "Isosceles trapezia, triangle and its side-midpoint triangle, rationally rotated rectangles via a finite dihedral orbit.",
+        "dependencies": [
+          "definitions",
+          "theorem_1",
+          "external:kriz_theorem_4_3"
+        ]
+      },
+      "zero_height_obstruction": {
+        "class": "complete_relative_source_counterexample",
+        "source_pages": [
+          2
+        ],
+        "scope": "Triangle plus center nonspherical in every dimension; not subtransitive; not Ramsey relative to exact Paper I Theorem13.",
+        "dependencies": [
+          "definitions",
+          "isometric_extension",
+          "external:paper_i_theorem_13"
+        ]
+      },
+      "conjecture_6": {
+        "class": "statement_with_proof_pointer",
+        "source_pages": [
+          7
+        ],
+        "scope": "Definitions and printed conjecture; geometric implication for a fixed template sketched; conjecture itself not proved.",
+        "dependencies": [
+          "assumed_uniform_block_property_for_fixed_template"
+        ]
+      },
+      "template_symmetry_qualification": {
+        "class": "complete_compilation_source_counterexample",
+        "source_pages": [
+          7
+        ],
+        "scope": "Template1122 central complement reflection is not any fixed coordinate permutation, even for algebraically independent alphabet values.",
+        "dependencies": []
+      },
+      "soluble_prime_degree": {
+        "class": "complete_elementary_replacement_input",
+        "source_pages": [
+          8
+        ],
+        "scope": "Faithful soluble transitive subgroup of S_p has normal regular C_p and order at most p(p-1). Replaces source classification-table appeal.",
+        "dependencies": [
+          "definitions"
+        ]
+      },
+      "theorem_7": {
+        "class": "statement_with_proof_pointer",
+        "source_pages": [
+          8,
+          9
+        ],
+        "scope": "Printed statement quoted; proof pointer; prime-degree bound replaces the classification table; diagram alpha6 misprint noted.",
+        "dependencies": [
+          "definitions",
+          "soluble_prime_degree",
+          "conjecture_6:definitions_only"
+        ]
+      },
+      "block_template_consequences": {
+        "class": "complete_relative_source_consequences",
+        "source_pages": [
+          7,
+          8
+        ],
+        "scope": "Geometric subsolubility/Ramsey via Theorem7+Kriz; particular uniform-block conclusions via exact earlier LRW family and alphabet relabeling; direct block-restriction inheritance. General converse not asserted.",
+        "dependencies": [
+          "theorem_7",
+          "external:kriz_theorem_4_3",
+          "external:lrw_theorem_3_1_uniform_family"
+        ]
+      },
+      "two_color_observation": {
+        "class": "complete_source_method_with_proved_repairs",
+        "source_pages": [
+          9
+        ],
+        "scope": "Spherical2-Ramsey base, height strictly above circumradius; explicit forcing dimension max(N2,2e+2), sphere recurrence, opposite colors, unbounded growth and final embedding.",
+        "dependencies": [
+          "assumption:base_2_Ramsey",
+          "assumption:base_spherical",
+          "external:paper_i_theorem_13_only_for_original_Ramsey_base_specialization"
+        ]
+      },
+      "conjecture_8": {
+        "class": "statement_with_proof_pointer",
+        "source_pages": [
+          9,
+          10
+        ],
+        "scope": "Printed conjecture quoted; the paper's Section 4 remarks; later Moore/Mirabi results linked as context.",
+        "dependencies": [
+          "corollary_4",
+          "external:paper_i_theorem_13",
+          "assumed_spherical_classification_or_subtransitive_classification"
+        ]
+      }
+    },
+    "external_statement_pages": [
+      "external_inputs"
+    ],
+    "external_inputs": {
+      "kriz_theorem_4_3": {
+        "citation": "Kriz, Permutation groups in Euclidean Ramsey Theory, ProcAMS112(1991)899–907, Theorem4.3 printed906, orbit/Ramsey definitions printed901.",
+        "url": "https://doi.org/10.1090/S0002-9939-1991-1065087-9",
+        "physical_pages_visually_read": [
+          3,
+          8
+        ],
+        "proof_included": false,
+        "exact_interface": "Finite configuration with a soluble transitive isometry group is Ramsey; subset closure proved locally."
+      },
+      "paper_i_theorem_13": {
+        "citation": "Erdos et al., Euclidean Ramsey Theorems I(1973), Theorem13 printed349, PDF9.",
+        "canonical_pdf": "library/discrete_geometry/erdos_1973_euclidean_ramsey_theorems/erdos_1973_euclidean_ramsey_theorems.pdf",
+        "physical_pages_visually_read": [
+          9
+        ],
+        "proof_included": false,
+        "exact_interface": "Every finite Ramsey set is spherical."
+      },
+      "lrw_theorem_3_1_uniform_family": {
+        "citation": "Leader,Russell,Walters author manuscript dated22November2010, Theorem3.1 p12 and uniformity pp14–15; later JCTA119(2012)382–396 DOI10.1016/j.jcta.2011.09.005.",
+        "url": "https://webspace.maths.qmul.ac.uk/m.walters/papers/euclidean.pdf",
+        "physical_pages_visually_read": [
+          1,
+          5,
+          8,
+          9,
+          10,
+          12,
+          14,
+          15
+        ],
+        "native_text_other_pages_read": [
+          3,
+          4,
+          6,
+          7,
+          13
+        ],
+        "proof_included": false,
+        "exact_interface": "For every positive r,s,k, a uniform block set of template1^r2^s3 is forced in some[3]^N, with a common positive block size d.",
+        "version_qualification": "2010author version inspected; published bibliographic record identified but no full-text equivalence claimed.",
+        "reading_limit": "Selected definitions, conjecture-equivalence statements, Theorem3.1, explicit common-size construction and uniformity remark; not a complete proof audit of the external paper."
+      },
+      "lrw_full_equivalence_background": {
+        "citation": "Same author manuscript Section2, ConjecturesB–F, Propositions2.1/2.2/2.4.",
+        "proof_included": false,
+        "scope": "External equivalence of the full uniform block conjecture and finite-power Ramsey conjecture; not used in the numbered prism/group proof chain or specific block deductions."
+      }
+    },
+    "conjectures_not_proved": [
+      "Conjecture6: full block-sets conjecture",
+      "Conjecture8 is historical and later linked proofs are separate; only its conditional comparison is proved on its local page",
+      "Neither the spherical nor the subtransitive classification conjecture is proved"
+    ],
+    "same_paper_core_obligations_remaining": [],
+    "external_background_not_compiled": [
+      "General finite-power/block equivalence proof",
+      "General geometry-to-block converse and stronger finite-power form of Kriz machinery",
+      "Behague and Karamanlis results summarized in introduction",
+      "1234 block case and 123 degree2 theorem (references only)"
+    ],
+    "independent_review": "Not asserted by this author snapshot.",
+    "statement_pages": [
+      "theorem_1",
+      "lemma_2",
+      "lemma_3",
+      "corollary_4",
+      "corollary_5",
+      "conjecture_6",
+      "theorem_7",
+      "conjecture_8"
+    ]
+  },
+  "source_findings": [
+    {
+      "id": "F01",
+      "source": "pp.1–2, conventions",
+      "issue": "Nonempty finite configurations and congruent containment in a higher space are implicit; p.1 parenthetical after not spherical describes spherical.",
+      "treatment": "Nonempty configurations and congruent enclosure are defined explicitly; spherical means contained in a sphere. Optional empty cases are not needed by transitive-orbit statements.",
+      "kind": "definition clarification"
+    },
+    {
+      "id": "F02",
+      "source": "Lemma2 pp.3–4",
+      "issue": "a is required nonzero although equal heights are allowed; a full symmetry group is incorrectly inferred soluble from subsolubility.",
+      "treatment": "Handle equality directly and choose an actual soluble transitive witness subgroup.",
+      "kind": "proved compilation repair"
+    },
+    {
+      "id": "F03",
+      "source": "Lemma3 pp.4–6",
+      "issue": "n and zero-height endpoints are compressed, interpolation initially says positive coefficients but uses zero endpoints.",
+      "treatment": "Take n>=1; allow endpoint coefficients; x=y implies coincident orbits and P0=X; Theorem1 handles X=Y by a direct two-level product.",
+      "kind": "proved endpoint expansion"
+    },
+    {
+      "id": "F04",
+      "source": "Lemma3 p.6",
+      "issue": "The two orbits need not have the same center.",
+      "treatment": "Use exact cross squared distances; no center coincidence is needed. A trivial group on two singleton orbits witnesses failure of the general center claim.",
+      "kind": "proved compilation repair"
+    },
+    {
+      "id": "F05",
+      "source": "Corollary4 p.6",
+      "issue": "The short proof covers a group acting directly on the base but does not justify a merely subsoluble base.",
+      "treatment": "Full Gram-matrix extension into extra coordinates transports the arbitrary apex projection into the transitive enclosure.",
+      "kind": "proved compilation expansion"
+    },
+    {
+      "id": "F06",
+      "source": "Rectangle example p.2; Corollary5 pp.6–7",
+      "issue": "The finite common orbit for rationally rotated rectangles is implicit; polygon sizes and relative angle need precise quantification.",
+      "treatment": "Construct the finite dihedral orbit for rectangles and lcm polygon enlargement for arbitrary relative angle.",
+      "kind": "proved source-method expansion"
+    },
+    {
+      "id": "F07",
+      "source": "Section3 p.7",
+      "issue": "Alphabet displayed as alpha1,...,alpha_n rather than alpha_m; degree differs from LRW2010 convention.",
+      "treatment": "Use m alphabet values; ILW degree d is common block size, LRW total degree is l*d.",
+      "kind": "notation and version convention"
+    },
+    {
+      "id": "F08",
+      "source": "Section3 p.7",
+      "issue": "Algebraic independence does not ensure that all geometric symmetries are coordinate permutations.",
+      "treatment": "Complete1122 complement-reflection counterexample; keep Theorem7 on explicitly specified coordinate actions. General geometric converse is not inferred.",
+      "kind": "complete counterexample to printed broad claim"
+    },
+    {
+      "id": "F09",
+      "source": "Theorem7 p.8",
+      "issue": "Negative half appeals to an external transitive-group classification.",
+      "treatment": "Elementary soluble prime-degree bound gives42<105, with full proof; no table required.",
+      "kind": "complete alternative deduction of the same step"
+    },
+    {
+      "id": "F10",
+      "source": "Theorem7 pp.8–9",
+      "issue": "Solubility of affine-semilinear group cited as standard; diagram repeats alpha5; c is implicitly distinct from1.",
+      "treatment": "Explicit F8 construction and normal series; last position alpha6; c in F8 minus{0,1}; all6 cases written.",
+      "kind": "proved expansion and typographic correction"
+    },
+    {
+      "id": "F11",
+      "source": "Section3 pp.7–8",
+      "issue": "The particular block consequences should not rely on the false full-symmetry identification or on an unspecified converse.",
+      "treatment": "Use the exact LRW2010author Theorem3.1 with uniformity, relabel1<->3, plus direct final-block restriction. General finite-power machinery stays external.",
+      "kind": "complete relative alternative deduction"
+    },
+    {
+      "id": "F12",
+      "source": "Two-color observation p.9",
+      "issue": "R^(2d+1) need not already force the base; the paragraph lacks a dimension for embedding the pyramid on arbitrary larger spheres, explicit radius growth, and alternation of colors.",
+      "treatment": "N=max(N2,2e+2), e+2 dimensional sphere space, explicit circumcenter and F(r), positive squared increment>=t^2-R^2, opposite forced colors and extra perpendicular embedding.",
+      "kind": "complete same-method reconstruction with proved repairs"
+    },
+    {
+      "id": "F13",
+      "source": "Section4 pp.9–10",
+      "issue": "Conjecture8 and example questions are historical; square rectangles are already covered at all angles.",
+      "treatment": "Link exact later Moore/Mirabi results; preserve conditional classification implications and historical nonsquare/offset examples without current-open claims.",
+      "kind": "dated context and scope precision"
+    },
+    {
+      "id": "F14",
+      "source": "References[5] and[6] p.10",
+      "issue": "Frankl–Rodl volume/pages (and pluralized title) and ILW Block sizes volume are inaccurate.",
+      "treatment": "Original FR title A partition property of simplices in Euclidean space, JAMS3(1990)1–7; publisher confirms Block sizes Sigma14(2026)e67.",
+      "kind": "primary-source bibliographic correction"
+    }
+  ],
+  "provenance": {
+    "dated_primary_search": "2026-09-05",
+    "author_listing_url": "https://www.maths.cam.ac.uk/node/859",
+    "journal_acceptance": "No journal acceptance located in the bounded audit; absence is not proof of nonacceptance.",
+    "formalization": "No formal proof certification located in the bounded primary records; no exhaustive search or local Lean build.",
+    "later_closure_sources": [
+      "Moore arXiv2608.09649v1,10August2026",
+      "Mirabi arXiv2608.11736v1,12August2026"
+    ],
+    "priority": "Dates identify public versions; no independent priority judgment or novelty claim for compilation repairs.",
+    "bibliography_checks": {
+      "block_sizes_publisher_url": "https://www.cambridge.org/core/journals/forum-of-mathematics-sigma/article/block-sizes-in-the-block-sets-conjecture/DF39434D8B16CAF4725048FA3B450D08",
+      "block_sizes_publication": "ForumMathSigma14(2026)e67, DOI10.1017/fms.2026.10212; online27April2026; bibliographic check only."
+    }
+  }
+}

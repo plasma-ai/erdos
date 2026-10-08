@@ -1,0 +1,211 @@
+def Erdos.L17.EveryCopyRainbow.{u_1, u_2} : {U : Type u_1} →
+  {V : Type u_2} → {c : ℕ} → SimpleGraph U → (G : SimpleGraph V) → G.EdgeLabeling (Fin c) → Prop :=
+fun {U} {V} {c} H G C => ∀ (f : H.Copy G), Function.Injective fun e => C (f.mapEdgeSet e)
+def Erdos.L17.Admissible.{u_1} : ℕ → ℕ → ℕ → {U : Type u_1} → SimpleGraph U → Prop :=
+fun n e c {U} H => ∃ G C, Nat.card ↑G.edgeSet = e ∧ Erdos.L17.EveryCopyRainbow H G C
+def Erdos.L17.antiRamsey.{u_1} : ℕ → ℕ → {U : Type u_1} → SimpleGraph U → ℕ :=
+fun n e {U} H => sInf {c | Erdos.L17.Admissible n e c H}
+def Erdos.L17.ThresholdFor : ℕ → Prop :=
+fun k =>
+  (fun n => ↑(Erdos.L17.antiRamsey n (n * n / 4 + 1) (SimpleGraph.cycleGraph (2 * k + 1)))) ~[Filter.atTop] fun n =>
+    ↑n ^ 2 / 8
+def Erdos.L17.statement : Prop :=
+∀ (k : ℕ), 3 ≤ k → Erdos.L17.ThresholdFor k
+Erdos.L17.statement : Prop
+Erdos.L17.claim : Erdos.L17.statement
+theorem Erdos.L17.claim : Erdos.L17.statement :=
+fun k hk =>
+  have h := Erdos809.statement_proved k hk;
+  id
+    (have hm := Decidable.byContradiction fun a => Erdos.L17.claim._proof_1_1 k hk a;
+    Eq.mpr
+      (id
+        (congrFun'
+          (congrArg (Asymptotics.IsEquivalent Filter.atTop)
+            (funext fun n => congrArg Nat.cast ((fun n e => Erdos.L17.antiRamsey_cycleGraph hm n e) n (n * n / 4 + 1))))
+          fun n => ↑n ^ 2 / 8))
+      h)
+def Erdos.L17.EveryCopyRainbow.{u_1, u_2} : {U : Type u_1} →
+  {V : Type u_2} → {c : Nat} → SimpleGraph U → (G : SimpleGraph V) → @SimpleGraph.EdgeLabeling V G (Fin c) → Prop :=
+fun {U} {V} {c} H G C =>
+  ∀ (f : @SimpleGraph.Copy U V H G),
+    @Function.Injective (@Set.Elem (Sym2 U) (@SimpleGraph.edgeSet U H)) (Fin c) fun e =>
+      C
+        (@DFunLike.coe
+          (Function.Embedding (@Set.Elem (Sym2 U) (@SimpleGraph.edgeSet U H))
+            (@Set.Elem (Sym2 V) (@SimpleGraph.edgeSet V G)))
+          (@Set.Elem (Sym2 U) (@SimpleGraph.edgeSet U H)) (fun x => @Set.Elem (Sym2 V) (@SimpleGraph.edgeSet V G))
+          (@Function.instFunLikeEmbedding (@Set.Elem (Sym2 U) (@SimpleGraph.edgeSet U H))
+            (@Set.Elem (Sym2 V) (@SimpleGraph.edgeSet V G)))
+          (@SimpleGraph.Copy.mapEdgeSet U V H G f) e)
+def Erdos.L17.Admissible.{u_1} : Nat → Nat → Nat → {U : Type u_1} → SimpleGraph U → Prop :=
+fun n e c {U} H =>
+  ∃ G C,
+    And (@Eq Nat (Nat.card (@Set.Elem (Sym2 (Fin n)) (@SimpleGraph.edgeSet (Fin n) G))) e)
+      (@Erdos.L17.EveryCopyRainbow U (Fin n) c H G C)
+def Erdos.L17.antiRamsey.{u_1} : Nat → Nat → {U : Type u_1} → SimpleGraph U → Nat :=
+fun n e {U} H => @sInf Nat Nat.instInfSet (@setOf Nat fun c => @Erdos.L17.Admissible n e c U H)
+def Erdos.L17.ThresholdFor : Nat → Prop :=
+fun k =>
+  @Asymptotics.IsEquivalent Nat Real
+    (@NonUnitalSeminormedRing.toSeminormedAddCommGroup Real
+      (@NonUnitalSeminormedCommRing.toNonUnitalSeminormedRing Real
+        (@SeminormedCommRing.toNonUnitalSeminormedCommRing Real
+          (@NormedCommRing.toSeminormedCommRing Real Real.normedCommRing))))
+    (@Filter.atTop Nat Nat.instPreorder)
+    (fun n =>
+      @Nat.cast Real Real.instNatCast
+        (@Erdos.L17.antiRamsey n
+          (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+            (@HDiv.hDiv Nat Nat Nat (@instHDiv Nat Nat.instDiv) (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat) n n)
+              (@OfNat.ofNat Nat (nat_lit 4) (instOfNatNat (nat_lit 4))))
+            (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))))
+          (Fin
+            (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+              (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+              (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))
+          (SimpleGraph.cycleGraph
+            (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+              (@HMul.hMul Nat Nat Nat (@instHMul Nat instMulNat)
+                (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) k)
+              (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1)))))))
+    fun n =>
+    @HDiv.hDiv Real Real Real (@instHDiv Real (@DivInvMonoid.toDiv Real Real.instDivInvMonoid))
+      (@HPow.hPow Real Nat Real (@instHPow Real Nat (@NPow.toPow Real (@Monoid.toNPow Real Real.instMonoid)))
+        (@Nat.cast Real Real.instNatCast n) (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+      (@OfNat.ofNat Real (nat_lit 8)
+        (@instOfNatAtLeastTwo Real (nat_lit 8) Real.instNatCast Erdos.L17.ThresholdFor._proof_1))
+def Erdos.L17.statement : Prop :=
+∀ (k : Nat), @LE.le Nat instLENat (@OfNat.ofNat Nat (nat_lit 3) (instOfNatNat (nat_lit 3))) k → Erdos.L17.ThresholdFor k
+def Erdos.L17.statement : Prop :=
+∀ (k : Nat),
+  @LE.le.{0} Nat instLENat (@OfNat.ofNat.{0} Nat (nat_lit 3) (instOfNatNat (nat_lit 3))) k → Erdos.L17.ThresholdFor k
+Erdos.L17.claim : Erdos.L17.statement
+@Erdos.L17.EveryCopyRainbow.{u_1,
+    u_2} : {U : Type u_1} →
+  {V : Type u_2} →
+    {c : ℕ} → SimpleGraph.{u_1} U → (G : SimpleGraph.{u_2} V) → SimpleGraph.EdgeLabeling.{u_2, 0} G (Fin c) → Prop
+Erdos.L17.antiRamsey.{u_1} : ℕ → ℕ → {U : Type u_1} → SimpleGraph.{u_1} U → ℕ
+Erdos.L17.ThresholdFor : ℕ → Prop
+Erdos.L17.statement : Prop
+Erdos.L17.statement : Prop
+'Erdos.L17.claim' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos.L17.statement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos809.statement_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos809.sevenCycleThreshold_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos809.BucicChenMa.statement_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos809.BucicChenMa.thresholdStatement_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos809.statement_of_sevenCycle_and_higherDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos.L17.antiRamsey_cycleGraph' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos.L17.admissible_cycleGraph_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos.L17.rainbow_subgraph_exact_edges' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos809.statement_proved : Erdos809.Statement
+Erdos809.statement_of_higherDensity : Erdos809.BucicChenMa.Statement → Erdos809.Statement
+Erdos809.statement_of_sevenCycle_and_higherDensity : Erdos809.SevenCycleThreshold →
+  Erdos809.BucicChenMa.Statement → Erdos809.Statement
+Erdos809.statement_of_sevenCycle_and_higherThreshold : Erdos809.SevenCycleThreshold →
+  Erdos809.BucicChenMa.ThresholdStatement → Erdos809.Statement
+Erdos809.sevenCycleThreshold_proved : Erdos809.SevenCycleThreshold
+Erdos809.BucicChenMa.statement_proved : Erdos809.BucicChenMa.Statement
+Erdos809.BucicChenMa.thresholdStatement_proved : Erdos809.BucicChenMa.ThresholdStatement
+Erdos809.BucicChenMa.statement_implies_threshold : Erdos809.BucicChenMa.Statement →
+  Erdos809.BucicChenMa.ThresholdStatement
+Erdos809.rainbowChromatic_eq_maximalAntiRamseyCycle : ∀ (n : ℕ),
+  Erdos809.rainbowChromatic n = Erdos809.maximalAntiRamseyCycle n (n * n / 4 + 1) 7
+@Erdos809.maximalAntiRamsey_cycleGraph : ∀ {m : ℕ} [inst : NeZero m],
+  3 ≤ m → ∀ (n e : ℕ), Erdos809.maximalAntiRamsey n e (SimpleGraph.cycleGraph m) = Erdos809.maximalAntiRamseyCycle n e m
+@Erdos809.everyCycleRainbow_iff_everyCopyRainbow : ∀ {V : Type u_1} {c m : ℕ} [inst : NeZero m],
+  3 ≤ m →
+    ∀ (G : SimpleGraph V) (C : G.EdgeLabeling (Fin c)),
+      Erdos809.EveryCycleRainbow m G C ↔ Erdos809.EveryCopyRainbow (SimpleGraph.cycleGraph m) G C
+@Erdos809.rainbow_subgraph_exact_edges : ∀ {n colors length e : ℕ} [inst : NeZero length] (G : SimpleGraph (Fin n))
+  (C : G.EdgeLabeling (Fin colors)),
+  Erdos809.EveryCycleRainbow length G C →
+    e ≤ Nat.card ↑G.edgeSet → ∃ H ≤ G, Nat.card ↑H.edgeSet = e ∧ ∃ D, Erdos809.EveryCycleRainbow length H D
+Erdos809.threshold_edge_feasible : ∀ (n : ℕ), 4 ≤ n → n * n / 4 + 1 ≤ n.choose 2
+@rainbow_subgraph_exact_edges : ∀ {n colors m : ℕ} (length : ℕ) [inst : NeZero length] (G : SimpleGraph (Fin n))
+  (C : G.EdgeLabeling (Fin colors)),
+  Erdos809.EveryCycleRainbow length G C →
+    m ≤ Nat.card ↑G.edgeSet → ∃ H ≤ G, Nat.card ↑H.edgeSet = m ∧ ∃ D, Erdos809.EveryCycleRainbow length H D
+@admissible_cycleGraph_iff : ∀ {m n e c : ℕ} [inst : NeZero m],
+  3 ≤ m → (Admissible n e c (SimpleGraph.cycleGraph m) ↔ Erdos809.AdmissibleCycleAtLeast n e m c)
+@antiRamsey_cycleGraph : ∀ {m : ℕ} [NeZero m],
+  3 ≤ m →
+    ∀ (n e : ℕ), antiRamsey n e (SimpleGraph.cycleGraph m) = Erdos809.maximalAntiRamsey n e (SimpleGraph.cycleGraph m)
+def Erdos809.Statement : Prop :=
+∀ k ≥ 3, Erdos809.ThresholdFor k
+def Erdos809.ThresholdFor : ℕ → Prop :=
+fun k =>
+  (fun n => ↑(Erdos809.maximalAntiRamsey n (n * n / 4 + 1) (SimpleGraph.cycleGraph (2 * k + 1)))) ~[Filter.atTop]
+    fun n => ↑n ^ 2 / 8
+def Erdos809.maximalAntiRamsey.{u_1} : ℕ → ℕ → {U : Type u_1} → SimpleGraph U → ℕ :=
+fun n e {U} H => sInf {c | Erdos809.AdmissibleAtLeast n e c H}
+def Erdos809.AdmissibleAtLeast.{u_1} : ℕ → ℕ → ℕ → {U : Type u_1} → SimpleGraph U → Prop :=
+fun n e c {U} H => ∃ G C, e ≤ Nat.card ↑G.edgeSet ∧ Erdos809.EveryCopyRainbow H G C
+def Erdos809.EveryCopyRainbow.{u_1, u_2} : {U : Type u_1} →
+  {V : Type u_2} → {c : ℕ} → SimpleGraph U → (G : SimpleGraph V) → G.EdgeLabeling (Fin c) → Prop :=
+fun {U} {V} {c} H G C => ∀ (f : H.Copy G), Function.Injective fun e => C (f.mapEdgeSet e)
+def Erdos809.maximalAntiRamseyCycle : ℕ → ℕ → (length : ℕ) → [NeZero length] → ℕ :=
+fun n edges length [NeZero length] => sInf {colors | Erdos809.AdmissibleCycleAtLeast n edges length colors}
+def Erdos809.AdmissibleCycleAtLeast : ℕ → ℕ → (length : ℕ) → ℕ → [NeZero length] → Prop :=
+fun n edges length colors [NeZero length] => ∃ G C, edges ≤ Nat.card ↑G.edgeSet ∧ Erdos809.EveryCycleRainbow length G C
+def Erdos809.EveryCycleRainbow.{u_1, u_2} : {V : Type u_1} →
+  {K : Type u_2} → (length : ℕ) → [NeZero length] → (G : SimpleGraph V) → G.EdgeLabeling K → Prop :=
+fun {V} {K} length [NeZero length] G C =>
+  ∀ (v : Fin length → V),
+    Function.Injective v →
+      ∀ (h : ∀ (i : Fin length), G.Adj (v i) (v (i + 1))), Function.Injective fun i => C.get (v i) (v (i + 1)) ⋯
+def Erdos809.SevenCycleThreshold : Prop :=
+Filter.Tendsto (fun n => ↑(Erdos809.rainbowChromatic n) / ↑n ^ 2) Filter.atTop (nhds (1 / 8))
+def Erdos809.rainbowChromatic : ℕ → ℕ :=
+fun n => sInf {k | Erdos809.Admissible n k}
+def Erdos809.Admissible : ℕ → ℕ → Prop :=
+fun n k => ∃ G C, Nat.card ↑G.edgeSet = n * n / 4 + 1 ∧ Erdos809.EveryCycleRainbow 7 G C
+def Erdos809.BucicChenMa.Statement : Prop :=
+∀ (k : ℕ), 4 ≤ k → Erdos809.BucicChenMa.FullDensityFormula k
+def Erdos809.BucicChenMa.FullDensityFormula : ℕ → Prop :=
+fun k =>
+  ∀ (ε : ℝ),
+    0 < ε →
+      ∃ N,
+        ∀ (n : ℕ),
+          N ≤ n →
+            ∀ (e : ℕ),
+              n * n / 4 + 1 ≤ e →
+                e ≤ n.choose 2 →
+                  |↑(Erdos809.maximalAntiRamseyCycle n e (2 * k + 1)) - Erdos809.mainTerm n e| ≤ ε * ↑n ^ 2
+def Erdos809.BucicChenMa.ThresholdFormula : ℕ → Prop :=
+fun k =>
+  Filter.Tendsto (fun n => ↑(Erdos809.maximalAntiRamseyCycle n (n * n / 4 + 1) (2 * k + 1)) / ↑n ^ 2) Filter.atTop
+    (nhds (1 / 8))
+def Erdos809.BucicChenMa.ThresholdStatement : Prop :=
+∀ (k : ℕ), 4 ≤ k → Erdos809.BucicChenMa.ThresholdFormula k
+def Erdos809.mainTerm : ℕ → ℕ → ℝ :=
+fun n e => ↑e / 2 + ↑n / 2 * √(↑e - ↑n ^ 2 / 4)
+'ReviewerProbe.claim_reproved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewerProbe.claim_from_proved_branches' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewerProbe.antiRamsey_eq_maximalAntiRamsey' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReviewerProbe.thresholdFor_iff_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+-- stderr (lean messages, then /usr/bin/time -l report) --
+        4.19 real         2.08 user         2.07 sys
+          2426781696  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              221222  page reclaims
+               37582  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                5081  voluntary context switches
+               75492  involuntary context switches
+          3155424234  instructions retired
+          1101778343  cycles elapsed
+           133502464  peak memory footprint
+
+-- probe run: start 2026-09-25T04:38:57Z end 2026-09-25T04:39:01Z wall 4s exit 0

@@ -1,0 +1,40 @@
+{
+  "authors": [
+    "J\\'anos Nagy",
+    "P\\'eter P\\'al Pach",
+    "Istv\\'an Tomon"
+  ],
+  "category": "math.CO",
+  "date": "2021-11-26",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 408466,
+    "files": 1,
+    "sha256": "8de3312a16ac41b4d64270e88c74455d0212659f64db05af989bdaaa7d38f4d8",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2111.13658v1"
+  },
+  "id": "2111.13658",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 234043,
+    "previous": [],
+    "sha256": "f2c4d4deb7387180eedd7d2514d24267f01a5c3e44bd025c05e39d03a3658df1",
+    "url": "https://arxiv.org/pdf/2111.13658v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2111.13658v1 [math.CO] 26 Nov 2021",
+  "tex": {
+    "archive": {
+      "bytes": 16028,
+      "name": "arXiv-2111.13658v1.gz",
+      "sha256": "8ab49bde7b66a59118af8580ba24eeaff08e0cb1018ad6b693702de06e9a11e1"
+    },
+    "bytes": 52884,
+    "files": 1,
+    "sha256": "6900e499fb0f0f1258aec51458410b961b2b506201c0a4108f8614dd2ee4c3c2",
+    "url": "https://arxiv.org/src/2111.13658v1"
+  },
+  "title": "Additive bases, coset covers, and non-vanishing linear maps",
+  "version": 1
+}

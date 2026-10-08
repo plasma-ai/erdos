@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "source": {
+    "authors": [
+      "Mostafa Mirabi"
+    ],
+    "title": "One-point extensions of Euclidean Ramsey sets",
+    "arxiv_version": "2608.11736v1",
+    "version_record_url": "https://arxiv.org/abs/2608.11736v1",
+    "pdf_url": "https://arxiv.org/pdf/2608.11736v1",
+    "submission_utc": "2026-08-12T07:23:39Z",
+    "acquired_utc": "2026-09-05T11:58:54.361028+00:00",
+    "edition_read": "arXiv:2608.11736v1",
+    "bytes": 209847,
+    "physical_pages": 5,
+    "version_qualification": "Exact arXiv v1 only; no journal-version equivalence or acceptance claimed."
+  },
+  "reading": {
+    "all_source_pages_visually_read": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "method": "pdftoppm 150 dpi PNG, viewed at original detail; no OCR",
+    "native_text_extraction": "Navigation and formula cross-checking only; no OCR.",
+    "scope": "All five pages visually inspected, including all statements, every same-paper proof, figures if any, notes and references."
+  },
+  "proof_scope": {
+    "same_paper_coverage": {
+      "proposition_2_1": "Statement checked; proof read step by step and sketched",
+      "remark_2_2": "Statement checked; positivity and height formula sketched",
+      "lemma_3_1": "Statement checked; proof read step by step and sketched",
+      "theorem_3_2": "Statement checked; proof read step by step and sketched relative to the Kriz inputs",
+      "theorem_1_1": "Statement checked; affine reduction to Theorem 3.2 sketched",
+      "remark_3_3": "Method interpretation summarized on the card without a transitivity claim",
+      "section_2_closure_facts": "Definitions and standard facts recorded; product theorem external",
+      "kriz_inputs": "Mirabi's p.3 statements recorded; Kriz's own statements are on the Kriz card; external proofs not counted",
+      "chronology_note_and_acknowledgments": "Author account retained with explicit acceptance/priority limits"
+    },
+    "external_statement_pages": {
+      "kriz_inputs": {
+        "classification": "two_exact_external_statements_only",
+        "scope": "Kriz3.2 product and Kriz4.1 orbit gluing, with source definitions of E, U and respect of E.",
+        "proof_included": false,
+        "statement_count": 2
+      }
+    },
+    "external_inputs": {
+      "paper_i": {
+        "physical_pages_visually_read": [
+          17
+        ],
+        "reading_role": "Original Proposition4 and Theorem20 interfaces; no complete original-paper proof audit."
+      },
+      "kriz": {
+        "physical_pages_visually_read": [
+          3,
+          4,
+          7
+        ],
+        "reading_role": "Exact definitions on printed901, product Theorem3.2 on902 and orbit-gluing Theorem4.1 on905; external proofs not certified."
+      }
+    },
+    "source_precision": [
+      {
+        "source_location": "Mirabi p.4, definition of E_n",
+        "issue": "The description 'only non-singleton class is X' does not literally describe the singleton-X case.",
+        "treatment": "Define the class X and all outside singleton classes, covering |X|=1 uniformly.",
+        "classification": "compilation endpoint clarification, no author-issued erratum"
+      },
+      {
+        "source_location": "Mirabi p.2, diagonal product",
+        "issue": "Zero variance may let the unlifted point w coincide with a diagonal base point.",
+        "treatment": "Note that the equality branch lambda = sigma forces sigma > 0, so the added point is distinct from the base.",
+        "classification": "explicit omitted endpoint explanation; source result unchanged"
+      },
+      {
+        "source_location": "Mirabi pp.4-5, height choice",
+        "issue": "The coordinate theorem does not require X to span its stated ambient R^d.",
+        "treatment": "State that lambda is the last-coordinate height, equal to the distance from the affine hull when X spans R^d.",
+        "classification": "geometric precision; no new theorem"
+      }
+    ],
+    "unresolved_same_paper_obligations": [],
+    "independent_final_review": "Not asserted by this author snapshot.",
+    "proof_sketch_pages": [
+      "preliminaries",
+      "proposition_2_1",
+      "remark_2_2",
+      "lemma_3_1",
+      "theorem_3_2",
+      "theorem_1_1"
+    ]
+  },
+  "provenance": {
+    "dated_search": "2026-09-05",
+    "journal_acceptance": "No acceptance or journal version located in the bounded search; absence is not proof of nonacceptance.",
+    "formal_evidence": "No formal proof artifact identified in the primary records; no exhaustive formalization search or local build performed.",
+    "later_primary_citation": {
+      "source": "Palvolgyi arXiv:2608.10865v2, p.24",
+      "url": "https://arxiv.org/pdf/2608.10865v2#page=24",
+      "scope": "Citation of Moore/Mirabi for pyramid closure only; no adoption of the later paper's unverified appendix."
+    },
+    "chronology": {
+      "moore_public_submission": "2026-08-10T14:26:02Z",
+      "mirabi_public_submission": "2026-08-12T07:23:39Z",
+      "mirabi_private_account": "Mirabi v1 p.1 says both partial and full arguments were privately circulated to Ivan, Leader and Walters in June2026 and obtained independently of Moore.",
+      "qualification": "Private circulation and independence are the author's account, not an independently established priority determination."
+    },
+    "moore_ai_acknowledgment": "Moore v1 p.5 acknowledges ChatGPT5.6 in brainstorming; provenance only, not mathematical validation.",
+    "mirabi_acknowledgments": "Mirabi v1 p.5 thanks Ivan and Leader for discussions and earlier-version reading; no acceptance is inferred."
+  }
+}

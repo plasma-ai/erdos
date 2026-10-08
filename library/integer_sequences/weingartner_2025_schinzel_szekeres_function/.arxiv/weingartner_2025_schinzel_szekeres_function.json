@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Andreas Weingartner"
+  ],
+  "category": "math.NT",
+  "date": "2025-06-13",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 864196,
+    "files": 1,
+    "sha256": "d4ba8b105bf4b24c5efbc7d8b382ef905014e5c07e627418f1ce8920b8f66bda",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2310.13038v2"
+  },
+  "id": "2310.13038",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 403021,
+    "previous": [],
+    "sha256": "9d210e57b3f7e90f111aad4ccc8a4f4ec337fe5a756718b068692d13da82d285",
+    "url": "https://arxiv.org/pdf/2310.13038v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2310.13038v2 [math.NT] 13 Jun 2025",
+  "tex": {
+    "archive": {
+      "bytes": 21631,
+      "name": "arXiv-2310.13038v2.tar.gz",
+      "sha256": "e8be026f893319fb1c69f1055e177fa608fcc59495fabe0ce3bf920b789e6e46"
+    },
+    "bytes": 77348,
+    "files": 2,
+    "sha256": "bf91f1cba73add75456e0524634f1f7d0a87363a8272f1d607a6da81fb76feb7",
+    "url": "https://arxiv.org/src/2310.13038v2"
+  },
+  "title": "The Schinzel-Szekeres function",
+  "version": 2
+}

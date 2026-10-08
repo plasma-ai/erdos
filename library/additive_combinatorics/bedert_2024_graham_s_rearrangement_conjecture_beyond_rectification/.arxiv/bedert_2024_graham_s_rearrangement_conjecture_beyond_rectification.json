@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Benjamin Bedert",
+    "Noah Kravitz"
+  ],
+  "category": "math.CO",
+  "date": "2025-01-07",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 555394,
+    "files": 1,
+    "sha256": "d43db37adf0c650c61887471978e57bc886b5522ddb3ec97c1fec49d9375750d",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2409.07403v2"
+  },
+  "id": "2409.07403",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 262913,
+    "previous": [],
+    "sha256": "cbc2a3edfa8a6e0bbd8f0a752e3f5350623593b7122192b79a12a6bed055e44d",
+    "url": "https://arxiv.org/pdf/2409.07403v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2409.07403v2 [math.CO] 7 Jan 2025",
+  "tex": {
+    "archive": {
+      "bytes": 31840,
+      "name": "arXiv-2409.07403v2.gz",
+      "sha256": "b11f0cd793009ae922a0a7bcfda6dc1518639619a4145c59dea50a3291df91c8"
+    },
+    "bytes": 119209,
+    "files": 1,
+    "sha256": "bb8d2132f83306239821faa930289a225b7a249737da41a19259711b628f017f",
+    "url": "https://arxiv.org/src/2409.07403v2"
+  },
+  "title": "Graham's rearrangement conjecture beyond the rectification barrier",
+  "version": 2
+}

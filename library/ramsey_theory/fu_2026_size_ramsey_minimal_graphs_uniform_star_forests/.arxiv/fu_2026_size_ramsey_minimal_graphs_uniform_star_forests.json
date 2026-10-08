@@ -1,0 +1,40 @@
+{
+  "authors": [
+    "Pingting Fu",
+    "Zhidan Luo",
+    "Zhenyu Ni"
+  ],
+  "category": "math.CO",
+  "date": "2026-07-04",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 1464743,
+    "files": 23,
+    "sha256": "770a61a191f2e8408a4598958bd492be9422d699adf6b1c4e291eab345ef07a1",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2606.04439v3"
+  },
+  "id": "2606.04439",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 1013394,
+    "previous": [],
+    "sha256": "6809f5c11641d566b7e7c3b08aea2aebbe4c72fb42f09d96e532ff8e965354cf",
+    "url": "https://arxiv.org/pdf/2606.04439v3"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2606.04439v3 [math.CO] 4 Jul 2026",
+  "tex": {
+    "archive": {
+      "bytes": 867259,
+      "name": "arXiv-2606.04439v3.tar.gz",
+      "sha256": "b8ca484f560c040a0ee463020d705cb6172fea2cac4fbaad34086221422824ef"
+    },
+    "bytes": 946436,
+    "files": 24,
+    "sha256": "2c4b38f926553e134a6bd745173352939f78693425b012154d72a0029cb69e77",
+    "url": "https://arxiv.org/src/2606.04439v3"
+  },
+  "title": "Size Ramsey minimal graphs for uniform star forests",
+  "version": 3
+}

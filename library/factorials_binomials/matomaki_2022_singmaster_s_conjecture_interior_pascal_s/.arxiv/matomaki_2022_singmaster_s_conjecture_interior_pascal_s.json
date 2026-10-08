@@ -1,0 +1,42 @@
+{
+  "authors": [
+    "Kaisa Matom\\\"aki",
+    "Maksym Radziwi{\\l}{\\l}",
+    "Xuancheng Shao",
+    "Terence Tao",
+    "Joni Ter\\\"av\\\"ainen"
+  ],
+  "category": "math.NT",
+  "date": "2021-06-07",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 876181,
+    "files": 1,
+    "sha256": "cc55bba427968692fa4bd683cd272e89de85ceed31842caa6c6778bd701e57d6",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2106.03335v1"
+  },
+  "id": "2106.03335",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 586984,
+    "previous": [],
+    "sha256": "f2058a35ab3cb6f9f1ca6d5a78cdd9416eeb43f218c4277118650be47b63feba",
+    "url": "https://arxiv.org/pdf/2106.03335v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2106.03335v1 [math.NT] 7 Jun 2021",
+  "tex": {
+    "archive": {
+      "bytes": 28055,
+      "name": "arXiv-2106.03335v1.tar.gz",
+      "sha256": "09d684720828a6bd5ab4d990c6848e2ebecab6041f50e779c096ca4c96d53e7d"
+    },
+    "bytes": 94462,
+    "files": 2,
+    "sha256": "f44b860ff27757c13b687a607fc30a34edbb2b09e34d75187a8b2a2ec0f5c139",
+    "url": "https://arxiv.org/src/2106.03335v1"
+  },
+  "title": "Singmaster's conjecture in the interior of Pascal's triangle",
+  "version": 1
+}

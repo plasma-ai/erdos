@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Kevin O'Bryant"
+  ],
+  "category": "math.CO",
+  "date": "2026-07-26",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 280689,
+    "files": 1,
+    "sha256": "af8faa8e585d2371c38b44b97ef49ec1429e1eb5e543f6d6ae861a2bc80fd3c1",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2606.28651v3"
+  },
+  "id": "2606.28651",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 365509,
+    "previous": [],
+    "sha256": "0b3319ebde3621abacf1866faff2281ab68a6c4a63f61de3bc2d46495bc4a5c9",
+    "url": "https://arxiv.org/pdf/2606.28651v3"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2606.28651v3 [math.CO] 26 Jul 2026",
+  "tex": {
+    "archive": {
+      "bytes": 10991,
+      "name": "arXiv-2606.28651v3.tar.gz",
+      "sha256": "c521c6b55af506ccebec7ba7848ebb050c813570e88a93c6bc0ad105fdcfba69"
+    },
+    "bytes": 30363,
+    "files": 2,
+    "sha256": "e5dea1a3ed27b9b2622a0ac9f7a0613b56b3eec7651a1852d0209cdfde220b81",
+    "url": "https://arxiv.org/src/2606.28651v3"
+  },
+  "title": "On the Thickness of Infinite Generalized Sidon Sets, I",
+  "version": 3
+}

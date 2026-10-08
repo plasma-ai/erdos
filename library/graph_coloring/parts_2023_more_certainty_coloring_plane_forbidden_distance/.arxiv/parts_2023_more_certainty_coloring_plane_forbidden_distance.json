@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Jaan Parts"
+  ],
+  "category": "math.CO",
+  "date": "2023-03-26",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 2586465,
+    "files": 83,
+    "sha256": "48e2f5352c1058e1660dc22005584b1013ade0207db5ac0aae5941ef160f01a8",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2303.14722v1"
+  },
+  "id": "2303.14722",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 2384983,
+    "previous": [],
+    "sha256": "836b116f92817d078e8c406b7b2ed31a2146a085bce7abfb1c57b746f840c0b2",
+    "url": "https://arxiv.org/pdf/2303.14722v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2303.14722v1 [math.CO] 26 Mar 2023",
+  "tex": {
+    "archive": {
+      "bytes": 2505277,
+      "name": "arXiv-2303.14722v1.tar.gz",
+      "sha256": "ed4f3d6b5748c7ebbcb8928236ed042939494fe5c3b01485e5951bacbafed20a"
+    },
+    "bytes": 2704732,
+    "files": 104,
+    "sha256": "fa73aece5ba6618d5a45fd0e481d39ad94957a180bbc6e3769a9d8de6d5f3e77",
+    "url": "https://arxiv.org/src/2303.14722v1"
+  },
+  "title": "More certainty in coloring the plane with a forbidden distance interval",
+  "version": 1
+}

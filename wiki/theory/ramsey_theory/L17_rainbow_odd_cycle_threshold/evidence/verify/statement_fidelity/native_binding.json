@@ -1,0 +1,276 @@
+{
+  "schema": "l17-native-binding-v1",
+  "status": "binding of the exact subject as it stood on 2026-09-25T03:40:15Z: the Lean subject, the English subject with its extraction rule, the review and the grade, the non-author clean gate, the regeneration fact, and the delivery extension rule; written by the integrating author for filing, from the frozen extraction, the runner's receipt, the review, the grade and the sources at that state",
+  "owner": "wiki/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold",
+  "role": "Administrative source and evidence binding for the exact subject. It names what the review, the grade and the gate assessed by date and repository-relative path; it is not itself a review, grade or kernel run and asserts no tier.",
+  "checked_source": {
+    "commit_date_utc": "2026-09-25T03:40:15Z",
+    "paths": {
+      "claim": "lean/Erdos/L17.lean",
+      "closure_root": "lean/Erdos/Library/Problem809/",
+      "manifest": "lean/Manifest.json",
+      "environment": [
+        "lean/lake-manifest.json",
+        "lean/lakefile.toml",
+        "lean/lean-toolchain"
+      ]
+    },
+    "declarations": [
+      "Erdos.L17.statement",
+      "Erdos.L17.claim"
+    ],
+    "manifest_modules": 1732,
+    "closure_modules": 196,
+    "closure_by_folder": {
+      "Erdos.L17": 1,
+      "Erdos.Library.Problem809 (root)": 9,
+      "Erdos.Library.Problem809.BucicChenMa": 92,
+      "Erdos.Library.Problem809.SevenCycle": 85,
+      "Erdos.Library.Problem809.UpperBound": 9
+    },
+    "closure_generated_modules": 0,
+    "manifest_modules_by_folder": {
+      "Erdos.Core": 1,
+      "<another claim's surface module>": 1,
+      "Erdos.L17": 1,
+      "Erdos.Library.Problem809 (all)": 195,
+      "<that claim's development> (handwritten)": 16,
+      "<that claim's development>.Data (generated)": 793,
+      "<that claim's development>.Checks (generated)": 725
+    },
+    "handwritten_modules": 214,
+    "generated_modules": 1518,
+    "generated_modules_root": "<that claim's development>/{Data,Checks} (outside the claim's closure)",
+    "toolchain": "leanprover/lean4:v4.32.0-rc1",
+    "lean_version_string": "Lean (version 4.32.0-rc1, arm64-apple-darwin24.6.0, commit b4812ae53eea93439ad5dce5a5c26591c31cb697, Release)",
+    "mathlib": "79aee35d9696d759b73eed71d7dde666750bc35e",
+    "rule": "Sources, the complete Manifest and reading records are named by repository-relative path as they stood on 2026-09-25T03:40:15Z, a branch state the default branch never carried; the text of that state is not retained beyond the frozen English extraction under evidence/assets/statement_fidelity/, and today's lean/ differs from it outside this claim's declaration, import closure and English subject (see the claim card). A Manifest hash or an own-namespace statement hash alone establishes neither identity nor fidelity.",
+    "claim_module_lines": {
+      "namespace": "lean/Erdos/L17.lean lines 23-123",
+      "Erdos.L17.EveryCopyRainbow": "26-28",
+      "Erdos.L17.Admissible": "32-34",
+      "Erdos.L17.antiRamsey": "38-39",
+      "Erdos.L17.ThresholdFor": "42-45",
+      "Erdos.L17.statement": "48-49",
+      "Erdos.L17.rainbow_subgraph_exact_edges": "53-87",
+      "Erdos.L17.admissible_cycleGraph_iff": "92-101",
+      "Erdos.L17.antiRamsey_cycleGraph": "105-112",
+      "Erdos.L17.claim": "115-121",
+      "manifest_declarations_lines": "1741-1742",
+      "manifest_compiler_line": 1743,
+      "manifest_claim_row_lines": "1758-1769",
+      "manifest_claim_row_compiler_line": 1768
+    }
+  },
+  "english_subject": {
+    "date_utc": "2026-09-25T03:40:15Z",
+    "pages": [
+      "wiki/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/_index.md",
+      "wiki/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/_proof.md",
+      "wiki/problems/ramsey_theory/E0809.md"
+    ],
+    "extraction_rule": {
+      "description": "Four awk ranges on content anchors, each run on the named page as it stood at the checked state; the concatenation of their outputs in order at the checked state is the English subject the fidelity review compared. Line numbers are not part of the rule. The commands are recorded as the extraction preparer ran them, the state they read restated as its date; the same command on the pages as they stood at another state is the rule at that state. The reviewer and the grader reran them in this form at the checked state with byte-identical parts. The guard below runs in the extraction's record home on the four parts concatenated in order and must print nothing.",
+      "environment": "run from the repository root with bash -c; awk version 20200816 (the macOS awk); each command read the committed text of the checked state, never the working tree",
+      "commands": [
+        {
+          "part": "card frontmatter statement",
+          "path": "wiki/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/_index.md",
+          "command": "awk 'f && /^[^ ]/ {exit} /^statement:/ {f=1} f' on wiki/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/_index.md, run on the file as it stood on 2026-09-25T03:40:15Z",
+          "output_file": "subject_statement.txt",
+          "lines_at_checked_commit": "13-21",
+          "line_count": 9,
+          "bytes": 597
+        },
+        {
+          "part": "card text from ## Statement to the line before the next H2 heading other than ## Statement and ## Argument and formal surface",
+          "path": "wiki/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/_index.md",
+          "command": "awk '/^## Statement$/ {f=1} f && /^## / && !/^## (Statement|Argument and formal surface)$/ {exit} f' on wiki/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/_index.md, run on the file as it stood on 2026-09-25T03:40:15Z",
+          "output_file": "subject_index.txt",
+          "lines_at_checked_commit": "41-84 (the last a blank line)",
+          "line_count": 44,
+          "bytes": 2262
+        },
+        {
+          "part": "proof page body after the closing --- of the frontmatter",
+          "path": "wiki/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/_proof.md",
+          "command": "awk 'f {print} /^---$/ {n++; if (n==2) f=1}' on wiki/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/_proof.md, run on the file as it stood on 2026-09-25T03:40:15Z",
+          "output_file": "subject_proof.txt",
+          "lines_at_checked_commit": "15-63",
+          "line_count": 49,
+          "bytes": 2682
+        },
+        {
+          "part": "problem page Statement block, from the line beginning **Statement.** to the line before the next line beginning with a bold field label",
+          "path": "wiki/problems/ramsey_theory/E0809.md",
+          "command": "awk '/^\\*\\*Statement\\.\\*\\*/ {f=1} f && /^\\*\\*[A-Z][A-Za-z ]*\\.\\*\\*/ && !/^\\*\\*Statement\\.\\*\\*/ {exit} f' on wiki/problems/ramsey_theory/E0809.md, run on the file as it stood on 2026-09-25T03:40:15Z",
+          "output_file": "subject_problem.txt",
+          "lines_at_checked_commit": "17-26 (the last a blank line)",
+          "line_count": 10,
+          "bytes": 335
+        }
+      ],
+      "concatenation": {
+        "order": [
+          "subject_statement.txt",
+          "subject_index.txt",
+          "subject_proof.txt",
+          "subject_problem.txt"
+        ],
+        "form": "the four raw outputs joined with no separator, as cat of the four files in order",
+        "bytes": 5876,
+        "sha256": "<removed: sha256 of the concatenation as of 2026-09-25>"
+      },
+      "guard": {
+        "description": "After the four parts are concatenated in order, this filter must print nothing; any output means a merge-conflict marker or a TODO line survived a cut and the extraction is invalid for that commit. Run in the record home. At the checked commit it prints nothing (grep exit status 1), as run by the extraction preparer.",
+        "command": "cat subject_statement.txt subject_index.txt subject_proof.txt subject_problem.txt | grep -nE '^(<<<<<<<|TODO)'",
+        "required": "no output (grep exit status 1)",
+        "result_at_checked_commit": {
+          "stdout": "",
+          "stderr": "",
+          "exit_status": 1
+        }
+      },
+      "ranges_at_checked_commit": {
+        "wiki/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/_index.md": "frontmatter statement lines 13-21; Statement and Argument and formal surface sections lines 41-84 (the last a blank line)",
+        "wiki/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/_proof.md": "lines 15-63",
+        "wiki/problems/ramsey_theory/E0809.md": "lines 17-26 (the last a blank line)"
+      },
+      "concatenation_bytes_at_checked_commit": 5876,
+      "frozen_extraction": "prepared in a fresh context by an extraction preparer distinct from the reviewer and the grader (wiki/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/evidence/assets/statement_fidelity/, schema l17-english-subject-extraction-v1, dated 2026-09-25: subject_manifest.json, subject_statement.txt, subject_index.txt, subject_proof.txt, subject_problem.txt); its four part bodies equal the commands' outputs at the commit byte for byte (597, 2262, 2682 and 335 bytes), as the reviewer and the grader each reran"
+    },
+    "later_commits": "covered only when every part is byte-identical to its output at the checked commit and the guard prints nothing at the candidate commit; see delivery_extension"
+  },
+  "review_and_grade": {
+    "review": {
+      "file": "review.txt",
+      "reads": "review_reads.json",
+      "attribution": "the statement-fidelity reviewer for the L17 acceptance, in a fresh context, under a refutation charge (model: Claude Fable 5.1)",
+      "date": "2026-09-25",
+      "verdict": "refutation-failed",
+      "scope": "the whole English statement (the four extracted parts) against Erdos.L17.statement, the consequence sentences C1-C6, the interface where the claim consumes the assembled library theorem Erdos809.statement_proved and its two branch theorems, a sweep of the 196 closure modules, and the axiom footprint by independent #print axioms in the kept build of the commit"
+    },
+    "grade": {
+      "file": "grade.txt",
+      "reads": "grade_reads.json",
+      "attribution": "the statement-fidelity grader for the L17 acceptance, separately spawned, in a fresh context (model: Claude Fable 5.1)",
+      "date": "2026-09-25",
+      "report_contract": "pass",
+      "independence": "pass",
+      "kernel_only": "confirmed (grade.txt section 4): zero compiler axioms admitted by the clean gate's audit at the commit; empty compiler field in the L17 row of lean/Manifest.json; propext, Classical.choice and Quot.sound alone for the claim, the statement and every premise theorem in two independent #print axioms runs",
+      "exposure_rulings": "six disclosed exposures (E1-E6), each ruled immaterial by the content test (grade.txt section 3)",
+      "acceptance": "accepted at tier 2 for the exact source as it stood on 2026-09-25T03:40:15Z, dated 2026-09-25, in force from its filing, with no regeneration condition (grade.txt section 5, the tier assertion)",
+      "extension_rule": "the precedent's rule restated for this acceptance with its five operating clarifications and its Lean subject kept as the whole lean/ tree outside lean/README.md (grade.txt section 6)"
+    },
+    "independent_computation": {
+      "directory": "beside this record, at the folder root",
+      "files": [
+        "ReviewerProbe.lean",
+        "probe_output.txt",
+        "run_probe_sh.txt",
+        "grader_probe_output.txt",
+        "grader_probe_rc.txt",
+        "grader_probe_start_utc.txt",
+        "grader_probe_end_utc.txt"
+      ],
+      "axioms_observed": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "note": "the reviewer's probe (imports Erdos.L17 only; the compiled statement and claim with and without pp.explicit and with pp.all, the unfolding to Mathlib's objects by rfl and Iff.rfl, the three readings of the asymptotic proved equivalent, the floor identity, the copy facts with chords allowed, the infeasible orders n = 0, 1, 2 and the value 0 there, the exact-edge and at-least-edge identity for every pattern graph, the re-proof of the statement along the reviewer's own route and from the two branch theorems, the non-vacuity consequence, and #print axioms) and the grader's rerun of it with the reviewer's runner gave byte-identical Lean output (190 lines) against the kept build of the commit in the worktree (reviewer 2026-09-25T04:00:23Z to 04:00:25Z, 2 s wall, 2,432,663,552 bytes maximum resident set size; grader 04:38:57Z to 04:39:01Z, 4 s wall, 2,426,781,696 bytes; both exit 0, no error and no warning)"
+    },
+    "contract_at_commit": [
+      "docs/verification.md",
+      "docs/lean_authoring.md",
+      "docs/anatomy.md",
+      "AGENTS.md"
+    ]
+  },
+  "non_author_clean_gate": {
+    "receipts": [
+      "clean_gate.json",
+      "clean_gate_log.txt",
+      "run_clean_gate_sh.txt"
+    ],
+    "filed_names": "the runner's wrapper run_clean_gate.sh, which clean_gate.json names, is filed as run_clean_gate_sh.txt (the wiki tooling admits no .sh name; its bytes are the runner's apart from the identity text now stated as dates); clean_gate.json and clean_gate_log.txt are filed under their own names",
+    "receipt_shape": "a schema receipt (l17-clean-gate-receipt-v1) with one log carrying the runner's header, both captured streams interleaved, and a trailer with the end time, wall seconds and exit code",
+    "runner_attribution": "non-author clean-gate runner, in a fresh context (model: Claude Fable 5.1)",
+    "literal_argv": [
+      "/bin/bash",
+      "lean/scripts/gate.sh",
+      "--clean",
+      "<the repository as it stood on 2026-09-25T03:40:15Z>"
+    ],
+    "environment": "LEAN_NUM_THREADS=4, from the repository root of the runner worktree checked out at the commit",
+    "archive_scope": "git archive of lean/ as it stood on 2026-09-25T03:40:15Z, extracted into a fresh temporary directory by gate.sh --clean, with lake exe cache get run there; the worktree's own lean/.lake was not used",
+    "gate_shell_exit_code": 0,
+    "markers": [
+      "Build completed successfully (4227 jobs).",
+      "audited 7104 constants in 1732 modules, 2 claims, 0 compiler axioms: AUDIT PASS",
+      "Lean gate passed."
+    ],
+    "selftest_stamp": "the committed lean/scripts/selftest.stamp, as it stood on 2026-09-25T03:40:15Z, matched by the gate's digest comparison; no new refusal suite was executed",
+    "window_utc": [
+      "2026-09-25T03:47:09Z",
+      "2026-09-25T04:33:41Z"
+    ],
+    "wall_seconds": 2792,
+    "memory_sampling": "none; no memory sampler ran (clean_gate.json resources)",
+    "warning_lines": 23,
+    "warning_files": [
+      "<another claim's first module>",
+      "<another claim's second module>"
+    ],
+    "error_lines": 0,
+    "compiler_axioms": 0,
+    "foreign_processes": "the observation-only watcher saw lean or lake processes outside the gate's process tree in 3 of 548 five-second samples (at most 2 processes, first at 2026-09-25T03:58:01Z), the reviewer's probe drafts compiled with lake env lean in the worktree's lean/ as review_reads.json records; the serialization rule was not met and the receipt discloses it; the grade's section 4 rules that the gate's build, audit and stamp check ran in their own temporary archive on the committed sources and that the deviation does not affect the kernel result of record",
+    "kept_build": "the worktree's kept build: the reviewer's trace-hash reproduction (review.txt section 7.5) shows the .olean files its probe imported were compiled from the committed text of all 196 closure modules, and the grader's lake build Erdos.L17 --no-build (2026-09-25T04:38:09Z to 04:38:10Z) reported \"All targets up-to-date (2420 jobs)\", exit 0; both probe runs used this build through lake env lean",
+    "qualifications": "per-leg exit codes of the clean gate inferred from the set -euo pipefail source and the located markers; the cache lines are as lake exe cache get printed them, with no file-body identity or public-cache authentication; LEAN_NUM_THREADS is a thread-pool hint, not a process cap; see the receipt"
+  },
+  "regeneration_comparison": {
+    "rule": "the precondition of docs/lean_authoring.md, Statement fidelity and validation, for an acceptance or re-acceptance that changes the generated modules under another claim's generated subtree: regenerated into a fresh root and compared name by name and byte for byte with the committed subtree; the receipt is filed with the acceptance record, and a mismatch yields no acceptance",
+    "applies": "no: the claim's import closure contains no generated module (every closure module is handwritten; no Data/ or Checks/ module is imported), and that subtree as it stood on 2026-09-25T03:40:15Z is identical, file for file, to the subtree as it stood on 2026-09-19T05:07:22Z, that claim's accepted state (git diff --quiet exit 0, run by the grader; git rev-parse of the subtree at both states gave one tree, run by the integrator)",
+    "receipt_of_record": "the regeneration receipt filed with that claim's records (the runner's receipt for the generated subtree, status equal over 1518 modules, as those records state; not reread for this acceptance)",
+    "runner_record": "none filed for this claim; the fact is stated in grade.txt section 4",
+    "condition": "none attaches to this acceptance"
+  },
+  "delivery_extension": {
+    "stated_by": "the grader, grade.txt section 6 (the precedent's rule with this acceptance as the accepted one, its five operating clarifications restated, its Lean subject kept as the whole lean/ tree outside lean/README.md)",
+    "fact_one": {
+      "command": "git diff --quiet <the checked state as it stood on 2026-09-25T03:40:15Z> <candidate> -- lean ':(exclude)lean/README.md'",
+      "required": "exit status 0: every path under lean/ except lean/README.md is identical to the checked commit (the tree gate.sh --clean archives, minus the documentation file); a change to a documentation file inside lean/, a module docstring, a refusal fixture, the manifest or the audit program counts as a difference"
+    },
+    "fact_two": {
+      "commands": "the four extraction commands of native_binding.json english_subject, each run with the checked commit and with the candidate commit in its place, followed by the guard of that rule on the four outputs concatenated in order at the candidate commit",
+      "required": "byte-identical output for each of the four parts and no output from the guard; a moved or renamed page, a missing anchor or a guard hit is a difference"
+    },
+    "confirmation": "performed in a fresh context by a confirmer who is not an author of the changes between the two commits, identified by role and model; names both states, the commands verbatim, their exit codes and outputs, and its date; filed dated beside acceptance_warrant.json as delivery_confirmation_<n>.json; asserts no tier",
+    "failure": "a nonzero exit or any byte difference means the acceptance does not extend to that commit; the confirmer records that outcome and the acceptance remains an acceptance of the state of 2026-09-25T03:40:15Z only",
+    "scope": "carries the acceptance of the Lean subject and the English statement; certifies nothing about text outside the English subject (standing prose, status fields, other pages, the problem page's status), which the integrator keeps consistent with the record under the wiki rules"
+  },
+  "operating_contracts": [
+    "docs/verification.md",
+    "docs/lean_authoring.md",
+    "docs/anatomy.md",
+    "AGENTS.md"
+  ],
+  "current_acceptance": {
+    "state": "accepted at tier 2 by the grader for the exact source above; no condition",
+    "date": "2026-09-25",
+    "standing_authorized": {
+      "status": "proved",
+      "tier": 2,
+      "lean": "Erdos.L17.claim",
+      "depends_on": [],
+      "assumes": "none (kernel-only; the manifest row's compiler field is empty)"
+    },
+    "acceptance_warrant": {
+      "file": "acceptance_warrant.json"
+    },
+    "scope_boundary": "The whole English statement of L17 is accepted: for every natural number k >= 3 the least palette size for which some simple graph on exactly n vertices with exactly floor(n^2/4)+1 edges has an edge coloring making every copy of C_{2k+1} rainbow, taken as 0 at n = 0, 1, 2, is asymptotically equivalent to n^2/8. Nothing is asserted about the value at any fixed n, a rate of convergence, C_3 or C_5, novelty, community acceptance, the literature status of Problem 809, or that the formalized BucicChenMa.Statement is the paper's Theorem 1.2 beyond the problem page's rendering of it.",
+    "earlier_records": "none: this is the first statement-fidelity record for L17"
+  },
+  "prepared_by": "the integrating author of the delivery commit (model: Claude Fable 5.1), who wrote this binding from the frozen extraction, the runner's receipt, the review, the grade and the sources at the commit, and asserts no tier",
+  "filed_by": "the integrating author of the delivery commit (model: Claude Fable 5.1), who filed these records in the record home wiki/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/evidence/verify/statement_fidelity/ and asserts no tier"
+}

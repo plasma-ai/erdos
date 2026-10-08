@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Thomas F. Bloom",
+    "Olof Sisask"
+  ],
+  "category": "math.NT",
+  "date": "2023-09-05",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 236744,
+    "files": 1,
+    "sha256": "389a102a015b3728088ac67a5bcd86fc41baa9a6f60386b6941b76b0e7c12609",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2309.02353v1"
+  },
+  "id": "2309.02353",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 164364,
+    "previous": [],
+    "sha256": "d44717662f9bc046d849e66afd77bd7ff38d667e6484a3c22d6ee5cb926cef6e",
+    "url": "https://arxiv.org/pdf/2309.02353v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2309.02353v1 [math.NT] 5 Sep 2023",
+  "tex": {
+    "archive": {
+      "bytes": 9193,
+      "name": "arXiv-2309.02353v1.gz",
+      "sha256": "5730460c732ca56ab6f3ceb58fabac2537aeb6c5c0031cda31cbb9e465f58c68"
+    },
+    "bytes": 27921,
+    "files": 1,
+    "sha256": "c76917edefd3ab6376b06689d0f70198358a5ef185e26000fe874861ed30e7ee",
+    "url": "https://arxiv.org/src/2309.02353v1"
+  },
+  "title": "An improvement to the Kelley-Meka bounds on three-term arithmetic progressions",
+  "version": 1
+}

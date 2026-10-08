@@ -1,0 +1,40 @@
+{
+  "authors": [
+    "Samuel Le Fourn",
+    "Mike Liu",
+    "S\\'ebastien Martineau"
+  ],
+  "category": "math.PR",
+  "date": "2025-09-10",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 2120783,
+    "files": 7,
+    "sha256": "b10f82ed428ea823185bb86ab5acf0fbb84b22f37b9f894ccc077a3b747291a6",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2509.08452v1"
+  },
+  "id": "2509.08452",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 1290715,
+    "previous": [],
+    "sha256": "9d3730e031cfca35273da62380d99a8990acd7a2a320d96eaeb0ee4afce4c30d",
+    "url": "https://arxiv.org/pdf/2509.08452v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2509.08452v1 [math.PR] 10 Sep 2025",
+  "tex": {
+    "archive": {
+      "bytes": 531901,
+      "name": "arXiv-2509.08452v1.tar.gz",
+      "sha256": "1b746a0a5846e7be4f97faf98a1179fd97c44ed0cb7fb0aa2ee3b51a89a8d8ed"
+    },
+    "bytes": 1264006,
+    "files": 10,
+    "sha256": "b71672775de490353c5c9c81c49c1397bfb0ef15179ffafb42da884a119fe7ee",
+    "url": "https://arxiv.org/src/2509.08452v1"
+  },
+  "title": "Percolative properties of the random coprime colouring",
+  "version": 1
+}

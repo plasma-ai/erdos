@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Jinyoung Park",
+    "Huy Tuan Pham"
+  ],
+  "category": "math.CO",
+  "date": "2023-04-13",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 233053,
+    "files": 1,
+    "sha256": "30dec5b35f98ea4aecaf7b298ce6a3f05808d01c5512a3bccda3608fec176864",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2203.17207v2"
+  },
+  "id": "2203.17207",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 331118,
+    "previous": [],
+    "sha256": "99741b85652fc68329d046aef758891d330971236406cc9932b20bf91c1f06aa",
+    "url": "https://arxiv.org/pdf/2203.17207v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2203.17207v2 [math.CO] 13 Apr 2023",
+  "tex": {
+    "archive": {
+      "bytes": 12561,
+      "name": "arXiv-2203.17207v2.gz",
+      "sha256": "d9b98a12ddb6a4931a440cc52abe9a2e562d6af8c128f7ac7a661a64b14ff975"
+    },
+    "bytes": 36467,
+    "files": 1,
+    "sha256": "750e06b41e9c064f33521f56c4389de9bf17164125dcaf791b12ede26eb50a58",
+    "url": "https://arxiv.org/src/2203.17207v2"
+  },
+  "title": "A Proof of the Kahn-Kalai Conjecture",
+  "version": 2
+}

@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Samuel Korsky"
+  ],
+  "category": "math.CO",
+  "date": "2026-06-23",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 331529,
+    "files": 1,
+    "sha256": "ddf341fb7755cd607a2922f2d6dd51b74e02d5cd566c26af4f8a1caf297c5b22",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2606.24139v1"
+  },
+  "id": "2606.24139",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 373599,
+    "previous": [],
+    "sha256": "aba27ce71b077374b780f9771c7f4f4854559b01044612e2204d01a11674c55f",
+    "url": "https://arxiv.org/pdf/2606.24139v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2606.24139v1 [math.CO] 23 Jun 2026",
+  "tex": {
+    "archive": {
+      "bytes": 15200,
+      "name": "arXiv-2606.24139v1.tar.gz",
+      "sha256": "cfe9ce8f19086d26f6c1df0f7dd6c1f898dc59d7aaac25bf53919b00d7763c5c"
+    },
+    "bytes": 46130,
+    "files": 2,
+    "sha256": "d1529bc3af511fe431203b28dd072ec4bf3c63810756dde6f1fdc08f3b3f0b1d",
+    "url": "https://arxiv.org/src/2606.24139v1"
+  },
+  "title": "Arithmetic Progression-Free Subset-Sum Sets",
+  "version": 1
+}

@@ -1,0 +1,37 @@
+{
+  "scope": "Unmodified unauthenticated public HTML preserved as source evidence; scripts were not executed by this compilation. The site inserts per-request tokens, so two fetches of one page never have equal bytes; compare visible text, not hashes.",
+  "records": [
+    {
+      "kind": "problem",
+      "url": "https://www.erdosproblems.com/251",
+      "response_url": "https://www.erdosproblems.com/251",
+      "accessed_utc": "2026-09-17T07:37:36.040611+00:00",
+      "attachment": "problem_20260917.html.gz",
+      "decoded_bytes": 32811
+    },
+    {
+      "kind": "discussion",
+      "url": "https://www.erdosproblems.com/forum/discuss/251",
+      "response_url": "https://www.erdosproblems.com/forum/thread/251",
+      "accessed_utc": "2026-09-17T07:37:41.658088+00:00",
+      "attachment": "discussion_20260917.html.gz",
+      "decoded_bytes": 61588
+    },
+    {
+      "kind": "proof_claims",
+      "url": "https://www.erdosproblems.com/forum/thread/251/proof-claims",
+      "response_url": "https://www.erdosproblems.com/forum/thread/251/proof-claims",
+      "accessed_utc": "2026-09-17T07:37:46.822310+00:00",
+      "attachment": "proof_claims_20260917.html.gz",
+      "decoded_bytes": 42238
+    },
+    {
+      "kind": "history",
+      "url": "https://www.erdosproblems.com/history/251",
+      "response_url": "https://www.erdosproblems.com/history/251",
+      "accessed_utc": "2026-09-17T07:37:51Z",
+      "attachment": "history_20260917.html.gz",
+      "decoded_bytes": 26181
+    }
+  ]
+}

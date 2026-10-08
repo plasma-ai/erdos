@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Marcus Michelen",
+    "Mehtaab Sawhney"
+  ],
+  "category": "math.PR",
+  "date": "2025-09-02",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 570369,
+    "files": 1,
+    "sha256": "fcfd2b1c5e039178514facee0be3edec6abc40ac5cb62e9de8158b65c0ab24a5",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2509.02729v1"
+  },
+  "id": "2509.02729",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 642423,
+    "previous": [],
+    "sha256": "45284345298b9685f59bc7d1abdaaf9e7c80e62b870a025c3ce3f6db1d6d474b",
+    "url": "https://arxiv.org/pdf/2509.02729v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2509.02729v1 [math.PR] 2 Sep 2025",
+  "tex": {
+    "archive": {
+      "bytes": 20763,
+      "name": "arXiv-2509.02729v1.tar.gz",
+      "sha256": "d87c4b1910779415fb2dc43c40fb8894bdb2ff6ddfd7eb83e9e092afa9e0ea94"
+    },
+    "bytes": 66359,
+    "files": 3,
+    "sha256": "f24390ad7c0f09c8897b6a4a7b46925a19cce6a42a3ab3628fba54ce68918194",
+    "url": "https://arxiv.org/src/2509.02729v1"
+  },
+  "title": "Convergent points for random power series on the unit circle",
+  "version": 1
+}

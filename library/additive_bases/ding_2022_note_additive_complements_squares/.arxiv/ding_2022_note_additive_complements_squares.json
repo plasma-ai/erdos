@@ -1,0 +1,41 @@
+{
+  "authors": [
+    "Yuchen Ding",
+    "Yu-Chen Sun",
+    "Li-Yuan Wang",
+    "Yutong Xia"
+  ],
+  "category": "math.NT",
+  "date": "2023-04-05",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 190877,
+    "files": 1,
+    "sha256": "d131a65eea535554eb6105cceff9f7f940176199eb31f0e4ee91a3e41c37dbc7",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2211.16810v3"
+  },
+  "id": "2211.16810",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 155587,
+    "previous": [],
+    "sha256": "d49c1e931a4cc24db7fc962d2e834c81d718c9c2e09e056e3da8b330667614f7",
+    "url": "https://arxiv.org/pdf/2211.16810v3"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2211.16810v3 [math.NT] 5 Apr 2023",
+  "tex": {
+    "archive": {
+      "bytes": 7402,
+      "name": "arXiv-2211.16810v3.gz",
+      "sha256": "50b73607f45ea9023017d56f56e7b6154b98c13952cb48510a718c615f7ed2de"
+    },
+    "bytes": 23801,
+    "files": 1,
+    "sha256": "f99a3af96c7ac01a42952a2b88516a9b51fb730c282f9036a2c8b0ad47381e38",
+    "url": "https://arxiv.org/src/2211.16810v3"
+  },
+  "title": "A note on additive complements of the squares",
+  "version": 3
+}

@@ -1,0 +1,40 @@
+{
+  "authors": [
+    "Christian Reiher",
+    "Vojt\\v{e}ch R\\\"odl",
+    "Marcelo Sales"
+  ],
+  "category": "math.CO",
+  "date": "2024-10-07",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 731285,
+    "files": 1,
+    "sha256": "e6130babcfcbfb3093339c62c727c360aea4107478ea400293e213a42d38a1a6",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2311.08556v2"
+  },
+  "id": "2311.08556",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 699111,
+    "previous": [],
+    "sha256": "fcc6bf9a37a5f046217401b5d209e9d619ac09f755ca27debce75ea1d4ee6ce5",
+    "url": "https://arxiv.org/pdf/2311.08556v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2311.08556v2 [math.CO] 7 Oct 2024",
+  "tex": {
+    "archive": {
+      "bytes": 32890,
+      "name": "arXiv-2311.08556v2.gz",
+      "sha256": "22dd8e63cc9d3c59fb3065389fb5be0200750cab560e52ce8d238d13a5c276ef"
+    },
+    "bytes": 104721,
+    "files": 1,
+    "sha256": "07e016aaf3f76239fc985c5eab82dd096b30d88d8ebd7f100d98abee73902727",
+    "url": "https://arxiv.org/src/2311.08556v2"
+  },
+  "title": "Colouring versus density in integers and Hales-Jewett cubes",
+  "version": 2
+}

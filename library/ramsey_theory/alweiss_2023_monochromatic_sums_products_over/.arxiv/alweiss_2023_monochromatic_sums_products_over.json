@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Ryan Alweiss"
+  ],
+  "category": "math.CO",
+  "date": "2026-07-12",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 422829,
+    "files": 1,
+    "sha256": "13111f1594aeaafd1f10fe9c29cdb4364a29c38ff2e91a901e3d0ca50eea2a21",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2307.08901v6"
+  },
+  "id": "2307.08901",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 381948,
+    "previous": [],
+    "sha256": "e70f61d174bdd092d458090a3b72e4d31d92cfe2f85431b483ad9a2f55ec127a",
+    "url": "https://arxiv.org/pdf/2307.08901v6"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2307.08901v6 [math.CO] 12 Jul 2026",
+  "tex": {
+    "archive": {
+      "bytes": 20003,
+      "name": "arXiv-2307.08901v6.tar.gz",
+      "sha256": "2c4cd3022e92affc3f8e5c28cbabcf6afcb841b2609f03394d53716fb84b34aa"
+    },
+    "bytes": 63547,
+    "files": 2,
+    "sha256": "90bfc908f79704ab14ec6578df24169aac1a65d85773c6068a14520cc0d26dcf",
+    "url": "https://arxiv.org/src/2307.08901v6"
+  },
+  "title": "Monochromatic Sums and Products over $\\mathbb{Q}$",
+  "version": 6
+}

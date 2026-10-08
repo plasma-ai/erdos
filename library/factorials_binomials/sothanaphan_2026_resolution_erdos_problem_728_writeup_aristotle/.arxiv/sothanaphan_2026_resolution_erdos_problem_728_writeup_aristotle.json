@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Nat Sothanaphan"
+  ],
+  "category": "math.NT",
+  "date": "2026-01-26",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 680691,
+    "files": 3,
+    "sha256": "80914a10baa12b4e5b3384162cbfde914c55b23f54c8ffd1303b10c3b175d159",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2601.07421v5"
+  },
+  "id": "2601.07421",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 600362,
+    "previous": [],
+    "sha256": "fb1bccdbbc8f5abc00dfc1b88237dfe53238b87e33b7e835625885067ff9825b",
+    "url": "https://arxiv.org/pdf/2601.07421v5"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2601.07421v5 [math.NT] 26 Jan 2026",
+  "tex": {
+    "archive": {
+      "bytes": 191628,
+      "name": "arXiv-2601.07421v5.tar.gz",
+      "sha256": "89935fe083fe47d080488fd6fb005cc95fa0f8dc643df8cac0e2553dac007b74"
+    },
+    "bytes": 234429,
+    "files": 4,
+    "sha256": "d886025b7231a918039a377b7734ed478fcd4b65888db75f3fbfd299fe64e222",
+    "url": "https://arxiv.org/src/2601.07421v5"
+  },
+  "title": "Resolution of Erd\\H{o}s Problem #728: a writeup of Aristotle's Lean proof",
+  "version": 5
+}

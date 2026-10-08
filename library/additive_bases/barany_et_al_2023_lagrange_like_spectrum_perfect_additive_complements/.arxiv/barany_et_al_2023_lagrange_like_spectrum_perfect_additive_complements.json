@@ -1,0 +1,40 @@
+{
+  "authors": [
+    "Bal\\'azs B\\'ar\\'any",
+    "Jin-Hui Fang",
+    "Csaba S\\'andor"
+  ],
+  "category": "math.NT",
+  "date": "2023-10-10",
+  "fetched": "2026-09-24",
+  "html": {
+    "bytes": 561934,
+    "files": 1,
+    "sha256": "b798ebadb6f74678708ae6d265f40ba403d5d8715753874d3a7741dcb510a486",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2301.04365v2"
+  },
+  "id": "2301.04365",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 234155,
+    "previous": [],
+    "sha256": "63e4c456e009952f60357b72f1a0f7a7b27e7ed08dde7a98160a8ac26148b925",
+    "url": "https://arxiv.org/pdf/2301.04365v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2301.04365v2 [math.NT] 10 Oct 2023",
+  "tex": {
+    "archive": {
+      "bytes": 16236,
+      "name": "arXiv-2301.04365v2.gz",
+      "sha256": "4e61a1e667abf4d8a1bfbacf6b4e29f6439bf707081b37f03f04c663dcddd688"
+    },
+    "bytes": 59051,
+    "files": 1,
+    "sha256": "2bf7407b2e0978f8cb08d5993a62d1f6c28dc03a63e6b186664fd562989a18ce",
+    "url": "https://arxiv.org/src/2301.04365v2"
+  },
+  "title": "Lagrange-like spectrum of perfect additive complements",
+  "version": 2
+}

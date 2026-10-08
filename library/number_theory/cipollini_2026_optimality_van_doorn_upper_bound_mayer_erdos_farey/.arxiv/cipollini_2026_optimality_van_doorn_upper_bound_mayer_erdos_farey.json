@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Ricky Cipollini"
+  ],
+  "category": "math.NT",
+  "date": "2026-07-25",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 336902,
+    "files": 1,
+    "sha256": "85918ab196ae4b4ec0c96c70048ce4b079877537918dc5d8ef54f636fc711bda",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2607.23302v1"
+  },
+  "id": "2607.23302",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 315235,
+    "previous": [],
+    "sha256": "ec0ad17e3229dc19bef6815b8ae01780bc1a4cca05d9399a2f78a25cdb120cff",
+    "url": "https://arxiv.org/pdf/2607.23302v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2607.23302v1 [math.NT] 25 Jul 2026",
+  "tex": {
+    "archive": {
+      "bytes": 9561,
+      "name": "arXiv-2607.23302v1.tar.gz",
+      "sha256": "61931c02bb18f62469fdab62d6020fdc2807792d9774f7196b5e284b15d73bd4"
+    },
+    "bytes": 27497,
+    "files": 2,
+    "sha256": "96efa4cfd41093a360160d725d28a4177fea2ee78387527a26edf2463c9bd29c",
+    "url": "https://arxiv.org/src/2607.23302v1"
+  },
+  "title": "Optimality of Wouter van Doorn's Upper Bound for the Mayer-Erd\\H{o}s Farey Problem",
+  "version": 1
+}

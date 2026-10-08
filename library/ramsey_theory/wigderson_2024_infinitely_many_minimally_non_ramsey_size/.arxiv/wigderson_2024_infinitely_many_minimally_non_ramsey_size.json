@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Yuval Wigderson"
+  ],
+  "category": "math.CO",
+  "date": "2025-05-05",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 59552,
+    "files": 1,
+    "sha256": "e4bdf9ff869661431e3cc31263bf4adbaa66e2af462704b5d2adc4ad741447eb",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2409.05931v2"
+  },
+  "id": "2409.05931",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 85968,
+    "previous": [],
+    "sha256": "ee7e4c66e72c1e250e88a2b821060bb850f80494771ec19bb523ff80369cb37e",
+    "url": "https://arxiv.org/pdf/2409.05931v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2409.05931v2 [math.CO] 5 May 2025",
+  "tex": {
+    "archive": {
+      "bytes": 4066,
+      "name": "arXiv-2409.05931v2.tar.gz",
+      "sha256": "d25774df23254a42288631fac2ae445641500c4466a49eefc68a6826e2f3a9c1"
+    },
+    "bytes": 9268,
+    "files": 2,
+    "sha256": "71361d6ab95cb30b5eb7766cfac00174fe71c0ab8007b330dd7c5b6c4e443268",
+    "url": "https://arxiv.org/src/2409.05931v2"
+  },
+  "title": "Infinitely many minimally non-Ramsey size-linear graphs",
+  "version": 2
+}

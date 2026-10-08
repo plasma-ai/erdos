@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Khai-Hoan Nguyen-Dang"
+  ],
+  "category": "math.NT",
+  "date": "2026-06-06",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 443334,
+    "files": 1,
+    "sha256": "184b53ede3418f0a1dcda23ffa454c7d5c688992569a50bf2ce526d8a9362c05",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2606.07959v1"
+  },
+  "id": "2606.07959",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 462086,
+    "previous": [],
+    "sha256": "f9527dc848ba025188036fec8c7d8b07983df7255aa44a56e9cdabc59c0f66e9",
+    "url": "https://arxiv.org/pdf/2606.07959v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2606.07959v1 [math.NT] 6 Jun 2026",
+  "tex": {
+    "archive": {
+      "bytes": 14912,
+      "name": "arXiv-2606.07959v1.tar.gz",
+      "sha256": "eba1011cb917367c7b3f820582fd46f5b549fc6f74206a1b8a318ad65c1ff1b2"
+    },
+    "bytes": 46731,
+    "files": 2,
+    "sha256": "b8a6f7803e8503aa4b93345ba83674bc467a3b05ec54bf4b081f10a9ae741d66",
+    "url": "https://arxiv.org/src/2606.07959v1"
+  },
+  "title": "On the sequence $\\mathrm{gcd}(a^n-1,b^n-1)$",
+  "version": 1
+}

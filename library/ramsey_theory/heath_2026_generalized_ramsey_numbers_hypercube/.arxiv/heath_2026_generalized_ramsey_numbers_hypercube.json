@@ -1,0 +1,40 @@
+{
+  "authors": [
+    "Emily Heath",
+    "Coy Schwieder",
+    "Shira Zerbib"
+  ],
+  "category": "math.CO",
+  "date": "2026-01-21",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 351258,
+    "files": 1,
+    "sha256": "51a468ecf34ee7ce93425b19a2f1c19ecfde07d64d5e2725bcb5f77eeca3b84e",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2601.15451v1"
+  },
+  "id": "2601.15451",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 407809,
+    "previous": [],
+    "sha256": "702f0740bd3889bc768e2fd4f51be30a6600b2b6fd93f84d053b977e9b520a8f",
+    "url": "https://arxiv.org/pdf/2601.15451v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2601.15451v1 [math.CO] 21 Jan 2026",
+  "tex": {
+    "archive": {
+      "bytes": 16432,
+      "name": "arXiv-2601.15451v1.tar.gz",
+      "sha256": "998f11528d9acd5a03e4f2479d3ed92da0fab9f99341dc7c270f3b375f7765c1"
+    },
+    "bytes": 61301,
+    "files": 13,
+    "sha256": "a88defcd8e0fa0ec01c0a18b83e8771ad4e71263236a0e0e5d10726cb93bcdb1",
+    "url": "https://arxiv.org/src/2601.15451v1"
+  },
+  "title": "Generalized Ramsey Numbers in the Hypercube",
+  "version": 1
+}

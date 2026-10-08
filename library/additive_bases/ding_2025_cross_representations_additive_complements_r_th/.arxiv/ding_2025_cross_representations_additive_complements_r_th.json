@@ -1,0 +1,42 @@
+{
+  "authors": [
+    "Yuchen Ding",
+    "Ben Krause",
+    "Csaba S\\'andor",
+    "Yu-Chen Sun",
+    "Zihan Zhang"
+  ],
+  "category": "math.NT",
+  "date": "2026-07-09",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 402165,
+    "files": 1,
+    "sha256": "df036aa5a9bd5ea3fa7e20717afb072848bcfdcb9ec6755b96a677ab5d24b2e0",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2512.15407v6"
+  },
+  "id": "2512.15407",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 398347,
+    "previous": [],
+    "sha256": "33dcdf37d20c696120d3d2e1dc714880af288fa94eecf5b64c2b353e489ae5d1",
+    "url": "https://arxiv.org/pdf/2512.15407v6"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2512.15407v6 [math.NT] 9 Jul 2026",
+  "tex": {
+    "archive": {
+      "bytes": 12825,
+      "name": "arXiv-2512.15407v6.tar.gz",
+      "sha256": "03640c1a4e567532d0db0bba4cc8e52d2f2fd34b7e9127cba1bda6b72bb88072"
+    },
+    "bytes": 41083,
+    "files": 2,
+    "sha256": "238c36e2775be0311f5a342bec9064a9342a24a1466efb34f8de10c0a592cde6",
+    "url": "https://arxiv.org/src/2512.15407v6"
+  },
+  "title": "Cross representations of additive complements of $r$-th powers",
+  "version": 6
+}

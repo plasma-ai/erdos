@@ -1,0 +1,58 @@
+{
+  "title": "A Simple Algorithm for Finding Maximal Network Flows and an Application to the Hitchcock Problem",
+  "authors": [
+    "L. R. Ford, Jr.",
+    "D. R. Fulkerson"
+  ],
+  "journal": "Canadian Journal of Mathematics",
+  "volume": 9,
+  "year": 1957,
+  "printed_pages": "210–218",
+  "physical_pages": 9,
+  "doi": "10.4153/CJM-1957-024-0",
+  "received_date": "1956-04-16",
+  "publisher_online_date": "2018-11-20",
+  "accessed": "2026-09-05",
+  "canonical_version": "Official Cambridge digitized scan of the published original.",
+  "publisher_url": "https://www.cambridge.org/core/journals/canadian-journal-of-mathematics/article/simple-algorithm-for-finding-maximal-network-flows-and-an-application-to-the-hitchcock-problem/737B94AD6BA2DBA27923C5EDC03D3683",
+  "pdf_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/737B94AD6BA2DBA27923C5EDC03D3683/S0008414X00044539a.pdf/div-class-title-a-simple-algorithm-for-finding-maximal-network-flows-and-an-application-to-the-hitchcock-problem-div.pdf",
+  "metadata_url": "https://api.crossref.org/works/10.4153/CJM-1957-024-0",
+  "pdf_file": "ford_1957_maximal_network_flows_hitchcock.pdf",
+  "pdf_bytes": 797388,
+  "acquisition": {
+    "method": "Ordinary verified HTTPS download from the official publisher; HTTP 200, no login, purchase or bypass.",
+    "source_bytes_unchanged": true
+  },
+  "date_and_version_qualifications": [
+    "The paper records receipt, not an acceptance date.",
+    "The 2018 online date and PDF production dates are digital metadata, not mathematical revision dates.",
+    "No separate manuscript version or general real-capacity proof was compared."
+  ],
+  "reading": {
+    "original_pages_visually_read": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "printed_pages": "210–218",
+    "display_detail": "original",
+    "render_dpi": 180,
+    "ocr_used": false
+  },
+  "mathematical_scope": {
+    "main": "Constructive finite integer max-flow/min-cut and integrality with the paper's terminal-direction convention; rational scaling and mixed/node/multiple-terminal reductions.",
+    "transportation": "Complete residual array equivalence, cost-shift certificate, both Lemma 3 methods, support-preserving potential updates and finite integral Hitchcock algorithm.",
+    "external_context": "General strong linear-programming duality, earlier unrestricted-capacity flow proofs and named combinatorial applications remain source pointers, not hidden inputs to these local proofs.",
+    "source_precision": [
+      "Equation (1), p. 210, has an i/j summation-index mismatch; the transcription sums x_1j consistently over j.",
+      "Finite capacities, source-row termination bound, empty cases, positive cross minima and the array equivalence omitted in the source are expanded explicitly."
+    ],
+    "formalization": "No formal verification, program implementation or running-time claim is made."
+  }
+}

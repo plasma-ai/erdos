@@ -1,0 +1,69 @@
+{
+  "author": [
+    "Natalie Behague"
+  ],
+  "canonical_version": "arXiv:2510.15677v3",
+  "canonical_version_date_note": "The arXiv v3 history records upload on 4 December 2025 at 15:00:59Z; the PDF title page is dated 5 December 2025.",
+  "canonical_version_date_utc": "2025-12-04T15:00:59Z",
+  "canonical_version_displayed_title_page_date": "5 December 2025",
+  "external_inputs": [
+    "Kriz 1991 soluble-orbit theorem and closure",
+    "Karamanlis 2022 simplex enclosure",
+    "Finite convex regular-polytope classification (uncited in the source), with symmetry-group structures from Wilson 2009, Table 2.1"
+  ],
+  "license": "CC BY-SA 4.0 as linked by arXiv",
+  "operations": {
+    "git_operations": [],
+    "lean_builds": []
+  },
+  "primary_records": {
+    "arxiv_v3": "https://arxiv.org/abs/2510.15677v3",
+    "author_papers_page": "https://nb453.user.srcf.net/papers/",
+    "official_accepted_page": "https://escholarship.org/uc/combinatorial_theory/acceptedPapers"
+  },
+  "publication_status": {
+    "author_page_modified_metadata": "2026-08-13T12:28:42+01:00",
+    "checked_utc": "2026-09-05",
+    "direct_fetch_limit": "The official accepted-page raw response was an AWS WAF JavaScript challenge; no challenge was bypassed. The dated indexed-page observation was independently reproduced.",
+    "evidence_checked_utc": "2026-09-05",
+    "official_accepted_page": "https://escholarship.org/uc/combinatorial_theory/acceptedPapers",
+    "qualification": "Exact title and author appeared in the official dated accepted-page index. No deposited journal article, volume, issue, article number, journal PDF or publisher pagination was located. The author page modified 2026-08-13 still labels it Submitted.",
+    "status": "accepted_for_publication_not_yet_located_as_published"
+  },
+  "schema_version": 1,
+  "source_slug": "behague_2025_nearly_all_known_euclidean_ramsey_sets_subsoluble",
+  "title": "Nearly all known Euclidean Ramsey sets are subsoluble",
+  "version_scope": "All result labels and page citations in the source unit refer to arXiv v3 unless expressly marked otherwise. No published article version has been acquired.",
+  "versions": [
+    {
+      "date_utc": "2025-12-04T15:00:59Z",
+      "file": "behague_2025_nearly_all_known_euclidean_ramsey_sets_subsoluble.pdf",
+      "physical_pages": 12,
+      "role": "canonical arXiv v3",
+      "url": "https://arxiv.org/pdf/2510.15677v3"
+    },
+    {
+      "date_utc": "2025-10-17T14:11:28Z",
+      "file": "behague_2025_nearly_all_known_euclidean_ramsey_sets_subsoluble_arxiv_v1.pdf",
+      "physical_pages": 15,
+      "role": "retained materially distinct arXiv v1; deleted simplex proof receives no complete-proof credit",
+      "url": "https://arxiv.org/pdf/2510.15677v1"
+    },
+    {
+      "date_utc": "2025-10-20T10:22:54Z",
+      "file": "behague_2025_nearly_all_known_euclidean_ramsey_sets_subsoluble_arxiv_v2.pdf",
+      "physical_pages": 12,
+      "role": "retained arXiv v2; first Karamanlis-import version before v3 action corrections",
+      "url": "https://arxiv.org/pdf/2510.15677v2"
+    }
+  ],
+  "visual_source_review": {
+    "method": "All pages independently rendered at 170 dpi and visually read at original detail; no OCR.",
+    "physical_pages_read": 39,
+    "versions": [
+      "v1",
+      "v2",
+      "v3"
+    ]
+  }
+}

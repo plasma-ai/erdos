@@ -1,0 +1,123 @@
+{
+  "schema_version": "source_identity_record.v1",
+  "source_id": "guth_2015_erdos_distinct_distance_problem_plane",
+  "source_aliases": [
+    {
+      "alias": "guth_2015_erdos_distinct_distances_problem_plane",
+      "kind": "retired duplicate source slug"
+    },
+    {
+      "alias": "GuKa15",
+      "kind": "site citation key"
+    }
+  ],
+  "title": "On the Erdős distinct distance problem in the plane",
+  "authors": [
+    "Larry Guth",
+    "Nets Hawk Katz"
+  ],
+  "identifiers": [
+    {
+      "scheme": "doi",
+      "value": "10.4007/annals.2015.181.1.2"
+    },
+    {
+      "scheme": "arxiv",
+      "value": "1011.4105"
+    }
+  ],
+  "publication": {
+    "journal": "Annals of Mathematics",
+    "volume": "181",
+    "year": 2015,
+    "pages": "155-190"
+  },
+  "selected_citation_artifact": "arxiv_1011.4105v3_retained",
+  "artifacts": [
+    {
+      "artifact_id": "arxiv_1011.4105v3_retained",
+      "file": "guth_2015_erdos_distinct_distance_problem_plane.pdf",
+      "role": "selected citation artifact",
+      "version_label": "retained PDF labeled arXiv:1011.4105v3 [math.CO]",
+      "displayed_version_date": "2011-06-28",
+      "displayed_document_date": "2024-11-26",
+      "bytes": 328114,
+      "physical_pages": 37,
+      "locator_note": "Use physical pages until result-page locators are independently reviewed."
+    },
+    {
+      "artifact_id": "annals_2015_published_alternate",
+      "file": "guth_katz_2015_published_ALTERNATE.pdf",
+      "role": "alternate artifact for bounded external statement interface",
+      "version_label": "Annals of Mathematics 181 (2015), published typesetting",
+      "bytes": 540195,
+      "physical_pages": 36,
+      "printed_pages": "155-190",
+      "locator_note": "Theorem 1.2: printed 156, physical 2; Theorem 4.5: printed 176, physical 22.",
+      "reading_scope": "Theorem statements 1.2 and 4.5 and nearby edition distinction in 1.3; no proof compilation.",
+      "verification_state": "Verified at bounded statement/interface scope by independent review"
+    }
+  ],
+  "identity_decision": {
+    "decision": "same work and same retained artifact",
+    "manual": true,
+    "basis": [
+      "same authors and bibliographic title",
+      "same DOI 10.4007/annals.2015.181.1.2",
+      "same arXiv identifier 1011.4105",
+      "byte-identical retained PDFs"
+    ],
+    "boundary": "This manual decision identifies the canonical source and its retired native duplicate. Equal hashes alone are not a rule for merging other sources, results, or proof routes."
+  },
+  "annotation_scopes": [
+    {
+      "scope": "Theorem-oriented annotation, result list, and E0653 off-point screening; no independent theorem or proof certification."
+    },
+    {
+      "scope": "GuKa15 annotation based only on the arXiv abstract page, with no PDF consulted; E0100 lower-bound relationship."
+    }
+  ],
+  "problem_relationships": [
+    {
+      "problem": "E0100",
+      "scope": "lower-bound relationship preserved from the GuKa15 abstract-only annotation"
+    },
+    {
+      "problem": "E0653",
+      "scope": "explicit off-point screening preserved from the theorem-oriented annotation"
+    },
+    {
+      "problem": "E0661",
+      "scope": "Published Theorems 1.2 and 4.5 as external statement premises in the Mathialagan Theorem 3 reconstruction; independently verified at statement/interface scope; no external proof credit."
+    }
+  ],
+  "citation_alias_consumers": [
+    "wiki/problems/distance_problems/E0089.md",
+    "wiki/problems/distance_problems/E0095.md",
+    "wiki/problems/distance_problems/E0100.md"
+  ],
+  "limits": [
+    "The selected local PDF is not identified here as the Annals typesetting.",
+    "The two reading scopes are recorded without any upgrade.",
+    "This identity record grants no theorem, proof, relationship, review, acceptance, or status credit."
+  ],
+  "alternate_edition_notes": [
+    {
+      "result": "Theorem 1.3",
+      "selected_artifact_locator": "physical/printed p.2",
+      "alternate_artifact_locator": "physical p.2, printed p.156",
+      "difference": "The retained v3 and theorem-oriented annotation display exponent (n+1)/n; the publisher typesetting displays n/(n-1).",
+      "scope": "Edition distinction only; no joints proof compilation or recorded annotation upgrade."
+    }
+  ],
+  "bounded_external_interface": {
+    "consumer": "library/distance_problems/mathialagan_2021_bipartite_distinct_distances_plane/incidence_inputs.md",
+    "artifact_id": "annals_2015_published_alternate",
+    "results": [
+      "Theorem 1.2, printed 156 / physical 2",
+      "Theorem 4.5, printed 176 / physical 22"
+    ],
+    "state": "Verified at bounded statement/interface scope by independent review",
+    "boundary": "External statements and their Mathialagan application only; selected citation artifact, aliases and recorded annotation scopes remain unchanged."
+  }
+}

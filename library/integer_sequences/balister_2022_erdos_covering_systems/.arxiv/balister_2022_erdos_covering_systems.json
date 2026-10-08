@@ -1,0 +1,42 @@
+{
+  "authors": [
+    "Paul Balister",
+    "B\\'ela Bollob\\'as",
+    "Robert Morris",
+    "Julian Sahasrabudhe",
+    "Marius Tiba"
+  ],
+  "category": "math.CO",
+  "date": "2022-11-02",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 191962,
+    "files": 1,
+    "sha256": "e94c7baae900302042591520e0f967d2bde459cc73ce9d1fdc036b69294b7de4",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2211.01417v1"
+  },
+  "id": "2211.01417",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 143550,
+    "previous": [],
+    "sha256": "75559aa895b12761c48d362c0b7644b50f01d0f1491ea150a49f610fe8be3b69",
+    "url": "https://arxiv.org/pdf/2211.01417v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2211.01417v1 [math.CO] 2 Nov 2022",
+  "tex": {
+    "archive": {
+      "bytes": 8225,
+      "name": "arXiv-2211.01417v1.gz",
+      "sha256": "c83919bd020f1cd3d9f25c02ae52cfc8e789bae10d3a824b90e5c17e114d3de9"
+    },
+    "bytes": 24714,
+    "files": 1,
+    "sha256": "55c8a80bb2b08c111b6fca3d80cc64e65083597d08daa20486ae6d11d8b9e385",
+    "url": "https://arxiv.org/src/2211.01417v1"
+  },
+  "title": "Erd\\H{o}s covering systems",
+  "version": 1
+}

@@ -1,0 +1,41 @@
+{
+  "authors": [
+    "Rafael Miyazaki",
+    "Eion Mulrenin",
+    "Cosmin Pohoata",
+    "Michael Zheng"
+  ],
+  "category": "math.CO",
+  "date": "2026-05-14",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 294723,
+    "files": 1,
+    "sha256": "8e00c86fd85347ab2eec9d4f1b7b87e14fd657317246a1efbd5bf2b850e584bb",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2605.15147v1"
+  },
+  "id": "2605.15147",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 522131,
+    "previous": [],
+    "sha256": "602fcdf91ab785fb58bd0590dca1586609529e2990cf4d9e41bf0b1279146359",
+    "url": "https://arxiv.org/pdf/2605.15147v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2605.15147v1 [math.CO] 14 May 2026",
+  "tex": {
+    "archive": {
+      "bytes": 14606,
+      "name": "arXiv-2605.15147v1.tar.gz",
+      "sha256": "62ac0026bf5bf673f1916c9cec5db157b1ea39b634c7877c0475b75c02bc0dcb"
+    },
+    "bytes": 42475,
+    "files": 2,
+    "sha256": "5f0a714d6b0aa62c48309606025847b7a7ee00b9b3a11fd9533748e5058ff1f8",
+    "url": "https://arxiv.org/src/2605.15147v1"
+  },
+  "title": "Improved Ramsey bounds for generalized Schur equations",
+  "version": 1
+}

@@ -1,0 +1,40 @@
+{
+  "authors": [
+    "David Conlon",
+    "Jacob Fox",
+    "Yuval Wigderson"
+  ],
+  "category": "math.CO",
+  "date": "2023-02-08",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 631801,
+    "files": 1,
+    "sha256": "bfe6129a8b2e43993d99cb6c3677ae589a488de1c7862662c8c055ca4e121579",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2111.05420v2"
+  },
+  "id": "2111.05420",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 283192,
+    "previous": [],
+    "sha256": "8030838683a72e006d040595e5b20b115689935645b527fe58c0beed7de19021",
+    "url": "https://arxiv.org/pdf/2111.05420v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2111.05420v2 [math.CO] 8 Feb 2023",
+  "tex": {
+    "archive": {
+      "bytes": 25300,
+      "name": "arXiv-2111.05420v2.tar.gz",
+      "sha256": "08e2023c2312e432f9435bbb56112ed97012552b1b97487bea4a321461e25f1d"
+    },
+    "bytes": 79019,
+    "files": 2,
+    "sha256": "8b2f4aaec1f4935a1de1c26a59822c0047e23c8eef875227cde92ec5fb265122",
+    "url": "https://arxiv.org/src/2111.05420v2"
+  },
+  "title": "Three early problems on size Ramsey numbers",
+  "version": 2
+}

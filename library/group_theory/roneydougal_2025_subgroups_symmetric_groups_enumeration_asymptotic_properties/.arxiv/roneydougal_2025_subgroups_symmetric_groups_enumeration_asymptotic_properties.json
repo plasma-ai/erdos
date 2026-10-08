@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Colva M. Roney-Dougal",
+    "Gareth Tracey"
+  ],
+  "category": "math.GR",
+  "date": "2025-03-07",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 1709650,
+    "files": 1,
+    "sha256": "db52298a0a787f0c7eb4bb46888773019382a6678593967807f9bab0cf62a6f6",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2503.05416v1"
+  },
+  "id": "2503.05416",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 504755,
+    "previous": [],
+    "sha256": "be1ef1a8cb92e0830dce74c7a9629c0f96f83a2f8f55f70b2c129f55948f2501",
+    "url": "https://arxiv.org/pdf/2503.05416v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2503.05416v1 [math.GR] 7 Mar 2025",
+  "tex": {
+    "archive": {
+      "bytes": 59417,
+      "name": "arXiv-2503.05416v1.gz",
+      "sha256": "6ed5ab9ba08a51fbc3d87fea01419e60b7f0181c9336e0c957576017567e0d0a"
+    },
+    "bytes": 202852,
+    "files": 1,
+    "sha256": "1f5d0d5e56cff20fbe5ce5fd055c6d5a6e6f0b428adee7e13bcd74c49788ab9a",
+    "url": "https://arxiv.org/src/2503.05416v1"
+  },
+  "title": "Subgroups of symmetric groups: enumeration and asymptotic properties",
+  "version": 1
+}

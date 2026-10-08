@@ -1,0 +1,41 @@
+{
+  "authors": [
+    "Xiaoyu He",
+    "Tomas Juskevicius",
+    "Bhargav Narayanan",
+    "Sam Spiro"
+  ],
+  "category": "math.PR",
+  "date": "2024-12-30",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 376108,
+    "files": 2,
+    "sha256": "d6b79544c7279a12adfad61558bc476b6d5e00888557a0434f815055f5a8aedc",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2408.11034v3"
+  },
+  "id": "2408.11034",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 406561,
+    "previous": [],
+    "sha256": "834e4098f8411787bf87e4e5c71f9333e1d391ddb7dd67693565125c6afa7cc1",
+    "url": "https://arxiv.org/pdf/2408.11034v3"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2408.11034v3 [math.PR] 30 Dec 2024",
+  "tex": {
+    "archive": {
+      "bytes": 43289,
+      "name": "arXiv-2408.11034v3.tar.gz",
+      "sha256": "f49750c07f99918ae4a99cfb40e3ab7fde831e47da136baac273db19a4b2f21e"
+    },
+    "bytes": 71823,
+    "files": 3,
+    "sha256": "9faa1b4588a097f34fe153b5b0a1d2770c68a29d285e33f6e2f426946abefa53",
+    "url": "https://arxiv.org/src/2408.11034v3"
+  },
+  "title": "The Reverse Littlewood--Offord problem of Erd\\H{o}s",
+  "version": 3
+}

@@ -1,0 +1,41 @@
+{
+  "authors": [
+    "Gennian Ge",
+    "Yang Shu",
+    "Zixiang Xu",
+    "Wenjun Yu"
+  ],
+  "category": "math.CO",
+  "date": "2026-07-13",
+  "fetched": "2026-09-24",
+  "html": {
+    "bytes": 206866,
+    "files": 1,
+    "sha256": "5f8123fd0f4964db35843bc046ea4017fa3b56776c5d1a81b24e98e73bea4545",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2607.11782v1"
+  },
+  "id": "2607.11782",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 316785,
+    "previous": [],
+    "sha256": "a0854db92a8f877682030bf2cedca1d0ab9f81b1febc7a32e11cc3580754a8a1",
+    "url": "https://arxiv.org/pdf/2607.11782v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2607.11782v1 [math.CO] 13 Jul 2026",
+  "tex": {
+    "archive": {
+      "bytes": 11609,
+      "name": "arXiv-2607.11782v1.tar.gz",
+      "sha256": "66f77028b1133941d58d45747449b36622d614e9b02ac90c042a334fa888e42d"
+    },
+    "bytes": 37358,
+    "files": 3,
+    "sha256": "1362483b3fe410882c11bc7ebf07bbe061611932a51f2c55e309428e6200cd08",
+    "url": "https://arxiv.org/src/2607.11782v1"
+  },
+  "title": "All simplices exhibit canonical Ramsey property",
+  "version": 1
+}

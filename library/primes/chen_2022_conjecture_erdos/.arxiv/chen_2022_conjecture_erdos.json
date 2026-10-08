@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Yong-Gao Chen",
+    "Yuchen Ding"
+  ],
+  "category": "math.NT",
+  "date": "2022-01-26",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 105296,
+    "files": 1,
+    "sha256": "1cd55d15c935717252b7e4f279e9d0ebd114a1be0df94bd9bc6f333fcf5cd8d0",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2201.10727v1"
+  },
+  "id": "2201.10727",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 106435,
+    "previous": [],
+    "sha256": "2858cf09f2ce09a3d109a33d81db7c2375e5765f778b689db32403c6841a48a6",
+    "url": "https://arxiv.org/pdf/2201.10727v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2201.10727v1 [math.NT] 26 Jan 2022",
+  "tex": {
+    "archive": {
+      "bytes": 4584,
+      "name": "arXiv-2201.10727v1.gz",
+      "sha256": "4eaa7fc5cefcf09357add2ffff8c5c9a7ade52a2592e99983ccc30358aa4b28d"
+    },
+    "bytes": 12818,
+    "files": 1,
+    "sha256": "87dd2f0f258f9928782381d42afed8b5aae38b679cbee062d9d54be75e966555",
+    "url": "https://arxiv.org/src/2201.10727v1"
+  },
+  "title": "On a conjecture of Erd\\H{o}s",
+  "version": 1
+}

@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Stijn Cambie"
+  ],
+  "category": "math.NT",
+  "date": "2025-03-13",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 77941,
+    "files": 1,
+    "sha256": "8f7e413cbfed00786402cf9107f81d95d922bb51620b7345a3f651184b080b2e",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2503.22691v1"
+  },
+  "id": "2503.22691",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 90043,
+    "previous": [],
+    "sha256": "44af45c0ac2873fe1e43affd5ec81a5f59a2e62aa8ab487d40b34e77d287cfd5",
+    "url": "https://arxiv.org/pdf/2503.22691v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2503.22691v1 [math.NT] 13 Mar 2025",
+  "tex": {
+    "archive": {
+      "bytes": 4523,
+      "name": "arXiv-2503.22691v1.gz",
+      "sha256": "959b3caa3162fd24fe1e21f9a704ed512d59a0fd16847292ca4e9ef618eb8153"
+    },
+    "bytes": 11243,
+    "files": 1,
+    "sha256": "5fbcdf0287696e8d8677e2fc60860e07fe888cda504f7afc0834d8abe17bf529",
+    "url": "https://arxiv.org/src/2503.22691v1"
+  },
+  "title": "On Erd\\H{o}s problem $\\# 648$",
+  "version": 1
+}

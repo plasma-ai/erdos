@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Norbert Hegyv\\'ari"
+  ],
+  "category": "math.HO",
+  "date": "2025-03-31",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 101633,
+    "files": 1,
+    "sha256": "bcb64cf77ccac598b93b2a98f09be67bfdea32945fb5645efe6ddfd59741b9f9",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2503.24201v1"
+  },
+  "id": "2503.24201",
+  "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+  "pdf": {
+    "bytes": 106085,
+    "previous": [],
+    "sha256": "3d7e020f4fc558a410f2894876266dd3dcecfc5673c47ac76fbf068c818dd853",
+    "url": "https://arxiv.org/pdf/2503.24201v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2503.24201v1 [math.HO] 31 Mar 2025",
+  "tex": {
+    "archive": {
+      "bytes": 4746,
+      "name": "arXiv-2503.24201v1.gz",
+      "sha256": "5afcfbbaaebb3b5650c2ffe03639836d1612afd62e817da8cae2f354d8419436"
+    },
+    "bytes": 11025,
+    "files": 1,
+    "sha256": "e840fad7e81c54daa1707dc3f68759d3be5baa31a388716ed3b68dd6b5c2afdb",
+    "url": "https://arxiv.org/src/2503.24201v1"
+  },
+  "title": "An elementary question of Erd\\H{o}s and Graham",
+  "version": 1
+}

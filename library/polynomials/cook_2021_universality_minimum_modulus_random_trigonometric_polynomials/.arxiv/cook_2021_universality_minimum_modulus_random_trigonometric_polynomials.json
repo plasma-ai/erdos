@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Nicholas A. Cook",
+    "Hoi H. Nguyen"
+  ],
+  "category": "math.PR",
+  "date": "2021-10-05",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 1307844,
+    "files": 3,
+    "sha256": "7cb374fb2376f171e62c562c50a00b6975f73d6e781c2cd06da14075d7ff3df0",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2101.07203v3"
+  },
+  "id": "2101.07203",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 543836,
+    "previous": [],
+    "sha256": "e8f5e9b962202a1a75a04d2c31e1bc38bd29b92d4159faa35eeb4c48e8446fd7",
+    "url": "https://arxiv.org/pdf/2101.07203v3"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2101.07203v3 [math.PR] 5 Oct 2021",
+  "tex": {
+    "archive": {
+      "bytes": 72442,
+      "name": "arXiv-2101.07203v3.tar.gz",
+      "sha256": "a58e0d0598437f9858ab6f1bb2d3bd51f12f42ce742c3cecade9008f32c6f4ea"
+    },
+    "bytes": 212627,
+    "files": 5,
+    "sha256": "fccc4e3aa86eae9670b644409632b313c271d8b00eaaac1b28546ef1daede0c3",
+    "url": "https://arxiv.org/src/2101.07203v3"
+  },
+  "title": "Universality of the minimum modulus for random trigonometric polynomials",
+  "version": 3
+}

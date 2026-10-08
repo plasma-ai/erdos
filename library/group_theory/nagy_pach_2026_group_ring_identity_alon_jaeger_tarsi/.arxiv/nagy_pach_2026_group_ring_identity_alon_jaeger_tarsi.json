@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "J\\'anos Nagy",
+    "P\\'eter P\\'al Pach"
+  ],
+  "category": "math.CO",
+  "date": "2026-04-29",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 181258,
+    "files": 1,
+    "sha256": "096b5b5cb97fadf55252e932bdc87d62b0cd91d042b8f8b78c8c8f46d84c0f4d",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2604.26320v1"
+  },
+  "id": "2604.26320",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 281628,
+    "previous": [],
+    "sha256": "766ee445b1ea049cc493fd736c60ee054a20a08626f6a4e04c9e3c487aa632f3",
+    "url": "https://arxiv.org/pdf/2604.26320v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2604.26320v1 [math.CO] 29 Apr 2026",
+  "tex": {
+    "archive": {
+      "bytes": 7791,
+      "name": "arXiv-2604.26320v1.tar.gz",
+      "sha256": "3205b317c0c8589120c9e261a03d351de63e4489aad295cfa20cb69cc5a848e2"
+    },
+    "bytes": 23564,
+    "files": 2,
+    "sha256": "7170283508373c66ce35a851e6e7cd0caf44213420bf6d957e8daf98b062a861",
+    "url": "https://arxiv.org/src/2604.26320v1"
+  },
+  "title": "On a group ring identity related to the Alon-Jaeger-Tarsi conjecture",
+  "version": 1
+}

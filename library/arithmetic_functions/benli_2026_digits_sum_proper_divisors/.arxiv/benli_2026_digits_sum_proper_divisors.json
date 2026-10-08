@@ -1,0 +1,42 @@
+{
+  "authors": [
+    "K\\\"ubra Benl\\.i",
+    "C\\'ecile Dartyge",
+    "Charlotte Dombrowsky",
+    "Paul Pollack",
+    "Lola Thompson"
+  ],
+  "category": "math.NT",
+  "date": "2026-07-21",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 542797,
+    "files": 1,
+    "sha256": "32b307254af7cff67b5c0933bd4482fb2698ce920fa64a0463944b0523acd7f4",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2607.18981v1"
+  },
+  "id": "2607.18981",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 549062,
+    "previous": [],
+    "sha256": "bea887b6b856383da7922e24b07b8d1ab9aedeaed01417073e5fa2280cea69c4",
+    "url": "https://arxiv.org/pdf/2607.18981v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2607.18981v1 [math.NT] 21 Jul 2026",
+  "tex": {
+    "archive": {
+      "bytes": 20462,
+      "name": "arXiv-2607.18981v1.tar.gz",
+      "sha256": "dc44e621ce89e54e9c015f73300423873cb22b222b0c4b172f0403f2ba4df175"
+    },
+    "bytes": 60179,
+    "files": 2,
+    "sha256": "8fae66e2a053f6a068fbbb7a1e12a4343cd21a5c930404c763f2d8639c36f2f5",
+    "url": "https://arxiv.org/src/2607.18981v1"
+  },
+  "title": "On the digits of the sum of proper divisors",
+  "version": 1
+}

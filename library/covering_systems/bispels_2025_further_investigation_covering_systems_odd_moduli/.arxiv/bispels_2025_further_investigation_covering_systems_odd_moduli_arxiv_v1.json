@@ -1,0 +1,44 @@
+{
+  "authors": [
+    "Chris Bispels",
+    "Matthew Cohen",
+    "Joshua Harrington",
+    "Joshua Lowrance",
+    "Kaelyn Pontes",
+    "Leif Schaumann",
+    "Tony W. H. Wong"
+  ],
+  "category": "math.NT",
+  "date": "2025-07-22",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 777720,
+    "files": 1,
+    "sha256": "012ff6aa7460476e82fb607f44af4595fcd4bbcc5a723a7a7a1221075be0766d",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2507.16135v1"
+  },
+  "id": "2507.16135",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 377525,
+    "previous": [],
+    "sha256": "4dd23be75285a6b868dbb6ac0fa18008bee76a8bdc79c73c144a822d5a463c5a",
+    "url": "https://arxiv.org/pdf/2507.16135v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2507.16135v1 [math.NT] 22 Jul 2025",
+  "tex": {
+    "archive": {
+      "bytes": 17752,
+      "name": "arXiv-2507.16135v1.tar.gz",
+      "sha256": "86e3817bcc22ebecbeb4c441a4cbc018cd573936db0f3ae2eb25d1cf9e191f4a"
+    },
+    "bytes": 94051,
+    "files": 2,
+    "sha256": "53cf64be8834b8e06bcc78656179fa8ff394b94f852c0f5aa5f3ddbf1e6b49e5",
+    "url": "https://arxiv.org/src/2507.16135v1"
+  },
+  "title": "A further investigation on covering systems with odd moduli",
+  "version": 1
+}

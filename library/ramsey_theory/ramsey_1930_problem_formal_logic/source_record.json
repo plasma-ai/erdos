@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "source": {
+    "author": "F. P. Ramsey",
+    "title": "On a Problem of Formal Logic",
+    "journal": "Proceedings of the London Mathematical Society",
+    "series": "2",
+    "volume": "30",
+    "issue": "1",
+    "publication_year": 1930,
+    "pages": "264-286",
+    "doi": "10.1112/plms/s2-30.1.264",
+    "received_date": "1928-11-28",
+    "read_date": "1928-12-13"
+  },
+  "edition_read": {
+    "source_url": "https://www.cs.umd.edu/~gasarch/BLOGPAPERS/ramseyorig.pdf",
+    "bytes": 1457956,
+    "physical_pages": 23,
+    "printed_pages": "264-286",
+    "identity": "University-hosted scan of the original journal pages"
+  },
+  "comparison_copy": {
+    "source_url": "https://gwern.net/doc/math/1930-ramsey.pdf",
+    "bytes": 1464260,
+    "relationship": "Different container metadata; extracted text and every rendered page are byte-identical to the selected scan."
+  },
+  "publisher_record": {
+    "url": "https://doi.org/10.1112/plms/s2-30.1.264",
+    "exact_pdf_acquired": false,
+    "qualification": "The ordinary publisher PDF route was access restricted; no publisher-byte identity is claimed."
+  },
+  "reading": {
+    "all_selected_pages_visually_read": true,
+    "visual_pages": 23,
+    "navigation_text_is_noncanonical": true,
+    "physical_to_printed_page_rule": "printed = physical + 263"
+  },
+  "proof_scope": {
+    "complete_same_paper_components": [
+      "theorem_a_infinite_ramsey",
+      "theorem_c_two_colour_asymmetric",
+      "theorem_b_finite_ramsey",
+      "graph_factorial_bound",
+      "truth_alternatives_forms_involvement",
+      "finite_universe_criterion",
+      "repeated_argument_normalization",
+      "serial_form_consistency_theorem",
+      "single_binary_relation_six_types",
+      "existential_universal_extension"
+    ],
+    "limits": [
+      "Finite relational vocabularies with equality and no nonlogical function symbols.",
+      "Satisfiability for the exists-star forall-star prefix class; validity only for the dual prefix through negation.",
+      "No unrestricted first-order decision claim.",
+      "No optimal Ramsey-number or modern complexity claim.",
+      "Historical citations are not recursively proof-reviewed."
+    ]
+  }
+}

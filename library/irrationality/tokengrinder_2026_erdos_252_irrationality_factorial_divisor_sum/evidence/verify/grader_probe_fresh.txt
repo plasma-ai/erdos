@@ -1,0 +1,29 @@
+GraderProbeFresh.lean:15:8: warning: declaration uses `sorry`
+theorem Erdos252.erdos_252_type : ∀ (k : Nat),
+  Irrational
+    (@tsum Real Nat Real.instAddCommMonoid
+      (@UniformSpace.toTopologicalSpace Real (@PseudoMetricSpace.toUniformSpace Real Real.pseudoMetricSpace))
+      (fun n =>
+        @HDiv.hDiv Real Real Real (@instHDiv Real (@DivInvMonoid.toDiv Real Real.instDivInvMonoid))
+          (@Nat.cast Real Real.instNatCast
+            (@DFunLike.coe (@ArithmeticFunction Nat (@MulZeroClass.toZero Nat Nat.instMulZeroClass)) Nat (fun x => Nat)
+              (@ArithmeticFunction.instFunLikeNat Nat (@MulZeroClass.toZero Nat Nat.instMulZeroClass))
+              (ArithmeticFunction.sigma k) n))
+          (@Nat.cast Real Real.instNatCast n.factorial))
+      (SummationFilter.unconditional Nat)) :=
+fun k =>
+  sorryAx
+    (∀ (tag : Lean.Name),
+      Irrational
+        (@tsum Real Nat Real.instAddCommMonoid
+          (@UniformSpace.toTopologicalSpace Real (@PseudoMetricSpace.toUniformSpace Real Real.pseudoMetricSpace))
+          (fun n =>
+            @HDiv.hDiv Real Real Real (@instHDiv Real (@DivInvMonoid.toDiv Real Real.instDivInvMonoid))
+              (@Nat.cast Real Real.instNatCast
+                (@DFunLike.coe (@ArithmeticFunction Nat (@MulZeroClass.toZero Nat Nat.instMulZeroClass)) Nat
+                  (fun x => Nat)
+                  (@ArithmeticFunction.instFunLikeNat Nat (@MulZeroClass.toZero Nat Nat.instMulZeroClass))
+                  (ArithmeticFunction.sigma k) n))
+              (@Nat.cast Real Real.instNatCast n.factorial))
+          (SummationFilter.unconditional Nat)))
+    false `GraderProbeFresh.16.85.16.90.85.90._sorry._@.GraderProbeFresh.2326289977._hygCtx._hyg.51

@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "G\\'abor P\\'eter Nagy"
+  ],
+  "category": "math.CO",
+  "date": "2022-12-22",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 394940,
+    "files": 1,
+    "sha256": "c9ca702b385c35fe379dc2ad179b07899d3567f14e986e54d11788833daa0b83",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2212.05887v2"
+  },
+  "id": "2212.05887",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 219646,
+    "previous": [],
+    "sha256": "d96d821ffd079da9faf3ff1359b4d281457d953e14665d583f61c62319830473",
+    "url": "https://arxiv.org/pdf/2212.05887v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2212.05887v2 [math.CO] 22 Dec 2022",
+  "tex": {
+    "archive": {
+      "bytes": 167812,
+      "name": "arXiv-2212.05887v2.tar.gz",
+      "sha256": "278cc3c122cb48bc580cbd885612bee3f2aa4d7b106b81b530aee20f896589b6"
+    },
+    "bytes": 894326,
+    "files": 14,
+    "sha256": "86ed09a77a2052b9477fc1060fa7ff67d1de3b4db8331021d2dc6bcac7fd34fe",
+    "url": "https://arxiv.org/src/2212.05887v2"
+  },
+  "title": "Thin Sidon sets and the nonlinearity of vectorial Boolean functions",
+  "version": 2
+}

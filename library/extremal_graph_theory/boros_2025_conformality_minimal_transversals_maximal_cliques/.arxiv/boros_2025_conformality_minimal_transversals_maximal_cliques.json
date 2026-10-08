@@ -1,0 +1,42 @@
+{
+  "authors": [
+    "Endre Boros",
+    "Vladimir Gurvich",
+    "Martin Milani\\v{c}",
+    "Dmitry Tikhanovsky",
+    "Yushi Uno"
+  ],
+  "category": "math.CO",
+  "date": "2025-06-20",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 1364261,
+    "files": 13,
+    "sha256": "f339b81a63018576aa12b30169d23e62c901545dbcbc4d1607aa0b606495e635",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2405.10789v2"
+  },
+  "id": "2405.10789",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 1231886,
+    "previous": [],
+    "sha256": "f0ae39d9f391fc1019c18a2154ebabfa284ec2d1f7a21f3f7ceee973304fbc62",
+    "url": "https://arxiv.org/pdf/2405.10789v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2405.10789v2 [math.CO] 20 Jun 2025",
+  "tex": {
+    "archive": {
+      "bytes": 554212,
+      "name": "arXiv-2405.10789v2.tar.gz",
+      "sha256": "1c4ecaa2348257aded9b1db196037a9c5a2c4401bfb19f0101bc96f9ec15e6c8"
+    },
+    "bytes": 809475,
+    "files": 14,
+    "sha256": "9db27775f13af26f02587788aced2a5357a32e1fbe8baee1c576eeb9f3da8345",
+    "url": "https://arxiv.org/src/2405.10789v2"
+  },
+  "title": "Conformality of Minimal Transversals of Maximal Cliques",
+  "version": 2
+}

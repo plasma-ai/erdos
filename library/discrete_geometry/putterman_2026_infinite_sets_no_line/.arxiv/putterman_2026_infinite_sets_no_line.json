@@ -1,0 +1,40 @@
+{
+  "authors": [
+    "Moe Putterman",
+    "Mehtaab Sawhney",
+    "Gregory Valiant"
+  ],
+  "category": "math.CO",
+  "date": "2026-02-24",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 70503,
+    "files": 1,
+    "sha256": "ac20d3e45a53d16935503637f7dd3bd67d470cc9d1d81cd01ff2bd4e52b53bc7",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2602.21275v1"
+  },
+  "id": "2602.21275",
+  "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+  "pdf": {
+    "bytes": 373996,
+    "previous": [],
+    "sha256": "440f301d02644bc321c6564a2b65fd107ce8d60df8d36e5cd8aeeba60bebc8d2",
+    "url": "https://arxiv.org/pdf/2602.21275v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2602.21275v1 [math.CO] 24 Feb 2026",
+  "tex": {
+    "archive": {
+      "bytes": 5477,
+      "name": "arXiv-2602.21275v1.tar.gz",
+      "sha256": "46d6dcf03f2561be42ec440e5cb9f86941bff0e91238d299af49654bb382e695"
+    },
+    "bytes": 14576,
+    "files": 2,
+    "sha256": "990da4d15c5bdb03828a61fd84c99b0c11f0b6fe862b1d466e9bcbe736840019",
+    "url": "https://arxiv.org/src/2602.21275v1"
+  },
+  "title": "On infinite sets with no $3$ on a line",
+  "version": 1
+}

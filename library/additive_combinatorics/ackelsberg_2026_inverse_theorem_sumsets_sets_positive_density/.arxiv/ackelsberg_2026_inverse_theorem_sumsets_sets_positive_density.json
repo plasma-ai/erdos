@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Ethan Ackelsberg",
+    "Florian K. Richter"
+  ],
+  "category": "math.NT",
+  "date": "2026-04-14",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 3781873,
+    "files": 1,
+    "sha256": "c564a719dbc306c9ead3d9f27fc8fe1299e1823ecc17dcc2fd9e9cf6007f961d",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2604.12864v1"
+  },
+  "id": "2604.12864",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 1195014,
+    "previous": [],
+    "sha256": "c00f13c4f39029db1afd12995f2c92dd9fdf11ca0b9066359d815118abf8d1f6",
+    "url": "https://arxiv.org/pdf/2604.12864v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2604.12864v1 [math.NT] 14 Apr 2026",
+  "tex": {
+    "archive": {
+      "bytes": 139339,
+      "name": "arXiv-2604.12864v1.tar.gz",
+      "sha256": "6fd73856b78b8b4e9a6afafb444d9f065e5974c90f4960105f724523623cff52"
+    },
+    "bytes": 580348,
+    "files": 5,
+    "sha256": "0477c852137d0fdcfad0c96a0acad06d9e03ff597d7abd1d982ae7f8d5ca59d7",
+    "url": "https://arxiv.org/src/2604.12864v1"
+  },
+  "title": "An inverse theorem for sumsets of sets of positive density in the integers",
+  "version": 1
+}

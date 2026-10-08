@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Christian Hercher"
+  ],
+  "category": "math.NT",
+  "date": "2023-04-04",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 519424,
+    "files": 1,
+    "sha256": "a3833c3ab817ba2db47373d944fc8601232d5ded42d1e790abb3d40af97c26b0",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2201.00406v3"
+  },
+  "id": "2201.00406",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 236361,
+    "previous": [],
+    "sha256": "fe86c84a776dc7b9362e94c55c0f99914507b0909aa5f0a91fe07cf33da628f4",
+    "url": "https://arxiv.org/pdf/2201.00406v3"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2201.00406v3 [math.NT] 4 Apr 2023",
+  "tex": {
+    "archive": {
+      "bytes": 16188,
+      "name": "arXiv-2201.00406v3.gz",
+      "sha256": "f38f683a6122e76ee95443ee4d4e5b67acf2f3ae44259a6b39f9208640b8e7b5"
+    },
+    "bytes": 59239,
+    "files": 1,
+    "sha256": "10cd26a8e40347638655f928a81efd0bc0b12fdf6a6dcc8d94aa3d6eb61888e4",
+    "url": "https://arxiv.org/src/2201.00406v3"
+  },
+  "title": "There are no Collatz-m-Cycles with $m\\leq 91$",
+  "version": 3
+}

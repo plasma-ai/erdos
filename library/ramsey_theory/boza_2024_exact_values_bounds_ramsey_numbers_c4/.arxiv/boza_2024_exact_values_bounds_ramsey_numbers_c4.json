@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Luis Boza"
+  ],
+  "category": "math.CO",
+  "date": "2026-06-12",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 222504,
+    "files": 1,
+    "sha256": "cef63371e2dddbd483da96e521bc36aa2d0da64530d960cdb0b50c071310c132",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2409.12770v2"
+  },
+  "id": "2409.12770",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 311887,
+    "previous": [],
+    "sha256": "3e100befcee95a524b939413cd5daa85146d5de9646d09e42160b242cbfffa9a",
+    "url": "https://arxiv.org/pdf/2409.12770v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2409.12770v2 [math.CO] 12 Jun 2026",
+  "tex": {
+    "archive": {
+      "bytes": 7287,
+      "name": "arXiv-2409.12770v2.tar.gz",
+      "sha256": "2ee3ed90198ea13c3d6c64e811405027f096f28c4c21b20c53190d78bd4c8c2e"
+    },
+    "bytes": 22636,
+    "files": 2,
+    "sha256": "9f2787f0ba468ceaf92616abb0e2f7274b4e1ac736fb9484f1ffc34c82beffc2",
+    "url": "https://arxiv.org/src/2409.12770v2"
+  },
+  "title": "Exact Values and Bounds for Ramsey Numbers of $C_4$ Versus a Star Graph",
+  "version": 2
+}

@@ -1,0 +1,71 @@
+{
+  "title": "Transitive Sets in Euclidean Ramsey Theory",
+  "authors": [
+    "Imre Leader",
+    "Paul A. Russell",
+    "Mark Walters"
+  ],
+  "publication": {
+    "journal": "Journal of Combinatorial Theory, Series A",
+    "volume": "119",
+    "issue": "2",
+    "date": "February 2012",
+    "pages": "382–396",
+    "doi": "10.1016/j.jcta.2011.09.005",
+    "publisher_url": "https://www.sciencedirect.com/science/article/pii/S0097316511001440"
+  },
+  "arxiv_v1": {
+    "description": "arXiv:1012.1350v1, submitted6December2010;20-page PDF fetched5September2026. Front page displays26October2018, which is not an arXiv revision date.",
+    "source": {
+      "url": "https://arxiv.org/pdf/1012.1350v1",
+      "final_url": "https://arxiv.org/pdf/1012.1350v1",
+      "accessed_utc": "2026-09-05T13:38:23.155021+00:00",
+      "bytes": 230228,
+      "headers": {
+        "Connection": "close",
+        "Content-Length": "230228",
+        "x-cloud-trace-context": "534765384987db4648bf4f775a00bbe9",
+        "last-modified": "Wed, 18 Jan 2023 23:41:33 GMT",
+        "link": "<https://arxiv.org/pdf/1012.1350>; rel='canonical'",
+        "content-type": "application/pdf",
+        "content-disposition": "inline; filename=\"1012.1350v1.pdf\"",
+        "server": "Google Frontend",
+        "etag": "CNG71tml0vwCEAE=",
+        "via": "1.1 google, 1.1 varnish, 1.1 varnish, 1.1 varnish",
+        "access-control-allow-origin": "*",
+        "Accept-Ranges": "bytes",
+        "Age": "609683",
+        "Date": "Sat, 05 Sep 2026 13:38:23 GMT",
+        "X-Served-By": "cache-lga21970-LGA, cache-lga21970-LGA, cache-lga21928-LGA, cache-den-kden1300036-DEN",
+        "X-Cache": "MISS, HIT, MISS",
+        "X-Timer": "S1788615503.108889,VS0,VE39"
+      }
+    }
+  },
+  "author_manuscript_2010": {
+    "description": "20-page author-hosted manuscript dated22November2010; also consulted.",
+    "source": {
+      "url": "https://webspace.maths.qmul.ac.uk/m.walters/papers/euclidean.pdf",
+      "final_url": "https://webspace.maths.qmul.ac.uk/m.walters/papers/euclidean.pdf",
+      "status": 200,
+      "accessed_utc": "2026-09-05T13:44:04.056557+00:00",
+      "headers": {
+        "Date": "Sat, 05 Sep 2026 13:44:01 GMT",
+        "Server": "Apache",
+        "X-Content-Type-Options": "nosniff",
+        "Strict-Transport-Security": "max-age=15768000",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Last-Modified": "Mon, 22 Nov 2010 16:26:42 GMT",
+        "ETag": "\"3586b-495a6b8a87480\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "219243",
+        "Connection": "close",
+        "Content-Type": "application/pdf"
+      },
+      "size_bytes": 219243
+    }
+  },
+  "version_limits": "All reconstructed result locators refer to arXiv v1. Native-text comparison identifies apparent typesetting/date differences but does not certify mathematical equivalence of both manuscripts. Published15-page full text has not been acquired or compared; publisher open returned403.",
+  "author_publication_page": "https://webspace.maths.qmul.ac.uk/m.walters/papers.html",
+  "proof_scope": "Result pages state each result at its printed hypotheses with a proof sketch or pointer; proofs of Propositions 2.1, 2.2, 2.4, Lemmas 2.3, 4.1 and Theorem 4.2 read in full, Theorem 3.1 for structure. Lemma 2.3 needs m >= 3, the two-letter case covering m <= 2. Conjectures A–F not proved. Not independently reviewed."
+}

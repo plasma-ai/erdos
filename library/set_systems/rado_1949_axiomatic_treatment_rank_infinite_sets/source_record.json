@@ -1,0 +1,62 @@
+{
+  "title": "Axiomatic treatment of rank in infinite sets",
+  "author_as_published": "R. Rado",
+  "journal": "Canadian Journal of Mathematics",
+  "volume": 1,
+  "issue": 4,
+  "year": 1949,
+  "printed_pages": "337–343",
+  "physical_pages": 7,
+  "doi": "10.4153/CJM-1949-031-1",
+  "received_date_as_printed": "1948-09-01",
+  "publisher_issue_date": "1949-08-01",
+  "publisher_digital_publication_date": "2018-11-20",
+  "canonical_version": "Published journal scan with publisher DOI footer",
+  "pdf_file": "rado_1949_axiomatic_treatment_rank_infinite_sets.pdf",
+  "pdf_bytes": 610905,
+  "publisher_article_url": "https://www.cambridge.org/core/journals/canadian-journal-of-mathematics/article/axiomatic-treatment-of-rank-in-infinite-sets/93214C375DB3E3D1839423F445075EEB",
+  "publisher_pdf_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/93214C375DB3E3D1839423F445075EEB/S0008414X00037135a.pdf/div-class-title-axiomatic-treatment-of-rank-in-infinite-sets-div.pdf",
+  "acquired_date": "2026-09-05",
+  "page_map": [
+    {
+      "physical": 1,
+      "printed": 337
+    },
+    {
+      "physical": 2,
+      "printed": 338
+    },
+    {
+      "physical": 3,
+      "printed": 339
+    },
+    {
+      "physical": 4,
+      "printed": 340
+    },
+    {
+      "physical": 5,
+      "printed": 341
+    },
+    {
+      "physical": 6,
+      "printed": 342
+    },
+    {
+      "physical": 7,
+      "printed": 343
+    }
+  ],
+  "visual_reading": "All seven pages read at original image detail; no OCR. Native text used only for navigation.",
+  "version_limit": "One published version retained; no distinct author manuscript or later mathematical revision is asserted.",
+  "proof_scope": "Seven complete components; the 1942 finite representative theorem and stated set-theoretic principles remain exact external inputs.",
+  "source_corrections": [
+    "On p.343 the union of a chain belongs to the ambient poset Lambda, not necessarily to the chain Lambda-prime."
+  ],
+  "compilation_clarifications": [
+    "Inclusive containment notation.",
+    "Inherited finite-set assumptions repeated.",
+    "Empty index-set and empty-chain endpoints explicit."
+  ],
+  "formalization_scope": "No new formal-source audit or Lean build."
+}

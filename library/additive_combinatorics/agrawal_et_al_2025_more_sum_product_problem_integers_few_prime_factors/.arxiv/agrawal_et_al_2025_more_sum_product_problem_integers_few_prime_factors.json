@@ -1,0 +1,40 @@
+{
+  "authors": [
+    "Rishika Agrawal",
+    "Thomas F. Bloom",
+    "Giorgis Petridis"
+  ],
+  "category": "math.NT",
+  "date": "2026-01-06",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 621556,
+    "files": 1,
+    "sha256": "f6d385459228c51c613fddc3d0ffdd71ccc02f20b2c60f1f3e7358079225664b",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2512.04931v2"
+  },
+  "id": "2512.04931",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 413957,
+    "previous": [],
+    "sha256": "433477712190b968201a1e0e3bd1a1e3e2623294d65225fd320964fb94f5c606",
+    "url": "https://arxiv.org/pdf/2512.04931v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2512.04931v2 [math.NT] 6 Jan 2026",
+  "tex": {
+    "archive": {
+      "bytes": 20163,
+      "name": "arXiv-2512.04931v2.tar.gz",
+      "sha256": "d1e57848116694a3efb60098c7df6fa5de0ef9e17ae45c7b4d2f2e698bcb671b"
+    },
+    "bytes": 67156,
+    "files": 3,
+    "sha256": "002c5a3cf9cad9ce4a28c80c77e6f656a82c9d2e3c0ac127f7180778630a0e71",
+    "url": "https://arxiv.org/src/2512.04931v2"
+  },
+  "title": "More on the sum-product problem for integers with few prime factors",
+  "version": 2
+}

@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Krishnendu Bhowmick"
+  ],
+  "category": "math.CO",
+  "date": "2024-07-04",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 113464,
+    "files": 1,
+    "sha256": "40aa7ce06b11752527e8323b347ed9398f0166f816d857d7de399b948557f1c4",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2407.01174v3"
+  },
+  "id": "2407.01174",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 90906,
+    "previous": [],
+    "sha256": "9467cefd69821cd8e7418d58c9bf7ae9cb7108fe6fc699f99dd01831ec187c34",
+    "url": "https://arxiv.org/pdf/2407.01174v3"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2407.01174v3 [math.CO] 4 Jul 2024",
+  "tex": {
+    "archive": {
+      "bytes": 5827,
+      "name": "arXiv-2407.01174v3.gz",
+      "sha256": "e278eec8ffa11331fdf789a5b60c51de47142c22cc15c81e1ecbccf5a59d2cc7"
+    },
+    "bytes": 19555,
+    "files": 1,
+    "sha256": "685643e0c216717d14cd732d26b1dec77ae63a7d78123d0b0a99752b2a1f4e3f",
+    "url": "https://arxiv.org/src/2407.01174v3"
+  },
+  "title": "A problem of Erd\\H{o}s about rich distances",
+  "version": 3
+}

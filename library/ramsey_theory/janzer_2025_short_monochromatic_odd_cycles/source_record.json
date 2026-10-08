@@ -1,0 +1,88 @@
+{
+  "schema_version": "source_identity_record.v1",
+  "source_id": "janzer_2025_short_monochromatic_odd_cycles",
+  "title": "Short Monochromatic Odd Cycles",
+  "authors": [
+    "Oliver Janzer",
+    "Fredy Yip"
+  ],
+  "identifiers": [
+    {
+      "scheme": "arxiv",
+      "value": "2506.14910"
+    },
+    {
+      "scheme": "doi",
+      "value": "10.1017/S0305004125101801"
+    }
+  ],
+  "publication": {
+    "journal": "Mathematical Proceedings of the Cambridge Philosophical Society",
+    "volume": "181",
+    "issue": "1",
+    "year": 2026,
+    "pages": "781-788",
+    "received": "2025-06-30",
+    "accepted": "2025-07-11",
+    "published_online": "2026-03-27",
+    "published_print": "2026-07"
+  },
+  "selected_citation_artifact": "arxiv_2506.14910v1_retained",
+  "artifacts": [
+    {
+      "artifact_id": "arxiv_2506.14910v1_retained",
+      "file": "janzer_2025_short_monochromatic_odd_cycles.pdf",
+      "role": "selected citation artifact",
+      "version_label": "arXiv:2506.14910v1",
+      "version_date": "2025-06-17",
+      "bytes": 381142,
+      "physical_pages": 7,
+      "acquisition_utc": null,
+      "locator_note": "Theorems 1.4 and 1.5 are on physical and printed page 2."
+    },
+    {
+      "artifact_id": "cup_2026_published_alternate",
+      "file": "janzer_2025_short_monochromatic_odd_cycles_cup_2026.pdf",
+      "role": "published alternate",
+      "version_label": "Cambridge University Press edition, copyright 2026",
+      "doi": "10.1017/S0305004125101801",
+      "bytes": 120716,
+      "physical_pages": 8,
+      "repository_url": "https://www.repository.cam.ac.uk/items/4d13e748-fc6c-44dc-863f-03f3c6f1e750",
+      "acquisition_utc": null,
+      "license": "Creative Commons Attribution 4.0, as printed on physical page 1",
+      "locator_note": "Identity, DOI, receipt, and acceptance: article/physical page 1. Theorems 1.4 and 1.5: article/physical page 2. DOI metadata gives the bibliographic range 781-788."
+    }
+  ],
+  "version_relationship": {
+    "manual": true,
+    "same_source_work": true,
+    "byte_identical": false,
+    "basis": "The title, authors, theorem numbering, and DOI-linked published identity match the arXiv work.",
+    "statement_comparison": "Theorems 1.4 and 1.5 have the same hypotheses and conclusions on physical page 2 of both visually checked artifacts.",
+    "boundary": "Only source identity and the two statement interfaces were compared. No full-text or proof equivalence is asserted, and the CUP alternate does not replace the selected arXiv v1 artifact."
+  },
+  "result_locator_map": [
+    {
+      "result": "Theorem 1.4",
+      "selected_arxiv": "physical/printed page 2",
+      "published_cup": "physical/article page 2"
+    },
+    {
+      "result": "Theorem 1.5",
+      "selected_arxiv": "physical/printed page 2",
+      "published_cup": "physical/article page 2"
+    }
+  ],
+  "problem_relationships": [
+    {
+      "problem": "E0609",
+      "scope": "Theorem 1.4 is the exact K_(2^k+1) upper bound; Theorem 1.5 is a separately quantified near-threshold generalization."
+    }
+  ],
+  "limits": [
+    "The published theorem statements were checked, but no proof was reconstructed or independently certified in this payload.",
+    "The exact acquisition time of the reviewer-supplied CUP PDF is unknown and is not inferred from its file or review timestamps.",
+    "This source record grants no mathematical-status or final-review credit."
+  ]
+}

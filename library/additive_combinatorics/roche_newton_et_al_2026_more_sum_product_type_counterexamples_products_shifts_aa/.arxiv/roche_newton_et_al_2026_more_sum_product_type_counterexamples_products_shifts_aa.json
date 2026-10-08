@@ -1,0 +1,40 @@
+{
+  "authors": [
+    "Oliver Roche-Newton",
+    "Carl Schildkraut",
+    "Audie Warren"
+  ],
+  "category": "math.NT",
+  "date": "2026-06-26",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 148301,
+    "files": 1,
+    "sha256": "ab6e1147c25322fca846e3c803995f4bc8f5acad0ce7055b6529c284d37f692b",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2606.24583v2"
+  },
+  "id": "2606.24583",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 299584,
+    "previous": [],
+    "sha256": "2c9c5756d168ee4599e4a8a6dfe6f1cfe7be72c07abd3b4666e228fed37c76a0",
+    "url": "https://arxiv.org/pdf/2606.24583v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2606.24583v2 [math.NT] 26 Jun 2026",
+  "tex": {
+    "archive": {
+      "bytes": 8674,
+      "name": "arXiv-2606.24583v2.tar.gz",
+      "sha256": "557b57be914ea56fcc0f8a0a515e42886b6937f4ee2bb61dd83cb8a847221c51"
+    },
+    "bytes": 22942,
+    "files": 3,
+    "sha256": "d394acf07a746f1853982c8b1224b2dca8e871927f2a983363f47d8afdad68e1",
+    "url": "https://arxiv.org/src/2606.24583v2"
+  },
+  "title": "More sum-product type counterexamples: products with shifts and $AA+A$",
+  "version": 2
+}

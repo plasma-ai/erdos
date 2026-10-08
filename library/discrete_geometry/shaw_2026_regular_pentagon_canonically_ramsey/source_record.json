@@ -1,0 +1,227 @@
+{
+  "title": "The regular pentagon is canonically Ramsey",
+  "authors": [
+    "Benedict Randall Shaw"
+  ],
+  "canonical_version": {
+    "repository": "arXiv",
+    "identifier": "2608.19183",
+    "version": "v1",
+    "submitted_utc": "2026-08-19T17:55:18Z",
+    "cover_date": "August 2026",
+    "pages": 9,
+    "page_numbering": "Physical and printed pages both 1-9.",
+    "pdf_filename": "shaw_2026_regular_pentagon_canonically_ramsey.pdf",
+    "bytes": 298766,
+    "source_url": "https://arxiv.org/pdf/2608.19183v1",
+    "metadata_url": "https://arxiv.org/abs/2608.19183v1"
+  },
+  "bibliographic_status": {
+    "checked_date": "2026-09-05",
+    "recorded_status": "preprint",
+    "journal_reference": null,
+    "journal_doi": null,
+    "arxiv_doi": "10.48550/arXiv.2608.19183",
+    "arxiv_doi_is_journal_doi": false,
+    "bounded_search_result": "Only v1 listed in the acquired arXiv history; no journal acceptance record located in the bounded primary title/author search. This is not proof that no acceptance exists.",
+    "author_profile_url": "https://www.maths.cam.ac.uk/person/bwr26",
+    "author_profile_scope": "Affiliation and research group; no paper-specific acceptance evidence."
+  },
+  "original_source_unchanged": true,
+  "source_reading": {
+    "pages_visually_read": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "method": "All nine original pages visually read from separate 180-dpi PNGs at original image detail; native text extraction used only for navigation. No OCR.",
+    "additional_formula_reinspection_pages": [
+      5,
+      8
+    ]
+  },
+  "complete_reconstruction_scope": {
+    "main": "All same-paper essential deductions through Theorems 2 and 1, relative only to finite Ramsey, including the exact fixed-scale cases p=2,3.",
+    "concluding": "Full subgroup normal form; Fourier circle rigidity and affine product-copy classification; stable residue coloring on all scaled copies for composite q>=6; separate unscaled square obstruction.",
+    "introductory": "Canonical compactness relative to Rado and geometric noncontainment in simplex products relative to the existing finite isometric-extension lemma.",
+    "outside": "Historical cited proof chains and priority claims; the p. 3 hypothetical aside about avoiding colorings of {0,1,2} and its sphere/permutation comments; general canonical characterizations; a solution of the regular-hexagon question; any formal verification."
+  },
+  "external_inputs": [
+    {
+      "name": "Finite Ramsey theorem",
+      "canonical_interface": "library/discrete_geometry/kriz_1991_permutation_groups_euclidean_ramsey_theory/external_inputs",
+      "role": "Sole external theorem in the finite main chain; original proof not included here."
+    },
+    {
+      "name": "Rado finite-choice selection",
+      "canonical_interface": "library/set_systems/rado_1949_axiomatic_treatment_rank_infinite_sets/lemma_1",
+      "role": "Only the separate canonical compactness lemma; original proof is separately compiled at the linked source."
+    },
+    {
+      "name": "Finite isometric extension on the affine span",
+      "canonical_interface": "library/discrete_geometry/ivan_2026_generalised_prisms_euclidean_ramsey_theory/isometric_extension",
+      "role": "Only the geometric expansions; complete proof is separately compiled at the linked source."
+    }
+  ],
+  "source_findings_and_compilation_resolutions": [
+    {
+      "id": "SHAW-01",
+      "pages": [
+        4,
+        5
+      ],
+      "kind": "wording error with complete counterexample",
+      "finding": "The example calls interchangeability the property that permits adjacent swaps.",
+      "resolution": "Keep the two definitions distinct; use full swappability for that example, and supply the equality-of-first-coordinate counterexample.",
+      "pages_compiled": [
+        "invariance"
+      ]
+    },
+    {
+      "id": "SHAW-02",
+      "pages": [
+        5,
+        6
+      ],
+      "kind": "reversed indices",
+      "finding": "With a=w_i_prime<b=w_i, the printed moved-letter interval and endpoints are reversed.",
+      "resolution": "Move b-1,b-2,...,a to the front, one letter at a time, expanding each move into adjacent transpositions with a letter in [r-1].",
+      "pages_compiled": [
+        "lemma_4"
+      ]
+    },
+    {
+      "id": "SHAW-03",
+      "pages": [
+        3,
+        4
+      ],
+      "kind": "complete pullback expansion",
+      "finding": "Image containment alone does not identify the intermediate map used by the local relation.",
+      "resolution": "Prove sigma_N composed with iota_w equals iota_sigma(w) composed with the fixed sigma_m; include all ordered substitution and invariant-local compatibility identities.",
+      "pages_compiled": [
+        "emulated_copy"
+      ]
+    },
+    {
+      "id": "SHAW-04",
+      "pages": [
+        3,
+        7
+      ],
+      "kind": "omitted exact-scale small-prime cases completed",
+      "finding": "The source sets p=2,3 aside by earlier canonical existence results, while Theorem 2 specifies a fixed host scale.",
+      "resolution": "Use L=max{pk+1,4}, n=F_p(L). The unchanged argument proves the scale p^(-p/2) directly for p=2,3, including p=2,k=1.",
+      "pages_compiled": [
+        "theorem_2"
+      ]
+    },
+    {
+      "id": "SHAW-05",
+      "pages": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "kind": "explicit range and dimension completion",
+      "finding": "Primality is not used in the local invariance machinery.",
+      "resolution": "Prove Lemmas 3-7 for all integer q>=2, specify positive dimensions, R_q(1)=1, and the finite F_r(n) recursion before invoking the subgroup normal form.",
+      "pages_compiled": [
+        "lemma_3",
+        "lemma_4",
+        "lemma_5",
+        "lemma_6",
+        "lemma_7"
+      ]
+    },
+    {
+      "id": "SHAW-06",
+      "pages": [
+        1,
+        2
+      ],
+      "kind": "complete relative compactness expansion",
+      "finding": "Canonical compactness is asserted without proof and cannot use a fixed original color palette.",
+      "resolution": "Encode equality of colors on ordered point pairs by {0,1}, apply the linked exact Rado selection theorem, and verify equivalence and every forbidden-copy constraint on finite pair sets.",
+      "pages_compiled": [
+        "finite_witness"
+      ]
+    },
+    {
+      "id": "SHAW-07",
+      "pages": [
+        8
+      ],
+      "kind": "complete concluding normal-form proof",
+      "finding": "The divisor normal form is announced as a modification without a printed proof.",
+      "resolution": "Generate H from all coordinate differences of final-copy collisions; prove every H-coset transposition and the converse by within-coset permutations, then identify H=dZ/qZ.",
+      "pages_compiled": [
+        "divisor_normal_form"
+      ]
+    },
+    {
+      "id": "SHAW-08",
+      "pages": [
+        8
+      ],
+      "kind": "complete geometric justification of every-scaled-copy quantifier",
+      "finding": "The residue-coloring remarks concern all scaled copies, which requires more than checking coordinate copies.",
+      "resolution": "Prove the degree-two Fourier circle lemma for q>=5; extend each finite similarity to its affine span; show every output row is constant or a dihedral copy of one input, and each input repeats s^2 times.",
+      "pages_compiled": [
+        "circle_projection",
+        "polygon_product_rigidity",
+        "composite_obstruction"
+      ]
+    },
+    {
+      "id": "SHAW-09",
+      "pages": [
+        8
+      ],
+      "kind": "range qualification and separate square deduction",
+      "finding": "The all-scaled-copy obstruction begins with composite q>=6, while the later unscaled-power sentence says every composite q.",
+      "resolution": "Retain q>=6 for every-scaled-copy claims; give a separate parity proof for unscaled square powers. Do not extend the stronger assertion to q=4.",
+      "pages_compiled": [
+        "composite_obstruction",
+        "question_1"
+      ]
+    },
+    {
+      "id": "SHAW-10",
+      "pages": [
+        1,
+        2
+      ],
+      "kind": "geometric claim fully expanded without priority certification",
+      "finding": "Noncontainment in products of simplices is asserted as part of the source historical description.",
+      "resolution": "Project an affine isometric extension to each factor; ranks two and one force affine dependence among polygon images for q>=5, so all ranks would vanish.",
+      "pages_compiled": [
+        "not_in_simplex_products"
+      ]
+    },
+    {
+      "id": "SHAW-11",
+      "pages": [
+        3
+      ],
+      "kind": "historical prose qualification",
+      "finding": "The introductory product discussion moves between ordinary Ramsey and canonical Ramsey conclusions.",
+      "resolution": "Keep both definitions and their palette quantifiers explicit; infer no general product closure or implication from that paragraph.",
+      "pages_compiled": [
+        "definitions",
+        "question_1"
+      ]
+    }
+  ],
+  "correction_attribution": "All resolutions above are supplied by the compilation; no author-issued erratum is asserted.",
+  "formal_verification_claim": false,
+  "problem_status_change": false
+}

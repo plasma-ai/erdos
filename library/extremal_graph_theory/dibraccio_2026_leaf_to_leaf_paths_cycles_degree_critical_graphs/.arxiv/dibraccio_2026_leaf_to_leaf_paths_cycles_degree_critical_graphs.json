@@ -1,0 +1,42 @@
+{
+  "authors": [
+    "Francesco Di Braccio",
+    "Kyriakos Katsamaktsis",
+    "Jie Ma",
+    "Alexandru Malekshahian",
+    "Ziyuan Zhao"
+  ],
+  "category": "math.CO",
+  "date": "2026-03-04",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 694376,
+    "files": 1,
+    "sha256": "94998f3dea3a401d10e5404b7bfdc9d72dc2235a0bd836951894d1ae2bcbc2af",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2504.11656v2"
+  },
+  "id": "2504.11656",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 671776,
+    "previous": [],
+    "sha256": "9f76966a49f89c9e1ba9f7574db140a9a6a4c8168db34c5d1690f03b0de34afb",
+    "url": "https://arxiv.org/pdf/2504.11656v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2504.11656v2 [math.CO] 4 Mar 2026",
+  "tex": {
+    "archive": {
+      "bytes": 28400,
+      "name": "arXiv-2504.11656v2.tar.gz",
+      "sha256": "5a9294ccab80c38690ea35d438fedfd1bfb8c4bd2d11007f2d2f292aafd13314"
+    },
+    "bytes": 88489,
+    "files": 3,
+    "sha256": "f707b91c7dc63e6b14e9ba8a5cdded0c4894bf0a86584c446a908dc6e3ee4c4c",
+    "url": "https://arxiv.org/src/2504.11656v2"
+  },
+  "title": "Leaf-to-leaf paths and cycles in degree-critical graphs",
+  "version": 2
+}

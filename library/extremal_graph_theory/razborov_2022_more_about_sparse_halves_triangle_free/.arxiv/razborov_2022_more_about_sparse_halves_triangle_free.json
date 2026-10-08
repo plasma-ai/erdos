@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Alexander Razborov"
+  ],
+  "category": "math.CO",
+  "date": "2021-07-28",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 419705,
+    "files": 1,
+    "sha256": "5a747f85b98e5bd8c3edce2fcf991019f62e07233a3adde1c026f18f6ba686e7",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2104.09406v2"
+  },
+  "id": "2104.09406",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 248971,
+    "previous": [],
+    "sha256": "c9ffc6b1eca473bbe2b405488b60d03369d0160d9fd25533a5dc17616d28d734",
+    "url": "https://arxiv.org/pdf/2104.09406v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2104.09406v2 [math.CO] 28 Jul 2021",
+  "tex": {
+    "archive": {
+      "bytes": 20884,
+      "name": "arXiv-2104.09406v2.tar.gz",
+      "sha256": "7071004b2578e560a14ac231bd56a31f7fe5a84b4a617fcbc66358cc907d1bd8"
+    },
+    "bytes": 64673,
+    "files": 4,
+    "sha256": "d00ad62b49534d3c4d1a07984f54b8b8298065cdd5b1e1ca5fbf7d8f840ad5c4",
+    "url": "https://arxiv.org/src/2104.09406v2"
+  },
+  "title": "More about sparse halves in triangle-free graphs",
+  "version": 2
+}

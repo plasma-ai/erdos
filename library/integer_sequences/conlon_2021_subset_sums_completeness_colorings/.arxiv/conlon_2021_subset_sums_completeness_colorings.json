@@ -1,0 +1,40 @@
+{
+  "authors": [
+    "David Conlon",
+    "Jacob Fox",
+    "Huy Tuan Pham"
+  ],
+  "category": "math.CO",
+  "date": "2021-04-30",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 2647914,
+    "files": 1,
+    "sha256": "22c074708867a08324126a3cbcab27f31d85d5a7bca8240de339b1f19db45425",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2104.14766v1"
+  },
+  "id": "2104.14766",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 841870,
+    "previous": [],
+    "sha256": "e55494193baf77bb728e186a6fa948bf81c0d64fb167b52e964efd66c7b5fec4",
+    "url": "https://arxiv.org/pdf/2104.14766v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2104.14766v1 [math.CO] 30 Apr 2021",
+  "tex": {
+    "archive": {
+      "bytes": 74547,
+      "name": "arXiv-2104.14766v1.gz",
+      "sha256": "2539930bd8edd9dc41d2ea0d5e25d8664c8953bef0b20097c2bbbc746c8996fa"
+    },
+    "bytes": 280426,
+    "files": 1,
+    "sha256": "474d9e3516d38f79417638cdc91223acee0f743d2631bef506210a3e731790c1",
+    "url": "https://arxiv.org/src/2104.14766v1"
+  },
+  "title": "Subset sums, completeness and colorings",
+  "version": 1
+}

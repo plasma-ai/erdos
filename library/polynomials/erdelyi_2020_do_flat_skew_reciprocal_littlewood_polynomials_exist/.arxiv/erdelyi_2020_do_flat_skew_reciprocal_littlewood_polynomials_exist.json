@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Tam\\'as Erd\\'elyi"
+  ],
+  "category": "math.CA",
+  "date": "2020-07-07",
+  "fetched": "2026-09-24",
+  "html": {
+    "bytes": 342149,
+    "files": 1,
+    "sha256": "35ff42da15bb3945f2276bf813c53889082562c7948313e59920ccf3819eb31b",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2001.08151v2"
+  },
+  "id": "2001.08151",
+  "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+  "pdf": {
+    "bytes": 176022,
+    "previous": [],
+    "sha256": "390d38d0fdbb3d181206a152ab4363052484cacd40f20a69e80c40e9b725be66",
+    "url": "https://arxiv.org/pdf/2001.08151v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2001.08151v2 [math.CA] 7 Jul 2020",
+  "tex": {
+    "archive": {
+      "bytes": 10848,
+      "name": "arXiv-2001.08151v2.gz",
+      "sha256": "e7973abf0ce6249901db58560e13c8095c966dce631c2844219432fd3fee637b"
+    },
+    "bytes": 36141,
+    "files": 1,
+    "sha256": "b28802787f187fdd58426f91ff6bea8ad94104ba520b181f5f06f563032c1e97",
+    "url": "https://arxiv.org/src/2001.08151v2"
+  },
+  "title": "Do flat skew-reciprocal Littlewood polynomials exist?",
+  "version": 2
+}

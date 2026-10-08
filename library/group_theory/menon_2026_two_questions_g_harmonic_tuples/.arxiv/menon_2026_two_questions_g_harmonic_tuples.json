@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Murali Menon"
+  ],
+  "category": "math.GR",
+  "date": "2026-08-16",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 196553,
+    "files": 1,
+    "sha256": "c557485bc8602c581e1003de8649a4d41334ae7beacc562c41e73c151fc42486",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2608.15873v1"
+  },
+  "id": "2608.15873",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 243166,
+    "previous": [],
+    "sha256": "2717059bdf6a7d38e92226bb35a887a8502a499a6808e4024961b87bd14f3296",
+    "url": "https://arxiv.org/pdf/2608.15873v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2608.15873v1 [math.GR] 16 Aug 2026",
+  "tex": {
+    "archive": {
+      "bytes": 12340,
+      "name": "arXiv-2608.15873v1.tar.gz",
+      "sha256": "df46e86f294cdddcc4a5478a59632387804e768b86be1e8413709da1e10a1130"
+    },
+    "bytes": 38386,
+    "files": 3,
+    "sha256": "891ea1ae464d1f26f06d146f33cfd4ba05a138f0c23c185bb8219fd7f0a5ef53",
+    "url": "https://arxiv.org/src/2608.15873v1"
+  },
+  "title": "Two Questions on $G$-harmonic Tuples",
+  "version": 1
+}

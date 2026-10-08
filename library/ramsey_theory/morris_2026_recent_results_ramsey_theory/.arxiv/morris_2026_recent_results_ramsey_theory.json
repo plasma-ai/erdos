@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Robert Morris"
+  ],
+  "category": "math.CO",
+  "date": "2026-01-08",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 773465,
+    "files": 3,
+    "sha256": "5194be134b54aec51df6d9c2893a4c49415c4c974f28724c4c41e5e4d692cfea",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2601.05221v1"
+  },
+  "id": "2601.05221",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 612626,
+    "previous": [],
+    "sha256": "29074289719d99d7fc89f528cc0b140c27be679ea5d2477fe517eff741e7757c",
+    "url": "https://arxiv.org/pdf/2601.05221v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2601.05221v1 [math.CO] 8 Jan 2026",
+  "tex": {
+    "archive": {
+      "bytes": 74647,
+      "name": "arXiv-2601.05221v1.tar.gz",
+      "sha256": "a0c6058bb898cb08dadc1d42e2487ca78444e874e9ba5bcf3b6b25f455659be9"
+    },
+    "bytes": 162409,
+    "files": 4,
+    "sha256": "a712fddd53a518ae19dc4c34a0850e191f63ea1ca64b0d20aaa710159e56d116",
+    "url": "https://arxiv.org/src/2601.05221v1"
+  },
+  "title": "Some recent results in Ramsey theory",
+  "version": 1
+}

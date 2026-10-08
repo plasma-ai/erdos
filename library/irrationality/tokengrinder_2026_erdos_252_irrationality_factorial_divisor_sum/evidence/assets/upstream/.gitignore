@@ -1,0 +1,7 @@
+# cache and other artifacts produced by Lean's Lake build tool
+.lake/
+
+# Keep the published talk source and PDF, but ignore LaTeX intermediates.
+pres/*
+!pres/erdos252-talk.tex
+!pres/erdos252-talk.pdf

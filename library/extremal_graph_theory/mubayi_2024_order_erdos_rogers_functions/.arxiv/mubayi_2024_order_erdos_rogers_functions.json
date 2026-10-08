@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Dhruv Mubayi",
+    "Jacques Verstraete"
+  ],
+  "category": "math.CO",
+  "date": "2024-02-08",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 478054,
+    "files": 3,
+    "sha256": "0fbdd94271c5ef961ed4448742618e63557f8fb4cdf0552c76922ba79be4cb0c",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2401.02548v2"
+  },
+  "id": "2401.02548",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 499142,
+    "previous": [],
+    "sha256": "2ea4603296bda4e9a54ef181e1718868ab1ffbb60eb810b87ab69442a3a6de14",
+    "url": "https://arxiv.org/pdf/2401.02548v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2401.02548v2 [math.CO] 8 Feb 2024",
+  "tex": {
+    "archive": {
+      "bytes": 104036,
+      "name": "arXiv-2401.02548v2.tar.gz",
+      "sha256": "e3f86cb96ba885bca1744fc42688bcdb8d136207466020aff920aff3216eea07"
+    },
+    "bytes": 140520,
+    "files": 3,
+    "sha256": "3e04e22639ac0e3d8b26bf67b819149afa18f0846e4cf67326a21e61e875cc57",
+    "url": "https://arxiv.org/src/2401.02548v2"
+  },
+  "title": "On the order of Erd\\H{o}s-Rogers functions",
+  "version": 2
+}

@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Tam\\'as Erd\\'elyi"
+  ],
+  "category": "math.CA",
+  "date": "2026-08-01",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 247162,
+    "files": 1,
+    "sha256": "2f56382090b7caa9d718818751960b37f1767bbeb81a2598649d056a468327e7",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2608.00744v1"
+  },
+  "id": "2608.00744",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 163938,
+    "previous": [],
+    "sha256": "19c91feba6495318a29538390625c82be201cedef64020e335ba1f0bc7976aca",
+    "url": "https://arxiv.org/pdf/2608.00744v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2608.00744v1 [math.CA] 1 Aug 2026",
+  "tex": {
+    "archive": {
+      "bytes": 8854,
+      "name": "arXiv-2608.00744v1.tar.gz",
+      "sha256": "a553040b286176afb1ae90b04514e2ec0385da771d16c349368665cbc6869c6d"
+    },
+    "bytes": 28050,
+    "files": 2,
+    "sha256": "4a9f9dd0587055650f509856820186c27926ac0ef170c0eba67295b34c23d79b",
+    "url": "https://arxiv.org/src/2608.00744v1"
+  },
+  "title": "On an Erd\\\"os Problem about the Maximum Modulus of Littlewood Polynomials on the Unit Circl",
+  "version": 1
+}

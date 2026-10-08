@@ -1,0 +1,27 @@
+#!/bin/bash
+# Runs one reviewer probe with the pinned toolchain of a checkout and records
+# its output, stderr, exit status, wall time and peak resident memory.
+# Usage: bash run_probe.sh <lean directory of the checkout> <probe.lean> <output.txt>
+# The recorded run used the lean/ directory of the worktree checked out at
+# the repository as it stood on 2026-09-25T03:40:15Z as its first argument, with
+# the probe and output paths given absolutely; the Lean invocation is
+# "lake env lean <probe>" from that directory, as the assignment specifies.
+set -u
+LEAN_DIR="$1"
+PROBE="$2"
+OUT="$3"
+cd "$LEAN_DIR" || exit 2
+START=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+S0=$(date +%s)
+/usr/bin/time -l lake env lean "$PROBE" > "$OUT" 2> "$OUT.stderr"
+STATUS=$?
+S1=$(date +%s)
+END=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+{
+  printf '\n-- stderr (lean messages, then /usr/bin/time -l report) --\n'
+  cat "$OUT.stderr"
+  printf '\n-- probe run: start %s end %s wall %ss exit %s\n' "$START" "$END" "$((S1-S0))" "$STATUS"
+} >> "$OUT"
+rm -f "$OUT.stderr"
+echo "exit=$STATUS wall=$((S1-S0))s"
+exit "$STATUS"

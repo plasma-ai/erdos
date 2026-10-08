@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Jin-Hui Fang",
+    "Csaba S\\'andor"
+  ],
+  "category": "math.NT",
+  "date": "2022-05-13",
+  "fetched": "2026-09-24",
+  "html": {
+    "bytes": 381777,
+    "files": 1,
+    "sha256": "daedfabc2e2375db31f41ce5b4de93fb983b8235d20ab4d29cbab624057f82ee",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2205.06553v1"
+  },
+  "id": "2205.06553",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 115439,
+    "previous": [],
+    "sha256": "606ec4a92ed6ad1b0acb9f035c94c49f9763e53eb51947c7126392a07065bf61",
+    "url": "https://arxiv.org/pdf/2205.06553v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2205.06553v1 [math.NT] 13 May 2022",
+  "tex": {
+    "archive": {
+      "bytes": 7011,
+      "name": "arXiv-2205.06553v1.gz",
+      "sha256": "3bd9c298b9c8aae0e39fdc859560fe96c8ea28a3f886931621f0908bad7916bb"
+    },
+    "bytes": 25680,
+    "files": 1,
+    "sha256": "5cfaf6d655d7a084524fd085d7b30204d940298b83c0f178a1c845c4f2e9bd1b",
+    "url": "https://arxiv.org/src/2205.06553v1"
+  },
+  "title": "On sets with sum and difference structure",
+  "version": 1
+}

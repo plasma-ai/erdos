@@ -1,0 +1,40 @@
+{
+  "authors": [
+    "Hong-Jun Ge",
+    "Jack Koolen",
+    "Akihiro Munemasa"
+  ],
+  "category": "math.CO",
+  "date": "2026-08-03",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 144939,
+    "files": 1,
+    "sha256": "1197ab2f922ab2cf11de8a8afe831d3fd9a2a6c316a4b45028e172ddbeac3e76",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2504.18110v4"
+  },
+  "id": "2504.18110",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 220784,
+    "previous": [],
+    "sha256": "69cbf32e7ec59d1afbddde39ecab9093221e7eafea264ea2ff78941ac57ed72d",
+    "url": "https://arxiv.org/pdf/2504.18110v4"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2504.18110v4 [math.CO] 3 Aug 2026",
+  "tex": {
+    "archive": {
+      "bytes": 7589,
+      "name": "arXiv-2504.18110v4.tar.gz",
+      "sha256": "a49b7eadd842a860422b0d817f8da542b788a39a572779688f96c2308e5e8404"
+    },
+    "bytes": 18815,
+    "files": 2,
+    "sha256": "b351aaf2d570e804a6be4f126d4f0d60ff6df2cb6947c02629cb005a692a004f",
+    "url": "https://arxiv.org/src/2504.18110v4"
+  },
+  "title": "A 2-distance set with 277 points in the Euclidean space of dimension 23",
+  "version": 4
+}

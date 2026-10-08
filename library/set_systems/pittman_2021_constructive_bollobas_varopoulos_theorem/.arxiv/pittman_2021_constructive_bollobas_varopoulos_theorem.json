@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Dylanger Pittman"
+  ],
+  "category": "math.FA",
+  "date": "2021-12-18",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 160388,
+    "files": 1,
+    "sha256": "e6f663e0b86b710dccecfffa7815e5c882eb337ea71fec33208dbaa4234c04ef",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2110.11336v2"
+  },
+  "id": "2110.11336",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 110115,
+    "previous": [],
+    "sha256": "e20e8f9f874c0f6d7178e23cdd1a1ee58cc7f793db9882ab7053604c757cab98",
+    "url": "https://arxiv.org/pdf/2110.11336v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2110.11336v2 [math.FA] 18 Dec 2021",
+  "tex": {
+    "archive": {
+      "bytes": 8846,
+      "name": "arXiv-2110.11336v2.tar.gz",
+      "sha256": "b14e5bcfa881d9fbbabc8741c28a9e49f96db82923dcc4122c8a8db4a30f7f7e"
+    },
+    "bytes": 27516,
+    "files": 4,
+    "sha256": "24173863503401fa590c5fb5a1dd15aa448c457e051ede943ec6a2d8ab7728bb",
+    "url": "https://arxiv.org/src/2110.11336v2"
+  },
+  "title": "A constructive proof of the Bollob\\'as-Varopoulos theorem",
+  "version": 2
+}

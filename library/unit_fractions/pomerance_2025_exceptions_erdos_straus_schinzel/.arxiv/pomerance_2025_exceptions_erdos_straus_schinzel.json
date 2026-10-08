@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Carl Pomerance",
+    "Andreas Weingartner"
+  ],
+  "category": "math.NT",
+  "date": "2026-01-15",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 576418,
+    "files": 1,
+    "sha256": "954de650b0257dd324953fcd4ce2fa0dde3fdd58050f23d6a2bc22f0e330fa0d",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2511.16817v2"
+  },
+  "id": "2511.16817",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 403557,
+    "previous": [],
+    "sha256": "87b34b8d24ca4f26f5c80ba8d1d7a335570f76a449df741d5995ee664273128f",
+    "url": "https://arxiv.org/pdf/2511.16817v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2511.16817v2 [math.NT] 15 Jan 2026",
+  "tex": {
+    "archive": {
+      "bytes": 17455,
+      "name": "arXiv-2511.16817v2.tar.gz",
+      "sha256": "cb332cc2c39c84ebcc6f135c8461c2a4db7843a662d8bc8e153577dbeda920fd"
+    },
+    "bytes": 54229,
+    "files": 2,
+    "sha256": "ddc063685bce9f5909b2df885b999bf29921c5faabcbddf8caf559fcb37a1a16",
+    "url": "https://arxiv.org/src/2511.16817v2"
+  },
+  "title": "Exceptions to the Erd\\H os--Straus--Schinzel conjecture",
+  "version": 2
+}

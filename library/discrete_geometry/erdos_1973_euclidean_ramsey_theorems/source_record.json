@@ -1,0 +1,31 @@
+{
+  "title": "Euclidean Ramsey Theorems. I",
+  "authors": [
+    "P. Erdős",
+    "R. L. Graham",
+    "P. Montgomery",
+    "B. L. Rothschild",
+    "J. Spencer",
+    "E. G. Straus"
+  ],
+  "publication": {
+    "journal": "Journal of Combinatorial Theory, Series A",
+    "volume": "14",
+    "issue": "3",
+    "pages": "341–363",
+    "date": "May 1973",
+    "received": "5 November 1972",
+    "doi": "10.1016/0097-3165(73)90011-3",
+    "publisher_url": "https://www.sciencedirect.com/science/article/pii/0097316573900113"
+  },
+  "edition_read": {
+    "source_url": "https://users.renyi.hu/~p_erdos/1973-08.pdf",
+    "final_url": "https://users.renyi.hu/~p_erdos/1973-08.pdf",
+    "retrieved_utc": "2026-09-05T13:09:09.990607+00:00",
+    "bytes": 1626248,
+    "physical_pages": 23,
+    "printed_pages": "341–363"
+  },
+  "version_qualification": "Published scan. Later scanning and server metadata are not mathematical revision dates. The received date is distinct from the May 1973 publication date.",
+  "proof_scope": "Complete reconstructions of the paper’s geometric, field-coloring, spherical-obstruction and product arguments are recorded in the result pages. Introductory Ramsey, van der Waerden and Gallai inputs, foundational compactness, and the negative seven-color assertion in Theorem 5 remain explicit external inputs. The surface-embedding thesis comment is not counted as a complete proof. Compilation corrections are identified on the relevant pages; no author-issued erratum, current resolution of historical questions, or formal verification is inferred."
+}

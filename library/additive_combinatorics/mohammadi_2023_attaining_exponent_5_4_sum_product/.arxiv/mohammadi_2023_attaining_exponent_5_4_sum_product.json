@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Ali Mohammadi",
+    "Sophie Stevens"
+  ],
+  "category": "math.CO",
+  "date": "2021-04-02",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 317200,
+    "files": 1,
+    "sha256": "30b24bcd7d75217f4e5d72ace1e1c71fac3c762e04363d4526763f863ad42648",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2103.08252v3"
+  },
+  "id": "2103.08252",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 192853,
+    "previous": [],
+    "sha256": "0a37caf19167e76ad3fa7ca7f86eb56c89bddb9cee3a25dba6b03157b953ed2e",
+    "url": "https://arxiv.org/pdf/2103.08252v3"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2103.08252v3 [math.CO] 2 Apr 2021",
+  "tex": {
+    "archive": {
+      "bytes": 12341,
+      "name": "arXiv-2103.08252v3.gz",
+      "sha256": "b7844411111b38e78816194a7c9aa263d850cdbd32654ffce8de40ca90aa78eb"
+    },
+    "bytes": 36074,
+    "files": 1,
+    "sha256": "22eff48dff97c498055b69b1f45f9e095b395aea786fdec77c90f0769e4f22de",
+    "url": "https://arxiv.org/src/2103.08252v3"
+  },
+  "title": "Attaining the exponent $5/4$ for the sum-product problem in finite fields",
+  "version": 3
+}

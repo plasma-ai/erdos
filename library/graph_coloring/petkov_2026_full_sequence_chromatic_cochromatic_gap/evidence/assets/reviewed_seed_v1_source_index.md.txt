@@ -1,0 +1,162 @@
+---
+name: library/graph_coloring/petkov_2026_full_sequence_chromatic_cochromatic_gap
+title: Full-sequence chromatic–cochromatic gap in a random graph
+desc: |
+  Proves an explicit n/(log n)^3 lower bound for the gap along all integers,
+  with public kernel verification reported for the uniform theorem.
+created: 2026-09-09T01:21:03Z
+updated: 2026-09-11T01:57:09Z
+---
+
+# Full-sequence chromatic–cochromatic gap in a random graph
+
+[[library/graph_coloring/_index|..]]
+
+[[library/graph_coloring/petkov_2026_full_sequence_chromatic_cochromatic_gap/bounded_differences|bounded_differences]]: Derives the unit-change concentration bound used in seed amplification
+from Hoeffding's lemma and a finite exposure martingale.
+
+[[library/graph_coloring/petkov_2026_full_sequence_chromatic_cochromatic_gap/evidence/_index|evidence/]]: Holds exact reviewed subjects and the independent review, distinct grade
+and documentary source-reading record for the conditional amplifier.
+
+[[library/graph_coloring/petkov_2026_full_sequence_chromatic_cochromatic_gap/lemma_10_1|lemma_10_1]]: Reconstructs a high-probability colouring bound valid for every induced
+vertex set simultaneously, including graph-dependent leftover sets.
+
+[[library/graph_coloring/petkov_2026_full_sequence_chromatic_cochromatic_gap/lemma_10_2|lemma_10_2]]: Reconstructs the conditional seed-amplification bound and its
+full-sequence little-o loss when the seed exponent is small enough.
+
+[[library/graph_coloring/petkov_2026_full_sequence_chromatic_cochromatic_gap/main_theorem|main_theorem]]: Gives an explicit positive n/(log n)^3 lower bound for the gap, with
+probability tending to one through all integer orders.
+
+[[library/graph_coloring/petkov_2026_full_sequence_chromatic_cochromatic_gap/proposition_9_7|proposition_9_7]]: Records the source-owned normalized second-moment premise and its
+Paley--Zygmund bridge to the seed used by Lemmas 10.1--10.2.
+
+***
+
+Samuil Petkov, *A Full-Sequence Quantitative Gap Between the Chromatic and
+Cochromatic Numbers of a Random Graph*, [arXiv:2608.30604v1][arxiv], submitted
+31 August 2026; manuscript dated 30 August 2026, 51 pages.
+
+**Current standing.** The uniform quantitative theorem supports the proved
+status of E625 through the primary manuscript and the pinned external kernel
+verification and statement review below. This source-supported assessment
+does not confer local whole-proof acceptance, native formalization, or a
+native verification tier.
+
+## Selected source
+
+The [local PDF](petkov_2026_full_sequence_chromatic_cochromatic_gap.pdf) is
+the exact arXiv v1 artifact. Its SHA-256 is
+<removed: the digest of the held PDF, which Git LFS records>.
+The existing source copy and a fresh read of the versioned arXiv PDF had
+identical hashes on 9 September 2026 UTC. Redistribution rights for the PDF
+have not been established; it is retained for the private source collection.
+
+The unnumbered Main theorem on p. 2 includes a uniform quantitative
+conclusion for $G_n\sim G(n,1/2)$:
+
+$$
+\mathbb P\!\left(
+\chi(G_n)-\zeta(G_n)\geq
+\frac{(\log 2)^2}{4}\log\!\left(\frac{200}{153}\right)
+\frac{n}{(\log n)^3}
+\right)\longrightarrow 1.
+$$
+
+All logarithms are natural. The
+[[library/graph_coloring/petkov_2026_full_sequence_chromatic_cochromatic_gap/main_theorem|uniform main theorem]]
+records this exact conclusion and its proof pointer. It addresses the
+full integer sequence in [[problems/graph_coloring/E0625|E625]], whereas
+Heckel's earlier result applies only under a phase-dependent restriction.
+A matching upper bound and the optimal constant remain open. The stronger
+phase-dependent coefficient is a separate manuscript claim outside the
+extracted result and the reported formal theorem's scope.
+
+## Reported external formal verification
+
+[Palomar entry v1][palomar], registered 2 September 2026 at 16:17:09 UTC,
+has a [primary registration record][entry] that pins
+`SamPetkov/Erdos625-formalization` to
+`9702b5e734627e3fdaef8da0d65ad7394016f0a7`. The selected principal
+declaration is `Erdos625.erdos625`, of type
+`Erdos625.Erdos625Statement`. The selected auxiliary declarations check
+that the edge probability is exactly $1/2$.
+
+The [mechanical report][mechanical] records `pass` and `complete` at
+14:07:18 UTC that day. Its recorded output reports acceptance by NanoDa and
+the Lean default kernel, with only `propext`, `Classical.choice`, and
+`Quot.sound`. The [automated review][review], dated 14:26:01 UTC, names
+`codex:gpt-5.6-sol` and reports `neutral` with no warnings or requested
+changes. Its scope includes statement alignment and definition fidelity;
+it is not a review of every deduction in the manuscript.
+
+The exact publicly read artifact hashes are:
+
+- [Protected statement][challenge]:
+  <removed: SHA-256 of this public artifact; the bytes are not held here>.
+- Mechanical report:
+  <removed: SHA-256 of this public artifact; the bytes are not held here>.
+- Automated review:
+  <removed: SHA-256 of this public artifact; the bytes are not held here>.
+
+The protected statement uses finite graphs on `Fin n`, the binomial
+random-graph measure, a minimum over clique-or-independent colorings, real
+subtraction of finite chromatic numbers, and convergence of the gap-event
+probability along `atTop`. Its placeholders are the selected comparator
+targets, not the submitted solution. The separate solution hash in the
+registration record is
+<removed: SHA-256 the registration record reports; bytes not held here>.
+
+The [pinned author metadata][metadata] explicitly claims neither external
+mathematical peer review nor community acceptance. Its review status is
+“self-assessed with independent kernel replay; not peer-reviewed.” The
+arXiv record checked on 9 September 2026 lists only v1 and no journal
+reference. Human peer review and independent review of the entire manuscript
+were not established by this source review. These are reported external
+checks; no local kernel replay, native formalization, or native verification
+tier is supplied here.
+
+The manuscript's p. 50 and bibliography cite earlier formal and replay
+revisions of the formalization repository, two commits named there and not
+restated in this copy. They are distinct from the
+Palomar revision above; no equivalence of their entire proof closures has
+been established in this compilation.
+
+## Local reading and proof coverage
+
+The Main theorem on p. 2 and final assembly on pp. 49–50 were visually
+checked against the PDF. Text inspection covered the compatible-sign
+calculation in Lemma 6.1, the canonical overlap decomposition in Proposition
+9.1, the matching-restriction argument in Lemma 9.3, and the assembly and
+amplification interfaces in Proposition 9.7 and §§10–11. The critical
+earlier optimization, common-subprofile, and endpoint-table bounds were
+not fully checked. The complete 121-line protected formal statement and
+the published registration and review records were read; the submitted
+proof closure and underlying Mathlib definitions were not independently
+audited or executed locally.
+
+The [conditional amplification unit](lemma_10_2.md) now has independent
+proof coverage for the finite bounded-differences derivation, Lemmas
+10.1–10.2 and the conditional full-sequence corollary. The
+[review and distinct grade](evidence/verify/_index.md) concern the exact
+retained original subject; the native rendition passed fidelity review
+and hand-check before installation. The seed is an explicit hypothesis,
+not proved by this unit. This is not a complete source-proof reconstruction
+or local acceptance of the entire manuscript. The source-supported proved status
+does not establish local full-proof coverage; the public formal report
+does not extend to the separate phase-dependent manuscript claim.
+
+A focused author-recorded [Proposition 9.7 interface](proposition_9_7.md)
+now records the source-owned normalized second-moment premise and its
+Paley--Zygmund bridge (10.1)--(10.2) to the seed consumed by Lemma 10.2.
+The earlier Sections 1--9 estimates remain explicit source premises; this
+addition does not reopen the landed Lemma 10.1 or Lemma 10.2 pages.
+
+**Bears on.** [[problems/graph_coloring/E0625|E625]].
+
+[arxiv]: https://arxiv.org/abs/2608.30604v1
+[palomar]: https://palomar-registry.org/entry?id=PALOMAR-2026-09-02-000006&version=1
+[entry]: https://data.palomar-registry.org/entries/PALOMAR-2026-09-02-000006-v1.json
+[mechanical]: https://data.palomar-registry.org/evidence/PALOMAR-2026-09-02-000006-v1/398ea0deaa0fd363a92ebfa866833c59ae7bf68402c969653f6d8ed626e7cb2e/mechanical-report.json
+[review]: https://data.palomar-registry.org/evidence/PALOMAR-2026-09-02-000006-v1/398ea0deaa0fd363a92ebfa866833c59ae7bf68402c969653f6d8ed626e7cb2e/review.json
+[challenge]: https://github.com/SamPetkov/Erdos625-formalization/blob/9702b5e734627e3fdaef8da0d65ad7394016f0a7/Challenge.lean
+[metadata]: https://github.com/SamPetkov/Erdos625-formalization/blob/9702b5e734627e3fdaef8da0d65ad7394016f0a7/formalization.yaml

@@ -1,0 +1,34 @@
+{
+  "authors": [
+    "Eoin Hurley",
+    "R\\'emi de Joannis de Verclos",
+    "Ross J. Kang"
+  ],
+  "category": "math.CO",
+  "date": "2022-09-10",
+  "fetched": "2026-09-23",
+  "html": null,
+  "id": "2007.07874",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 536515,
+    "previous": [],
+    "sha256": "f41a56f23475eedb4a073280ac98f549d5ebfea3d2ad42fc3b9e36e83e981f08",
+    "url": "https://arxiv.org/pdf/2007.07874v3"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2007.07874v3 [math.CO] 10 Sep 2022",
+  "tex": {
+    "archive": {
+      "bytes": 70389,
+      "name": "arXiv-2007.07874v3.tar.gz",
+      "sha256": "9de2932bd5f3c83d6597bff317eb3ea63ce7f24672837ef3a2372b1a68e5a933"
+    },
+    "bytes": 185863,
+    "files": 5,
+    "sha256": "05b7f0fd9c1400c1684070e592eb2c438b30630360d5fdd43e4421c4e3dabf71",
+    "url": "https://arxiv.org/src/2007.07874v3"
+  },
+  "title": "An improved procedure for colouring graphs of bounded local density",
+  "version": 3
+}

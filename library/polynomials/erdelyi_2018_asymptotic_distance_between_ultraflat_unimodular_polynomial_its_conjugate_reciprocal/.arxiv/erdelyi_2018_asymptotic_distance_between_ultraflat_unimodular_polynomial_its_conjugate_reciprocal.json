@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Tam\\'as Erd\\'elyi"
+  ],
+  "category": "math.CA",
+  "date": "2019-02-12",
+  "fetched": "2026-09-25",
+  "html": {
+    "bytes": 383901,
+    "files": 1,
+    "sha256": "2d4db28f4c2514f9d7cb715d9c4251ced21ba8d0758cd19dcb667abfa68dda37",
+    "skipped": [],
+    "url": "https://arxiv.org/html/1810.04287v2"
+  },
+  "id": "1810.04287",
+  "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+  "pdf": {
+    "bytes": 191332,
+    "previous": [],
+    "sha256": "0c5fb2905d717fff5d1a3e6d0f82355f80ea03ccfc1dc229bacf455c0ee9d3c0",
+    "url": "https://arxiv.org/pdf/1810.04287v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:1810.04287v2 [math.CA] 12 Feb 2019",
+  "tex": {
+    "archive": {
+      "bytes": 10271,
+      "name": "arXiv-1810.04287v2.gz",
+      "sha256": "dfd7d3c077d22949a3bd9a3f000186ad379545c941831280bb764252c9a841f4"
+    },
+    "bytes": 40104,
+    "files": 1,
+    "sha256": "bc12db002f2467b169ae26c2a69b95e4e90b61c39bbeb471bd3e2fffda96bd0e",
+    "url": "https://arxiv.org/src/1810.04287v2"
+  },
+  "title": "The asymptotic distance between an ultraflat unimodular polynomial and its conjugate reciprocal",
+  "version": 2
+}

@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "P.G. Walsh"
+  ],
+  "category": "math.NT",
+  "date": "2024-04-05",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 84483,
+    "files": 1,
+    "sha256": "4db52097ad209f3a06066647d90ec6858c05ab1f718b11400bd02fe06f57c624",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2404.03970v1"
+  },
+  "id": "2404.03970",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 91038,
+    "previous": [],
+    "sha256": "92c6b8726bbb14756729ac7602e73ff989ef60d4f2ca640e5a8a1c96a682f5a9",
+    "url": "https://arxiv.org/pdf/2404.03970v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2404.03970v1 [math.NT] 5 Apr 2024",
+  "tex": {
+    "archive": {
+      "bytes": 6134,
+      "name": "arXiv-2404.03970v1.gz",
+      "sha256": "7c8b9a7b3256e10db79635c80c3ac30964e0d81f65821fd394c380fe6a935985"
+    },
+    "bytes": 15827,
+    "files": 1,
+    "sha256": "ac94d60499da4d21105c3e29d2bd2717576403217c3b345aeb2a799032b268ac",
+    "url": "https://arxiv.org/src/2404.03970v1"
+  },
+  "title": "A question of Erd\\\"{o}s on $3$-powerful numbers and an elliptic curve analogue of the Ankeny-Artin-Chowla conjecture",
+  "version": 1
+}

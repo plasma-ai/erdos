@@ -1,0 +1,4 @@
+# the conversion sidecars beside each library PDF: the maintainers' working files; the .arxiv/ records stay tracked
+**/.convert/
+**/.tex/
+**/.html/

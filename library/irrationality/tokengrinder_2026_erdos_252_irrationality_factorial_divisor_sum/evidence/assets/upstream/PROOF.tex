@@ -1,0 +1,1346 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=23mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Erdos 252: complete proof},pdfauthor={Tokengrinder},
+  pdfsubject={Irrationality of the factorial divisor-sum series},
+  pdfkeywords={Erdos 252, irrationality, Lean, complete proof}}
+\newtheorem{lemma}{Lemma}[section]
+\newenvironment{result}[2]{\begin{lemma}[#2]\label{lean:#1}
+  \leavevmode\par\nobreak\noindent
+  {\normalfont\footnotesize\texttt{\detokenize{#1}}}\par\nobreak\noindent\ignorespaces}
+  {\end{lemma}}
+\newcommand{\decl}[1]{\texttt{\detokenize{#1}}}
+\newcommand{\defined}[1]{\label{def:#1}\decl{#1}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\stirling}[2]{\left\{\begin{smallmatrix}#1\\#2\end{smallmatrix}\right\}}
+\newcommand{\asc}[2]{#1^{\overline{#2}}}
+\newcommand{\ind}[1]{\mathbf{1}_{\{#1\}}}
+\newcommand{\tsum}{\mathop{\sum\nolimits'}\limits}
+\providecommand{\dotminus}{\dot{-}}
+\setlength{\emergencystretch}{2em}
+\setlength{\parskip}{3pt plus 1pt}
+\setlength{\parindent}{0pt}
+\allowdisplaybreaks[1]
+\pagestyle{plain}
+
+\begin{document}
+\begin{center}
+  {\LARGE\bfseries Erd\H{o}s 252}\par\medskip
+  {\Large Irrationality of the factorial divisor-sum series}\par\bigskip
+  {\large Tokengrinder}\par\medskip
+  Complete mathematical exposition of the Lean proof
+\end{center}
+
+\begin{abstract}
+For every natural number $k$, the series $\sum_{n\geq1}\sigma_k(n)/n!$
+is irrational. Rationality would make its factorial-scaled tails eventually
+integral. A fixed finite grid of pairwise coprime dilations cancels the lower
+orders in an exact Stirling expansion. The remaining divisor-phase sum
+would tend to zero on an arithmetic progression, whereas two fresh-prime
+refinements of its progression mean give incompatible limits. Degree zero
+is settled separately by positivity and decay of the actual tail.
+
+This document states and proves every named theorem and lemma, including
+private lemmas, in \decl{Erdos252/Solution.lean}, and records every local
+definition. The final section also covers all six statement-audit theorems.
+The typewritten identifier below each lemma title is its exact Lean name
+in the \decl{Erdos252} namespace, except in the audit section.
+Mathlib results used as standard prerequisites are identified in the text;
+the library itself is not reproduced here. The Lean source, not this
+exposition, is the kernel-checked artifact.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\section{Conventions and the argument}
+
+We use $\N=\{0,1,2,\ldots\}$. Unless specified otherwise, indices and
+exponents are natural numbers. Put $\sigma_k(0)=0$ and, for $n>0$,
+\[
+  \sigma_k(n)=\sum_{d\mid n}d^k,\qquad
+  \alpha_k=\sum_{n=0}^{\infty}\frac{\sigma_k(n)}{n!}.
+\]
+The theorem is that $\alpha_k\notin\Q$ for every $k\in\N$.
+The ascending factorial is $\asc{n}{h}=\prod_{j<h}(n+j)$, with empty
+product $1$. Natural subtraction is truncated:
+$a\mathbin{\dotminus}b=\max(a-b,0)$. The integer square root is
+$\lfloor\sqrt n\rfloor$.
+
+To preserve the full scope of the auxiliary Lean statements, division in
+$\R$ is totalized by $a/0=0$, and $0^0=1$. Natural division by zero is
+also zero. A primed infinite sum $\tsum$ denotes Lean's \decl{tsum}:
+the ordinary sum when the family is summable, and zero otherwise.
+Every infinite sum used for the final contradiction is proved summable;
+this convention only matters for auxiliary identities at degenerate
+parameters. Saying that a family has sum $s$ asserts convergence to $s$,
+not merely a totalized-sum identity. All sequence limits are as the natural
+index tends to infinity. An \emph{eventual} statement holds at every
+sufficiently large index. Finite-type sums include every element.
+
+First, we obtain an exact finite expansion of the factorial tail with
+error $o(1/n)$. Next, finite differences on a fixed coprime dilation grid
+cancel the unwanted orders. Finally, actual progression means of the
+surviving divisor phases separate one shift using a fresh prime.
+No prime-pattern conjecture is involved. The estimates also prove $k=0$
+directly.
+
+The central estimates are Lemmas~\ref{lean:tailErr_eq} and
+\ref{lean:tendsto_tailErr_mul}. The cancellation step is
+Lemma~\ref{lean:grid_expansion_eq_surviving}; the incompatible limits are
+Lemmas~\ref{lean:tendsto_survivor_of_rational} and
+\ref{lean:survivor_not_tendsto_zero}. The complete conclusion is
+Lemma~\ref{lean:erdos_252}.
+
+\section{Elementary bounds and integrality}
+
+\begin{result}{summable_sigma_factorial}{Convergence of the original series}
+For every $k$, the family $\sigma_k(n)/n!$, $n\in\N$, is summable.
+\end{result}
+\begin{proof}
+Mathlib's divisor bound gives $\sigma_k(n)\leq n^{k+1}$.
+Since $n\leq2^n$, we have
+$0\leq\sigma_k(n)/n!\leq(2^{k+1})^n/n!$.
+Comparison with this exponential series proves summability.
+\end{proof}
+
+\begin{result}{eventually_zero_of_int}{An integral null sequence}
+If $f:\N\to\R$ tends to zero and is eventually integer-valued, then
+$f(n)=0$ eventually.
+\end{result}
+\begin{proof}
+Eventually $|f(n)|<1$, and the only integer in that interval is zero.
+Intersect this eventual condition with eventual integrality.
+\end{proof}
+
+\begin{result}{card_divisors_le_sqrt}{Pairing divisors}
+For $n>0$, the number of positive divisors of $n$ is at most
+$2\lfloor\sqrt n\rfloor$.
+\end{result}
+\begin{proof}
+Let $S=\{1,\ldots,\lfloor\sqrt n\rfloor\}$. Every divisor $d$ has
+$d\in S$ or $n/d\in S$, since $d(n/d)=n$. In the latter case
+$d=n/(n/d)$. The divisor set is therefore contained in
+$S\cup\{n/s:s\in S\}$, of cardinality at most $2|S|$.
+\end{proof}
+
+\begin{result}{sigma_le_pow_sqrt}{A square-root divisor bound}
+For all $k$ and $n>0$, $\sigma_k(n)\leq64n^k\sqrt n$.
+\end{result}
+\begin{proof}
+Each divisor contributes at most $n^k$. The preceding count and
+$\lfloor\sqrt n\rfloor\leq\sqrt n$ give $2n^k\sqrt n$.
+The weaker constant $64$ is retained throughout the formalization.
+\end{proof}
+
+\begin{result}{tendsto_sqrt_div_nat}{Sublinear square-root growth}
+$\sqrt n/n\longrightarrow0$.
+\end{result}
+\begin{proof}
+For $n>0$, $\sqrt n/n=1/\sqrt n$, and $\sqrt n\to\infty$.
+\end{proof}
+
+\section{Reciprocal products and Stirling remainders}
+
+The definitions \defined{descRecip}, \defined{stirlingPoly}, and
+\defined{stirlingErr} are, for $x\in\R$,
+\[
+ D_h(x)=\frac1{\prod_{a<h}(x-a)},\qquad
+ P_{j,L}(x)=\sum_{i<L}\frac{\stirling{i}{j}}{x^{i+1}},\qquad
+ E_{j,L}(x)=D_{j+1}(x)-P_{j,L}(x).
+\]
+The coefficients are Stirling numbers of the second kind.
+These definitions do not assume nonzero denominators.
+
+\begin{result}{descRecip_succ}{Adding a descending factor}
+$D_{h+1}(x)=D_h(x)/(x-h)$ for every $h$ and $x\in\R$.
+\end{result}
+\begin{proof}
+Split the final product factor and use $1/(uv)=(1/u)/v$.
+\end{proof}
+
+\begin{result}{descRecip_one}{The first reciprocal product}
+$D_1(x)=1/x$.
+\end{result}
+\begin{proof}
+The defining product consists of the single factor $x$.
+\end{proof}
+
+\begin{result}{stirlingPoly_recurrence}{Finite coefficient recurrence}
+For all $j,L$ and $x\in\R$,
+\[
+ P_{j+1,L+1}(x)=\frac{P_{j,L}(x)+(j+1)P_{j+1,L}(x)}x.
+\]
+\end{result}
+\begin{proof}
+The zeroth term on the left is zero. For each remaining term apply
+$\stirling{i+1}{j+1}=\stirling{i}{j}+(j+1)\stirling{i}{j+1}$,
+then distribute the finite sums and the extra factor $1/x$.
+\end{proof}
+
+\begin{result}{stirlingErr_recurrence}{Exact error recurrence}
+If $x\ne0$ and $x-(j+1)\ne0$, then
+\[
+ E_{j+1,L+1}(x)=\frac{E_{j,L}(x)+(j+1)E_{j+1,L}(x)}x.
+\]
+\end{result}
+\begin{proof}
+The reciprocal recurrence gives
+$xD_{j+2}=D_{j+1}+(j+1)D_{j+2}$ by clearing the stated nonzero
+denominators. Subtract the polynomial recurrence. This remains valid if
+another product factor vanishes, by the totalized-division convention.
+\end{proof}
+
+\begin{result}{descRecip_bounds}{Bounds for a descending reciprocal}
+If $1\leq h\leq H\leq x$, then $0<D_h(x)\leq1/x$.
+\end{result}
+\begin{proof}
+Induct on $h\geq1$. Initially $D_1=1/x>0$. In the step, $x-h\geq1$,
+so dividing the preceding positive reciprocal by $x-h$ preserves
+positivity and does not increase it.
+\end{proof}
+
+\begin{result}{stirlingErr_bounds}{Uniform nonnegative error bound}
+If $j+1\leq H\leq x$, then for every $L$,
+$0\leq E_{j,L}(x)\leq H^L/x^{L+1}$.
+\end{result}
+\begin{proof}
+Here $x>0$. Induct on $L$, simultaneously for all admissible $j$.
+At $L=0$ the polynomial is empty, so use the preceding bound.
+At the next order, $j=0$ gives zero error, because $\stirling{0}{0}=1$
+and $\stirling{i+1}{0}=0$ make $P_{0,L+1}(x)=1/x$. For the index $j+1$ put
+$u=H^L/x^{L+1}\geq0$. The two errors in the recurrence lie in $[0,u]$,
+and $j+2\leq H$. Their nonnegative weighted sum is at most
+$u+(j+1)u=(j+2)u\leq Hu$.
+Dividing by $x$ gives $H^{L+1}/x^{L+2}$.
+\end{proof}
+
+\begin{result}{descRecip_centered}{Centering at the largest factor}
+For all $n,h$, $D_h(n+h)=1/\asc{(n+1)}{h}$.
+\end{result}
+\begin{proof}
+The descending product $(n+h)\cdots(n+1)$ equals the ascending
+factorial. Lean uses Mathlib's descending/ascending factorial identity;
+all natural subtractions in its product are exact.
+\end{proof}
+
+\section{The actual factorial tail}
+
+The definitions \defined{alpha}, \defined{seriesPrefix}, and
+\defined{scaledTail} are
+\[
+ \alpha_k=\sum_{m\geq0}\frac{\sigma_k(m)}{m!},\qquad
+ U_k(n)=\sum_{m<n}\frac{\sigma_k(m)}{m!},\qquad
+ T_k(n)=(n\mathbin{\dotminus}1)!\,[\alpha_k-U_k(n)].
+\]
+For $n>0$, this tail starts at term $n$, not at $n+1$.
+The definitions \defined{blockTerm}, \defined{tailMain}, \defined{tailErr},
+\defined{omittedTail}, and \defined{finiteErr} are
+\begin{align*}
+ B_k(n,j)&=\frac{\sigma_k(n+j)}{\asc{n}{j+1}},\\
+ M_k(n)&=\sum_{j=0}^k\sigma_k(n+j+1)P_{j,k+1}(n+j+1),\\
+ R_k(n)&=T_k(n+1)-M_k(n),\\
+ O_k(n,H)&=\tsum_{r\in\N}B_k(n+1,r+H),\\
+ F_k(n)&=\sum_{j=0}^k\sigma_k(n+j+1)E_{j,k+1}(n+j+1).
+\end{align*}
+Here $R_k$ is the tail error; the later survivor is denoted $V_k$.
+
+\begin{result}{seriesPrefix_integral}{Integrality of the scaled prefix}
+For every $k,n$, $(n\mathbin{\dotminus}1)!\,U_k(n)\in\Z$.
+\end{result}
+\begin{proof}
+For $m<n$, $m!\mid(n-1)!$. The scaled sum is the natural number
+$\sum_{m<n}((n-1)!/m!)\sigma_k(m)$. For $n=0$ the sum is empty.
+\end{proof}
+
+\begin{result}{eventually_scaledTail_integral}{Late integral tails}
+If $\alpha_k\in\Q$, then $T_k(n)\in\Z$ eventually.
+\end{result}
+\begin{proof}
+Write $\alpha_k=a/b$ with $a\in\Z$ and $b\geq1$. If $n\geq b+1$,
+then $b\mid(n-1)!$, so $(n-1)!\alpha_k$ is integral.
+Subtract the integral scaled prefix.
+\end{proof}
+
+\begin{result}{scaled_summand_eq_blockTerm}{The actual block summand}
+For $n>0$,
+$\displaystyle(n-1)!\frac{\sigma_k(j+n)}{(j+n)!}=B_k(n,j)$.
+\end{result}
+\begin{proof}
+Commute $j+n$, use $(n+j)!=(n-1)!\,\asc{n}{j+1}$, and cancel the nonzero
+factorial $(n-1)!$.
+\end{proof}
+
+\begin{result}{hasSum_blockTerm}{The actual infinite block tail}
+For $n>0$, the family $j\mapsto B_k(n,j)$ is summable with sum $T_k(n)$.
+\end{result}
+\begin{proof}
+Split the summable original series at $n$, subtract its finite prefix,
+and distribute $(n-1)!$ through the summable tail. Identify each
+summand by the preceding lemma.
+\end{proof}
+
+\begin{result}{blockTerm_nonneg}{Nonnegative block terms}
+$B_k(n,j)\geq0$ for every $k,n,j$.
+\end{result}
+\begin{proof}
+It is the totalized quotient of two nonnegative reals.
+\end{proof}
+
+\begin{result}{omittedTail_nonneg}{Nonnegative omitted tail}
+$O_k(n,H)\geq0$ for every $k,n,H$.
+\end{result}
+\begin{proof}
+Sum the nonnegative block terms.
+\end{proof}
+
+\begin{result}{tailErr_eq}{Exact decomposition of the error}
+For every $k,n$, $R_k(n)=O_k(n,k+1)+F_k(n)$.
+\end{result}
+\begin{proof}
+Split the summable series for $T_k(n+1)$ after $k+1$ terms.
+Centering the reciprocal product gives
+$B_k(n+1,j)=\sigma_k(n+j+1)D_{j+1}(n+j+1)$.
+Subtract $M_k(n)$ and distribute subtraction through the finite sum.
+The finite differences are exactly $F_k(n)$; the omitted tail remains.
+This is the direct decomposition used in the compressed Lean proof.
+\end{proof}
+
+\begin{result}{scaledTail_expansion}{The exact main-plus-error identity}
+$T_k(n+1)=M_k(n)+R_k(n)$ for every $k,n$.
+\end{result}
+\begin{proof}
+Rearrange the definition of $R_k(n)$.
+\end{proof}
+
+\begin{result}{tailMain_eq_range}{The expanded finite main term}
+For every $k,n$,
+\[
+ M_k(n)=\sum_{j=0}^k\sum_{i=0}^k
+  \stirling{i}{j}\frac{\sigma_k(n+j+1)}{(n+j+1)^{i+1}}.
+\]
+\end{result}
+\begin{proof}
+Insert the sum defining $P_{j,k+1}$ and distribute $\sigma_k(n+j+1)$.
+\end{proof}
+
+\section{Quantitative tail estimates}
+
+\begin{result}{poly_ascending_bound}{Polynomial versus ascending factorial}
+For $d>0$ and all $n,r$,
+\[
+ (n+1+r+d)^d(n+1)^{r+1}
+ \leq d^d\asc{(n+1)}{r+d+1}.
+\]
+\end{result}
+\begin{proof}
+Since $d\geq1$, $n+1+r+d\leq d(n+1+r+1)$.
+Each factor of an ascending factorial is at least its first factor.
+Raise the first inequality to power $d$, then bound the resulting powers
+by $\asc{(n+1+r+1)}d$ and $\asc{(n+1)}{r+1}$.
+Their product is $\asc{(n+1)}{r+d+1}$.
+\end{proof}
+
+\begin{result}{poly_block_le}{A reciprocal polynomial block bound}
+For $d>0$,
+\[
+ \frac{(n+1+r+d)^d}{\asc{(n+1)}{r+d+1}}
+ \leq\frac{d^d}{(n+1)^{r+1}}.
+\]
+\end{result}
+\begin{proof}
+Both denominators are positive. Cross-multiplication reduces the
+inequality to the preceding lemma.
+\end{proof}
+
+\begin{result}{sigma_le_pow_succ_div_sqrt}{A uniform numerator bound}
+If $n+1\leq m$, then
+\[
+ \sigma_k(m)\leq\frac{64}{\sqrt{n+1}}\,m^{k+1}.
+\]
+\end{result}
+\begin{proof}
+Here $m>0$. The square-root divisor bound gives
+$64m^k\sqrt m=64m^{k+1}/\sqrt m$.
+Use $\sqrt m\geq\sqrt{n+1}>0$.
+\end{proof}
+
+\begin{result}{omittedTerm_le}{Geometric domination of each omitted term}
+For all $k,n,r$,
+\[
+ B_k(n+1,r+k+1)
+ \leq \frac{64}{\sqrt{n+1}}\,
+       \frac{(k+1)^{k+1}}{(n+1)^{r+1}}.
+\]
+\end{result}
+\begin{proof}
+Apply the preceding numerator bound with $m=n+1+r+k+1$,
+divide by its positive ascending factorial, and apply the polynomial
+block bound with $d=k+1$.
+\end{proof}
+
+\begin{result}{hasSum_geometric_recip}{The geometric majorant}
+For $C\in\R$ and $n>0$, the family
+$C/(n+1)^{r+1}$, $r\in\N$, has sum $C/n$.
+\end{result}
+\begin{proof}
+Its ratio is $q=1/(n+1)\in(0,1)$ and its initial term is $C/(n+1)$.
+The geometric-series formula gives $(C/(n+1))/(1-q)=C/n$.
+\end{proof}
+
+\begin{result}{omittedTail_le}{The omitted-tail bound}
+For $n>0$,
+\[
+ O_k(n,k+1)\leq
+ \frac{64(k+1)^{k+1}}{n\sqrt{n+1}}.
+\]
+\end{result}
+\begin{proof}
+The omitted block family is a tail of a summable block family.
+Compare it term by term with the preceding geometric majorant,
+using $C=64(k+1)^{k+1}/\sqrt{n+1}$, and sum.
+\end{proof}
+
+\begin{result}{omittedTail_scaled_le}{The scaled omitted-tail bound}
+For $n>0$,
+\[
+ (n+1)O_k(n,k+1)\leq
+ \frac{128(k+1)^{k+1}}{\sqrt{n+1}}.
+\]
+\end{result}
+\begin{proof}
+Multiply the preceding bound by $n+1$ and use $(n+1)/n\leq2$.
+\end{proof}
+
+\begin{result}{finiteErr_term_bound}{One scaled finite denominator remainder}
+If $n\geq k+1$ and $0\leq j\leq k$, then
+\[
+ \left|(n+1)\sigma_k(n+j+1)E_{j,k+1}(n+j+1)\right|
+ \leq \frac{64(k+1)^{k+1}}{\sqrt{n+1}}.
+\]
+\end{result}
+\begin{proof}
+Put $x=n+j+1$. The error is nonnegative by the Stirling bound, so
+the absolute value may be removed. Since $n+1\leq x$ and $x\geq k+1$,
+the same numerator estimate used for the omitted tail gives
+\[
+ (n+1)\sigma_k(x)E_{j,k+1}(x)
+ \leq x\frac{64x^{k+1}}{\sqrt{n+1}}
+       \frac{(k+1)^{k+1}}{x^{k+2}}
+ =\frac{64(k+1)^{k+1}}{\sqrt{n+1}}.
+\]
+All denominator factors are positive, so the cancellation is valid.
+\end{proof}
+
+\begin{result}{tendsto_tailErr_mul}{The exact error is \(o(1/n)\)}
+For every $k$, $(n+1)R_k(n)\longrightarrow0$.
+\end{result}
+\begin{proof}
+For each of the finitely many retained indices, the preceding absolute-value
+bound tends to zero. Sum these null sequences to obtain
+$(n+1)F_k(n)\to0$ directly. The scaled omitted tail is squeezed between
+zero and $128(k+1)^{k+1}/\sqrt{n+1}\to0$.
+Both limits use $1/\sqrt{n+1}=\sqrt{n+1}/(n+1)\to0$.
+Add them using the exact decomposition of $R_k$.
+\end{proof}
+
+\begin{result}{tendsto_tailErr}{Decay of the unscaled error}
+For every $k$, $R_k(n)\longrightarrow0$.
+\end{result}
+\begin{proof}
+Divide the preceding null sequence by $n+1\to\infty$.
+\end{proof}
+
+\section{Divisor phases on arithmetic progressions}
+
+\begin{result}{affine_exists_residue}{Solving a coprime affine congruence}
+If $d>0$ and $\gcd(Q,d)=1$, there exists $v<d$ such that
+$d\mid Qv+A$.
+\end{result}
+\begin{proof}
+In $\Z/d\Z$, $Q$ is invertible. Choose the representative in
+$\{0,\ldots,d-1\}$ of $-AQ^{-1}$.
+\end{proof}
+
+\begin{result}{affine_iff_modEq}{The complete affine solution class}
+If $\gcd(Q,d)=1$ and $d\mid Qv+A$, then for every $j$,
+\[
+ d\mid Qj+A \quad\Longleftrightarrow\quad j\equiv v\pmod d.
+\]
+\end{result}
+\begin{proof}
+Compare $Qj+A$ with $Qv+A$ modulo $d$, cancel $A$, and cancel the
+coprime multiplier $Q$. The reverse implication follows by multiplying
+the congruence by $Q$ and adding $A$. This formulation also permits
+$d=0$, where congruence means equality.
+\end{proof}
+
+Define \defined{phase}, \defined{divTerm}, \defined{meanTerm}, and
+\defined{progMean} by
+\begin{align*}
+ \rho_k(n)&=\frac{\sigma_k(n)}{n^k},&
+ b_k(d,n)&=\frac{\ind{d\mid n}}{d^k},\\
+ m_k(Q,A,d)&=\ind{\gcd(d,Q)\mid A}\frac{\gcd(d,Q)}{d^{k+1}},&
+ \mu_k(Q,A)&=\tsum_{d\in\N}m_k(Q,A,d).
+\end{align*}
+The indicator is one when its condition holds and zero otherwise.
+These definitions include $d=0$ and $n=0$ with the conventions of
+Section 1.
+
+\begin{result}{hasSum_divTerm}{The reciprocal-divisor representation}
+For $n>0$ and every $k$, the family $d\mapsto b_k(d,n)$ has sum
+$\rho_k(n)$.
+\end{result}
+\begin{proof}
+Pair each positive divisor with its complement:
+$\sigma_k(n)=\sum_{d\mid n}(n/d)^k$.
+After division by $n^k>0$, each term is $d^{-k}$.
+The family $b_k(d,n)$ vanishes outside the finite positive divisor set,
+so this finite equality gives the asserted convergent infinite sum.
+\end{proof}
+
+\begin{result}{divTerm_sum_eq_count}{Averages count affine solutions}
+For every $k,Q,A,d,N$, let
+$C_d(N)=|\{j<N:d\mid Qj+A\}|$. Then
+\[
+ \frac1N\sum_{j<N}b_k(d,Qj+A)=\frac{C_d(N)}{N\,d^k}.
+\]
+\end{result}
+\begin{proof}
+Every selected index contributes the same number $1/d^k$.
+Sum this constant over the filtered finite set, then divide by $N$.
+\end{proof}
+
+\begin{result}{tendsto_count_modEq_div}{Density of one residue class}
+For $r>0$ and every $v$,
+\[
+ \frac{|\{j<N:j\equiv v\pmod r\}|}{N}\longrightarrow\frac1r.
+\]
+\end{result}
+\begin{proof}
+The count is
+$\lfloor N/r\rfloor+\ind{v\bmod r<N\bmod r}$.
+The first term divided by $N$ tends to $1/r$: the difference between
+$N/r$ and $\lfloor N/r\rfloor$ lies in $[0,1)$, and Lean uses the
+corresponding Mathlib limit for a normalized floor. The second term
+divided by $N$ is between zero and $1/N$ and tends to zero.
+\end{proof}
+
+\begin{result}{divTerm_cesaro}{The mean of one divisor term}
+For $k>0$ and all $Q,A,d$,
+\[
+ \frac1N\sum_{j<N}b_k(d,Qj+A)\longrightarrow m_k(Q,A,d).
+\]
+\end{result}
+\begin{proof}
+For $d=0$ both sides vanish. Otherwise let $g=\gcd(d,Q)>0$.
+If $g\nmid A$, there are no affine solutions: $g$ divides $d$ and $Qj$,
+so $d\mid Qj+A$ would force $g\mid A$.
+If $g\mid A$, then $\gcd(Q/g,d/g)=1$, and the two affine congruence
+lemmas solve the reduced congruence with offset $A/g$; multiplying by
+$g$, which divides $d$, $Q$ and $A$, shows that the solutions form one
+residue class modulo $d/g$.
+Its density is $g/d$; multiply by $d^{-k}$ to obtain $g/d^{k+1}$.
+\end{proof}
+
+\begin{result}{affine_count_le_quotient}{Bounding the affine count}
+If $Q>0$ and $A>0$, then for all $d,N$,
+\[
+ C_d(N)\leq\left\lfloor\frac{QN+A}{d}\right\rfloor .
+\]
+\end{result}
+\begin{proof}
+The injective map $j\mapsto Qj+A$ sends counted indices into the
+positive multiples of $d$ at most $QN+A$. There are exactly the
+displayed number of such multiples. For $d=0$ both sets are empty.
+\end{proof}
+
+\begin{result}{divTerm_cesaro_bound}{Summable domination of the averages}
+If $k,Q,A>0$, then for every $d,N$,
+\[
+ \left|\frac1N\sum_{j<N}b_k(d,Qj+A)\right|
+ \leq\frac{Q+A}{d^{k+1}}.
+\]
+\end{result}
+\begin{proof}
+If $N=0$ or $d=0$, the average is zero.
+Otherwise all terms are nonnegative, and the counting bound gives
+$C_d(N)d\leq QN+A\leq(Q+A)N$, since $N\geq1$.
+Divide by $Nd^{k+1}>0$ and use the exact counting formula.
+\end{proof}
+
+\begin{result}{meanTerm_bounds}{Bounds for a local gcd mean}
+For $Q>0$ and all $k,A,d$,
+$0\leq m_k(Q,A,d)\leq Q/d^{k+1}$.
+\end{result}
+\begin{proof}
+The incompatible case is zero; in the compatible case use
+$0\leq\gcd(d,Q)\leq Q$ and divide by the nonnegative denominator.
+The $d=0$ term is also zero.
+\end{proof}
+
+\begin{result}{summable_meanTerm}{Summability of the progression mean}
+For $k,Q>0$ and every $A$, $d\mapsto m_k(Q,A,d)$ is summable.
+\end{result}
+\begin{proof}
+The preceding comparison is dominated by the convergent $p$-series
+$Q/d^{k+1}$, since $k+1>1$.
+\end{proof}
+
+\begin{result}{tendsto_progMean}{The actual progression mean}
+For $k,Q,A>0$,
+\[
+ \frac1N\sum_{j<N}\rho_k(Qj+A)\longrightarrow\mu_k(Q,A).
+\]
+\end{result}
+\begin{proof}
+For each $d$ the averaged reciprocal-divisor term converges to
+$m_k(Q,A,d)$. Its absolute value is bounded, uniformly in $N$, by
+$(Q+A)/d^{k+1}$, a summable family. Mathlib's dominated-convergence
+theorem for series therefore permits summing these limits over $d$.
+For each fixed $N$, interchange the finite average with the convergent
+divisor sums, using the reciprocal-divisor representation.
+This gives the displayed phase average. In particular the argument
+works for $k=1$: domination is on the averages, with exponent $2$,
+not on pointwise divisor terms by a divergent harmonic series.
+\end{proof}
+
+\section{Fresh-prime refinements and the isolated shift}
+
+\begin{result}{fresh_prime_residues}{Two separating prime residues}
+Let $I$ be a finite type, $i_0\in I$, $r_i>0$, $Q>0$, and $A\in\N$.
+There exist a prime $L$ coprime to $Q$ and $v_0,v_1\in\N$ such that
+\[
+ \begin{split}
+ &L\nmid Qv_0+A+r_i\quad\hbox{for every }i,\\
+ &L\mid Qv_1+A+r_i\quad\Longleftrightarrow\quad r_i=r_{i_0}.
+ \end{split}
+\]
+\end{result}
+\begin{proof}
+By the infinitude of primes, choose $L>Q$ and $L>\max_i r_i$.
+Then $\gcd(Q,L)=1$. Choose $v_0$ solving $Qv_0+A\equiv0\pmod L$
+and $v_1$ solving $Qv_1+A+r_{i_0}\equiv0\pmod L$.
+The first residue misses all shifts because $0<r_i<L$.
+For the second, divisibility is equivalent to $r_i\equiv r_{i_0}\pmod L$,
+which is equality because both representatives lie strictly between
+zero and $L$.
+\end{proof}
+
+\begin{result}{tendsto_weightedCesaro}{Finite weighted averages}
+Let $I$ be a finite type, $f_i:\N\to\R$, and $c_i,\mu_i\in\R$.
+If $N^{-1}\sum_{n<N}f_i(n)\to\mu_i$ for every $i$, then
+\[
+ \frac1N\sum_{n<N}\sum_{i\in I}c_i f_i(n)
+ \longrightarrow\sum_{i\in I}c_i\mu_i.
+\]
+\end{result}
+\begin{proof}
+Commute the finite sums and move the fixed coefficients outside.
+A finite sum of convergent sequences converges to the sum of its limits.
+\end{proof}
+
+\begin{result}{gcd_eq_prime_or_one}{The prime gcd dichotomy}
+If $L$ is prime, then
+$\gcd(d,L)=L$ when $L\mid d$, and $\gcd(d,L)=1$ otherwise.
+\end{result}
+\begin{proof}
+In the first case the gcd is $L$. In the second, primality implies
+$d$ and $L$ are coprime.
+\end{proof}
+
+\begin{result}{progMean_multiples}{The mean supported on multiples}
+For all $k,Q,A$ and $L>0$ with $\gcd(L,Q)=1$,
+\[
+ \tsum_{d\in\N}\ind{L\mid d}\,m_k(Q,A,d)
+ =\frac{\mu_k(Q,A)}{L^{k+1}}.
+\]
+Here $L$ need not be prime.
+\end{result}
+\begin{proof}
+The summand is supported on multiples of $L$. Reindex them injectively
+as $d=Le$. Coprime cancellation gives $\gcd(Le,Q)=\gcd(e,Q)$, so the
+divisibility indicator is unchanged, and $(Le)^{k+1}=L^{k+1}e^{k+1}$;
+hence each summand is $m_k(Q,A,e)/L^{k+1}$. Pull the fixed scalar
+outside the sum. The equality is also valid for nonsummable families
+with the totalized-sum convention: reindexing and multiplication by the
+nonzero scalar $L^{-(k+1)}$ preserve summability or nonsummability.
+\end{proof}
+
+\begin{result}{meanTerm_refine}{Refining one local gcd mean}
+If $L$ is prime and $\gcd(L,Q)=1$, then for every $k,B,d$,
+\[
+ \begin{split}
+ m_k(QL,B,d)={}&m_k(Q,B,d)\\
+ &+\bigl((L-1)\ind{L\mid B}-\ind{L\nmid B}\bigr)
+             \ind{L\mid d}\,m_k(Q,B,d).
+ \end{split}
+\]
+\end{result}
+\begin{proof}
+Write $g=\gcd(d,Q)$. If $L\nmid d$, the refined gcd is still $g$
+and the correction vanishes. If $L\mid d$, the refined gcd is $gL$.
+Since $\gcd(g,L)=1$, $gL\mid B$ is equivalent to $g\mid B$ and
+$L\mid B$. Thus the refined term is $L$ times the original term
+when $L\mid B$, and zero otherwise. These cases give the formula.
+\end{proof}
+
+\begin{result}{progMean_refine}{The exact prime-refinement factor}
+If $k,Q>0$, $L$ is prime, $\gcd(L,Q)=1$, and $B\equiv A\pmod Q$, then
+\[
+ \mu_k(QL,B)=\mu_k(Q,A)
+ \left(1-L^{-(k+1)}+\ind{L\mid B}L^{-k}\right).
+\]
+\end{result}
+\begin{proof}
+The local-mean family and its restriction to multiples of $L$ are
+summable. Sum the local refinement identity, substitute the
+multiples formula, and use $\mu_k(Q,B)=\mu_k(Q,A)$, which holds because
+each $\gcd(d,Q)$ divides $Q$, so it divides $B$ if and only if it divides $A$.
+When $L\mid B$, the multiplier is
+$1+(L-1)L^{-(k+1)}$; otherwise it is $1-L^{-(k+1)}$.
+Both are exactly the displayed expression.
+\end{proof}
+
+\begin{result}{isolated_shift_not_tendsto_zero}{The isolated-shift obstruction}
+Let $k,Q>0$, $A\in\N$, $I$ a finite type, $r_i>0$, and $c_i\in\R$.
+Suppose $i_0\in I$, $c_{i_0}\ne0$, and
+$r_i=r_{i_0}$ implies $i=i_0$. Then
+\[
+ \sum_{i\in I}c_i\rho_k(Qn+A+r_i)\not\longrightarrow0.
+\]
+Other shifts are allowed to coincide with one another.
+\end{result}
+\begin{proof}
+Suppose this sum tends to zero. Choose $L,v_0,v_1$ by the separating
+residue lemma. For any $v$, the subsequence on the indices $Ln+v$ tends
+to zero, hence so does its Cesaro average. On the other hand, the
+progression-mean theorem with step $QL$ and offset $Qv+A+r_i$, which is
+congruent to $A+r_i$ modulo $Q$, the prime-refinement factor, and finite
+weighted averaging give the limit
+\[
+ \sum_i c_i\mu_k(Q,A+r_i)
+ \left(1-L^{-(k+1)}
+       +\ind{L\mid Qv+A+r_i}L^{-k}\right).
+\]
+Hence this expression is zero for both $v_0$ and $v_1$.
+Subtract the two equalities. The first indicator misses every shift;
+the second selects exactly $i_0$. We obtain
+$c_{i_0}\mu_k(Q,A+r_{i_0})L^{-k}=0$.
+This is impossible: the first factor is nonzero, the mean is at least
+one (its $d=1$ term is one and the others are nonnegative), and $L^{-k}>0$.
+\end{proof}
+
+\section{Finite differences and the dilation grid}
+
+Define \defined{diffWeight} by
+$w_o(a)=(-1)^{o-a}\binom oa$ for $0\leq a\leq o$.
+
+\begin{result}{diffWeight_moment}{Vanishing polynomial moments}
+If $\ell<o$ and $z,d\in\R$, then
+\[
+ \sum_{a=0}^{o}w_o(a)(z+da)^\ell=0.
+\]
+\end{result}
+\begin{proof}
+The sum is the order-$o$ forward difference of $x^\ell$, with step
+$d$, evaluated at $z$. Mathlib's iterated-forward-difference formula
+and its vanishing theorem for powers of degree below the order give zero.
+This also covers zero step and degree zero.
+\end{proof}
+
+For a vertex $e\in\{0,\ldots,o\}^n$, define
+\defined{cubeWeight} by $W_o(e)=\prod_{a<n}w_o(e_a)$.
+
+\begin{result}{cube_core}{Cancellation in a coordinate absent from the argument}
+Let $\ell<o$, $d,c:\{0,\ldots,n-1\}\to\R$, $i<n$, $c_i=0$,
+$g:\R\to\R$, and $p,q\in\R$. Then
+\[
+ \sum_{e\in\{0,\ldots,o\}^n}W_o(e)
+ \left(p+\sum_{a<n}d_a e_a\right)^\ell
+ g\left(q+\sum_{a<n}c_a e_a\right)=0.
+\]
+\end{result}
+\begin{proof}
+Split each vertex into its coordinate $e_i$ and the remaining coordinates.
+For fixed remaining coordinates the $g$ factor and the other weight
+factors are independent of $e_i$, because $c_i=0$.
+The sum over $e_i$ is a fixed scalar times
+$\sum_{a=0}^o w_o(a)(z+d_i a)^\ell$, which vanishes by the moment lemma.
+Then sum over the remaining coordinates. Lean uses the coordinate-insertion
+equivalence directly; no induction over successive removed coordinates
+is needed. The dimension-zero case has no possible index $i$.
+\end{proof}
+
+For fixed $k$, define the vertex type \defined{GridVertex} and the
+constants \defined{gridBound}, \defined{gridSpacing}, and
+\defined{gridBase} by
+\[
+ \mathcal V_k=\{0,\ldots,k+1\}^k,\qquad b=k+2,\qquad
+ F=b^k-1,\qquad D=F!,\qquad B=1+kDF.
+\]
+The definitions \defined{gridIndex}, \defined{gridWeightedIndex},
+\defined{gridMult}, \defined{gridOffset}, and \defined{gridShift} are
+\begin{align*}
+ I_e&=\sum_{a<k}e_a b^a,&
+ J_e&=\sum_{a<k}(a+1)e_a b^a,\\
+ p_e&=B+DI_e,& t_e&=DJ_e,\\
+ s_{e,j}&=(j+1)p_e\mathbin{\dotminus}t_e.&&
+\end{align*}
+The zero vertex \defined{gridZero} is $\boldsymbol0=(0,\ldots,0)$.
+The modulus \defined{gridModulus} is $Q_k=\prod_{e\in\mathcal V_k}p_e^2$.
+These definitions also apply at $k=0$, when the vertex type has one element.
+
+\begin{result}{gridIndex_le}{The radix index bound}
+For every vertex, $I_e\leq F$.
+\end{result}
+\begin{proof}
+A length-$k$ base-$b$ digit string with digits below $b$ represents an
+integer below $b^k$. In Lean this is the bound of Mathlib's finite
+radix-encoding equivalence.
+\end{proof}
+
+\begin{result}{gridIndex_injective}{Uniqueness of radix encoding}
+The map $e\mapsto I_e$ is injective.
+\end{result}
+\begin{proof}
+Use uniqueness of the fixed-length base-$b$ representation, formalized
+by the injectivity of the same radix-encoding equivalence.
+\end{proof}
+
+\begin{result}{gridIndex_zero}{The zero index}
+$I_{\boldsymbol0}=0$.
+\end{result}
+\begin{proof}
+Every summand is zero.
+\end{proof}
+
+\begin{result}{gridWeightedIndex_le}{The weighted index bound}
+For every vertex, $J_e\leq kI_e$.
+\end{result}
+\begin{proof}
+For each coordinate $a<k$, the factor $a+1$ is at most $k$.
+Multiply by $e_a b^a\geq0$ and sum.
+\end{proof}
+
+\begin{result}{gridMult_pos}{Positive multipliers}
+$p_e>0$ for every vertex and every $k$.
+\end{result}
+\begin{proof}
+$p_e=B+DI_e$ and $B=1+kDF\geq1$.
+\end{proof}
+
+\begin{result}{gridMult_coprime_spacing}{Coprimality with the spacing}
+$\gcd(p_e,D)=1$.
+\end{result}
+\begin{proof}
+$p_e=1+D(kF+I_e)$ is congruent to one modulo $D$.
+\end{proof}
+
+\begin{result}{multipliers_coprime_of_index_lt}{Coprimality for ordered indices}
+If $I_e<I_f$, then $\gcd(p_e,p_f)=1$.
+\end{result}
+\begin{proof}
+If a prime $l$ divided both multipliers, it would divide
+$p_f-p_e=D(I_f-I_e)$. It is coprime to $D$, since it divides $p_e$;
+hence $l\mid I_f-I_e$. The latter integer is positive and at most $F$,
+so $l\leq F$ and $l\mid F!=D$, a contradiction.
+No prime can divide both multipliers, so they are coprime.
+\end{proof}
+
+\begin{result}{gridMult_pairwise_coprime}{Pairwise coprime grid multipliers}
+Distinct vertices have coprime multipliers.
+\end{result}
+\begin{proof}
+Their radix indices are distinct by injectivity. Order the two indices
+and apply the preceding lemma, using symmetry of coprimality if needed.
+\end{proof}
+
+\begin{result}{gridOffset_lt_base}{The offsets are below the base}
+$t_e<B$ for every vertex.
+\end{result}
+\begin{proof}
+$t_e=DJ_e\leq DkI_e\leq DkF=B-1$.
+\end{proof}
+
+\begin{result}{gridShift_pos}{All shifts are positive}
+$s_{e,j}>0$ for every vertex and every $j$.
+\end{result}
+\begin{proof}
+$t_e<B\leq p_e\leq(j+1)p_e$, so the natural difference is positive.
+\end{proof}
+
+\begin{result}{gridShift_add_offset}{Exact subtraction in the shifts}
+$s_{e,j}+t_e=(j+1)p_e$.
+\end{result}
+\begin{proof}
+The preceding strict inequality guarantees that natural subtraction
+does not truncate.
+\end{proof}
+
+\begin{result}{gridShift_eq_succ_base_iff}{The unique distinguished shift}
+For $j\leq k$,
+\[
+ s_{e,j}=(k+1)B\quad\Longleftrightarrow\quad
+ e=\boldsymbol0\ \hbox{ and }\ j=k.
+\]
+\end{result}
+\begin{proof}
+If $j<k$, then
+$s_{e,j}\leq k(B+DF)=kB+kDF=(k+1)B-1$, so equality is impossible.
+Thus $j=k$. Now
+$s_{e,k}=(k+1)B+D((k+1)I_e-J_e)$, and $J_e\leq kI_e$.
+Equality implies $DI_e=0$; since $D>0$, $I_e=0$, and radix
+injectivity gives $e=\boldsymbol0$. Conversely, this vertex has
+$I_e=J_e=0$, $p_e=B$, and $t_e=0$, proving the equality at $j=k$.
+\end{proof}
+
+\begin{result}{gridModulus_pos}{Positive CRT modulus}
+$Q_k>0$.
+\end{result}
+\begin{proof}
+It is a finite product of the positive squares $p_e^2$.
+\end{proof}
+
+\section{Cancellation and the final-order survivor}
+
+The integer weights \defined{gridWeight} are
+$w_e=W_{k+1}(e)=\prod_{a<k}(-1)^{k+1-e_a}\binom{k+1}{e_a}$.
+
+\begin{result}{gridMult_real_eq_cube}{The real affine multiplier}
+Viewed as a real number,
+$p_e=B+\sum_{a<k}Db^a e_a$.
+\end{result}
+\begin{proof}
+Expand $p_e=B+DI_e$ and distribute $D$ through the sum.
+\end{proof}
+
+\begin{result}{gridShift_real_eq_cube}{The real affine shift}
+For every $j$, viewed in $\R$,
+\[
+ s_{e,j}=(j+1)B+\sum_{a<k}(j-a)Db^a e_a.
+\]
+\end{result}
+\begin{proof}
+Use the exact subtraction identity
+$s_{e,j}=(j+1)p_e-t_e$, substitute the sums for $p_e$ and $t_e$,
+and combine the coefficients $(j+1)-(a+1)=j-a$.
+\end{proof}
+
+\begin{result}{grid_core_cancel}{Cancellation on the actual integer grid}
+If $j<k$, $\ell\leq k$, and $g:\N\to\R$, then
+\[
+ \sum_{e\in\mathcal V_k}w_ep_e^\ell g(s_{e,j})=0.
+\]
+\end{result}
+\begin{proof}
+Use the two affine formulas in the cube-cancellation lemma with order
+$k+1$. Coordinate $a=j$ has coefficient zero in the shift, while the
+multiplier has degree $\ell<k+1$.
+To match the real-argument cube lemma exactly, extend $g$ to $\R$ by
+$x\mapsto g(\max(\lfloor x\rfloor,0))$. All actual shifts are natural
+numbers, so this extension agrees with $g$ on every required argument.
+\end{proof}
+
+Define \defined{gridCoeff} by $c_{e,j}=w_ep_e^{k+1}\stirling{k}{j}$.
+The definitions \defined{survivingMain} and \defined{survivor} are
+\[
+ S_k(N)=\sum_e\sum_{j=0}^k
+       c_{e,j}\frac{\rho_k(N+s_{e,j})}{N+s_{e,j}},
+ \qquad
+ V_k(N)=\sum_e\sum_{j=0}^k c_{e,j}\rho_k(N+s_{e,j}).
+\]
+
+\begin{result}{grid_expansion_eq_surviving}{Direct cancellation of the expanded vertex sum}
+For every $k,N$,
+\[
+ \sum_e w_e\sum_{j=0}^k\sum_{i=0}^k
+ \stirling{i}{j}p_e^{i+1}
+ \frac{\sigma_k(N+s_{e,j})}{(N+s_{e,j})^{i+1}}=S_k(N).
+\]
+\end{result}
+\begin{proof}
+Distribute each vertex weight and commute the three finite sums to
+put the denominator order $i$ first. For $i<k$ and $j<k$, apply grid cancellation with
+$\ell=i+1\leq k$ and
+$g(s)=\sigma_k(N+s)/(N+s)^{i+1}$.
+The only other possible index is $j=k>i$, whose Stirling coefficient
+$\stirling{i}{j}$ is zero. Thus only $i=k$ remains.
+In that row use
+$\sigma_k(x)/x^{k+1}=\rho_k(x)/x$ and reorder the finite sums;
+the result is precisely $S_k(N)$. All rearrangements are finite.
+\end{proof}
+
+\begin{result}{tendsto_phase_div_nat}{The raw phase is sublinear}
+For every $k$, $\rho_k(n)/n\longrightarrow0$.
+\end{result}
+\begin{proof}
+For $n>0$, dividing the divisor bound by $n^k$ gives $\rho_k(n)\leq64\sqrt n$,
+so the ratio is between zero and $64\sqrt n/n$.
+The latter tends to zero by the square-root limit.
+Only this sublinear growth is used; no uniform bound on $\rho_k$ is assumed.
+\end{proof}
+
+\begin{result}{grid_main_term_tendsto_zero}{Decay of each shifted main term}
+For every $k,e$ and every $h\in\N$,
+\[
+ c_{e,h}\frac{\rho_k(N+s_{e,h})}{N+s_{e,h}}\longrightarrow0.
+\]
+\end{result}
+\begin{proof}
+Apply the preceding limit along $N+s_{e,h}\to\infty$ and multiply
+by the fixed coefficient $c_{e,h}$.
+\end{proof}
+
+\begin{result}{tendsto_survivingMain}{Decay of the complete surviving main term}
+For every $k$, $S_k(N)\longrightarrow0$.
+\end{result}
+\begin{proof}
+Sum the finitely many preceding null sequences over $e$ and $0\leq j\leq k$.
+\end{proof}
+
+\begin{result}{tendsto_survivor_rescaling}{Rescaling to the raw survivor}
+For every $k$, $NS_k(N)-V_k(N)\longrightarrow0$.
+\end{result}
+\begin{proof}
+Every $s=s_{e,j}$ is positive, so $N+s\ne0$.
+The corresponding difference is exactly
+\[
+ N\,c_{e,j}\frac{\rho_k(N+s)}{N+s}
+   -c_{e,j}\rho_k(N+s)
+ =-s\,c_{e,j}\frac{\rho_k(N+s)}{N+s}.
+\]
+It tends to zero by the individual shifted-term limit.
+Sum these finitely many identities.
+\end{proof}
+
+\section{CRT indices and the forced zero limit}
+
+\begin{result}{tendsto_affine_atTop}{A positive-step progression diverges}
+For $Q>0$ and every $A$, $A+Qt\longrightarrow+\infty$.
+\end{result}
+\begin{proof}
+$A+Qt\geq Qt$, and $Qt\to+\infty$.
+\end{proof}
+
+The quotient index \defined{tailIndex} is
+\[
+ n_e(N)=\left\lfloor\frac{N\mathbin{\dotminus}t_e}{p_e}\right\rfloor.
+\]
+The property \defined{GridCongruences}, denoted $\mathcal C_k(N)$,
+means that $N\equiv t_e\pmod{p_e^2}$ for every vertex $e$.
+
+\begin{result}{tailIndex_factorization}{Exact common shifted arguments}
+If $N\geq t_e$ and $N\equiv t_e\pmod{p_e^2}$, then for every $j$,
+\[
+ p_e(n_e(N)+j+1)=N+s_{e,j}.
+\]
+\end{result}
+\begin{proof}
+The congruence implies $p_e\mid N-t_e$, so
+$p_en_e(N)+t_e=N$. Add the exact shift identity
+$s_{e,j}+t_e=(j+1)p_e$ and rearrange.
+\end{proof}
+
+\begin{result}{tailIndex_term_rescale}{Exact numerator and denominator rescaling}
+If $k>0$, $j\leq k$, $N\geq t_e$, and
+$N\equiv t_e\pmod{p_e^2}$, then for every $i$,
+\[
+ \sigma_k(p_e)\frac{\sigma_k(n_e(N)+j+1)}{(n_e(N)+j+1)^{i+1}}
+ =p_e^{i+1}\frac{\sigma_k(N+s_{e,j})}{(N+s_{e,j})^{i+1}}.
+\]
+\end{result}
+\begin{proof}
+The squared congruence gives $p_e^2\mid N\mathbin{\dotminus}t_e$, hence
+$p_e\mid n_e(N)$. Also $j+1\leq k+1\leq F$, since $b^k\geq b=k+2$, so
+$j+1\mid F!=D$; as $p_e$ is coprime to $D$, it is coprime to $j+1$ and
+hence to $n_e(N)+j+1$. This permits applying multiplicativity of
+$\sigma_k$ to $p_e(n_e(N)+j+1)=N+s_{e,j}$.
+Replace the denominator by the same product, distribute its power,
+and cancel $p_e^{i+1}\ne0$.
+\end{proof}
+
+\begin{result}{gridCongruences_add_modulus_mul}{Persistence along the CRT progression}
+If $\mathcal C_k(A)$, then $\mathcal C_k(A+Q_kt)$ for every $t\in\N$.
+\end{result}
+\begin{proof}
+Each $p_e^2$ divides the product $Q_k$, so adding $Q_kt$ leaves
+every prescribed congruence unchanged.
+\end{proof}
+
+The definitions \defined{weightedTail}, \defined{weightedMain}, and
+\defined{weightedError} are respectively
+\begin{align*}
+ W_T(N)&=\sum_e w_e\sigma_k(p_e)T_k(n_e(N)+1),\\
+ W_M(N)&=\sum_e w_e\sigma_k(p_e)M_k(n_e(N)),\\
+ W_R(N)&=\sum_e w_e\sigma_k(p_e)R_k(n_e(N)).
+\end{align*}
+The dependence of these three expressions on $k$ is suppressed.
+
+\begin{result}{weightedTail_split}{The weighted exact decomposition}
+For every $k,N$, $W_T(N)=W_M(N)+W_R(N)$.
+\end{result}
+\begin{proof}
+Apply $T_k(n+1)=M_k(n)+R_k(n)$ at each $n=n_e(N)$, multiply by
+$w_e\sigma_k(p_e)$, and sum.
+\end{proof}
+
+\begin{result}{tendsto_tailIndex}{Divergence of every quotient index}
+For every $k,e,A$ and every $Q>0$,
+$n_e(A+Qt)\longrightarrow+\infty$.
+\end{result}
+\begin{proof}
+$A+Qt$ tends to infinity. Subtracting the fixed $t_e$, with eventual
+absence of truncation, still tends to infinity. Integer division by
+the positive constant $p_e$ also tends to infinity.
+\end{proof}
+
+\begin{result}{eventually_weightedTail_integral_prog}{Eventual weighted integrality}
+If $\alpha_k\in\Q$, then for every $A$,
+$W_T(A+Q_kt)\in\Z$ eventually.
+\end{result}
+\begin{proof}
+Every $n_e(A+Q_kt)+1$ tends to infinity, so the actual tail at that
+index is eventually integral. Intersect these finitely many eventual
+properties over the vertices. Each weight $w_e\sigma_k(p_e)$ is an
+integer, hence so is their weighted sum. No CRT assumption on $A$
+is needed for this lemma.
+\end{proof}
+
+\begin{result}{weightedMain_eq_surviving}{Identifying the actual weighted main term}
+If $k>0$, $N\geq B$, and $\mathcal C_k(N)$, then $W_M(N)=S_k(N)$.
+\end{result}
+\begin{proof}
+For every $e$, $t_e<B\leq N$.
+Expand $M_k(n_e(N))$ by its double Stirling sum and apply the exact
+term-rescaling lemma to each $i,j$. Apply the preceding direct
+grid-expansion identity to obtain $S_k(N)$.
+\end{proof}
+
+\begin{result}{tendsto_grid_vertex_error_mul}{A rescaled vertex error}
+If $\mathcal C_k(A)$, then for every $e$, along $N=A+Q_kt$,
+\[
+ N R_k(n_e(N))\longrightarrow0.
+\]
+\end{result}
+\begin{proof}
+Eventually $N\geq t_e$, and the CRT factorization at $j=0$ gives
+$N=p_e(n_e(N)+1)-s_{e,0}$. Thus
+\[
+ NR_k(n_e(N))
+ =p_e(n_e(N)+1)R_k(n_e(N))-s_{e,0}R_k(n_e(N)).
+\]
+Both terms on the right tend to zero: use the scaled and unscaled error
+limits at the diverging quotient index, with fixed coefficients
+$p_e$ and $s_{e,0}$. This exact identity avoids a separate comparison bound.
+\end{proof}
+
+\begin{result}{tendsto_weightedError_mul}{The rescaled weighted error}
+If $\mathcal C_k(A)$, then along $N=A+Q_kt$,
+$NW_R(N)\longrightarrow0$.
+\end{result}
+\begin{proof}
+Distribute $N$ through the finite sum for $W_R$.
+Each summand is the preceding null sequence multiplied by the fixed
+real coefficient $w_e\sigma_k(p_e)$. Signed coefficients cause no
+problem for a finite sum of convergent sequences.
+\end{proof}
+
+\begin{result}{tendsto_survivor_of_rational}{Rationality forces a zero survivor limit}
+If $k>0$, $\alpha_k\in\Q$, and $\mathcal C_k(A)$, then
+$V_k(A+Q_kt)\longrightarrow0$.
+\end{result}
+\begin{proof}
+Write $N=A+Q_kt$. First, $W_R(N)\to0$ directly: each $R_k(n_e(N))$
+tends to zero, and the weights form a fixed finite family.
+Also $W_M(N)=S_k(N)$ eventually, since eventually $N\geq B$ while all
+CRT congruences persist along the progression, and $S_k(N)\to0$.
+The weighted decomposition therefore gives $W_T(N)\to0$.
+It is eventually an integer by rationality, so it is eventually zero.
+
+Consequently $S_k(N)=-W_R(N)$ eventually. Multiplying by $N$ and
+using $NW_R(N)\to0$ gives $NS_k(N)\to0$.
+Finally $NS_k(N)-V_k(N)\to0$ by the rescaling lemma.
+Subtracting this last null sequence yields $V_k(N)\to0$.
+This is the combined limit argument in the current Lean proof; no
+separate unscaled weighted-error or weighted-tail limit lemmas remain.
+\end{proof}
+
+\section{Irrationality in all degrees}
+
+Define \defined{GridTerm} as
+$\mathcal I_k=\mathcal V_k\times\{0,\ldots,k\}$.
+Its distinguished element is $(\boldsymbol0,k)$.
+
+\begin{result}{survivor_not_tendsto_zero}{The survivor cannot tend to zero}
+For $k>0$, every $Q>0$, and every $A\in\N$,
+$V_k(Qn+A)\not\longrightarrow0$.
+\end{result}
+\begin{proof}
+Apply the isolated-shift obstruction to the finite type $\mathcal I_k$,
+shifts $s_{e,j}$, and coefficients $c_{e,j}$.
+Every shift is positive. The distinguished shift is $(k+1)B$,
+occurs exactly once by the unique-shift lemma, and has nonzero
+coefficient $c_{\boldsymbol0,k}$: here $\stirling{k}{k}=1$,
+$p_{\boldsymbol0}=B>0$, and each coordinate weight at zero is
+$(-1)^{k+1}$, so their finite product (empty at $k=0$) is nonzero.
+Regrouping the product-type sum is exactly the definition of $V_k$.
+\end{proof}
+
+\begin{result}{irrational_alpha_pos}{Every positive degree is irrational}
+For $k>0$, $\alpha_k$ is irrational.
+\end{result}
+\begin{proof}
+Suppose it were rational. The squares $p_e^2$ are positive and pairwise
+coprime, so the finite Chinese remainder theorem gives $A$ with
+$A\equiv t_e\pmod{p_e^2}$ for every vertex $e$.
+The forced-zero lemma would give $V_k(A+Q_kt)\to0$.
+Since $Q_k>0$, this contradicts the preceding obstruction,
+after commuting $A+Q_kt=Q_kt+A$.
+\end{proof}
+
+\begin{result}{scaledTail_pos_of_pos}{Positive actual tails}
+For every $k$ and $n>0$, $T_k(n)>0$.
+\end{result}
+\begin{proof}
+The block expansion is summable and all its terms are nonnegative.
+Its first term is $B_k(n,0)=\sigma_k(n)/n>0$, since $n>0$ and
+$\sigma_k(n)>0$ (the divisor $1$ already contributes one).
+The whole sum is at least this positive term.
+\end{proof}
+
+\begin{result}{tendsto_scaledTail_zero}{Decay of the degree-zero actual tail}
+$T_0(n)\longrightarrow0$.
+\end{result}
+\begin{proof}
+At $k=0$ the finite main term is
+$M_0(n)=\sigma_0(n+1)/(n+1)=\rho_0(n+1)/(n+1)$, which tends to zero
+by sublinearity of the phase. Also $R_0(n)\to0$.
+Thus $T_0(n+1)=M_0(n)+R_0(n)\to0$, and shifting the index back by one
+does not affect the limit.
+\end{proof}
+
+\begin{result}{irrational_alpha_zero}{The divisor-count series is irrational}
+$\alpha_0$ is irrational.
+\end{result}
+\begin{proof}
+If rational, $T_0(n)$ would be eventually integral. Its zero limit
+would make it eventually zero. This contradicts positivity for every
+$n>0$.
+\end{proof}
+
+\begin{result}{erdos_252}{The main theorem}
+For every $k\in\N$,
+\[
+ \sum_{n=0}^{\infty}
+ \frac{\displaystyle\sum_{d\in\operatorname{divisors}(n)}d^k}{n!}
+ \quad\hbox{is irrational}.
+\]
+Here $\operatorname{divisors}(0)$ is empty; for $n>0$ it is the set
+of positive divisors. The corresponding unchanged Lean statement is:
+\begin{quote}\normalfont\small\ttfamily
+theorem erdos\_252 (k : $\N$) :\\
+\hspace*{1em}Irrational ($\sum'$ n : $\N$,\\
+\hspace*{2em}(ArithmeticFunction.sigma k n : $\R$) / (n.factorial : $\R$))
+\end{quote}
+\end{result}
+\begin{proof}
+The displayed real number is the definition of $\alpha_k$.
+For $k=0$ use the degree-zero theorem; for $k>0$ use the
+positive-degree theorem.
+\end{proof}
+
+\section{Statement audit and verification}
+
+This section uses the namespace \decl{StatementAudit}.
+Its definition \defined{publishedSum} is
+\[
+ \operatorname{publishedSum}(k)=\tsum_{n\in\N}\frac{\sigma_k(n)}{n!}.
+\]
+The following six results are exactly those checked in
+\decl{audit/Statement.lean}.
+
+\begin{result}{matches_published_statement}{The positive-exponent published statement}
+For every $k\geq1$, $\operatorname{publishedSum}(k)$ is irrational.
+\end{result}
+\begin{proof}
+Apply \decl{Erdos252.erdos_252}; its conclusion holds for every natural
+$k$, so in particular for $k\geq1$.
+\end{proof}
+
+\begin{result}{divisor_sum_definition}{The divisor-sum definition}
+For every $k,n$,
+$\operatorname{ArithmeticFunction.sigma}(k,n)
+ =\sum_{d\in\operatorname{divisors}(n)}d^k$.
+\end{result}
+\begin{proof}
+This is the defining equality of Mathlib's divisor-sum arithmetic function.
+\end{proof}
+
+\begin{result}{zero_term}{The zeroth summand}
+For every $k$, $\sigma_k(0)/0!=0$.
+\end{result}
+\begin{proof}
+$\sigma_k(0)=0$ and $0!=1$.
+\end{proof}
+
+\begin{result}{actual_series_summable}{Summability of the audited series}
+For every $k$, $n\mapsto\sigma_k(n)/n!$ is summable.
+\end{result}
+\begin{proof}
+Apply \decl{Erdos252.summable_sigma_factorial}.
+\end{proof}
+
+\begin{result}{expanded_divisor_statement}{The explicit divisor-set series}
+For every $k$, $\tsum_{n\in\N}
+(\sum_{d\in\operatorname{divisors}(n)}d^k)/n!$ is irrational.
+\end{result}
+\begin{proof}
+Expand the divisor-sum definition in \decl{Erdos252.erdos_252}.
+\end{proof}
+
+\begin{result}{positive_index_statement}{The equivalent positive-index series}
+For every $k$,
+$\tsum_{n\in\N}\sigma_k(n+1)/(n+1)!$ is irrational.
+\end{result}
+\begin{proof}
+Summability allows splitting the original series into its zeroth term
+and the shifted series. The zeroth term is zero, so the two series
+have the same sum. Apply the main theorem.
+\end{proof}
+
+\subsection*{Verification boundary and source}
+The unchanged main statement is proved in Lean 4.33.1 with mathlib revision
+\begin{center}\small\decl{0df444a360eaa60ab8c11dca51a86af692955474}\end{center}
+Its axiom dependencies are exactly
+\decl{propext}, \decl{Classical.choice}, and \decl{Quot.sound}.
+The publication is checked by a full build, a fresh trust-zero build,
+the statement and axiom audits, and a fresh replay with Lean's kernel.
+The replay uses Lean's own kernel, not a separate kernel implementation.
+The prose proofs in this PDF have been checked against the named Lean
+results, but are not themselves kernel input.
+
+The complete Lean source is the single module
+\href{https://github.com/tokengr1nder/Erdos252/blob/main/Erdos252/Solution.lean}
+{\decl{Erdos252/Solution.lean}}.
+The \href{https://github.com/tokengr1nder/Erdos252}{repository README}
+contains reproduction commands, and the
+\href{https://github.com/tokengr1nder/Erdos252/blob/main/audit/Statement.lean}
+{statement audit} records the six checks above.
+See also the \href{https://www.erdosproblems.com/252}{original problem statement}.
+
+This edition covers all 89 named results and 38 definitions or abbreviations
+in the proof module, plus the six audit results and their one definition.
+The proof-module SHA-256 (UTF-8, LF line endings) is
+\begin{center}\footnotesize
+\texttt{784303a58ba3361669a236f5f7c5d38c68c352df8ccd3df9e46cc66149d42569}
+\end{center}
+
+\end{document}

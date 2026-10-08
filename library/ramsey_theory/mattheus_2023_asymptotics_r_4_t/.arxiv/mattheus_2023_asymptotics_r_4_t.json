@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Sam Mattheus",
+    "Jacques Verstraete"
+  ],
+  "category": "math.CO",
+  "date": "2024-02-20",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 506591,
+    "files": 3,
+    "sha256": "59f839bffa106505e57fe41c528dbb59a97578cdee8c10357241e0417cbbcb79",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2306.04007v5"
+  },
+  "id": "2306.04007",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 476155,
+    "previous": [],
+    "sha256": "a7fbe45d82fae54023d04f9d65429b533b987ae6f6345b5978540fba067688cf",
+    "url": "https://arxiv.org/pdf/2306.04007v5"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2306.04007v5 [math.CO] 20 Feb 2024",
+  "tex": {
+    "archive": {
+      "bytes": 88797,
+      "name": "arXiv-2306.04007v5.tar.gz",
+      "sha256": "e9baa1957b54b6752eef7c46fec32d632c882c43351a70fc0f0dd09b4bc5d20d"
+    },
+    "bytes": 136664,
+    "files": 3,
+    "sha256": "a054a76bd980569423d8ed0fbbc7a601a9ba491a87cb29068e0de37ae9a18b38",
+    "url": "https://arxiv.org/src/2306.04007v5"
+  },
+  "title": "The asymptotics of $r(4,t)$",
+  "version": 5
+}

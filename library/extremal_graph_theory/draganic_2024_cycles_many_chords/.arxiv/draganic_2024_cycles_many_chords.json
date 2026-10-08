@@ -1,0 +1,41 @@
+{
+  "authors": [
+    "Nemanja Dragani\\'c",
+    "Abhishek Methuku",
+    "David Munh\\'a Correia",
+    "Benny Sudakov"
+  ],
+  "category": "math.CO",
+  "date": "2023-07-10",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 396017,
+    "files": 1,
+    "sha256": "bc154c7a93af2963ff6690b82dbddd78d92a68b5aa8b16ab4f0f155183381a32",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2306.09157v2"
+  },
+  "id": "2306.09157",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 403504,
+    "previous": [],
+    "sha256": "f41817a153c57c89235c1965274ef61370a854fbdf8292124016bdf5c14a7fe2",
+    "url": "https://arxiv.org/pdf/2306.09157v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2306.09157v2 [math.CO] 10 Jul 2023",
+  "tex": {
+    "archive": {
+      "bytes": 15937,
+      "name": "arXiv-2306.09157v2.gz",
+      "sha256": "063629adc86fb55cbc1ecd9a5d7b7a188a872c68ea78238e8112b2493d8260f5"
+    },
+    "bytes": 50878,
+    "files": 1,
+    "sha256": "ac6fc1b4b16a8cd70cf189a355eb46ba36198dbcb4c36c074b86b1ab13bd6b40",
+    "url": "https://arxiv.org/src/2306.09157v2"
+  },
+  "title": "Cycles with many chords",
+  "version": 2
+}

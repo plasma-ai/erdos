@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Felix Christian Clemen",
+    "Adam Zsolt Wagner"
+  ],
+  "category": "math.CO",
+  "date": "2023-03-26",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 69975,
+    "files": 1,
+    "sha256": "0d1fe5aaa76a0f81e830ab72f6af04b318229ed28eda213afecb9d4c2b603fc6",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2303.15476v1"
+  },
+  "id": "2303.15476",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 76070,
+    "previous": [],
+    "sha256": "14676409eed21f18c9cb57dff0efbc6a39ee31270ff508b0222ae639dea77765",
+    "url": "https://arxiv.org/pdf/2303.15476v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2303.15476v1 [math.CO] 26 Mar 2023",
+  "tex": {
+    "archive": {
+      "bytes": 4918,
+      "name": "arXiv-2303.15476v1.tar.gz",
+      "sha256": "8ff064d8e85d0fda803d5149bd8078c7966d1c1d3f8969b0eecb60f981b88608"
+    },
+    "bytes": 14676,
+    "files": 3,
+    "sha256": "df1ef5a4b2abdeabf815f28dedffe0a02420a23e1a0e3a36c174535f0b67a212",
+    "url": "https://arxiv.org/src/2303.15476v1"
+  },
+  "title": "A note on balanced edge-colorings avoiding rainbow cliques of size four",
+  "version": 1
+}

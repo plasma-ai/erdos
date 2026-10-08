@@ -1,0 +1,41 @@
+{
+  "authors": [
+    "Oliver Janzer",
+    "Abhishek Methuku",
+    "Aleksa Milojevi\\'c",
+    "Benny Sudakov"
+  ],
+  "category": "math.CO",
+  "date": "2025-07-09",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 497739,
+    "files": 1,
+    "sha256": "7c6e9a2c9ffbe6e78d76a279791726134a77150bf03fb3e02af2626d2548b9a1",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2311.12765v2"
+  },
+  "id": "2311.12765",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 325673,
+    "previous": [],
+    "sha256": "ac76b64b1484b4744abd5e352e53d8b11f62183a9cc9b6c5c3189a16405b4256",
+    "url": "https://arxiv.org/pdf/2311.12765v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2311.12765v2 [math.CO] 9 Jul 2025",
+  "tex": {
+    "archive": {
+      "bytes": 49552,
+      "name": "arXiv-2311.12765v2.tar.gz",
+      "sha256": "a7f9c49dd1186c89b0e7eaf4a28211db27bbfc1bb69686b27b1e403ffc37edcd"
+    },
+    "bytes": 119882,
+    "files": 6,
+    "sha256": "91fd6f70c04d36dc13ee971e9fe7f40bdbb6ce29771018ae2565a222360e4ba3",
+    "url": "https://arxiv.org/src/2311.12765v2"
+  },
+  "title": "Power saving for the Brown-Erd\\H{o}s-S\\'os problem",
+  "version": 2
+}

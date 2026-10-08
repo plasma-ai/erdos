@@ -1,0 +1,40 @@
+{
+  "authors": [
+    "Shimon Garti",
+    "Yair Hayut",
+    "Saharon Shelah"
+  ],
+  "category": "math.LO",
+  "date": "2026-06-25",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 894844,
+    "files": 1,
+    "sha256": "d1c4b143fab74aecf02f2957d24918de01e5738cd82770bab76938b1d02acf81",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2502.16625v2"
+  },
+  "id": "2502.16625",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 524021,
+    "previous": [],
+    "sha256": "e35c2c3a871551b80481acaa8c1fbc8226692d1b9ef340933f9053f1c9f00f9e",
+    "url": "https://arxiv.org/pdf/2502.16625v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2502.16625v2 [math.LO] 25 Jun 2026",
+  "tex": {
+    "archive": {
+      "bytes": 33609,
+      "name": "arXiv-2502.16625v2.tar.gz",
+      "sha256": "ccf2c8cfff57eab11aac53126c7236a1f6776cfa9a092254c888e32fdfaf47e1"
+    },
+    "bytes": 120043,
+    "files": 3,
+    "sha256": "d987ec50ecf2ce3410e0d618d72558907d3d6dbf19470e041fcbe38eb06fe208",
+    "url": "https://arxiv.org/src/2502.16625v2"
+  },
+  "title": "On a problem of Erdos and Hajnal",
+  "version": 2
+}

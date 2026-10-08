@@ -1,0 +1,78 @@
+# https://pre-commit.com
+
+# Nothing a hook may rewrite: the conversion sidecars and the converter's
+# records beside each library PDF, the canonical conversions (the converter's
+# bytes, one line per slot shape), the evidence records (inputs, certificates,
+# gold files, logs, patches, excerpts and runnable checks; the hand-written
+# report pages under verify/ keep the fixers), and the Lean project apart from
+# its README and the three gate scripts. The gate reads this exclude and the
+# hooks' own filters from this file.
+exclude: |
+  (?x)
+  (^|/)\.(tex|html|arxiv|convert)/
+  |^library/[^/]+/(?P<slug>[^/]+)/(?P=slug)[^/]*\.md$
+  |^library/distance_problems/guth_2015_erdos_distinct_distance_problem_plane/guth_katz_2015_published_ALTERNATE\.md$
+  |^library/extremal_graph_theory/alon_2026_problems_results_extremal_combinatorics_v/alon_2026_triangle_free_graphs_diameter_2_author_version_20240701\.md$
+  |^library/extremal_graph_theory/alon_2026_problems_results_extremal_combinatorics_v/alon_2026_triangle_free_graphs_diameter_2_author_version_20240702\.md$
+  |(^|/)evidence/(.+/)?assets/
+  |(^|/)evidence/(.+/)?verify/.*(?<!\.md)$
+  |^lean/(?!README\.md$|scripts/(audit_selftest|gate|selftest_digest)\.sh$)
+
+repos:
+  - repo: local
+    hooks:
+      - id: reject-forbidden-files
+        name: reject forbidden file patterns
+        entry: reject
+        language: fail
+        files: \.rej$
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: check-json
+      - id: check-toml
+      - id: check-yaml
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-merge-conflict
+      - id: debug-statements
+        exclude: ^(?!(tools|tests)/)
+      - id: detect-private-key
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.16.8
+    hooks:
+      - id: ruff-check
+        exclude: ^(?!(tools|tests)/)
+        args:
+          - --fix
+      - id: ruff-format
+        exclude: ^(?!(tools|tests)/)
+  - repo: https://github.com/scop/pre-commit-shfmt
+    rev: v3.13.1-1
+    hooks:
+      - id: shfmt
+        args:
+          - -w
+          - -i=4
+          - -ci
+          - -bn
+  - repo: https://github.com/shellcheck-py/shellcheck-py
+    rev: v0.11.0.1
+    hooks:
+      - id: shellcheck
+  - repo: https://github.com/hukkin/mdformat
+    rev: 1.0.0
+    hooks:
+      - id: mdformat
+        # the problem, library, research and theory pages carry LaTeX that
+        # mdformat escapes into nonsense; the generated claim views repeat the
+        # theory statements verbatim and must regenerate to an empty diff
+        exclude: ^(wiki/(problems/[^/]+/[^/]+/|research/|theory/|lemmas\.md|standing\.md)|library/)
+        additional_dependencies:
+          - mdformat-gfm
+          - mdformat-gfm-alerts
+          - mdformat-wiki
+        args:
+          - --wrap
+          - "80"
+          - --number

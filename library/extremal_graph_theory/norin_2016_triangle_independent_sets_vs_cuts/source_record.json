@@ -1,0 +1,106 @@
+{
+  "title": "Triangle-independent sets vs. cuts",
+  "authors": [
+    "Sergey Norin",
+    "Yue Ru Sun"
+  ],
+  "version": "arXiv:1602.04370v1",
+  "submitted_utc": "2016-02-13T19:54:20Z",
+  "physical_pages": 14,
+  "printed_pages": "1-14",
+  "url": "https://arxiv.org/abs/1602.04370",
+  "pdf_url": "https://arxiv.org/pdf/1602.04370v1",
+  "arxiv_doi": "10.48550/arXiv.1602.04370",
+  "accessed": "2026-09-05",
+  "pdf_filename": "norin_2016_triangle_independent_sets_vs_cuts.pdf",
+  "pdf_bytes": 393720,
+  "fresh_official_v1_byte_identical": true,
+  "current_version_boundary": "The checked primary arXiv history has only v1; the current institutional author list points to it. No distinct mathematical version or journal record was located in the bounded search.",
+  "pdf_metadata_boundary": "The PDF build metadata dates to 30 October 2021; it is not represented as a mathematical revision.",
+  "author_list_url": "https://www.math.mcgill.ca/snorin/papers.html",
+  "ordinary_proof_scope": {
+    "main": "Full trigraph expectation and equality chain, graph theorem, E621 specialization and its exact weak equality converse.",
+    "ancillary": [
+      "Local extremal characterization",
+      "Deterministic algorithm with supplied admissible S",
+      "Every-outcome Clebsch example",
+      "Complement, coefficient-range and fractional observations"
+    ],
+    "elementary_external_tools": [
+      "Finite probability and expectation",
+      "Nonnegative squares and Cauchy-Schwarz",
+      "Completeness of the real numbers",
+      "Finite-dimensional compactness and the extreme-value theorem for fractional minima"
+    ],
+    "locally_proved_classical_input": "Mantel triangle-free edge bound",
+    "not_claimed": [
+      "Resolution or current status of the source-dated triangle-free deletion conjecture or Question 8",
+      "Proof of NP-hardness",
+      "Full proofs of historical/contextual papers",
+      "A new solution or a formal/kernel verification"
+    ]
+  },
+  "compilation_corrections": [
+    {
+      "page": 7,
+      "location": "First square in Lemma 6 proof",
+      "correction": "Square the entire degree-difference sum rather than each inner summand.",
+      "result_page": "lemma_6.md"
+    },
+    {
+      "page": 9,
+      "location": "Equation (15)",
+      "correction": "Use 2P4+2(K13+D)+2R instead of 2P4+2(2K13+D)+2R.",
+      "result_page": "lemma_7.md"
+    },
+    {
+      "page": 9,
+      "location": "Prose preceding (17)",
+      "correction": "A cross edge contributes to the full internal-edge cost, not the residual internal-edge cost.",
+      "result_page": "algorithm_1.md"
+    },
+    {
+      "page": 10,
+      "location": "Final averaging display",
+      "correction": "The use of (23) gives <=, not equality; the exact deficit formula retains the omitted gap.",
+      "result_page": "theorem_5_bound.md"
+    }
+  ],
+  "correction_attribution": "All four corrections are supplied and proved by the compilation, not claimed to be author-issued errata.",
+  "later_primary_uptake": {
+    "title": "Covering the edges of a graph with triangles",
+    "authors": [
+      "Csilla Bujtas",
+      "Akbar Davoodi",
+      "Laihao Ding",
+      "Ervin Gyori",
+      "Zsolt Tuza",
+      "Donglei Yang"
+    ],
+    "journal": "Discrete Mathematics",
+    "volume": 348,
+    "issue": 1,
+    "year": 2025,
+    "article": "114226",
+    "doi": "10.1016/j.disc.2024.114226",
+    "pdf_url": "https://dirros.openscience.si/Dokument.php?id=28913&lang=eng",
+    "read_pages": [
+      1,
+      2,
+      8
+    ],
+    "evidence": "Theorem 2 states the stronger Norin-Sun inequality and the text mentions its equality classification; reference [12] cites v1.",
+    "limit": "Published uptake only; no full proof review of this later article or journal-publication claim for Norin-Sun."
+  },
+  "recent_distinct_abstract": {
+    "arxiv": "2608.15561",
+    "authors": [
+      "Zhen Liu",
+      "Qinghou Zeng"
+    ],
+    "title": "Sharp asymptotics for triangle independence and covering numbers",
+    "read_scope": "Primary metadata and abstract only",
+    "relation": "Lower/minimization asymptotic for alpha1+tau1 in edge count, not a replacement of the E621 vertex-count upper bound."
+  },
+  "formalization": "This ordinary source reconstruction does not certify a formal proof, CI replay or local kernel build."
+}

@@ -1,0 +1,252 @@
+---
+name: ramsey_theory/fettes_kramer_radziszowski_2004_upper_bound_62/theorem_3_2
+title: Theorem 3.2 - A bounded attaching set in a good four-colouring of K62
+desc: |
+  Reconstructs the analytic attaching-set reduction, including Lemma 3.1
+  and its elementary Ramsey bounds, with independently reviewed proof coverage.
+created: 2026-09-15T03:15:27Z
+updated: 2026-10-08T01:29:58Z
+---
+
+***
+
+## Conventions and statement
+
+Let $V$ be a set of $62$ vertices and let $Q$ be a set of four colors. A
+four-coloring is a function
+$\chi:\binom{V}{2}\longrightarrow Q$, where $\binom{V}{2}$ is the set of
+two-element subsets of $V$. Thus the underlying graph is complete, simple
+and undirected. The function need not use every color in $Q$.
+
+Call $\chi$ *good* if it has no monochromatic triangle: for any three
+distinct vertices, their three edges do not all receive the same color.
+For $v\in V$ and $\eta\in Q$, put
+
+$$
+N_\eta(v)=
+\{w\in V\setminus\{v\}:\chi(\{v,w\})=\eta\},
+\qquad
+d_\eta(v)=|N_\eta(v)|.
+$$
+
+The singleton $\{v\}$ and the four sets $N_\eta(v)$ form a disjoint
+partition of $V$. For distinct $u,v$, the $\eta$-attaching set is
+$N_\eta(u)\cap N_\eta(v)$; it contains neither $u$ nor $v$.
+
+**Theorem 3.2.** For every $V,Q,\chi$ as above, if $\chi$ is good, then there
+exist distinct $u,v\in V$ and a color $\delta\in Q$ such that
+
+$$
+|N_\delta(u)|=|N_\delta(v)|=16,
+\qquad
+3\leq |N_\delta(u)\cap N_\delta(v)|\leq14.
+$$
+
+The color $\delta$ is chosen as part of the conclusion, not fixed in
+advance.
+
+## Elementary Ramsey bounds used below
+
+For $r\geq1$, let $R_r(3)$ denote the least positive integer $n$ such that
+every edge-coloring of $K_n$ into a palette of $r$ colors has a
+monochromatic triangle, whenever such an integer exists. Palettes again
+need not be used surjectively. We need only the following upper bounds,
+not exact Ramsey values or classifications of extremal colorings.
+
+**Two colors: $R_2(3)=R(3,3)\leq6$.** In a two-coloring of $K_6$, fix a
+vertex $x$. Among its five incident edges, at least three have a common
+color, say $\alpha$. Choose three corresponding neighbors. If an edge
+between two of them has color $\alpha$, those two vertices and $x$ form
+a monochromatic triangle. Otherwise all three edges among the chosen
+neighbors have the other color and themselves form a monochromatic
+triangle. Consequently a good complete graph using at most two colors
+has at most five vertices: any larger one would contain a $K_6$.
+
+**Three colors: $R_3(3)=R(3,3,3)\leq17$.** In a three-coloring of $K_{17}$,
+fix a vertex $x$. Among its sixteen incident edges, at least six have a
+common color $\alpha$, since $3\cdot5<16$. Choose six corresponding
+neighbors. An $\alpha$-colored edge between them gives a monochromatic
+triangle with $x$. If there is no such edge, their induced complete graph
+uses at most the other two colors, and the two-color bound gives a
+monochromatic triangle. Consequently a good complete graph using at most
+three colors has at most sixteen vertices.
+
+## Lemma 3.1: the possible color degrees
+
+Suppose that $\chi$ is a good four-coloring of $K_V$ with $|V|=62$. Then,
+at every $v\in V$, its four color degrees, in some order, are one of
+
+$$
+(16,16,16,13),\qquad
+(16,16,15,14),\qquad
+(16,15,15,15).
+$$
+
+**Proof.** For any color $\eta$, no edge within $N_\eta(v)$ has color
+$\eta$, since such an edge would complete an $\eta$-colored triangle
+with $v$. The induced complete graph on $N_\eta(v)$ therefore uses at
+most the other three colors and is good. The three-color bound gives
+$d_\eta(v)\leq16$.
+
+The neighborhood partition gives
+
+$$
+\sum_{\eta\in Q}d_\eta(v)=61.
+$$
+
+Thus the four deficits $e_\eta=16-d_\eta(v)$ are nonnegative integers
+whose sum is $64-61=3$. Up to permutation, the only such quadruples are
+
+$$
+(3,0,0,0),\qquad(2,1,0,0),\qquad(1,1,1,0).
+$$
+
+Indeed, a largest deficit of three leaves three zeros; a largest deficit
+of two leaves a single one; and if every deficit is at most one, exactly
+three of them are one. Subtracting these quadruples from $(16,16,16,16)$
+proves the lemma.
+
+In particular, every vertex has a color degree equal to sixteen, and
+every one of its color degrees is at least thirteen.
+
+## Proof of Theorem 3.2
+
+### Finding an overlap of at least three
+
+For each color $\eta\in Q$, define
+
+$$
+V_\eta=\{v\in V:d_\eta(v)=16\}.
+$$
+
+By Lemma 3.1, every vertex belongs to at least one of these four sets.
+Hence
+
+$$
+\sum_{\eta\in Q}|V_\eta|\geq62.
+$$
+
+At least one color $\delta$ satisfies $|V_\delta|\geq16$: if all four
+sizes were at most fifteen, their sum would be at most sixty. Choose six
+distinct vertices $z_0,\ldots,z_5\in V_\delta$ and set
+$A_i=N_\delta(z_i)$. Each $A_i$ has sixteen elements.
+
+Suppose for contradiction that $|A_i\cap A_j|\leq2$ for every $i\ne j$.
+For $i=0,\ldots,5$, remove the preceding sets from $A_i$. The elementary
+union bound gives
+
+$$
+\begin{aligned}
+\left|A_i\setminus\bigcup_{j<i}A_j\right|
+&=|A_i|-\left|A_i\cap\bigcup_{j<i}A_j\right|\\
+&\geq |A_i|-\sum_{j<i}|A_i\cap A_j|\\
+&\geq16-2i.
+\end{aligned}
+$$
+
+For $i=0$, the preceding union and sum are empty. These six successive
+new parts are disjoint and together form $\bigcup_{i=0}^5 A_i$. Therefore
+
+$$
+\left|\bigcup_{i=0}^5 A_i\right|
+\geq16+14+12+10+8+6=66.
+$$
+
+This is impossible because the union is a subset of the $62$-element
+set $V$. Thus some $i<j$ satisfies $|A_i\cap A_j|\geq3$.
+
+Put $u=z_i$, $v=z_j$ and $A=N_\delta(u)\cap N_\delta(v)$. The vertices
+$u,v$ are distinct, both $\delta$-neighborhoods have size sixteen, and
+$k=|A|\geq3$. We now bound this same attaching set from above.
+
+### Bounding that same overlap by fourteen
+
+Since $A$ is nonempty, the color of the edge $\{u,v\}$ is not $\delta$:
+any $w\in A$ would otherwise make $\{u,v,w\}$ a monochromatic triangle.
+Write $\gamma=\chi(\{u,v\})$, and name the remaining two colors
+$\alpha,\beta$, so that $Q=\{\alpha,\beta,\gamma,\delta\}$ with four
+distinct elements.
+
+The sets $N_\gamma(u)$ and $N_\gamma(v)$ are disjoint. Otherwise a vertex
+in their intersection would form a $\gamma$-colored triangle with
+$u,v$. Also $v\in N_\gamma(u)$, while $v$ belongs to none of the
+neighborhoods of itself. The neighborhood partition at $v$ consequently
+gives the following disjoint partition:
+
+$$
+\begin{aligned}
+N_\gamma(u)
+={}&\{v\}\\
+&\sqcup\bigl(N_\gamma(u)\cap N_\alpha(v)\bigr)\\
+&\sqcup\bigl(N_\gamma(u)\cap N_\beta(v)\bigr)\\
+&\sqcup\bigl(N_\gamma(u)\cap N_\delta(v)\bigr).
+\end{aligned}
+$$
+
+To see exhaustiveness explicitly, every member of $N_\gamma(u)$ other
+than $v$ has one edge color to $v$. That color cannot be $\gamma$ by
+the disjointness just proved, so it is one of $\alpha,\beta,\delta$.
+
+Let $B_\alpha=N_\gamma(u)\cap N_\alpha(v)$. An edge within $B_\alpha$
+cannot have color $\gamma$, because of the triangle it would form with
+$u$, and cannot have color $\alpha$, because of the triangle it would
+form with $v$. Thus the induced complete graph on $B_\alpha$ is a good
+coloring using only $\beta,\delta$. The two-color bound proves
+$|B_\alpha|\leq5$. Similarly, the induced complete graph on
+$B_\beta=N_\gamma(u)\cap N_\beta(v)$ uses only $\alpha,\delta$, and
+$|B_\beta|\leq5$.
+
+Put $D=N_\gamma(u)\cap N_\delta(v)$. Lemma 3.1 gives
+$|N_\gamma(u)|\geq13$, so the displayed disjoint partition yields
+
+$$
+\begin{aligned}
+|D|
+&=|N_\gamma(u)|-1-|B_\alpha|-|B_\beta|\\
+&\geq13-1-5-5=2.
+\end{aligned}
+$$
+
+Both $D$ and $A$ are subsets of $N_\delta(v)$. They are disjoint because
+$D\subseteq N_\gamma(u)$, $A\subseteq N_\delta(u)$ and distinct color
+neighborhoods of $u$ are disjoint. Since $|N_\delta(v)|=16$, it follows
+that
+
+$$
+16\geq|D|+|A|\geq2+k.
+$$
+
+Hence $k\leq14$. Together with the lower bound already obtained for this
+same pair $u,v$ and color $\delta$, this proves the theorem.
+
+## Source, reading and standing
+
+The source is
+[[ramsey_theory/fettes_kramer_radziszowski_2004_upper_bound_62/_index|Fettes–Kramer–Radziszowski (2004)]],
+*An Upper Bound of 62 on the Classical Ramsey Number R(3,3,3,3)*,
+Ars Combinatoria 72, 41–63. Lemma 3.1 and Theorem 3.2 are stated on
+printed p. 47 / PDF p. 7, and the proof of Theorem 3.2 ends on printed
+p. 48 / PDF p. 8 of the retained
+[publisher journal version](fettes_kramer_radziszowski_2004_upper_bound_62.pdf).
+The complete page images for printed pp. 44–48 / PDF pp. 4–8 were visually
+read for this reconstruction.
+
+This reconstruction has independently reviewed proof coverage for the full
+analytic argument, including the two elementary Ramsey upper bounds and
+the partition steps supplied explicitly. A fresh reviewer returned
+**refutation-failed**, and a distinct grader passed the report contract
+and independence. The [full substantive review](evidence/verify/theorem_3_2_review.md),
+[grade](evidence/verify/theorem_3_2_grade.md), and exact
+[reviewed subject](evidence/assets/theorem_3_2_reviewed.txt) retain the
+scope and reasoning. No formal verification, numerical claim tier or
+catalog-status change is asserted.
+
+The argument uses no classification of good three-colorings, labeled
+seed coloring, computational table or program output. It supplies only
+the attaching-set reduction used by
+[[ramsey_theory/fettes_kramer_radziszowski_2004_upper_bound_62/theorem_5_6|Theorem 5.6]];
+it does not prove that good four-colorings of $K_{62}$ do not exist.
+The subsequent structural and computational exclusions remain separate
+proof obligations.
+
+**Bears on.** [[../wiki/problems/ramsey_theory/E0183/_index|#183]].

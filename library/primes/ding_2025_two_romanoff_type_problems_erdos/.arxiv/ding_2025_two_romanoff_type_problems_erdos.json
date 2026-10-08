@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Yuchen Ding"
+  ],
+  "category": "math.NT",
+  "date": "2026-08-17",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 479276,
+    "files": 1,
+    "sha256": "f1facc6baa20440761c91c4677d7cb423c33dc559d0126f7fe7b2fc2e5cb34b8",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2503.22700v4"
+  },
+  "id": "2503.22700",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 445799,
+    "previous": [],
+    "sha256": "396a141ed069659cc6815ea0b50a3f350d180a6c011ba978b08289e6325dda9b",
+    "url": "https://arxiv.org/pdf/2503.22700v4"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2503.22700v4 [math.NT] 17 Aug 2026",
+  "tex": {
+    "archive": {
+      "bytes": 16173,
+      "name": "arXiv-2503.22700v4.tar.gz",
+      "sha256": "b3c7c9eca2a7f53427c2d848af1cfee4d2c78318a69695c6926b243865441435"
+    },
+    "bytes": 53527,
+    "files": 2,
+    "sha256": "5326ad65c050252f8d9e84588d4d23449a2252f145ac1cc2b17dad485068359a",
+    "url": "https://arxiv.org/src/2503.22700v4"
+  },
+  "title": "On two Romanoff type problems of Erd\\H{o}s",
+  "version": 4
+}

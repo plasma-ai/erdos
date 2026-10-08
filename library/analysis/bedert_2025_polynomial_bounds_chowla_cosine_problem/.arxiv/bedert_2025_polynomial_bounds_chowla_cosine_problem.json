@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Benjamin Bedert"
+  ],
+  "category": "math.CA",
+  "date": "2026-07-24",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 842558,
+    "files": 1,
+    "sha256": "ba9bec94dfd81d0b06016f331a0ddd3e5f8b00f20184e47bc0324961a52fa032",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2509.05260v3"
+  },
+  "id": "2509.05260",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 453058,
+    "previous": [],
+    "sha256": "117c64ad29a86d4fa866a731e0eb320a24811d29d73b6996595ec4b5279b9877",
+    "url": "https://arxiv.org/pdf/2509.05260v3"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2509.05260v3 [math.CA] 24 Jul 2026",
+  "tex": {
+    "archive": {
+      "bytes": 25204,
+      "name": "arXiv-2509.05260v3.tar.gz",
+      "sha256": "d0d625653a91940d3c37bab57d7342194f99a2ae49919359cacc7e027242f5bb"
+    },
+    "bytes": 87217,
+    "files": 3,
+    "sha256": "dec64d7585a2b91f6164ce9183b30cb68339470cc99ce5472400d7e93ec2fd09",
+    "url": "https://arxiv.org/src/2509.05260v3"
+  },
+  "title": "Polynomial bounds for the Chowla Cosine Problem",
+  "version": 3
+}

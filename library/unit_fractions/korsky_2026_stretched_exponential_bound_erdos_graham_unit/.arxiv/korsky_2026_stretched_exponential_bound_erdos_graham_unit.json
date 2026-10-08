@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Samuel Korsky"
+  ],
+  "category": "math.NT",
+  "date": "2026-07-05",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 721172,
+    "files": 1,
+    "sha256": "e86a21effa7131b2696ed6a1aa4c1577567a6d2e464378fd1dccc7154381cf80",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2607.04157v1"
+  },
+  "id": "2607.04157",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 463303,
+    "previous": [],
+    "sha256": "64254d35a6bba5ee64b2b4dc40bb631199ab1f62f610966e558197a76cf14a7f",
+    "url": "https://arxiv.org/pdf/2607.04157v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2607.04157v1 [math.NT] 5 Jul 2026",
+  "tex": {
+    "archive": {
+      "bytes": 22031,
+      "name": "arXiv-2607.04157v1.tar.gz",
+      "sha256": "4babbc950ceb058631e9740988a2375c069d19889d26d1b27365737565c94a7a"
+    },
+    "bytes": 78252,
+    "files": 2,
+    "sha256": "21856f4457b8cf100e4cde25ada117cccf14109fb37de9d270d6d42f5b65dafa",
+    "url": "https://arxiv.org/src/2607.04157v1"
+  },
+  "title": "A Stretched-Exponential Bound for an Erdos--Graham Unit-Fraction Problem",
+  "version": 1
+}

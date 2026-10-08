@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Benjamin Bedert"
+  ],
+  "category": "math.NT",
+  "date": "2025-02-12",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 1163222,
+    "files": 1,
+    "sha256": "eba58fe3e50358caf96ca43fb20b8895077e81d4d405bd20ea76e658f8617017",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2502.08624v1"
+  },
+  "id": "2502.08624",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 405736,
+    "previous": [],
+    "sha256": "52e39804eaa60e75ca0c06df5beff24e360ac8cf75afcc2d9fa212b6580c03fa",
+    "url": "https://arxiv.org/pdf/2502.08624v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2502.08624v1 [math.NT] 12 Feb 2025",
+  "tex": {
+    "archive": {
+      "bytes": 35483,
+      "name": "arXiv-2502.08624v1.tar.gz",
+      "sha256": "b374a4aa04ce0f0e0f586d19b1775ec43329daf4a89b6350315e7433c9c20f8e"
+    },
+    "bytes": 128722,
+    "files": 3,
+    "sha256": "e8bb4b41502eae5e4b129fdd4093d9b07e4e6e488fb85578d6f5382ef31465cc",
+    "url": "https://arxiv.org/src/2502.08624v1"
+  },
+  "title": "Large sum-free subsets of sets of integers via $L^1$-estimates for trigonometric series",
+  "version": 1
+}

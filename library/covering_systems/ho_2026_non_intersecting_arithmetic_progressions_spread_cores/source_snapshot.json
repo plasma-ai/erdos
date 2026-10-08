@@ -1,0 +1,416 @@
+{
+  "schema_version": 1,
+  "source": {
+    "title": "Non-intersecting arithmetic progressions via spread cores",
+    "printed_author": "Boon Suan Ho",
+    "year_from_public_history": 2026,
+    "printed_date": null,
+    "physical_pages": 9,
+    "canonical_pdf": "ho_2026_non_intersecting_arithmetic_progressions_spread_cores.pdf",
+    "bytes": 136621,
+    "author_url": "https://boonsuan.github.io/erdos202.pdf",
+    "selected_commit": "692a21b27fee1e81d80851d96ee4767fc36b42ea",
+    "selected_commit_time_utc": "2026-05-03T09:06:22Z",
+    "first_public_pdf_commit": "992a7e693b1014561acaf720de752dd9a614e92c",
+    "first_public_date": "2026-04-23",
+    "ai_disclosure_page": 9,
+    "ai_disclosure": "Substantial GPT-5.4 Pro contribution, with author responsibility for final text.",
+    "journal_acceptance_found_in_targeted_audit": false,
+    "earlier_april_version_equivalence_claimed": false
+  },
+  "pdf_version_alignment": [
+    {
+      "file": "ho_pinned_commit.pdf",
+      "url": "https://raw.githubusercontent.com/boonsuan/boonsuan.github.io/692a21b27fee1e81d80851d96ee4767fc36b42ea/erdos202.pdf",
+      "response_url": "https://raw.githubusercontent.com/boonsuan/boonsuan.github.io/692a21b27fee1e81d80851d96ee4767fc36b42ea/erdos202.pdf",
+      "http_status": 200,
+      "content_type": "application/octet-stream",
+      "bytes": 136621,
+      "accessed_utc": "2026-09-05T09:18:17.439777+00:00",
+      "byte_identical_to_current_ho": true
+    },
+    {
+      "file": "shashi_mathematical_source.pdf",
+      "url": "https://raw.githubusercontent.com/Shashi456/erdos-formalizations/286f856aa3fc08957b80950fd18a45aab8d045ea/Erdos/P202/docs/erdos202.pdf",
+      "response_url": "https://raw.githubusercontent.com/Shashi456/erdos-formalizations/286f856aa3fc08957b80950fd18a45aab8d045ea/Erdos/P202/docs/erdos202.pdf",
+      "http_status": 200,
+      "content_type": "application/octet-stream",
+      "bytes": 136621,
+      "accessed_utc": "2026-09-05T09:18:17.653503+00:00",
+      "byte_identical_to_current_ho": true
+    }
+  ],
+  "ordinary_proof_scope": {
+    "all_ho_pages_visually_read": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "native_text_read": "complete",
+    "complete_proof_pages": 10,
+    "imported_statement_only_pages": [
+      "proposition_3_1.md"
+    ],
+    "external_inputs": [
+      {
+        "title": "Régis de la Bretèche, Kevin Ford, Joseph Vandehey, On non-intersecting arithmetic progressions",
+        "url": "https://doi.org/10.4064/aa157-4-5",
+        "bytes": 285660,
+        "scope": "Exact Theorem 1 lower bound, Lemmas 3.1–3.3 and Section 4.1 pruning inputs; full original source compilation is separate."
+      },
+      {
+        "title": "Jinyoung Park and Huy Tuan Pham, A proof of the Kahn–Kalai conjecture",
+        "url": "https://par.nsf.gov/servlets/purl/10503739",
+        "bytes": 181761,
+        "scope": "Exact published Theorem 1.1 and definitions on pp.235–236. Full deep proof is external to Ho unit.",
+        "logarithm_conversion": "Park–Pham use base-2 logarithms. In the natural-logarithm form used by Ho, C_KK equals their universal constant divided by log(2)."
+      }
+    ],
+    "compilation_addition": "supremum_convention.md proves finite nonattainment for all integer m>=1 and epsilon_1=1; Ho already uses supremum. Equation (7) receives an elementary complete proof."
+  },
+  "formal_artifacts": [
+    {
+      "file": "p202_Proof.lean",
+      "url": "https://raw.githubusercontent.com/Shashi456/erdos-formalizations/286f856aa3fc08957b80950fd18a45aab8d045ea/Erdos/P202/Proof.lean",
+      "response_url": "https://raw.githubusercontent.com/Shashi456/erdos-formalizations/286f856aa3fc08957b80950fd18a45aab8d045ea/Erdos/P202/Proof.lean",
+      "http_status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 922367,
+      "accessed_utc": "2026-09-05T09:10:38.327732+00:00",
+      "role": "original_linked_proof_implementation",
+      "static_scan": {
+        "file": "p202_Proof.lean",
+        "lines": 21763,
+        "imports": [
+          "import Mathlib"
+        ],
+        "token_matches": {
+          "sorry": 0,
+          "admit": 0,
+          "axiom": 0,
+          "unsafe": 0,
+          "native_decide": 0,
+          "ofReduceBool": 0,
+          "run_tac": 0
+        },
+        "qualification": "Lexical static scan only; not elaboration, kernel verification, or complete proof-code review."
+      }
+    },
+    {
+      "file": "p1190_Proof_flat.lean",
+      "url": "https://raw.githubusercontent.com/Shashi456/erdos-formalizations/286f856aa3fc08957b80950fd18a45aab8d045ea/Erdos/P1190/Proof_flat.lean",
+      "response_url": "https://raw.githubusercontent.com/Shashi456/erdos-formalizations/286f856aa3fc08957b80950fd18a45aab8d045ea/Erdos/P1190/Proof_flat.lean",
+      "http_status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 982395,
+      "accessed_utc": "2026-09-05T09:10:38.821986+00:00",
+      "role": "original_linked_proof_implementation",
+      "static_scan": {
+        "file": "p1190_Proof_flat.lean",
+        "lines": 23226,
+        "imports": [
+          "import Mathlib"
+        ],
+        "token_matches": {
+          "sorry": 0,
+          "admit": 0,
+          "axiom": 0,
+          "unsafe": 0,
+          "native_decide": 0,
+          "ofReduceBool": 0,
+          "run_tac": 0
+        },
+        "qualification": "Lexical static scan only; not elaboration, kernel verification, or complete proof-code review."
+      }
+    },
+    {
+      "file": "plby_202.lean",
+      "url": "https://raw.githubusercontent.com/plby/lean-proofs/f8ceba4d931e46dec378e5d2a80d6a6888328fa5/src/v4.29.1/ErdosProblems/Erdos202.lean",
+      "response_url": "https://raw.githubusercontent.com/plby/lean-proofs/f8ceba4d931e46dec378e5d2a80d6a6888328fa5/src/v4.29.1/ErdosProblems/Erdos202.lean",
+      "http_status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 924517,
+      "accessed_utc": "2026-09-05T09:11:21.192640+00:00",
+      "role": "adapted_proof_implementation",
+      "static_scan": {
+        "file": "plby_202.lean",
+        "lines": 21809,
+        "imports": [
+          "import Mathlib"
+        ],
+        "token_matches": {
+          "sorry": 0,
+          "admit": 0,
+          "axiom": 0,
+          "unsafe": 0,
+          "native_decide": 0,
+          "ofReduceBool": 0,
+          "run_tac": 0
+        },
+        "qualification": "Lexical static scan only; not elaboration, kernel verification, or complete proof-code review."
+      }
+    },
+    {
+      "file": "plby_1190.lean",
+      "url": "https://raw.githubusercontent.com/plby/lean-proofs/f8ceba4d931e46dec378e5d2a80d6a6888328fa5/src/v4.29.1/ErdosProblems/Erdos1190.lean",
+      "response_url": "https://raw.githubusercontent.com/plby/lean-proofs/f8ceba4d931e46dec378e5d2a80d6a6888328fa5/src/v4.29.1/ErdosProblems/Erdos1190.lean",
+      "http_status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 60427,
+      "accessed_utc": "2026-09-05T09:11:21.363825+00:00",
+      "role": "adapted_proof_implementation",
+      "static_scan": {
+        "file": "plby_1190.lean",
+        "lines": 1469,
+        "imports": [
+          "import Mathlib",
+          "import Mathlib.NumberTheory.AbelSummation",
+          "import ErdosProblems.Erdos202"
+        ],
+        "token_matches": {
+          "sorry": 0,
+          "admit": 0,
+          "axiom": 0,
+          "unsafe": 0,
+          "native_decide": 0,
+          "ofReduceBool": 0,
+          "run_tac": 0
+        },
+        "qualification": "Lexical static scan only; not elaboration, kernel verification, or complete proof-code review."
+      }
+    },
+    {
+      "file": "fc_202.lean",
+      "url": "https://raw.githubusercontent.com/google-deepmind/formal-conjectures/8323e878b83fcd7f4a448256069352a265460d75/FormalConjectures/ErdosProblems/202.lean",
+      "response_url": "https://raw.githubusercontent.com/google-deepmind/formal-conjectures/8323e878b83fcd7f4a448256069352a265460d75/FormalConjectures/ErdosProblems/202.lean",
+      "http_status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 2920,
+      "accessed_utc": "2026-09-05T09:10:40.801025+00:00",
+      "role": "statement_scaffold_with_placeholders",
+      "static_scan": {
+        "file": "fc_202.lean",
+        "lines": 72,
+        "imports": [
+          "import FormalConjecturesUtil"
+        ],
+        "token_matches": {
+          "sorry": 2,
+          "admit": 0,
+          "axiom": 0,
+          "unsafe": 0,
+          "native_decide": 0,
+          "ofReduceBool": 0,
+          "run_tac": 0
+        },
+        "qualification": "Lexical static scan only; not elaboration, kernel verification, or complete proof-code review."
+      }
+    },
+    {
+      "file": "fc_1190.lean",
+      "url": "https://raw.githubusercontent.com/google-deepmind/formal-conjectures/8323e878b83fcd7f4a448256069352a265460d75/FormalConjectures/ErdosProblems/1190.lean",
+      "response_url": "https://raw.githubusercontent.com/google-deepmind/formal-conjectures/8323e878b83fcd7f4a448256069352a265460d75/FormalConjectures/ErdosProblems/1190.lean",
+      "http_status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 3787,
+      "accessed_utc": "2026-09-05T09:10:41.063578+00:00",
+      "role": "statement_scaffold_with_placeholders",
+      "static_scan": {
+        "file": "fc_1190.lean",
+        "lines": 102,
+        "imports": [
+          "import FormalConjecturesUtil"
+        ],
+        "token_matches": {
+          "sorry": 5,
+          "admit": 0,
+          "axiom": 0,
+          "unsafe": 0,
+          "native_decide": 0,
+          "ofReduceBool": 0,
+          "run_tac": 0
+        },
+        "qualification": "Lexical static scan only; not elaboration, kernel verification, or complete proof-code review."
+      }
+    }
+  ],
+  "inspected_statement_excerpts": [
+    {
+      "artifact": "p202_Proof.lean",
+      "first_line": 81,
+      "last_line": 95,
+      "text": "def Admissible (N : ℕ) (Q : Finset ℕ) : Prop :=\n  (∀ q ∈ Q, 1 ≤ q ∧ q ≤ N) ∧\n  ∃ a : ResidueAssignment Q, PairwiseDisjointResidues Q a\n\n/-- There is an admissible family of size `r`. -/\ndef PossibleCard (N r : ℕ) : Prop :=\n  ∃ Q : Finset ℕ, Admissible N Q ∧ Q.card = r\n\n/-- The Erdős 202 extremal function `f(N) = max r : PossibleCard N r`.\n\nImplemented via `Nat.findGreatest` over `[0, N]`, since the empty family is\nalways admissible (`0` is reachable) and `r ≤ |Q| ≤ N`. -/\nnoncomputable def f (N : ℕ) : ℕ := by\n  classical\n  exact Nat.findGreatest (PossibleCard N) N"
+    },
+    {
+      "artifact": "p202_Proof.lean",
+      "first_line": 389,
+      "last_line": 397,
+      "text": "def HasErdos202Asymptotic (F : ℕ → ℕ) : Prop :=\n  ∀ ε : ℝ, 0 < ε → ∀ᶠ N : ℕ in atTop,\n    (N : ℝ) * Lscale (-(1 + ε)) N ≤ (F N : ℝ) ∧\n    (F N : ℝ) ≤ (N : ℝ) * Lscale (-(1 - ε)) N\n\n/-- **Erdős Problem 202.** The sharp BFV-conjectured asymptotic for the\nextremal function `f`. Statement layer only. -/\ndef Erdos202Statement : Prop :=\n  HasErdos202Asymptotic f"
+    },
+    {
+      "artifact": "p202_Proof.lean",
+      "first_line": 9444,
+      "last_line": 9454,
+      "text": "theorem park_pham_threshold_exists :\n    ∃ CKK : ℝ, 0 < CKK ∧\n      ∀ {α : Type*} [DecidableEq α]\n        (X : Finset α) (U : Finset (Finset α)) (q p : ℝ),\n        0 < q → q ≤ 1 →\n        0 ≤ p → p ≤ 1 →\n        CKK * q * Real.log (ell X U) ≤ p →\n        (∀ S ∈ U, S ⊆ X) →\n        IncreasingIn X U →\n        qSmallUpper X U q →\n        muP X U p ≥ 1 / 2 := by"
+    },
+    {
+      "artifact": "p202_Proof.lean",
+      "first_line": 21739,
+      "last_line": 21742,
+      "text": "theorem erdos202_main : Erdos202Statement := by\n  intro ε hε\n  filter_upwards [bfv_lower_bound_theorem ε hε, f_upper_bound ε hε] with N hLow hUp\n  exact ⟨hLow, hUp⟩"
+    },
+    {
+      "artifact": "p1190_Proof_flat.lean",
+      "first_line": 21791,
+      "last_line": 21810,
+      "text": "def TailAdmissible (m : ℕ) (Q : Finset ℕ) : Prop :=\n  (∀ q ∈ Q, m < q) ∧\n  ∃ a : ResidueAssignment Q, PairwiseDisjointResidues Q a\n\n/-- Alias for `TailAdmissible`, matching the roadmap name. -/\nabbrev AdmissibleAbove : ℕ → Finset ℕ → Prop :=\n  TailAdmissible\n\n/-- The set of reciprocal sums appearing in Problem 1190. -/\nnoncomputable def reciprocalSums1190 (m : ℕ) : Set ℝ :=\n  {s : ℝ | ∃ Q : Finset ℕ, TailAdmissible m Q ∧ reciprocalSum Q = s}\n\n/-- Alias for `reciprocalSums1190`, matching the roadmap name. -/\nnoncomputable abbrev eps1190Set : ℕ → Set ℝ :=\n  reciprocalSums1190\n\n/-- Erdős's `ε_m`: the supremum of reciprocal sums over all finite\n1190-admissible tail families. -/\nnoncomputable def epsilon1190 (m : ℕ) : ℝ :=\n  sSup (reciprocalSums1190 m)"
+    },
+    {
+      "artifact": "p1190_Proof_flat.lean",
+      "first_line": 21818,
+      "last_line": 21825,
+      "text": "def HasErdos1190Asymptotic : Prop :=\n  ∀ ε : ℝ, 0 < ε → ∀ᶠ m : ℕ in atTop,\n    Lscale (-(1 + ε)) m ≤ epsilon1190 m ∧\n    epsilon1190 m ≤ Lscale (-(1 - ε)) m\n\n/-- Public statement name for Erdős Problem 1190. -/\ndef Erdos1190Statement : Prop :=\n  HasErdos1190Asymptotic"
+    },
+    {
+      "artifact": "p1190_Proof_flat.lean",
+      "first_line": 23208,
+      "last_line": 23211,
+      "text": "theorem erdos1190_main : HasErdos1190Asymptotic := by\n  intro ε hε\n  filter_upwards [eps1190_lower ε hε, eps1190_upper ε hε] with m hlow hup\n  exact ⟨hlow, hup⟩"
+    },
+    {
+      "artifact": "p202_Proof.lean",
+      "first_line": 3191,
+      "last_line": 3193,
+      "text": "def qSmallUpper (X : Finset α) (U : Finset (Finset α)) (q : ℝ) : Prop :=\n  ∀ p : ℝ, q < p → p ≤ 1 → ¬ pSmall X U p\n"
+    }
+  ],
+  "formal_scope": {
+    "shashi_commit": "286f856aa3fc08957b80950fd18a45aab8d045ea",
+    "shashi_commit_date_utc": "2026-05-14T09:23:25Z",
+    "plby_commit": "f8ceba4d931e46dec378e5d2a80d6a6888328fa5",
+    "formal_conjectures_commit": "8323e878b83fcd7f4a448256069352a265460d75",
+    "statement_alignment": "Actual definitions and main theorem signatures manually inspected; same max-cardinality f and supremum epsilon with all-positive-epsilon eventual bounds. Strict/equality forms follow by epsilon slack/log normalization.",
+    "shashi_toolchain_file": "leanprover/lean4:v4.27.0; some live links advertise4.28 compatibility, untested here",
+    "plby_reviewed_port": "v4.29.1, the exact target named by formal-conjectures annotations; later advertised ports through4.33 not reviewed",
+    "public_axiom_reports": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "shashi_head_check_runs": 0,
+    "shashi_head_status_contexts": 0,
+    "shashi_old_actions": "Six successful3May2026 runs retrieved at older commits; not evidence for final14May files",
+    "plby_actions_runs_returned": 0,
+    "plby_head_check_runs": 0,
+    "formal_conjectures_role": "Correct statement records with2 and5 sorry placeholders; points to plby actual proof implementations",
+    "safeverify_role": "Spec placeholders and wrappers are archived; expected README output/public reports are not fresh verification logs",
+    "local_build": false,
+    "complete_code_audit": false,
+    "stale_documentation": "Some Shashi comments/README still mention outstanding Park-Pham axiom; do not use them as current trust-boundary evidence over final theorem declarations and dated closure reports."
+  },
+  "public_acceptance_evidence": {
+    "dated_discussion": [
+      {
+        "date": "2026-04-23",
+        "person": "Boon Suan Ho",
+        "event": "Sharp proof announced"
+      },
+      {
+        "date": "2026-04-23",
+        "person": "Thomas Bloom",
+        "event": "Initially requested formalization or human endorsement before site update"
+      },
+      {
+        "date": "2026-05-14",
+        "person": "paws",
+        "event": "Posted actual P202/P1190 proof links and core-only/Lean/SafeVerify reports"
+      },
+      {
+        "date": "2026-05-14",
+        "person": "Nat Sothanaphan",
+        "event": "Confirmed both formalizations and specifically noted Park-Pham input was formalized"
+      }
+    ],
+    "central_snapshot": [
+      {
+        "number": 202,
+        "kind": "problem",
+        "url": "https://www.erdosproblems.com/202",
+        "accessed": "2026-09-05T09:07:09.156032+00:00",
+        "file": "E0202_problem.html",
+        "bytes": 34559
+      },
+      {
+        "number": 202,
+        "kind": "discussion",
+        "url": "https://www.erdosproblems.com/forum/discuss/202",
+        "accessed": "2026-09-05T09:07:14.705957+00:00",
+        "file": "E0202_discussion.html",
+        "bytes": 51828
+      },
+      {
+        "number": 202,
+        "kind": "proof_claims",
+        "url": "https://www.erdosproblems.com/forum/thread/202/proof-claims",
+        "accessed": "2026-09-05T09:07:20.067008+00:00",
+        "file": "E0202_proof_claims.html",
+        "bytes": 40193
+      },
+      {
+        "number": 1190,
+        "kind": "problem",
+        "url": "https://www.erdosproblems.com/1190",
+        "accessed": "2026-09-05T09:07:25.598782+00:00",
+        "file": "E1190_problem.html",
+        "bytes": 32773
+      },
+      {
+        "number": 1190,
+        "kind": "discussion",
+        "url": "https://www.erdosproblems.com/forum/discuss/1190",
+        "accessed": "2026-09-05T09:07:31.005276+00:00",
+        "file": "E1190_discussion.html",
+        "bytes": 40874
+      },
+      {
+        "number": 1190,
+        "kind": "proof_claims",
+        "url": "https://www.erdosproblems.com/forum/thread/1190/proof-claims",
+        "accessed": "2026-09-05T09:07:36.381757+00:00",
+        "file": "E1190_proof_claims.html",
+        "bytes": 38404
+      }
+    ],
+    "site_last_edited": "2026-05-28",
+    "site_labels": {
+      "202": "SOLVED (LEAN)",
+      "1190": "SOLVED (LEAN)"
+    },
+    "independent_public_confirmation": "Nat Sothanaphan, 14 May 2026, confirms both formalizations including the Park–Pham input; this records the public report, not a local build.",
+    "teorth_ledger_url": "https://github.com/teorth/erdosproblems/wiki/AI-contributions-to-Erd%C5%91s-problems"
+  },
+  "currentness": {
+    "as_of": "2026-09-05",
+    "method": "Targeted searches beyond erdosproblems.com followed primary author/publisher/preprint/formal artifacts; fresh site pages supplied centrally only.",
+    "queries_archived": [
+      "e202_initial_search.json",
+      "e202_search_followup.json",
+      "e202_search_current.json"
+    ],
+    "finding": "No later primary contradiction or stronger quantitative result found; not an exhaustive claim about every unpublished result."
+  },
+  "limits": [
+    "No local Lean, SafeVerify or compiler execution.",
+    "No full audit of the approximately 20,000-line linked Lean developments.",
+    "Lexical absence of placeholders and inspected theorem declarations do not certify kernel acceptance.",
+    "No equivalence of all preprint and published external source texts is asserted.",
+    "No journal referee acceptance for Ho was found; public verification reports are separately identified.",
+    "The formal-conjectures statement scaffolds are not the complete implementation."
+  ]
+}

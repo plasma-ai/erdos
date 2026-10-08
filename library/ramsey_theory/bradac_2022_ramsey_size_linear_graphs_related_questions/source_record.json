@@ -1,0 +1,76 @@
+{
+  "schema_version": "source_identity_record.v1",
+  "source_id": "bradac_2022_ramsey_size_linear_graphs_related_questions",
+  "title": "On Ramsey Size-Linear Graphs and Related Questions",
+  "authors": [
+    "Domagoj Bradač",
+    "Lior Gishboliner",
+    "Benny Sudakov"
+  ],
+  "identifiers": [
+    {
+      "scheme": "arxiv",
+      "value": "2202.10388"
+    },
+    {
+      "scheme": "doi",
+      "value": "10.1137/22M1481713"
+    }
+  ],
+  "publication": {
+    "journal": "SIAM Journal on Discrete Mathematics",
+    "volume": "38",
+    "issue": "1",
+    "year": 2024,
+    "pages": "225-242",
+    "received": "2022-03-01",
+    "accepted_revised": "2023-08-10",
+    "published_electronically": "2024-01-09"
+  },
+  "selected_citation_artifact": "arxiv_2202.10388v2_retained",
+  "artifacts": [
+    {
+      "artifact_id": "arxiv_2202.10388v2_retained",
+      "file": "bradac_2022_ramsey_size_linear_graphs_related_questions.pdf",
+      "role": "selected citation artifact",
+      "version_label": "arXiv:2202.10388v2",
+      "version_date": "2023-03-10",
+      "bytes": 490536,
+      "physical_pages": 16,
+      "acquisition_utc": null,
+      "locator_note": "Theorems 2, 3, and 4 are on physical and printed page 2."
+    },
+    {
+      "artifact_id": "siam_2024_published_alternate",
+      "file": "bradac_2022_ramsey_size_linear_graphs_related_questions_siam_2024.pdf",
+      "role": "published alternate",
+      "version_label": "SIAM Journal on Discrete Mathematics 38(1) (2024), 225-242",
+      "doi": "10.1137/22M1481713",
+      "bytes": 451050,
+      "physical_pages": 18,
+      "source_url": "https://people.math.ethz.ch/~sudakovb/ramsey-size-linear-graphs.pdf",
+      "retrieval_started_utc": "2026-09-07T10:44:52Z",
+      "retrieval_finished_utc": "2026-09-07T10:44:54Z",
+      "locator_note": "Identity and dates: printed 225 / physical 1. Theorems 2 and 3: printed 226 / physical 2. Theorem 4: printed 227 / physical 3."
+    }
+  ],
+  "version_relationship": {
+    "manual": true,
+    "same_source_work": true,
+    "byte_identical": false,
+    "basis": "The title and authors match, and the published edition carries DOI 10.1137/22M1481713 for the work represented by arXiv:2202.10388.",
+    "statement_comparison": "Theorem 2, Theorem 3, and Theorem 4 have the same hypotheses and conclusions in the visually checked arXiv v2 and SIAM statement pages.",
+    "boundary": "Only the three statement interfaces and bibliographic identity were compared. No full-text or proof equivalence is asserted, and the published alternate does not replace the selected arXiv v2 artifact."
+  },
+  "problem_relationships": [
+    {
+      "problem": "E0568",
+      "scope": "Contextual results with connected, bipartite-target, and subdivision hypotheses; none proves the tree-plus-clique implication for every no-isolate target graph."
+    }
+  ],
+  "limits": [
+    "No proof was reconstructed or independently certified in this payload.",
+    "The published PDF retains its SIAM license and copyright notice.",
+    "This source record grants no mathematical-status or final-review credit."
+  ]
+}

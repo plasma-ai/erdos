@@ -1,0 +1,10 @@
+{
+  "schema": "bbmst_density_sufficient_bounds_v1",
+  "K": 616000,
+  "initial_index": 51,
+  "last_index": 51000,
+  "terminal_index": 2000000,
+  "prime_limit": 33000000,
+  "scale": 6277101735386680763835789423207666416102355444464034512896,
+  "delta_scale": 1000000000000
+}

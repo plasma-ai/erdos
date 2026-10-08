@@ -1,0 +1,44 @@
+## Statement
+
+Let $\chi_S(n,e,G)$ be the least $r$ for which some simple graph with $n$
+vertices and exactly $e$ edges has an $r$-coloring of its edges under which
+every copy of $G$ has pairwise distinct edge colors. For every integer
+$k\ge3$,
+
+$$
+\chi_S\bigl(n,\lfloor n^2/4\rfloor+1,C_{2k+1}\bigr)=\frac{n^2}{8}+o(n^2)
+\qquad(n\to\infty),
+$$
+
+that is, $\chi_S(n,\lfloor n^2/4\rfloor+1,C_{2k+1})/n^2\to1/8$. A copy of
+$C_{2k+1}$ is a cycle on $2k+1$ distinct vertices of the graph. At the finitely
+many $n$ for which no graph on $n$ vertices has $\lfloor n^2/4\rfloor+1$ edges
+the value is taken as $0$, which does not affect the limit.
+
+This is the question of [[problems/ramsey_theory/E0809|Problem 809]] in the
+affirmative for every $k\ge3$: the $k\ge4$ cases are the theorem of Bucić,
+Chen and Ma
+([[library/ramsey_theory/bucic_2026_maximal_anti_ramsey_conjecture_burr_erdos/theorem_1_2|Theorem 1.2]]),
+and the $k=3$ case, the seven-cycle, is the project's own argument. The claim
+does not determine $\chi_S$ at any fixed $n$ and says nothing about $C_3$ or
+$C_5$, where the function is constant or linear.
+
+## Argument and formal surface
+
+The [proof account](_proof.md) identifies the two branches. The seven-cycle
+branch follows the [[research/erdos_809/proofs/_index|six proof notes]] of the
+research folder and is formalized in the modules of
+`Erdos.Library.Problem809` up to `C7LowerSequence`. The higher-cycle branch
+formalizes the full-density theorem of Bucić, Chen and Ma for every $k\ge4$
+in `Erdos.Library.Problem809.BucicChenMa`, from which the threshold follows.
+`Erdos.Library.Problem809.FinalAssembly` combines the two into
+`statement_proved`, a theorem about the minimum over graphs with at least
+$\lfloor n^2/4\rfloor+1$ edges, stated over Mathlib's graph copies of
+`cycleGraph` and as Mathlib's asymptotic equivalence to $n^2/8$. The
+[native claim surface](../../../../lean/Erdos/L17.lean) states the exact-edge
+objects of this claim in `Erdos.L17` in the same copy form, proves for every
+cycle length that a rainbow coloring restricts to a subgraph with exactly the
+required number of edges, so the two edge conventions give the same
+anti-Ramsey number, and applies the assembled theorem. No other native
+L-claim is used as a premise.
+

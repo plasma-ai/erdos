@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Tam\\'as Erd\\'elyi"
+  ],
+  "category": "math.NT",
+  "date": "2025-04-27",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 106426,
+    "files": 1,
+    "sha256": "ac7599495a640fc4074a96c0d0a3743b7524b1b8f952e5aa22ac02dfefe25421",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2504.19336v1"
+  },
+  "id": "2504.19336",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 109912,
+    "previous": [],
+    "sha256": "32181d4bcc6f79154773f2c68b4a39bf70b26b0b6d157d489fa9c80c8c745598",
+    "url": "https://arxiv.org/pdf/2504.19336v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2504.19336v1 [math.NT] 27 Apr 2025",
+  "tex": {
+    "archive": {
+      "bytes": 4490,
+      "name": "arXiv-2504.19336v1.gz",
+      "sha256": "42628e688d0c1c2dbe17e490f5c2681a6553b316c0cc16a4cba0aa6963cf064c"
+    },
+    "bytes": 12813,
+    "files": 1,
+    "sha256": "90007df1e57567be52f86431fb7c4d9049a4415322a7523772bb3912b613a9d1",
+    "url": "https://arxiv.org/src/2504.19336v1"
+  },
+  "title": "The sequence of partial sums of a unimodular power series is not ultraflat",
+  "version": 1
+}

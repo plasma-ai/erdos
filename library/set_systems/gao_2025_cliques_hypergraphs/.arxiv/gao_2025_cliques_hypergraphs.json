@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Jun Gao"
+  ],
+  "category": "math.CO",
+  "date": "2025-10-31",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 202143,
+    "files": 1,
+    "sha256": "c4182e01f307b7153212bde555e7b5085fe7a722b3bbc0f4f165bb05ef676ed9",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2510.14804v3"
+  },
+  "id": "2510.14804",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 405203,
+    "previous": [],
+    "sha256": "42bbbfcf95eae5aa8b377accd4d78fa915160623d8037f16be06ec19a3a7743c",
+    "url": "https://arxiv.org/pdf/2510.14804v3"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2510.14804v3 [math.CO] 31 Oct 2025",
+  "tex": {
+    "archive": {
+      "bytes": 9076,
+      "name": "arXiv-2510.14804v3.tar.gz",
+      "sha256": "21f8d31f90fdd62e4e36c73300bc0534ea90a14291460849fa3125ef6660e534"
+    },
+    "bytes": 26701,
+    "files": 3,
+    "sha256": "1c6561b57d4e8d79e794c5dd22d259c6f72978beceab2ab6b621a262d70992f8",
+    "url": "https://arxiv.org/src/2510.14804v3"
+  },
+  "title": "On cliques in hypergraphs",
+  "version": 3
+}

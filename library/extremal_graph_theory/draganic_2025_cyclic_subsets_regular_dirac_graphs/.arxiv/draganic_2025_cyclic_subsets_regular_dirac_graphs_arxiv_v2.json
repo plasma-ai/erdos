@@ -1,0 +1,40 @@
+{
+  "authors": [
+    "Nemanja Dragani\\'c",
+    "Peter Keevash",
+    "Alp M\\\"uyesser"
+  ],
+  "category": "math.CO",
+  "date": "2025-03-31",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 774706,
+    "files": 2,
+    "sha256": "2a24249df9049e62b67453ff57fa95e3e09663bc6761ad962450b14c0b4d39da",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2503.01826v2"
+  },
+  "id": "2503.01826",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 596418,
+    "previous": [],
+    "sha256": "0ad599263fa9332fee03c42ddd274ac9e66e1b6cd3da32d01b5f72addfba2996",
+    "url": "https://arxiv.org/pdf/2503.01826v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2503.01826v2 [math.CO] 31 Mar 2025",
+  "tex": {
+    "archive": {
+      "bytes": 108387,
+      "name": "arXiv-2503.01826v2.tar.gz",
+      "sha256": "354a51e9bdf3f730a8c779fc17c6fd6c47b55b1bd34083843418dd10e5f8f8b8"
+    },
+    "bytes": 279308,
+    "files": 4,
+    "sha256": "c1576750cc8d7f9892fa04c1d6cac116aecf341a8144812b38a16462ebf49bfc",
+    "url": "https://arxiv.org/src/2503.01826v2"
+  },
+  "title": "Cyclic subsets in regular Dirac graphs",
+  "version": 2
+}

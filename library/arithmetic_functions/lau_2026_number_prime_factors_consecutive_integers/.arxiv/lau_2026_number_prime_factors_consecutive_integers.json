@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Cheuk Fung Lau"
+  ],
+  "category": "math.NT",
+  "date": "2026-06-24",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 1069133,
+    "files": 1,
+    "sha256": "d1811298ff408853813bde00a315c5eebeedebf1b8e640f0fde781c5170cbdb7",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2604.15042v2"
+  },
+  "id": "2604.15042",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 717637,
+    "previous": [],
+    "sha256": "90443d4ebbdfe9e05052e1a8115b8acd9d29d3ce7269d7e9c71cb09716c718d1",
+    "url": "https://arxiv.org/pdf/2604.15042v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2604.15042v2 [math.NT] 24 Jun 2026",
+  "tex": {
+    "archive": {
+      "bytes": 72868,
+      "name": "arXiv-2604.15042v2.tar.gz",
+      "sha256": "2588d9062ffcd1df2f3bb8ca33f96c6640c181fb70049e8387429f1eb5729949"
+    },
+    "bytes": 276705,
+    "files": 5,
+    "sha256": "fb313ec3f0093f51c77494e96388d5d1e65f6ddf5da12dcbd65867fdbe7a44e8",
+    "url": "https://arxiv.org/src/2604.15042v2"
+  },
+  "title": "On the Number of Prime Factors of Consecutive Integers",
+  "version": 2
+}

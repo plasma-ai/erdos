@@ -1,0 +1,40 @@
+{
+  "authors": [
+    "Richard Montgomery",
+    "Mat\\'ias Pavez-Sign\\'e",
+    "Jun Yan"
+  ],
+  "category": "math.CO",
+  "date": "2025-09-09",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 3741401,
+    "files": 1,
+    "sha256": "178f3bc8c7059cb667b959bf874dc289a00f6c61bc8b5d94ea5a1ca12ba1ef1a",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2509.07934v1"
+  },
+  "id": "2509.07934",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 1094780,
+    "previous": [],
+    "sha256": "abc145efdd1275a1be5f8bdef88d1445be8c48d2a7f9d66cd1e8ff76b8ef9c3a",
+    "url": "https://arxiv.org/pdf/2509.07934v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2509.07934v1 [math.CO] 9 Sep 2025",
+  "tex": {
+    "archive": {
+      "bytes": 91744,
+      "name": "arXiv-2509.07934v1.tar.gz",
+      "sha256": "a8e98e65bd3a2f255b94b70adfe03459c7bd2cc84a2956bf4ca50a73b662e716"
+    },
+    "bytes": 466399,
+    "files": 90,
+    "sha256": "4e86719ccab0e9f0ccc98a9435ec52d5913dbe87fc2b7d5d4d43db5835d69179",
+    "url": "https://arxiv.org/src/2509.07934v1"
+  },
+  "title": "Ramsey numbers of trees",
+  "version": 1
+}

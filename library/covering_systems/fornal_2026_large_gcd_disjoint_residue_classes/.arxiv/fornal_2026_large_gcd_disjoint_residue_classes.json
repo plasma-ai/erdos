@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Jan Fornal",
+    "Yu-Chen Sun"
+  ],
+  "category": "math.CO",
+  "date": "2026-07-27",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 436260,
+    "files": 1,
+    "sha256": "fc0e756732e42f327b89a968bb2f6034f63ecf0d7ce245d592af2991b02955da",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2607.24655v1"
+  },
+  "id": "2607.24655",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 454556,
+    "previous": [],
+    "sha256": "33bffe0628027510d69a51ce5f39ab72541e5562f4fcd29dd1fe2903e8728b08",
+    "url": "https://arxiv.org/pdf/2607.24655v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2607.24655v1 [math.CO] 27 Jul 2026",
+  "tex": {
+    "archive": {
+      "bytes": 14529,
+      "name": "arXiv-2607.24655v1.tar.gz",
+      "sha256": "92f44922f7d5eab7524f24d47c12b3661edab8f369186b7c295ca1b7ca239bb5"
+    },
+    "bytes": 44491,
+    "files": 2,
+    "sha256": "d4863d77ce2c0ad65b8d938a5509c11e19fe300299a393721a964cea1d3f0cc8",
+    "url": "https://arxiv.org/src/2607.24655v1"
+  },
+  "title": "On the problem of large gcd for disjoint residue classes",
+  "version": 1
+}

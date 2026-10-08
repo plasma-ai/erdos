@@ -1,0 +1,29 @@
+name = "Erdos"
+defaultTargets = ["Erdos", "audit"]
+
+# No silently-introduced implicit binders anywhere in the corpus.
+[leanOptions]
+autoImplicit = false
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "79aee35d9696d759b73eed71d7dde666750bc35e"
+
+# The mathematics. The glob builds every module under Erdos/
+# unconditionally: there is no root import file to maintain, and an
+# unimported orphan module is impossible at the lake level.
+[[lean_lib]]
+name = "Erdos"
+globs = ["Erdos.+"]
+
+# The audit tool (kept out of the math lib: Erdos/ contains no
+# metaprogramming beyond the syntax objects that term-level notation mints).
+[[lean_lib]]
+name = "ErdosAudit"
+globs = ["Audit.+"]
+
+[[lean_exe]]
+name = "audit"
+root = "Audit.Main"
+supportInterpreter = true

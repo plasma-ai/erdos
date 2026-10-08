@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Stijn Cambie",
+    "Andrea Freschi"
+  ],
+  "category": "math.CO",
+  "date": "2026-06-09",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 222623,
+    "files": 1,
+    "sha256": "d5dba9709dc92189e699f8e095e025e16837e735ad0b2b3c822b932dd96a7d1c",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2606.11174v1"
+  },
+  "id": "2606.11174",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 392181,
+    "previous": [],
+    "sha256": "c575a6908cdf9474db4ba85933c461f2544fc312d80a1fa3c7666dc35ea4c539",
+    "url": "https://arxiv.org/pdf/2606.11174v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2606.11174v1 [math.CO] 9 Jun 2026",
+  "tex": {
+    "archive": {
+      "bytes": 9599,
+      "name": "arXiv-2606.11174v1.tar.gz",
+      "sha256": "aef476112f9a1dc76ebe1ed08911c14e43076799f0c7d8dbec96f8104255b9a2"
+    },
+    "bytes": 27505,
+    "files": 2,
+    "sha256": "b8ec5872ea1de3ba8a0d2309632b20ab27b23664b97b08c71b218d5399ef6f92",
+    "url": "https://arxiv.org/src/2606.11174v1"
+  },
+  "title": "A general bound on $R(C_k,H)$",
+  "version": 1
+}

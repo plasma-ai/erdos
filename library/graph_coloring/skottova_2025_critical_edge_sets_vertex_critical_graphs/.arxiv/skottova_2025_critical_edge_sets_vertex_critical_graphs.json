@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Ema Skottova",
+    "Raphael Steiner"
+  ],
+  "category": "math.CO",
+  "date": "2025-08-12",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 1229433,
+    "files": 1,
+    "sha256": "b7b6140ba435c990f9f9e16ab370085112c208d7b29f89a2c0df8eb80c597529",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2508.08703v1"
+  },
+  "id": "2508.08703",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 716221,
+    "previous": [],
+    "sha256": "6e4fa149ae6e15dc9b608aac6b1094bb8b2fac5547b8bd5a02f62e6ebd328cb6",
+    "url": "https://arxiv.org/pdf/2508.08703v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2508.08703v1 [math.CO] 12 Aug 2025",
+  "tex": {
+    "archive": {
+      "bytes": 41499,
+      "name": "arXiv-2508.08703v1.tar.gz",
+      "sha256": "4f215d2e9d7e35058fe2e913816a715d81cd05f8bf794eef5fb01a5408ee5579"
+    },
+    "bytes": 153832,
+    "files": 2,
+    "sha256": "4eeeb0d37da058b0e78307aad4eda1d7414e2e0308d009e111cb2eaa10cc3f31",
+    "url": "https://arxiv.org/src/2508.08703v1"
+  },
+  "title": "Critical edge sets in vertex-critical graphs",
+  "version": 1
+}

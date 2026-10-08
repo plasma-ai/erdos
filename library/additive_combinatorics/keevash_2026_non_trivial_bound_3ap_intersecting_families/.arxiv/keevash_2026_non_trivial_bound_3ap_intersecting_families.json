@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Peter Keevash"
+  ],
+  "category": "math.CO",
+  "date": "2026-09-16",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 102827,
+    "files": 1,
+    "sha256": "29e9daacae5a9395fc9947de6b8a3b3fa47eb7bb821bfdd364d0be69eb3cec60",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2609.18870v1"
+  },
+  "id": "2609.18870",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 323660,
+    "previous": [],
+    "sha256": "463649766fa53927145a1dd3e5fc44890adbdf26824cbc29e604253e72c9a0b1",
+    "url": "https://arxiv.org/pdf/2609.18870v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2609.18870v1 [math.CO] 16 Sep 2026",
+  "tex": {
+    "archive": {
+      "bytes": 5146,
+      "name": "arXiv-2609.18870v1.tar.gz",
+      "sha256": "719c1146a5ec383c95dec8a85c591dcd8319e1fbe00eef10370c91c99fd1271f"
+    },
+    "bytes": 12257,
+    "files": 2,
+    "sha256": "057f12d1ac2213cd80072c4174e40bb768e3f7a720e98f0e1650e366b8471111",
+    "url": "https://arxiv.org/src/2609.18870v1"
+  },
+  "title": "A non-trivial bound for 3AP-intersecting families",
+  "version": 1
+}

@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Venkatesan Guruswami",
+    "Shilun Li"
+  ],
+  "category": "math.PR",
+  "date": "2026-04-30",
+  "fetched": "2026-09-24",
+  "html": {
+    "bytes": 470602,
+    "files": 1,
+    "sha256": "fbf0cd63bc2176dd86fab93144459a06bdd860ac47ea466054be58965c6354b8",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2505.09839v4"
+  },
+  "id": "2505.09839",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 449469,
+    "previous": [],
+    "sha256": "319402fd2415499467c8114015515dfb77ce4518d24ed2c60ea2b13701acf6ef",
+    "url": "https://arxiv.org/pdf/2505.09839v4"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2505.09839v4 [math.PR] 30 Apr 2026",
+  "tex": {
+    "archive": {
+      "bytes": 21143,
+      "name": "arXiv-2505.09839v4.tar.gz",
+      "sha256": "176295ebe4d6b1d598eb76d0905636a754bc3b4912edbe544194080215089b7e"
+    },
+    "bytes": 68197,
+    "files": 3,
+    "sha256": "4cc38e1f8899c514e393116d5897c128ffd8524892755e59e04e6687e12eb728",
+    "url": "https://arxiv.org/src/2505.09839v4"
+  },
+  "title": "Density Frankl-R\\\"{o}dl on the Sphere",
+  "version": 4
+}

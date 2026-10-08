@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Imre Leader",
+    "Kada Williams"
+  ],
+  "category": "math.CO",
+  "date": "2024-07-04",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 88938,
+    "files": 1,
+    "sha256": "53d36b40ec8c29460c996b633189029564965f1f9a18ea52f7a35f54fac845f3",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2407.03938v1"
+  },
+  "id": "2407.03938",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 94215,
+    "previous": [],
+    "sha256": "9f6cc462af3d3364da32ca5a844488f24f99d0c8a262286c8ea1e2178109012e",
+    "url": "https://arxiv.org/pdf/2407.03938v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2407.03938v1 [math.CO] 4 Jul 2024",
+  "tex": {
+    "archive": {
+      "bytes": 6289,
+      "name": "arXiv-2407.03938v1.gz",
+      "sha256": "6baa8edc36b4f784d14def65fe2e9ffabd0901cd9dc99d4082ac9b00b2ccec8f"
+    },
+    "bytes": 16283,
+    "files": 1,
+    "sha256": "9de2dd50b603fd6dc759fa17e0196efb1452d442dd9988b56388465763f42774",
+    "url": "https://arxiv.org/src/2407.03938v1"
+  },
+  "title": "Monochromatic Sumsets in Countable Colourings of Abelian Groups",
+  "version": 1
+}

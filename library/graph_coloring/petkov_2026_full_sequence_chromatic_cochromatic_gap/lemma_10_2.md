@@ -1,0 +1,224 @@
+---
+name: graph_coloring/petkov_2026_full_sequence_chromatic_cochromatic_gap/lemma_10_2
+title: Amplifying a cocolouring seed with a controlled loss
+desc: |
+  Reconstructs the conditional seed-amplification bound and its
+  full-sequence little-o loss when the seed exponent is small enough.
+created: 2026-09-10T09:37:38Z
+updated: 2026-10-05T05:52:35Z
+---
+
+***
+
+**Source.** Samuil Petkov, *A Full-Sequence Quantitative Gap Between the
+Chromatic and Cochromatic Numbers of a Random Graph*, arXiv:2608.30604v1,
+submitted 31 August 2026, [PDF][pdf], Lemma 10.2, pp. 47–48, and
+equations (10.10)–(10.13), p. 48. This page reconstructs the conditional
+amplification implication, not the source's proof of its seed hypothesis.
+Petkov frames the method on p. 46 through Heckel (2025, Theorem 1) and
+Scott (2017, Theorem 1); those works are unread and not consumed here.
+
+**Definitions.** For integer $n\geq2$, $G_n\sim G(n,1/2)$ is the
+simple graph on $[n]$ with independent edge probabilities $1/2$.
+For a finite graph $F$, $\zeta(F)$ is the least number of nonempty parts
+partitioning $V(F)$, each inducing a clique or an independent set;
+$\chi(F)$ requires every part to be independent. Both numbers are zero
+on the empty graph. Logarithms are natural, and all limits are through
+the full sequence of integer $n$.
+
+## Statement
+
+There are an absolute constant $C>0$, an absolute integer $n_0\geq2$,
+and a deterministic sequence $\varepsilon_n^{\mathrm{left}}\geq0$
+tending to zero with the following property. For every $n\geq n_0$,
+integer $k\geq0$, and real $\Lambda\geq0$, if
+
+$$
+\mathbb P(\zeta(G_n)\leq k)\geq e^{-\Lambda},
+\tag{seed}
+$$
+
+then, for every deterministic real $r>0$,
+
+$$
+\mathbb P\!\left(\zeta(G_n)>k+C\left[
+\frac{\sqrt{n\Lambda}+\sqrt{nr}}{\log n}+n^{1/3}+1\right]\right)
+\leq e^{-r}+\varepsilon_n^{\mathrm{left}}.
+\tag{amplification}
+$$
+
+The constant, threshold and error sequence are independent of $k,\Lambda,r$.
+In particular this gives Lemma 10.2 for arbitrary deterministic sequences
+$k_n\in\mathbb Z_{\geq0}$, $\Lambda_n\geq0$, and $r=r(n)>0$ whose
+seed bound holds for all sufficiently large $n$: the conclusion holds
+for every $n\geq n_0$ at which that seed bound holds. The parameters are
+not permitted to be chosen from the sampled graph.
+
+## Proof
+
+Use the absolute $C_0$, threshold $n_0$ and event $\mathcal G_n$ in
+[Lemma 10.1](lemma_10_1.md). Put
+$\varepsilon_n^{\mathrm{left}}=\mathbb P(\mathcal G_n^c)$ for all
+$n\geq2$. These choices depend on none of the seed or tail parameters.
+Fix $n\geq n_0$ and deterministic $k,\Lambda,r$ as in the statement.
+
+### A bounded-difference induced-set statistic
+
+For each graph configuration define
+
+$$
+S_k=\max\{|W|:W\subseteq[n],\ \zeta(G_n[W])\leq k\}.
+$$
+
+The empty set is feasible even when $k=0$, and there are finitely many
+subsets, so this maximum is attained and $0\leq S_k\leq n$.
+Restricting a cocoloring to an induced subset and discarding empty parts
+never increases its number of parts. In particular $S_0=0$ when $n>0$;
+the seed hypothesis for $k=0$ is impossible, since $e^{-\Lambda}>0$.
+The conditional statement is vacuous in that case, but the statistic and
+the following change bound remain well defined.
+
+Expose the graph in $n-1$ blocks indexed by $v=2,\ldots,n$, where block
+$v$ contains the indicators of the edges $\{u,v\}$ with $u<v$.
+These disjoint collections of independent edge indicators are independent
+finite-valued blocks and determine the whole graph. If one block changes,
+all changed edges are incident to its vertex $v$. Let $W$ maximize $S_k$
+in the first graph. Removing $v$ if necessary gives a set of at least
+$S_k-1$ vertices, whose induced graphs agree in the two configurations.
+The restricted cocoloring is feasible in the second graph, so its
+statistic is at least the first statistic minus one. Interchanging the
+two configurations gives the reverse inequality. Hence changing one
+block changes $S_k$ by at most one in absolute value.
+
+### From the seed to a small leftover
+
+Apply both one-sided [bounded-differences bounds](bounded_differences.md)
+with $m=n-1\geq1$. Since $S_k=n$ exactly when
+$\zeta(G_n)\leq k$, and $n-\mathbb ES_k\geq0$, the seed gives
+
+$$
+e^{-\Lambda}\leq\mathbb P(S_k=n)
+=\mathbb P(S_k-\mathbb ES_k\geq n-\mathbb ES_k)
+\leq\exp\!\left(-\frac{2(n-\mathbb ES_k)^2}{n-1}\right).
+$$
+
+Taking logarithms and the nonnegative square root yields
+
+$$
+n-\mathbb ES_k\leq\sqrt{(n-1)\Lambda/2}.
+$$
+
+This also covers $\Lambda=0$ and $n-\mathbb ES_k=0$; the concentration
+bound at deviation zero is valid. The lower tail, with positive radius
+$b=\sqrt{(n-1)r/2}$, gives
+$\mathbb P(\mathbb ES_k-S_k\geq b)\leq e^{-r}$. Consequently,
+outside an event of probability at most $e^{-r}$,
+
+$$
+n-S_k\leq\sqrt{(n-1)\Lambda/2}+\sqrt{(n-1)r/2}
+\leq\sqrt{n\Lambda}+\sqrt{nr}.
+\tag{leftover}
+$$
+
+Choose a maximizing $W$ and put $V_{\mathrm{left}}=[n]\setminus W$.
+One can use a fixed ordering of subsets to choose $W$ on this finite
+sample space. Cocolor $W$ with at most $k$ parts and color the leftover
+ordinarily with fresh parts. Edges between the two sets do not affect
+the validity of any part, so
+
+$$
+\zeta(G_n)\leq k+\chi(G_n[V_{\mathrm{left}}]).
+$$
+
+On $\mathcal G_n$, Lemma 10.1 applies to this maximizing, graph-dependent
+leftover, since its event controls every vertex subset simultaneously.
+No independence between $W$, the leftover, and the graph is assumed.
+On the intersection with the event in (leftover), therefore,
+
+$$
+\zeta(G_n)\leq k+C_0\frac{\sqrt{n\Lambda}+\sqrt{nr}}{\log n}
++n^{1/3}.
+$$
+
+Take $C=\max\{C_0,1\}$. The right side is at most the threshold in
+(amplification). A union bound for the two exceptional events gives
+$e^{-r}+\varepsilon_n^{\mathrm{left}}$, without assuming those events
+independent. This proves the statement, with one absolute threshold and
+the same constant and error sequence for every choice of parameters.
+
+## Conditional full-sequence corollary
+
+Suppose deterministic $k_n\in\mathbb Z_{\geq0}$ and $\Lambda_n\geq0$
+satisfy (seed) for all sufficiently large $n$, and additionally
+$\Lambda_n=o(n/(\log n)^4)$. With the constant just proved, define
+for $n\geq2$
+
+$$
+r_n=\frac{\sqrt n}{(\log n)^2},
+\qquad
+a_n=C\left[
+\frac{\sqrt{n\Lambda_n}+\sqrt{nr_n}}{\log n}+n^{1/3}+1\right].
+$$
+
+Then $a_n$ is deterministic and nonnegative, and
+
+$$
+a_n=o\!\left(\frac{n}{(\log n)^3}\right),
+\qquad
+\mathbb P(\zeta(G_n)>k_n+a_n)
+\leq e^{-r_n}+\varepsilon_n^{\mathrm{left}}\longrightarrow0.
+$$
+
+The probability bound holds for every sufficiently large integer $n$;
+equivalently $\mathbb P(\zeta(G_n)\leq k_n+a_n)\to1$. It is not an
+almost-sure statement for a coupled process.
+
+To check the loss explicitly, write $L=\log n$ and
+$\eta_n=\Lambda_nL^4/n\to0$. Dividing the four terms in $a_n/C$ by
+$n/L^3$ gives, respectively,
+
+$$
+\sqrt{\eta_n},\qquad
+\frac{L}{n^{1/4}},\qquad
+\frac{L^3}{n^{2/3}},\qquad
+\frac{L^3}{n}.
+$$
+
+Each tends to zero, while $r_n=n^{1/2}/L^2\to\infty$. Here the
+elementary fact that every fixed power of $\log n$ is smaller than any
+positive power $n^a$, $a>0$, follows, on writing $n=e^L$, from the exponential
+series: choose an integer power larger than the given logarithmic power
+in a positive term of $e^{aL/2}$, and retain the remaining factor
+$e^{aL/2}\to\infty$. Thus the little-o limit and the probability limit
+hold along all integers, not a selected phase or subsequence. Comparing
+the integer-valued $\zeta$ with the real threshold $k_n+a_n$ needs no
+rounding convention. No seed bound has been proved by this implication.
+
+## Current verification
+
+The reconstruction of Lemma 10.2 and the conditional consequence
+(10.10)–(10.13), including both consumed local proofs, has independent
+proof coverage relative to the explicit seed hypothesis. The
+[review and distinct grade](evidence/verify/_index.md) concern the exact
+retained original subject; the native rendition passed fidelity review
+and hand-check before it was filed. No fresh review of later documentary
+edits is implied. The statements and
+full proofs of Lemmas 10.1–10.2 on PDF pp. 46–48, and the concentration
+statement on p. 5, were visually checked. The finite-block proof is supplied
+in [bounded differences](bounded_differences.md), not attributed to an
+unread proof by Petkov or McDiarmid.
+
+The seed remains an explicit hypothesis. No profile, second-moment,
+root-separation or phase estimate, nor the final main-theorem assembly,
+is reconstructed here. The separately reported external formal check
+of the uniform main theorem supplies no independent review of these
+authored pages, and no local kernel replay, native tier or status change
+is claimed. The stronger phase-dependent coefficient remains outside
+this unit.
+
+**Bears on.** The [uniform main theorem](main_theorem.md) uses this
+conditional cochromatic upper bound in its route to
+[[../wiki/problems/graph_coloring/E0625/_index|E625]]; the seed and its other proof
+inputs remain separate obligations.
+
+[pdf]: petkov_2026_full_sequence_chromatic_cochromatic_gap.pdf

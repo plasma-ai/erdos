@@ -1,0 +1,41 @@
+{
+  "authors": [
+    "Bogdan Georgiev",
+    "Javier G\\'omez-Serrano",
+    "Terence Tao",
+    "Adam Zsolt Wagner"
+  ],
+  "category": "cs.NE",
+  "date": "2025-12-22",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 13472937,
+    "files": 86,
+    "sha256": "36d0ff57b287314e8beb378cc96904d4ba47ffde187088aea8b5783405dfab9d",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2511.02864v3"
+  },
+  "id": "2511.02864",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 12141713,
+    "previous": [],
+    "sha256": "77b43844077c98c26dfc76ad391cadbbd53d48a1d290ddae575ff4d1bcdef9d2",
+    "url": "https://arxiv.org/pdf/2511.02864v3"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2511.02864v3 [cs.NE] 22 Dec 2025",
+  "tex": {
+    "archive": {
+      "bytes": 11557252,
+      "name": "arXiv-2511.02864v3.tar.gz",
+      "sha256": "b1b889916f2c773a384c7e425a124c86051f7b9f386962c7e21834f38191047e"
+    },
+    "bytes": 12243236,
+    "files": 92,
+    "sha256": "34e220ca6e55f32349ea3e0cb7ba44964913512677ff31f38e0efe090004255c",
+    "url": "https://arxiv.org/src/2511.02864v3"
+  },
+  "title": "Mathematical exploration and discovery at scale",
+  "version": 3
+}

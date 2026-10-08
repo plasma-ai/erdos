@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Simone Costa",
+    "Stefano Della Fiore"
+  ],
+  "category": "math.CO",
+  "date": "2026-02-23",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 262297,
+    "files": 1,
+    "sha256": "5599ef5f876fabf5fbd8d952dc9186007d216cf87bd97cb068abf6a079f3d052",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2602.19989v1"
+  },
+  "id": "2602.19989",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 369494,
+    "previous": [],
+    "sha256": "65748a0425f521c6e2e952c695d3657e55e26aec2b6aa1d88c2a3d7207a32340",
+    "url": "https://arxiv.org/pdf/2602.19989v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2602.19989v1 [math.CO] 23 Feb 2026",
+  "tex": {
+    "archive": {
+      "bytes": 10780,
+      "name": "arXiv-2602.19989v1.tar.gz",
+      "sha256": "32e4adab4a45c90f1eebd4f73d94a3233428e8fb42f497e6850e3c8513d56233"
+    },
+    "bytes": 31286,
+    "files": 2,
+    "sha256": "3d214705b00c98e1d7167fc7a384397d53cfef5caddbc05394c21beb341c6f21",
+    "url": "https://arxiv.org/src/2602.19989v1"
+  },
+  "title": "New bounds for (weak) sequenceability in $\\mathbb{Z}_k$",
+  "version": 1
+}

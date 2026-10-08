@@ -1,0 +1,163 @@
+E0834: independent integer-mask reproduction
+Date: 2026-09-15
+
+This is a portable account of an existing source review and one completed
+three-leg reproduction, not a new review or a verbatim operational receipt. The
+implementation author worked under a coordinating author. A distinct non-author
+reviewer assessed the engineering and native-input correspondence on 15
+September 2026. A separate non-author launcher ran the admitted subject; the
+coordinating author authenticated the retained actual records. The original
+records remain unchanged in working storage. The reviewed subjects are named by
+path in bitmask_reproduction.json as they stood at 2026-09-15T02:18:25Z, except
+the evidence index, named as it stood on 2026-09-14 before that filing, and the
+executed test, whose bytes were never committed (see Review attribution and
+limitations); the observations are there too.
+
+Current result and scope
+
+The synthetic suite passed all 67 unique cases, with no failure, error or skip.
+The normal and optimized fixed-input invocations each exited zero. Their
+stdout was byte-identical: 393 bytes, preserved as bitmask_result.json less
+its input_sha256 field, removed on 2026-10-02; "verified" is the program's
+finite-contract result, not a proof grade. The 67-case count comes from the
+original run's postchecks; this filing did not reread or recount the JUnit
+body.
+
+The check covers nine vertices, 22 distinct triples, all 512 Boolean
+assignments, no proper weak two-coloring, degrees (10,7,7,7,7,7,7,7,7),
+the displayed proper three-class partition, all 22 edge-deletion witnesses,
+all nine vertex-deletion witnesses, and equality of the derived link of
+vertex 1 with its separately transcribed displayed link.
+
+This is a new independent reproduction using integer masks, structurally
+different from the retained set-based checker. It does not recover the missing
+historical bit-mask program or rerun the old 52-obligation checker. It does not
+check link/core independence numbers, prove the general transversal theorem,
+search for extremal minimality, investigate source status, or give a fresh
+whole-proof review, grade, tier or catalog-status change. The earlier curated
+source-proof review and its original limitations remain separate and unchanged.
+
+Ordinary-clone inputs and commands
+
+Paths below are relative to the repository root. Use Python 3.12 or later on a
+POSIX host with O_NONBLOCK and O_NOFOLLOW. As reviewed on 2026-09-15 the
+checker used only the standard library and needed neither the local tools
+package nor a private path; the current checker records its six obligations
+through the shared harness and argument parser of the root tools package, so it
+runs in the repository-local environment prepared by the root README. It is
+fixed to Li's instance by shape and content (nine labeled vertices, 22 triples,
+the degree sequence and the transcribed witnesses), not by input identity: it
+names the input it checked by path and refuses on content. As reviewed on
+2026-09-15 it reported the SHA-256 of the bytes it checked as input_sha256 and
+also refused any input whose digest differed from the retained input's
+(input.identity); the byte-identity refusal was removed on 2026-09-17 and the
+digest field on 2026-10-02, and the input is named by path.
+
+Program: library/set_systems/li_2025_erdos_lovasz_problem_3_critical/evidence/verify_e0834_bitmask.py
+Input: library/set_systems/li_2025_erdos_lovasz_problem_3_critical/evidence/assets/li_v1_bitmask_input.json
+Tests: tests/test_e0834_bitmask.py
+
+From the repository root, the two finite entry points of the current checker
+are:
+
+uv run --no-sync python library/set_systems/li_2025_erdos_lovasz_problem_3_critical/evidence/verify_e0834_bitmask.py library/set_systems/li_2025_erdos_lovasz_problem_3_critical/evidence/assets/li_v1_bitmask_input.json
+uv run --no-sync python -O library/set_systems/li_2025_erdos_lovasz_problem_3_critical/evidence/verify_e0834_bitmask.py library/set_systems/li_2025_erdos_lovasz_problem_3_critical/evidence/assets/li_v1_bitmask_input.json
+
+The reviewed revision's entry points were the same two invocations under an
+isolated interpreter without site-packages (python3 -I -B -S, with and without
+-O); the current checker's import of the tools package needs the environment
+above.
+
+For synthetic tests, use the repository-local environment prepared by the root
+README and locked dependencies. An isolated-config entry point is:
+
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 PYTEST_ADDOPTS= uv run --no-sync python -I -B -m pytest -q -c /dev/null -o addopts= --rootdir . --noconftest --import-mode=importlib -p no:cacheprovider tests/test_e0834_bitmask.py
+
+These are portable entry points, not a claim that the original private process
+supervisor or its full resource envelope is part of the ordinary clone. No
+command was run for this filing. Future disposable logs belong in the owner's
+ignored evidence/output/; they are not mathematical source or new verdicts.
+The recorded run used CPython 3.12.13 on macOS aarch64. A complete host or
+dependency closure is not claimed. The exact pytest distribution version is not established by the
+selected filing receipts.
+
+Input correspondence and bit convention
+
+All paths in this section are relative to the source directory
+library/set_systems/li_2025_erdos_lovasz_problem_3_critical/.
+
+JSON field          Native locator and coverage
+vertices, edges     theorem_4_1.md, construction display (1): labels 1..9
+                    and all 22 triples in display order; the final twelve
+                    also match lemma_4_3.md, display (3).
+three_classes       lemma_4_4.md, display (1): {1,2,4,5}, {3,6,8,9}, {7}.
+edge_blue           proposition_4_5.md, table under Rewritten proof:
+                    all 22 labeled entries, in both pairs of columns.
+vertex_blue         proposition_4_6.md, table under Rewritten proof:
+                    all nine labeled entries, in all three column pairs.
+displayed_link      lemma_4_3.md, display (1): all ten pairs, transcribed
+                    separately from the program's derived link.
+
+The data file contains vertex labels, not stored bit indices, and has no
+separate label-to-bit field. The frozen reader's e0834-bitmask-v1 contract
+requires vertices [1,2,3,4,5,6,7,8,9]; _vertex_mask fixes this exact mapping:
+
+label: 1 2 3 4 5 6 7 8 9
+bit:   0 1 2 3 4 5 6 7 8
+
+A blue set B has mask sum(1 << (i-1) for i in B). For an edge mask e and blue
+mask b, the edge is monochromatic exactly when e & b is 0 or e. Every mask
+0..511 is inspected, without complement reduction. Edge-witness keys must
+equal the 22 edge labels; the indexed edge must be the unique monochromatic
+edge. Vertex-witness keys must be exactly 1..9, the deleted label cannot remain
+blue, and every incident triple is removed whole, not shortened. Three classes
+must be nonempty, disjoint and cover the full domain. The derived link removes
+bit 0 from each edge containing it and is compared with the ten displayed
+pairs. These are the reviewed checker semantics, not a new proof argument.
+
+The bounded ASCII JSON reader caps input at 16,384 bytes and nesting at eight,
+rejects duplicate keys and noninteger values, and checks exact shapes and
+domains before mathematical evaluation; the result names the input by path (as
+reviewed on 2026-09-15 it carried the input digest as input_sha256).
+Mathematical failures use explicit raises, not
+removable assertions. The file reader requires a regular file and refuses a
+final-component symlink; intermediate directory symlinks are not excluded.
+Unexpected exceptions cannot become a success result. Tests use only synthetic
+and mutated small inputs; they do not open the retained Li input or invoke its
+512-assignment calculation.
+
+Review attribution and limitations
+
+The distinct source-only review on 15 September 2026 reported "No defect found"
+after complete reading of the program, data and tests and comparison of every
+data field with the five native pages. Administrative JSON and page-text parsing
+was used for correspondence; the checker was not imported, compiled or run
+during that review. The reviewer explicitly found the label-only JSON and fixed
+reader mapping sufficient, so no added mapping field or successor was required.
+The input retains the exact reviewed and executed bytes. The checker and the
+test were edited after the reviewed state, when the byte-identity refusal and
+the two test expectations of it were replaced by the content refusal
+construction.degrees; the reviewed bytes are those of 2026-09-15T02:18:25Z and
+are not retained. Today's checker differs from them by that replacement, by
+the shared harness and argument parser it gained on 2026-09-17 with the
+expanded docstring, and by the input digest removed from its result on
+2026-10-02; today's test differs by the two replaced expectations, the harness
+import, the renamed source folder and American spellings. At filing, the
+installed test
+publication differed from the executed original only by formatting and four
+raw-string prefixes with unchanged string values; its complete Python syntax
+tree, including type comments but excluding source positions, equaled the
+executed original's tree.
+
+Nonblocking observations were unusual but harmless test-module exports,
+absence of direct directory/FIFO reader tests, and the isolated pytest command's
+bypass of project configuration. Runtime admission was separate from that
+source verdict. The reviewer reported independence from the implementation
+author and from Li's proof author/reviewer; this is not a new blind mathematical
+review of the thirteen results.
+
+The implementation author had already seen the curated proof review, including
+its reported historical bit-mask outcomes. Blind authorship is not claimed.
+The old checker, digest, PDF and raw historical payload were not used as
+algorithm or oracle; the new masks and transcription were derived from the
+native mathematical pages. The historical calculation's code was not recovered.

@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Lasse Grimmelt",
+    "Jori Merikoski"
+  ],
+  "category": "math.NT",
+  "date": "2025-05-30",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 862394,
+    "files": 1,
+    "sha256": "f8e44764e9bf2662a6c48a1d1c0e6023d973474bc2edf1fc4034e09997663a3a",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2505.00493v2"
+  },
+  "id": "2505.00493",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 512162,
+    "previous": [],
+    "sha256": "b88e92a2f1849433799f4ce935871f9488f03b660b96e60b5598a4aabc50e53d",
+    "url": "https://arxiv.org/pdf/2505.00493v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2505.00493v2 [math.NT] 30 May 2025",
+  "tex": {
+    "archive": {
+      "bytes": 24698,
+      "name": "arXiv-2505.00493v2.tar.gz",
+      "sha256": "ef2d8ef5dc03adb4b10a6ad265036b3628303726d945f6daeca4e791e88d6618"
+    },
+    "bytes": 83262,
+    "files": 3,
+    "sha256": "091139aedd180e86b557c8f26d7490d277b8de1c14d6b97b74403388a672a7da",
+    "url": "https://arxiv.org/src/2505.00493v2"
+  },
+  "title": "On the greatest prime factor and uniform equidistribution of quadratic polynomials",
+  "version": 2
+}

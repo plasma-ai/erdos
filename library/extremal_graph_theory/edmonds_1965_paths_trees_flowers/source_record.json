@@ -1,0 +1,82 @@
+{
+  "title": "Paths, Trees, and Flowers",
+  "authors": [
+    "Jack Edmonds"
+  ],
+  "journal": "Canadian Journal of Mathematics",
+  "volume": "17",
+  "year": 1965,
+  "printed_pages": "449-467",
+  "doi": "10.4153/CJM-1965-045-4",
+  "received_as_printed": "November 22, 1963",
+  "canonical_pdf": {
+    "file": "edmonds_1965_paths_trees_flowers.pdf",
+    "bytes": 2134728,
+    "physical_pages": 19,
+    "version": "Original published typesetting, digitized with Cambridge DOI/footer overlay"
+  },
+  "primary_urls": [
+    "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/08B492B72322C4130AE800C0610E0E21/S0008414X00039419a.pdf/paths_trees_and_flowers.pdf",
+    "https://www.cambridge.org/core/journals/canadian-journal-of-mathematics/article/paths-trees-and-flowers/08B492B72322C4130AE800C0610E0E21",
+    "https://api.crossref.org/works/10.4153/CJM-1965-045-4"
+  ],
+  "accessed": "2026-09-05",
+  "version_limit": "One published version retained; no manuscript equivalence or author erratum comparison is claimed.",
+  "metadata_notes": [
+    "Publisher online date 20 November 2018 and PDF digital creation/modification dates 2007/2022 concern digitization, not a revised mathematical version.",
+    "The publisher and Crossref give no issue number; the No.3 in the later Edmonds–Fulkerson citation is not independently confirmed.",
+    "Publisher HTML encodes a January publication date, while Crossref gives only 1965. No exact original publication month is inferred."
+  ],
+  "reading": {
+    "physical_pages_visually_read": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "printed_pages": [
+      449,
+      450,
+      451,
+      452,
+      453,
+      454,
+      455,
+      456,
+      457,
+      458,
+      459,
+      460,
+      461,
+      462,
+      463,
+      464,
+      465,
+      466,
+      467
+    ],
+    "method": "Complete original-detail Poppler renders; native text for navigation only; no OCR run.",
+    "additional_detail": "Printed pp.462–463 inspected at 260 dpi for the strict-inequality wording and base-cover cases."
+  },
+  "source_clarifications": [
+    "Section 5.5 prints less than one for the vertex sum; the required bound is at most one.",
+    "Section 5.7 generic base covers need explicit orders zero, one and two. The reconstructed base argument also supplies the odd-circuit restriction used in 5.9.",
+    "The forest reduction, Section 6.6 deletion cases, nested expansion order and finite-history argument for deferred expansion are made explicit."
+  ],
+  "proof_boundary": "The local blossom/forest algorithm, contraction and lifting, odd-set duality, cardinality LP deduction, intrinsic decomposition and deferred-expansion refinement are reconstructed. The separate weighted matching-polytope theorem and Witzgall–Zahn algorithm remain external. The conceptual time/memory discussion is not an implementation audit."
+}

@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Ricky Cipollini"
+  ],
+  "category": "math.CO",
+  "date": "2026-06-28",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 189837,
+    "files": 1,
+    "sha256": "df6b3b6106b9f6820ae8627835536cd60808aa7f5b422bd939326f043aa072bb",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2606.29361v1"
+  },
+  "id": "2606.29361",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 286225,
+    "previous": [],
+    "sha256": "64dcb70352119e048446a783e3feb51b961d6ea5155a746bd7aacb0a0d8cc93d",
+    "url": "https://arxiv.org/pdf/2606.29361v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2606.29361v1 [math.CO] 28 Jun 2026",
+  "tex": {
+    "archive": {
+      "bytes": 6314,
+      "name": "arXiv-2606.29361v1.tar.gz",
+      "sha256": "703b09219e35efa06bd716e37b9beba1ea0f1a459783b946efe1e9b81dc11995"
+    },
+    "bytes": 16611,
+    "files": 2,
+    "sha256": "21c4529d6a3e942ebd8e96bfa4756175c7182acc2a93ecc43d697fb77a7e500d",
+    "url": "https://arxiv.org/src/2606.29361v1"
+  },
+  "title": "A sharp 5/8 bound for an Erd\\H{o}s-S\\'os pairwise-sums problem",
+  "version": 1
+}

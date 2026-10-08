@@ -1,0 +1,103 @@
+---
+name: graph_coloring/petkov_2026_full_sequence_chromatic_cochromatic_gap/bounded_differences
+title: One-sided bounded differences for finite independent blocks
+desc: |
+  Derives the unit-change concentration bound used in seed amplification
+  from Hoeffding's lemma and a finite exposure martingale.
+created: 2026-09-10T09:37:38Z
+updated: 2026-10-05T05:52:35Z
+---
+
+***
+
+**Source and scope.** Samuil Petkov, *A Full-Sequence Quantitative Gap
+Between the Chromatic and Cochromatic Numbers of a Random Graph*,
+arXiv:2608.30604v1, submitted 31 August 2026, [PDF][pdf], p. 5,
+equation (1.3) and its stated one-sided variants. The finite-block case
+below is the strength used in [Lemma 10.2](lemma_10_2.md). This page
+supplies a compilation derivation; Petkov states the inequality without
+proving it and attributes it to McDiarmid (1989), Theorem 3.1.
+
+**Statement.** Let $m\geq1$ be an integer, let $X_1,\ldots,X_m$ be
+independent finite-valued random variables, and put $Y=f(X_1,\ldots,X_m)$
+for a real-valued function on their product of supports. Suppose changing
+one coordinate, with the others fixed, changes $f$ by at most one in
+absolute value. Then, for every real $t\geq0$,
+
+$$
+\mathbb P(Y-\mathbb EY\geq t)\leq e^{-2t^2/m},
+\qquad
+\mathbb P(\mathbb EY-Y\geq t)\leq e^{-2t^2/m}.
+$$
+
+## Proof
+
+First prove the needed finite-valued form of Hoeffding's lemma. For
+$U\in[a,b]$ put $q(s)=\log\mathbb E e^{sU}$. Under the probability
+weights proportional to $e^{sU}$, differentiation of the finite sum gives
+$q''(s)=\operatorname{Var}_s(U)$. With $c=(a+b)/2$,
+
+$$
+\operatorname{Var}_s(U)
+\leq\mathbb E_s(U-c)^2\leq(b-a)^2/4.
+$$
+
+Since $q(0)=0$ and $q'(0)=\mathbb EU$, Taylor's theorem gives, for all
+real $s$,
+
+$$
+\mathbb E e^{s(U-\mathbb EU)}\leq e^{s^2(b-a)^2/8}.
+$$
+
+For the exposure martingale set
+$M_i=\mathbb E[Y\mid X_1,\ldots,X_i]$, $M_0=\mathbb EY$, and
+$D_i=M_i-M_{i-1}$. Fix any positive-probability past
+$(X_1,\ldots,X_{i-1})$. Averaging $f$ over the independent future
+coordinates defines a function $g_i(x)$ of $X_i$. Its values differ by
+at most one: compare the two values of $f$ for each fixed future and
+then average. Independence makes that future distribution the same for
+both choices of $x$. Conditional on the past,
+$D_i=g_i(X_i)-\mathbb E[g_i(X_i)\mid X_1,\ldots,X_{i-1}]$ therefore
+has mean zero and range in an interval of length at most one. The lemma
+just proved gives
+
+$$
+\mathbb E[e^{sD_i}\mid X_1,\ldots,X_{i-1}]\leq e^{s^2/8}.
+$$
+
+Iterating conditional expectation, and using
+$\sum_{i=1}^mD_i=Y-\mathbb EY$, yields
+$\mathbb E e^{s(Y-\mathbb EY)}\leq e^{ms^2/8}$. For $t>0$, exponential
+Markov with $s=4t/m$ gives
+
+$$
+\mathbb P(Y-\mathbb EY\geq t)
+\leq e^{-st+ms^2/8}=e^{-2t^2/m}.
+$$
+
+Apply the same argument to $-Y$ for the lower tail. At $t=0$ both
+bounds are the elementary inequality that a probability is at most one.
+All expectations are finite sums, so no integrability or limiting
+interchange is needed. This proves the stated specialization.
+
+## Current verification
+
+The complete derivation of the stated finite-block inequality, including
+its Hoeffding input, has independent proof coverage within the conditional
+amplification unit. The [review and distinct grade](evidence/verify/_index.md)
+concern the exact retained original subject; the native rendition passed
+fidelity review and hand-check before it was filed. No fresh review of later
+documentary edits is implied. The statement and attribution on PDF p. 5 and
+bibliography on p. 51 were visually checked. The bibliography identifies Colin
+McDiarmid, *On the method of bounded differences*, *Surveys in
+Combinatorics, 1989*, LMS Lecture Note Series 141, pp. 148–188,
+DOI 10.1017/CBO9781107359949.008. That chapter and its Theorem 3.1 proof
+were not read here; the derivation above does not claim that coverage or
+reproduce an argument printed by Petkov. No external concentration theorem
+is assumed by this derivation. There is no formal replay or native tier.
+
+**Bears on.** [Lemma 10.1](lemma_10_1.md) uses the bound for its binomial
+tail, and [Lemma 10.2](lemma_10_2.md) uses both tails of a vertex-exposure
+statistic in the route to [[../wiki/problems/graph_coloring/E0625/_index|E625]].
+
+[pdf]: petkov_2026_full_sequence_chromatic_cochromatic_gap.pdf

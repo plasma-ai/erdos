@@ -1,0 +1,42 @@
+{
+  "authors": [
+    "Stijn Cambie",
+    "Andrea Freschi",
+    "Patryk Morawski",
+    "Kalina Petrova",
+    "Alexey Pokrovskiy"
+  ],
+  "category": "math.CO",
+  "date": "2026-01-15",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 290641,
+    "files": 2,
+    "sha256": "48e0ba85ae8692b1132f2bdc7690a775826a99111291dc6cbc492f636eb2d5d8",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2601.10238v1"
+  },
+  "id": "2601.10238",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 432505,
+    "previous": [],
+    "sha256": "1f0518e7dde45e934823950a4d878245148dd0f8833329465996e50b16f65dcb",
+    "url": "https://arxiv.org/pdf/2601.10238v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2601.10238v1 [math.CO] 15 Jan 2026",
+  "tex": {
+    "archive": {
+      "bytes": 38617,
+      "name": "arXiv-2601.10238v1.tar.gz",
+      "sha256": "78c50a277b3e9d9a7022948d11a708b6ae2c0350c7aa72247d76380488d8acbe"
+    },
+    "bytes": 96012,
+    "files": 5,
+    "sha256": "6d3cfc568d9d57e4de7e1ec7a56b519926d5bc7df1567620b8020384a987cf30",
+    "url": "https://arxiv.org/src/2601.10238v1"
+  },
+  "title": "Ramsey number of a cycle versus a graph of a given size",
+  "version": 1
+}

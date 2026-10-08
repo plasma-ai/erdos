@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Ingo Czerwinski",
+    "Alexander Pott"
+  ],
+  "category": "math.CO",
+  "date": "2024-06-30",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 496345,
+    "files": 1,
+    "sha256": "afd1b2fa6474ab21cea57ead4c16a3fc9aac2ed5884ab0d279e5e115c0fb3cfb",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2304.07906v3"
+  },
+  "id": "2304.07906",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 246467,
+    "previous": [],
+    "sha256": "6f34a3c7e87ee93de558b366103d0c98f5283542fdc0a8289caa9f2adb19fec3",
+    "url": "https://arxiv.org/pdf/2304.07906v3"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2304.07906v3 [math.CO] 30 Jun 2024",
+  "tex": {
+    "archive": {
+      "bytes": 22187,
+      "name": "arXiv-2304.07906v3.tar.gz",
+      "sha256": "2ee34cd15ee931d579b2c43844512424a701a5f764ecca0a5f8aaaba0945f494"
+    },
+    "bytes": 86731,
+    "files": 2,
+    "sha256": "b70c16fd5b4989c652472f66186aac24ccded05987f4cc84a8188d06b41d4abb",
+    "url": "https://arxiv.org/src/2304.07906v3"
+  },
+  "title": "Sidon sets, sum-free sets and linear codes",
+  "version": 3
+}

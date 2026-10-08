@@ -1,0 +1,1 @@
+{"boolean_assignments": 512, "degrees": [10, 7, 7, 7, 7, 7, 7, 7, 7], "displayed_link_edges": 10, "edge_deletion_certificates": 22, "edges": 22, "proper_two_colourings": 0, "schema": "e0834-bitmask-result-v1", "status": "verified", "three_colour_classes": 3, "vertex_deletion_certificates": 9, "vertices": 9}

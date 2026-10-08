@@ -1,0 +1,42 @@
+{
+  "authors": [
+    "Peter Engel",
+    "Owen Hammond-Lee",
+    "Yiheng Su",
+    "D\\'aniel Varga",
+    "P\\'al Zs\\'amboki"
+  ],
+  "category": "math.CO",
+  "date": "2025-06-13",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 1045097,
+    "files": 25,
+    "sha256": "ea81e0493f7b58eb7eeffc8349297c47309eec64e392e8ad86a1639c2faaf6ef",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2406.15317v3"
+  },
+  "id": "2406.15317",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 283872,
+    "previous": [],
+    "sha256": "ef390fed54a6715c61bae12ce3909526bd4ba48ab92a265280e78f3cac8177ca",
+    "url": "https://arxiv.org/pdf/2406.15317v3"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2406.15317v3 [math.CO] 13 Jun 2025",
+  "tex": {
+    "archive": {
+      "bytes": 126273,
+      "name": "arXiv-2406.15317v3.tar.gz",
+      "sha256": "0f7a2420b89b90ffa3aad77b297197fa94181cd303d629691874b1442029ab71"
+    },
+    "bytes": 2599621,
+    "files": 28,
+    "sha256": "75d50befe88d0cbc5f62d29a50f766609e5052f8ab1d85719111aee10d4dc806",
+    "url": "https://arxiv.org/src/2406.15317v3"
+  },
+  "title": "Diverse beam search to find densest-known planar unit distance graphs",
+  "version": 3
+}

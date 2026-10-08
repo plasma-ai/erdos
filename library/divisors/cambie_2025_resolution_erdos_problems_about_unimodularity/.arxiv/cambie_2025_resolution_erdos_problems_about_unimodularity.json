@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Stijn Cambie"
+  ],
+  "category": "math.NT",
+  "date": "2025-01-17",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 166011,
+    "files": 1,
+    "sha256": "131e4ece89aad1ee7238dbd4a4bc9e74206700c5f90ffd90f716cfb6c8d13bae",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2501.10333v1"
+  },
+  "id": "2501.10333",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 123219,
+    "previous": [],
+    "sha256": "d3d184c55a5eacdf051e286b87d9312b4ef505a75952f47bd1ab4a5c461577d7",
+    "url": "https://arxiv.org/pdf/2501.10333v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2501.10333v1 [math.NT] 17 Jan 2025",
+  "tex": {
+    "archive": {
+      "bytes": 7288,
+      "name": "arXiv-2501.10333v1.gz",
+      "sha256": "38c23dfc319749e7c82c6b5699bad71d4469c9d55b079cb8b2d95b5144d7a4e1"
+    },
+    "bytes": 20291,
+    "files": 1,
+    "sha256": "12923d836a5fc9db2bfc3405a596a3422ed9429abbe3da2d7cc91c3b78cc9dfc",
+    "url": "https://arxiv.org/src/2501.10333v1"
+  },
+  "title": "Resolution of Erd\\H{o}s' problems about unimodularity",
+  "version": 1
+}

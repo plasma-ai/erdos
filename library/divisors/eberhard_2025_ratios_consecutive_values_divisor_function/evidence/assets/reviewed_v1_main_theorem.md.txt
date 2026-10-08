@@ -1,0 +1,227 @@
+---
+name: library/divisors/eberhard_2025_ratios_consecutive_values_divisor_function/main_theorem
+title: Every positive rational ratio occurs infinitely often
+desc: |
+  Eberhard proves that every positive rational occurs infinitely often as a
+  ratio of consecutive values of the divisor function.
+created: 2026-09-05T02:10:00Z
+updated: 2026-09-05T03:22:08Z
+---
+
+***
+
+**Source.** Sean Eberhard, *Ratios of consecutive values of the divisor
+function*, Journal of Number Theory 281 (2026), 426--428, pp. 426--428
+(PDF pp. 1--3), DOI
+<https://doi.org/10.1016/j.jnt.2025.10.002>. The proof below is a
+complete rewrite of the published argument. Its only external input is the
+quoted sieve result recorded as [[library/divisors/eberhard_2025_ratios_consecutive_values_divisor_function/theorem_1|Theorem 1]].
+
+## Statement
+
+Let $d(n)=\tau(n)$ be the number of positive divisors of $n$. For every
+$q\in\mathbb Q_{>0}$, there are infinitely many positive integers $n$ such
+that
+
+$$
+\frac{d(n+1)}{d(n)}=q.
+$$
+
+In particular, the ratios $d(n+1)/d(n)$ are everywhere dense in
+$(0,\infty)$.
+
+## Proof
+
+Let $R$ be the set of positive rational values that occur infinitely often
+as $d(n+1)/d(n)$. We show that $R$ contains every positive rational.
+
+### Three reductions from the sieve input
+
+Take an even positive integer $a$ and set
+
+$$
+a_1=a,\qquad a_2=a+1,\qquad a_3=a+2,
+$$
+
+and $L_i(x)=a_i x+1$. The identities
+
+$$
+a_2L_1(x)-a_1L_2(x)=1,
+\qquad
+a_3L_2(x)-a_2L_3(x)=1,
+$$
+
+and
+
+$$
+\frac{a_3}{2}L_1(x)-\frac{a_1}{2}L_3(x)=1
+$$
+
+hold for every $x$. Let $r_1,r_2,r_3$ be pairwise coprime odd positive
+integers with $(r_i,a_i)=1$, and let $C$ be the largest prime factor of
+$a_1a_2a_3r_1r_2r_3$. Theorem 1 supplies infinitely many $x$ for at least
+one of the three pairs $(1,2)$, $(2,3)$, and $(1,3)$, with both members of
+that pair satisfying $L_i(x)/r_i\in E_2(C)$.
+
+Here $E_2(C)$ consists of products of two distinct primes, both larger than
+$C$. Hence each such product is coprime to every fixed multiplier occurring
+below, and it has four divisors.
+
+For the pair $(1,2)$, put $n=a_1L_2(x)$. The first identity gives
+$n+1=a_2L_1(x)$, and multiplicativity of $d$ gives
+
+$$
+\frac{d(n+1)}{d(n)}
+=\frac{d(a_2L_1(x))}{d(a_1L_2(x))}
+=\frac{d(a_2r_1)}{d(a_1r_2)}.
+$$
+
+For $(2,3)$, put $n=a_2L_3(x)$. The second identity similarly gives
+
+$$
+\frac{d(n+1)}{d(n)}
+=\frac{d(a_3r_2)}{d(a_2r_3)}.
+$$
+
+For $(1,3)$, put $n=(a_1/2)L_3(x)$. This is an integer because $a_1$
+is even, and the third identity gives
+
+$$
+\frac{d(n+1)}{d(n)}
+=\frac{d((a_3/2)r_1)}{d((a_1/2)r_3)}.
+$$
+
+Since the applicable pair occurs for infinitely many $x$, at least one of
+
+$$
+\frac{d(a_2r_1)}{d(a_1r_2)},\qquad
+\frac{d(a_3r_2)}{d(a_2r_3)},\qquad
+\frac{d((a_3/2)r_1)}{d((a_1/2)r_3)}
+$$
+
+belongs to $R$.
+
+### Equalizing the three candidates
+
+For readability put
+
+$$
+A=d(a_2r_1),\quad B=d(a_1r_2),\quad C_0=d(a_3r_2),
+$$
+
+$$
+D=d(a_2r_3),\quad E=d((a_3/2)r_1),\quad
+F=d((a_1/2)r_3).
+$$
+
+Choose distinct primes $\pi_1,\pi_2,\pi_3$ coprime to
+$a_1a_2a_3r_1r_2r_3$. They are odd because that product is even. Replace
+$r_i$ by $r_i\pi_i^{e_i-1}$, where $e_i$ are arbitrary positive integers.
+The hypotheses of Theorem 1 remain true: the new primes are distinct,
+avoid the coefficients and the old $r_i$, and the only nontrivial
+coefficient differences here are $1$ and $2$.
+
+Applying the preceding conclusion to the new $r_i$ shows that $R$ contains
+one of
+
+$$
+\frac{A e_1}{B e_2},\qquad
+\frac{C_0 e_2}{D e_3},\qquad
+\frac{E e_1}{F e_3}.
+$$
+
+Indeed, adjoining $\pi_i^{e_i-1}$ multiplies the relevant divisor count by
+$e_i$. Take
+
+$$
+e_1=A C_0 F^2,\qquad
+e_2=A D E F,\qquad
+e_3=B D E^2.
+$$
+
+All three displayed values are then equal to
+
+$$
+\frac{A C_0 F}{B D E}.
+$$
+
+Therefore
+
+$$
+\frac{d(a_2r_1)d(a_3r_2)d((a_1/2)r_3)}
+     {d(a_1r_2)d(a_2r_3)d((a_3/2)r_1)}\in R.
+\tag{1}
+$$
+
+### Producing a subgroup of rational values
+
+Let $k,\ell\geq0$, let
+$p_1,\ldots,p_k,q_1,\ldots,q_\ell$ be distinct odd primes, and let
+$x_i,y_i,u_i,v_i$ be positive integers for the displayed ranges. Empty
+products are understood to be $1$. Set
+
+$$
+a=4\prod_{i=1}^k p_i^{x_i}
+       \prod_{i=1}^{\ell}q_i^{u_i},
+\qquad
+(r_1,r_2,r_3)=\left(1,\prod_{i=1}^k p_i^{y_i},
+                         \prod_{i=1}^{\ell}q_i^{v_i}\right).
+$$
+
+The $r_i$ are odd and pairwise coprime. Also each $r_i$ is coprime to
+$a_i$ and to the differences $a_i-a_j$, which are $\pm1$ or $\pm2$.
+Thus (1) applies. The prime factorization formula
+$d(\prod p^{m_p})=\prod(m_p+1)$, together with cancellation of the
+$a+1$ and $(a+2)/2$ factors, gives
+
+$$
+\frac{d(a_2r_1)d(a_3r_2)d((a_1/2)r_3)}
+     {d(a_1r_2)d(a_2r_3)d((a_3/2)r_1)}
+=\frac{4}{3}
+  \prod_{i=1}^k
+  \frac{(x_i+1)(y_i+1)}{x_i+y_i+1}
+  \prod_{i=1}^{\ell}
+  \frac{u_i+v_i+1}{(u_i+1)(v_i+1)}.
+\tag{2}
+$$
+
+Define
+
+$$
+f(x,y)=\frac{(x+1)(y+1)}{x+y+1},
+\qquad x,y\geq1.
+$$
+
+Since $4/3=f(1,1)$, formula (2), with the $p$-blocks realizing positive
+powers and the $q$-blocks realizing inverse powers, shows directly that $R$
+contains the multiplicative subgroup $G$ of $\mathbb Q_{>0}$ generated by
+all $f(x,y)$. Indeed, given any finite signed word in these generators, put
+positive exponents in $p$-blocks and negative exponents in $q$-blocks; adjust
+the exponent of $f(1,1)$ by one to absorb the fixed factor $4/3$.
+
+### The subgroup is all positive rationals
+
+We prove by induction on primes that every prime belongs to $G$. First,
+
+$$
+2=f(2,3)\in G.
+$$
+
+If $p>2$ is prime, write $p=2x+1$. Every prime factor of $x+1$ is smaller
+than $p$, so the induction hypothesis gives $x+1\in G$. Since
+
+$$
+f(x,x)=\frac{(x+1)^2}{2x+1}=\frac{(x+1)^2}{p},
+$$
+
+we get $p=(x+1)^2/f(x,x)\in G$. Thus $G$ contains every prime and hence
+all of $\mathbb Q_{>0}$. Consequently $R=\mathbb Q_{>0}$, proving the
+statement.
+
+**Proof coverage.** The reductions, equalization, divisor-count calculation,
+and prime induction above rewrite the complete argument on Eberhard's
+published pp. 426--428 (PDF pp. 1--3). The proof of the external GGPY sieve
+statement is not recopied; its exact hypotheses and application to the three
+linear forms are recorded in [[library/divisors/eberhard_2025_ratios_consecutive_values_divisor_function/theorem_1|Theorem 1]].
+
+**Bears on.** [[problems/divisors/E0964|#964]].

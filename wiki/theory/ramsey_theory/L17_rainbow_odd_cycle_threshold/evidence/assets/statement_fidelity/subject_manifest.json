@@ -1,0 +1,106 @@
+{
+  "schema": "l17-english-subject-extraction-v1",
+  "status": "frozen English subject of native claim L17 as it stood on 2026-09-25T03:40:15Z: four content-anchored extracts of the claim card, the proof page and the problem page, each the output of one awk command on the committed text of that state, with the rule that regenerates them and a guard; prepared for the whole-statement fidelity audit",
+  "owner": "erdos/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold",
+  "record_home": "erdos/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/evidence/assets/statement_fidelity",
+  "role": "Administrative record of the English subject. It names what the fidelity review and the grade compare against the Lean declarations, by date, repository-relative path and content anchor; it is not itself a review, grade or kernel run and asserts no tier.",
+  "date": "2026-09-25",
+  "prepared_by": "the extraction preparer of the frozen English subject for the L17 statement-fidelity audit, in a fresh context (model: Claude Fable 5.1), who ran the four commands and the guard at the commit and asserts no tier",
+  "checked_source": {
+    "commit_date_utc": "2026-09-25T03:40:15Z",
+    "checkout": {
+      "path": "the checkout of the commit named below (repository-relative paths throughout)",
+      "state": "the repository as it stood on 2026-09-25T03:40:15Z (git rev-parse HEAD printed the checked state)",
+      "git status --porcelain --untracked-files=no": "printed nothing (the tracked tree equals that state; the files of this record are the only additions and are untracked)"
+    },
+    "claim": {
+      "id": "L17",
+      "card": "erdos/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/_index.md",
+      "proof_account": "erdos/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/_proof.md",
+      "problem_page": "erdos/problems/ramsey_theory/E0809.md",
+      "lean_module": "lean/Erdos/L17.lean",
+      "declarations": [
+        "Erdos.L17.statement",
+        "Erdos.L17.claim"
+      ],
+      "lean_import_closure": "the modules under lean/Erdos/Library/Problem809/ that lean/Erdos/L17.lean imports directly or transitively (Statement.lean, Shared/RainbowCycles.lean, FinalAssembly.lean, Comparison.lean, the BucicChenMa modules and the seven-cycle chain), as named in the assignment; the Lean subject is bound by the reviewer's and the grader's records, not by this one",
+      "manifest": "lean/Manifest.json (carries the L17 row)",
+      "environment": [
+        "lean/lean-toolchain",
+        "lean/lakefile.toml",
+        "lean/lake-manifest.json"
+      ]
+    }
+  },
+  "extraction_rule": {
+    "description": "Four awk ranges on content anchors, each run on the named page as it stood at the checked state, in the precedent's hardened forms (parts 2 and 4 stop at the next section heading or bold field label whatever its name). The concatenation of their outputs in the order below at the checked state is the English subject the fidelity review compares. Line numbers are not part of the rule; the ranges below are what the commands select at the checked state. Each command is recorded as run, the state it read restated as its date; the same command on the pages as they stood at another state is the rule at that state.",
+    "environment": "run from the repository root with bash -c; awk version 20200816 (the macOS awk); each command read the committed text of the checked state, never the working tree",
+    "parts": [
+      {
+        "part": "card frontmatter statement",
+        "path": "erdos/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/_index.md",
+        "command": "awk 'f && /^[^ ]/ {exit} /^statement:/ {f=1} f' on erdos/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/_index.md, run on the file as it stood on 2026-09-25T03:40:15Z",
+        "output_file": "subject_statement.txt",
+        "lines_at_checked_commit": "13-21",
+        "line_count": 9,
+        "bytes": 597,
+        "sha256": "<removed: sha256 of subject_statement.txt as of 2026-09-25>"
+      },
+      {
+        "part": "card text from ## Statement to the line before the next H2 heading other than ## Statement and ## Argument and formal surface",
+        "path": "erdos/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/_index.md",
+        "command": "awk '/^## Statement$/ {f=1} f && /^## / && !/^## (Statement|Argument and formal surface)$/ {exit} f' on erdos/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/_index.md, run on the file as it stood on 2026-09-25T03:40:15Z",
+        "output_file": "subject_index.txt",
+        "lines_at_checked_commit": "41-84 (the last a blank line)",
+        "line_count": 44,
+        "bytes": 2262,
+        "sha256": "<removed: sha256 of subject_index.txt as of 2026-09-25>"
+      },
+      {
+        "part": "proof page body after the closing --- of the frontmatter",
+        "path": "erdos/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/_proof.md",
+        "command": "awk 'f {print} /^---$/ {n++; if (n==2) f=1}' on erdos/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/_proof.md, run on the file as it stood on 2026-09-25T03:40:15Z",
+        "output_file": "subject_proof.txt",
+        "lines_at_checked_commit": "15-63",
+        "line_count": 49,
+        "bytes": 2682,
+        "sha256": "<removed: sha256 of subject_proof.txt as of 2026-09-25>"
+      },
+      {
+        "part": "problem page Statement block, from the line beginning **Statement.** to the line before the next line beginning with a bold field label",
+        "path": "erdos/problems/ramsey_theory/E0809.md",
+        "command": "awk '/^\\*\\*Statement\\.\\*\\*/ {f=1} f && /^\\*\\*[A-Z][A-Za-z ]*\\.\\*\\*/ && !/^\\*\\*Statement\\.\\*\\*/ {exit} f' on erdos/problems/ramsey_theory/E0809.md, run on the file as it stood on 2026-09-25T03:40:15Z",
+        "output_file": "subject_problem.txt",
+        "lines_at_checked_commit": "17-26 (the last a blank line)",
+        "line_count": 10,
+        "bytes": 335,
+        "sha256": "<removed: sha256 of subject_problem.txt as of 2026-09-25>"
+      }
+    ],
+    "concatenation": {
+      "order": [
+        "subject_statement.txt",
+        "subject_index.txt",
+        "subject_proof.txt",
+        "subject_problem.txt"
+      ],
+      "form": "the four raw outputs joined with no separator, as cat of the four files in order",
+      "bytes": 5876,
+      "sha256": "<removed: sha256 of the concatenation as of 2026-09-25>"
+    },
+    "guard": {
+      "description": "After the four parts are concatenated in order, this filter must print nothing; any output means a merge-conflict marker or a TODO line survived a cut and the extraction is invalid for that commit. Run in the record home. At the checked commit it prints nothing (grep exit status 1), as run by the extraction preparer.",
+      "command": "cat subject_statement.txt subject_index.txt subject_proof.txt subject_problem.txt | grep -nE '^(<<<<<<<|TODO)'",
+      "required": "no output (grep exit status 1)",
+      "result_at_checked_commit": {
+        "stdout": "",
+        "stderr": "",
+        "exit_status": 1
+      }
+    }
+  },
+  "fingerprints": "The byte counts above are regenerated fingerprints, not pins; the SHA-256 values this record held are not retained, under AGENTS.md convention 9 (Paths and dates, not hashes): the subject is identified by the repository-relative paths and the date, the four commands regenerated the parts from the pages as they stood on that date, and no program refuses on these values. The files under evidence/assets/ are excluded from pre-commit's trailing-whitespace and end-of-file-fixer hooks, so the filed bytes are the commands' outputs unchanged (subject_index.txt and subject_problem.txt end with a blank line).",
+  "later_commits": "a later commit is covered by this extraction only when every part is byte-identical to its output at the checked commit and the guard prints nothing on the four outputs concatenated at the candidate commit; any byte difference ends the coverage at that commit",
+  "not_asserted": "This record asserts nothing about the fidelity of Erdos.L17.statement to the text it freezes, about the claim's tier, or about the status of Problem 809.",
+  "filing_notes": "The record home and its parent folders evidence/ and evidence/assets/ did not exist at the commit and were created for these five files; evidence/assets/ folders carry no _index.md in this repository (as for two other claims), but the precedent's evidence/ folder has one, and none was written here because it is outside this assignment. The integrator runs the wiki update and lint on erdos/ when filing. No other file was created or changed."
+}

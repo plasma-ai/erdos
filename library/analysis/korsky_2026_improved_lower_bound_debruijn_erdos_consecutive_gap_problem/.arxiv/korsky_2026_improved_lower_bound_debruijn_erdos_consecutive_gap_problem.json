@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Samuel Korsky"
+  ],
+  "category": "math.CO",
+  "date": "2026-05-29",
+  "fetched": "2026-09-28",
+  "html": {
+    "bytes": 149111,
+    "files": 1,
+    "sha256": "272608bfdd49bd5ec9e2956a4ce29155eb5e667b2585937a93522dbfdba23466",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2605.30959v1"
+  },
+  "id": "2605.30959",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 268639,
+    "previous": [],
+    "sha256": "1761bd568a451cec33909a16cfd4092951ea4b897eeb00ee057c91c19163b9d8",
+    "url": "https://arxiv.org/pdf/2605.30959v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2605.30959v1 [math.CO] 29 May 2026",
+  "tex": {
+    "archive": {
+      "bytes": 6202,
+      "name": "arXiv-2605.30959v1.tar.gz",
+      "sha256": "85652c8d063064fc201aca5a6db4880e7458c7f0a98f8799bcd0f3cd9e508d62"
+    },
+    "bytes": 17429,
+    "files": 2,
+    "sha256": "71caa6cab41760897abdefae20102b36f2fd3ddf33eacb4dcd7572973f93f0f0",
+    "url": "https://arxiv.org/src/2605.30959v1"
+  },
+  "title": "An Improved Lower Bound for the de Bruijn--Erd\\H{o}s Consecutive Gap Problem",
+  "version": 1
+}

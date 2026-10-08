@@ -1,0 +1,106 @@
+{
+  "author": "P. Erdős",
+  "title": "On a lemma of Littlewood and Offord",
+  "publication": {
+    "journal": "Bulletin of the American Mathematical Society",
+    "volume": 51,
+    "year": 1945,
+    "pages": "898-902",
+    "received_date": "1945-03-28"
+  },
+  "selected_source": {
+    "file": "erdos_1945_lemma_littlewood_offord.pdf",
+    "bytes": 387258,
+    "physical_pages": 5,
+    "printed_pages": [
+      898,
+      899,
+      900,
+      901,
+      902
+    ],
+    "version": "Published-page archive scan; the copy read, not held in the corpus",
+    "archive_url": "https://users.renyi.hu/~p_erdos/1945-04.pdf",
+    "unchanged": true
+  },
+  "digital_metadata": {
+    "creator": "OmniPage 12",
+    "pdf_version": "1.0",
+    "creation_date": "2004-02-05",
+    "qualification": "Digital scan metadata; not the publication date."
+  },
+  "provenance": {
+    "selected_original": "The copy read is the archive PDF as acquired; the corpus does not hold it.",
+    "bibliographic_check_date": "2026-09-05",
+    "bounded_search": "Two AMS/Project Euclid restricted searches gave AMS bibliographic corroboration; no distinct original version was established. The Crossref record, read 2026-10-07, gives issue 12 and DOI 10.1090/S0002-9904-1945-08454-7; MathSciNet MR Lookup and the zbMATH API, read the same day, give the same DOI.",
+    "new_remote_byte_equivalence_asserted": false,
+    "doi": "10.1090/S0002-9904-1945-08454-7",
+    "mr_zbl_references": "MR0014608; Zbl 0063.01270; read 2026-10-07 from MathSciNet MR Lookup and the zbMATH API."
+  },
+  "reading": {
+    "all_physical_pages_visually_read": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "method": "Original-detail page images; native text used for navigation only.",
+    "ocr_run": false
+  },
+  "compiled_local_proofs": [
+    "theorem_1",
+    "corollary_p899",
+    "binomial_bounds",
+    "theorem_2",
+    "theorem_4",
+    "theorem_3",
+    "lemma_p900",
+    "theorem_5",
+    "boundary_weight_real"
+  ],
+  "source_precision": [
+    {
+      "location": "printed899 corollary",
+      "kind": "printed strict inequality corrected",
+      "detail": "The valid bound is <=r B_N for integer r>=1. At r=1, even N and all-one inputs attain equality."
+    },
+    {
+      "location": "printed900-901",
+      "kind": "printed rank-variable inconsistency normalized",
+      "detail": "After n=2m several central ranks use n where m is intended; the reconstruction uses ground-set size N and explicit ranks."
+    },
+    {
+      "location": "printed901 Theorem5 proof",
+      "kind": "printed first-missing index corrected",
+      "detail": "One-based first absent index can be r+1; use rank a+d with 1<=d<=r."
+    },
+    {
+      "location": "printed900-901 path lemma",
+      "kind": "directed interface supplied",
+      "detail": "Increasing path counts and chain compression are linked through an upward-oriented integral-flow reduction."
+    },
+    {
+      "location": "printed899-901",
+      "kind": "omitted details expanded",
+      "detail": "Projection scaling, all shadow parities and tie, simultaneous chain replacement, and finite potential termination are explicit."
+    },
+    {
+      "location": "statements and closing discussion",
+      "kind": "domain and historical qualifications",
+      "detail": "Assignment multiplicity, open/half-open boundaries, positive integer radii, distinct subsets, large-r truncation and dated conjecture scopes are explicit."
+    }
+  ],
+  "external_input": {
+    "result": "Finite directed integral max-flow/min-cut",
+    "canonical_page": "library/extremal_graph_theory/ford_1957_maximal_network_flows_hitchcock/integer_max_flow_min_cut",
+    "supporting_page": "library/extremal_graph_theory/ford_1957_maximal_network_flows_hitchcock/node_capacities",
+    "qualification": "Exact later external input for a compilation expansion of the Menger method; not an attribution of Ford1957 to the original1945 paper."
+  },
+  "limits": [
+    "No author-issued erratum is claimed.",
+    "The historical Hilbert, complex boundary-weight and origin-centered lower conjectures are statement pointers; only the real boundary-weight special case is proved here.",
+    "No present-day conjecture-status, formal verification, optimal complex constant or arbitrary-small-real-radius bound is asserted.",
+    "The original Sperner1928, Konig-book and Littlewood-Offord1943 proofs are not separately reproduced; Sperner's needed conclusion follows from this source's Theorem4."
+  ]
+}

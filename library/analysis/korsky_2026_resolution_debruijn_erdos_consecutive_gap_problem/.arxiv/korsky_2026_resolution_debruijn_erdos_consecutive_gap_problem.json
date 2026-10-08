@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Samuel Korsky"
+  ],
+  "category": "math.CO",
+  "date": "2026-09-09",
+  "fetched": "2026-09-28",
+  "html": {
+    "bytes": 363669,
+    "files": 1,
+    "sha256": "9acfd6c670fea382aea6947b226366aec93adc1a06393fe43fa9ffee00973f70",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2609.07196v2"
+  },
+  "id": "2609.07196",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 396636,
+    "previous": [],
+    "sha256": "7db1be0b8de11968473c09a4976bc6a1e5c779480dc274b1f97062cdf0055f1b",
+    "url": "https://arxiv.org/pdf/2609.07196v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2609.07196v2 [math.CO] 9 Sep 2026",
+  "tex": {
+    "archive": {
+      "bytes": 13714,
+      "name": "arXiv-2609.07196v2.tar.gz",
+      "sha256": "8475ca5248538450d4aea556e1898415444e1ac4e9d48bac687f543fff5fdb84"
+    },
+    "bytes": 39094,
+    "files": 2,
+    "sha256": "596837eb70d99534c691869287ea897963228b53ff7ff57bb7f545212bb99972",
+    "url": "https://arxiv.org/src/2609.07196v2"
+  },
+  "title": "A Resolution of the de Bruijn--Erd\\H{o}s Consecutive-Gap Problem",
+  "version": 2
+}

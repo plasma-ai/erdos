@@ -1,0 +1,1023 @@
+L17 STATEMENT-FIDELITY REVIEW OF THE SOURCES AS THEY STOOD ON 2026-09-25T03:40:15Z
+==================================================================================
+
+Verdict for the whole statement: refutation-failed.
+
+Reviewer: the statement-fidelity reviewer for the L17 acceptance, in a fresh
+context, under a refutation charge (model: Claude Fable 5.1). Review date
+2026-09-25 (UTC). The report follows the report contract of
+docs/lean_authoring.md "Statement fidelity and validation" (exact source and
+Lean revisions, unfolding of every necessary definition, comparison of objects,
+quantifiers, hypotheses, conventions, constants, exceptional cases and
+conclusion, every clause and the exact source specialization accounted for),
+in the part names of docs/verification.md "Whole-claim report" (Erdos form),
+with the checklist verdicts of docs/verification.md "Audit checklist" (Erdos
+form) and the canonical modes of the shared "Audit checklist". Verdict words
+are written in full throughout.
+
+
+1. SUBJECT AND INDEPENDENCE
+---------------------------
+
+1.1 Frozen subject, by path and date
+
+  subject                      the repository as it stood on 2026-09-25T03:40:15Z,
+                               the UTC time of the checked state (lean/ changed
+                               more than once that day, so the time names it)
+  trees                        the repository tree and the lean/, lean/Erdos and
+                               lean/Erdos/Library/Problem809 subtrees of that
+                               state, named by path and date; the tree ids this
+                               record held are not retained
+  checkout                     the worktree checked out at the commit (a linked
+                               worktree of the repository); git rev-parse HEAD
+                               printed the commit and git status --porcelain
+                               --untracked-files=no printed nothing at the start
+                               and at the end of the review; the only additions
+                               are untracked files under
+                               wiki/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/evidence/
+  toolchain                    lean/lean-toolchain: leanprover/lean4:v4.32.0-rc1
+                               (lake env lean --version: Lean 4.32.0-rc1,
+                               commit b4812ae53eea93439ad5dce5a5c26591c31cb697,
+                               arm64-apple-darwin24.6.0)
+  Mathlib                      79aee35d9696d759b73eed71d7dde666750bc35e per
+                               lean/lakefile.toml and lean/lake-manifest.json;
+                               the package checkout under lean/.lake/packages/mathlib
+                               is at that revision with an empty git status
+  Lean files under lean/Erdos  1732 .lean files (git ls-files); 195 of them
+                               under lean/Erdos/Library/Problem809/
+  manifest                     lean/Manifest.json (1769 lines): 1732 modules
+                               (Erdos.L17 at line 11), declarations line 1742,
+                               the L17 claim row lines 1758-1769
+
+  The subject's date and paths agree with subject_manifest.json of the frozen
+  English subject (its checked_source block).
+
+1.2 English subject
+
+  The frozen extraction under
+  wiki/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/evidence/assets/statement_fidelity/
+  (subject_statement.txt, subject_index.txt, subject_proof.txt,
+  subject_problem.txt, subject_manifest.json), untracked at the commit. Before
+  reading anything else, the four awk commands of subject_manifest.json were
+  re-run verbatim at the commit (bash -c, on each page as it stood at that
+  time, awk 20200816) and each output compared byte for byte with the filed
+  part: all four identical (597, 2262, 2682 and 335 bytes; concatenation
+  5876 bytes); the guard printed nothing (grep exit status 1). The four parts are:
+
+  part 1  wiki/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/_index.md
+          lines 13-21: the card frontmatter statement: field.
+  part 2  the same page lines 41-84: "## Statement" and "## Argument and formal
+          surface", up to the line before "## Current standing".
+  part 3  wiki/theory/ramsey_theory/L17_rainbow_odd_cycle_threshold/_proof.md
+          lines 15-63: the proof page body.
+  part 4  wiki/problems/ramsey_theory/E0809.md lines 17-26: the Problem 809
+          "**Statement.**" block.
+
+1.3 Lean subject
+
+  Declarations   Erdos.L17.statement (def, Prop) and Erdos.L17.claim (theorem)
+                 in lean/Erdos/L17.lean, namespace lines 23-123:
+                 EveryCopyRainbow 26-28, Admissible 32-34, antiRamsey 38-39,
+                 ThresholdFor 42-45, statement 48-49,
+                 rainbow_subgraph_exact_edges 53-87, admissible_cycleGraph_iff
+                 92-101, antiRamsey_cycleGraph 105-112, claim 115-121.
+  Imports        lines 1-3: Mathlib.Analysis.Asymptotics.AsymptoticEquivalent,
+                 Erdos.Library.Problem809.FinalAssembly,
+                 Erdos.Library.Problem809.CycleCopyBridge. The transitive
+                 closure under lean/Erdos/ is L17 plus all 195 modules under
+                 Problem809/ (9 at the root, 92 under BucicChenMa/, 85 under
+                 SevenCycle/, 9 under UpperBound/); no other module under
+                 lean/Erdos/ is reached (computed from the import lines,
+                 section 7.1).
+  Manifest row   id L17, module Erdos.L17, decls statement and claim,
+                 depends [], compiler [], axioms
+                 [propext, Classical.choice, Quot.sound], pretty statement
+                 "∀ (k : ℕ), 3 ≤ k → Erdos.L17.ThresholdFor k".
+  Blobs          every one of the 196 closure sources in the worktree is
+                 byte-identical to its blob at the commit (git show | cmp).
+  Two names in the assignment resolve as follows: "Shared/RainbowCycles.lean"
+  is lean/Erdos/Library/Problem809/RainbowCycles.lean (there is no Shared/
+  folder), and "Erdos.Library.Problem809.statement_proved" is the declaration
+  Erdos809.statement_proved of module Erdos.Library.Problem809.FinalAssembly
+  (the library's namespace is Erdos809, not the module path).
+
+1.4 Allowed material and what was actually read
+
+  Allowed by the assignment and read: the frozen extraction; the contract
+  pages docs/verification.md, docs/lean_authoring.md and docs/anatomy.md in
+  the named sections and AGENTS.md conventions 2 and 9, all from the worktree
+  at the commit; the precedent record folder of another claim for its shapes
+  (its _index.md, review.txt, review_reads.json, ReviewerProbe.lean and
+  run_probe_sh.txt in full, the first 80 lines of its probe_output.txt, and a
+  directory listing); the claim card, proof page and problem page in full;
+  lean/Erdos/L17.lean in full; the library modules named in review_reads.json
+  (the statement-bearing modules in full, the Bucić–Chen–Ma assembly and
+  reduction modules in full or in the named ranges, the remaining 195 modules
+  by import lines and programmatic sweep); lean/lean-toolchain,
+  lean/lakefile.toml, lean/lake-manifest.json and lean/Manifest.json; Mathlib
+  sources under lean/.lake/packages/mathlib for Copy, Hom.mapEdgeSet,
+  Hom.ofLE, cycleGraph, EdgeLabeling, edgeSet, the finite edge count,
+  IsEquivalent, IsLittleO, the ℕ infimum, Nat.card and the lemmas the probe
+  uses; the Lake trace files of the 196 closure modules and Lake's own hash
+  function (Trace.lean in the toolchain sources). No evidence/verify folder
+  other than the precedent's, no research page, no library card, no PDF, no
+  workspace note, no audit program, no refusal suite, no commit diff and no
+  message from any other role was read. Every git command run was read-only
+  (rev-parse, show, status, ls-files, log, show --stat, cmp on show output).
+  No network command was run. No lake build was run (the assignment forbids
+  it); lake was invoked only as lake env lean --version and lake env lean on
+  the probe and on three small scratch scripts (an import check and two hash
+  checks), one process at a time.
+
+1.5 The frozen subject stayed unchanged
+
+  The worktree resolved to the commit and its tracked tree was clean at the
+  start and at the end. The .olean files the probe imported were not
+  rebuilt during the review (L17.olean and FinalAssembly.olean keep their
+  pre-review modification times), and section 7.5 shows they were compiled
+  from the committed sources.
+
+1.6 Exposure disclosure
+
+  E1  The operating environment displayed, at the start, the repository's
+      branch name and the subject lines of five recent commits of the main
+      checkout (about the library conversion and agent presets; none about
+      L17). No mathematical content.
+  E2  The assignment names the claim card, the proof page and the problem
+      page as parts of the claim, and they were printed in full. This exposed
+      text outside the frozen extraction: the card's "Current standing",
+      "Verification" and "Remaining obligations" sections (lines 85-108: the
+      claim stands at tier 0, no fidelity audit filed, the build commands),
+      the proof page frontmatter (lines 1-14), and the problem page's
+      Formulation, Status, Source, References, Formalization and Current
+      assessment sections (lines 27-236). Materiality, for the grader: none of
+      that text is a verdict of a review of L17 and none argues for the claim;
+      it states that the audit is pending. Two facts from it were used here,
+      both source characterizations on a page the assignment named: the
+      problem page's rendering of Bucić–Chen–Ma Theorem 1.2 (lines 157-162,
+      the formula f(n,e,C_{2k+1}) = e/2 + (n/2)√(e − n²/4) + o(n²) for k ≥ 4
+      and ⌊n²/4⌋+1 ≤ e ≤ C(n,2)), used in section 7.3 to compare the shape of
+      BucicChenMa.FullDensityFormula, and its Formulation paragraph's remark
+      that the 1989 definition takes exactly e edges. Nothing in the verdict,
+      the unfolding or the clause comparison comes from that text.
+  E3  The precedent record's files were read for their shapes as the
+      assignment directed; they concern another claim and carry no L17
+      content. Reading review.txt in full exposed its attack routes, all
+      specific to the plane construction; the generic moves (printing, rfl
+      unfoldings, #print axioms) are the natural checks for any statement and
+      were planned before that reading.
+  E4  A listing of the record home showed two files this review did not
+      create, run_clean_gate.sh and clean_gate_log.txt, evidently another
+      role's clean-gate output. Neither was opened.
+  E5  The build-freshness check ran git log on lean/ and on
+      Problem809/MathlibCompat.lean and git show --stat HEAD -- lean/, which
+      displayed five commit subjects and dates of the formalization's landing
+      and the list of paths the commit changed under lean/. History metadata
+      only; no diff was read.
+  E6  subject_manifest.json's administrative fields (prepared_by,
+      filing_notes) mention two other claims' evidence-folder conventions and
+      the integrator's filing step. Administrative only.
+  Nothing else outside the assignment was read.
+
+
+2. RESTATEMENT (reviewer's own words)
+-------------------------------------
+
+  Fix an integer k ≥ 3 and write m = 2k + 1 (an odd number, at least 7). For
+  each natural number n define a(n) as follows. Consider simple graphs G on
+  exactly n vertices (no loops, no multiple edges) having exactly ⌊n²/4⌋ + 1
+  edges, together with an assignment of colors from a palette of r colors to
+  the edges of G (a coloring may leave palette colors unused). Call such a
+  pair good when every copy of the m-cycle in G is rainbow, where a copy of
+  the m-cycle is an injective map from the m cycle vertices into G sending
+  each pair of consecutive cycle vertices to adjacent vertices of G (further
+  adjacencies among the image vertices, chords, are allowed), and rainbow
+  means the m image edges of the copy receive m pairwise distinct colors.
+  Then a(n) is the least r for which a good pair exists. When no graph on n
+  vertices has ⌊n²/4⌋ + 1 edges at all (exactly n = 0, 1, 2), a(n) is set to
+  0. The claim is: a(n) − n²/8 = o(n²) as n → ∞, equivalently a(n)/n² → 1/8,
+  equivalently for every ε > 0 there is N with |a(n)/n² − 1/8| < ε for all
+  n ≥ N. This holds for every k ≥ 3. Nothing is asserted about the value of
+  a(n) at any particular n, about the rate of convergence, or about the
+  cycles C₃ and C₅ (k = 1, 2).
+
+
+3. THE LEAN TEXT AT THE COMMIT (lean/Erdos/L17.lean lines 19-49 and 115-121, verbatim)
+-------------------------------------------------------------------------------------
+
+  set_option autoImplicit false
+
+  open scoped Asymptotics
+
+  namespace Erdos.L17
+
+  /-- Every copy of `H` in `G` has pairwise distinct edge colors. -/
+  def EveryCopyRainbow {U V : Type*} {c : ℕ} (H : SimpleGraph U) (G : SimpleGraph V)
+      (C : G.EdgeLabeling (Fin c)) : Prop :=
+    ∀ f : H.Copy G, Function.Injective (fun e : H.edgeSet => C (f.mapEdgeSet e))
+
+  /-- Some graph with `n` vertices and exactly `e` edges carries a coloring of
+  its edges by `c` colors under which every copy of `H` is rainbow. -/
+  def Admissible (n e c : ℕ) {U : Type*} (H : SimpleGraph U) : Prop :=
+    ∃ (G : SimpleGraph (Fin n)) (C : G.EdgeLabeling (Fin c)),
+      Nat.card G.edgeSet = e ∧ EveryCopyRainbow H G C
+
+  /-- The anti-Ramsey number `χ_S(n, e, H)`: the least admissible palette size,
+  and zero when no graph on `n` vertices has `e` edges. -/
+  noncomputable def antiRamsey (n e : ℕ) {U : Type*} (H : SimpleGraph U) : ℕ :=
+    sInf {c : ℕ | Admissible n e c H}
+
+  /-- `χ_S(n, ⌊n²/4⌋ + 1, C_{2k+1})` is asymptotically equivalent to `n²/8`. -/
+  def ThresholdFor (k : ℕ) : Prop :=
+    (fun n : ℕ =>
+      (antiRamsey n (n * n / 4 + 1) (SimpleGraph.cycleGraph (2 * k + 1)) : ℝ))
+      ~[Filter.atTop] (fun n : ℕ => (n : ℝ) ^ 2 / 8)
+
+  /-- For every `k ≥ 3`, `χ_S(n, ⌊n²/4⌋ + 1, C_{2k+1}) ∼ n²/8`. -/
+  def statement : Prop :=
+    ∀ k : ℕ, 3 ≤ k → ThresholdFor k
+
+  ...
+
+  /-- The assembled at-least-edge theorem supplies the exact-edge statement. -/
+  theorem claim : statement := by
+    intro k hk
+    have h := Erdos809.statement_proved k hk
+    unfold Erdos809.ThresholdFor at h
+    unfold ThresholdFor
+    have hm : 3 ≤ 2 * k + 1 := by omega
+    simpa only [antiRamsey_cycleGraph hm] using h
+
+  Lines 1-17 are the three import lines, a blank line and the module
+  docstring; lines 51-112 are the three transfer theorems (section 7.2). The
+  file has no variable, notation, macro, instance, axiom or attribute
+  command; its one open is `open scoped Asymptotics` (the `~[l]` notation).
+
+
+4. UNFOLDING, STEP BY STEP (to Mathlib's objects, at Mathlib 79aee35d)
+----------------------------------------------------------------------
+
+  Each step names the Mathlib file and lines read and the probe section
+  (section 8) that confirmed it in the compiled environment of Erdos.L17.
+
+  U1  SimpleGraph (Fin n). Mathlib's simple graph structure (an irreflexive
+      symmetric adjacency relation) on the n-element type Fin n: a simple
+      graph with exactly n vertices. `Fin n` is core's type of naturals below
+      n. The universe of the pattern graph's vertex type is polymorphic in
+      the definitions (pp.universes: EveryCopyRainbow.{u_1, u_2}) and is
+      instantiated at Fin (2k+1) : Type in ThresholdFor; statement : Prop
+      carries no universe parameter (probe 3).
+
+  U2  G.edgeSet and Nat.card. Mathlib/Combinatorics/SimpleGraph/Basic.lean
+      lines 465-474: edgeSet G : Set (Sym2 V) is the set of unordered pairs
+      s(v, w) with G.Adj v w. Nat.card (Mathlib/SetTheory/Cardinal/Finite.lean
+      lines 39-42) is the cardinality as a natural number, 0 for an infinite
+      type; here the subtype is finite, and probe 10 proves
+      Nat.card G.edgeSet = G.edgeFinset.card for every G on Fin n (Finite.lean
+      line 121, edgeFinset_card). So `Nat.card G.edgeSet = e` says G has
+      exactly e edges.
+
+  U3  EdgeLabeling. Mathlib/Combinatorics/SimpleGraph/Coloring/EdgeLabeling.lean
+      lines 37-38: EdgeLabeling G K := G.edgeSet → K (probe 6: rfl). With
+      K = Fin c this is an assignment of one of c colors to every edge: an
+      "r-coloring" with r = c, colors possibly unused. Probe 10
+      (admissible_mono): a larger palette is admissible whenever a smaller one
+      is (compose with Fin.castLE), so "the least r" is the threshold of an
+      upward-closed set of palette sizes.
+
+  U4  Copy. Mathlib/Combinatorics/SimpleGraph/Copy.lean lines 84-88:
+      structure Copy (A : SimpleGraph α) (B : SimpleGraph β) with fields
+      toHom : A →g B (a homomorphism: a vertex map sending adjacent vertices
+      to adjacent vertices; Maps.lean) and injective' : Injective toHom.
+      Lines 115-117: mapEdgeSet f : A.edgeSet ↪ B.edgeSet with toFun :=
+      f.toHom.mapEdgeSet, and Maps.lean lines 361-364: Hom.mapEdgeSet e =
+      ⟨Sym2.map f e, _⟩. Probe 6: ((f.mapEdgeSet e) : Sym2 V) = Sym2.map f e by
+      rfl. A copy is therefore an injective vertex map preserving adjacency,
+      not required to reflect it: chords in the host graph are allowed. Probe
+      9 (fourCycleInK4) exhibits a copy of the 4-cycle in K₄, which has both
+      chords.
+
+  U5  cycleGraph. Mathlib/Combinatorics/SimpleGraph/CycleGraph.lean lines
+      29-33: cycleGraph : (n : ℕ) → SimpleGraph (Fin n), ⊥ for n = 0, 1 and
+      Adj a b := a − b = 1 ∨ b − a = 1 (in Fin n, arithmetic modulo n) for
+      n ≥ 2; lines 60-61, cycleGraph_adj': Adj u v ↔ (u − v).val = 1 ∨
+      (v − u).val = 1 for every n. For m = 2k+1 ≥ 7 this is the m-cycle with
+      vertices 0, ..., m−1 and edges {i, i+1 mod m}. Probe 9: cycleGraph_adj_iff
+      by the Mathlib lemma; copy_gives_indexed_cycle: for m ≥ 3, a copy f of
+      cycleGraph m in G is an injective map with G.Adj (f i) (f (i+1)) for
+      every i : Fin m, i.e. "a cycle on m distinct vertices of the graph";
+      Fintype.card (cycleGraph 7).edgeSet = 7 by decide. The library's
+      CycleCopyBridge.lean lines 62-89 prove the converse direction as part of
+      everyCycleRainbow_iff_everyCopyRainbow (#check in probe 14).
+
+  U6  EveryCopyRainbow H G C := ∀ f : H.Copy G, Function.Injective
+      (fun e : H.edgeSet => C (f.mapEdgeSet e)) (probe 6: Iff.rfl). Since
+      f.mapEdgeSet is injective (probe 9, copy_mapEdgeSet_injective), this
+      says the m image edges of the copy carry pairwise distinct colors;
+      probe 9 (everyCopyRainbow_pairwise) states it in that form. The body is
+      literally the library's Erdos809.EveryCopyRainbow (RainbowCycles.lean
+      lines 18-22; probe 6: Iff.rfl between the two).
+
+  U7  Admissible n e c H := ∃ G : SimpleGraph (Fin n), ∃ C : G.EdgeLabeling
+      (Fin c), Nat.card G.edgeSet = e ∧ EveryCopyRainbow H G C (probe 6:
+      Iff.rfl): some graph on n vertices with exactly e edges carries a
+      c-coloring under which every copy of H is rainbow. The library's
+      AdmissibleAtLeast (RainbowCycles.lean lines 26-28) has e ≤ Nat.card
+      G.edgeSet in place of the equality; that is the one difference between
+      the claim's objects and the library's, and section 7.2 and probe 11
+      close it.
+
+  U8  antiRamsey n e H := sInf {c : ℕ | Admissible n e c H} (probe 6: rfl).
+      The ℕ infimum, Mathlib/Order/Lattice/Nat.lean lines 29-31: sInf s is
+      Nat.find (the least element) when s is nonempty and 0 when s is empty;
+      Nat.sInf_mem (line 79), Nat.sInf_le (line 90), Nat.sInf_eq_zero (line
+      57). Probe 10: antiRamsey n e H = 0 whenever no graph on Fin n has e
+      edges (antiRamsey_eq_zero_of_infeasible), with the instances n = 0 and
+      n = 2 at e = n*n/4+1 computed; feasible_iff: n*n/4 + 1 ≤ n.choose 2 ↔
+      3 ≤ n, so the exceptional orders are exactly n = 0, 1, 2 (edge_count_le_choose:
+      every graph on Fin n has at most n.choose 2 edges, and
+      Erdos809.threshold_edge_feasible gives the range for n ≥ 4, n = 3 by
+      decide); for every n ≥ 3 the admissible set is nonempty
+      (exists_graph_with_edges and admissible_of_exists_graph: a graph with
+      exactly e edges colored injectively is admissible with e colors) and
+      antiRamsey is its least element, attained (antiRamsey_isLeast). So the
+      Lean value is "the least r" at every feasible order and 0 at the three
+      infeasible ones, as the English says.
+
+  U9  n * n / 4 + 1. Natural-number division is the floor: probe 8
+      (floor_quarter, by Nat.floor_eq_iff and Nat.div_add_mod):
+      ⌊(n:ℝ)²/4⌋₊ = n * n / 4, hence n * n / 4 + 1 = ⌊n²/4⌋ + 1; instances
+      3 ↦ 3, 5 ↦ 7, 6 ↦ 10, 7 ↦ 13, 16 ↦ 65 by rfl. The English's
+      ⌊n²/4⌋+1 is the Turán number t₂(n) plus one.
+
+  U10 ThresholdFor k := (fun n => (antiRamsey n (n*n/4+1) (cycleGraph (2k+1)) : ℝ))
+      ~[Filter.atTop] (fun n => (n:ℝ)^2 / 8) (probe 6: Iff.rfl). pp.all
+      (probe 2): the cast is Nat.cast with Real.instNatCast; the division is
+      HDiv ℝ ℝ ℝ through Real.instDivInvMonoid; the power is Monoid.npow with
+      exponent the ℕ literal 2; the 8 is the real numeral via
+      instOfNatAtLeastTwo; the filter is Filter.atTop on ℕ with
+      Nat.instPreorder; the relation is Asymptotics.IsEquivalent with the
+      seminormed group structure of ℝ. Mathlib/Analysis/Asymptotics/Defs.lean
+      lines 223-224: IsEquivalent l u v := (u − v) =o[l] v, with IsLittleO
+      (lines 187-188) the ∀ c > 0 IsBigOWith form; AsymptoticEquivalent.lean
+      lines 208-209: isEquivalent_iff_tendsto_one. Probe 7 proves, for every
+      k, the three readings the English uses: ThresholdFor k ↔
+      (u − n²/8) =o[atTop] n² (the "n²/8 + o(n²)" reading, via
+      isLittleO_const_mul_right_iff with the nonzero constant 1/8);
+      ThresholdFor k ↔ Tendsto (u/n²) atTop (nhds (1/8)) (the ratio reading,
+      via isEquivalent_iff_tendsto_one and the identity u/(n²/8) =
+      (u/n²)·8, which holds for all n including n = 0 under the division-by-
+      zero convention); and the ε–N reading through Metric.tendsto_atTop and
+      Real.dist_eq. The constant is the real 1/8 = 0.125 (probe 6).
+
+  U11 statement := ∀ k : ℕ, 3 ≤ k → ThresholdFor k (probe 6: Iff.rfl);
+      pp.explicit: @LE.le ℕ instLENat 3 k. "Every integer k ≥ 3" is every
+      natural number k with 3 ≤ k. #check @Erdos.L17.statement : Prop with no
+      parameters; #check @Erdos.L17.claim : Erdos.L17.statement with no
+      binders (probe 1, 2, 5).
+
+  U12 claim. #print Erdos.L17.claim (probe 1) shows the proof term: for k and
+      hk, h := Erdos809.statement_proved k hk, then Eq.mpr along the
+      congruence built from antiRamsey_cycleGraph hm applied inside the cast,
+      with hm : 3 ≤ 2k+1 discharged by omega. No other constant enters. The
+      library's Statement is ∀ k ≥ 3, Erdos809.ThresholdFor k (Statement.lean
+      lines 23-31), stated over maximalAntiRamsey (at-least-edge). Probe 11
+      re-proves the statement independently of L17's transfer theorems:
+      antiRamsey_eq_maximalAntiRamsey for every pattern graph H, then
+      statement_iff_library and claim_reproved; and probe 12 re-assembles it
+      from the two branch theorems (claim_from_branches,
+      claim_from_proved_branches).
+
+
+5. CLAUSE-BY-CLAUSE COMPARISON
+------------------------------
+
+  Frontmatter statement (part 1):
+
+  F1 "For every integer k>=3"
+     Lean: ∀ k : ℕ, 3 ≤ k → (U11). Faithful.
+  F2 "chi_S(n, floor(n^2/4)+1, C_{2k+1}) = n^2/8 + o(n^2) as n tends to
+     infinity"
+     Lean: ThresholdFor k, the asymptotic equivalence at Filter.atTop of the
+     real-cast antiRamsey n (n*n/4+1) (cycleGraph (2k+1)) with n²/8; probe 7
+     gives the little-o reading (U9, U10). Faithful.
+  F3 "where chi_S(n,e,G) is the least r for which some simple graph with n
+     vertices and exactly e edges has an r-coloring of its edges under which
+     every copy of G has pairwise distinct edge colors"
+     Lean: antiRamsey n e H = sInf of the Admissible set; Admissible = some
+     G : SimpleGraph (Fin n) with Nat.card G.edgeSet = e (exactly e) and some
+     C : EdgeLabeling G (Fin r) with EveryCopyRainbow (U1-U3, U6-U8). "Least"
+     is the ℕ infimum, attained whenever the set is nonempty (U8). Faithful.
+  F4 "a copy of C_{2k+1} is a cycle on 2k+1 distinct vertices of the graph"
+     Lean: H.Copy G with H = cycleGraph (2k+1): an injective vertex map
+     preserving the cycle adjacencies (U4, U5); the English defines a copy
+     as a cycle on distinct vertices, not an induced cycle, and the Lean
+     takes the same non-induced reading (chords allowed, docstring lines
+     11-12). Faithful.
+  F5 "Equivalently chi_S(n, floor(n^2/4)+1, C_{2k+1}) / n^2 tends to 1/8."
+     Consequence sentence: section 6, C1. Proved equivalent in probe 7.
+     Faithful.
+  F6 "The value is taken as 0 for the finitely many n at which no graph on n
+     vertices has floor(n^2/4)+1 edges; this does not affect the limit."
+     Lean: sInf ∅ = 0 (U8, probe 10); the set of such n is {0, 1, 2}, finite
+     (feasible_iff); the filter atTop ignores any finite set of n (the ε–N
+     form of probe 7 quantifies over n ≥ N). Section 6, C2. Faithful.
+
+  Statement section (part 2, "## Statement"):
+
+  S1 "Let χ_S(n,e,G) be the least r for which some simple graph with n
+     vertices and exactly e edges has an r-coloring of its edges under which
+     every copy of G has pairwise distinct edge colors."
+     As F3. Faithful.
+  S2 "For every integer k≥3, χ_S(n,⌊n²/4⌋+1,C_{2k+1}) = n²/8 + o(n²)
+     (n→∞), that is, χ_S(n,⌊n²/4⌋+1,C_{2k+1})/n² → 1/8."
+     As F1, F2, F5. Faithful.
+  S3 "A copy of C_{2k+1} is a cycle on 2k+1 distinct vertices of the graph."
+     As F4. Faithful.
+  S4 "At the finitely many n for which no graph on n vertices has ⌊n²/4⌋+1
+     edges the value is taken as 0, which does not affect the limit."
+     As F6. Faithful.
+  S5 "This is the question of Problem 809 in the affirmative for every k≥3:
+     the k≥4 cases are the theorem of Bucić, Chen and Ma (Theorem 1.2), and
+     the k=3 case, the seven-cycle, is the project's own argument."
+     Consequence and characterization sentence: section 6, C3 and C4.
+     Faithful.
+  S6 "The claim does not determine χ_S at any fixed n and says nothing about
+     C_3 or C_5, where the function is constant or linear."
+     The Lean statement is a filter statement at atTop (no clause about any
+     fixed n) and carries the hypothesis 3 ≤ k (k = 1, 2 are outside it); it
+     contains no clause about C₃ or C₅. Section 6, C5. Faithful.
+
+  Statement section (part 2, "## Argument and formal surface"; sentences
+  that characterize the Lean, each checked against the named module):
+
+  G1 "The seven-cycle branch ... is formalized in the modules of
+     Erdos.Library.Problem809 up to C7LowerSequence."
+     FinalAssembly.lean line 2 imports SevenCycle.C7LowerSequence;
+     sevenCycleThreshold_proved is C7LowerSequence.lean lines 104-116.
+     Matches.
+  G2 "The higher-cycle branch formalizes the full-density theorem of Bucić,
+     Chen and Ma for every k≥4 in Erdos.Library.Problem809.BucicChenMa, from
+     which the threshold follows."
+     BucicChenMa.statement_proved : Statement (QuantitativeInductionAssembly.lean
+     lines 205-207), Statement := ∀ k, 4 ≤ k → FullDensityFormula k
+     (BucicChenMa/Statement.lean lines 39-41); statement_implies_threshold
+     (ThresholdConsequence.lean lines 54-58). Matches.
+  G3 "Erdos.Library.Problem809.FinalAssembly combines the two into
+     statement_proved, a theorem about the minimum over graphs with at least
+     ⌊n²/4⌋+1 edges, stated over Mathlib's graph copies of cycleGraph and as
+     Mathlib's asymptotic equivalence to n²/8."
+     FinalAssembly.lean lines 82-84; Statement.lean lines 22-27
+     (maximalAntiRamsey, cycleGraph (2k+1), ~[Filter.atTop] n²/8);
+     RainbowCycles.lean lines 26-33 (AdmissibleAtLeast: e ≤ Nat.card, over
+     EveryCopyRainbow with H.Copy G). Matches.
+  G4 "The native claim surface states the exact-edge objects of this claim in
+     Erdos.L17 in the same copy form, proves for every cycle length that a
+     rainbow coloring restricts to a subgraph with exactly the required
+     number of edges, so the two edge conventions give the same anti-Ramsey
+     number, and applies the assembled theorem."
+     L17.lean lines 26-49 (the copy form: probe 6 shows EveryCopyRainbow is
+     definitionally the library's); rainbow_subgraph_exact_edges lines 53-87,
+     for every length with a NeZero instance, i.e. every length ≥ 1 (length 0
+     is not a cycle length; harmless); antiRamsey_cycleGraph lines 105-112,
+     for every length m ≥ 3; claim lines 115-121. Matches, with the
+     parenthetical about the length ranges.
+  G5 "No other native L-claim is used as a premise."
+     Manifest row depends []; the sweep of section 7.4 finds no Erdos.L<n>
+     other than L17 in the 196 modules; #print claim shows only
+     Erdos809.statement_proved and antiRamsey_cycleGraph. Matches.
+
+  Proof page body (part 3), the sentences that describe the Lean:
+
+  A1 "The formalization is the chain of modules of Erdos.Library.Problem809
+     ending in C7LowerSequence.lean, which proves SevenCycleThreshold, the
+     exact-edge statement for the seven-cycle; the comparison module
+     identifies it with the at-least-edge form."
+     SevenCycle/Statement.lean lines 19-33: Admissible n k (exact: Nat.card =
+     n*n/4+1, EveryCycleRainbow 7), rainbowChromatic n := sInf,
+     SevenCycleThreshold := Tendsto (rainbowChromatic n / n²) atTop (nhds
+     (1/8)); Comparison.lean lines 17-31: rainbowChromatic n =
+     maximalAntiRamseyCycle n (n*n/4+1) 7. Probe 12 (sevenCycle_bridge):
+     SevenCycleThreshold ↔ Erdos.L17.ThresholdFor 3. Matches.
+  A2 "For k≥4 the argument is the full-density theorem of Bucić, Chen and Ma,
+     Theorem 1.2 of the retained arXiv version, formalized in the modules
+     under Erdos.Library.Problem809.BucicChenMa and assembled in
+     QuantitativeInductionAssembly.lean as BucicChenMa.statement_proved; the
+     threshold at ⌊n²/4⌋+1 edges is its consequence (ThresholdConsequence.lean)."
+     As G2; section 7.3 for the shape of FullDensityFormula. Matches.
+  A3 "FinalAssembly.lean combines the branches into statement_proved, stated
+     for the minimum over graphs with at least ⌊n²/4⌋+1 edges, over Mathlib's
+     graph copies of cycleGraph, as an asymptotic equivalence to n²/8; the
+     bridge module (CycleCopyBridge.lean) identifies the copy form with the
+     indexed cycles the proofs use."
+     As G3; CycleCopyBridge.lean lines 62-111
+     (everyCycleRainbow_iff_everyCopyRainbow, admissibleCycleAtLeast_iff,
+     maximalAntiRamsey_cycleGraph, all for m ≥ 3). Matches.
+  A4 "The claim's own module, L17.lean, states the exact-edge objects in the
+     copy form and proves, for every cycle length, that any number of edges
+     up to the size of a rainbow-colored graph can be kept with the inherited
+     coloring still rainbow; so the exact-edge and at-least-edge conventions
+     give the same anti-Ramsey number, and Erdos.L17.claim follows from the
+     assembled theorem."
+     As G4. Matches.
+  A5 "The formalization account of the research folder records the module
+     inventory and the targeted build."
+     A pointer to a research page outside this read set; it makes no claim
+     about the statement and was not checked.
+
+  Problem 809 statement block (part 4):
+
+  P1 "Define the anti-Ramsey number χ_S(n,e,G) as the smallest r such that
+     there is a graph with n vertices and e edges with an r-coloring of its
+     edges in which every copy of G has entirely distinct edge colors."
+     As F3 with "e edges" read as exactly e edges, the reading the card
+     states. Under the other conceivable reading, at least e edges, probe 11
+     (antiRamsey_eq_maximalAntiRamsey) shows the two definitions give the
+     same number for every pattern graph H, every n and every e, so the Lean
+     statement is faithful to the site's definition under either reading.
+     "Entirely distinct" is "pairwise distinct" (U6). Faithful.
+  P2 "Is it true that, for all k≥3, χ_S(n,⌊n²/4⌋+1,C_{2k+1}) ∼ n²/8?"
+     The Lean statement asserts exactly this proposition, with ∼ as
+     Mathlib's asymptotic equivalence at n → ∞ (U10), and the claim proves it.
+     Faithful.
+
+  Exceptional cases considered: n = 0, 1, 2 (value 0 in both texts; probe
+  10); n = 3 (feasible: three edges on three vertices; no 7-cycle can exist,
+  so every coloring is vacuously rainbow, and the value is the least positive
+  palette size 1 since a 0-coloring of a graph with an edge does not exist;
+  irrelevant to the limit and identical in both texts); the palette size
+  c = 0 (Admissible fails whenever e ≥ 1, in both texts); several copies with
+  the same edge set (rotations and reflections of one cycle: the rainbow
+  clause is the same for all of them); the zero function at n = 0 in the
+  ratio reading (handled by the division-by-zero convention and by the
+  filter, probe 7); the NeZero instance on 2k+1 (synthesized from the
+  successor form, never a hypothesis); the literal 2*k+1 against 7 and 9 at
+  k = 3, 4 (probe 8 and 12, by rfl and by elaboration of
+  statement_c7_explicit). No weakening, no strengthening beyond the English,
+  and no hidden hypothesis was found.
+
+
+6. THE CONSEQUENCE SENTENCES
+----------------------------
+
+  C1 (F5, S2) "Equivalently χ_S(...)/n² → 1/8." Probe 7
+     (thresholdFor_iff_tendsto): ThresholdFor k ↔ Tendsto (u/n²) atTop
+     (nhds (1/8)), proved in both directions, and the ε–N form. Faithful.
+  C2 (F6, S4) "this does not affect the limit." The exceptional set is
+     {0, 1, 2} (probe 10, feasible_iff); every reading in probe 7 is a
+     statement at Filter.atTop, which no finite set of n can change. Faithful.
+  C3 (S5) "This is the question of Problem 809 in the affirmative for every
+     k≥3." P2 and the Lean statement are the same proposition (section 5,
+     P1-P2); Erdos.L17.claim proves it. Faithful.
+  C4 (S5, A1, A2) "the k≥4 cases are the theorem of Bucić, Chen and Ma
+     (Theorem 1.2), and the k=3 case, the seven-cycle, is the project's own
+     argument." The proof splits at k = 3 (FinalAssembly.lean lines 61-67,
+     by_cases hthree : k = 3); probe 12 re-assembles the statement from
+     SevenCycleThreshold and BucicChenMa.ThresholdStatement
+     (claim_from_branches) and from the two proved branch theorems
+     (claim_from_proved_branches). The attribution of the k ≥ 4 branch is a
+     source characterization: the Lean FullDensityFormula k has the shape of
+     Theorem 1.2 as the problem page renders it (section 7.3); the paper
+     itself was not read. Faithful as a description of the proof's structure.
+  C5 (S6) The non-claims: no clause about any fixed n, about C₃ or C₅, or
+     about a rate exists in the Lean statement and none can be derived from a
+     filter statement with hypothesis 3 ≤ k. Faithful.
+  C6 (G4, A4) "so the two edge conventions give the same anti-Ramsey number."
+     antiRamsey_cycleGraph (L17.lean 105-112, for m ≥ 3), and independently
+     probe 11 for every pattern graph. Proved.
+
+
+7. THE PREMISES: THE ASSEMBLED THEOREM AND ITS TWO BRANCHES
+-----------------------------------------------------------
+
+7.1 Import closure map (from the import lines of every module)
+
+  Erdos.L17 → {Mathlib.Analysis.Asymptotics.AsymptoticEquivalent,
+               Problem809.FinalAssembly, Problem809.CycleCopyBridge}
+  FinalAssembly → {Statement, SevenCycle.C7LowerSequence, Comparison,
+                   CycleCopyBridge, BucicChenMa.ThresholdConsequence,
+                   BucicChenMa.QuantitativeInductionAssembly}
+  Statement → RainbowCycles (+ Mathlib); CycleCopyBridge → RainbowCycles;
+  Comparison → {SevenCycle.Statement, SubgraphTransfer, RainbowCycles};
+  SevenCycle.Statement → RainbowCycles; SubgraphTransfer → RainbowCycles;
+  BucicChenMa.Statement → {RainbowCycles, MainTerm};
+  ThresholdConsequence → {BucicChenMa.Statement, ThresholdArithmetic};
+  ThresholdArithmetic → MainTerm; QuantitativeInductionAssembly → the
+  BucicChenMa proof modules (LowerInduction, LowerWitnessTransfer,
+  OrderThreshold, SparseParameterBounds, DenseCaseConclusion,
+  DeletionDensity, QuantitativeConsequence, SparseCaseConclusion,
+  ThresholdConsequence) and, transitively, all 92 BucicChenMa modules;
+  C7LowerSequence → the SevenCycle proof modules and, transitively, all 85
+  SevenCycle modules and the 9 UpperBound modules (through
+  SevenCycle.ThresholdClosure → UpperBound.SevenCycle). Closure: 196 modules
+  under lean/Erdos/, every module under Problem809/ and nothing else; 65
+  distinct Mathlib modules are imported directly by them.
+
+7.2 The interface: what claim consumes, at what type
+
+  Erdos809.statement_proved : Erdos809.Statement (closed; #check in probe 14),
+  Statement := ∀ k ≥ 3, ThresholdFor k, ThresholdFor k := (fun n =>
+  (maximalAntiRamsey n (n*n/4+1) (cycleGraph (2k+1)) : ℝ)) ~[atTop] n²/8
+  (Statement.lean lines 22-31). Its proof: statement_of_higherDensity
+  BucicChenMa.statement_proved, where statement_of_higherDensity hHigher :=
+  statement_of_sevenCycle_and_higherDensity sevenCycleThreshold_proved
+  hHigher and statement_of_sevenCycle_and_higherDensity h7 hHigher :=
+  statement_of_sevenCycle_and_higherThreshold h7
+  (BucicChenMa.statement_implies_threshold hHigher) (FinalAssembly.lean lines
+  57-84). The two hypotheses of the assembly theorem, h7 :
+  SevenCycleThreshold and hHigher : BucicChenMa.Statement, are discharged by
+  the two closed theorems sevenCycleThreshold_proved (C7LowerSequence.lean
+  104-116) and BucicChenMa.statement_proved (QuantitativeInductionAssembly.lean
+  206-207), whose types carry no binders (#check, probe 14). No hypothesis
+  is left open between statement_proved and claim; the only step in claim is
+  the rewrite antiRamsey_cycleGraph hm : antiRamsey n e (cycleGraph m) =
+  maximalAntiRamsey n e (cycleGraph m) for m = 2k+1 ≥ 3 (L17.lean 105-112),
+  which rests on admissible_cycleGraph_iff (92-101) and
+  rainbow_subgraph_exact_edges (53-87) on the exact-edge side and on
+  Erdos809.maximalAntiRamsey_cycleGraph and everyCycleRainbow_iff_everyCopyRainbow
+  (CycleCopyBridge.lean 62-111) on the library side.
+
+  Inside the assembly (FinalAssembly.lean lines 20-53), the private theorem
+  equivalent_iff_normalized_limit converts the asymptotic equivalence to the
+  ratio limit exactly as probe 7 does, and thresholdFor_iff_cycleThresholdFormula
+  (k ≥ 3) rewrites maximalAntiRamsey on cycleGraph (2k+1) to
+  maximalAntiRamseyCycle (2k+1) by the bridge; the k = 3 case then uses
+  rainbowChromatic_eq_maximalAntiRamseyCycle (Comparison.lean 17-31, for the
+  literal 7 = 2·3+1), and the k ≥ 4 case uses hHigher k hfour. Probe 12
+  (sevenCycle_bridge, bcm_bridge, claim_from_branches) re-derives this
+  assembly on the claim's own objects.
+
+7.3 The two branch theorems, as statements
+
+  Seven-cycle branch. SevenCycleThreshold (SevenCycle/Statement.lean 30-33)
+  is the ratio limit for rainbowChromatic n = sInf {k | Admissible n k},
+  Admissible n k := ∃ G C, Nat.card G.edgeSet = n*n/4+1 ∧ EveryCycleRainbow 7
+  G C, over the indexed formulation EveryCycleRainbow (RainbowCycles.lean
+  37-41: every injective v : Fin 7 → V with G.Adj (v i) (v (i+1)) has
+  pairwise distinct C.get (v i) (v (i+1))). Its proof
+  (sevenCycleThreshold_of_sequence_lower, ThresholdSequence.lean 92-104;
+  ThresholdClosure.lean 25-52) combines the two-clique upper bound
+  rainbowChromatic_upper_asymptotic (UpperBound/SevenCycle.lean 20-26) with
+  the sequence lower bound rainbow_color_lower_asymptotic_of_exact_count
+  (C7LowerSequence.lean 78-100); the sInf is shown attained at every order
+  n ≥ 16 by exhibiting an admissible coloring
+  (rainbowChromatic_admissible_of_sixteen_le, lines 49-54), which is how the
+  proof meets the English's convention on exceptional orders: those orders
+  are below 16 and the filter ignores them. The mathematics of the 85
+  SevenCycle modules was not reviewed here; it is kernel-checked (section 9).
+
+  Bucić–Chen–Ma branch. FullDensityFormula k (BucicChenMa/Statement.lean
+  23-28): ∀ ε > 0, ∃ N, ∀ n ≥ N, ∀ e with n*n/4+1 ≤ e ≤ n.choose 2,
+  |maximalAntiRamseyCycle n e (2k+1) − mainTerm n e| ≤ ε n², with mainTerm n e
+  = e/2 + (n/2)√(e − n²/4) (MainTerm.lean 13-14). This is Theorem 1.2 as the
+  problem page renders it (f(n,e,C_{2k+1}) = e/2 + (n/2)√(e − n²/4) + o(n²)
+  for k ≥ 4 over the range ⌊n²/4⌋+1 ≤ e ≤ C(n,2)), with the o(n²) taken
+  uniformly in e over the range, the reading under which the theorem's
+  statement for all e in the range is one asymptotic statement; only the
+  instance e = n*n/4+1 is consumed. ThresholdFormula k (lines 32-37) is the
+  ratio limit at e = n*n/4+1; fullDensityFormula_implies_threshold
+  (ThresholdConsequence.lean 15-52) derives it from FullDensityFormula k by
+  threshold_mainTerm_tendsto (ThresholdArithmetic.lean 80-93: mainTerm n
+  (n*n/4+1)/n² → 1/8, from 0 ≤ e − n²/4 ≤ 1 at that edge count) and
+  threshold_edge_feasible (lines 14-31, the range hypothesis for n ≥ 4).
+  BucicChenMa.statement_proved (QuantitativeInductionAssembly.lean 206-207)
+  is quantitativeLowerStatement_implies_statement quantitativeLowerStatement_proved;
+  the former (QuantitativeConsequence.lean 52-56) rests on
+  fullDensityFormula_iff_lowerDensityFormula (LowerReduction.lean 25-, the
+  upper half from the UpperBound modules), the latter (lines 200-203) on the
+  strong induction of lines 97-144 with sparseOrderDegreeStep (170-197) and
+  dense_case_target. The mathematics of the 92 BucicChenMa modules was not
+  reviewed here; it is kernel-checked (section 9). The paper (arXiv:2603.18952v1)
+  was not read; the library card and PDF were outside the read set.
+
+7.4 Sweep of the 196 modules
+
+  Programmatic sweep over every closure source: no axiom, sorry,
+  native_decide, opaque, unsafe, implemented_by, csimp or partial; one prose
+  hit for "extern" ("external degree", NearRegularDisjointCount.lean line 59);
+  no occurrence of any Erdos.L<n> other than the two lines namespace/end
+  Erdos.L17 in L17.lean. Two instances, both decidability instances local to
+  the Bucić–Chen–Ma proofs (Case2GoodEdgeCount.lean line 35,
+  ShortPathAddEdge.lean line 23); eighteen @[simp] attributes on library
+  theorems; three prose hits for "notation"; set_option autoImplicit false
+  in L17.lean only (lean/lakefile.toml sets autoImplicit = false for the
+  whole library); 66 file-scoped open commands (Classical, Finset, Filter,
+  Function, Set, SimpleGraph, Erdos809, UpperBound, scoped Asymptotics,
+  Topology, Classical). None of these can rebind sInf, Nat.card, Fin,
+  EdgeLabeling, Copy, cycleGraph, IsEquivalent, the casts or the numerals
+  used by Erdos.L17, and the pp.explicit and pp.all output of probe 2 shows
+  only Mathlib and core instances (Nat.instInfSet, Real.instNatCast,
+  Real.instDivInvMonoid, Real.instMonoid, Real.normedCommRing,
+  Nat.instPreorder, instOfNatAtLeastTwo, Function.instFunLikeEmbedding).
+
+7.5 Build freshness (without running lake build)
+
+  Every one of the 196 closure modules has its .olean under
+  lean/.lake/build/lib/lean/. Lake's trace file for each module records the
+  hash of the source it compiled (Hash.ofText = mixHash 1723 of the
+  line-ending-normalized text's String.hash, per the toolchain's
+  Lake/Build/Trace.lean lines 105-178). Recomputing that hash for each of the
+  196 worktree sources with a scratch Lean script reproduces the recorded
+  value in 196 of 196 cases, and each worktree source is byte-identical to
+  its blob at the commit (git show | cmp), so the .olean files the probe
+  imported were compiled from the committed text. (One module,
+  Problem809/MathlibCompat, has a source modification time later than its
+  .olean; its content hash shows the text is unchanged since that build.)
+  This is a freshness observation for the probe's environment, not the
+  clean-checkout gate and not an acceptance.
+
+
+8. PROBES
+---------
+
+  One probe file, ReviewerProbe.lean (587 lines), kept beside this report
+  with its output probe_output.txt and the runner run_probe.sh. It imports
+  only Erdos.L17. Command, from lean/ in the worktree:
+    lake env lean <record folder>/ReviewerProbe.lean
+  or, equivalently,
+    bash run_probe.sh <lean directory of the checkout> <ReviewerProbe.lean> <output file>.
+  The kept file was compiled twice without being edited between the runs:
+  first with the runner at 2026-09-25T04:00:23Z to 04:00:25Z (exit 0; 2 s
+  wall; 2.20 s real by /usr/bin/time -l; 2,432,663,552 bytes maximum resident
+  set size), then again at 04:04:08Z to 04:04:11Z (exit 0; 3 s wall; 2.26 s
+  real; 2,433,908,736 bytes). The Lean output of the two runs (190 lines) is
+  byte-identical; probe_output.txt is the first run's file. No error and no
+  warning was emitted in either run (stderr held only the time report).
+  Earlier drafts of the probe were compiled twice more while it was being
+  written; their outputs are not kept.
+
+  Probe sections and results (every command accepted):
+   1  #print of EveryCopyRainbow, Admissible, antiRamsey, ThresholdFor,
+      statement and claim; #check @statement : Prop; #check @claim :
+      Erdos.L17.statement. Output matches the source text of section 3 and
+      the manifest's pretty string.
+   2  pp.explicit #print of the five definitions and pp.all #print of
+      statement; pp.explicit #check of claim (section 4, U10-U11).
+   3  pp.universes: EveryCopyRainbow.{u_1, u_2}, antiRamsey.{u_1};
+      ThresholdFor : ℕ → Prop and statement : Prop without universe
+      parameters.
+   4  #print axioms: see section 9.
+   5  example : Erdos.L17.statement := Erdos.L17.claim.
+   6  Iff.rfl / rfl unfoldings of the five definitions; EdgeLabeling = edgeSet
+      → K; Copy.injective; mapEdgeSet as Sym2.map; IsEquivalent as little-o;
+      the cast and the real division; 1/8 = 0.125; EveryCopyRainbow ↔
+      Erdos809.EveryCopyRainbow by Iff.rfl.
+   7  thresholdFor_iff_littleO, thresholdFor_iff_tendsto,
+      thresholdFor_iff_epsilon (U10).
+   8  floor_quarter, edge_count_is_floor; the literal instances n = 3, 5, 6,
+      7, 16 and 2·3+1 = 7, 2·4+1 = 9 (U9).
+   9  cycleGraph_adj_iff; copy_gives_indexed_cycle (m ≥ 3); fourCycleInK4
+      (chords allowed); everyCopyRainbow_pairwise; copy_mapEdgeSet_injective;
+      Fintype.card (cycleGraph 7).edgeSet = 7 by decide (U4-U6).
+  10  antiRamsey_eq_zero_of_infeasible; edge_count_le_choose; feasible_iff
+      (n*n/4+1 ≤ n.choose 2 ↔ 3 ≤ n); the values at n = 0 and n = 2;
+      exists_graph_with_edges; admissible_of_exists_graph;
+      antiRamsey_le_of_admissible; admissible_mono; Nat.card = edgeFinset.card;
+      antiRamsey_isLeast for n ≥ 3 (U2, U3, U8).
+  11  everyCopyRainbow_of_le (edge deletion keeps every copy rainbow, by
+      composing a copy with Hom.ofLE, for every pattern graph);
+      exists_le_with_card; admissible_iff_atLeast;
+      antiRamsey_eq_maximalAntiRamsey (for every H, n, e);
+      statement_iff_library; claim_reproved (the statement from
+      Erdos809.statement_proved along this route, independent of L17's
+      transfer theorems); the library's cycle identity re-applied.
+  12  statement_c7, statement_c9, statement_c7_explicit (with the literal 7);
+      7 ≤ 2k+1 and Odd (2k+1) for k ≥ 3; sevenCycle_bridge
+      (SevenCycleThreshold ↔ ThresholdFor 3); bcm_bridge
+      (BucicChenMa.ThresholdFormula k ↔ ThresholdFor k for k ≥ 1);
+      claim_from_branches; claim_from_proved_branches.
+  13  eventually_quadratic_lower: from the statement, n²/16 ≤ a(n) for all
+      large n at k = 3 (the statement is not degenerate).
+  14  #check of the assembled theorem, the two branch theorems, the assembly
+      lemmas and the transfer theorems; #print of the sixteen library
+      definitions the premises are stated over; #print axioms of four probe
+      theorems.
+
+  Every probe theorem is stated about the real Erdos.L17 and Erdos809
+  constants, not about a copy.
+
+
+9. AXIOM FOOTPRINT
+------------------
+
+  'Erdos.L17.claim' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'Erdos.L17.statement' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'Erdos809.statement_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'Erdos809.sevenCycleThreshold_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'Erdos809.BucicChenMa.statement_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'Erdos809.BucicChenMa.thresholdStatement_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
+  and the same three for statement_of_sevenCycle_and_higherDensity,
+  antiRamsey_cycleGraph, admissible_cycleGraph_iff,
+  rainbow_subgraph_exact_edges and the four probe theorems printed.
+
+  No sorryAx, no Lean.ofReduceBool or other compiler axiom, no custom axiom.
+  This agrees with the manifest row at the commit (axioms the three standard
+  ones, compiler []). The proof is kernel-only; the card's compiler-assumption
+  policy is not engaged by it, and this review asserts nothing about the
+  card's fields, which are outside its subject.
+
+
+10. CHECKLIST VERDICTS
+----------------------
+
+  docs/verification.md, Erdos audit checklist:
+
+  Quantifiers and scope: pass. ∀ over every k ≥ 3 (F1); the asymptotic is a
+    Filter.atTop statement, matching "as n tends to infinity" and "o(n²)",
+    neither strengthened to all n nor weakened to a subsequence or a limit
+    inferior/superior (probe 7 gives the ε–N form); the exceptional set is
+    exactly {0, 1, 2} and is stated in both texts (F6, probe 10); the
+    infimum over an empty set is the stated 0.
+  Circularity: not applicable to statement fidelity; noted that the statement
+    is a closed Prop with no self-reference, the manifest row's depends is [],
+    and the closure contains no other L-claim (7.4).
+  Model and convention changes: pass. The one convention change between the
+    claim's objects and the library's, exactly e edges against at least e
+    edges, is proved a no-op by L17's own theorems for cycles (antiRamsey_cycleGraph)
+    and independently by probe 11 for every pattern graph; the copy
+    convention (injective homomorphism, chords allowed) is the English's
+    "cycle on 2k+1 distinct vertices of the graph" (F4, U4-U5); the indexed
+    cycles of the proofs are tied to copies by the library's bridge for
+    lengths ≥ 3, re-derived in one direction by probe 9; the real-valued
+    asymptotic is Mathlib's, with its three readings proved equivalent
+    (probe 7); no averaged, relaxed or transformed object stands in for the
+    statement's.
+  Finite and statistical overreach: pass. The statement contains no finite
+    verification and no heuristic; the one decide in the probe (the edge
+    count of C₇) is illustrative and not load-bearing.
+  Uniformity: pass. The statement is for each fixed k separately, as the
+    English's "for every integer k ≥ 3 ... as n tends to infinity" is; no
+    uniformity in k is asserted by either text. Inside the premises the
+    Bucić–Chen–Ma formula is rendered with its o(n²) uniform in e over the
+    edge range (7.3), at least as strong as the problem page's rendering, and
+    only its instance at one e is consumed.
+  Extremal conclusions: pass. "The least r" is the ℕ infimum, proved attained
+    and least at every feasible order in the claim's own units (probe 10,
+    antiRamsey_isLeast); the sharpness sentence of the English ("= n²/8 +
+    o(n²)") is two-sided in both texts.
+  Consequences and composition: pass. C1-C6 each proved or checked (section
+    6); the assembly's two hypotheses are supplied by closed theorems at
+    exactly their types, and claim's single step is a proved identity (7.2).
+  Computation: pass for what this review covers. No computational certificate
+    enters the statement; the proof's kernel checks are the library's
+    theorems, replayed by the build of the committed sources (7.5) and
+    audited by the manifest, both outside this review's subject.
+  Reproduction: pass for the probe (its command, output, timing and exit
+    status are recorded, and the kept file is unchanged between two runs
+    with byte-identical output). No rerun-count sentence of the English
+    subject was in the extraction to check. The freshness check of 7.5 is
+    recorded as an observation with its method.
+  Source and verdict fidelity: pass. Every sentence of the card and proof
+    page that characterizes the Lean was checked against the named module
+    and lines (G1-G5, A1-A4); the English subject carries no verifier
+    quotation; the attribution to Theorem 1.2 was checked at the level of the
+    problem page's rendering of the theorem, not the paper (C4, E2).
+
+  docs/verification.md, shared canonical modes and named patterns (each
+  marked; none applies to a statement-fidelity subject except as noted):
+  "almost all" upgraded to "all": absent (the statement is asymptotic in both
+  texts). Induction presupposing termination: not applicable. Probabilistic
+  or averaging heuristics: absent. Circular use of an equivalent statement:
+  absent (above). Exceptional sets dropped: absent (F6). Finite verification
+  cited as more: absent. Convergence of a relaxed system: absent (the objects
+  are the statement's own). Model-class transport: not applicable.
+  Uniformity from finitely many instances: not applicable. Extremal claims in
+  the claim's own units: pass (above). Consequence sentences as claim
+  surfaces: checked (section 6). Carried hypotheses: pass (no hypothesis is
+  dropped; claim has none). Composition inheriting unproved premises: pass
+  (7.2). Reproducibility notes: pass (probe). Verifier quotations: none in
+  the subject. Verdict words in full: yes. Certified-bracket functions,
+  harness legs, cache-reading gates: not applicable (no numeric routine, no
+  harness, no gate in this review's subject; the probe re-executes Lean).
+
+
+11. WEAKEST STEPS (rederived)
+-----------------------------
+
+  W1 That "exactly e edges" (the card's and the 1989 definition's convention)
+     and "at least e edges" (the library's convention behind
+     statement_proved) give the same number, so that claim's single rewrite
+     does not change the proposition. Rederived in probe 11 without the
+     indexed-cycle formulation: a copy of any pattern graph H in a subgraph
+     K ≤ G composes with Hom.ofLE to a copy in G, so the coloring pulled back
+     along K ≤ G keeps every copy rainbow; any e ≤ |E(G)| edges can be kept
+     (a subset of the edge finset realized by fromEdgeSet); hence the
+     admissible sets coincide for every H, n, e, c, and the two infima are
+     equal. Together with the trivial direction this gives
+     antiRamsey n e H = maximalAntiRamsey n e H unconditionally, and the
+     statement follows from Erdos809.statement_proved by rewriting under the
+     cast (claim_reproved).
+  W2 That a Copy of cycleGraph (2k+1) is what the English calls a copy of
+     C_{2k+1}, "a cycle on 2k+1 distinct vertices of the graph", and not an
+     induced cycle or a walk. Rederived: Copy is an injective homomorphism
+     (Copy.lean 84-88); cycleGraph's adjacency is i ~ i ± 1 mod m (CycleGraph.lean
+     29-33); probe 9 derives from any copy an injective vertex sequence with
+     consecutive images adjacent, and exhibits a copy with chords (K₄), so
+     the reading is the non-induced one the English states; the rainbow
+     clause is injectivity of the coloring on the m distinct image edges
+     (everyCopyRainbow_pairwise, copy_mapEdgeSet_injective). An induced
+     reading would make fewer copies and could only lower the number; the
+     English does not take it.
+  W3 That the Lean asymptotic and the English's three phrasings agree, and
+     that the value-0 convention at the three infeasible orders is harmless.
+     Rederived in probe 7 (u ~ n²/8 ⟺ u − n²/8 = o(n²) ⟺ u/n² → 1/8 ⟺
+     ε–N) and probe 10 (sInf ∅ = 0; feasibility ⟺ n ≥ 3; the least element
+     is attained for n ≥ 3), with the identity u/(n²/8) = (u/n²)·8 holding
+     for every n so that no eventual side condition is needed beyond n ≠ 0
+     for isEquivalent_iff_tendsto_one.
+
+
+12. STRONGEST ATTACK
+--------------------
+
+  The strongest attempted refutation was to find a reading under which
+  Erdos.L17.statement is weaker than the English, or true for a degenerate
+  reason, through the two definitional conventions the English spells out:
+  the copy convention and the infimum convention. On copies: if Copy admitted
+  non-injective homomorphisms (walks) or required induced subgraphs, the
+  rainbow clause would quantify over a different family; the Mathlib
+  structure has the injectivity field and no reflection field, and probe 9
+  pins both. On the infimum: if the admissible set were empty for infinitely
+  many n (a wrong edge count, or a coloring type with no inhabitants), the
+  value would be 0 infinitely often, which makes the statement false rather
+  than vacuous, so a kernel proof of it excludes that; and if the set could
+  contain 0, the value could collapse to 0, but a 0-coloring exists only for
+  an edgeless graph while e ≥ 1. Probe 10 shows the set is empty exactly at
+  n = 0, 1, 2 and nonempty with an attained least element for every n ≥ 3,
+  and probe 13 shows the statement forces a(n) ≥ n²/16 for all large n, so
+  no degenerate truth is available. The secondary attack, a hidden
+  hypothesis reaching claim (a Fact, a NeZero or decidability assumption, a
+  universe constraint, a sorry or an axiom in the 195 library modules),
+  failed on #check @claim : statement with no binders, on the closed types of
+  statement_proved and both branch theorems, on the sweep of 7.4, and on the
+  axiom footprint of section 9. The tertiary attack, an off-by-one or a
+  convention slip in the constants (n*n/4 against ⌊n²/4⌋, 2k+1 against the
+  seven- and nine-cycles, 1/8 against 8, the ℕ-to-ℝ cast, the exponent 2),
+  failed on probe 8 and the pp.all output of probe 2. A last attack, that
+  the built .olean files the probe read might not be the committed modules
+  (no lake build was allowed), failed on the trace-hash reproduction of 7.5.
+
+
+13. PREMISES
+------------
+
+  Local L-claims consumed: none (manifest depends [], no other Erdos.L<n>
+  namespace in the closure, and the English says "No other native L-claim is
+  used as a premise"). Library premises: Erdos809.statement_proved and, below
+  it, sevenCycleThreshold_proved and BucicChenMa.statement_proved, all closed
+  kernel-checked theorems of the repository's own Lean closure on the three
+  standard axioms; their statements are compared to the English in 7.2-7.3;
+  their proofs (177 modules) were not reviewed mathematically here and are
+  not this review's subject. External source premise: the Bucić–Chen–Ma
+  theorem is formalized, not assumed; its Lean statement was compared with
+  the theorem as the problem page renders it (reading depth: statement
+  checked on that page; the paper unread). Explicit assumptions of this
+  review: the correctness of the Lean kernel and of Mathlib's definitions at
+  the pinned revision, the standing assumption of every tier-2 warrant here.
+  This review asserts no tier; it reports the fidelity finding for the
+  grader.
+
+
+14. VERDICT
+-----------
+
+  refutation-failed. For the sources as they stood on 2026-09-25T03:40:15Z,
+  Erdos.L17.statement states exactly the English statement of the extraction:
+  for every natural number k ≥ 3, the least palette size r for which some
+  simple graph on exactly n vertices with exactly ⌊n²/4⌋+1 edges admits an
+  r-coloring of its edges making every copy of the (2k+1)-cycle (an injective
+  adjacency-preserving image, chords allowed) rainbow, taken as 0 at the
+  three orders n = 0, 1, 2 where no such graph exists, is asymptotically
+  equivalent to n²/8 as n → ∞, equivalently has ratio to n² tending to 1/8.
+  Erdos.L17.claim has that statement as its type with no hypothesis and
+  depends on the axioms propext, Classical.choice and Quot.sound only. The
+  proof's premises are what the proof account says: the assembled library
+  theorem Erdos809.statement_proved, itself the seven-cycle branch
+  sevenCycleThreshold_proved and the formalized Bucić–Chen–Ma theorem
+  BucicChenMa.statement_proved, all closed; claim's one step, the passage
+  from the at-least-edge to the exact-edge convention, is a proved identity,
+  re-proved here for every pattern graph. No weakening, no strengthening
+  beyond what the English admits, and no hidden hypothesis was found.
+
+  Limitations: this is a statement-fidelity review; it did not review the
+  mathematics of the library proofs, run lake build, the clean-checkout gate
+  or the audit, read the Bucić–Chen–Ma paper, or review the card's standing
+  text, all of which are outside its subject. Exposure E2 is disclosed for
+  the grader's materiality ruling. Two name discrepancies in the assignment
+  (Shared/RainbowCycles.lean; Erdos.Library.Problem809.statement_proved) are
+  resolved in 1.3. The runner is filed as run_probe.sh as the assignment
+  directs; the precedent record notes that the wiki tooling admits no .sh
+  name and files it as run_probe_sh.txt, which the integrator may repeat.
+
+
+15. FILES IN THIS FOLDER
+------------------------
+
+  review.txt          this report
+  review_reads.json   every file read, by path, line range and reading depth;
+                      Mathlib and Lake objects by origin and revision
+  ReviewerProbe.lean  the kept probe (imports Erdos.L17 only)
+  probe_output.txt    its complete output, stderr, timing and exit status
+  run_probe.sh        the runner that produced probe_output.txt; it takes the
+                      checkout's lean/ directory, the probe file and the
+                      output path as its three arguments

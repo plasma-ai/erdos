@@ -1,0 +1,39 @@
+{
+  "authors": [
+    "Luis Chahua",
+    "Juan Gutierrez"
+  ],
+  "category": "math.CO",
+  "date": "2024-05-18",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 370717,
+    "files": 1,
+    "sha256": "8e9e201645b6477cd0a176bad4823de08ebd4fd29236a3b5ec9b217f142a1f9d",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2405.11409v1"
+  },
+  "id": "2405.11409",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 211576,
+    "previous": [],
+    "sha256": "9cc961f27c70807a6090601037a8300e9d36fe1a89825cc652f8110c7a91f480",
+    "url": "https://arxiv.org/pdf/2405.11409v1"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2405.11409v1 [math.CO] 18 May 2024",
+  "tex": {
+    "archive": {
+      "bytes": 1889028,
+      "name": "arXiv-2405.11409v1.tar.gz",
+      "sha256": "9a7ce71d4fd4ea74c3452fe2f10cb98e6bcd4f4489b5cc146f858091dbcffdda"
+    },
+    "bytes": 3146851,
+    "files": 25,
+    "sha256": "db9c6264521a4e4852a432ad6c761894bc6898beed857ac00e1ada5ae9847a4e",
+    "url": "https://arxiv.org/src/2405.11409v1"
+  },
+  "title": "On Tuza's Conjecture in Dense Graphs",
+  "version": 1
+}

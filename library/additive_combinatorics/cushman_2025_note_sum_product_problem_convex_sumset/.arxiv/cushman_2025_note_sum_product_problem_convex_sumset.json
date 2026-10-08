@@ -1,0 +1,38 @@
+{
+  "authors": [
+    "Adam Cushman"
+  ],
+  "category": "math.CO",
+  "date": "2026-01-29",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 772294,
+    "files": 1,
+    "sha256": "a304fb06bb085da1484a6a534d27fe60b86bb5f51f7f7a1a4a7849647d087588",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2512.13849v2"
+  },
+  "id": "2512.13849",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 461534,
+    "previous": [],
+    "sha256": "216b73c9d81292c55b58242f6efa9581c2fa0c9f5429bfb667d4d9bbed1bdf15",
+    "url": "https://arxiv.org/pdf/2512.13849v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2512.13849v2 [math.CO] 29 Jan 2026",
+  "tex": {
+    "archive": {
+      "bytes": 19227,
+      "name": "arXiv-2512.13849v2.tar.gz",
+      "sha256": "d22f4149eafe6f1dc902ca24028e4c04a0d695b6259b2c2aa7146c4d1f65f4d6"
+    },
+    "bytes": 96585,
+    "files": 4,
+    "sha256": "331e9802e01d63ce980121aa332d67ae8e9ae137e040d037d839977106298309",
+    "url": "https://arxiv.org/src/2512.13849v2"
+  },
+  "title": "A Note on the Sum-Product Problem and the Convex Sumset Problem",
+  "version": 2
+}

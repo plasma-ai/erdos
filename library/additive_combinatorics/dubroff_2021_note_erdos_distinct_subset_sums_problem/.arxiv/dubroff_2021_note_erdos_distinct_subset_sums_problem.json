@@ -1,0 +1,40 @@
+{
+  "authors": [
+    "Quentin Dubroff",
+    "Jacob Fox",
+    "Max Wenqiang Xu"
+  ],
+  "category": "math.CO",
+  "date": "2020-07-20",
+  "fetched": "2026-09-23",
+  "html": {
+    "bytes": 83461,
+    "files": 1,
+    "sha256": "e8493e7b1490ec698286445ae968af7a52f4b297decae2e3e933db1e6cb28bee",
+    "skipped": [],
+    "url": "https://arxiv.org/html/2006.12988v2"
+  },
+  "id": "2006.12988",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "pdf": {
+    "bytes": 95220,
+    "previous": [],
+    "sha256": "0bc48847e6997daa58aad1d88c20deae4645e0695d6afa1b192475ef9e435cb2",
+    "url": "https://arxiv.org/pdf/2006.12988v2"
+  },
+  "schema": 1,
+  "stamp": "arXiv:2006.12988v2 [math.CO] 20 Jul 2020",
+  "tex": {
+    "archive": {
+      "bytes": 5018,
+      "name": "arXiv-2006.12988v2.gz",
+      "sha256": "a7661d81e7d9353f42183bd5f8dcd343dbfee586610168e45e23813fc27449c9"
+    },
+    "bytes": 12186,
+    "files": 1,
+    "sha256": "dee6ad654bd7eaafbd2c243f31ebefd79b9cab8ca82d28121058e2572be8a042",
+    "url": "https://arxiv.org/src/2006.12988v2"
+  },
+  "title": "A note on the Erd\\H{o}s distinct subset sums problem",
+  "version": 2
+}

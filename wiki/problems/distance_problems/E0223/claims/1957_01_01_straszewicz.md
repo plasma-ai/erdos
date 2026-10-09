@@ -13,6 +13,7 @@ settles:
 evidence:
 - reviewed
 - refereed
+submitted: null
 links:
 - url: https://www.erdosproblems.com/223
   kind: discussion

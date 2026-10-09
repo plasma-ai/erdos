@@ -10,6 +10,7 @@ authors:
 status: claimed
 claim: proved
 scope: partial
+submitted: null
 links:
 - url: https://www.erdosproblems.com/forum/thread/934#post-8499
   kind: discussion

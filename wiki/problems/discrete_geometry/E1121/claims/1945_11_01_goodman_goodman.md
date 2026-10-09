@@ -14,6 +14,7 @@ scope: full
 evidence:
 - reviewed
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.1080/00029890.1945.11999187
   kind: paper

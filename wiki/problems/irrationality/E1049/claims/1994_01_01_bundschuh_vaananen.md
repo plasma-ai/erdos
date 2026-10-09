@@ -13,6 +13,7 @@ claim: proved
 scope: partial
 evidence:
 - refereed
+submitted: null
 links:
 - url: https://www.numdam.org/item/CM_1994__91_2_175_0/
   kind: paper

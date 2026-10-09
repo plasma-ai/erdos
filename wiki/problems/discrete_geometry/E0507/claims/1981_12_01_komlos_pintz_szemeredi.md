@@ -14,6 +14,7 @@ claim: proved
 scope: partial
 evidence:
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.1112/jlms/s2-24.3.385
   kind: paper

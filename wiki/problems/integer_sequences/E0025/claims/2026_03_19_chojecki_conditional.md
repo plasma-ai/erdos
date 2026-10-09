@@ -10,6 +10,7 @@ authors:
 status: claimed
 claim: proved
 scope: conditional
+submitted: 2026-03-19
 links:
 - url: https://www.ulam.ai/research/erdos25.pdf
   kind: preprint

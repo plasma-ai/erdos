@@ -10,6 +10,7 @@ authors:
 status: claimed
 claim: answered
 scope: full
+submitted: 2026-09-23
 links:
 - url: https://www.erdosproblems.com/forum/thread/710/proof-claims#proof-claim-344
   kind: discussion

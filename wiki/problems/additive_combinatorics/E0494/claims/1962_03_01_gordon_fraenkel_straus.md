@@ -15,6 +15,7 @@ scope: full
 evidence:
 - reviewed
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.2140/pjm.1962.12.187
   kind: paper

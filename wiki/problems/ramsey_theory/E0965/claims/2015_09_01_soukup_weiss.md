@@ -13,6 +13,7 @@ claim: disproved
 scope: full
 evidence:
 - reviewed
+submitted: null
 links:
 - url: http://www.renyi.hu/~dsoukup/sums.pdf
   kind: preprint

@@ -12,6 +12,7 @@ claim: proved
 scope: full
 evidence:
 - reviewed
+submitted: null
 links:
 - url: https://www.overleaf.com/read/chgqskmtnmzy
   kind: preprint

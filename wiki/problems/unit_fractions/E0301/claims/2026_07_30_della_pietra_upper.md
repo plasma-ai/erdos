@@ -10,6 +10,7 @@ authors:
 status: claimed
 claim: proved
 scope: partial
+submitted: null
 links:
 - url: https://github.com/donalddellapietra/erdos-301-proof/blob/789c6f045dbc81da3811031247d186a7128dafce/README.md
   kind: record

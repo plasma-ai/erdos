@@ -16,6 +16,7 @@ scope: full
 evidence:
 - reviewed
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.1090/cams/34
   kind: paper

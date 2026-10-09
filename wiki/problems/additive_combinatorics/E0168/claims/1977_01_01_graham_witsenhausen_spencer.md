@@ -12,6 +12,7 @@ authors:
 status: claimed
 claim: proved
 scope: partial
+submitted: null
 links:
 - url: https://mathweb.ucsd.edu/~ronspubs/77_05_extremal_density.pdf
   kind: paper

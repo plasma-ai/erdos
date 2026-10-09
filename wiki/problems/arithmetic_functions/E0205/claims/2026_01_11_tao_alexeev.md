@@ -14,6 +14,7 @@ claim: disproved
 scope: full
 evidence:
 - reviewed
+submitted: null
 links:
 - url: https://www.erdosproblems.com/forum/thread/205
   kind: discussion

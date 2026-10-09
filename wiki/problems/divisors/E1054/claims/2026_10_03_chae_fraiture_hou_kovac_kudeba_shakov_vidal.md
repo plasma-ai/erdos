@@ -16,6 +16,7 @@ authors:
 status: claimed
 claim: answered
 scope: full
+submitted: null
 links:
 - url: https://github.com/antoshashakov/Principia-Math-Solutions/blob/57570ce9904c03e6c2b434380bc457b58b917cad/erdos1054/ep1054/paper/EP1054.pdf
   kind: preprint

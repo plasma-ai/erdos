@@ -13,6 +13,7 @@ claim: proved
 scope: partial
 evidence:
 - refereed
+submitted: null
 links:
 - url: https://combinatorialpress.com/jcmcc-articles/volume-008/a-note-on-packing-complete-graphs-with-trees/
   kind: paper

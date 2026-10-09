@@ -10,6 +10,7 @@ status: claimed
 claim: disproved
 scope: partial
 settles: [stronger_version]
+submitted: null
 links:
 - url: https://www.erdosproblems.com/forum/thread/679#post-2975
   kind: discussion

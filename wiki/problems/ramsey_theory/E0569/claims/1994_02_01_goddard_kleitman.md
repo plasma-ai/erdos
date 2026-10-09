@@ -13,6 +13,7 @@ claim: answered
 scope: partial
 evidence:
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.1016/0012-365X(94)90158-9
   kind: paper

@@ -14,6 +14,7 @@ claim: proved
 scope: partial
 evidence:
 - reviewed
+submitted: null
 links:
 - url: https://arxiv.org/abs/1608.04153
   kind: preprint

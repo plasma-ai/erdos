@@ -15,6 +15,7 @@ claim: disproved
 scope: full
 evidence:
 - reviewed
+submitted: null
 links:
 - url: https://arxiv.org/abs/2605.21221v3
   kind: preprint

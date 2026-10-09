@@ -14,6 +14,7 @@ claim: proved
 scope: partial
 evidence:
 - refereed
+submitted: null
 links:
 - url: https://math.colgate.edu/~integers/h31/h31.pdf
   kind: paper

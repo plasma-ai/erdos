@@ -14,6 +14,7 @@ scope: partial
 evidence:
 - reviewed
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.1090/S0002-9947-1984-0748847-1
   kind: paper

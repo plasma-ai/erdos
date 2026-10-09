@@ -10,6 +10,7 @@ authors:
 status: withdrawn
 claim: proved
 scope: full
+submitted: 2026-02-18
 links:
 - url: https://drive.google.com/file/d/1fhbO6rHOJOjW2iQBFlbhDVKUz1Ffbd6y/view
   kind: preprint

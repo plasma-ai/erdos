@@ -10,6 +10,7 @@ authors:
 status: claimed
 claim: decidable
 scope: partial
+submitted: 2026-03-23
 links:
 - url: https://www.erdosproblems.com/forum/thread/848#post-4959
   kind: discussion

@@ -13,6 +13,7 @@ claim: answered
 scope: full
 evidence:
 - reviewed
+submitted: 2026-07-15
 links:
 - url: https://www.erdosproblems.com/forum/thread/321/proof-claims#proof-claim-62
   kind: discussion

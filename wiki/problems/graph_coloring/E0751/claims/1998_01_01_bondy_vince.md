@@ -14,6 +14,7 @@ scope: full
 evidence:
 - reviewed
 - refereed
+submitted: null
 links:
 - url: "https://doi.org/10.1002/(SICI)1097-0118(199801)27:1<11::AID-JGT3>3.0.CO;2-J"
   kind: paper

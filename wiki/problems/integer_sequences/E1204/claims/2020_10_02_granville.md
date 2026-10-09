@@ -12,6 +12,7 @@ claim: disproved
 scope: conditional
 evidence:
 - refereed
+submitted: null
 links:
 - url: https://arxiv.org/abs/2010.01211
   kind: preprint

@@ -14,6 +14,7 @@ scope: full
 evidence:
 - reviewed
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.1112/jlms/2.part_4.620
   kind: paper

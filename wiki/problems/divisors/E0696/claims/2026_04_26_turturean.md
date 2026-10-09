@@ -10,6 +10,7 @@ authors:
 status: claimed
 claim: answered
 scope: full
+submitted: null
 links:
 - url: https://www.erdosproblems.com/forum/discuss/696
   kind: discussion

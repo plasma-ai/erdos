@@ -13,6 +13,7 @@ claim: proved
 scope: partial
 evidence:
 - reviewed
+submitted: 2026-09-27
 links:
 - url: https://conjectures.io/results/51923647-3c0d-418e-b330-aa595f5cad42
   kind: record

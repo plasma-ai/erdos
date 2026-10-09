@@ -13,6 +13,7 @@ claim: proved
 scope: full
 evidence:
 - formalized
+submitted: null
 links:
 - url: https://www.erdosproblems.com/forum/thread/548/proof-claims
   kind: discussion

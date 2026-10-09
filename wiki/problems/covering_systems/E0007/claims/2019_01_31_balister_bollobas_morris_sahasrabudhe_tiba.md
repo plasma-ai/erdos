@@ -16,6 +16,7 @@ claim: disproved
 scope: partial
 evidence:
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.2140/ant.2021.15.609
   kind: paper

@@ -10,6 +10,7 @@ authors:
 status: claimed
 claim: proved
 scope: partial
+submitted: 2026-07-20
 links:
 - url: https://github.com/Robby955/erdos-617-fixed-cases/blob/fb628c8cf5ea7173c245c9542b69d72c11cce4a4/r7-r8/erdos-617-r7-r8.pdf
   kind: preprint

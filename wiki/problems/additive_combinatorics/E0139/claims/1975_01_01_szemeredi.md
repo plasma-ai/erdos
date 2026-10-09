@@ -13,6 +13,7 @@ scope: full
 evidence:
 - reviewed
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.4064/aa-27-1-199-245
   kind: paper

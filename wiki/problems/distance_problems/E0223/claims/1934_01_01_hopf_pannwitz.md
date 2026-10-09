@@ -12,6 +12,7 @@ settles:
 - plane
 evidence:
 - reviewed
+submitted: null
 links:
 - url: https://www.erdosproblems.com/223
   kind: discussion

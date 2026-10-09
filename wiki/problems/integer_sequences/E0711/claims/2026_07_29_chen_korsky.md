@@ -12,6 +12,7 @@ status: claimed
 claim: proved
 scope: partial
 settles: [comparison]
+submitted: 2026-09-14
 links:
 - url: https://arxiv.org/abs/2607.26450v1
   kind: preprint

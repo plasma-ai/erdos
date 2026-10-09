@@ -15,6 +15,7 @@ settles: [first_question]
 evidence:
 - reviewed
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.4064/aa-11-2-205-208
   kind: paper

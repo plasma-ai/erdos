@@ -19,6 +19,7 @@ claim: proved
 scope: full
 evidence:
 - reviewed
+submitted: null
 links:
 - url: https://arxiv.org/abs/2605.00301v1
   kind: preprint

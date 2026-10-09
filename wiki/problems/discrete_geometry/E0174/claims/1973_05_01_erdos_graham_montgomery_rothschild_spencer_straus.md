@@ -17,6 +17,7 @@ claim: proved
 scope: partial
 evidence:
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.1016/0097-3165(73)90011-3
   kind: paper

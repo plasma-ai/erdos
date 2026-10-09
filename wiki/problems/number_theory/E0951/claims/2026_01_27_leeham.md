@@ -12,6 +12,7 @@ claim: disproved
 scope: partial
 settles:
 - every_x
+submitted: null
 links:
 - url: https://www.erdosproblems.com/forum/thread/951
   kind: discussion

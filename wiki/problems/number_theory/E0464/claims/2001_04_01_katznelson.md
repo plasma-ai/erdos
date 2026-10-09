@@ -12,6 +12,7 @@ claim: proved
 scope: full
 evidence:
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.1007/s004930100019
   kind: paper

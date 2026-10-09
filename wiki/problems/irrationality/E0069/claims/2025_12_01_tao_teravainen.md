@@ -13,6 +13,7 @@ claim: proved
 scope: full
 evidence:
 - reviewed
+submitted: null
 links:
 - url: https://arxiv.org/abs/2512.01739
   kind: preprint

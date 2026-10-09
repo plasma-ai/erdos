@@ -15,6 +15,7 @@ claim: proved
 scope: full
 evidence:
 - reviewed
+submitted: null
 links:
 - url: https://arxiv.org/abs/2408.11034
   kind: preprint

@@ -12,6 +12,7 @@ status: rejected
 claim: proved
 scope: partial
 settles: [reciprocal_sum]
+submitted: 2026-07-30
 links:
 - url: https://www.erdosproblems.com/forum/thread/12/proof-claims#proof-claim-172
   kind: discussion

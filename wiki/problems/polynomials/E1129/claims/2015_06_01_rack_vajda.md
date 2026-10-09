@@ -14,6 +14,7 @@ scope: partial
 evidence:
 - reviewed
 - refereed
+submitted: null
 links:
 - url: https://www.cs.ubbcluj.ro/journal/studia-mathematica/archive/2015-2/01-Rack-Vajda-final.pdf
   kind: paper

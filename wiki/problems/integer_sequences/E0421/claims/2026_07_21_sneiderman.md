@@ -12,6 +12,7 @@ claim: proved
 scope: full
 evidence:
 - reviewed
+submitted: 2026-07-21
 links:
 - url: https://github.com/Robby955/erdos-421-audit/blob/67e2daa70d07a9fc039086bb6358a9c24e75db70/paper.pdf
   kind: preprint

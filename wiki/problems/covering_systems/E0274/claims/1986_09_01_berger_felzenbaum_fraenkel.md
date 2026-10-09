@@ -14,6 +14,7 @@ claim: disproved
 scope: partial
 evidence:
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.4153/CMB-1986-050-0
   kind: paper

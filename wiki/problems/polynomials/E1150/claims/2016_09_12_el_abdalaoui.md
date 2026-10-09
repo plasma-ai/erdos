@@ -10,6 +10,7 @@ authors:
 status: rejected
 claim: proved
 scope: full
+submitted: null
 links:
 - url: https://arxiv.org/abs/1609.03435
   kind: preprint

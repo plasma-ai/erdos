@@ -17,6 +17,7 @@ scope: full
 evidence:
 - reviewed
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.4007/annals.2020.192.3.6
   kind: paper

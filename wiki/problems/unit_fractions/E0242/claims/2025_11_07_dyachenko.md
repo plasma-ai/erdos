@@ -10,6 +10,7 @@ authors:
 status: claimed
 claim: proved
 scope: full
+submitted: null
 links:
 - url: https://arxiv.org/abs/2511.07465
   kind: preprint

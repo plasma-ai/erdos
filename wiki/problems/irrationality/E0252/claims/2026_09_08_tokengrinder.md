@@ -11,6 +11,7 @@ claim: proved
 scope: full
 evidence:
 - formalized
+submitted: 2026-09-08
 links:
 - url: https://github.com/tokengr1nder/Erdos252/blob/dc071aafce41bbae41caf4c015499db6dafafd11/Erdos252/Solution.lean
   kind: formalization

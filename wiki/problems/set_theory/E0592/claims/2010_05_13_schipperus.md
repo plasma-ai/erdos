@@ -12,6 +12,7 @@ claim: answered
 scope: partial
 evidence:
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.1016/j.apal.2009.12.007
   kind: paper

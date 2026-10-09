@@ -15,6 +15,7 @@ settles:
 - determined_by_diameter
 evidence:
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.1090/proc/17897
   kind: paper

@@ -13,6 +13,7 @@ claim: proved
 scope: partial
 evidence:
 - refereed
+submitted: null
 links:
 - url: http://www.numdam.org/item/CM_1935__2__463_0/
   kind: paper

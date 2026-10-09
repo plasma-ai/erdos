@@ -13,6 +13,7 @@ scope: full
 evidence:
 - reviewed
 - refereed
+submitted: null
 links:
 - url: https://www.mathnet.ru/eng/dan45417
   kind: paper

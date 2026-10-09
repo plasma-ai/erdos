@@ -15,6 +15,7 @@ scope: partial
 evidence:
 - reviewed
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.1002/rsa.20224
   kind: paper

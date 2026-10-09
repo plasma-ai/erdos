@@ -14,6 +14,7 @@ scope: partial
 evidence:
 - reviewed
 - refereed
+submitted: null
 links:
 - url: https://www.impan.pl/en/publishing-house/journals-and-series/acta-arithmetica/all/12/2/96035/on-two-problems-of-erdos-szusz-and-turan-concerning-diophantine-approximations
   kind: paper

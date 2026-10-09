@@ -11,6 +11,7 @@ claim: proved
 scope: partial
 evidence:
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.1112/plms/82.3.554
   kind: paper

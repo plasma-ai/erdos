@@ -12,6 +12,7 @@ claim: disproved
 scope: full
 evidence:
 - reviewed
+submitted: null
 links:
 - url: https://github.com/ebarschkis/ErdosProblem/blob/e463ccff24d5c1d635b62641ffba30f0b48509ad/Problem1197/Solution.pdf
   kind: preprint

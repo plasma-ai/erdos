@@ -10,6 +10,7 @@ authors:
 status: claimed
 claim: disproved
 scope: partial
+submitted: 2026-07-27
 links:
 - url: https://www.erdosproblems.com/forum/thread/273/proof-claims#proof-claim-147
   kind: discussion

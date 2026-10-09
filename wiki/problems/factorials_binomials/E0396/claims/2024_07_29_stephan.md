@@ -10,6 +10,7 @@ authors:
 status: claimed
 claim: proved
 scope: partial
+submitted: null
 links:
 - url: https://oeis.org/A375077
   kind: record

@@ -10,6 +10,7 @@ authors:
 status: claimed
 claim: proved
 scope: partial
+submitted: null
 links:
 - url: https://pdfhost.io/v/NnHQ32EvjQ_Erdos_536_Partial_Progress
   kind: preprint

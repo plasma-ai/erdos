@@ -13,6 +13,7 @@ status: claimed
 claim: proved
 scope: partial
 settles: [log_density]
+submitted: null
 links:
 - url: https://arxiv.org/abs/2502.09539
   kind: preprint

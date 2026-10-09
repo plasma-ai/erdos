@@ -10,6 +10,7 @@ authors:
 status: claimed
 claim: proved
 scope: partial
+submitted: null
 links:
 - url: https://github.com/thepriceisright/publications/blob/8f055eb3fd1485477c92cbfbdfa4b3c56f192610/erdos/304/Lower1950.lean
   kind: formalization

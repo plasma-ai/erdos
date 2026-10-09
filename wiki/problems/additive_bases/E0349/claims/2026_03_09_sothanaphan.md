@@ -10,6 +10,7 @@ authors:
 status: claimed
 claim: proved
 scope: partial
+submitted: 2026-03-09
 links:
 - url: https://drive.google.com/file/d/1elLoXoV3SKSqxgo5NrOpJ9ttE3EhWRNT/view
   kind: preprint

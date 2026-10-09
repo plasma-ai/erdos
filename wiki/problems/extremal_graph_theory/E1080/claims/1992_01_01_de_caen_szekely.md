@@ -13,6 +13,7 @@ claim: disproved
 scope: full
 evidence:
 - reviewed
+submitted: null
 links:
 - url: https://zbmath.org/?q=an:0795.05083
   kind: record

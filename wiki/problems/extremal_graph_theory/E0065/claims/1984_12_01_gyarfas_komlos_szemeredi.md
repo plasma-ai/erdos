@@ -16,6 +16,7 @@ settles:
 - harmonic_bound
 evidence:
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.1002/jgt.3190080402
   kind: paper

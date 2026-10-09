@@ -10,6 +10,7 @@ authors:
 status: claimed
 claim: answered
 scope: partial
+submitted: 2026-09-19
 links:
 - url: https://www.erdosproblems.com/forum/thread/1011#post-9099
   kind: discussion

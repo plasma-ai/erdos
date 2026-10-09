@@ -14,6 +14,7 @@ scope: partial
 evidence:
 - reviewed
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.1002/jgt.20060
   kind: paper

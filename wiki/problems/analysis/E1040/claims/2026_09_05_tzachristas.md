@@ -12,6 +12,7 @@ claim: proved
 scope: partial
 settles:
 - vanishes_at_diameter_one
+submitted: 2026-09-09
 links:
 - url: https://arxiv.org/abs/2609.06050
   kind: preprint

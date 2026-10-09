@@ -10,6 +10,7 @@ authors:
 status: claimed
 claim: proved
 scope: conditional
+submitted: null
 links:
 - url: https://doi.org/10.13140/RG.2.2.14599.05283
   kind: preprint

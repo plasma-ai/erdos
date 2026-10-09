@@ -9,6 +9,7 @@ authors: []
 status: claimed
 claim: proved
 scope: full
+submitted: null
 links:
 - url: https://github.com/AxiomMath/erdos-public/blob/8c05a325f5b5cfa7a5eeb2de53337a51cf1a4067/Erdos/Erdos403/solution.lean
   kind: formalization

@@ -10,6 +10,7 @@ authors:
 status: claimed
 claim: answered
 scope: partial
+submitted: 2026-06-18
 links:
 - url: https://doi.org/10.2139/ssrn.6850818
   kind: preprint

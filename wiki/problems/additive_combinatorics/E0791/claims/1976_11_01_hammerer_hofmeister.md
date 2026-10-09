@@ -13,6 +13,7 @@ claim: disproved
 scope: partial
 evidence:
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.1515/crll.1976.286-287.239
   kind: paper

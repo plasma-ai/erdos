@@ -12,6 +12,7 @@ claim: answered
 scope: full
 evidence:
 - reviewed
+submitted: 2026-07-14
 links:
 - url: https://arxiv.org/abs/2607.23302
   kind: preprint

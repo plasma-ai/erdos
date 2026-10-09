@@ -16,6 +16,7 @@ authors:
 status: claimed
 claim: proved
 scope: partial
+submitted: 2026-06-10
 links:
 - url: https://arxiv.org/abs/2607.09474v1
   kind: preprint

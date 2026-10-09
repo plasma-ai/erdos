@@ -10,6 +10,7 @@ authors:
 status: claimed
 claim: proved
 scope: partial
+submitted: 2026-07-21
 links:
 - url: https://github.com/Robby955/erdos-617-fixed-cases/releases/download/fixed-r9-2026-07-21/erdos-617-r9.pdf
   kind: preprint

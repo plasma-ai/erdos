@@ -12,6 +12,7 @@ claim: proved
 scope: partial
 evidence:
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.1307/mmj/1029004331
   kind: paper

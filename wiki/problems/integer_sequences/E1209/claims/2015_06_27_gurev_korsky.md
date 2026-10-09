@@ -11,6 +11,7 @@ authors:
 status: claimed
 claim: disproved
 scope: partial
+submitted: null
 links:
 - url: https://services.artofproblemsolving.com/download.php?id=YXR0YWNobWVudHMvNi9iLzJlNDk2MGZhZWNkZGY1MjI0MTYxNDQxNTdlY2FiNWY4NTAxZGQ3LnBkZg==&rn=RUxNT18yMDE1X1NvbHV0aW9ucy5wZGY=
   kind: record

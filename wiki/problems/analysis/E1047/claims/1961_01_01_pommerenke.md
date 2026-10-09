@@ -13,6 +13,7 @@ scope: full
 evidence:
 - reviewed
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.1307/mmj/1028998561
   kind: paper

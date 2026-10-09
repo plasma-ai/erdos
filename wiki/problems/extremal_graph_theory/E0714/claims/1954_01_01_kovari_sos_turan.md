@@ -14,6 +14,7 @@ claim: proved
 scope: partial
 evidence:
 - refereed
+submitted: null
 links:
 - url: https://www.impan.pl/get/doi/10.4064/cm-3-1-50-57
   kind: paper

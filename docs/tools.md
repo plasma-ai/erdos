@@ -493,10 +493,10 @@ The gate checks:
     legacy-scaffold exception described below.
 02. Problem and claim pages against the claims schema (the `problem claims`
     leg): the keys and their vocabularies, the claim page names, the evidence
-    order, the shape of `links`, the **Covers.** and **Depends on.** paragraphs,
-    the dependency rule and the derivation of each problem's standing; a problem
-    with no claim page is counted in the leg's detail, or fails with
-    `--settled`.
+    order, the shape of `links` and `submitted`, the **Covers.** and **Depends
+    on.** paragraphs, the dependency rule and the derivation of each problem's
+    standing; a problem with no claim page is counted in the leg's detail, or
+    fails with `--settled`.
 03. Incoming-library navigation for existing managed blocks and explicitly
     selected problems, without writing pages.
 04. Library subject indexes with `build_library_subjects.py --check` and the
@@ -623,27 +623,27 @@ name `<YYYY_MM_DD>_<claimant>.md`, the `authors` list (distinct nonempty names
 after `desc` and before `status`; a claim page without it is counted in the
 leg's detail and is a finding with `--settled`), the evidence list's fixed
 order, its presence on an accepted claim and its absence from a pending one,
-each link's `url`-first shape and kind, the **Covers.** paragraph of a partial
-claim, the **Depends on.** wikilinks (wiki pages, each resolving, none
-unaccepted under an accepted claim; or library result pages, each resolving,
-reported as a note with the page's read status and never counted toward the
-standing, a card in place of a result page being a finding), the optional
-`parts` list (distinct short labels) and each partial claim's `settles` labels
-(only on partial claims, only labels the problem lists), and the derivation of
-the problem's `status` and `claim` from its claims, part by part where parts are
-listed. A `not_provable` or `not_disprovable` claim states one side of an
-independence result and must be partial: on its own it leaves the problem, or
-the part it settles, open, and one accepted claim of each kind settles it as
-`independent`. A problem with no claim page keeps its provisional standing: the
-leg counts such problems in its detail and passes; with `--settled` each is a
-finding, the mode a release gate uses once the claim pages are written.
-`erdos problem-claims` runs the same check standalone, and
-`erdos problem-claims --write` sets the derived values on every problem that has
-claim pages before checking; repeatable `--problem E<nnnn>` selections scope the
-write and the check alike. The leg reads frontmatter and the two labeled
-paragraphs only; it assesses no mathematics and awards no standing. The module
-`tools.core.problem_claims` is shared, repository-neutral code, so it knows no
-problem numbering, area list or site.
+each link's `url`-first shape and kind, the `submitted` date (a calendar date,
+or `null`), the **Covers.** paragraph of a partial claim, the **Depends on.**
+wikilinks (wiki pages, each resolving, none unaccepted under an accepted claim;
+or library result pages, each resolving, reported as a note with the page's read
+status and never counted toward the standing, a card in place of a result page
+being a finding), the optional `parts` list (distinct short labels) and each
+partial claim's `settles` labels (only on partial claims, only labels the
+problem lists), and the derivation of the problem's `status` and `claim` from
+its claims, part by part where parts are listed. A `not_provable` or
+`not_disprovable` claim states one side of an independence result and must be
+partial: on its own it leaves the problem, or the part it settles, open, and one
+accepted claim of each kind settles it as `independent`. A problem with no claim
+page keeps its provisional standing: the leg counts such problems in its detail
+and passes; with `--settled` each is a finding, the mode a release gate uses
+once the claim pages are written. `erdos problem-claims` runs the same check
+standalone, and `erdos problem-claims --write` sets the derived values on every
+problem that has claim pages before checking; repeatable `--problem E<nnnn>`
+selections scope the write and the check alike. The leg reads frontmatter and
+the two labeled paragraphs only; it assesses no mathematics and awards no
+standing. The module `tools.core.problem_claims` is shared, repository-neutral
+code, so it knows no problem numbering, area list or site.
 
 #### Incoming-library scope
 

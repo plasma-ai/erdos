@@ -11,6 +11,7 @@ authors:
 status: claimed
 claim: answered
 scope: full
+submitted: 2026-07-25
 links:
 - url: https://arxiv.org/abs/2606.11174
   kind: preprint

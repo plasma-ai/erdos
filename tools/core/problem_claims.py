@@ -556,6 +556,15 @@ def _claim_issues(
     if evidence is not None and metadata.get('status') == 'claimed':
         issues.append('a claimed page lists no evidence')
 
+    # the date of the claim's submission to the catalog's site or registry, null
+    # when none is known
+    if 'submitted' not in metadata:
+        issues.append('missing submitted (a calendar date YYYY-MM-DD, or null)')
+    elif metadata['submitted'] is not None and not _calendar_date(
+        metadata['submitted']
+    ):
+        issues.append('submitted must be a calendar date YYYY-MM-DD, or null')
+
     # the postings of the claim, url first
     links = metadata.get('links')
     if links is None:

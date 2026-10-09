@@ -11,6 +11,7 @@ claim: proved
 scope: partial
 evidence:
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.1006/jnth.1999.2407
   kind: paper

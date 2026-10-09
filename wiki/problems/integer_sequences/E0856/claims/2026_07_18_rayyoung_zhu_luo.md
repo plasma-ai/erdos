@@ -11,6 +11,7 @@ authors:
 status: claimed
 claim: proved
 scope: partial
+submitted: 2026-07-18
 links:
 - url: https://www.overleaf.com/read/smhxdxnrmkbs#0eb184
   kind: preprint

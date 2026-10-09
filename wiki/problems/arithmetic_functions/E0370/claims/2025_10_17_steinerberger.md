@@ -12,6 +12,7 @@ claim: proved
 scope: full
 evidence:
 - reviewed
+submitted: null
 links:
 - url: https://www.erdosproblems.com/370
   kind: discussion

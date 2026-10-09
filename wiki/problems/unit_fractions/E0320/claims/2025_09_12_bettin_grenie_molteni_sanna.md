@@ -16,6 +16,7 @@ scope: partial
 evidence:
 - reviewed
 - refereed
+submitted: null
 links:
 - url: https://arxiv.org/abs/2509.10030
   kind: preprint

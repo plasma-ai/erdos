@@ -14,6 +14,7 @@ scope: full
 evidence:
 - reviewed
 - refereed
+submitted: null
 links:
 - url: https://rms.unibuc.ro/bulletin/pdf/53-3/GicaEpure.pdf
   kind: paper

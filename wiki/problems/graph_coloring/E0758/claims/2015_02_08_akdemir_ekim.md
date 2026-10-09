@@ -13,6 +13,7 @@ claim: answered
 scope: full
 evidence:
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.1016/j.disopt.2015.01.002
   kind: paper

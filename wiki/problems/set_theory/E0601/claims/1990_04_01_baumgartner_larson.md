@@ -13,6 +13,7 @@ claim: disproved
 scope: conditional
 evidence:
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.1016/0168-0072(90)90013-R
   kind: paper

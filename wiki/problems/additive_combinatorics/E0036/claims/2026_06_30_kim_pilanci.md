@@ -11,6 +11,7 @@ authors:
 status: claimed
 claim: proved
 scope: partial
+submitted: null
 links:
 - url: https://arxiv.org/abs/2606.31182
   kind: preprint

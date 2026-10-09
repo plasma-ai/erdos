@@ -13,6 +13,7 @@ scope: full
 evidence:
 - reviewed
 - formalized
+submitted: 2026-09-03
 links:
 - url: https://github.com/tadamcz/erdos548/blob/3766491b9d9c9f00e05fde4eb004fe71af1452d1/Erdos548/Resolutions/Erdos548_192usd_21h.lean
   kind: formalization

@@ -15,6 +15,7 @@ settles:
 - q1
 evidence:
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.1016/0001-8708(88)90041-2
   kind: paper

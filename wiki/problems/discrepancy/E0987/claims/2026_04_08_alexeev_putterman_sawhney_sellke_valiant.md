@@ -17,6 +17,7 @@ scope: partial
 settles: [sublinear_possible]
 evidence:
 - reviewed
+submitted: null
 links:
 - url: https://arxiv.org/abs/2604.06609
   kind: preprint

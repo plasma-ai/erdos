@@ -13,6 +13,7 @@ authors:
 status: claimed
 claim: proved
 scope: full
+submitted: null
 links:
 - url: https://doi.org/10.1007/s00440-025-01441-1
   kind: paper

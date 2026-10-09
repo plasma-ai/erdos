@@ -11,6 +11,7 @@ claim: disproved
 scope: partial
 evidence:
 - reviewed
+submitted: null
 links:
 - url: https://conjectures.io/results/244ff2d0-399d-4e37-a307-4ff6f3cb3493
   kind: record

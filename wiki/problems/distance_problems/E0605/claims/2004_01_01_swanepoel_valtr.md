@@ -13,6 +13,7 @@ claim: proved
 scope: full
 evidence:
 - reviewed
+submitted: null
 links:
 - url: https://doi.org/10.1090/conm/342/06148
   kind: paper

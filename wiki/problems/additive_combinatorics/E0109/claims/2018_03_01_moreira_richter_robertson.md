@@ -15,6 +15,7 @@ scope: full
 evidence:
 - reviewed
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.4007/annals.2019.189.2.4
   kind: paper

@@ -12,6 +12,7 @@ authors:
 status: claimed
 claim: proved
 scope: partial
+submitted: null
 links:
 - url: https://users.renyi.hu/~p_erdos/1982-01.pdf
   kind: paper

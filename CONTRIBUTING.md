@@ -64,6 +64,9 @@ These rules catch most first contributions:
 - A problem's standing follows its claim pages. Edit the claim pages, then
   regenerate the problem's `status` and `claim` with
   `uv run --no-sync erdos problem-claims --write --problem E<nnnn>`.
+- A claim page's `submitted` is the date the claim was submitted to the
+  catalog's site or the Palomar registry, as its Submission note gives it, or
+  `null` when there was no such submission.
 - Pages lean toward the rulings of the catalog's curator. A page whose statement
   or standing departs from the catalog explains why.
 - Never edit a generated file by hand: `wiki/lemmas.md`, `wiki/standing.md`,

@@ -509,47 +509,51 @@ A claim page carries `authors`, `status` (`claimed`, `accepted`, `rejected` or
 `withdrawn`), `claim` (the problem values without `none` and `contested`, plus
 `not_provable` and `not_disprovable`, which are always partial, and `decidable`,
 a reduction to a finite check, which is always partial), `scope` (`full`,
-`partial` or `conditional`), `evidence`, `links` and, on a partial claim of a
-problem that lists its parts, `settles`. `authors`, after `desc` and before
-`status`, lists the authors the claim's publication credits with the result, in
-the order printed, each name as the paper, preprint, book, post or file prints
-it; a result first reported in someone else's paper or survey lists the author
-it is credited to there. An organization or an AI system that the publication
-prints as an author is listed as printed, as are the formal authors a Lean
-file's header names; an AI system credited only with assistance is named in the
-body. A work that prints no author's name lists the real name of the person who
-posted it when that name is clearly tied to the posting account (a note posted
-under its author's own account takes that person's name); a username or account
-name is never listed, so when no real name is known `authors` is the empty list
-`[]` and the body names the handle where there is one. A claim of this corpus's
-own (a `corpus` page) has no publication and lists none. The schema check counts
-any other claim page without `authors` as transition debt and, in its settled
-mode, fails it. `evidence` lists the kinds of acceptance evidence in the fixed
-order `reviewed`, `refereed`, `formalized`; an accepted claim lists at least
-one, and its prose names who reviewed. `links` lists every posting of the
-claimant's result as `{url, kind, date?}`, `url` first, `kind` one of `paper`,
-`preprint`, `formalization`, `code`, `record` or `discussion`, pinned to a
-commit where one exists. The body says what a partial claim settles under
-**Covers.**, what the claim rests on under **Depends on.** (wikilinks to wiki
-pages, or to library result pages, which the check reports with their read
-status and never counts toward the standing; an accepted claim depends on no
-unaccepted wiki page, a `solved` problem page counting as accepted), and states
-unproven hypotheses in prose. Claims are scoped and valued against the statement
-the problem page shows, the corrected or precise Statement where there is one: a
-theorem of the whole statement is `full`, one on a narrower range is `partial`,
-and the claim value follows the statement's polarity. A result that answers only
-the site's wording keeps its claim page with `status` `rejected` and the reason
-"answers the site's wording, not the corrected statement". That a problem is
-falsifiable or verifiable is a body note on an open problem, not a claim.
+`partial` or `conditional`), `evidence`, `submitted`, `links` and, on a partial
+claim of a problem that lists its parts, `settles`. `authors`, after `desc` and
+before `status`, lists the authors the claim's publication credits with the
+result, in the order printed, each name as the paper, preprint, book, post or
+file prints it; a result first reported in someone else's paper or survey lists
+the author it is credited to there. An organization or an AI system that the
+publication prints as an author is listed as printed, as are the formal authors
+a Lean file's header names; an AI system credited only with assistance is named
+in the body. A work that prints no author's name lists the real name of the
+person who posted it when that name is clearly tied to the posting account (a
+note posted under its author's own account takes that person's name); a username
+or account name is never listed, so when no real name is known `authors` is the
+empty list `[]` and the body names the handle where there is one. A claim of
+this corpus's own (a `corpus` page) has no publication and lists none. The
+schema check counts any other claim page without `authors` as transition debt
+and, in its settled mode, fails it. `evidence` lists the kinds of acceptance
+evidence in the fixed order `reviewed`, `refereed`, `formalized`; an accepted
+claim lists at least one, and its prose names who reviewed. `links` lists every
+posting of the claimant's result as `{url, kind, date?}`, `url` first, `kind`
+one of `paper`, `preprint`, `formalization`, `code`, `record` or `discussion`,
+pinned to a commit where one exists. `submitted` is the date the claim was
+submitted to the catalog's site, as a proof claim or a forum post, or to the
+Palomar registry: the date its **Submission note** gives, as `YYYY-MM-DD`, and
+`null` when no such submission is known. The body says what a partial claim
+settles under **Covers.**, what the claim rests on under **Depends on.**
+(wikilinks to wiki pages, or to library result pages, which the check reports
+with their read status and never counts toward the standing; an accepted claim
+depends on no unaccepted wiki page, a `solved` problem page counting as
+accepted), and states unproven hypotheses in prose. Claims are scoped and valued
+against the statement the problem page shows, the corrected or precise Statement
+where there is one: a theorem of the whole statement is `full`, one on a
+narrower range is `partial`, and the claim value follows the statement's
+polarity. A result that answers only the site's wording keeps its claim page
+with `status` `rejected` and the reason "answers the site's wording, not the
+corrected statement". That a problem is falsifiable or verifiable is a body note
+on an open problem, not a claim.
 
 Acceptance lives on the claim page: a claim moves from `claimed` to `accepted`
 only with the evidence it lists, and the problem's `status` and `claim` follow
 by derivation. The `problem claims` gate leg checks the keys and their
-vocabularies, the claim names, the evidence order, the shape of `links`, the
-**Covers.** and **Depends on.** paragraphs, the dependency rule, the `parts` and
-`settles` labels and the derivation; the `problem-claims` command runs the same
-check and, with `--write`, sets the derived values, both over the problems
-`--problem` selects when it is given.
+vocabularies, the claim names, the evidence order, the shape of `links` and
+`submitted`, the **Covers.** and **Depends on.** paragraphs, the dependency
+rule, the `parts` and `settles` labels and the derivation; the `problem-claims`
+command runs the same check and, with `--write`, sets the derived values, both
+over the problems `--problem` selects when it is given.
 
 ## Naming
 

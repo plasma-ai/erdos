@@ -15,6 +15,7 @@ scope: full
 evidence:
 - reviewed
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.4169/amer.math.monthly.118.10.921
   kind: paper

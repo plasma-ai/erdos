@@ -15,6 +15,7 @@ scope: full
 evidence:
 - reviewed
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.1070/SM1980v037n04ABEH001989
   kind: paper

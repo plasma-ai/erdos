@@ -12,6 +12,7 @@ claim: proved
 scope: partial
 evidence:
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.4064/aa169-3-2
   kind: paper

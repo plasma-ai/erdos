@@ -10,6 +10,7 @@ authors:
 status: claimed
 claim: proved
 scope: partial
+submitted: null
 links:
 - url: https://users.renyi.hu/~p_erdos/1974-27.pdf
   kind: paper

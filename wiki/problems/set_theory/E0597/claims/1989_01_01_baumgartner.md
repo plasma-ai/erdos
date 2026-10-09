@@ -10,6 +10,7 @@ authors:
 status: claimed
 claim: not_disprovable
 scope: partial
+submitted: null
 links:
 - url: https://doi.org/10.1007/BFb0097328
   kind: paper

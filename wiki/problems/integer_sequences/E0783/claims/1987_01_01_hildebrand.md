@@ -13,6 +13,7 @@ scope: partial
 evidence:
 - reviewed
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.4064/aa-48-3-209-260
   kind: paper

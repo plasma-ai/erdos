@@ -14,6 +14,7 @@ claim: proved
 scope: full
 evidence:
 - reviewed
+submitted: null
 links:
 - url: https://users.renyi.hu/~p_erdos/1974-17.pdf
   kind: paper

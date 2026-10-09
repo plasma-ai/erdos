@@ -15,6 +15,7 @@ claim: proved
 scope: partial
 evidence:
 - refereed
+submitted: null
 links:
 - url: https://ajc.maths.uq.edu.au/pdf/29/ajc_v29_p157.pdf
   kind: paper

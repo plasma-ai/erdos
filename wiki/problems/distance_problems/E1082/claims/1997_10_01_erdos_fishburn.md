@@ -15,6 +15,7 @@ settles:
 - single_point
 evidence:
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.1016/S0012-365X(96)00145-8
   kind: paper

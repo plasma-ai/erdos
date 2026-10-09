@@ -11,6 +11,7 @@ claim: proved
 scope: full
 evidence:
 - reviewed
+submitted: null
 links:
 - url: https://annual.uni-sofia.bg/index.php/fmi/article/view/521
   kind: paper

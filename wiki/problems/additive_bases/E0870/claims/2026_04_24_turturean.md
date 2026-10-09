@@ -10,6 +10,7 @@ authors:
 status: claimed
 claim: disproved
 scope: full
+submitted: 2026-04-24
 links:
 - url: https://www.overleaf.com/read/gknkvvxrymfv
   kind: preprint

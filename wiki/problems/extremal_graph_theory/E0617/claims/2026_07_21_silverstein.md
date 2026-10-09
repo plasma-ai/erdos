@@ -10,6 +10,7 @@ authors:
 status: claimed
 claim: proved
 scope: partial
+submitted: 2026-07-21
 links:
 - url: https://github.com/sprite143/erdos617-r5-computer-proof/blob/65085d6658d34003650f8fc0387015870474a801/erdos617_computer_assisted_proof.md
   kind: preprint

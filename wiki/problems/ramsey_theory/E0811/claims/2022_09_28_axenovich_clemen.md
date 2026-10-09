@@ -13,6 +13,7 @@ claim: disproved
 scope: partial
 evidence:
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.1002/jgt.23063
   kind: paper

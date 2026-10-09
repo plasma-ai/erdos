@@ -9,6 +9,7 @@ authors: []
 status: claimed
 claim: proved
 scope: partial
+submitted: 2026-09-19
 links:
 - url: https://www.erdosproblems.com/forum/thread/36/proof-claims#proof-claim-334
   kind: discussion

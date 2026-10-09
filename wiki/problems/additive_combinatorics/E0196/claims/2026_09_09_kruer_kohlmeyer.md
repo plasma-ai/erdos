@@ -13,6 +13,7 @@ claim: disproved
 scope: full
 evidence:
 - reviewed
+submitted: 2026-09-14
 links:
 - url: https://conjectures.io/results/e73b95f7-1d1b-42b5-a442-c07077741d73
   kind: record

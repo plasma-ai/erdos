@@ -13,6 +13,7 @@ scope: full
 evidence:
 - reviewed
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.1090/S0025-5718-1979-0514836-7
   kind: paper

@@ -13,6 +13,7 @@ claim: proved
 scope: full
 evidence:
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.4064/cm-86-1-37-41
   kind: paper

@@ -10,6 +10,7 @@ authors:
 status: withdrawn
 claim: proved
 scope: full
+submitted: 2026-08-19
 links:
 - url: https://zenodo.org/records/22019344
   kind: preprint

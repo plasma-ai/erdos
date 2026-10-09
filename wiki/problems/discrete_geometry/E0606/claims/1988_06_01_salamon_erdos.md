@@ -15,6 +15,7 @@ scope: full
 evidence:
 - reviewed
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.4153/CMB-1988-020-2
   kind: paper

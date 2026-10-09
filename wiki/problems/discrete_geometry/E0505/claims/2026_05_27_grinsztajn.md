@@ -10,6 +10,7 @@ authors:
 status: claimed
 claim: disproved
 scope: full
+submitted: null
 links:
 - url: https://github.com/maaxgrin/borsuk-63-counterexample/tree/cdcdbeac2e692b8641218c70ce9f414522e125e5
   kind: preprint

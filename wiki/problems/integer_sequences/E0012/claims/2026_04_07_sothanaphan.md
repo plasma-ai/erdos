@@ -11,6 +11,7 @@ status: claimed
 claim: answered
 scope: partial
 settles: [liminf, density]
+submitted: 2026-04-07
 links:
 - url: https://drive.google.com/file/d/15oHXNPNx68spt4QttwNx7bCfX7g_7MoO/view
   kind: preprint

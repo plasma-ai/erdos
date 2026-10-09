@@ -10,6 +10,7 @@ authors:
 status: claimed
 claim: disproved
 scope: partial
+submitted: null
 links:
 - url: https://github.com/mo271/formal-conjectures/blob/f13dd54b520cdf2136fdd3a04f0f9fa50e311358/FormalConjectures/ErdosProblems/1097.lean#L306
   kind: formalization

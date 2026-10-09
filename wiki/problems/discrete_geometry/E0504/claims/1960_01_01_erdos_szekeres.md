@@ -13,6 +13,7 @@ claim: answered
 scope: partial
 evidence:
 - refereed
+submitted: null
 links:
 - url: https://users.renyi.hu/~p_erdos/1960-09.pdf
   kind: paper

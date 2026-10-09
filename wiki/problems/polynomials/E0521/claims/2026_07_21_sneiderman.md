@@ -10,6 +10,7 @@ authors:
 status: claimed
 claim: disproved
 scope: full
+submitted: 2026-07-21
 links:
 - url: https://www.erdosproblems.com/forum/thread/521/proof-claims#proof-claim-98
   kind: discussion

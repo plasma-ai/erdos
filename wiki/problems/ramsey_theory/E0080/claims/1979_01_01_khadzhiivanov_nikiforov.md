@@ -11,6 +11,7 @@ authors:
 status: claimed
 claim: proved
 scope: partial
+submitted: null
 links:
 - url: https://annual.uni-sofia.bg/index.php/fmi/article/view/521
   kind: paper

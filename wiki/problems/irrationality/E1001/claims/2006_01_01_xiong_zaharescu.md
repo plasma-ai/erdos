@@ -14,6 +14,7 @@ scope: full
 evidence:
 - reviewed
 - refereed
+submitted: null
 links:
 - url: https://www.impan.pl/en/publishing-house/journals-and-series/acta-arithmetica/all/125/2/82295/a-problem-of-erdos-8211-szusz-8211-turan-on-diophantine-approximation
   kind: paper

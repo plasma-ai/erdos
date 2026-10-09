@@ -13,6 +13,7 @@ claim: not_provable
 scope: partial
 evidence:
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.2307/2274566
   kind: paper

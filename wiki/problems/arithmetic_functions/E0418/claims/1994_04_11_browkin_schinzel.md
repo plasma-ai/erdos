@@ -14,6 +14,7 @@ scope: full
 evidence:
 - reviewed
 - refereed
+submitted: null
 links:
 - url: https://www.impan.pl/get/doi/10.4064/cm-68-1-55-58
   kind: paper

@@ -11,6 +11,7 @@ claim: disproved
 scope: partial
 evidence:
 - reviewed
+submitted: null
 links:
 - url: https://www.erdosproblems.com/133
   kind: discussion

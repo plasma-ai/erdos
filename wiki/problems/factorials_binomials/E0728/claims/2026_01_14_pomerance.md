@@ -12,6 +12,7 @@ claim: proved
 scope: full
 evidence:
 - refereed
+submitted: null
 links:
 - url: https://math.colgate.edu/~integers/aa47/aa47.pdf
   kind: paper

@@ -18,6 +18,7 @@ settles:
 - unbounded_diagonals
 evidence:
 - reviewed
+submitted: null
 links:
 - url: https://arxiv.org/abs/2604.06609
   kind: preprint

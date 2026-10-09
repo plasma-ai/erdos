@@ -12,6 +12,7 @@ status: claimed
 claim: disproved
 scope: partial
 settles: [i]
+submitted: null
 links:
 - url: https://arxiv.org/abs/2502.08626v1
   kind: preprint

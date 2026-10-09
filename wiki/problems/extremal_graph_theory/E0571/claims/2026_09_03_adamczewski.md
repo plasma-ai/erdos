@@ -12,6 +12,7 @@ claim: proved
 scope: full
 evidence:
 - formalized
+submitted: 2026-09-03
 links:
 - url: https://github.com/tadamcz/erdos571/blob/661cc1d842c54661f55046d27abef531d0583b1e/Erdos571/Resolutions/Erdos571_325usd_42h.lean
   kind: formalization

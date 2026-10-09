@@ -12,6 +12,7 @@ claim: disproved
 scope: full
 evidence:
 - reviewed
+submitted: 2026-07-29
 links:
 - url: https://www.erdosproblems.com/forum/thread/106/proof-claims#proof-claim-166
   kind: discussion

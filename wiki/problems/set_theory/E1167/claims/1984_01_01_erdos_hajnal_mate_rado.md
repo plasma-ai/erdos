@@ -13,6 +13,7 @@ authors:
 status: claimed
 claim: proved
 scope: partial
+submitted: null
 links:
 - url: https://mathscinet.ams.org/mathscinet-getitem?mr=795592
   kind: paper

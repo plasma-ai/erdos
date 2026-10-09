@@ -10,6 +10,7 @@ authors:
 status: claimed
 claim: proved
 scope: partial
+submitted: 2026-07-08
 links:
 - url: https://github.com/demonstrandum-research/artifacts/blob/ec4b50507451094cd0e3710ceb9d9f1838aa58a0/problems/p4-erdos866/paper/draft-866.pdf
   kind: preprint

@@ -10,6 +10,7 @@ authors:
 status: claimed
 claim: proved
 scope: partial
+submitted: null
 links:
 - url: https://doi.org/10.5486/pmd.1976.23.3-4.15
   kind: paper

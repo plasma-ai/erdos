@@ -14,6 +14,7 @@ claim: disproved
 scope: partial
 evidence:
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.4064/aa-48-1-73-79
   kind: paper

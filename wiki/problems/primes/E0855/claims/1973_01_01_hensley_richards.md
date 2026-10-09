@@ -13,6 +13,7 @@ claim: disproved
 scope: conditional
 evidence:
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.1090/pspum/024/9945
   kind: paper

@@ -12,6 +12,7 @@ claim: proved
 scope: full
 evidence:
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.1016/j.ejc.2009.03.015
   kind: paper

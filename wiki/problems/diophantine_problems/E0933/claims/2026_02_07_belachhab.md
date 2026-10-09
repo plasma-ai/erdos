@@ -10,6 +10,7 @@ authors:
 status: rejected
 claim: disproved
 scope: full
+submitted: null
 links:
 - url: https://zenodo.org/records/18518162
   kind: preprint

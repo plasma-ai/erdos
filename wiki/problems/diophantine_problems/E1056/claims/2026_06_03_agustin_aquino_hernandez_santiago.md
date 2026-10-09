@@ -11,6 +11,7 @@ authors:
 status: claimed
 claim: proved
 scope: partial
+submitted: null
 links:
 - url: https://github.com/octavioalberto/tetrads/blob/039b7b7354d68ef26468c61f646636e347110974/tetrads.pdf
   kind: preprint

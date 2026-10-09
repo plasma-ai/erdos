@@ -14,6 +14,7 @@ claim: answered
 scope: partial
 evidence:
 - refereed
+submitted: null
 links:
 - url: https://zbmath.org/1153458
   kind: record

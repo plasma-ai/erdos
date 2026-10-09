@@ -10,6 +10,7 @@ authors:
 status: claimed
 claim: disproved
 scope: partial
+submitted: null
 links:
 - url: https://github.com/herakles-dev/erdos672-four-squares-lean/blob/68adec55180c6103ac5511a5c91c84b25a5044f9/Erdos672/Statement.lean
   kind: formalization

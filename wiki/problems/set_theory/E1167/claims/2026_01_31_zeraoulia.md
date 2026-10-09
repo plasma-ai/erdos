@@ -12,6 +12,7 @@ authors:
 status: rejected
 claim: disproved
 scope: full
+submitted: null
 links:
 - url: https://doi.org/10.13140/RG.2.2.22305.06242
   kind: preprint

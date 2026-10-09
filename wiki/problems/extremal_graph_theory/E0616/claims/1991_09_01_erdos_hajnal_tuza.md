@@ -14,6 +14,7 @@ claim: answered
 scope: partial
 evidence:
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.1016/0097-3165(91)90074-Q
   kind: paper

@@ -13,6 +13,7 @@ claim: proved
 scope: partial
 evidence:
 - reviewed
+submitted: 2026-08-05
 links:
 - url: https://zenodo.org/records/21813052
   kind: preprint

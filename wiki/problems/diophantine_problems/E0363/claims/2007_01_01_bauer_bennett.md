@@ -14,6 +14,7 @@ scope: full
 evidence:
 - reviewed
 - refereed
+submitted: null
 links:
 - url: https://www.e-periodica.ch/digbib/view?pid=ens-001:2007:53
   kind: paper

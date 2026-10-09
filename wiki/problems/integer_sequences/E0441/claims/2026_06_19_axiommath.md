@@ -11,6 +11,7 @@ status: claimed
 claim: disproved
 scope: partial
 settles: [construction]
+submitted: null
 links:
 - url: https://github.com/AxiomMath/erdos-public/blob/3ccf48c78b9df4aa26e1b2f90058bdd3f61da1ab/Erdos/Erdos441/solution.lean
   kind: formalization

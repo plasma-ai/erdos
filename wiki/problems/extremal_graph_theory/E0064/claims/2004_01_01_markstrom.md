@@ -10,6 +10,7 @@ authors:
 status: claimed
 claim: proved
 scope: partial
+submitted: null
 links:
 - url: https://zbmath.org/?q=an%3A1063.05073
   kind: record

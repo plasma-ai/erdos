@@ -10,6 +10,7 @@ authors:
 status: claimed
 claim: disproved
 scope: partial
+submitted: null
 links:
 - url: https://geombina.uccs.edu/past-issues/volume-iv
   kind: record

@@ -15,6 +15,7 @@ scope: partial
 evidence:
 - reviewed
 - refereed
+submitted: null
 links:
 - url: https://www.impan.pl/en/publishing-house/journals-and-series/colloquium-mathematicum/all/6/1/112202/remarks-on-the-theory-of-diophantine-approximation
   kind: paper

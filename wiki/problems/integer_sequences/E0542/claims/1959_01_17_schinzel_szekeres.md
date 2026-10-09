@@ -14,6 +14,7 @@ scope: full
 evidence:
 - reviewed
 - refereed
+submitted: null
 links:
 - url: https://acta.bibl.u-szeged.hu/13886/
   kind: paper

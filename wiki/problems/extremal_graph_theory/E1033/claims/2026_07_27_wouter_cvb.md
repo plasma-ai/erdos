@@ -10,6 +10,7 @@ authors:
 status: claimed
 claim: disproved
 scope: partial
+submitted: 2026-07-27
 links:
 - url: https://github.com/woutercvb/woutercvb.github.io/blob/3581ff1769be2c2c266dc1eab4d8fe78c065f9ea/Erdos1033_smalloptimization.pdf
   kind: preprint

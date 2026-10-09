@@ -10,6 +10,7 @@ authors:
 status: claimed
 claim: proved
 scope: conditional
+submitted: 2026-06-10
 links:
 - url: https://github.com/scottdhughes/erdos367/tree/6666c2f1bf7be45a2b91e70a24b1f1a2ab8b672b
   kind: formalization

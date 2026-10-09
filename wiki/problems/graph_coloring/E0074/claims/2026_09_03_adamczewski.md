@@ -12,6 +12,7 @@ claim: disproved
 scope: full
 evidence:
 - formalized
+submitted: 2026-09-03
 links:
 - url: https://github.com/tadamcz/erdos74/tree/a626ecc2d09e3492630242ce6ab676f57fc9fbea
   kind: formalization

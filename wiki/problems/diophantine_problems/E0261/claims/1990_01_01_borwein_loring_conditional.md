@@ -13,6 +13,7 @@ claim: proved
 scope: conditional
 evidence:
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.1090/s0025-5718-1990-0990598-9
   kind: paper

@@ -9,6 +9,7 @@ authors: []
 status: claimed
 claim: proved
 scope: partial
+submitted: null
 links:
 - url: https://github.com/cepadugato/formal-conjectures/blob/23c629bc2347864782ce88f957a64d6567b978a1/FormalConjectures/ErdosProblems/349.lean
   kind: formalization

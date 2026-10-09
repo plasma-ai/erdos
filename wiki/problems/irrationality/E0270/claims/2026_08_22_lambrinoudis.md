@@ -10,6 +10,7 @@ authors:
 status: claimed
 claim: proved
 scope: partial
+submitted: null
 links:
 - url: https://github.com/clambro/erdos-270-transcendence/blob/c23f97517f0f97f0bc08de126b9794b780ba2895/Algebraic_Independence_in_the_Affine_Case_of_Erdos_Problem_270.pdf
   kind: preprint

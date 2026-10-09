@@ -13,6 +13,7 @@ claim: disproved
 scope: partial
 evidence:
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.1070/IM1996v060n06ABEH000095
   kind: paper

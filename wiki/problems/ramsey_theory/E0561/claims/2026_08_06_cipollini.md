@@ -10,6 +10,7 @@ authors:
 status: claimed
 claim: proved
 scope: partial
+submitted: 2026-08-07
 links:
 - url: https://www.overleaf.com/read/zvsjrqpkvddk#c3cceb
   kind: preprint

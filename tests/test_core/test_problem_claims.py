@@ -22,6 +22,7 @@ __all__ = [
     'test_a_provisional_standing_without_claims_is_debt_until_settled',
     'test_a_claim_page_without_authors_is_debt_until_settled',
     'test_an_empty_authors_list_records_an_unknown_name',
+    'test_a_null_submitted_records_an_unknown_date',
     'test_an_accepted_claim_rests_only_on_accepted_pages',
     'test_a_dependence_on_a_library_result_page_is_noted_with_its_read_status',
     'test_write_derived_sets_the_two_standing_lines_only',
@@ -39,6 +40,7 @@ _CLAIM = (
     'scope: full',
     'evidence:',
     '- refereed',
+    'submitted: 2026-01-02',
     'links:',
     '- url: https://example.org/paper',
     '  kind: paper',
@@ -207,6 +209,13 @@ def test_a_problem_with_consistent_claims_passes(tmp_path: pathlib.Path) -> None
             'in the order reviewed, refereed, formalized',
         ),
         (_without(_CLAIM, 'evidence:', '- refereed'), _BODY, None, 'missing evidence'),
+        (_without(_CLAIM, 'submitted:'), _BODY, None, 'missing submitted'),
+        (
+            _replace(_CLAIM, 'submitted:', 'submitted: soon'),
+            _BODY,
+            None,
+            'submitted must be a calendar date',
+        ),
         (
             _replace(_CLAIM, 'status:', 'status: claimed'),
             _BODY,
@@ -638,6 +647,14 @@ def test_an_empty_authors_list_records_an_unknown_name(tmp_path: pathlib.Path) -
     findings, notes = lint_problem_claims(tmp_path, settled=True)
     assert findings == []
     assert notes[0].endswith('; 0 claim page(s) without authors')
+
+
+def test_a_null_submitted_records_an_unknown_date(tmp_path: pathlib.Path) -> None:
+    """A claim never submitted to the catalog's site or registry carries submitted: null."""
+    _problem(tmp_path)
+    _claim(tmp_path, frontmatter=_replace(_CLAIM, 'submitted:', 'submitted: null'))
+    findings, _ = lint_problem_claims(tmp_path, settled=True)
+    assert findings == []
 
 
 def test_an_accepted_claim_rests_only_on_accepted_pages(tmp_path: pathlib.Path) -> None:

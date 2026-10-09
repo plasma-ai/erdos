@@ -13,6 +13,7 @@ claim: proved
 scope: partial
 settles:
 - quartic
+submitted: null
 links:
 - url: https://arxiv.org/abs/2608.10335v1
   kind: preprint

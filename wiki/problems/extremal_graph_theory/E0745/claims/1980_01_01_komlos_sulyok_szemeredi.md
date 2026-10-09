@@ -12,6 +12,7 @@ claim: proved
 scope: full
 evidence:
 - refereed
+submitted: null
 links:
 - url: https://zbmath.org/3821793
   kind: record

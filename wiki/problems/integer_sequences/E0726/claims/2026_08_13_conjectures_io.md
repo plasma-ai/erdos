@@ -9,6 +9,7 @@ authors: []
 status: rejected
 claim: disproved
 scope: full
+submitted: null
 links:
 - url: https://conjectures.io/results/bd1a524a-c56e-42f2-9075-443df43468d7
   kind: record

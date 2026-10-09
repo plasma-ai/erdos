@@ -11,6 +11,7 @@ authors:
 status: claimed
 claim: answered
 scope: partial
+submitted: null
 links:
 - url: https://www-users.cse.umn.edu/~odlyzko/unpublished/greedy.sequence.pdf
   kind: preprint

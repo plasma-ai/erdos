@@ -12,6 +12,7 @@ authors:
 status: claimed
 claim: proved
 scope: conditional
+submitted: null
 links:
 - url: https://arxiv.org/abs/2512.16062
   kind: preprint

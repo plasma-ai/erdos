@@ -12,6 +12,7 @@ claim: proved
 scope: partial
 evidence:
 - reviewed
+submitted: null
 links:
 - url: https://www.erdosproblems.com/941
   kind: discussion

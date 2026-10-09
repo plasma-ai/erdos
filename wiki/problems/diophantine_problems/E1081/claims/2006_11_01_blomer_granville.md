@@ -13,6 +13,7 @@ claim: disproved
 scope: full
 evidence:
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.1215/S0012-7094-06-13522-6
   kind: paper

@@ -11,6 +11,7 @@ authors:
 status: claimed
 claim: proved
 scope: partial
+submitted: null
 links:
 - url: https://doi.org/10.1016/1385-7258(80)90018-9
   kind: paper

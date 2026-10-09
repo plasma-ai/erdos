@@ -14,6 +14,7 @@ claim: answered
 scope: full
 evidence:
 - reviewed
+submitted: 2026-03-06
 links:
 - url: https://arxiv.org/abs/2603.28636v1
   kind: preprint

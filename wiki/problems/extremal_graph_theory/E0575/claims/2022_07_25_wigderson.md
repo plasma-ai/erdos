@@ -10,6 +10,7 @@ authors:
 status: claimed
 claim: disproved
 scope: full
+submitted: null
 links:
 - url: https://ywigderson.math.ethz.ch/math/static/Compactness.pdf
   kind: preprint

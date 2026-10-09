@@ -12,6 +12,7 @@ authors:
 status: claimed
 claim: disproved
 scope: full
+submitted: 2026-09-13
 links:
 - url: https://github.com/lkruer/erdos-96-97-proof/blob/0e98f5f9bdaf36007e3eb405cbefe2eda778a9b2/96-97.pdf
   kind: preprint

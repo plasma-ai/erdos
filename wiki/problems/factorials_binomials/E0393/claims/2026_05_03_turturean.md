@@ -10,6 +10,7 @@ authors:
 status: claimed
 claim: answered
 scope: conditional
+submitted: 2026-05-03
 links:
 - url: https://www.overleaf.com/read/rsncpywwwbqf
   kind: preprint

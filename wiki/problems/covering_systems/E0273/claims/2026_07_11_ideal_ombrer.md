@@ -9,6 +9,7 @@ authors: []
 status: claimed
 claim: disproved
 scope: partial
+submitted: null
 links:
 - url: https://github.com/idealombrer/erdos-273-covering-pm1/blob/9d81d4ba5dea78fa66a2fb8ae21212fe5a8a7760/PAPER_273.pdf
   kind: preprint

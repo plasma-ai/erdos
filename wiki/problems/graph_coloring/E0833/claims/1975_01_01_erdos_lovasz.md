@@ -13,6 +13,7 @@ claim: proved
 scope: full
 evidence:
 - reviewed
+submitted: null
 links:
 - url: https://users.renyi.hu/~p_erdos/1975-34.pdf
   kind: paper

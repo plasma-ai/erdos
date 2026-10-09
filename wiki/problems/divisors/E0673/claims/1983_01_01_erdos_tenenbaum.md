@@ -14,6 +14,7 @@ scope: full
 evidence:
 - refereed
 - formalized
+submitted: null
 links:
 - url: https://doi.org/10.24033/bsmf.1981
   kind: paper

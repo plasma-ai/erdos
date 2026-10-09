@@ -11,6 +11,7 @@ authors:
 status: claimed
 claim: answered
 scope: full
+submitted: 2026-10-02
 links:
 - url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7537279
   kind: preprint

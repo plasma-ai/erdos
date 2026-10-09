@@ -10,6 +10,7 @@ authors:
 status: claimed
 claim: proved
 scope: conditional
+submitted: null
 links:
 - url: https://arxiv.org/abs/2005.07321
   kind: preprint

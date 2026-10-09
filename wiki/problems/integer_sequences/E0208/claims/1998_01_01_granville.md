@@ -12,6 +12,7 @@ claim: proved
 scope: conditional
 evidence:
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.1155/S1073792898000592
   kind: paper

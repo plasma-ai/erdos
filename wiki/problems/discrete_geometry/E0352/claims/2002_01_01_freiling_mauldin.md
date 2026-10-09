@@ -10,6 +10,7 @@ authors:
 status: claimed
 claim: proved
 scope: partial
+submitted: null
 links:
 - url: https://sites.cos.unt.edu/~mauldin/papers/no123.pdf
   kind: preprint

@@ -11,6 +11,7 @@ authors:
 status: claimed
 claim: proved
 scope: partial
+submitted: null
 links:
 - url: https://zbmath.org/?q=an%3A0997.05053
   kind: record

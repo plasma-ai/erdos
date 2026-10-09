@@ -12,6 +12,7 @@ claim: proved
 scope: full
 evidence:
 - reviewed
+submitted: 2026-09-12
 links:
 - url: https://github.com/Pengbinghui/pipeline-math/blob/99d916ff32a90e77c98eb004537ccda409262346/papers/tiling-complement.pdf
   kind: preprint

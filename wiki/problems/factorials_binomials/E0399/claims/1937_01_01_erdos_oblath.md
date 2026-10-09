@@ -13,6 +13,7 @@ claim: proved
 scope: partial
 evidence:
 - refereed
+submitted: null
 links:
 - url: http://acta.bibl.u-szeged.hu/13485/
   kind: paper

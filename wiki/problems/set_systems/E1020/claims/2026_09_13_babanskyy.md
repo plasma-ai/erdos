@@ -10,6 +10,7 @@ authors:
 status: claimed
 claim: proved
 scope: partial
+submitted: 2026-09-13
 links:
 - url: https://github.com/aconsciousfractal/Four-Uniform-Erdos-Matching-Conjecture/blob/60ce10893953bcf3ac0642d992b18dc0ac41d5b9/paper/Four-Uniform-Erdos-Matching-Conjecture.pdf
   kind: preprint

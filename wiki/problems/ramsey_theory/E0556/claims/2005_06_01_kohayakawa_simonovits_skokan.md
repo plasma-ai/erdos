@@ -12,6 +12,7 @@ authors:
 status: claimed
 claim: proved
 scope: partial
+submitted: null
 links:
 - url: https://doi.org/10.1016/j.endm.2005.05.053
   kind: paper

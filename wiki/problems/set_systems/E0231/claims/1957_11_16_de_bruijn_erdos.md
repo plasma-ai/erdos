@@ -10,6 +10,7 @@ authors:
 status: claimed
 claim: disproved
 scope: full
+submitted: null
 links:
 - url: https://doi.org/10.1307/mmj/1028997963
   kind: paper

@@ -13,6 +13,7 @@ scope: partial
 settles: [tends_to_infinity]
 evidence:
 - refereed
+submitted: null
 links:
 - url: https://doi.org/10.1007/BF02837831
   kind: paper

@@ -16,6 +16,7 @@ evidence:
 - refereed
 settles:
 - upper_bound
+submitted: null
 links:
 - url: https://arxiv.org/abs/1912.08181
   kind: preprint

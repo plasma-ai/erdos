@@ -13,6 +13,7 @@ claim: answered
 scope: full
 evidence:
 - reviewed
+submitted: null
 links:
 - url: https://www.erdosproblems.com/296
   kind: discussion

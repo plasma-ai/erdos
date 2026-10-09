@@ -2,101 +2,107 @@
 
 An open record of the Erdős problems.
 
-This repository keeps one page for each problem in the catalog of Erdős problems
-and records what is known about it: the statement, the problem's standing with
-the evidence behind it, the results claimed about it and their sources, and
+This repository keeps one page for each problem in Thomas Bloom's catalog of
+Erdős problems. Each page gives the statement, whether the problem is open,
+claimed or solved and why, the results claimed about it with their sources, and
 notes toward the problems still open. A library restates the results of the
-sources the pages cite, and a Lean project holds the corpus's formal proofs.
-Browse the record, discuss approaches and submit proofs at
-[erdosproblems.ai](https://erdosproblems.ai/); the problems and their numbers
-follow the catalog at [erdosproblems.com](https://www.erdosproblems.com/),
-maintained by Thomas Bloom. Humans and agents can contribute with their
-preferred tools; see [CONTRIBUTING.md](CONTRIBUTING.md).
+sources the pages cite, and a Lean project holds the record's formal proofs.
 
-## How standing is recorded
+**Browse the record, discuss approaches and submit proofs at
+[erdosproblems.ai](https://erdosproblems.ai/).**
 
-Each result about a problem has a claim page: who claimed it, where and when,
-what it covers, and the evidence behind it, such as a refereed publication, an
-independent review or a Lean formalization. A problem's standing (open, claimed
-or solved) follows from its claim pages. The pages lean toward the rulings of
-the site's curator, and a page whose statement or standing departs from the site
-explains why.
+## Getting started
 
-A claim's verification tier records the scrutiny its retained evidence supports:
+- **Look up a problem:** on [erdosproblems.ai](https://erdosproblems.ai/), or in
+  [wiki/problems/](wiki/problems/_index.md). Problem 570 is
+  `wiki/problems/ramsey_theory/E0570/`.
+- **Learn the conventions:** [the corpus anatomy](docs/anatomy.md).
+- **Contribute a result, a source or a correction:**
+  [CONTRIBUTING.md](CONTRIBUTING.md).
+- **Run the tools:** [Development](#development).
 
-- **2:** a Lean proof passing the axiom audit, any compiler axioms recorded on
-  the card as `assumes: compiler`, plus an independent whole-statement fidelity
-  audit.
-- **1:** independent, fresh-context adversarial verification.
-- **0:** author-recorded.
+## Reading the record
+
+- [Problems](wiki/problems/_index.md): one page per problem, with its claim
+  pages.
+- [Library](library/_index.md): the sources the pages cite, filed by subject.
+- [Research](wiki/research/_index.md): working notes toward open problems.
+- [Theory](wiki/theory/_index.md): the record's own precisely stated claims
+  (claim cards), whether proved, open or refuted.
+- [Standing table](wiki/standing.md): each claim card with its status and tier.
+- [Claim ledger](wiki/lemmas.md): the same claim cards with their exact
+  statements.
+- [Mathematics index](wiki/_index.md): the entry point to the mathematics wiki.
+- [Repository guidance](docs/_index.md): how to read, contribute to and verify
+  the record.
+
+## How claims are verified
+
+Each result claimed about a problem has a claim page: who claimed it, where and
+when, what it covers, and its evidence, listed as reviewed, refereed or
+formalized. A problem is open, claimed or solved according to its claim pages.
+The pages lean toward the catalog's rulings, and a page whose statement or
+standing departs from the catalog explains why.
+
+The record's own precisely stated claims are claim cards (`L<n>`) under
+`wiki/theory/`. A card's verification tier records the scrutiny its evidence
+supports:
+
+- **2:** a Lean proof that passes the axiom audit, with any compiler axioms it
+  relies on recorded on the card, plus an independent check that the Lean
+  statement matches the claim.
+- **1:** verified independently and adversarially by a reviewer who did not
+  produce the proof.
+- **0:** recorded by its author.
 
 A new proof or disproof of a catalog problem made here is accepted only after an
 independent review of the whole argument against the exact statement.
-[The corpus anatomy](docs/anatomy.md) "Tiers" states the complete warrant for
-each tier, and [verification](docs/verification.md) defines independent
-verification.
-
-## Reading the corpus
-
-Start with [the corpus anatomy](docs/anatomy.md), the conventions every page
-follows, and the [mathematics index](wiki/_index.md). A
-[problem page](wiki/problems/_index.md) records the problem's statement, its
-mathematical status with the evidence and qualifications behind it, the known
-results, and their sources. The [library](library/_index.md) files the sources
-by subject, each with its card, digest and extracted results, and its file when
-an open license lets the library hold it; [research](wiki/research/_index.md)
-holds free-form working notes, and [theory](wiki/theory/_index.md) holds the
-corpus's own precise claims with their arguments and local evidence. The
-generated [claim ledger](wiki/lemmas.md) lists every claim's exact statement,
-status, and tier, and the [standing table](wiki/standing.md) repeats the rows
-with a readable name in place of the statement. The
-[repository guidance](docs/_index.md) explains how to read, contribute to, and
-verify the corpus.
+[The corpus anatomy](docs/anatomy.md#tiers) gives the full rules for each tier,
+and [verification](docs/verification.md) defines independent verification.
 
 ## Layout
 
 - `wiki/` — the mathematics wiki, a
   [plasma-wiki](https://github.com/plasma-ai/wiki) named `wiki`
-  - `problems/` — one folder per subject, each holding one folder per problem,
-    `<subject>/E<nnnn>/`, the problem's catalog number zero-padded to four
-    digits (`ramsey_theory/E0570/` is Problem 570 on
+  - `problems/` — one folder per problem, `<subject>/E<nnnn>/`, with the catalog
+    number zero-padded to four digits. Each folder holds the problem page
+    `_index.md` and its claim pages under `claims/`. For example,
+    `ramsey_theory/E0570/` is Problem 570 on
     [erdosproblems.ai](https://erdosproblems.ai/problems/570) and
-    [erdosproblems.com](https://www.erdosproblems.com/570)), holding the problem
-    page `_index.md` and the claim pages under `claims/`
+    [erdosproblems.com](https://www.erdosproblems.com/570).
   - `research/` — free-form working notes: approaches, attempts, useful partial
     results, and dead ends
-  - `theory/` — the corpus's own precise claims, with their arguments and local
-    evidence
-- `library/` — the sources, a second plasma-wiki named `library` beside the
-  mathematics wiki, filed under the same subject folders as the problems at
-  `<subject>/<author_year_slug>/`, each with its card, digest and extracted
-  results, and its file when an open license lets the library hold it
-- `docs/` — repository rules and conventions, extending `AGENTS.md`; start with
-  [the corpus anatomy](docs/anatomy.md)
-- `lean/` — the Lean project and its universal axiom audit; start with
-  [lean/README.md](lean/README.md)
-- `tools/` — the shared Python package (`import tools`), evidence harness, and
+  - `theory/` — the claim cards, with their arguments and local evidence
+- `library/` — the sources, a second plasma-wiki named `library`, filed under
+  the same subject folders as the problems at `<subject>/<author_year_slug>/`.
+  Each source has a card, a digest and its extracted results, and holds its file
+  when an open license allows it.
+- `docs/` — repository rules and conventions extending `AGENTS.md`, a third
+  plasma-wiki named `docs`; start with [the corpus anatomy](docs/anatomy.md)
+- `lean/` — the Lean project and the axiom audit every Lean proof must pass;
+  [lean/README.md](lean/README.md) lists what it holds
+- `tools/` — the Python package (`import tools`), evidence harness and
   repository checks behind the `erdos` command; start with
   [tools/README.md](tools/README.md)
-- `tests/` — all Python tooling and repository tests, outside the mathematical
-  corpus
-- `scripts/` — standalone maintenance programs run from the repository root: the
-  problem and library generators with their shared taxonomy, and helpers such as
-  the tier-2 carry-forward check; start with
-  [scripts/README.md](scripts/README.md)
-- `pyproject.toml` and `uv.lock` — the single Python project configuration and
-  retained dependency lockfile
+- `tests/` — the tests for the Python tooling and the repository
+- `scripts/` — maintenance programs, such as the problem and library generators;
+  start with [scripts/README.md](scripts/README.md)
+- `pyproject.toml` and `uv.lock` — the Python project and its locked
+  dependencies
 
 ## Development
 
-Reading the corpus requires no build. PDF attachments and data assets over 1 MB
-use Git LFS. Install Git LFS and run `git lfs install` before cloning; in an
-existing clone whose files contain LFS pointer text instead of their bytes, run
-`git lfs install` inside the clone, then `git lfs pull`. The tracked
-`.gitattributes` defines this storage policy.
+Reading the record needs no build: browse it on GitHub or on
+[erdosproblems.ai](https://erdosproblems.ai/). All PDFs, and data files over 1
+MB, are stored with Git LFS. To get them, install
+[Git LFS](https://git-lfs.com/) and run `git lfs install` before cloning. In an
+existing clone, run `git lfs install`, then `git lfs pull`.
 
-From the repository root, set up the repository-local Python environment and the
-wiki merge drivers, then run the repository gate:
+The tooling requires [uv](https://docs.astral.sh/uv/) and Python 3.11 to 3.14.
+Lean work also needs [elan](https://github.com/leanprover/elan); see
+[lean/README.md](lean/README.md). From the repository root, set up the
+environment, the pre-commit hooks and the wiki merge drivers, then run the
+repository gate:
 
 ```sh
 uv sync --group test --group lint --group type
@@ -107,22 +113,40 @@ uv run --no-sync wiki config --path docs
 uv run --no-sync erdos gate
 ```
 
-The gate checks the repository and never runs mathematical evidence. Verify a
-claim by running its `evidence/main.py`; cached success output warrants nothing.
-`uv run --no-sync erdos evidence --select <owner path>` runs an owner's entry
-points and writes a private report under ignored `tmp/evidence/`; without
-`--select` it runs them all, and it gates nothing. [Evidence](docs/evidence.md)
+The gate runs the tests, the pre-commit hooks and the repository's structure and
+convention checks; it never runs the mathematical evidence. To check a claim
+card's or research note's computation, run its `evidence/main.py`. A stored
+passing result does not count as verification.
+`uv run --no-sync erdos evidence --select <owner path>` runs the evidence in one
+folder, such as a claim card, and writes a report to the ignored `tmp/evidence/`
+folder; without `--select` it runs all of it. [Evidence](docs/evidence.md)
 "Local executable evidence" states the contract that evidence follows.
 
-[AGENTS.md](AGENTS.md) states the binding conventions, the Python tooling and
-the full check sequence, including the opt-in Lean leg, and
-[tools](docs/tools.md) "Gate battery contract" states the gate's rules.
+[AGENTS.md](AGENTS.md) gives the full check sequence, including the Lean checks,
+and [tools](docs/tools.md) "Gate battery contract" states the gate's rules.
 
 ## Contributing
 
-[CONTRIBUTING.md](CONTRIBUTING.md) states the copyright rules, the structure to
-follow and the checks to run before a pull request. [AGENTS.md](AGENTS.md) and
-the [repository guidance](docs/_index.md) hold the full conventions.
+Corrections, claims, sources, research notes, proofs and Lean formalizations are
+welcome, from people or agents. Submit a proof on
+[erdosproblems.ai](https://erdosproblems.ai/), or open a pull request following
+[CONTRIBUTING.md](CONTRIBUTING.md), which covers copyright, page structure and
+the checks to run. [AGENTS.md](AGENTS.md) and the
+[repository guidance](docs/_index.md) hold the full conventions.
+
+## Citing
+
+To cite this record, use [CITATION.cff](CITATION.cff). GitHub's "Cite this
+repository" button reads it.
+
+## Acknowledgments
+
+The problems, their numbers and their statements follow Thomas Bloom's catalog
+at [erdosproblems.com](https://www.erdosproblems.com/). This repository builds
+its record on that catalog, and [erdosproblems.ai](https://erdosproblems.ai/)
+presents the record. The pages take the catalog's status labels and rulings into
+account. The problem data also draws on the community database at
+[teorth/erdosproblems](https://github.com/teorth/erdosproblems).
 
 ## License
 
@@ -133,11 +157,3 @@ licensed under the [Apache License 2.0](LICENSE). The writing (the pages under
 material keeps its own terms: the files the library holds, each under the term
 its card's `license` key records; the copies retained under `evidence/` folders;
 and quotations, including each problem's statement as the catalog prints it.
-
-## Acknowledgments
-
-The problem numbers, statements and status labels come from Thomas Bloom's
-[erdosproblems.com](https://www.erdosproblems.com/), and the problem data also
-draws on the community database at
-[teorth/erdosproblems](https://github.com/teorth/erdosproblems).
-[erdosproblems.ai](https://erdosproblems.ai/) presents this repository's record.

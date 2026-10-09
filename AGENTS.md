@@ -1,13 +1,13 @@
 # AGENTS
 
 This file provides guidance to coding agents (Claude Code, Codex) when working
-with code in this repository. If you are not Claude Code (which already reads
-parent directories), also check the parent directory for `AGENTS.md`.
+with code in this repository.
 
 ## Overview
 
-This repository is an open record of the Erdős problems cataloged at
-[erdosproblems.com](https://www.erdosproblems.com/). The mathematics wiki is the
+This repository is an open record of the Erdős problems in Thomas Bloom's
+catalog at [erdosproblems.com](https://www.erdosproblems.com/), presented at
+[erdosproblems.ai](https://erdosproblems.ai/). The mathematics wiki is the
 plasma-wiki under `wiki/`: `problems/` holds one folder per problem, its page
 recording the statement, its standing, the known results and their sources, and
 its claim pages recording the results claimed about it; `research/` holds

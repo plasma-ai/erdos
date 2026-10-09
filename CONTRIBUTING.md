@@ -16,7 +16,9 @@ how to submit a change. The binding rules are in [AGENTS.md](AGENTS.md) and the
 - Fixes to the tooling and its tests.
 
 For a small correction, open a pull request or an issue. For anything larger,
-open an issue first, so the work fits the structure before it is written.
+open an issue first, so the work fits the structure before it is written. To
+discuss an approach or submit a proof without a pull request, use
+[erdosproblems.ai](https://erdosproblems.ai/), which presents this record.
 
 ## Copyright
 
@@ -29,9 +31,10 @@ figures, book pages or forum threads.
 - Quote only where the exact wording matters (a definition, a conjecture as
   posed, a phrase whose reading is disputed). Keep the quotation short, mark it
   as one, and cite its page.
-- Two quotations are part of the structure: a problem page's Statement is the
-  wording of [erdosproblems.com](https://www.erdosproblems.com/) verbatim, and a
-  claim page's Submission note quotes the claimant's own post.
+- Two quotations are part of the structure: a problem page's Statement quotes
+  the catalog at [erdosproblems.com](https://www.erdosproblems.com/) verbatim,
+  as [erdosproblems.ai](https://erdosproblems.ai/) shows it, and a claim page's
+  Submission note quotes the claimant's own post.
 - Add a work's file, a PDF or a Markdown transcription, only when the work is
   under an open license (for example CC BY, CC BY-SA, CC0, MIT or Apache-2.0).
   Record its term in the card's `license` key and say on the card where you read
@@ -61,8 +64,8 @@ These rules catch most first contributions:
 - A problem's standing follows its claim pages. Edit the claim pages, then
   regenerate the problem's `status` and `claim` with
   `uv run --no-sync erdos problem-claims --write --problem E<nnnn>`.
-- Pages lean toward the rulings of the site's curator. A page whose statement or
-  standing departs from the site explains why.
+- Pages lean toward the rulings of the catalog's curator. A page whose statement
+  or standing departs from the catalog explains why.
 - Never edit a generated file by hand: `wiki/lemmas.md`, `wiki/standing.md`,
   `lean/Manifest.json` and the link rows of index pages. Fix the source and
   regenerate.

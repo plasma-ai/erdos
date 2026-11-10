@@ -7,8 +7,8 @@ desc: |
 tags:
 - Number theory
 - Unit fractions
-status: claimed
-claim: proved
+status: open
+claim: none
 created: 2026-09-04T09:17:27Z
 updated: 2026-10-08T14:06:00Z
 ---
@@ -52,18 +52,23 @@ $4<b<5000$.
 **Status.** Labeled falsifiable on erdosproblems.com: the label was FALSIFIABLE
 (page last edited 7 May 2026, accessed 2026-09-18). erdosproblems.com explained
 this label as open but refutable by one finite counterexample. The standing
-derived from the claim pages is claimed, claim proved. Three dated manuscripts
-claim the whole conjecture: Alomari's preprint of February 2023
+derived from the claim pages is open, claim none. Three dated manuscripts claim the whole conjecture, and each has an examined
+proof defect: Alomari's preprint
+of February 2023
 ([[problems/unit_fractions/E0242/claims/2023_02_06_alomari|Alomari 2023]]),
 Dyachenko's arXiv preprint of 7 November 2025
 ([[problems/unit_fractions/E0242/claims/2025_11_07_dyachenko|Dyachenko 2025]])
 and Bradford's arXiv preprint of 12 February 2026
 ([[problems/unit_fractions/E0242/claims/2026_02_12_bradford|Bradford 2026]]).
-None of them is refereed, accepted by anyone or submitted to the
-erdosproblems.com proof-claim tab, and all are pending. The one claim on the tab
-is Brian Akaka's AI-assisted lower bound of September 2026 on the number of
-solutions for almost all primes. It settles the conjecture for no $n$ and has no
-claim page (see Forum and AI-assisted items).
+All three proofs are rejected, which does not disprove the conjecture:
+Alomari's supremum argument never fixes $n$, Dyachenko's key lattice lemma
+is false and the required quadratic compatibility is not
+established, and Bradford never
+proves that his congruence classes cover the primes. The one claim on the
+erdosproblems.com proof-claim tab is Brian Akaka's AI-assisted lower bound of
+September 2026 on the number of solutions for almost all primes. It settles
+the conjecture for no $n$ and has no claim page (see Forum and AI-assisted
+items).
 
 Two refereed partial results settle infinitely many $n$ and are accepted partial
 claims. They are Obláth's case where $n+1$ has a prime factor $\equiv3\pmod4$
@@ -407,8 +412,8 @@ claims that appear there.
   chat transcript, which is not a source. The preprint is a dated manuscript
   claiming the whole conjecture, so it has its own claim page,
   [[problems/unit_fractions/E0242/claims/2026_02_12_bradford|Bradford 2026]],
-  pending: it is consumed at the level of its abstract and arXiv record, no
-  record refutes it, and no one has accepted it.
+  rejected as a full proof: the claim page checks Lemmas 1--2 and records the
+  unproved covering step directly from pp. 2--4 of the preprint.
 - Discussion, 27--29 January 2026: a commenter announces a Lean development
   (repository `leochlon/erdstrau`) claiming sorry-free proofs for several
   residue classes modulo $420$ and $840$ and a reduction of the conjecture
@@ -449,8 +454,9 @@ claims that appear there.
   conjecture once the classical case $P\equiv3\pmod4$ and the reduction to
   primes are added, and which therefore has its own claim page,
   [[problems/unit_fractions/E0242/claims/2025_11_07_dyachenko|Dyachenko 2025]],
-  pending; and 2511.17716, on $5/P$, which is not this problem. None of these
-  listings carries a journal reference or acceptance evidence. Neither Mballa
+  rejected on the focused examination recorded there; and 2511.17716, on
+  $5/P$, which is not this problem. None of these listings carries a journal
+  reference or acceptance evidence. Neither Mballa
   preprint has a claim page, because neither claims an $n$ beyond the
   classical cases: 2502.20935 gives explicit formulas that verify the
   conjecture only under a divisibility condition or a perfect-square condition
@@ -497,19 +503,22 @@ a misprint. Terzi's $198$ classes are first-hand and an accepted partial claim
 for primes, but the $10^8$ verification is an author's report whose printed
 Table 3 covers seven of the $43485$ primes it is said to cover and carries two
 misprinted rows. (2) The $10^{18}$ verification is a computation report that
-was not rerun. (3) The three pending full claims,
+was not rerun. (3) The three full claims,
 [[problems/unit_fractions/E0242/claims/2023_02_06_alomari|Alomari 2023]],
 [[problems/unit_fractions/E0242/claims/2025_11_07_dyachenko|Dyachenko 2025]]
 and [[problems/unit_fractions/E0242/claims/2026_02_12_bradford|Bradford 2026]],
-are unrefereed manuscripts consumed at the level of their abstracts and
-accepted by no one; the lower-bound claim on the tab settles no $n$. (4) The
+are rejected on the proof defects recorded on their pages. Those records name
+the examined versions and the limits of inspection; Alomari's Authorea v2
+remains unexamined. The lower-bound claim on the tab settles no $n$. (4) The
 1961 and 1979 Erdős sources are not held. There is no accepted proof to
 compile.
 
-**Proof coverage.** No accepted proof exists; the standing claimed rests on
-three pending manuscripts. The partial results are recorded at statement level
-on their result pages; the survey's equivalence proof is recorded in outline
-only; no proof has been rewritten or independently reviewed.
+**Proof coverage.** The three full-proof claims have focused defect records;
+none supplies an accepted proof or a disproof of the conjecture. The derived
+standing is open. The partial results are recorded at statement level on their
+result pages; the survey's equivalence proof is recorded in outline only. The
+claim-page examinations do not constitute independently accepted full-proof
+coverage.
 <!-- BEGIN problem library links -->
 
 ## Linked library material

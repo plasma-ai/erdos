@@ -30,7 +30,7 @@ numbers have density zero: a vanishing relative density on one progression
 whose modulus depends on $\varepsilon$ is compatible with the sums having
 positive density, which the manuscript records as unknown.
 
-## wiki/problems/diophantine_problems/E0940/claims/2026_10_28_plasma_ai.md
+## wiki/problems/diophantine_problems/E0940/claims/2026_10_20_plasma_ai.md
 
 **Claim.** Let $S_4$ be the set of natural numbers expressible as sums of at
 most four $4$-powerful numbers: every prime divisor $p$ of a summand divides

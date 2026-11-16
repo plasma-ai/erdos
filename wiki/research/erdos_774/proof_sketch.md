@@ -5,7 +5,7 @@ desc: "Uniform extraction is proved for several explicit finite families and the
 tags: [E0774, proof, incomplete]
 sources: []
 created: 2026-09-17T23:53:25Z
-updated: 2026-10-16T06:44:50Z
+updated: 2026-11-04T23:01:43Z
 ---
 
 # Main argument and missing coloring theorem
@@ -57,8 +57,10 @@ the prime grids is the tier-0 claim
 [[theory/integer_sequences/L123_odd_root_arc_colorings/_index|L123]], and its
 decisive open question is the open claim
 [[theory/integer_sequences/L124_flat_cyclotomic_degree_ratio/_index|L124]];
-every other result is author-recorded without a claim card. No counterexample
-is claimed. The finite
+the retirement of one-relation monomial families below is the tier-0 claim
+[[theory/integer_sequences/L289_one_relation_monomial_three_cover/_index|L289]];
+every other result is author-recorded without a claim card. No
+counterexample is claimed. The finite
 computations in [the evidence folder](evidence/_index.md) check certificates and
 record diagnostics; none proves an unbounded statement.
 
@@ -955,6 +957,18 @@ randomized phase lifts and a summable second-moment bound.
 the degree-49 flat multiple of $\Phi_{210}$, force unbounded angular color
 variation but no coloring contradiction, and no $o(n)$-degree flat family was
 found.
+
+Monomials bound by one linear relation are retired as a source of unbounded
+coloring. The tier-0 claim
+[[theory/integer_sequences/L289_one_relation_monomial_three_cover/_index|L289]]
+shows that, for $q\ge3$ and nonzero integers $\lambda_1,\ldots,\lambda_q$ with
+greatest common divisor 1, the monomials in the fraction field of
+$\mathbb Q[X_1,\ldots,X_q]/(\sum_i\lambda_iX_i)$ are all dissociated when
+some $|\lambda_i|\ge2$, and otherwise the three classes of a weighted
+exponent sum modulo 3 are dissociated. Every symmetric power of a simplex,
+and every exact integer realization of finitely many such monomials,
+therefore has coloring number at most three. The argument needs a principal
+relation ideal and does not reach the tensor families above.
 
 ## Held links, provisional premises, and gaps
 

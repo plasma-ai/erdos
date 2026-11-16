@@ -12,14 +12,14 @@ tags:
 status: open
 claim: none
 created: 2026-09-04T09:17:27Z
-updated: 2026-10-14T07:12:04Z
+updated: 2026-11-16T22:41:57Z
 ---
 
 # Problem 188
 
 [[problems/discrete_geometry/_index|..]]
 
-[[problems/discrete_geometry/E0188/claims/_index|claims/]]: The 3 claim pages of Problem 188, one per claimant's result; the problem's standing derives from them.
+[[problems/discrete_geometry/E0188/claims/_index|claims/]]: The 5 claim pages of Problem 188, one per claimant's result; the problem's standing derives from them.
 
 ***
 
@@ -56,8 +56,8 @@ arbitrary. The length counts points, so a five-term progression has four
 unit gaps. "With distance $1$" means a unit common difference, as the
 erdosproblems.com remarks explain.
 
-**Status.** Open. Bloom's catalog labeled the problem OPEN. The public sources
-compiled here give
+**Status.** Open. Bloom's catalog labeled the problem OPEN. The refereed lower
+bound and the earliest preprint upper bound compiled here give
 
 $$
 6\leq K_*\leq6330.
@@ -72,6 +72,16 @@ The best refereed upper bound is Conlon and Fox's $10^{10}$
 The erdosproblems.com commentary, last edited 14 October 2025, does not cite the
 Currier–Mody–Xie–Zhang bound. These are the compiled source-backed bounds, not
 the outcome of an exhaustive literature census.
+
+Two pending partial claims, by different arguments, improve both bounds. Carson
+Crocker's computer-assisted deposit of 7 October 2026 claims
+$7\le K_*\le60$
+([[problems/discrete_geometry/E0188/claims/2026_10_07_crocker|claim page]]),
+and a partial claim by Plasma AI, proved in Lean, claims $8\le K_*\le42$
+([[problems/discrete_geometry/E0188/claims/2026_11_16_plasma_ai|claim page]]);
+the README of Plasma AI's formalization repository states that its bounds were
+obtained independently of Crocker's work. Neither has outside review, and
+neither determines $K_*$.
 
 **Source.** [erdosproblems.com/188](https://www.erdosproblems.com/188), accessed
 2026-09-05, together with the discussion and empty proof-claim thread. Cite as:
@@ -134,6 +144,19 @@ explains why the omitted step restriction is necessary.
   and local density. The August 31 revision improves its general exponential
   base to $6.79$ through spherical codes. It leaves the planar $6330$
   endpoint unchanged.
+- Crocker's
+  [[problems/discrete_geometry/E0188/claims/2026_10_07_crocker|deposit]]
+  claims $7\le K_*\le60$: a periodic coloring by red cells of several sizes
+  in the Currier–Mody–Xie–Zhang framework, checked by exact and interval
+  arithmetic, and a lower bound by Arman and Tsaturian's method finished by
+  SAT certificates. It was not checked here.
+- Plasma AI's
+  [[problems/discrete_geometry/E0188/claims/2026_11_16_plasma_ai|claim]]
+  gives $8\le K_*\le42$ with a Lean proof against the formal-conjectures
+  statement: a spectral argument built on OpenAI's rigidity theorem for the
+  lower bound, and an explicit periodic disk coloring with kernel-checked
+  finite certificates for the upper bound. Comparator has not been run and no
+  review is recorded.
 
 The linked modern and historical source units retain reconstructed proof
 chains, with the Currier paper's external theorem inputs stated separately.

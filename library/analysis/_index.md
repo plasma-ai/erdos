@@ -3,12 +3,16 @@ name: analysis
 title: "Analysis"
 desc: "Sources filed under Analysis, with cross-references to related work."
 created: 2026-09-05T02:56:28Z
-updated: 2026-10-17T04:03:50Z
+updated: 2026-11-04T22:56:52Z
 ---
 
 # Analysis
 
 [[_index|..]]
+
+[[analysis/alberti_bianchini_crippa_2014_lp_differentiability_certain_classes_functions/_index|alberti_bianchini_crippa_2014_lp_differentiability_certain_classes_functions/]]: Proves L^p-differentiability almost everywhere for convolutions K * mu with
+kernels homogeneous of degree 1 - d, and derives a C^2 Lusin property for
+functions whose distributional Laplacian is a locally finite measure.
 
 [[analysis/anderson_1967_example_dimension_theory/_index|anderson_1967_example_dimension_theory/]]: Constructs, for each n, a subset K of Euclidean n-space whose finite powers
 and countable power all have topological dimension n minus one, the same
@@ -171,6 +175,11 @@ conjecture.
 [[analysis/erdos_1981_correction_misprints_our_paper_almost_everywhere/_index|erdos_1981_correction_misprints_our_paper_almost_everywhere/]]: A one-page errata table correcting misprints in the authors' paper on almost
 everywhere divergence of Lagrange interpolation polynomials.
 
+[[analysis/eremenko_sodin_1987_proof_conditional_theorem_littlewood_distribution_values_entire_functions/_index|eremenko_sodin_1987_proof_conditional_theorem_littlewood_distribution_values_entire_functions/]]: Proves that the largest mean spherical derivative of a degree-n polynomial
+over the unit disk is o(sqrt n), and deduces Littlewood's conditional
+theorem that almost all a-points of an entire function of finite nonzero
+order lie in one set of zero density.
+
 [[analysis/ghosh_2024_number_components_polynomial_lemniscates_problem_erdos/_index|ghosh_2024_number_components_polynomial_lemniscates_problem_erdos/]]: Shows the maximal number of lemniscate components is eventually below a
 fixed fraction of n when the capacity is under one, and equals n for all
 large n when the capacity exceeds one and the set is connected or has a
@@ -287,6 +296,11 @@ inspected; rounding and the full consecutive-gap application remain open.
 [[analysis/lefevre_et_al_2009_thin_sets_integers_harmonic_analysis_p_stable_random_fourier_series/_index|lefevre_et_al_2009_thin_sets_integers_harmonic_analysis_p_stable_random_fourier_series/]]: Relates Sidon, Rider, and quasi-independent extraction estimates to the
 proportional-dissociation formulation of E0774.
 
+[[analysis/lewis_wu_1988_conjectures_arakelyan_littlewood/_index|lewis_wu_1988_conjectures_arakelyan_littlewood/]]: Bibliographic record for Lewis and Wu's paper on the conjectures of
+Arakelyan and Littlewood, credited elsewhere with the power-saving bound
+n^{1/2 - delta} for the mean spherical derivative of a degree-n polynomial;
+unread, and recorded from later sources' reports.
+
 [[analysis/lewko_2026_sidon_decomposition_problem_abelian_groups_bounded_torsion/_index|lewko_2026_sidon_decomposition_problem_abelian_groups_bounded_torsion/]]: Lewko proves that Sidon sets in bounded-torsion abelian groups are finite
 unions of quasi-independent sets, using relation-space dimension bounds and
 a Rado--Horn support partition; the method does not cover the integers.
@@ -294,6 +308,10 @@ a Rado--Horn support partition; the method does not cover the integers.
 [[analysis/michelen_2025_convergent_points_random_power_series_unit/_index|michelen_2025_convergent_points_random_power_series_unit/]]: Proves that a random sign power series with coefficients of size o(1/sqrt n)
 almost surely converges on a set of Hausdorff dimension one on the unit
 circle.
+
+[[analysis/mori_1956_absolute_constant_theory_quasi_conformal_mappings/_index|mori_1956_absolute_constant_theory_quasi_conformal_mappings/]]: Shows that a K-quasiconformal self-map of the unit disk fixing 0 satisfies
+|T(z_1) - T(z_2)| <= 16 |z_1 - z_2|^{1/K}, and that 16 is the best constant
+independent of K.
 
 [[analysis/murai_1983_deficiency_entire_functions_fejer_gaps/_index|murai_1983_deficiency_entire_functions_fejer_gaps/]]: Proves an entire function whose exponent set has convergent reciprocal sum
 has no finite deficient value, and that this fails under Fabry gaps.
@@ -342,6 +360,10 @@ radius (2e)^{-1} n^{-2} (Theorem 4), every projection above 2.386
 (p. 103), length below 74 n^2 (Theorem 9), a connected set inside the disk
 of radius 2 about the centroid (Theorem 10), a nonconvex component
 (Theorem 14) and the discriminant bound 2^{4(n-1)} n^n (Theorem 16).
+
+[[analysis/pommerenke_1992_boundary_behaviour_conformal_maps/_index|pommerenke_1992_boundary_behaviour_conformal_maps/]]: Bibliographic record for Pommerenke's monograph on the boundary behaviour
+of conformal maps, cited for the Koebe distortion and one-quarter
+theorems, quasidisks and capacity; unread.
 
 [[analysis/ramsey_graham_2006_permutation_extension_planar_quasi_independent_subsets_roots_unity/_index|ramsey_graham_2006_permutation_extension_planar_quasi_independent_subsets_roots_unity/]]: Characterizes the permutations of the n-th roots of unity that preserve
 their quasi-independent or independent subsets in the plane, and bounds the
@@ -437,11 +459,16 @@ Explicit links to this subject's problems support these cross-references.
   - [[../wiki/problems/analysis/E1046/_index|E1046]]
   - [[../wiki/problems/analysis/E1047/_index|E1047]]
   - [[../wiki/problems/analysis/E1048/_index|E1048]]
+- [[polynomials/eremenko_1991_lower_estimate_littlewood_conjecture_mean_spherical_derivative_polynomial/_index|eremenko_1991_lower_estimate_littlewood_conjecture_mean_spherical_derivative_polynomial]]
+  - [[../wiki/problems/analysis/E1120/_index|E1120]]
+- [[polynomials/eremenko_2007_markov_type_inequality_arbitrary_plane_continua/_index|eremenko_2007_markov_type_inequality_arbitrary_plane_continua]]
+  - [[../wiki/problems/analysis/E1120/_index|E1120]]
 - [[polynomials/hayman_lingham_2018_research_problems_function_theory/_index|hayman_lingham_2018_research_problems_function_theory]]
   - [[../wiki/problems/analysis/E1115/_index|E1115]]
   - [[../wiki/problems/analysis/E1116/_index|E1116]]
   - [[../wiki/problems/analysis/E1117/_index|E1117]]
   - [[../wiki/problems/analysis/E1118/_index|E1118]]
+  - [[../wiki/problems/analysis/E1120/_index|E1120]]
 - [[polynomials/krishnapur_2025_area_polynomial_lemniscates/_index|krishnapur_2025_area_polynomial_lemniscates]]
   - [[../wiki/problems/analysis/E1040/_index|E1040]]
 - [[polynomials/wang_2026_proposed_complete_solution_erdos_problem_1038/_index|wang_2026_proposed_complete_solution_erdos_problem_1038]]

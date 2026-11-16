@@ -4,19 +4,21 @@ title: Problem 1017
 desc: |
   Asks to estimate the number of edge-disjoint complete graphs needed to
   partition the edges of a graph on $n$ vertices with more than $n^2/4$ edges.
-  It is open, though Győri and Keszegh settle the $K_4$-free case up to about
-  $n^2/16$ edges beyond $n^2/4$.
+  Plasma AI's Lean-checked formula $f(n,k)=n^2B(k/n^2)+o(n^2)$, uniform in
+  $k$, answers it to within $o(n^2)$.
 tags:
 - Graph theory
-status: open
-claim: none
+status: solved
+claim: answered
 created: 2026-09-04T09:17:27Z
-updated: 2026-10-08T14:06:00Z
+updated: 2026-11-16T22:41:57Z
 ---
 
 # Problem 1017
 
 [[problems/extremal_graph_theory/_index|..]]
+
+[[problems/extremal_graph_theory/E1017/claims/_index|claims/]]: The 1 claim page of Problem 1017, one per claimant's result; the problem's standing derives from them.
 
 ***
 
@@ -43,8 +45,17 @@ theorem could be sharpened" ([Er71], p. 101) and "What then is the new
 minimum as a function of $k$?" ([EGP66], p. 109); erdosproblems.com calls the
 1971 question vague.
 
-**Status.** Open. What is known has three parts. The first is the universal
-bound $f(n,k)\le[n^2/4]$ with edges and triangles only
+**Status.** Solved, as an asymptotic estimate: an accepted full claim, on
+[[problems/extremal_graph_theory/E1017/claims/2026_11_16_plasma_ai|Plasma AI's page]],
+proves in Lean that $f(n,k)=n^2B(k/n^2)+o(n^2)$ uniformly in
+$0\le k\le\binom n2$, for an explicit piecewise-algebraic function $B$ on
+$[0,1/2]$ with $B(d)=d$ for $d\le1/4$. For $k>n^2/4$ this replaces $[n^2/4]$ by
+a leading term that is exact. The estimate carries no rate and no exact values;
+it is accepted on this corpus's rebuild, Comparator check and kernel replay of
+the formalization and a graded fresh-context statement review, as the claim page
+states. Bloom's catalog labeled the problem OPEN (page last edited 28 December
+2025). What was known before has three parts. The first is the universal bound
+$f(n,k)\le[n^2/4]$ with edges and triangles only
 ([[../library/extremal_graph_theory/erdos_1966_representation_graph_set_intersections/theorem_4|Theorem 4]]
 of [EGP66], Canad. J. Math. 1966, refereed). The second is the origin passages
 of 1966 and 1971, with Lovász's covering bound quoted by Erdős (Lovász's paper
@@ -73,9 +84,8 @@ $m$ edges inside one side, in which every triangle uses one of those $m$ edges.
 Győri's Theorem 1.6, as [BaWi25] restates it, gives $f=[n^2/4]-m+O(m^2/n^2)$ for
 $m=o(n^2)$. Conjecture 1.4, which [BaWi25] proves from its Theorem 1.8, gives
 $f\le[n^2/4]-(1/3-o(1))m$ for every $m$. These are authored conversions. For $m$
-of order $n^2$ no estimate beyond these bounds was found in the search whose
-scope the Current assessment records. This is a bounded negative finding, not a
-certificate of openness.
+of order $n^2$ no earlier estimate beyond these bounds was found in the
+literature searches whose scope the Current assessment records.
 
 **Source.** [erdosproblems.com/1017](https://www.erdosproblems.com/1017),
 accessed 2026-09-18: the problem page
@@ -132,13 +142,30 @@ https://www.erdosproblems.com/1017, accessed 2026-09-18.
   erdosproblems.com. Clique packings above the Turán number, which bound $f$
   through the conversion below.
 
-**Formalization.** None. Formal-conjectures had no file
-`ErdosProblems/1017.lean` on 2026-09-18 (the directory listing and the
-recursive tree checked) and none on 2026-10-07; the erdosproblems.com indicator
-records no formalized statement; and the community database
-(teorth/erdosproblems, `data/problems.yaml`) records, on 2026-09-18 and
-on 2026-10-07, the problem open (last changed 12 September 2025),
-unformalized, with no formal proof.
+**Formalization.** Statement in
+[formal-conjectures](https://github.com/google-deepmind/formal-conjectures/blob/7bdc4a42f24c0316f81c73b26121794b2bed96a3/FormalConjectures/ErdosProblems/1017.lean),
+added on 2026-10-22 and read at its commit of 2026-11-02, which defines $f$ as
+the least uniform bound on clique edge partitions of graphs on `Fin n` with
+exactly $k$ edges and asks, as `erdos_1017.lower_bound` and
+`erdos_1017.upper_bound` with `sorry` bodies, for natural-number lower and
+upper bounds supplied as functions of $n$ and $k$ for
+$n^2/4<k\le\binom n2$. Plasma AI's Lean development
+([plasma-ai/erdos-1017](https://github.com/plasma-ai/erdos-1017/tree/cf808826d555289332becdf4fd86de962ca00dfa),
+linked) copies that definition of $f$ verbatim and proves the uniform
+asymptotic formula as `Erdos1017.uniform_asymptotic`; it does not supply the
+two formal-conjectures answers. This corpus rebuilt it at the pinned commit,
+checked it with Comparator and replayed its theorem in the kernel, as
+[[../library/extremal_graph_theory/plasma_ai_2026_clique_partitions_graphs_given_size/evidence/verify/replay_receipt|the replay receipt]]
+records. The Palomar registry's verification run of the same commit (entry
+PALOMAR-2026-11-11-000003, version 1, registered 2026-11-11) is reported, not
+counted.
+[[problems/extremal_graph_theory/E1017/claims/2026_11_16_plasma_ai|Its claim page]]
+records the acceptance, and
+[[../library/extremal_graph_theory/plasma_ai_2026_clique_partitions_graphs_given_size/_index|its source card]]
+the pinned version and checks. On 2026-09-18 and on 2026-10-07 the
+erdosproblems.com indicator recorded no formalized statement, and the community
+database (teorth/erdosproblems, `data/problems.yaml`) recorded the problem open
+(last changed 12 September 2025), unformalized, with no formal proof.
 
 ## Current assessment
 
@@ -254,7 +281,7 @@ below but which by itself fixes no value of $f(n,k)$, defined over all
 graphs, so the result is recorded as a known result and not as a claim on
 this problem.
 
-**Above the Turán number in general (not settled).** The conversion above
+**Above the Turán number in general, from packings.** The conversion above
 holds for every graph, not only $K_4$-free ones: a partition into $\tau$
 edge-disjoint triangles and the remaining single edges has $e-2\tau$ pieces,
 so packing theorems for general graphs sharpen Theorem 4. Write the number of
@@ -289,7 +316,40 @@ leads by identifier. Through the conversion these results determine $f$
 exactly for small $m$ and asymptotically for $m=o(n^2)$, but not for $m$ of
 order $n^2$.
 
-**Search scope.** None of the routes below found an
+**The asymptotic formula (accepted).**
+[[problems/extremal_graph_theory/E1017/claims/2026_11_16_plasma_ai|Plasma AI's claim]]
+proves $|f(n,k)/n^2-B(k/n^2)|\to0$ uniformly in $0\le k\le\binom n2$, for an
+explicit function $B$ on $[0,1/2]$ that the claim page defines in full: $B(d)=d$
+for $d\le1/4$; for $1/4<d<1/2$, $B(d)$ is the larger of two curves at the
+missing-edge density $1/2-d$, built from explicit dual certificates on blow-ups
+of split graphs, of mixed graphs (an independent set joined to an independent
+set and a clique) and of complete multipartite graphs with two large parts and
+all other parts of size one; and $B(1/2)=0$. The proof passes through the
+fractional relaxation, proves again in Lean the case it needs of the
+fractional-to-integral transfer of Balogh, He, Krueger, Nguyen and Wigal
+(Advances in Combinatorics 2026:9), and excludes every location of a positive
+maximum of the fractional extremum minus $B$. For $k>n^2/4$ this answers the
+Statement to within $o(n^2)$: the lower bound shows the leading term
+$n^2B(k/n^2)$ exact. The formula has no rate. Where $m=o(n^2)$ the packing
+bounds above are more precise, and as $k/n^2\to1/2$ it gives only
+$f(n,k)=o(n^2)$. With the bound $f(n,k)\le(n^2-k+2)/3$ for large $n$ that the
+formalization's README attributes to Blumenthal, Lidický, Pehova, Pfender,
+Pikhurko and Volec (Combin. Probab. Comput. 30 (2021)), it gives
+$B(d)\le(1-d)/3<1/4$ for $d>1/4$, so the Erdős--Goodman--Pósa bound is sharpened
+by a constant factor at every density above $1/4$; that source is not held. $B$
+is continuous; that fact, and the uniqueness of the roots and inverse values
+defining $B$, lie outside the compared Lean target, and the source reports that
+its development proves them. The acceptance rests on this corpus's sandboxed
+rebuild of the pinned commit, Comparator's check of it and its kernel replay
+from an empty environment
+([[../library/extremal_graph_theory/plasma_ai_2026_clique_partitions_graphs_given_size/evidence/verify/replay_receipt|the replay receipt]]),
+and on an independently graded fresh-context statement review, both recorded
+on the
+[[../library/extremal_graph_theory/plasma_ai_2026_clique_partitions_graphs_given_size/_index|source card]].
+The Palomar registry's verification run of the same commit is reported, not
+counted.
+
+**Search scope.** None of the routes below found an earlier
 estimate of $f(n,k)$ beyond the bounds above for $m$ of order $n^2$, or a
 text of [Lo68].
 
@@ -318,13 +378,13 @@ also discusses the edge-disjoint version is not known from the sources found.
 (2) Proof coverage is statements only: Theorems 2 and 4 of 1966 with their
 proofs followed for structure, Theorem 1 of [GyKe17] at claims checked. (3) The
 journal texts of [GyKe17] and [BaWi25] are not compared with the arXiv
-preprints. (4) For general graphs $f$ is known exactly for small $m$ and
-asymptotically for $m=o(n^2)$; for $m$ of order $n^2$ the sources found give
-only $f\ge[n^2/4]-m$ (for $m$ up to about $n^2/16$) and
-$f\le[n^2/4]-(1/3-o(1))m$; the problem is an attack candidate, with the
-$K_4$-free case determined for $k$ up to about $n^2/16$ and open between about
-$n^2/16$ and $n^2/12$. (5) Neither formal-conjectures nor the community database
-holds a Lean statement of the problem.
+preprints. (4) For general graphs $f$ is known exactly for small $m$, to within
+$O(m^2/n^2)$ for $m=o(n^2)$, and to within $o(n^2)$ at every density by the
+accepted formula; the rate in that formula, exact values for $m$ of order
+$n^2$, and the extremal graphs are open. The $K_4$-free case is determined for
+$k$ up to about $n^2/16$ and open between about $n^2/16$ and $n^2/12$. (5)
+formal-conjectures' `erdos_1017.lower_bound` and `erdos_1017.upper_bound`
+remain without answers.
 
 ## Known results
 
@@ -352,6 +412,10 @@ holds a Lean statement of the problem.
   [[problems/extremal_graph_theory/E0184/_index|Problem 184]] (cycles and edges),
   [[problems/extremal_graph_theory/E0583/_index|Problem 583]] (paths) and
   [[problems/extremal_graph_theory/E0081/_index|Problem 81]] (chordal graphs).
+- [[../library/extremal_graph_theory/plasma_ai_2026_clique_partitions_graphs_given_size/uniform_asymptotic|Plasma AI's uniform asymptotic formula]]
+  (2026, Lean, accepted): $f(n,k)=n^2B(k/n^2)+o(n^2)$ uniformly in $k$, for
+  an explicit piecewise-algebraic $B$; on
+  [[problems/extremal_graph_theory/E1017/claims/2026_11_16_plasma_ai|its claim page]].
 <!-- BEGIN problem library links -->
 
 ## Linked library material
@@ -367,5 +431,7 @@ navigation only and do not by themselves record mathematical progress.
 - [[../library/extremal_graph_theory/erdos_1971_unsolved_problems_graph_theory_combinatorial_analysis/item_11|erdos_1971_unsolved_problems_graph_theory_combinatorial_analysis / item_11]]
 - [[../library/extremal_graph_theory/gyori_2017_number_edge_disjoint_triangles_k_4_free_graphs/_index|gyori_2017_number_edge_disjoint_triangles_k_4_free_graphs]]
 - [[../library/extremal_graph_theory/gyori_2017_number_edge_disjoint_triangles_k_4_free_graphs/theorem_1|gyori_2017_number_edge_disjoint_triangles_k_4_free_graphs / theorem_1]]
+- [[../library/extremal_graph_theory/plasma_ai_2026_clique_partitions_graphs_given_size/_index|plasma_ai_2026_clique_partitions_graphs_given_size]]
+- [[../library/extremal_graph_theory/plasma_ai_2026_clique_partitions_graphs_given_size/uniform_asymptotic|plasma_ai_2026_clique_partitions_graphs_given_size / uniform_asymptotic]]
 
 <!-- END problem library links -->

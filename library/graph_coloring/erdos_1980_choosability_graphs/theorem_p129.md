@@ -7,7 +7,7 @@ desc: |
   M_k and 2M_k, where M_k is the least size of a family of k-sets without
   property B, with the values N(2,1) = 2, N(2,2) = 6 and 12 <= N(2,3) <= 14.
 created: 2026-10-08T16:16:06Z
-updated: 2026-10-08T16:16:06Z
+updated: 2026-11-04T22:52:06Z
 ---
 
 ***
@@ -46,8 +46,8 @@ pictures the assignment showing $K_{7,7}$ is not $3$-choosable.
 The two outer inequalities restate the bounds $2^{k-1}<M_k<k^2 2^{k+1}$,
 which the paper quotes on p. 128 as crude bounds that "will suffice here",
 pointing to Erdős, On a combinatorial problem III (Canad. Math. Bull. 12
-(1969)) for sharper ones; it does not prove them. The exact values of $N(2,k)$ and the footnote are stated
-without proof.
+(1969)) for sharper ones; it does not prove them. The exact values of
+$N(2,k)$ and the footnote are stated without proof.
 
 ## Proof pointer
 
@@ -90,4 +90,7 @@ Winnipeg, 1980, pp. 125--157; the edition read is named on the
   bounds $n(k)$ between $M_k$ and $2M_k$ without determining it, and the
   table states $n(1)=2$, $n(2)=6$ and $12\le n(3)\le14$;
   [[../wiki/problems/graph_coloring/E0629/claims/1980_01_01_erdos_rubin_taylor|the claim page]]
-  records what this covers.
+  records what this covers. The footnote's inequality follows from part (b)
+  of the repository's native claim
+  [[../wiki/theory/combinatorics/L276_bipartite_choosability_property_b_excess/_index|L276]],
+  which proves it at tier 0; its own page records its standing.

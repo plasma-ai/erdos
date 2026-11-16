@@ -6,7 +6,7 @@ desc: |
   and edge counts, cycles and girth, degree and subgraph-counting conditions,
   planarity, and structural questions such as the Erdos-Hajnal conjecture.
 created: 2026-09-04T09:17:27Z
-updated: 2026-10-15T04:32:53Z
+updated: 2026-11-10T18:20:04Z
 ---
 
 # Extremal and Structural Graph Theory
@@ -545,8 +545,8 @@ claim is pending.
 
 [[problems/extremal_graph_theory/E1017/_index|E1017/]]: Asks to estimate the
 number of edge-disjoint complete graphs needed to partition the edges of a graph
-on $n$ vertices with more than $n^2/4$ edges. It is open, though Győri and
-Keszegh settle the $K_4$-free case up to about $n^2/16$ edges beyond $n^2/4$.
+on $n$ vertices with more than $n^2/4$ edges. Plasma AI's Lean-checked formula
+$f(n,k)=n^2B(k/n^2)+o(n^2)$, uniform in $k$, answers it to within $o(n^2)$.
 
 [[problems/extremal_graph_theory/E1018/_index|E1018/]]: Asks whether, for large
 $n$, every graph on $n$ vertices with at least $n^{1+\epsilon}$ edges has a

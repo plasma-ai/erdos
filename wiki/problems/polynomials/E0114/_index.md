@@ -10,7 +10,7 @@ tags:
 status: open
 claim: none
 created: 2026-09-04T09:17:27Z
-updated: 2026-10-18T10:11:14Z
+updated: 2026-11-04T23:06:40Z
 ---
 
 # Problem 114
@@ -166,6 +166,14 @@ coordinates, an explicit small-curvature estimate and certified strict
 bounds on both collision pencils, all at author-recorded tier 0. Practical
 neighborhoods of those pencils and the regular two-dimensional complement
 remain unresolved; these results do not establish the full quartic bound.
+In every degree, the author-recorded identities
+[[theory/polynomials/L290_lemniscate_length_variation/_index|L290]] and
+[[theory/polynomials/L291_lemniscate_length_green_identity/_index|L291]]
+write the logarithm of the length of a polynomial with unit critical values
+over that of $z^n-1$ as a Green integral of $4/n$ minus an arclength
+variance $\beta$; the inequality $\beta\ge4/n$ is unproved, so they settle
+no degree
+([[research/erdos_114/all_degree_variance|all-degree variance page]]).
 
 <!-- BEGIN problem library links -->
 

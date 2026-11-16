@@ -9,7 +9,7 @@ desc: |
   inequality, which is unproved on the whole family.
 problems: [114]
 created: 2026-10-15T14:05:27Z
-updated: 2026-10-15T14:05:27Z
+updated: 2026-11-04T23:06:40Z
 ---
 
 ***
@@ -884,6 +884,18 @@ superior at most $\ell_0$: at the locus by Lemma 4, and at the special shapes
 because, by the compactness after (3), the polynomials $p_t$ accumulate there
 only at unicritical polynomials and members of the strata, whose lengths are
 at most $\ell_0$ by the validated bounds, and length is continuous by Lemma 4.
+The author-recorded
+[[theory/polynomials/L290_lemniscate_length_variation/_index|L290]] gives the
+same Hessian at every centered monic quartic with unit critical values, the
+collision strata included, and makes the failure of the test necessary at
+every maximizer with unit critical values: there $\int V_p'\,d\mu_p=0$ and
+the larger eigenvalue is at most zero. By Lemmas 4 and 5 some maximizing
+quartic has unit critical values. So positivity of the larger eigenvalue
+at every nonunicritical quartic with unit critical values and
+$\int V_p'\,d\mu_p=0$ gives the quartic bound without the boundary analysis
+of the components, and with
+[[theory/polynomials/L177_quartic_maximizer_critical_values/_index|L177]]
+also its equality case.
 
 Equality holds in the limit at the locus. For $p=z^4+c$ with $|c|=1$,
 $V_p'=\frac54p-\frac34c$, and $p$ pushes $\mu_p$ forward to the measure
@@ -1032,26 +1044,24 @@ be log-convex in $\theta$. No proof of
 $\operatorname{Var}_{\mu_p}(V_p')\ge1$ for quartics is known.
 
 The local computation uses the degree only through the normalization
-exponent. In degree $n$, the analogous polynomial differential equation
-$\partial_\tau q=R_q$, with $R_q$ the remainder of $q^2$ modulo $q'$,
-moves simple critical values by $v\mapsto v/(1-\tau v)$. The corresponding
-formal version of (14) is
-$(\operatorname{Im}\beta)^2\Delta_\beta\log\ell=
-\frac14\operatorname{Var}_{\mu_p}(V_p')-\frac1n$, with $V_p$ the polynomial
-part of $p^2/p'$ as before, and the variance is exactly $4/n$ for $z^n+c$
-with $|c|=1$. If this identity, global continuation with bounded normalized
-coefficients, and approximation of collision configurations are justified
-in that degree, the inequality $\operatorname{Var}_{\mu_p}(V_p')\ge4/n$
-would give the analogous maximum-principle route. Those additional global
-steps are not established here; no properness or openness assertion about
-the general critical-value map is used in the quartic argument. At the
-configurations sampled in floating point, $n\operatorname{Var}/4$ lies
-between $1.05$ and $1.15$ in
-degree three, $1.16$ and $1.23$ in degree four, $1.23$ and $1.36$ in degree
-five, including eight branches reached from random polynomials, and $1.39$
-and $1.43$ in degree six; the probe rechecks one configuration in each of
-degrees five and six. The ratio tends to $1$ only at
-the unicritical limit.
+exponent. In degree $n$ the author-recorded
+[[theory/polynomials/L290_lemniscate_length_variation/_index|L290]] proves
+the corresponding identity, in the disc coordinate of its family,
+$(1-|\tau|^2)^2\Delta_\tau\log\ell(p_\tau)
+=\operatorname{Var}_{\mu_{p_\tau}}(V'_{p_\tau})-\frac4n$, for every
+centered monic polynomial with unit critical values. It constructs the
+family on the whole disc, with coefficients bounded by the properness of
+the critical-value map, and it covers every collision of critical points or
+values. The
+variance is exactly $4/n$ for $z^n+c$ with $|c|=1$. The author-recorded
+[[theory/polynomials/L291_lemniscate_length_green_identity/_index|L291]]
+integrates the identity into an exact Green formula for
+$\log(\ell(p)/\ell(z^n-1))$. In degree $n$ this replaces the maximum
+principle: the inequality $\operatorname{Var}_{\mu_p}(V_p')\ge4/n$ on that
+class would give the length bound. The
+[[research/erdos_114/all_degree_variance|all-degree variance page]] records
+this reduction, the numerical evidence in degrees three to six and the
+related routes.
 
 ## Convexity in the gaps of the critical values
 
@@ -1227,10 +1237,20 @@ By the previous section, the inequality for all quartics and its equality
 case reduce to (H). The conjectured maximum principle above would prove (H)
 directly, and so would the inequality
 $\operatorname{Var}_{\mu_p}(V_p')\ge1$ for each polynomial of the family, by
-(14), the stationary-point test after (15) in its Hessian form, or the
-convexity of the length in the gaps between the critical values. Without
-them, the stronger integrated comparison (19) is another sufficient
-target, but its uniform line and collision-pencil signs remain open.
+(14), or the convexity of the length in the gaps between the critical
+values. The stationary-point test after (15) in its Hessian form is a
+weaker sufficient condition, needed only at quartics with
+$\int V_p'\,d\mu_p=0$;
+[[theory/polynomials/L290_lemniscate_length_variation/_index|L290]] makes
+its failure necessary at every maximizer with unit critical values, where
+the larger eigenvalue is at most zero. Through the Green identity of
+[[theory/polynomials/L291_lemniscate_length_green_identity/_index|L291]],
+the variance inequality on all centered monic quartics with unit critical
+values gives the inequality for all quartics without the maximum principle;
+the [[research/erdos_114/all_degree_variance|all-degree variance page]]
+states these reductions in every degree. Without them, the stronger
+integrated comparison (19) is another sufficient target, but its uniform
+line and collision-pencil signs remain open.
 For a direct cover of the original density, the two pencils are done and
 three steps remain.
 

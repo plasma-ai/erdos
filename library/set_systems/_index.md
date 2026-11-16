@@ -3,7 +3,7 @@ name: set_systems
 title: "Set Systems, Designs and Hypergraphs"
 desc: "Sources filed under Set Systems, Designs and Hypergraphs, with cross-references to related work."
 created: 2026-09-05T02:56:28Z
-updated: 2026-10-17T00:39:36Z
+updated: 2026-10-28T18:59:47Z
 ---
 
 # Set Systems, Designs and Hypergraphs
@@ -354,6 +354,11 @@ number exactly d+1 for all r at least 2 and d at least 1.
 
 [[set_systems/yamamoto_1951_asymptotic_number_latin_rectangles/_index|yamamoto_1951_asymptotic_number_latin_rectangles/]]: Extends the Erdos-Kaplansky asymptotic formula for the number of n by k
 Latin rectangles to k below n^{1/3-delta}.
+
+[[set_systems/zhang_2026_extremal_3_uniform_hypergraphs_without_generalized/_index|zhang_2026_extremal_3_uniform_hypergraphs_without_generalized/]]: Proves that an n-vertex 3-uniform hypergraph in which all disjoint pairs of
+edges have distinct unions has at most binom(n,2) edges, for every n, with
+equality when n >= 5 and n = 1, 5 (mod 20): the 3-uniform case of the
+Erdos-Furedi conjecture on generalized 4-cycles.
 
 ***
 

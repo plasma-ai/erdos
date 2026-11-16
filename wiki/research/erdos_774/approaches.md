@@ -5,7 +5,7 @@ desc: "Registry of the E0774 routes, their exact obligations, and their current 
 tags: [E0774, research]
 sources: []
 created: 2026-09-17T23:53:25Z
-updated: 2026-10-16T06:44:50Z
+updated: 2026-11-04T23:01:43Z
 ---
 
 # Approach registry
@@ -66,6 +66,7 @@ Their priority rests on the mathematical reasons given.
 | Full-shift prescribed supports | Unbounded coloring from long-shift relation hypergraphs | [Uniform extraction bounds long-shift prescribed coloring](lemmas/long_shift_extraction.md) by $O_\delta(k\log k)$, and the [shift-hypergraph bound](routes/shift_simplicial_gain_checks.md) gives six colors in the high-fractional regime |
 | Fixed-template and cofactor forcing in covers | A fixed connected repeated-type template, or a cofactor template family, unavoidable under all colors | [Fixed repeated-type templates split with three colors](lemmas/cover_projection_and_templates.md); [rank-correct cofactor templates on three-universal-row bases split with seven](lemmas/cofactor_template_coloring.md); [signed-cographic gluing has at most three colors](lemmas/signed_cographic_limit.md); the [interval amplifier](lemmas/cyclic_cover_amplification.md) loses extraction as it grows. Varying templates under arbitrary colors remain the target. |
 | Affine and checksum palettes | Exclusion of all finite palettes through algebraic palette classes | [Generic voltages exclude affine homomorphic palettes](routes/generic_voltage_coloring.md) at rational density and [finite-abelian checksums fail at the moment boundary](lemmas/moment_affine_classes.md); arbitrary palettes are not algebraic |
+| One-relation monomial families | Unbounded coloring from monomials bound by one linear relation, such as the symmetric powers of a simplex | For one primitive relation (coefficients nonzero, gcd 1) in at least three variables, [three classes of a weighted exponent sum modulo 3 always suffice](../../theory/integer_sequences/L289_one_relation_monomial_three_cover/_index.md), and all monomials are dissociated when a coefficient of the relation has size at least two; two classes fail at $q=3$, $d=4$. Reopening needs relation ideals with several generators, as in tensors, which the norm argument does not reach. |
 
 The scale-separated block union is a proved reduction, not another
 candidate construction: ordinary direct sums alone cannot amplify the

@@ -6,7 +6,7 @@ desc: |
   and n large, and that for r at least 4 the lower bound of Theorem 1.2,
   binom(n-1,r-1) plus floor((n-1)/r), is the exact value.
 created: 2026-10-08T17:14:18Z
-updated: 2026-10-08T17:14:18Z
+updated: 2026-10-28T22:03:21Z
 ---
 
 ***
@@ -52,4 +52,9 @@ p. 162 and Remark 6.3 on p. 167. The paper offers no argument for it.
   $t\ge4$. A 2026 preprint claims the second part for every fixed $r\ge4$
   and large $n$; its claim page,
   [[../wiki/problems/set_systems/E0643/claims/2026_09_29_huang_ma_yang|Huang, Ma and Yang]],
-  records its standing. The case $r=3$ is not covered by that claim.
+  records its standing. The case $r=3$ is not covered by that claim. Another
+  2026 preprint claims the first part for $r=3$ and every $n$,
+  [[set_systems/zhang_2026_extremal_3_uniform_hypergraphs_without_generalized/theorem_1_4|Zhang's Theorem 1.4]];
+  its claim page,
+  [[../wiki/problems/set_systems/E0643/claims/2026_10_25_zhang|Zhang]],
+  records its standing.

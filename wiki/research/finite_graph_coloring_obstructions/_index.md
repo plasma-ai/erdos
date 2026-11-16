@@ -3,7 +3,7 @@ name: research/finite_graph_coloring_obstructions
 title: Palette counts, dyadic colorings and criticality
 desc: Palette restrictions for four-element lists, a finite triple-pattern coloring, and an obstruction to preserving criticality under density pruning.
 created: 2026-10-14T12:38:34Z
-updated: 2026-10-14T12:38:34Z
+updated: 2026-11-04T22:52:06Z
 ---
 
 # Palette counts, dyadic colorings and criticality
@@ -67,7 +67,11 @@ are necessary too. A certificate must check all $2^{17}$ subsets, not only
 the middle layers. These counts alone leave the listed 17-color cases. The separate
 [[theory/combinatorics/L78_bipartite_order_26_four_choosable/_index|independently examined weighted-count argument]]
 excludes every order-26 bad assignment and gives $n(4)\ge27$. It does not
-determine $n(4)$.
+determine $n(4)$. The author-recorded
+[[theory/combinatorics/L275_bipartite_order_30_four_choosable/_index|L275 excludes every bad assignment through order 30]]
+at tier 0, with random palette subsets that, from 13 colors on, protect
+every list through a color of least degree, or all but one, which is
+priced, so $n(4)\ge31$.
 The evidence only checks necessary-condition arithmetic. The full problem
 for every list size remains separate.
 

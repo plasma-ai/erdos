@@ -1,10 +1,10 @@
 ---
 name: problems/discrete_geometry/E0188/claims
-desc: The 3 claim pages of Problem 188, one per claimant's result; the problem's standing derives from them.
+desc: The 5 claim pages of Problem 188, one per claimant's result; the problem's standing derives from them.
 tags: []
 sources: []
 created: 2026-10-07T21:33:46Z
-updated: 2026-10-11T22:24:14Z
+updated: 2026-11-16T22:41:57Z
 ---
 
 # problems/discrete_geometry/E0188/claims
@@ -23,5 +23,16 @@ avoiding length is at most $10^{10}$.
 red-blue coloring of the plane with no red unit pair and no blue unit
 progression of $6330$ terms. This would show that the least avoiding length is
 at most $6330$.
+
+[[problems/discrete_geometry/E0188/claims/2026_10_07_crocker|2026_10_07_crocker]]: Carson Crocker's computer-assisted Zenodo deposit claims that every red-blue
+coloring of the plane has a red unit pair or a blue six-term unit
+progression, and gives a periodic cell coloring with neither a red unit pair
+nor a blue 60-term unit progression, so $7\le K_*\le60$. It is unreviewed.
+
+[[problems/discrete_geometry/E0188/claims/2026_11_16_plasma_ai|2026_11_16_plasma_ai]]: Plasma AI proves in Lean that every red-blue coloring of the plane has a red
+unit pair or a blue seven-term unit progression, and gives an explicit
+periodic disk coloring with neither a red unit pair nor a blue 42-term unit
+progression, so $8\le K_*\le42$. Author-recorded; catalog acceptance is
+pending.
 
 ***

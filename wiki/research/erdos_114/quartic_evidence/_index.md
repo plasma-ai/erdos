@@ -7,7 +7,7 @@ desc: |
   two collision strata is shorter than z^4-1 by at least its scale.
 problems: [114]
 created: 2026-10-15T16:22:11Z
-updated: 2026-10-15T16:22:11Z
+updated: 2026-11-04T23:06:40Z
 ---
 
 # Validated deficit bounds on the quartic collision strata
@@ -105,8 +105,14 @@ differences at two fixed shapes, including the acceleration of the gap
 coordinates. It checks the failed sharp moment comparison, the four petal
 moments at the equilateral shape, and the larger density given by twice
 the Euclidean norm of the inverse derivatives at six regular shapes and
-sixty angles on each pencil. These checks remain floating-point
-observations; they certify nothing.
+sixty angles on each pencil. For the
+[[research/erdos_114/all_degree_variance|all-degree variance page]] it
+computes the variance $\beta$ and the curvature quantity $\Gamma$ on the
+unicritical polynomials of degrees three to five, at ten points of the
+cubic family of
+[[theory/polynomials/L144_cubic_lemniscate_length/_index|L144]], and on
+seeded random polynomials with unit critical values in degrees four to six.
+These checks remain floating-point observations; they certify nothing.
 
 ## Running and limits
 

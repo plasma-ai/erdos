@@ -8,7 +8,7 @@ desc: |
 tags: []
 sources: []
 created: 2026-09-04T05:59:37Z
-updated: 2026-10-16T16:10:08Z
+updated: 2026-11-04T23:07:02Z
 ---
 
 # research
@@ -19,9 +19,10 @@ updated: 2026-10-16T16:10:08Z
 divisibility selections and unit-fraction algorithms, with exact remaining
 hypotheses and limits of finite verification.
 
-[[research/bipartite_four_list_search/_index|bipartite_four_list_search/]]: Search for non-4-choosable bipartite graphs: the order-26 domain, solver and
-local-search coverage, the weighted count that excludes order 26 (L78), its
-order-27 limit, and probes below the order-40 construction.
+[[research/bipartite_four_list_search/_index|bipartite_four_list_search/]]: Search for non-4-choosable bipartite graphs: the order-26 domain and its
+incomplete searches, the weighted count of L78, the least-degree laws of
+L275 through order 30 and the cases where they stop at order 31, probes
+below the order-40 construction, and the cost of full substitution.
 
 [[research/coprime_prime_support_partition|coprime_prime_support_partition]]: An exact finite criterion for equality of the two functions in Problem 878,
 with a complete calculation of F(210) = 442 and its limited scope.
@@ -44,13 +45,18 @@ the sharper maximum and error term remain undetermined.
 
 [[research/erdos_1045/_index|erdos_1045/]]: Exact calculations check the four-point improvement and the radius needed for a diameter-two regular odd polygon, without certifying further global optimizers.
 
-[[research/erdos_1120/_index|erdos_1120/]]: Compactness turns the absence of an allowed radius into shortest escape length greater than one; powers preserve that obstruction only at degree multiples.
+[[research/erdos_1120/_index|erdos_1120/]]: Research on the worst shortest escape S(n) from 0 to the unit circle
+inside {|F| <= 1}: inverse fans and the early-half bottleneck on the upper
+side, barrier constructions and their cost on the lower side, and radial
+obstructions in fixed degree.
 
 [[research/erdos_1131/_index|erdos_1131/]]: A rational symmetric node choice improves on the Fejér integral at four nodes; the exact calculation gives no all-cardinality asymptotic.
 
-[[research/erdos_114/_index|erdos_114/]]: An independently graded cubic bound and uniqueness, with author-recorded
+[[research/erdos_114/_index|erdos_114/]]: An independently graded cubic bound and uniqueness; author-recorded
 quartic coordinates, a small-curvature estimate and certified bounds on
-both collision pencils. Practical collision neighborhoods and the regular
+both collision pencils; and, in every degree, exact variation and Green
+identities under which an unproved, stronger variance inequality would
+give the length bound. Practical collision neighborhoods and the regular
 quartic complement remain open, as does the all-degree problem.
 
 [[research/erdos_1145/_index|erdos_1145/]]: Restrictions and construction attempts for balanced additive complements; existence remains open.

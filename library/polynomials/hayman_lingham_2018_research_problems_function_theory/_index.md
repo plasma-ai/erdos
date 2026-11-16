@@ -5,7 +5,7 @@ desc: |
   progress updates on each.
 license: reserved
 created: 2026-09-04T09:41:06Z
-updated: 2026-10-08T15:35:15Z
+updated: 2026-11-04T22:56:52Z
 ---
 
 # polynomials/hayman_lingham_2018_research_problems_function_theory
@@ -59,6 +59,12 @@ reporting no progress.
 n)^{1/2}, valid apart from o(2^n) polynomials, hold with C_3 = C_4, with the
 2018 update crediting Halász with the common value 1.
 
+[[polynomials/hayman_lingham_2018_research_problems_function_theory/problem_4_22|problem_4_22]]: Erdős's question, in Hayman and Lingham's collection, for the shortest
+length of a path joining 0 to |z| = 1 inside {|f(z)| <= 1} for a monic
+polynomial f of degree n with all zeros in the closed unit disk, which
+Clunie and Netanyahu showed exists, with the 2018 update reporting no
+progress.
+
 [[polynomials/hayman_lingham_2018_research_problems_function_theory/problem_4_8|problem_4_8]]: A question in Hayman's collection asking whether max |f'(z)| over a
 connected set {|f(z)| <= 1} is at most n^2/2 for a monic polynomial f of
 degree n, with the 2018 update recording that Chebyshev polynomials violate
@@ -102,7 +108,7 @@ Source: <https://arxiv.org/abs/1809.07200v2>.
 Page references are the book's printed page numbers.
 
 Read status: claims checked for Problems 1.25, 2.7, 2.16, 2.40, 2.41, 4.8,
-4.13--4.17 and their updates, and for the chapter notation and reference
+4.13--4.17, 4.22 and their updates, and for the chapter notation and reference
 entries they use (statements read clause by clause on the printed pages). The
 book proves nothing; it poses problems and reports progress. No other problem
 was read for this card. Nothing here is independently reviewed.
@@ -189,6 +195,11 @@ $c'<c$ has it; the update credits Camera, Hansen and Gol'dberg.
   valid apart from $o(2^n)$ polynomials, hold with $C_3=C_4$, and for the
   common value; the update credits Halász with $C_3=C_4=1$, together with
   the analogue for trigonometric polynomials.
+- [[polynomials/hayman_lingham_2018_research_problems_function_theory/problem_4_22|Problem 4.22]] (p. 78): with
+  all zeros of the monic $f$ in the closed unit disk, asks for the shortest
+  length $L^{(n)}_f$ of a path from $0$ to $|z|=1$ in $E^{(n)}_f$, which
+  Clunie and Netanyahu showed exists; the update (p. 79) reports no
+  progress.
 - Problem 4.16 (p. 76), not paged: asks whether all but $o(2^n)$ of the
   $\pm1$ polynomials satisfy $\min_{|z|=1}|P(z)|<1$, or, if not, what the
   correct result is; no progress reported.

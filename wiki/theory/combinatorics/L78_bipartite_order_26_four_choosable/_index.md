@@ -18,7 +18,7 @@ status: proved
 tier: 1
 depends_on: []
 created: 2026-10-14T18:24:25Z
-updated: 2026-10-14T19:22:44Z
+updated: 2026-11-04T22:52:06Z
 ---
 
 # Bipartite graphs with at most 26 vertices are 4-choosable
@@ -126,7 +126,10 @@ the report and grade.
 No native L-claim or external theorem is consumed as a proof premise.
 The compact certificate has positive integer slack $83424-82746=678$ in
 the worst split $(13,13)$; the discovery solver is not a premise. No formal
-verification or literature novelty check is claimed. The exact value of
-$n(4)$ and Problem 629 remain open. The
+verification or literature novelty check is claimed. The author-recorded
+[[theory/combinatorics/L275_bipartite_order_30_four_choosable/_index|L275]]
+gives the stronger bound $n(4)\ge31$ at tier 0, without independent review
+and without using L78, which retains its own graded scope. The exact value
+of $n(4)$ and Problem 629 remain open. The
 [[research/bipartite_four_list_search/_index|order-26 search account]]
 records the method, incomplete search coverage and remaining questions.

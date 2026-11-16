@@ -4,7 +4,7 @@ desc: Claims about the lemniscate length of monic complex polynomials, the cubic
 tags: []
 sources: []
 created: 2026-10-15T11:10:00Z
-updated: 2026-10-18T10:11:24Z
+updated: 2026-11-04T23:06:40Z
 ---
 
 # theory/polynomials
@@ -61,6 +61,19 @@ bound greater than one quarter of the length of |z^4-1|=1.
 
 [[theory/polynomials/L186_quartic_critical_value_parameters/_index|L186_quartic_critical_value_parameters/]]: Explicit compact coordinates cover centered monic quartics with unit critical values, including point and value collisions; the unicritical length comparison is also proved.
 
+[[theory/polynomials/L290_lemniscate_length_variation/_index|L290_lemniscate_length_variation/]]: In every degree a coefficient flow moves the critical values of a centered
+monic polynomial whose critical values all lie on the unit circle by one
+disc automorphism, on the whole unit disc and with any multiplicities. It
+gives exact first and second variations of log length, its Laplacian at
+every point of the disc, and a moment inequality at every local maximizer
+with unit critical values.
+
+[[theory/polynomials/L291_lemniscate_length_green_identity/_index|L291_lemniscate_length_green_identity/]]: For a centered monic polynomial with unit critical values, the logarithm
+of its lemniscate length over that of z^n-1 is an absolutely convergent
+Green integral, over its disc of critical-value motions, of 4/n minus the
+arclength variance. A bound linear in the critical radius near the
+unicritical polynomials gives the convergence.
+
 ***
 
 Each claim states its hypotheses, conclusion and evidence standing. The cubic
@@ -68,4 +81,6 @@ lemniscate claim combines a written reduction with a ball-arithmetic
 computation whose coverage of the parameter range is checked by its evidence
 program. The quartic claims treat degree four: coordinates, comparisons,
 variation formulas, deficits and obstructions for the length of quartic
-lemniscates.
+lemniscates. Two claims hold in every degree: the variation of the length
+along the disc of critical-value motions of a polynomial with unit critical
+values, and the Green identity that integrates it.

@@ -12,7 +12,7 @@ sources:
 problems:
 - 156
 created: 2026-10-15T18:15:30Z
-updated: 2026-10-15T23:58:19Z
+updated: 2026-11-04T23:11:19Z
 ---
 
 # Constructing small maximal Sidon sets
@@ -64,7 +64,7 @@ Ruzsa benchmark are those of the
 [[research/erdos_156/_index|research guide for Problem 156]]. The problem
 remains open.
 
-The attack has settled the question in two families of finite groups, by
+The attack has settled the question in three families of finite groups, by
 explicit constructions in which a mixed blocking triple has exactly one
 solution for almost every target, so that coverage needs no probability.
 
@@ -76,8 +76,12 @@ solution for almost every target, so that coverage needs no probability.
   $G=\mathbb Z_q\times H$ with $q=p^2+p+1$ and $|H|=h$ odd, $h\le p/4$.
   For $h\ge p/8$ this is $O(|G|^{1/3})$, and the group is cyclic for
   suitable cyclic $H$.
+- [[theory/additive_bases/L292_tagged_two_parabola_maximal_sidon/_index|L292]]
+  gives a maximal strong Sidon set of $2q$ elements in
+  $\mathbb F_q^3\times\mathbb Z_3$, of order $3q^3$, for every
+  power $q$ of three.
 
-Both are tier 0, author-recorded by Plasma AI.
+All three are tier 0, author-recorded by Plasma AI.
 
 The [proof sketch](proof_sketch.md) is the editable account of the attack:
 target, held links at their standing, the remaining gap and the routes

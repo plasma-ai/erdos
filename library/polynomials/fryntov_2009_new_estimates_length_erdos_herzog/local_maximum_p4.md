@@ -6,7 +6,7 @@ desc: |
   polynomial p of degree n sufficiently close to p_0(z) = z^n - 1, so the
   lemniscate length attains a local maximum at p_0.
 created: 2026-10-08T17:16:05Z
-updated: 2026-10-08T17:16:05Z
+updated: 2026-11-04T23:06:40Z
 ---
 
 ***
@@ -82,3 +82,10 @@ edition read, and its page numbering, are named on the
   local maximizer of the lemniscate length among monic polynomials of degree
   $n$, for each $n\ge2$, in a neighbourhood the paper does not quantify. This
   is consistent with the conjecture and decides it for no degree.
+- [[../wiki/research/erdos_114/all_degree_variance|All-degree variance page]]:
+  Lemma 1, in the rescaled form above, is the source input of an
+  author-recorded sketch of a strict collar near $z^n-1$: for nonunicritical
+  polynomials with unit critical values and small critical radius, the
+  length lies below $\lvert L_{p_0}\rvert$ and an arclength variance above
+  its unicritical value, both by a multiple of the critical radius. The
+  sketch is not a complete proof.

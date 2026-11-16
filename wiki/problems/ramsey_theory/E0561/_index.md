@@ -13,7 +13,7 @@ tags:
 status: open
 claim: none
 created: 2026-09-04T09:17:27Z
-updated: 2026-10-08T01:29:59Z
+updated: 2026-10-29T22:04:44Z
 ---
 
 # Problem 561
@@ -42,12 +42,40 @@ $$
 l_k=\max\{n_i+m_j-1 : i+j=k\}.
 $$
 
+**Statement (modified).** Let $\hat{R}(G_1,G_2)$ denote the size Ramsey
+number, the minimal number of edges $m$ such that there is a graph $H$ with $m$
+edges such that in any red/blue colouring of the edges of $H$ there is a red
+copy of $G_1$ or a blue copy of $G_2$.
+
+Let $F_1$ and $F_2$ be the union of stars. More precisely, let $F_1=\cup_{i\leq
+s} K_{1,n_i}$ and $F_2=\cup_{j\leq t} K_{1,m_j}$ with $n_1\geq \cdots \geq
+n_s\geq 1$ and $m_1\geq \cdots \geq m_t\geq 1$. Prove that
+
+$$
+\hat{R}(F_1,F_2) = \sum_{2\leq k\leq s+t}l_k
+$$
+
+where
+
+$$
+l_k=\max\{n_i+m_j-1 : i+j=k\}.
+$$
+
+**Notes.** The erdosproblems.com wording defines only the one-graph size Ramsey
+number $\hat R(G)$, with a monochromatic copy of $G$, and then asks about
+$\hat R(F_1,F_2)$, which it leaves undefined. The source fixes the two-graph
+form: [BEFRS78] p. 187 writes $F\to(G,H)$ when every red-blue coloring of the
+edges of $F$ has a red $G$ or a blue $H$, and defines the size Ramsey number
+$\hat r(G,H)$ as the least number of edges of such an $F$; its conjecture
+(p. 194) is stated for $\hat r(F_1,F_2)$ in this sense. The change replaces the
+definition sentence by the two-graph definition, with $\hat R(G)$ the case
+$G_1=G_2=G$; nothing else changes. The results the page records, in [BEFRS78],
+[GySc02], [DJKR25] and [FLN26] and in the two proof claims, are stated for this
+two-graph number. No result about the erdosproblems.com wording is recorded.
+
 **Formulation.** The erdosproblems.com wording as accessed 2026-09-17 (page last
 edited 1 February 2026). $F_1$ is the vertex-disjoint union of the stars
-$K_{1,n_i}$ with $n_i$ edges each, and similarly $F_2$; $\hat R(F_1,F_2)$ is the
-least number of edges of a graph $H$ every red-blue coloring of whose edges has
-a red $F_1$ or a blue $F_2$ (the sources' $\hat r(F_1,F_2)$; the
-erdosproblems.com definition sentence gives the one-graph form). The statement
+$K_{1,n_i}$ with $n_i$ edges each, and similarly $F_2$. The statement
 is the conjecture of [BEFRS78] p. 194 up to notation. The upper bound
 $\hat R(F_1,F_2)\le\sum_{k=2}^{s+t}l_k$ is immediate, since
 $\bigcup_{k=2}^{s+t}K_{1,l_k}\to(F_1,F_2)$ ([DJKR25] p. 3), so the content is

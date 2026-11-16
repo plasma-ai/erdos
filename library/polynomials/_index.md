@@ -3,7 +3,7 @@ name: polynomials
 title: "Polynomials"
 desc: "Sources filed under Polynomials, with cross-references to related work."
 created: 2026-09-05T02:56:28Z
-updated: 2026-10-14T23:06:55Z
+updated: 2026-11-04T22:56:52Z
 ---
 
 # Polynomials
@@ -114,12 +114,20 @@ normal polynomials: bounds for the node polynomial, nth-root asymptotics,
 root spacing and root distribution with error terms, and Lemma IV on two
 adjacent fundamental polynomials.
 
+[[polynomials/eremenko_1991_lower_estimate_littlewood_conjecture_mean_spherical_derivative_polynomial/_index|eremenko_1991_lower_estimate_littlewood_conjecture_mean_spherical_derivative_polynomial/]]: Shows by complex iteration that the largest mean spherical derivative of a
+degree-n polynomial over the unit disk is at least c n^kappa for some
+kappa > 0, so Littlewood's power-saving upper bound is qualitatively sharp.
+
 [[polynomials/eremenko_1994_extremal_problem_polynomials/_index|eremenko_1994_extremal_problem_polynomials/]]: Proves that a monic degree n polynomial whose set of modulus at most one
 is connected has derivative at most 2 to the power 1/n minus 1 times n
 squared on that set, with equality only for a shifted Chebyshev polynomial.
 
 [[polynomials/eremenko_1999_length_lemniscates/_index|eremenko_1999_length_lemniscates/]]: Proves the level set where a monic degree d polynomial has modulus one has
 length at most 9.173 times d.
+
+[[polynomials/eremenko_2007_markov_type_inequality_arbitrary_plane_continua/_index|eremenko_2007_markov_type_inequality_arbitrary_plane_continua/]]: Proves cap E sup_E |f'| <= 2^{1/d-1} d^2 sup_E |f| for every plane continuum
+E and polynomial f of degree d, and hence diam E sup_E |f'| <= 2^{1/d+1} d^2
+sup_E |f|, a sharp Markov-type inequality.
 
 [[polynomials/fejer_1932_bestimmung_derjenigen_abszissen_eines_intervalles/_index|fejer_1932_bestimmung_derjenigen_abszissen_eines_intervalles/]]: Shows that over nodes in [-1,1] the sum of squares of the Lagrange
 fundamental functions has least possible maximum 1 on [-1,1], attained for

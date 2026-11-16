@@ -5,7 +5,7 @@ desc: |
   circle and line of both quartic collision pencils, with certified roots,
   Crofton windows, singular weights and an explicit far-field constant.
 created: 2026-10-15T16:22:11Z
-updated: 2026-10-15T16:22:11Z
+updated: 2026-11-04T23:06:40Z
 ---
 
 # research/erdos_114/quartic_evidence/evidence
@@ -45,10 +45,11 @@ are used. A failed certificate, a nonfinite enclosure or an inverted piece
 makes the box fail rather than pass.
 
 The [landscape probe](landscape.py), enrolled as an entry point, recomputes
-in floating point the exploratory observations of the sketch in a few
-seconds, including the identities (14) and (15) at sample shapes, the
-critical equilateral shape, the cubic analogue and the convexity of the length
-in the gaps between the critical values, also in degrees five and six.
+in floating point the exploratory observations of the sketch in about half
+a minute, with a peak resident memory near 55 MB. They include the
+identities (14) and (15) at sample shapes, the critical equilateral shape,
+the cubic analogue and the convexity of the length in the gaps between the
+critical values, also in degrees five and six.
 It also compares the full second-variation formulas of
 [[theory/polynomials/L178_quartic_length_variation/_index|L178]] with finite
 differences at two shapes. For the angular-gap Hessian the step is at most
@@ -58,7 +59,22 @@ Further checks reproduce the failed sharp moment comparison, the unequal
 petal lengths and variances at the equilateral shape, and the negative
 deficits observed after replacing the density by twice the Euclidean norm
 of the inverse derivatives, at six regular shapes and sixty angles on
-each collision pencil. None of these samples covers a parameter region.
+each collision pencil.
+
+The probe also computes the variance $\beta$ and the curvature quantity
+$\Gamma=\det G(1,Q,T)/\det G(1,Q)$ of the
+[[research/erdos_114/all_degree_variance|all-degree variance page]], with
+$D_RQ$ taken exactly from the division identity. It prints $\beta$ and
+$\Gamma$ on $z^n+1$ in degrees three to five with their relative errors
+against $4/n$ and $32(n+1)/n^2$, which must stay below $2\cdot10^{-3}$. It
+prints $\beta-4/3$ and $\Gamma/(8\beta^2)$ at ten points of the cubic family
+of [[theory/polynomials/L144_cubic_lemniscate_length/_index|L144]], and
+checks that the first is positive and increasing and the second below $1$
+and decreasing. For 25 polynomials with unit critical values in each of
+degrees four, five and six, drawn from a generator with a fixed seed, it
+prints the ranges of $n\beta/4$ and $\Gamma/(2(n+1)\beta^2)$ and checks
+that the first exceeds $1$ and the second is below $1$. The variance page
+quotes these values. None of these samples covers a parameter region.
 Run it with:
 
 ```sh

@@ -11,7 +11,7 @@ sources:
 problems:
 - 156
 created: 2026-10-15T18:15:30Z
-updated: 2026-10-15T18:15:30Z
+updated: 2026-11-04T23:11:19Z
 ---
 
 # Proof sketch for small maximal Sidon sets
@@ -48,8 +48,8 @@ constructions in which every target is blocked by an algebraic identity
 rather than by chance. One decomposition has two stages; a direct integer
 construction need not pass through them.
 
-1. **A group model with exact coverage.** Held for two families of groups,
-   below.
+1. **A group model with exact coverage.** Held for three families of
+   groups, below.
 2. **Transfer to integer intervals.** Open. In every construction examined
    the residue sum of a blocking triple can carry into the height, and the
    carry is not controlled.
@@ -89,6 +89,12 @@ construction need not pass through them.
   tier 0, a Singer set at level zero plus one greedy point per level is
   maximal strong Sidon in Z_q x H for odd h at most p/4]]. Maximality is
   automatic there, and only the Sidon property constrains the level map.
+- **Exact coverage in F_q^3 x Z_3.**
+  [[theory/additive_bases/L292_tagged_two_parabola_maximal_sidon/_index|L292,
+  tier 0, a maximal strong Sidon set of 2q elements in F_q^3 x Z_3 for
+  every power q of three]]. The tag coordinate makes the set Sidon, and in
+  characteristic three an identity between two discriminants blocks the
+  tag-2 layer, which contains no point of the set.
 - **Structure of the integer carry.** The half-set lemma, the pointer
   lemma, the coherence lemma and the winding lemma, author-recorded with
   proofs in the [integer transfer analysis](integer_transfer.md).

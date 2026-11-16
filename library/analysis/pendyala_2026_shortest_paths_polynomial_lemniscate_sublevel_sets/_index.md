@@ -5,12 +5,23 @@ desc: |
   the extremal escape-path length in a lemniscate problem of Erdős.
 license: reserved
 created: 2026-09-04T09:41:06Z
-updated: 2026-10-08T16:43:12Z
+updated: 2026-11-04T22:56:52Z
 ---
 
 # analysis/pendyala_2026_shortest_paths_polynomial_lemniscate_sublevel_sets
 
 [[analysis/_index|..]]
+
+[[analysis/pendyala_2026_shortest_paths_polynomial_lemniscate_sublevel_sets/lemma_7_2|lemma_7_2]]: Pendyala's midpoint quantization, as claimed in an unrefereed preprint: for
+a density 1 + 2 Re sum_{k<=D} c_k e^{2 pi i k t} with sum |c_k| <= 1/8, the
+n midpoint quantiles give a monic degree-n polynomial with all zeros on the
+unit circle whose normalized log-modulus is within A e^{-an/D} of the
+measure's potential on |z| <= 3/4.
+
+[[analysis/pendyala_2026_shortest_paths_polynomial_lemniscate_sublevel_sets/proposition_6_2|proposition_6_2]]: Pendyala's quantitative Faber separator, as claimed in an unrefereed
+preprint: from a Faber polynomial of the N-level maze tree one builds a
+polynomial G_N with G_N(0) = 0 and real part above 1 on the tree, of degree
+at most e^{C_1 N^2} and weighted coefficient sum at most exp(e^{C_2 N^2}).
 
 [[analysis/pendyala_2026_shortest_paths_polynomial_lemniscate_sublevel_sets/proposition_9_7|proposition_9_7]]: Pendyala's linear upper bound, as claimed in an unrefereed preprint: for
 every degree n at least 1, every monic polynomial with all zeros in the
@@ -47,10 +58,14 @@ problem 1120 this is the relevant recent claim, but it remains an unverified
 single-author preprint whose provenance, including possible AI assistance, was
 questioned on the problem forum.
 
-Read status: claims checked. Definition 1.1 and Theorem 1.2 (p. 3),
-Propositions 8.1 (p. 25) and 9.7 (p. 31), Remark 10.1 (p. 32) and the
-introduction (p. 2) were read clause by clause on the print; the proofs
-were read in outline only and were not checked.
+Read status: claims checked. Definition 1.1 and Theorem 1.2 (p. 3), the
+setting of section 6 (p. 15), Propositions 6.2 (pp. 16--17), 8.1 (p. 25)
+and 9.7 (p. 31), Lemma 7.2 (p. 23), the hypotheses of Lemma 7.1 (p. 20),
+Remark 10.1 (p. 32) and the introduction (p. 2) were read clause by clause
+on the print. The conclusions of Lemma 7.1 are claims checked only as far
+as p. 23 restates them, and Remark 7.3 (p. 25) is unread, as the
+[[analysis/pendyala_2026_shortest_paths_polynomial_lemniscate_sublevel_sets/lemma_7_2|Lemma 7.2 page]]
+records. The proofs were read in outline only and were not checked.
 
 ## Contents
 
@@ -58,6 +73,15 @@ were read in outline only and were not checked.
   (p. 3, with Definition 1.1): $c\sqrt{\log n}\le S(n)\le\pi n$ for all
   sufficiently large $n$, with an absolute constant $c>0$, so
   $S(n)\to\infty$; the lower half is Proposition 8.1 (p. 25).
+- [[analysis/pendyala_2026_shortest_paths_polynomial_lemniscate_sublevel_sets/proposition_6_2|Proposition 6.2]]
+  (pp. 16--17): a polynomial $G_N$ built from a Faber polynomial of the
+  maze tree, with $G_N(0)=0$, $\operatorname{Re}G_N>1$ on the tree, degree
+  at most $e^{C_1N^2}$ and $\sum k\lvert a_k\rvert\le\exp(e^{C_2N^2})$.
+- [[analysis/pendyala_2026_shortest_paths_polynomial_lemniscate_sublevel_sets/lemma_7_2|Lemma 7.2]]
+  (p. 23): the $n$ midpoint quantiles of a density of Fourier degree $D$ on
+  the circle give a monic polynomial with all zeros on the unit circle whose
+  normalized log-modulus is within $Ae^{-an/D}$ of the potential on
+  $\lvert z\rvert\le3/4$.
 - [[analysis/pendyala_2026_shortest_paths_polynomial_lemniscate_sublevel_sets/proposition_9_7|Proposition 9.7]]
   (p. 31): $S(n)\le\pi n$ for every $n\ge1$, by reflecting the zeros into
   $g(z)=\prod_j(1-\overline{a_j}z)$ and taking the shorter of two

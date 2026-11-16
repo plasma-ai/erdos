@@ -3,7 +3,7 @@ name: extremal_graph_theory
 title: "Extremal and Structural Graph Theory"
 desc: "Sources filed under Extremal and Structural Graph Theory, with cross-references to related work."
 created: 2026-09-05T02:56:28Z
-updated: 2026-10-19T05:41:44Z
+updated: 2026-11-11T20:37:43Z
 ---
 
 # Extremal and Structural Graph Theory
@@ -1256,6 +1256,11 @@ two different arcs, hence ρ(a) + ρ(b) ≥ n − 1 for all nonadjacent pairs
 gives a Hamilton arc, and
 the sharp edge counts (n − 1)(n − 2)/2 + 1 for a Hamilton arc and
 (n − 1)(n − 2)/2 + 2 for a Hamilton circuit, with the extremal graphs.
+
+[[extremal_graph_theory/plasma_ai_2026_clique_partitions_graphs_given_size/_index|plasma_ai_2026_clique_partitions_graphs_given_size/]]: Plasma AI's separate Lean development proving that the clique partition
+extremum f(n, k) equals n^2 B(k/n^2) + o(n^2) uniformly in k, for an
+explicit piecewise-algebraic B; accepted on this corpus's rebuild,
+Comparator check and kernel replay of it and a graded statement review.
 
 [[extremal_graph_theory/posa_1976_hamiltonian_circuits_random_graphs/_index|posa_1976_hamiltonian_circuits_random_graphs/]]: Pósa's 1976 proof that a random graph on n vertices with [c_1 n log n]
 edges contains a Hamiltonian circuit with probability tending to 1 for a

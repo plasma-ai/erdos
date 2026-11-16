@@ -6,7 +6,7 @@ desc: |
 tags: []
 sources: []
 created: 2026-09-08T01:42:31Z
-updated: 2026-10-18T10:09:26Z
+updated: 2026-11-04T22:57:14Z
 ---
 
 # theory
@@ -18,7 +18,7 @@ sets and the growth of their counting functions.
 
 [[theory/additive_combinatorics/_index|additive_combinatorics/]]: Author-recorded additive-combinatorial claims with explicit hypotheses, proofs and source dependence.
 
-[[theory/analysis/_index|analysis/]]: Native analysis claims on discrepancy and the growth of consecutive-gap constants, with precise sequence conventions and retained verification warrants.
+[[theory/analysis/_index|analysis/]]: Native analysis claims on discrepancy and the growth of consecutive-gap constants of circle sequences, with precise sequence conventions and retained verification warrants, and, in the lemniscate_escape folder, on escape paths from polynomial lemniscates for Problem 1120.
 
 [[theory/combinatorics/_index|combinatorics/]]: Precise project claims in list colouring, finite designs and incidence
 structures, with their parameter ranges and verification standing.

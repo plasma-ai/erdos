@@ -12,7 +12,7 @@ status: proved
 tier: 1
 depends_on: []
 created: 2026-10-14T12:38:34Z
-updated: 2026-10-15T02:28:16Z
+updated: 2026-11-04T22:52:06Z
 ---
 
 # Bipartite graphs on at most 25 vertices are 4-choosable
@@ -30,7 +30,8 @@ specializes it to four-element lists. This argument by Plasma AI has
 the independently graded tier-1 warrant below, with no Lean proof or
 novelty claim. It uses no other native claim and does not rely on
 the numerical value of the four-uniform Property-B extremum or on the
-unproved Erdős–Rubin–Taylor footnote.
+Erdős–Rubin–Taylor footnote, which the paper states without proof and
+[[theory/combinatorics/L276_bipartite_choosability_property_b_excess/_index|L276 proves at tier 0]].
 
 This supplies a lower bound for
 [[problems/graph_coloring/E0629/_index|Problem 629]], not the value of

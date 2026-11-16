@@ -4,7 +4,7 @@ desc: |
   Precise project claims about additive representations, infinite integer
   sets and the growth of their counting functions.
 created: 2026-09-08T22:43:22Z
-updated: 2026-10-15T23:58:19Z
+updated: 2026-11-04T23:11:19Z
 ---
 
 # theory/additive_bases
@@ -45,6 +45,11 @@ then |W| <= (3/2 + sqrt(2)) k^(5/3). An averaged sliding count gives
 the bound for every finite nonempty W.
 
 [[theory/additive_bases/L273_sidon_parity_obstruction/_index|L273_sidon_parity_obstruction/]]: An alternating quadratic has negative square expectation after zeroing forbidden moments of block/uniform mixtures, with or without degreewise renormalization, once the excess above sqrt(N) exceeds an absolute constant in the stated even-block family.
+
+[[theory/additive_bases/L292_tagged_two_parabola_maximal_sidon/_index|L292_tagged_two_parabola_maximal_sidon/]]: For every power q of three and every non-square nu in F_q, a parabola
+with tag 0 and a twisted parabola with tag 1 form a maximal strong Sidon
+set of 2q elements in F_q^3 x Z_3, a group of order 3q^3; a
+characteristic-three identity between two discriminants blocks tag 2.
 
 [[theory/additive_bases/L2_two_representation_exponent/_index|L2_two_representation_exponent/]]: One infinite positive-integer set has at most two unordered representations
 of every sum and logarithmic lower counting exponent at least 3/7.

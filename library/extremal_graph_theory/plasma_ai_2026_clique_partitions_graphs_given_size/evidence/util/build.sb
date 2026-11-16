@@ -1,0 +1,18 @@
+;; The sandbox for building and replaying the held Problem 1017 formalization on macOS
+;; (sandbox-exec -f build.sb -D WORK=<workdir> -D HOME=<home> <command>): no network at all, and
+;; writes only to the work folder, the temporary folders, and lake's and elan's caches. Reads are
+;; unrestricted, since the build reads the toolchain and Mathlib's prebuilt cache.
+(version 1)
+(allow default)
+(deny network*)
+(deny file-write*)
+(allow file-write*
+    (subpath (param "WORK"))
+    (subpath "/private/tmp")
+    (subpath "/private/var/folders")
+    (subpath (string-append (param "HOME") "/.cache"))
+    (subpath (string-append (param "HOME") "/.elan"))
+    (literal "/dev/null")
+    (literal "/dev/zero")
+    (literal "/dev/tty")
+    (regex #"^/dev/fd/"))

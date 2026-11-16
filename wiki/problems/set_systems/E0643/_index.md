@@ -8,17 +8,20 @@ desc: |
 tags:
 - Graph theory
 - Hypergraphs
-status: open
-claim: none
+parts:
+- three_uniform
+- higher_uniformity
+status: claimed
+claim: proved
 created: 2026-09-04T09:17:27Z
-updated: 2026-10-07T19:24:45Z
+updated: 2026-10-28T19:01:06Z
 ---
 
 # Problem 643
 
 [[problems/set_systems/_index|..]]
 
-[[problems/set_systems/E0643/claims/_index|claims/]]: The 1 claim page of Problem 643, one per claimant's result; the problem's standing derives from them.
+[[problems/set_systems/E0643/claims/_index|claims/]]: The 2 claim pages of Problem 643, one per claimant's result; the problem's standing derives from them.
 
 ***
 
@@ -65,14 +68,24 @@ The status above is the erdosproblems.com label. The erdosproblems.com
 commentary records Füredi's bounds
 $\binom{n-1}{t-1}+\lfloor(n-1)/t\rfloor\le f(n;t)<\frac72\binom{n}{t-1}$, the
 conjecture that the lower bound is sharp for $t\ge4$, and the upper bounds of
-Pikhurko and Verstraëte. One result is claimed from outside the project:
+Pikhurko and Verstraëte. The request to estimate $f(n;t)$ is open-ended; the
+definite question is whether $f(n;t)=(1+o(1))\binom{n}{t-1}$ for every $t\ge3$,
+and the frontmatter lists it as two parts, `three_uniform` ($t=3$) and
+`higher_uniformity` ($t\ge4$), since the two cases are claimed by different
+preprints. Two results are claimed from outside the project, both answering
+yes.
 [[problems/set_systems/E0643/claims/2026_09_29_huang_ma_yang|Huang, Ma and Yang's preprint]]
 of 2026-09-29, linked from the erdosproblems.com discussion thread, proves
-Füredi's conjecture for every fixed $t\ge4$ and large $n$, which answers the
-asymptotic question yes for those $t$; it is a partial claim, not refereed and
-not accepted by erdosproblems.com, and the case $t=3$ stays open, so the
-standing derived in the frontmatter is open. This page records no literature
-search beyond erdosproblems.com and no independent assessment of proof coverage.
+Füredi's conjecture for every fixed $t\ge4$ and large $n$, settling
+`higher_uniformity` with the exact value and the extremal hypergraphs.
+[[problems/set_systems/E0643/claims/2026_10_25_zhang|Zhang's preprint]] of
+2026-10-25 proves $f(n;3)\le\binom n2+1$ for every $n$, Füredi's conjectured
+bound for $t=3$, which with Füredi's lower bound settles `three_uniform`, and
+is exact when $n\ge5$ and $n\equiv1,5\pmod{20}$; the exact value of $f(n;3)$
+for other $n$ stays open. Neither preprint is refereed or accepted by
+erdosproblems.com, so the standing derived in the frontmatter is claimed. This
+page records no literature search beyond erdosproblems.com and no independent
+assessment of proof coverage.
 <!-- BEGIN problem library links -->
 
 ## Linked library material
@@ -90,5 +103,8 @@ navigation only and do not by themselves record mathematical progress.
 - [[../library/set_systems/pikhurko_2009_maximum_size_hypergraphs_without_generalized_4/lemma_3|pikhurko_2009_maximum_size_hypergraphs_without_generalized_4 / lemma_3]]
 - [[../library/set_systems/pikhurko_2009_maximum_size_hypergraphs_without_generalized_4/theorem_1|pikhurko_2009_maximum_size_hypergraphs_without_generalized_4 / theorem_1]]
 - [[../library/set_systems/pikhurko_2009_maximum_size_hypergraphs_without_generalized_4/theorem_2|pikhurko_2009_maximum_size_hypergraphs_without_generalized_4 / theorem_2]]
+- [[../library/set_systems/zhang_2026_extremal_3_uniform_hypergraphs_without_generalized/_index|zhang_2026_extremal_3_uniform_hypergraphs_without_generalized]]
+- [[../library/set_systems/zhang_2026_extremal_3_uniform_hypergraphs_without_generalized/theorem_1_3|zhang_2026_extremal_3_uniform_hypergraphs_without_generalized / theorem_1_3]]
+- [[../library/set_systems/zhang_2026_extremal_3_uniform_hypergraphs_without_generalized/theorem_1_4|zhang_2026_extremal_3_uniform_hypergraphs_without_generalized / theorem_1_4]]
 
 <!-- END problem library links -->

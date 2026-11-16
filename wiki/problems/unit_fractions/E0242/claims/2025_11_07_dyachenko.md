@@ -2,11 +2,11 @@
 name: problems/unit_fractions/E0242/claims/2025_11_07_dyachenko
 title: "Dyachenko: a representation of 4/P for every prime P that is 1 modulo 4"
 desc: |
-  Rejected: the lattice lemma behind the claimed unconditional step is false
-  as stated, the lattice step does not establish a point satisfying the
-  quadratic constraint a solution needs, and the covering route assumes its
-  covering. The paper's conclusion says the infinite case is not proven constructively
-  and its covering sections are conditional. The conjecture remains unresolved.
+  Rejected: the lattice lemma behind the claimed unconditional step is false as
+  stated, the lattice step does not establish a point satisfying the quadratic
+  constraint a solution needs, and the covering route assumes its covering. The
+  paper's conclusion says the infinite case is not proven constructively and its
+  covering sections are conditional. The conjecture remains unresolved.
 authors:
 - E. Dyachenko
 status: rejected
@@ -19,7 +19,7 @@ links:
   kind: preprint
   date: 2025-11-07
 created: 2026-10-07T12:08:09Z
-updated: 2026-10-07T21:33:46Z
+updated: 2026-11-10T20:13:42Z
 ---
 
 ***
@@ -34,8 +34,10 @@ $$
 $$
 
 with positive integers $A,b,c$. Primes $p\equiv3\pmod4$ are classical
-($4/p=1/((p+1)/4)+1/(p(p+1)/4)$) and solutions scale to multiples, so this is
-a claim of the whole of [[problems/unit_fractions/E0242/_index|Problem 242]].
+($4/p=1/((p+1)/4)+1/(p(p+1)/4)$), solutions scale to multiples, and the problem
+page's Formulation records how a representation with repeated or fewer than
+three terms becomes one with three distinct terms, so this is a claim of the
+whole of [[problems/unit_fractions/E0242/_index|Problem 242]].
 
 **Depends on.** No page of this wiki.
 
@@ -43,16 +45,16 @@ a claim of the whole of [[problems/unit_fractions/E0242/_index|Problem 242]].
 rests on Proposition 9.25 (p. 29), which is false as stated.
 
 1. *Lemma 9.24 is false.* It identifies the diagonal orbit $p_0+\mathbb Zw$,
-   $w=(d',d')$, with all points of the lattice $L$ congruent to $p_0$
-   modulo $d'$ in both coordinates. Take $g=1$: then $L=\mathbb Z^2$,
-   $d'=1$, and the orbit of $p_0=(0,0)$ is $\{(j,j)\}$, not $\mathbb Z^2$. For every $g$,
-   the point $p_0+(g,0)$ lies in $L$, agrees with $p_0$ modulo $d'$ in both
-   coordinates, and is off the orbit.
-   The proof of Proposition 9.25 uses the lemma to place the second
-   coordinate: it chooses the shift $m$ from the first coordinate, after which the second coordinate is determined and need not lie in its
-   window. Indeed the proposition fails: for $g=9$, $b'=1$, $c'=2$ ($\alpha=3$,
-   $d'=3$), the window $[0,3)\times[1,4)$ meets no point of $L$, since
-   $u+2v\in\{2,\dots,8\}$ there.
+   $w=(d',d')$, with all points of the lattice $L$ congruent to $p_0$ modulo
+   $d'$ in both coordinates. Take $g=1$: then $L=\mathbb Z^2$, $d'=1$, and the
+   orbit of $p_0=(0,0)$ is $\{(j,j)\}$, not $\mathbb Z^2$. For every $g$, the
+   point $p_0+(g,0)$ lies in $L$, agrees with $p_0$ modulo $d'$ in both
+   coordinates, and is off the orbit. The proof of Proposition 9.25 uses the
+   lemma to place the second coordinate: it chooses the shift $m$ from the first
+   coordinate, after which the second coordinate is determined and need not lie
+   in its window. Indeed the proposition fails: for $g=9$, $b'=1$, $c'=2$
+   ($\alpha=3$, $d'=3$), the window $[0,3)\times[1,4)$ meets no point of $L$,
+   since $u+2v\in\{2,\dots,8\}$ there.
 2. *The lattice step does not ensure the quadratic constraint.* A solution
    also needs $u^2-v^2=4A/\alpha$ with $u=(4A-P)d'$ (the paragraph
    "Connection with §7.3", p. 29). The paper states this requirement and

@@ -1,21 +1,22 @@
 ---
 name: research/bipartite_four_list_search
-title: Order-26 bad four-list assignments on bipartite graphs
+title: Bad four-list assignments from order 26 to 40, and full substitution
 desc: |
-  Search for non-4-choosable bipartite graphs: the order-26 domain, solver and
-  local-search coverage, the weighted count that excludes order 26 (L78), its
-  order-27 limit, and probes below the order-40 construction.
+  Search for non-4-choosable bipartite graphs: the order-26 domain and its
+  incomplete searches, the weighted count of L78, the least-degree laws of
+  L275 through order 30 and the cases where they stop at order 31, probes
+  below the order-40 construction, and the cost of full substitution.
 tags: []
 sources: []
 created: 2026-10-14T18:24:25Z
-updated: 2026-10-14T19:22:44Z
+updated: 2026-11-04T22:52:06Z
 ---
 
-# Order-26 bad four-list assignments on bipartite graphs
+# Bad four-list assignments from order 26 to 40, and full substitution
 
 [[research/_index|..]]
 
-[[research/bipartite_four_list_search/evidence/_index|evidence/]]: Exact checks of the order-40 construction and every exchange deleting up to five lists and adding fewer, with the incomplete global-search instruments.
+[[research/bipartite_four_list_search/evidence/_index|evidence/]]: Exact checks of the order-40 construction and every exchange deleting up to five lists and adding fewer, and of the order-31 table, with the incomplete global-search instruments.
 
 ***
 
@@ -23,19 +24,26 @@ updated: 2026-10-14T19:22:44Z
 
 [[problems/graph_coloring/E0629/_index|Problem 629]] asks for the least
 number $n(k)$ of vertices of a bipartite graph that is not $k$-choosable;
-for $k=4$ the held literature gives $23\le n(4)\le40$. This attack asked
-whether a bipartite graph on 26 vertices carries a bad assignment of
-four-element lists, one with no proper colouring from the lists.
+for $k=4$ the held literature gives $23\le n(4)\le40$. This attack asks
+how far the lower bound can be raised by excluding bad assignments of
+four-element lists, ones with no proper colouring from the lists, starting
+at order 26.
 
-The outcome is negative, with a proof by Plasma AI supported by an
-independent whole-claim examination and separate passing grade:
+At order 26 the outcome is negative, with a proof by Plasma AI supported by
+an independent whole-claim examination and separate passing grade:
 [[theory/combinatorics/L78_bipartite_order_26_four_choosable/_index|L78 proves that every bipartite graph with at most 26 vertices is 4-choosable]],
 so $n(4)\ge27$, recorded at tier 1 with an explicit counting table and an
 exact evidence program. The claim page retains the review's qualifications.
-Its argument is self-contained; this page records the
-domain that was searched, the
-searches that found nothing, how the weighted count of L78 was found, and
-where it stops.
+[[theory/combinatorics/L275_bipartite_order_30_four_choosable/_index|L275 proves the same for every bipartite graph with at most 30 vertices]],
+so $n(4)\ge31$, recorded at tier 0: the proof by Plasma AI is
+author-recorded, without independent review, and from 13 colours on it
+protects every list through a colour of least degree, or all but one,
+which is priced, instead of two disjoint lists. Both arguments are
+self-contained. This page records the domain that was
+searched at order 26, the searches that found nothing, how the weighted
+count of L78 was found, where the counts of L78 and L275 stop, the probes
+below the order-40 construction, and a lower bound on the size of bad
+assignments built by full substitution, for every list size.
 
 ## The reduced domain
 
@@ -143,22 +151,97 @@ drawn from the incomplete searches.
 
 ## Where the count stops
 
-At order 27 the same reduction leaves palettes of 15 to 18 colours: the
-midpoint bound $26$ no longer excludes 15 and 16 colours, and the equality
-arguments used at order 26 no longer apply. On 18 colours every colour has
-degree exactly six and the 27 lists are distinct; on 17 colours one list may
-occur twice, and on 15 or 16 colours more may. The same linear program,
-evaluated in floating point for 17 and 18 colours with distinct lists, no
-longer excludes every split. On 17 colours the largest optimum is about
-$1.036$, at $(14,13)$, and four splits exceed 1. On 18 colours it is about
-$1.042$, at $(13,14)$, and seven splits exceed 1. An exclusion of order 27,
-which would give $n(4)\ge28$, needs a sharper weighting and an argument for
-the smaller palettes and repeated lists. Two refinements are natural. One
-fixes the two disjoint right lists as well and splits into cases by their
-position relative to $A_1$, $A_2$ and $W$. The other adds second-moment
-terms restricted to the same profile family. Neither has been tried.
+The weighting of L78 protects two disjoint left lists, and a
+floating-point evaluation shows it falling short at order 27. There the
+same reduction leaves palettes of 15 to 18 colours: the midpoint bound
+$26$ does not exclude 15 and 16 colours, and the equality arguments used
+at order 26 do not apply. On 18 colours every
+colour has degree exactly six and the 27 lists are distinct; on 17 colours
+one list may occur twice, and on 15 or 16 colours more may. The same linear
+program, evaluated in floating point for 17 and 18 colours with distinct
+lists, does not exclude every split. On 17 colours the largest optimum is
+about $1.036$, at $(14,13)$, and four splits exceed 1. On 18 colours it is
+about $1.042$, at $(13,14)$, and seven splits exceed 1.
 
-## Below the upper bound 40
+[[theory/combinatorics/L275_bipartite_order_30_four_choosable/_index|L275 goes past order 26 by protecting more lists]].
+Its reduction to a palette of the fewest colours with every pair of colours
+in a list leaves at most 19 colours when there are at most 30 lists. At most
+12 colours, a uniform half of a padded palette gives a colouring. From 13
+colours on, let $x$ be a colour of least degree $d$. A *law* is a
+probability distribution of the palette subset $T$, with the choice of
+whether $x\in T$ part of it. It *protects* the lists through $x$ when in
+every outcome each left list through $x$ meets $T$ and no right list through
+$x$ lies inside $T$. Its *bound* is the largest probability, over
+four-subsets of the other colours, that one misses $T$ or that one lies
+inside $T$. A protecting law with bound $p$ leaves at most $(30-d)p$
+expected failures. For each palette size, degree and side pattern L275
+exhibits an exact law with $(30-d)p<1$, except in one case where a list
+through $x$ is priced rather than protected and the total is still below
+1. This gives $n(4)\ge31$ at tier 0. It needs no refinement of the two-list
+weighting, such as fixing two disjoint right lists as well or adding
+second-moment terms on the same profiles.
+
+At order 31 the reduction still applies. With at most 31 lists covering
+every pair of colours, $\binom q2\le186<190=\binom{20}2$, so $q\le19$. The
+degrees sum to at most 124, and $\lfloor124/q\rfloor=\lfloor120/q\rfloor$
+for $13\le q\le19$, so the degree windows, and with them the tail
+configurations at each degree, are those of order 30. Palettes of at most
+12 colours are still excluded: at most $31\cdot2/33=62/33<2$ lists are
+expected to lie inside a uniform six-subset of the padded 12 colours or to
+miss it. What changes is that a colour of degree $d$ leaves up to $31-d$
+unprotected lists, one more than at order 30. The table applies to each
+case the laws that L275 uses for it, with $a$ the number of left lists
+through $x$ once the sides are named as there, and gives $(31-d)p$ for the
+largest bound $p$. On 13 to 15 colours with four left lists, one list
+through $x$ is priced rather than protected; $p_4(g)$ and $p_3(g)$ are the
+four-subset and three-subset bounds of the three-tail law of geometry $g$
+on
+[[theory/combinatorics/L275_bipartite_order_30_four_choosable/palette_13_15_padded_laws|the padded-law page of L275]].
+
+| colours | degree $d$, left lists $a$ | lists avoiding $x$ | largest bound $p$ | $(31-d)\,p$ |
+| --- | --- | --- | --- | --- |
+| 13 | 4 | 27 | $10/327$ | $90/109<1$ |
+| 13 to 15 | 5 | 26 | $1416713/36000000$ | $18417269/18000000>1$ |
+| 13 to 15 | 6 | 25 | $50643/1250000$ | $50643/50000>1$ |
+| 13 to 15 | 7 | 24 | $50643/1250000$ | $151929/156250<1$ |
+| 13 to 15 | 8 or 9, $a\le3$ | 23 or 22 | $50643/1250000$ | at most $1164789/1250000<1$ |
+| 13 to 15 | 8, $a=4$ | 23 | $p_4(g)$, with $p_3(g)$ once | $23p_4(g)+p_3(g)$ up to $70213361/67500000>1$ |
+| 13 | 9, $a=4$ | 22 | $p_4(g)$, with $p_3(g)$ once | $22p_4(g)+p_3(g)\le67478639/67500000<1$ |
+| 16 | 5 | 26 | $3999/100000$ | $51987/50000>1$ |
+| 16 | 6, $a\le2$ | 25 | $30823/750000$ | $30823/30000>1$ |
+| 16 | 6, $a=3$ | 25 | $389477163/10^{10}$ | $389477163/400000000<1$ |
+| 16 | 7 | 24 | $85109/2000000$ | $255327/250000>1$ |
+| 17 | 6, $a=1$ | 25 | $20833/500000$ | $20833/20000>1$ |
+| 17 | 6, $a\ne1$ | 25 | $12601638539/324000000000$ | $12601638539/12960000000<1$ |
+| 17 | 7, $a\le1$ | 24 | $20833/500000$ | $62499/62500<1$ |
+| 17 | 7, $a\ge2$ | 24 | $19355737501/450000000000$ | $19355737501/18750000000>1$ |
+| 18 | 6 | 25 | $562498163/13500000000$ | $562498163/540000000>1$ |
+| 19 | 6 | 25 | $28124832469/675000000000$ | $28124832469/27000000000>1$ |
+
+The values of this table, and the products with 26 and 25 below, are
+computed from the bounds stated on the pages of L275, whose evidence
+program recomputes each bound from its law. The
+[[research/bipartite_four_list_search/evidence/order_31/_index|order-31 check recomputes every one of these values exactly]].
+At 16 colours and degree 5 the uniform law for $a=0$ gives exactly
+$26/26=1$, which is not enough either. At 18 and 19 colours every side
+pattern exceeds 1, the uniform laws for $a=0$ included, with
+$25\cdot7/170=35/34$; these are the palette sizes with the thinnest
+margins at order 30.
+
+A value of at least 1 shows only that these laws leave the case open at
+order 31. A finer split can close part of a case with laws that L275
+already exhibits. On 13 to 15 colours, the two-tail laws of overlap 2 and
+3 have bounds $1716529/45000000$ and $1850411/49500000$, and 26 times
+these are $22314877/22500000<1$ and $24055343/24750000<1$. So for a colour
+of degree 5 these laws leave open only two left lists whose tails share at
+most one colour; with fewer left lists a tail can be repeated. A colour of
+degree 6
+with at most two left lists is closed by the two-tail laws, since
+$25\cdot1416713/36000000=1416713/1440000<1$. An exclusion of order 31,
+which would give $n(4)\ge32$, needs for each remaining case a protecting
+law with $(31-d)p<1$, or another argument. No such law is recorded.
+
+## From order 31 to the upper bound 40
 
 The bound $n(4)\le40$ comes from the construction in the proof of Theorem 3
 of [[../library/graph_coloring/hanson_1996_choosability_bipartite_graphs/_index|Hanson, MacGillivray and Toft]].
@@ -222,11 +305,196 @@ The other probes toward order 39 were inconclusive:
   lower bound of 27. Neither a witness nor a certified exclusion from that
   run is retained; these are solver observations only.
 
-Whether a bad assignment exists on fewer than 40 vertices therefore
-remains open. The 12-colour palette of the known construction is the
-natural place for an exact search. A complete 12-colour search at order 39
+L275 excludes a bad assignment on at most 30 vertices at tier 0, and
+whether one exists on 31 to 39 vertices therefore remains open. The
+12-colour palette of the known construction is the natural place for an
+exact search. A complete 12-colour search at order 39
 needs symmetry breaking beyond what the short solver runs had. The local
 exchange obstruction makes the next construction question precise: can
 one find a bad assignment on these colours with at most 39 lists and at
 most 34 lists in common with the construction above? No search of that
 remaining domain is complete here.
+
+## Substitution constructions for all k
+
+The upper bounds for $n(k)$ come from constructions that build bad
+assignments out of smaller ones. Erdős, Rubin and Taylor put one family
+without property B on both sides, and the recursion
+$n(k)\le k\,n(k-2)+2^k$ of
+[[../library/graph_coloring/hanson_1996_choosability_bipartite_graphs/_index|Hanson, MacGillivray and Toft]]
+unites pairs of colours with the lists of a smaller bad assignment and
+adds transversal lists, as in the order-40 construction above. A natural
+general scheme is full substitution, which replaces every colour of a bad
+assignment by a whole bad assignment on colours of its own. The results
+below show that this scheme costs exponentially more than the known
+constructions whenever its pieces have bounded width and fill a fixed
+fraction of every list. They are author-recorded by Plasma AI, without
+independent review. They obstruct one route to upper bounds and give no
+bound on $n(k)$.
+
+**Full substitution.** Call a palette subset $T$ that meets every left list
+and contains no right list a separator, so that an assignment is bad
+exactly when it has none, and call the colours of $T$ red and the others
+blue. A left list fails when it is entirely blue, and a right list when it
+is entirely red. Take a bad outer assignment on a colour set $I$, with left
+lists $\mathcal A$ and right lists $\mathcal C$. For each $i\in I$ take a
+bad inner assignment on its own colour set $V_i$, the $V_i$ pairwise
+disjoint, with $a_i\ge1$ left lists of common width $p_i$ and $c_i\ge1$
+right lists of common width $q_i$. The full substitution has a left list
+$\bigcup_{i\in S}X_i$ for every outer left list $S$ and every choice of an
+inner left list $X_i$ in each block $i\in S$, and a right list
+$\bigcup_{i\in S}Y_i$ for every outer right list $S$ and every choice of
+inner right lists $Y_i$. Assume every output list has the same width $K$:
+$\sum_{i\in S}p_i=K$ for every outer left list and $\sum_{i\in S}q_i=K$
+for every outer right list. Repeated lists on one side of the outer or an
+inner assignment may be removed first. A list's part in $V_i$ is then
+nonempty exactly when $i\in S$, and equals the chosen inner list, so
+different choices give different lists on each side. The substitution
+has
+
+$$
+N_{\mathrm{full}}=\sum_{S\in\mathcal A}\prod_{i\in S}a_i
++\sum_{S\in\mathcal C}\prod_{i\in S}c_i
+$$
+
+lists.
+
+The substitution is bad. Suppose a red–blue colouring of
+$\bigcup_iV_i$ gives every output left list a red colour, and call block
+$i$ covered when every inner left list of block $i$ has a red colour.
+Every outer left list $S$ contains a covered block, since otherwise an
+entirely blue inner left list in each block of $S$ would give an entirely
+blue output list. The covered blocks therefore meet every outer left
+list, and outer badness gives an outer right list all of whose blocks are
+covered. In each covered block inner badness gives an entirely red inner
+right list, and their union is an entirely red output right list.
+
+If the outer assignment and every inner one are minimally bad, meaning
+that deleting any one list leaves a separator, so is the substitution.
+For an output left list built from $S$ and inner lists $X_i$, take an
+outer colouring in which only $S$ fails, inner colourings of the blocks
+of $S$ in which only $X_i$ fails, and colour every other block entirely
+in its outer colour. Then the chosen output list is the only one that
+fails. Right lists are handled in the same way with the colours
+exchanged. Hence no proper subfamily of such a substitution is bad, and
+deleting lists cannot make it cheaper.
+
+**Cost.** For each block let $\rho_i>1$ solve
+
+$$
+a_i\rho_i^{-p_i}+c_i\rho_i^{-q_i}=1 ;
+$$
+
+the left side decreases strictly from $a_i+c_i\ge2$ at $\rho_i=1$ towards
+$0$. With $\rho=\min_i\rho_i$,
+
+$$
+N_{\mathrm{full}}\ \ge\ \rho^K .
+$$
+
+Put $u_i=a_i\rho^{-p_i}$ and $v_i=c_i\rho^{-q_i}$. Since $\rho\le\rho_i$,
+$u_i+v_i\ge1$. Make each outer colour $i$ red independently with
+probability $\tau_i=v_i/(u_i+v_i)$, so that $1-\tau_i\le u_i$ and
+$\tau_i\le v_i$. The width conditions give, for an outer left list $S$
+and an outer right list $S'$,
+
+$$
+\prod_{i\in S}a_i=\rho^K\prod_{i\in S}u_i\ \ge\ \rho^K\Pr(S\text{ fails}),
+\qquad
+\prod_{i\in S'}c_i=\rho^K\prod_{i\in S'}v_i\ \ge\ \rho^K\Pr(S'\text{ fails}).
+$$
+
+Summing, $N_{\mathrm{full}}$ is at least $\rho^K$ times the expected
+number of failing outer lists, which is at least $1$ because the outer
+assignment is bad. No independence between the failure events of
+different outer lists is used.
+
+A uniformly random colouring makes some list of a bad inner assignment
+fail, so $a_i2^{-p_i}+c_i2^{-q_i}\ge1$ and $\rho_i\ge2$. Equality forces
+exactly one failing list in every colouring. The all-blue and all-red
+colourings then give $a_i=c_i=1$, and one left list $X$ with one right
+list $Y$ is bad only when $X=Y$ is a single colour, since otherwise some
+$x\in X$ with $\{x\}\ne Y$ is a separator by itself. Call this the
+identity block; it leaves its outer colour unchanged. Every other block
+has $\rho_i>2$.
+
+**Identity blocks and bounded width.** Let $J$ be the set of blocks that
+are not identity blocks, assume $p_i,q_i\le B$ for $i\in J$, and suppose
+every outer list, on either side, contains at least $m$ blocks of $J$.
+Then
+
+$$
+N_{\mathrm{full}}\ \ge\ 2^K\bigl(1+2^{-B}\bigr)^m .
+$$
+
+Put $\sigma_i=a_i2^{-p_i}+c_i2^{-q_i}$. It equals $1$ for an identity
+block. For a block of $J$ it exceeds $1$ and is a multiple of $2^{-B}$, so
+it is at least $1+2^{-B}$. Make outer colour $i$ red with probability
+$c_i2^{-q_i}/\sigma_i$. Then
+$\prod_{i\in S}a_i=2^K\Pr(S\text{ fails})\prod_{i\in S}\sigma_i$ for an
+outer left list, likewise on the right, and each product of the
+$\sigma_i$ is at least $(1+2^{-B})^m$; summing as before gives the bound.
+If no block is an identity block, every outer list contains at least
+$K/B$ blocks, so $N_{\mathrm{full}}\ge2^K(1+2^{-B})^{K/B}$.
+
+**Comparison with the elementary upper bound.** Erdős, Rubin and Taylor's
+[[../library/graph_coloring/erdos_1980_choosability_graphs/theorem_p129|$n(K)\le2m(K)$]]
+and
+[[../library/set_systems/erdos_1964_combinatorial_problem/theorem_1|Erdős's $m(K)<K^22^{K+1}$]]
+give $n(K)<4K^2\,2^K$. A full substitution of width $K$ with at most this
+many lists must therefore satisfy
+
+$$
+m\log\bigl(1+2^{-B}\bigr)\ \le\ \log4+2\log K ,
+$$
+
+and, since $\log(1+y)\ge y/2$ for $0\le y\le1$,
+$m\le2^{B+1}(\log4+2\log K)$. If blocks of $J$ supply a fixed fraction
+$\eta>0$ of the width of every output list, then $m\ge\eta K/B$, and for
+fixed $B$ the substitution has more lists than $2^K$ by a factor
+exponential in $K$.
+
+The balanced case shows the exact rate. Let every inner assignment have
+width $s\ge2$ on both sides and every outer list width $t$, so $K=st$.
+Then $a_i+c_i\ge n(s)$ and $\rho_i=(a_i+c_i)^{1/s}\ge n(s)^{1/s}$, so the
+substitution has at least $n(s)^t$ lists. Conversely, take a bad
+$t$-uniform outer assignment with $n(t)$ lists and a bad $s$-uniform inner
+assignment with $n(s)$ lists, and exchange the two sides of each block
+independently with probability $1/2$; exchanging the sides keeps an
+assignment bad, by complementing the red set. Each outer list then
+expands to $(n(s)/2)^t$ lists on average, so some choice has at most
+$n(t)(n(s)/2)^t\le4t^2n(s)^t$ lists. The least number of lists of such a
+substitution, to the power $1/(st)$, therefore tends to $n(s)^{1/s}$ as
+$t\to\infty$. Since a bad $s$-uniform assignment with $s\ge2$ is not an
+identity block, $n(s)>2^s$, so this base exceeds $2$, the exponential
+base of $n(K)$. For $s=2$ it is $\sqrt6$. Knowing $n(4)$ exactly, for
+instance, would not give competitive constructions through this scheme.
+
+**Unsigned cores lose the sides.** A bad assignment, read without its
+sides, is a family without property B, but a minimal family without
+property B inside it need not stay bad with the sides it inherits. For
+$k=2$ the left lists $ab,cd$ and the right lists $ac,ad,bc,bd$ form a
+minimally bad assignment, and each side alone has property B, through
+$\{a,c\}$ on the left and $\{a,b\}$ on the right. The six lists are the
+edges of $K_4$ on $a,b,c,d$, whose minimal families without property B
+are its four triangles. Each triangle has one left list and two right
+lists, and a single colour of its left list separates it. A reduction
+that found a family without property B on each side of every bad
+assignment would give $n(k)\ge2m(k)$, which $n(4)\le40<46=2m(4)$ rules
+out.
+
+**What this does and does not rule out.** Full substitution in which
+non-identity blocks of bounded width supply a fixed fraction of every
+output list cannot produce bad assignments with $2^{K+o(K)}$ lists, so for
+large $K$ it exceeds the elementary bound $4K^2\,2^K$. The results do not
+cover blocks whose width grows with $K$ (the inequality above allows widths of
+order $\log K$), output lists that take most of their width from identity
+blocks, inner colour sets that overlap, partial substitution that keeps
+only some of the unions or adds new lists (the recursion of Hanson,
+MacGillivray and Toft adds transversal lists and is not a full
+substitution), or output lists of unequal widths. They say nothing about
+lower bounds for $n(k)$, which
+[[theory/combinatorics/L276_bipartite_choosability_property_b_excess/_index|L276]]
+and
+[[theory/combinatorics/L277_bipartite_choosability_recoloring_bound/_index|L277]]
+treat.

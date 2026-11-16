@@ -2,9 +2,9 @@
 """Recompute the exploratory floating-point landscape of the quartic sketch.
 
 This probe reproduces the floating-point observations that the quartic sketch
-labels as not validated. It proves nothing: every number is a double-precision
-quadrature, and passing checks only confirm that the recorded observations
-still come out of the stated computation.
+and the all-degree variance page label as not validated. It proves nothing:
+every number is a double-precision quadrature, and passing checks only confirm
+that the recorded observations still come out of the stated computation.
 
 For the chart F_t(z) = z^4 - 2(1+t+t^2) z^2 + 4t(1+t) z, with critical points
 1, t, -1-t, the circle through the critical values has radius R(t) and scale
@@ -51,11 +51,25 @@ roots, and checks:
   branch;
 - the same convexity in degrees five and six at one configuration each, on
   the branch continued from z^n + b z, where also Var(V_p') > 4/n;
+- the curvature quantities of the all-degree variance page. With Q = V_p',
+  W = V_p Q' + D_R Q and T = Q^2 + 2 W, where D_R Q comes exactly from the
+  division identity, and with G the Gram matrix under normalized arclength on
+  |p| = 1, beta = det G(1, Q) and Gamma = det G(1, Q, T) / det G(1, Q). For
+  z^n + 1 in degrees three to five they match 4/n and 32(n+1)/n^2 to a
+  relative error below 2e-3, which grows with n because the quadrature stops
+  1e-13 short of the (n-1)-fold critical point. At a = k 2^(-1/3)/10,
+  k = 1, ..., 10, on the cubic family z^3 + 3a^2 z - sqrt(1 - 4a^6), beta - 4/3
+  is positive and increasing and Gamma/(8 beta^2) is below 1 and decreasing.
+  On 25 polynomials with unit critical values in each of degrees four to six,
+  drawn from a generator seeded with 1, beta > 4/n and Gamma < 2(n+1) beta^2;
+  each starts from complex Gaussian critical points and constant term, and
+  continuation moves its critical values radially onto T;
 - L178's complete second variation, including the acceleration of the gap
   coordinates, agrees with finite differences at two fixed quartic shapes;
 - K_Phi = 8 Gamma(1/2) Gamma(7/8) / Gamma(3/8) matches its defining integral.
 
-Arithmetic: numpy and mpmath in double precision. Runtime: a few seconds.
+Arithmetic: numpy and mpmath in double precision. Runtime: about half a
+minute.
 Run from the repository root with uv run --no-sync python and this path.
 """
 
@@ -409,7 +423,7 @@ def poly_parts(u, n):
 
     The polynomial is monic and centered, its last critical point minus the sum."""
     c = np.concatenate([u[: n - 2], [-np.sum(u[: n - 2])]])
-    dp = n * np.poly(c)
+    dp = n * np.poly(c).astype(complex)
     q = np.polyint(dp)
     q[-1] = u[n - 2]
     return q, dp, c
@@ -462,13 +476,15 @@ def gap_log_length(gaps, n, u_start, v_start):
     return np.log(total), u
 
 
-def variance_general(u, n):
-    """Var of V_p' under normalized arclength on |p| = 1, V_p the polynomial part of p^2/p'."""
-    q, dp, c = poly_parts(u, n)
-    dv = np.polyder(np.polydiv(np.polymul(q, q), dp)[0])
+def arc_gram(q, dp, c, polys):
+    """Gram matrix of the polynomials polys under arclength on |q| = 1.
+
+    The critical values of q lie on T. Each arc of T between them is integrated
+    by tanh-sinh quadrature, summing over the n inverse branches with weight
+    1/|q'|."""
     angs = sorted(np.angle(np.polyval(q, c)) % (2 * pi))
     omx, opx, w = TS
-    mom = np.zeros(3, dtype=complex)
+    gram = np.zeros((len(polys), len(polys)), dtype=complex)
     for v0, v1 in zip(angs, [*angs[1:], angs[0] + 2 * pi]):
         half = 0.5 * (v1 - v0)
         for k in range(len(w)):
@@ -481,13 +497,37 @@ def variance_general(u, n):
             for _ in range(2):
                 r = r - np.polyval(qq, r) / np.polyval(dp, r)
             wt = 1 / np.abs(np.polyval(dp, r))
-            vv = np.polyval(dv, r)
-            mom += (
-                half
-                * w[k]
-                * np.array([np.sum(wt), np.sum(wt * vv), np.sum(wt * np.abs(vv) ** 2)])
-            )
-    return mom[2].real / mom[0].real - abs(mom[1] / mom[0].real) ** 2
+            vv = np.array([np.polyval(f, r) for f in polys])
+            gram += half * w[k] * (vv * wt) @ vv.conj().T
+    return gram
+
+
+def variance_general(u, n):
+    """Var of V_p' under normalized arclength on |p| = 1, V_p the polynomial part of p^2/p'."""
+    q, dp, c = poly_parts(u, n)
+    dv = np.polyder(np.polydiv(np.polymul(q, q), dp)[0])
+    gram = arc_gram(q, dp, c, [np.ones(1), dv])
+    return gram[1, 1].real / gram[0, 0].real - abs(gram[1, 0] / gram[0, 0].real) ** 2
+
+
+def curvature_moments(u, n):
+    """beta and Gamma = det G(1, Q, T) / det G(1, Q) for the polynomial p of u.
+
+    G is the Gram matrix under normalized arclength on |p| = 1, Q = V_p',
+    T = Q^2 + 2 W and W = V_p Q' + D_R Q with R = R_p. Differentiating
+    p^2 = p' V_p + R_p in the direction R gives 2 p R = R' V_p + p' D_R V + D_R R
+    with deg D_R R <= n - 2, so D_R V is the quotient of 2 p R - R' V_p by p'
+    and D_R Q is its derivative."""
+    q, dp, c = poly_parts(u, n)
+    v, rem = np.polydiv(np.polymul(q, q), dp)
+    qv = np.polyder(v)
+    lhs = np.polysub(2 * np.polymul(q, rem), np.polymul(np.polyder(rem), v))
+    wv = np.polyadd(np.polymul(v, np.polyder(qv)), np.polyder(np.polydiv(lhs, dp)[0]))
+    tv = np.polyadd(np.polymul(qv, qv), 2 * wv)
+    gram = arc_gram(q, dp, c, [np.ones(1), qv, tv])
+    gram = gram / gram[0, 0].real
+    beta = np.linalg.det(gram[:2, :2]).real
+    return beta, np.linalg.det(gram).real / beta
 
 
 def symmetric_start(n):
@@ -501,6 +541,20 @@ def symmetric_start(n):
     vals = (n - 1) * b / n * c
     order = np.argsort(np.mod(np.angle(vals), 2 * pi))
     return np.concatenate([c[order][: n - 2], [0.0]]).astype(complex), vals[order]
+
+
+def unit_critical_sample(n, rng, steps=40):
+    """u of a random polynomial whose critical values are moved radially onto T.
+
+    The start has complex Gaussian entries of u. The continuation keeps the
+    arguments of the critical values fixed, so values with distinct arguments
+    stay distinct and the critical points stay simple along the path."""
+    u = rng.normal(size=n - 1) + 1j * rng.normal(size=n - 1)
+    q, dp, c = poly_parts(u, n)
+    vals = np.polyval(q, c)
+    for step in range(1, steps + 1):
+        u = critical_solve(u, vals * np.abs(vals) ** (-step / steps), n)[0]
+    return u
 
 
 def phi(r):
@@ -978,6 +1032,68 @@ def main() -> int:
     checker.check(
         "Var(V_p') above 4/n there (floating point)",
         all(n * var / 4 > 1.2 for n, _, _, var in higher),
+    )
+    # the curvature quantities of the all-degree variance page, Gamma against
+    # 2(n + 1) beta^2; first the unicritical calibration on z^n + 1
+    calibration = []
+    for n in (3, 4, 5):
+        u = np.zeros(n - 1, dtype=complex)
+        u[-1] = 1
+        beta, gam = curvature_moments(u, n)
+        err_b = abs(n * beta / 4 - 1)
+        err_g = abs(n * n * gam / (32 * (n + 1)) - 1)
+        calibration.append((n, beta, gam, err_b, err_g))
+    for n, beta, gam, err_b, err_g in calibration:
+        print(
+            f'z^{n} + 1: beta = {beta:.6f}, Gamma = {gam:.6f}, relative errors against '
+            f'4/n and 32(n+1)/n^2: {err_b:.1e}, {err_g:.1e}'
+        )
+    checker.check(
+        'unicritical beta = 4/n and Gamma = 32(n+1)/n^2 in degrees 3 to 5 (floating point)',
+        all(err_b < 2e-3 and err_g < 2e-3 for *_, err_b, err_g in calibration),
+    )
+    # L144's cubic family, critical points +-ia and constant term -sqrt(1 - 4a^6)
+    family = []
+    for k in range(1, 11):
+        a = k * 2 ** (-1 / 3) / 10
+        u = np.array([1j * a, -np.sqrt(max(1 - 4 * a**6, 0.0))])
+        beta, gam = curvature_moments(u, 3)
+        family.append((beta - 4 / 3, gam / (8 * beta**2)))
+    family = np.array(family)
+    print(
+        'cubic family z^3 + 3a^2 z - sqrt(1 - 4a^6) at a = k 2^(-1/3)/10, k = 1..10, '
+        '(beta - 4/3, Gamma/(8 beta^2)): '
+        + ', '.join(f'({d:.4f}, {r:.4f})' for d, r in family)
+        + f'; n beta/4 from {1 + 0.75 * family[:, 0].min():.4f} '
+        f'to {1 + 0.75 * family[:, 0].max():.4f}'
+    )
+    checker.check(
+        'cubic family: beta - 4/3 > 0 increasing and Gamma/(8 beta^2) < 1 decreasing (floating point)',
+        bool(
+            np.all(family[:, 0] > 0)
+            and np.all(np.diff(family[:, 0]) > 0)
+            and np.all(family[:, 1] < 1)
+            and np.all(np.diff(family[:, 1]) < 0)
+        ),
+    )
+    # seeded random polynomials with unit critical values in degrees four to six
+    rng = np.random.default_rng(1)
+    samples = []
+    for n in (4, 5, 6):
+        rows = []
+        for _ in range(25):
+            beta, gam = curvature_moments(unit_critical_sample(n, rng), n)
+            rows.append((n * beta / 4, gam / (2 * (n + 1) * beta**2)))
+        samples.append((n, np.array(rows)))
+    for n, rows in samples:
+        print(
+            f'degree {n}, 25 seeded random polynomials with unit critical values: '
+            f'n beta/4 from {rows[:, 0].min():.4f} to {rows[:, 0].max():.4f}, '
+            f'Gamma/(2(n+1) beta^2) from {rows[:, 1].min():.4f} to {rows[:, 1].max():.4f}'
+        )
+    checker.check(
+        'beta > 4/n and Gamma < 2(n+1) beta^2 on the random samples in degrees 4 to 6 (floating point)',
+        all(np.all(rows[:, 0] > 1) and np.all(rows[:, 1] < 1) for _, rows in samples),
     )
     # integrate u^(-3/4) on [0, 1] exactly; the remaining integrands are smooth
     head = mpmath.quad(lambda u: (1 + u * u) ** -0.375, [0, 1])

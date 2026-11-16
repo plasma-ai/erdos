@@ -26,7 +26,7 @@ status: proved
 tier: 0
 depends_on: []
 created: 2026-10-15T20:21:22Z
-updated: 2026-10-15T20:21:22Z
+updated: 2026-11-04T23:06:40Z
 ---
 
 # Second variation of quartic lemniscate length
@@ -45,7 +45,12 @@ variation in the
 [[research/erdos_114/quartic_critical_values|quartic length reduction]].
 The [proof](_proof.md) constructs the local family by a polynomial
 differential equation. It treats the inverse-branch singularities at the
-critical values before differentiating the length integral.
+critical values before differentiating the length integral. The
+author-recorded
+[[theory/polynomials/L290_lemniscate_length_variation/_index|L290]] extends
+the family and the three variation formulas to every degree, every
+multiplicity pattern and the whole parameter disc, without the angular-gap
+criterion.
 
 The formulas do not establish a sign. In particular the inequality
 $\operatorname{Var}_{\mu}(Q)\ge1$, which would make $\log\ell$

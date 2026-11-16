@@ -4,7 +4,7 @@ desc: Original claims on integer sequences, with proof and verification standing
 tags: []
 sources: []
 created: 2026-09-25T22:00:20Z
-updated: 2026-10-15T22:54:40Z
+updated: 2026-11-04T23:01:43Z
 ---
 
 # theory/integer_sequences
@@ -59,6 +59,8 @@ k(n) <<_epsilon n^(38/97+epsilon) in Problem 962.
 [[theory/integer_sequences/L269_simplex_affine_fiber_threshold/_index|L269_simplex_affine_fiber_threshold/]]: In the k-fold tensor of a q-point simplex over a prime-power index field, every affine fiber with nonzero coefficients is rationally independent for k<q and contains an explicit ternary relation for k>=q.
 
 [[theory/integer_sequences/L271_repeated_simplex_extraction/_index|L271_repeated_simplex_extraction/]]: The integer relation lattice of a repeated power-of-two simplex is semistable, and its normalized determinant stays above one at a critical tensor scale, giving one hereditary dissociation constant through the stated stable-lattice and phase-entropy theorems.
+
+[[theory/integer_sequences/L289_one_relation_monomial_three_cover/_index|L289_one_relation_monomial_three_cover/]]: Monomials in q >= 3 variables bound by one primitive integer linear relation (coefficients nonzero, gcd 1) are dissociated when a coefficient has size at least two, and otherwise split into three dissociated classes by a weighted exponent sum mod 3; so every symmetric power of a simplex is a union of three dissociated sets, and two do not suffice at q = 3, d = 4.
 
 ***
 

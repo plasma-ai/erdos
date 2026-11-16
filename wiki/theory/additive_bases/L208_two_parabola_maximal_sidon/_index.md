@@ -22,7 +22,7 @@ status: proved
 tier: 0
 depends_on: []
 created: 2026-10-15T18:15:30Z
-updated: 2026-10-15T18:15:30Z
+updated: 2026-11-04T23:11:19Z
 ---
 
 # Two orthogonal parabolas form a maximal Sidon set in F_q^3
@@ -52,7 +52,12 @@ $2^{2/3}$ of this bound. The construction is explicit and uses no
 probability, so it carries no logarithmic loss of the kind in
 [[../library/additive_bases/ruzsa_1998_small_maximal_sidon_set/theorem_p55|Ruzsa's
 integer theorem, whose logarithmic factor is the benchmark for Problem
-156]].
+156]]. The sibling claim
+[[theory/additive_bases/L292_tagged_two_parabola_maximal_sidon/_index|L292,
+two tagged parabolas in F_q^3 x Z_3 for q = 3^m]] gives maximal
+strong Sidon sets of $2q$ elements in the groups
+$\mathbb Z_3^{3m+1}$, which this construction does not reach,
+within a factor $(4/3)^{1/3}$ of the counting bound there.
 
 **Mechanism.** The difference set $P-P$ consists of the origin and the
 plane $z=0$ outside the line $x=0$, and $C$ has exactly one element at

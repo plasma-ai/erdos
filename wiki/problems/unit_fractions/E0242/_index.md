@@ -10,7 +10,7 @@ tags:
 status: open
 claim: none
 created: 2026-09-04T09:17:27Z
-updated: 2026-10-08T14:06:00Z
+updated: 2026-11-10T20:23:47Z
 ---
 
 # Problem 242
@@ -52,23 +52,21 @@ $4<b<5000$.
 **Status.** Labeled falsifiable on erdosproblems.com: the label was FALSIFIABLE
 (page last edited 7 May 2026, accessed 2026-09-18). erdosproblems.com explained
 this label as open but refutable by one finite counterexample. The standing
-derived from the claim pages is open, claim none. Three dated manuscripts claim the whole conjecture, and each has an examined
-proof defect: Alomari's preprint
+derived from the claim pages is open, claim none. Three dated manuscripts claim
+the whole conjecture, and each has an examined proof defect: Alomari's preprint
 of February 2023
 ([[problems/unit_fractions/E0242/claims/2023_02_06_alomari|Alomari 2023]]),
 Dyachenko's arXiv preprint of 7 November 2025
 ([[problems/unit_fractions/E0242/claims/2025_11_07_dyachenko|Dyachenko 2025]])
 and Bradford's arXiv preprint of 12 February 2026
 ([[problems/unit_fractions/E0242/claims/2026_02_12_bradford|Bradford 2026]]).
-All three proofs are rejected, which does not disprove the conjecture:
-Alomari's supremum argument never fixes $n$, Dyachenko's key lattice lemma
-is false and the required quadratic compatibility is not
-established, and Bradford never
-proves that his congruence classes cover the primes. The one claim on the
+All three proofs are rejected, which does not disprove the conjecture: Alomari's
+supremum argument never fixes $n$, Dyachenko's key lattice lemma is false and
+the required quadratic compatibility is not established, and Bradford's paper
+never proves that its congruence classes cover the primes. The one claim on the
 erdosproblems.com proof-claim tab is Brian Akaka's AI-assisted lower bound of
-September 2026 on the number of solutions for almost all primes. It settles
-the conjecture for no $n$ and has no claim page (see Forum and AI-assisted
-items).
+September 2026 on the number of solutions for almost all primes. It settles the
+conjecture for no $n$ and has no claim page (see Forum and AI-assisted items).
 
 Two refereed partial results settle infinitely many $n$ and are accepted partial
 claims. They are Obláth's case where $n+1$ has a prime factor $\equiv3\pmod4$

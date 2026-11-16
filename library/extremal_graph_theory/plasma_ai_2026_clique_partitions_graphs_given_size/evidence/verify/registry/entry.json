@@ -1,0 +1,499 @@
+{
+  "abstract": "A Lean proof that f(n, k), the least number such that the edges of every graph with n vertices and k edges can be partitioned into at most f(n, k) cliques, satisfies f(n, k) = n\u00b2 B(k/n\u00b2) + o(n\u00b2) uniformly in 0 \u2264 k \u2264 n(n \u2212 1)/2, for an explicit continuous piecewise-algebraic function B on [0, 1/2]. B(d) = d for d \u2264 1/4; above 1/4 it is the larger of two curves built from explicit dual certificates on split, mixed and two-head graphs. This provides an asymptotic resolution of Erd\u0151s Problem 1017, as posed by Erd\u0151s and as stated by Bloom, who asks for an estimate of f(n, k) for k > n\u00b2/4. The formula is new to our knowledge. The proof passes through the fractional relaxation and proves again, in Lean, the case of the fractional-to-integral transfer of Balogh, He, Krueger, Nguyen and Wigal that it needs.",
+  "authors": [
+    {
+      "name": "Ryan Pettry"
+    }
+  ],
+  "challenge_render": {
+    "artifact_path": "renders/PALOMAR-2026-11-11-000003-v1/46f6e946c212b59735154fa56e21e5e14e91bacf9e07e5d8f45d49821b8f0cb7/",
+    "artifact_tree_sha256": "46f6e946c212b59735154fa56e21e5e14e91bacf9e07e5d8f45d49821b8f0cb7",
+    "bwrap_source_tag": "v0.12.0",
+    "entrypoint": "Challenge/index.html",
+    "format": "verso-html",
+    "rendered_at": "2026-11-11T03:10:27Z",
+    "renderer_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+    "verso_commit": "01a09f320122475119588526857a07d218aef600"
+  },
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ],
+    "msc2020": [
+      "05C35",
+      "05C70"
+    ]
+  },
+  "first_registered_on": "2026-11-11",
+  "formalization": {
+    "challenge_path": "Challenge.lean",
+    "comparator_config_path": "comparator.json",
+    "definition_names": [],
+    "formalization_metadata_path": "formalization.yaml",
+    "lakefile_path": "lakefile.toml",
+    "lean_toolchain": "leanprover/lean4:v4.35.0-rc4",
+    "permitted_axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+    ],
+    "project_dependencies": [
+      {
+        "name": "mathlib",
+        "repository": "leanprover-community/mathlib4",
+        "revision": "1f414401f69059aa7eead47b53ee40bd38455eeb"
+      },
+      {
+        "name": "plausible",
+        "repository": "leanprover-community/plausible",
+        "revision": "aef59637faa9e85fa2486acaaf906ce3f572af7c"
+      },
+      {
+        "name": "LeanSearchClient",
+        "repository": "leanprover-community/LeanSearchClient",
+        "revision": "234d9e074fbd6e911b920baf32db5291c3125be0"
+      },
+      {
+        "name": "importGraph",
+        "repository": "leanprover-community/import-graph",
+        "revision": "579f558774c4ac6840e715ba60dabf3030619349"
+      },
+      {
+        "name": "proofwidgets",
+        "repository": "leanprover-community/ProofWidgets4",
+        "revision": "d5ad4a0b79fa7f9818fe1380d05a3f6143823c09"
+      },
+      {
+        "name": "aesop",
+        "repository": "leanprover-community/aesop",
+        "revision": "04879b1e1de744d5c9777c8cf63fa55a8f652e5e"
+      },
+      {
+        "name": "Qq",
+        "repository": "leanprover-community/quote4",
+        "revision": "e7c4cdd2f1bf9df361ef7f621b4d6867012ab65e"
+      },
+      {
+        "name": "batteries",
+        "repository": "leanprover-community/batteries",
+        "revision": "b71aaf60877e673fdb921f06f20987d12ee8a290"
+      },
+      {
+        "name": "Cli",
+        "repository": "leanprover/lean4-cli",
+        "revision": "82c11b9717083154aefc5fe8d4cba4bbf046298f"
+      }
+    ],
+    "solution_path": "Solution.lean",
+    "theorem_names": [
+      "Erdos1017.uniform_asymptotic"
+    ]
+  },
+  "id": "PALOMAR-2026-11-11-000003",
+  "preservation": {
+    "archive_owner": "PalomarArchive",
+    "archived_at": "2026-11-11T17:32:33Z",
+    "receipt_sha256": "fe9a0d7b4c8eab12b28bd310cdeb748a9df7c2fd51b9c6a3a324dc4a8d6325d7",
+    "repositories": [
+      {
+        "commit": "04879b1e1de744d5c9777c8cf63fa55a8f652e5e",
+        "fork_repository": "PalomarArchive/leanprover-community--aesop--01b46b609077",
+        "ref": "refs/tags/palomar/PALOMAR-2026-11-11-000003-v1/04879b1e1de744d5c9777c8cf63fa55a8f652e5e",
+        "source_repository": "leanprover-community/aesop"
+      },
+      {
+        "commit": "b71aaf60877e673fdb921f06f20987d12ee8a290",
+        "fork_repository": "PalomarArchive/leanprover-community--batteries--1b4c776305c9",
+        "ref": "refs/tags/palomar/PALOMAR-2026-11-11-000003-v1/b71aaf60877e673fdb921f06f20987d12ee8a290",
+        "source_repository": "leanprover-community/batteries"
+      },
+      {
+        "commit": "579f558774c4ac6840e715ba60dabf3030619349",
+        "fork_repository": "PalomarArchive/leanprover-community--import-graph--e0a79261b05a",
+        "ref": "refs/tags/palomar/PALOMAR-2026-11-11-000003-v1/579f558774c4ac6840e715ba60dabf3030619349",
+        "source_repository": "leanprover-community/import-graph"
+      },
+      {
+        "commit": "234d9e074fbd6e911b920baf32db5291c3125be0",
+        "fork_repository": "PalomarArchive/leanprover-community--LeanSearchClient--9de355ab5f53",
+        "ref": "refs/tags/palomar/PALOMAR-2026-11-11-000003-v1/234d9e074fbd6e911b920baf32db5291c3125be0",
+        "source_repository": "leanprover-community/LeanSearchClient"
+      },
+      {
+        "commit": "1f414401f69059aa7eead47b53ee40bd38455eeb",
+        "fork_repository": "PalomarArchive/leanprover-community--mathlib4--67b3d817d8a2",
+        "ref": "refs/tags/palomar/PALOMAR-2026-11-11-000003-v1/1f414401f69059aa7eead47b53ee40bd38455eeb",
+        "source_repository": "leanprover-community/mathlib4"
+      },
+      {
+        "commit": "aef59637faa9e85fa2486acaaf906ce3f572af7c",
+        "fork_repository": "PalomarArchive/leanprover-community--plausible--fb632f6f7bf4",
+        "ref": "refs/tags/palomar/PALOMAR-2026-11-11-000003-v1/aef59637faa9e85fa2486acaaf906ce3f572af7c",
+        "source_repository": "leanprover-community/plausible"
+      },
+      {
+        "commit": "d5ad4a0b79fa7f9818fe1380d05a3f6143823c09",
+        "fork_repository": "PalomarArchive/leanprover-community--ProofWidgets4--26014acbbaff",
+        "ref": "refs/tags/palomar/PALOMAR-2026-11-11-000003-v1/d5ad4a0b79fa7f9818fe1380d05a3f6143823c09",
+        "source_repository": "leanprover-community/ProofWidgets4"
+      },
+      {
+        "commit": "e7c4cdd2f1bf9df361ef7f621b4d6867012ab65e",
+        "fork_repository": "PalomarArchive/leanprover-community--quote4--90d31d153685",
+        "ref": "refs/tags/palomar/PALOMAR-2026-11-11-000003-v1/e7c4cdd2f1bf9df361ef7f621b4d6867012ab65e",
+        "source_repository": "leanprover-community/quote4"
+      },
+      {
+        "commit": "82c11b9717083154aefc5fe8d4cba4bbf046298f",
+        "fork_repository": "PalomarArchive/leanprover--lean4-cli--df175a7fc790",
+        "ref": "refs/tags/palomar/PALOMAR-2026-11-11-000003-v1/82c11b9717083154aefc5fe8d4cba4bbf046298f",
+        "source_repository": "leanprover/lean4-cli"
+      },
+      {
+        "commit": "cf808826d555289332becdf4fd86de962ca00dfa",
+        "fork_repository": "PalomarArchive/plasma-ai--erdos-1017--a3b43bf08fa1",
+        "ref": "refs/tags/palomar/PALOMAR-2026-11-11-000003-v1/cf808826d555289332becdf4fd86de962ca00dfa",
+        "source_repository": "plasma-ai/erdos-1017"
+      }
+    ]
+  },
+  "provenance": {
+    "mathematical_sources": [
+      {
+        "authors": [
+          {
+            "name": "Thomas F. Bloom"
+          }
+        ],
+        "identifier": "https://www.erdosproblems.com/1017",
+        "relationship": "background",
+        "title": "Erd\u0151s Problem #1017"
+      },
+      {
+        "authors": [
+          {
+            "name": "The Formal Conjectures Authors"
+          }
+        ],
+        "identifier": "https://github.com/google-deepmind/formal-conjectures/blob/7bdc4a42f24c0316f81c73b26121794b2bed96a3/FormalConjectures/ErdosProblems/1017.lean",
+        "relationship": "background",
+        "title": "Formal Conjectures: ErdosProblems/1017.lean"
+      },
+      {
+        "authors": [
+          {
+            "name": "P. Erd\u0151s"
+          }
+        ],
+        "identifier": "Combinatorial Mathematics and its Applications (Proc. Conf., Oxford, 1969), Academic Press, London (1971), 97\u2013109",
+        "relationship": "background",
+        "title": "Some unsolved problems in graph theory and combinatorial analysis",
+        "type": "paper"
+      },
+      {
+        "authors": [
+          {
+            "name": "P. Erd\u0151s"
+          },
+          {
+            "name": "A. W. Goodman"
+          },
+          {
+            "name": "L. P\u00f3sa"
+          }
+        ],
+        "identifier": "https://doi.org/10.4153/CJM-1966-014-3",
+        "relationship": "background",
+        "title": "The representation of a graph by set intersections",
+        "type": "paper"
+      },
+      {
+        "authors": [
+          {
+            "name": "E. Gy\u0151ri"
+          }
+        ],
+        "identifier": "Combinatorics (Eger, 1987), Colloq. Math. Soc. J\u00e1nos Bolyai 52, North-Holland (1988), 267\u2013276",
+        "relationship": "background",
+        "title": "On the number of edge-disjoint triangles in graphs of given size",
+        "type": "paper"
+      },
+      {
+        "authors": [
+          {
+            "name": "E. Gy\u0151ri"
+          }
+        ],
+        "identifier": "https://doi.org/10.1007/BF01205075",
+        "relationship": "background",
+        "title": "On the number of edge disjoint cliques in graphs of given size",
+        "type": "paper"
+      },
+      {
+        "authors": [
+          {
+            "name": "E. Gy\u0151ri"
+          }
+        ],
+        "identifier": "Sets, Graphs and Numbers (Budapest, 1991), Colloq. Math. Soc. J\u00e1nos Bolyai 60, North-Holland (1992), 357\u2013363",
+        "relationship": "background",
+        "title": "Edge disjoint cliques in graphs",
+        "type": "paper"
+      },
+      {
+        "authors": [
+          {
+            "name": "L. Lov\u00e1sz"
+          }
+        ],
+        "identifier": "Theory of Graphs (Proc. Colloq., Tihany, 1966), Academic Press (1968), 231\u2013236",
+        "relationship": "background",
+        "title": "On covering of graphs",
+        "type": "paper"
+      },
+      {
+        "authors": [
+          {
+            "name": "E. Gy\u0151ri"
+          },
+          {
+            "name": "B. Keszegh"
+          }
+        ],
+        "identifier": "https://doi.org/10.1007/s00493-016-3500-0",
+        "relationship": "background",
+        "title": "On the number of edge-disjoint triangles in K\u2084-free graphs",
+        "type": "paper"
+      },
+      {
+        "authors": [
+          {
+            "name": "D. Kr\u00e1l'"
+          },
+          {
+            "name": "B. Lidick\u00fd"
+          },
+          {
+            "name": "T. L. Martins"
+          },
+          {
+            "name": "Y. Pehova"
+          }
+        ],
+        "identifier": "https://doi.org/10.1017/S0963548318000421",
+        "relationship": "background",
+        "title": "Decomposing graphs into edges and triangles",
+        "type": "paper"
+      },
+      {
+        "authors": [
+          {
+            "name": "A. Blumenthal"
+          },
+          {
+            "name": "B. Lidick\u00fd"
+          },
+          {
+            "name": "Y. Pehova"
+          },
+          {
+            "name": "F. Pfender"
+          },
+          {
+            "name": "O. Pikhurko"
+          },
+          {
+            "name": "J. Volec"
+          }
+        ],
+        "identifier": "https://doi.org/10.1017/S0963548320000358",
+        "relationship": "background",
+        "title": "Sharp bounds for decomposing graphs into edges and triangles",
+        "type": "paper"
+      },
+      {
+        "authors": [
+          {
+            "name": "J. Balogh"
+          },
+          {
+            "name": "M. C. Wigal"
+          }
+        ],
+        "identifier": "https://doi.org/10.1007/s00493-025-00184-w",
+        "relationship": "background",
+        "title": "Packing edge disjoint cliques in graphs",
+        "type": "paper"
+      },
+      {
+        "authors": [
+          {
+            "name": "J. Balogh"
+          },
+          {
+            "name": "J. He"
+          },
+          {
+            "name": "R. A. Krueger"
+          },
+          {
+            "name": "T. Nguyen"
+          },
+          {
+            "name": "M. C. Wigal"
+          }
+        ],
+        "identifier": "https://doi.org/10.19086/aic.2026.9",
+        "relationship": "other",
+        "title": "Clique covers and decompositions of cliques of graphs",
+        "type": "paper"
+      },
+      {
+        "authors": [
+          {
+            "name": "W. Zhang"
+          }
+        ],
+        "identifier": "arXiv:2608.25233",
+        "relationship": "background",
+        "title": "Clique decompositions and covers for large graphs",
+        "type": "paper"
+      },
+      {
+        "authors": [],
+        "identifier": "https://www.erdosproblemaday.com/report/1017",
+        "relationship": "other",
+        "title": "Erd\u0151s problem #1017: verified partial results"
+      },
+      {
+        "authors": [
+          {
+            "name": "Plasma AI"
+          }
+        ],
+        "identifier": "https://github.com/plasma-ai/erdos-1017/blob/main/blueprint/proof.md",
+        "relationship": "other",
+        "title": "Uniform asymptotics of clique partition numbers (blueprint)",
+        "type": "original-proof"
+      },
+      {
+        "authors": [
+          {
+            "name": "Plasma AI"
+          }
+        ],
+        "identifier": "https://github.com/plasma-ai/erdos-1017/blob/main/paper/clique_partitions.pdf",
+        "relationship": "other",
+        "title": "An asymptotic formula for clique partitions above the Tur\u00e1n threshold",
+        "type": "paper"
+      }
+    ],
+    "related_formalizations": [
+      {
+        "identifier": "https://github.com/cameronfreer/graphon/tree/9f7be59fa754d260a544b4cfd83d6a5b94f7552e",
+        "note": "The import closure of Graphon.Compactness, 11 modules, is vendored under vendor/Graphon from commit 9f7be59fa754d260a544b4cfd83d6a5b94f7552e and ported to this toolchain. The port leaves the mathematical statements unchanged: it removes the blueprint annotations, converts the files to the module system, adapts proofs to renamed Mathlib lemmas, and makes the definition energyRect and the lemma exists_cutNormDiff_limit_of_summable public. The compactness of the decorated limit models is proved from it.",
+        "relationship": "adapts"
+      }
+    ],
+    "repository_role": "substantive-development",
+    "responsible_maintainers": [
+      {
+        "name": "Ryan Pettry"
+      },
+      {
+        "name": "Jacob Parish"
+      },
+      {
+        "name": "Andrew Turner"
+      }
+    ],
+    "result_origin": "original"
+  },
+  "registered_at": "2026-11-11T17:32:01Z",
+  "review": {
+    "outcome": "neutral",
+    "policy_commit": "28bd48b9b71bbb2a82c718ce761d5a4220ef8e60",
+    "report": {
+      "sha256": "ee0b6c0d25857800a1d52b9e7f272a9b3591729566ab8120f730e7c0b7313a9c"
+    },
+    "reviewed_at": "2026-11-11T04:39:05Z",
+    "reviewer_models": [
+      "codex:gpt-6-sol"
+    ],
+    "warnings": []
+  },
+  "schema_version": 5,
+  "source": {
+    "commit": "cf808826d555289332becdf4fd86de962ca00dfa",
+    "license": {
+      "declared_identifier": "Apache-2.0",
+      "detected_identifier": "Apache-2.0",
+      "path": "LICENSE",
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+    },
+    "repository": "plasma-ai/erdos-1017",
+    "repository_url": "https://github.com/plasma-ai/erdos-1017",
+    "tree_url": "https://github.com/plasma-ai/erdos-1017/tree/cf808826d555289332becdf4fd86de962ca00dfa"
+  },
+  "status": "registered",
+  "submission": {
+    "authorization": {
+      "relationship": "maintainer"
+    },
+    "submission_id": "f6si2qanyka6"
+  },
+  "title": "Erd\u0151s Problem 1017: clique partitions of graphs of given size",
+  "trust": {
+    "challenge_bytes": 7956,
+    "challenge_dependencies": [
+      {
+        "provenance": "allowlisted",
+        "repository": "leanprover-community/mathlib4"
+      }
+    ],
+    "challenge_imports": [
+      "Mathlib.Algebra.Order.Archimedean.Real.Basic",
+      "Mathlib.Analysis.SpecialFunctions.Sqrt",
+      "Mathlib.Combinatorics.SimpleGraph.Clique",
+      "Mathlib.Topology.Order.IntermediateValue"
+    ],
+    "challenge_lines": 181,
+    "level": "high",
+    "reasons": []
+  },
+  "verification": {
+    "bwrap_source_tag": "v0.12.0",
+    "challenge_sha256": "8859fe32c3022df7e625ac5fee39c3270d9e8173cafd0062edbe6dc693e3de62",
+    "evidence_path": "evidence/PALOMAR-2026-11-11-000003-v1/3caf8a6fa3c1d772157c3c2fedcbbe315e77efb16633f94adb9c016361a92a87/",
+    "evidence_tree_sha256": "3caf8a6fa3c1d772157c3c2fedcbbe315e77efb16633f94adb9c016361a92a87",
+    "kernels": [
+      {
+        "argv": [
+          "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0-rc4/bin/nanoda_bin"
+        ],
+        "name": "nanoda"
+      }
+    ],
+    "mechanical_report_sha256": "622605d7c1fe57051c3c7783e88f85ad51ad12764673017581fee640ddf3072c",
+    "protected_config_sha256": "4c762b4a7567ba5bfc89df586499a21e88274074ec116e5773a2644cc9711127",
+    "repository": "PalomarRegistry/PalomarSubmission",
+    "run_id": 42911982862,
+    "solution_sha256": "4fb08d6b230bcf3e918a8a9815c65893bcf662f5e9ea8669db8c37b3c62cdaf9",
+    "tool_digests": {
+      "bwrap": "97a58441d7931249fab3e1271a4e56ccd503e40b8061ea3bd38b0ffbeec2596c",
+      "con-ron": "4e5616d94374cae37324dad2594f6230c2bb2297240249fc78ff508f3bc5acef",
+      "lake": "8ba83c98f76562d03b8dbc33f1057151ba6cbb121679dde76b2260ccc90495e1",
+      "lean": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+      "leanchecker": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6",
+      "leanexport": "c7c33370e238b31a7eb763c9c3f42f17677112d2c3e443a9155432480d791375",
+      "nanoda_bin": "cbf13950fc4a48f635a0beceeb5ed32dd82568b870cfd081b6391c1f2cf02ba5"
+    },
+    "toolchain_commit": "c29b6dda4f7c20e3eeaa717c4e565663c5cfa364",
+    "verified_at": "2026-11-11T01:20:28Z",
+    "workflow_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+    "workflow_path": ".github/workflows/submission.yml",
+    "workflow_run_attempt": 1,
+    "workflow_url": "https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/42911982862"
+  },
+  "version": 1
+}

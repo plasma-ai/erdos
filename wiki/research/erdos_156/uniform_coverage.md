@@ -5,7 +5,7 @@ desc: "An O(p) residual suffices for a small maximal completion of a Singer lift
 tags: [construction, reduction, heuristic, unresolved]
 sources: []
 created: 2026-10-15T11:28:48Z
-updated: 2026-10-15T11:28:48Z
+updated: 2026-11-04T23:11:19Z
 ---
 
 # Uniform coverage for Singer lifts at the cube-root scale
@@ -152,8 +152,15 @@ cannot establish these misses. The incidence count also underlies
 Ruzsa's disjoint-triple selection. L125 supplies its own complete argument.
 
 This defeats high-probability (UC) for uniform independent lifts.
-It leaves exceptional lifts and $O(p)$ coordinated repairs open. In
-particular, it gives no lower bound on the size of a maximal completion.
+For these lifts the same bound defeats the few-classes completion
+criterion of the
+[multiple-height note](../small_maximal_sidon_attack/multiple_heights.md),
+which asks for a residual in $O(p)$ classes: with $M=\lfloor N/q\rfloor$
+as above, a class holds at most $M+1$ targets and $N\ge qM$, so
+$U_0\ge cN$ puts the residual in at least $cqM/(M+1)\ge cq/2$ classes.
+The defeat of (UC) leaves exceptional lifts and $O(p)$ coordinated
+repairs open. In particular, it gives no lower bound on the size of a
+maximal completion.
 
 ## A Poisson heuristic for the logarithm
 

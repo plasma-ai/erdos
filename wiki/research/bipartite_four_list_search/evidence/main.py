@@ -19,13 +19,15 @@ Checked clauses:
    reduce them to orbits. The search over added lists is exhaustive: an
    uncovered subset must be covered by one of them. No restriction on the
    sides of the added lists, pair coverage, or global distinctness is imposed.
+5. The order-31 probe (``order_31/main.py``), run in a fresh interpreter,
+   passes; it recomputes the order-31 table of the search account.
 
 Run from the repository root:
     uv run --no-sync python wiki/research/bipartite_four_list_search/evidence/main.py
 
 Dependencies: numpy and the installed root ``tools`` package. No inputs or
 output files; deterministic. The full run takes about two minutes, and quick
-mode a few seconds. ``--quick`` checks clauses 1 to 3 and exchanges
+mode a few seconds. ``--quick`` checks clauses 1 to 3 and 5 and exchanges
 through 4-for-3; the full run also checks 5-for-4 and has a ten-minute internal
 deadline. An exhausted deadline is failure, not an exclusion. Every
 failed obligation exits nonzero, including under ``python -O``. Limitation:
@@ -36,6 +38,7 @@ colours; they say nothing about bad assignments of order 39 elsewhere.
 from __future__ import annotations
 
 import itertools
+import subprocess
 import sys
 from pathlib import Path
 
@@ -174,6 +177,12 @@ def main() -> int:
         except ValueError:
             refused = True
         checker.check(f'exchange domain control: {label} refused', refused)
+
+    # clause 5: the order-31 probe, in a fresh interpreter
+    probe = Path(__file__).resolve().parent / 'order_31' / 'main.py'
+    print('--- order_31')
+    completed = subprocess.run([sys.executable, str(probe)], check=False)
+    checker.check('probe order_31 passes', completed.returncode == 0, f'exit {completed.returncode}')
     return checker.finish()
 
 

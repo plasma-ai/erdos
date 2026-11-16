@@ -1,16 +1,18 @@
 ---
 name: research/bipartite_four_list_search/evidence
 title: Evidence
-desc: Exact checks of the order-40 construction and every exchange deleting up to five lists and adding fewer, with the incomplete global-search instruments.
+desc: Exact checks of the order-40 construction and every exchange deleting up to five lists and adding fewer, and of the order-31 table, with the incomplete global-search instruments.
 tags: []
 sources: []
 created: 2026-10-14T18:24:25Z
-updated: 2026-10-14T18:24:25Z
+updated: 2026-11-04T22:52:06Z
 ---
 
 # Evidence
 
 [[research/bipartite_four_list_search/_index|..]]
+
+[[research/bipartite_four_list_search/evidence/order_31/_index|order_31/]]: Exact recomputation of the order-31 table of the search account and of the values below it, from the bounds stated on the pages of L275, with the order-30 values as a control.
 
 ***
 
@@ -45,6 +47,12 @@ exhausting it raises an error and never establishes an exclusion. Every
 failed check exits nonzero, including under `python -O`. The exchanges
 explore one neighbourhood of one construction; they say nothing about bad
 assignments of order 39 elsewhere.
+
+A separate probe, the
+[[research/bipartite_four_list_search/evidence/order_31/_index|order-31 check]],
+recomputes in exact arithmetic the order-31 table of the search account
+from the bounds stated on the pages of L275. The entry point runs it in
+both modes and fails if it fails; alone it runs in under a second.
 
 The rest of the folder holds discovery instruments. They write to the
 ignored `output/` folder, and no run of them is a certificate. The

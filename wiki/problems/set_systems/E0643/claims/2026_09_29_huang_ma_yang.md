@@ -13,6 +13,8 @@ authors:
 status: claimed
 claim: proved
 scope: partial
+settles:
+- higher_uniformity
 published: 2026-09-29
 submitted: null
 links:
@@ -23,7 +25,7 @@ links:
   kind: discussion
   date: 2026-10-03
 created: 2026-10-07T19:24:39Z
-updated: 2026-10-08T03:54:35Z
+updated: 2026-10-28T18:59:22Z
 ---
 
 ***
@@ -51,11 +53,13 @@ value for large $n$. The case $t=3$ is not covered: the paper's Section 7 says
 that several steps of the argument need $r\ge4$ and leaves the 3-uniform case of
 Conjecture 1.1 open.
 
-**Covers.** The question for every fixed $t\ge4$, with the exact value of
-$f(n;t)$ for all sufficiently large $n$ and the extremal hypergraphs. The case
-$t=3$, where the conjectured bound is $f(n;3)\le\binom n2+1$ for large $n$ and
-the best upper bound is Pikhurko and Verstraëte's $\frac{13}{9}\binom n2$, is
-not covered.
+**Covers.** The question for every fixed $t\ge4$, the part
+`higher_uniformity`, with the exact value of $f(n;t)$ for all sufficiently
+large $n$ and the extremal hypergraphs. The case $t=3$, the part
+`three_uniform`, where the conjectured bound is $f(n;3)\le\binom n2+1$ for large
+$n$, is not covered;
+[[problems/set_systems/E0643/claims/2026_10_25_zhang|Zhang's preprint]] claims
+it.
 
 **Standing.** The claimants are the three authors, who posted the preprint on
 arXiv on 2026-09-29; a comment in the erdosproblems.com discussion thread linked
